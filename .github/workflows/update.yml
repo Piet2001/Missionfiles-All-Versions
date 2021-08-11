@@ -13,11 +13,19 @@ jobs:
       with:
         persist-credentials: false
         fetch-depth: 0
+
+    - name: en_AU
+      run: |
+        curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
+        curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
+    - name: en_AU
+      run: |
+        curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
+        curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
+    
     - name: Download files
       continue-on-error: true
-      run: |   
-        curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
-        curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
+      run: |        
         curl -X GET https://www.operacni-stredisko.cz/einsaetze.json > Missions/cs_CZ.json
         curl -X GET https://www.leitstellenspiel.de/einsaetze.json > Missions/de_DE.json
         curl -X GET https://www.alarmcentral-spil.dk/einsaetze.json > Missions/da_DK.json
@@ -43,8 +51,6 @@ jobs:
 
 
         # Alliance events
-        curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
-        curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
         curl -X GET https://www.operacni-stredisko.cz/alliance_event_types.json > Events/cs_CZ.json
         curl -X GET https://www.leitstellenspiel.de/alliance_event_types.json > Events/de_DE.json
         curl -X GET https://www.alarmcentral-spil.dk/alliance_event_types.json > Events/da_DK.json
