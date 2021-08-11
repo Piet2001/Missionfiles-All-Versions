@@ -14,6 +14,7 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
     - name: Download files
+      continue-on-error: true
       run: |   
         curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
         curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
