@@ -6,7 +6,7 @@ on:
     - cron:  '0 * * * *'
 
 jobs:
-  build:
+  Update:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,69 +15,130 @@ jobs:
         fetch-depth: 0
 
     - name: en_AU
+      continue-on-error: true
       run: |
         curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
         curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
     - name: en_AU
+      continue-on-error: true
       run: |
         curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
         curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
-    
-    - name: Download files
+    - name: cs_CZ
       continue-on-error: true
-      run: |        
+      run: |
         curl -X GET https://www.operacni-stredisko.cz/einsaetze.json > Missions/cs_CZ.json
-        curl -X GET https://www.leitstellenspiel.de/einsaetze.json > Missions/de_DE.json
-        curl -X GET https://www.alarmcentral-spil.dk/einsaetze.json > Missions/da_DK.json
-        curl -X GET https://www.centro-de-mando.es/einsaetze.json > Missions/es_ES.json
-        curl -X GET https://www.hatakeskuspeli.com/einsaetze.json > Missions/fi_FI.json
-        curl -X GET https://www.operateur112.fr/einsaetze.json > Missions/fr_FR.json
-        curl -X GET https://www.operatore112.it/einsaetze.json > Missions/it_IT.json
-        curl -X GET https://www.missionchief-japan.com/einsaetze.json > Missions/ja_JP.json
-        curl -X GET https://www.missionchief-korea.com/einsaetze.json > Missions/ko_KR.json
-        curl -X GET https://www.centro-de-mando.mx/einsaetze.json > Missions/es_MX.json
-        curl -X GET https://www.meldkamerspel.com/einsaetze.json > Missions/nl_NL.json
-        curl -X GET https://www.nodsentralspillet.com/einsaetze.json > Missions/nb_NO.json
-        curl -X GET https://www.operatorratunkowy.pl/einsaetze.json > Missions/pl_PL.json
-        curl -X GET https://www.jogo-operador112.com/einsaetze.json > Missions/pt_PT.json
-        curl -X GET https://www.jocdispecerat112.com/einsaetze.json > Missions/ro_RO.json
-        curl -X GET https://www.dispetcher112.ru/einsaetze.json > Missions/ru_RU.json
-        curl -X GET https://www.larmcentralen-spelet.se/einsaetze.json > Missions/sv_SE.json
-        curl -X GET https://www.112-merkez.com/einsaetze.json > Missions/tr_TR.json
-        curl -X GET https://www.dyspetcher101-game.com/einsaetze.json > Missions/uk_UA.json
-        curl -X GET https://www.missionchief.co.uk/einsaetze.json > Missions/en_UK.json
-        curl -X GET https://www.missionchief.com/einsaetze.json > Missions/en_US.json
-        curl -X GET https://dispecerske-centrum.com/einsaetze.json > Missions/sk_SK.json
-
-
-        # Alliance events
         curl -X GET https://www.operacni-stredisko.cz/alliance_event_types.json > Events/cs_CZ.json
+    - name: de_DE
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.leitstellenspiel.de/einsaetze.json > Missions/de_DE.json
         curl -X GET https://www.leitstellenspiel.de/alliance_event_types.json > Events/de_DE.json
+    - name: da_DK
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.alarmcentral-spil.dk/einsaetze.json > Missions/da_DK.json
         curl -X GET https://www.alarmcentral-spil.dk/alliance_event_types.json > Events/da_DK.json
+    - name: es_ES
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.centro-de-mando.es/einsaetze.json > Missions/es_ES.json
         curl -X GET https://www.centro-de-mando.es/alliance_event_types.json > Events/es_ES.json
+    - name: fi_FI
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.hatakeskuspeli.com/einsaetze.json > Missions/fi_FI.json
         curl -X GET https://www.hatakeskuspeli.com/alliance_event_types.json > Events/fi_FI.json
+    - name: fr_FR
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.operateur112.fr/einsaetze.json > Missions/fr_FR.json
         curl -X GET https://www.operateur112.fr/alliance_event_types.json > Events/fr_FR.json
+    - name: it_IT
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.operatore112.it/einsaetze.json > Missions/it_IT.json
         curl -X GET https://www.operatore112.it/alliance_event_types.json > Events/it_IT.json
+    - name: ja_JP
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.missionchief-japan.com/einsaetze.json > Missions/ja_JP.json
         curl -X GET https://www.missionchief-japan.com/alliance_event_types.json > Events/ja_JP.json
+    - name: ko_KR
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.missionchief-korea.com/einsaetze.json > Missions/ko_KR.json
         curl -X GET https://www.missionchief-korea.com/alliance_event_types.json > Events/ko_KR.json
+    - name: es_MX
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.centro-de-mando.mx/einsaetze.json > Missions/es_MX.json
         curl -X GET https://www.centro-de-mando.mx/alliance_event_types.json > Events/es_MX.json
+    - name: nl_NL
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.meldkamerspel.com/einsaetze.json > Missions/nl_NL.json
         curl -X GET https://www.meldkamerspel.com/alliance_event_types.json > Events/nl_NL.json
+    - name: nb_NO
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.nodsentralspillet.com/einsaetze.json > Missions/nb_NO.json
         curl -X GET https://www.nodsentralspillet.com/alliance_event_types.json > Events/nb_NO.json
+    - name: pl_PL
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.operatorratunkowy.pl/einsaetze.json > Missions/pl_PL.json
         curl -X GET https://www.operatorratunkowy.pl/alliance_event_types.json > Events/pl_PL.json
+    - name: pt_PT
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.jogo-operador112.com/einsaetze.json > Missions/pt_PT.json
         curl -X GET https://www.jogo-operador112.com/alliance_event_types.json > Events/pt_PT.json
+    - name: ro_RO
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.jocdispecerat112.com/einsaetze.json > Missions/ro_RO.json
         curl -X GET https://www.jocdispecerat112.com/alliance_event_types.json > Events/ro_RO.json
+    - name: ru_RU
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.dispetcher112.ru/einsaetze.json > Missions/ru_RU.json
         curl -X GET https://www.dispetcher112.ru/alliance_event_types.json > Events/ru_RU.json
-        curl -X GET https://www.larmcentralen-spelet.se/alliance_event_types.json > Events/sv_SE.json
+    - name: sv_SE
+      continue-on-error: true
+      run: |
+       curl -X GET https://www.larmcentralen-spelet.se/einsaetze.json > Missions/sv_SE.json
+       curl -X GET https://www.larmcentralen-spelet.se/alliance_event_types.json > Events/sv_SE.json
+    - name: tr_TR
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.112-merkez.com/einsaetze.json > Missions/tr_TR.json
         curl -X GET https://www.112-merkez.com/alliance_event_types.json > Events/tr_TR.json
+    - name: uk_UA
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.dyspetcher101-game.com/einsaetze.json > Missions/uk_UA.json
         curl -X GET https://www.dyspetcher101-game.com/alliance_event_types.json > Events/uk_UA.json
+    - name: en_UK
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.missionchief.co.uk/einsaetze.json > Missions/en_UK.json
         curl -X GET https://www.missionchief.co.uk/alliance_event_types.json > Events/en_UK.json
+    - name: en_US
+      continue-on-error: true
+      run: |
+        curl -X GET https://www.missionchief.com/einsaetze.json > Missions/en_US.json
         curl -X GET https://www.missionchief.com/alliance_event_types.json > Events/en_US.json
+    - name: sk_SK
+      continue-on-error: true
+      run: |
+        curl -X GET https://dispecerske-centrum.com/einsaetze.json > Missions/sk_SK.json
         curl -X GET https://dispecerske-centrum.com/alliance_event_types.json > Events/sk_SK.json
         
-    - name: Prettify code
+    - name: Prettify code & PUSH
       uses: creyD/prettier_action@v3.3
       with:
-        prettier_options: --write **/*.{js,md,json}
+        prettier_options: --write **/*.{js,md,json,yml}
         commit_message: Update files
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
