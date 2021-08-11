@@ -138,7 +138,7 @@ jobs:
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v3.3
       with:
-        prettier_options: --write **/*.{js,md,json,yml}
+        prettier_options: --write **/*.{js,md,json}
         commit_message: Update files
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
