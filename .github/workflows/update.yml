@@ -16,14 +16,12 @@ jobs:
 
     - name: en_AU
       continue-on-error: true
-      run: |
-        curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
-        curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
+      run:  curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
+      run:  curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
     - name: en_AU
       continue-on-error: true
-      run: |
-        curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
-        curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
+      run: curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
+      run: curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
     - name: cs_CZ
       continue-on-error: true
       run: |
@@ -132,8 +130,8 @@ jobs:
     - name: sk_SK
       continue-on-error: true
       run: |
-        curl -X GET https://dispecerske-centrum.com/einsaetze.json > Missions/sk_SK.json
-        curl -X GET https://dispecerske-centrum.com/alliance_event_types.json > Events/sk_SK.json
+        curl -X GET https://www.dispecerske-centrum.com/einsaetze.json > Missions/sk_SK.json
+        curl -X GET https://www.dispecerske-centrum.com/alliance_event_types.json > Events/sk_SK.json
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v3.3
