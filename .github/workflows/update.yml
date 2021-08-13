@@ -133,6 +133,7 @@ jobs:
   es_ES:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: da_DK
     steps:
     - uses: actions/checkout@v2
       with:
@@ -157,6 +158,7 @@ jobs:
   fi_FI:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: es_ES
     steps:
     - uses: actions/checkout@v2
       with:
@@ -181,6 +183,7 @@ jobs:
   fr_FR:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: fi_FI
     steps:
     - uses: actions/checkout@v2
       with:
@@ -205,6 +208,7 @@ jobs:
   it_IT:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: fr_FR
     steps:
     - uses: actions/checkout@v2
       with:
@@ -229,6 +233,7 @@ jobs:
   ja_JP:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: it_IT
     steps:
     - uses: actions/checkout@v2
       with:
@@ -253,6 +258,7 @@ jobs:
   ko_KR:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: ja_JP
     steps:
     - uses: actions/checkout@v2
       with:
@@ -277,6 +283,7 @@ jobs:
   es_MX:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: ko_KR
     steps:
     - uses: actions/checkout@v2
       with:
@@ -301,6 +308,7 @@ jobs:
   nl_NL:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: es_MX
     steps:
     - uses: actions/checkout@v2
       with:
@@ -325,6 +333,7 @@ jobs:
   nb_NO:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: nl_NL
     steps:
     - uses: actions/checkout@v2
       with:
@@ -349,6 +358,7 @@ jobs:
   pl_PL:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: nb_NO
     steps:
     - uses: actions/checkout@v2
       with:
@@ -373,6 +383,7 @@ jobs:
   pt_PT:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: pl_PL
     steps:
     - uses: actions/checkout@v2
       with:
@@ -397,6 +408,7 @@ jobs:
   ro_RO:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: pt_PT
     steps:
     - uses: actions/checkout@v2
       with:
@@ -421,6 +433,7 @@ jobs:
   ru_RU:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: ro_RO
     steps:
     - uses: actions/checkout@v2
       with:
@@ -445,6 +458,7 @@ jobs:
   sv_SE:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: ru_RU
     steps:
     - uses: actions/checkout@v2
       with:
@@ -469,6 +483,7 @@ jobs:
   tr_TR:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: sv_SE
     steps:
     - uses: actions/checkout@v2
       with:
@@ -493,6 +508,7 @@ jobs:
   uk_UA:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: tr_TR
     steps:
     - uses: actions/checkout@v2
       with:
@@ -517,6 +533,7 @@ jobs:
   en_UK:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: uk_UA
     steps:
     - uses: actions/checkout@v2
       with:
@@ -541,6 +558,7 @@ jobs:
   en_US:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: en_UK
     steps:
     - uses: actions/checkout@v2
       with:
@@ -565,6 +583,7 @@ jobs:
   sk_SK:
     runs-on: ubuntu-latest
     continue-on-error: true
+    needs: en_US
     steps:
     - uses: actions/checkout@v2
       with:
