@@ -42,6 +42,7 @@ jobs:
 
     - name: Update
       run: |
+        git pull
         curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
         sleep 10s
         curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
