@@ -6,28 +6,62 @@ on:
     - cron:  '0 * * * *'
 
 jobs:
-  Update:
+  en_AU:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: en_AU
-      continue-on-error: true
+    - name: Update
       run: |
         curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
         sleep 10s
         curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
         sleep 10s
-    - name: en_AU
-      continue-on-error: true
+
+    - name: Prettify code & PUSH
+      uses: creyD/prettier_action@v3.3
+      with:
+        prettier_options: --write **/*.{js,md,json}
+        commit_message: Update files
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+
+  pt_BR:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+
+    - name: update
       run: |
         curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
         sleep 10s
         curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
         sleep 10s
+    
+    - name: Prettify code & PUSH
+      uses: creyD/prettier_action@v3.3
+      with:
+        prettier_options: --write **/*.{js,md,json}
+        commit_message: Update files
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+
+  Overig:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
     - name: cs_CZ
       continue-on-error: true
       run: |
