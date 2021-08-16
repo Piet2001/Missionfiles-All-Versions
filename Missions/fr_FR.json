@@ -10394,5 +10394,38 @@
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "alternate_version": null
+  },
+  {
+    "id": 365,
+    "name": "Théâtre en feu",
+    "place": "Théâtre",
+    "place_array": ["Théâtre"],
+    "average_credits": 5750,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_stations": 9
+    },
+    "alternate_version": null
   }
 ]
