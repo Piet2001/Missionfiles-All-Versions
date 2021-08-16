@@ -6492,7 +6492,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [193],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -12483,6 +12483,54 @@
       ]
     },
     "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "alternate_version": null
+  },
+  {
+    "id": 424,
+    "name": "Bicicletta Rubata",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Stazione di polizia",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 425,
+    "name": "Esposizione a Radiazioni",
+    "place": "Ospedale",
+    "place_array": ["Ospedale"],
+    "average_credits": 1600,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
     "alternate_version": null
   },
   {
