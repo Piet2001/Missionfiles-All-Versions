@@ -739,7 +739,7 @@
   },
   {
     "id": 35,
-    "name": "Fylleri/LOB",
+    "name": "Alkoholförgitning",
     "place": "",
     "place_array": [],
     "average_credits": null,
@@ -2403,7 +2403,7 @@
       "/images/theft_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 4 },
-    "chances": { "patient_transport": 30 },
+    "chances": { "patient_transport": 30, "police_helicopters": 45 },
     "additional": {
       "possible_patient": 1,
       "max_possible_prisoners": 2,
@@ -3215,7 +3215,7 @@
       "/images/climbing_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 10, "k9": 1 },
-    "chances": {},
+    "chances": { "police_helicopters": 60 },
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
@@ -3240,7 +3240,7 @@
       "/images/zoom_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 5 },
-    "chances": {},
+    "chances": { "police_helicopters": 45 },
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
@@ -3270,7 +3270,7 @@
       "k9": 1,
       "police_horse": 2
     },
-    "chances": { "patient_transport": 30 },
+    "chances": { "patient_transport": 30, "police_helicopters": 30 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "police_station_missions",
@@ -3367,11 +3367,11 @@
       "/images/baseball_rot.png"
     ],
     "requirements": { "police_cars": 4, "k9": 1, "police_horse": 5 },
-    "chances": { "patient_transport": 25 },
+    "chances": { "patient_transport": 25, "police_helicopters": 40 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [132],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
       "need_police_horse_only_if_present": true,
@@ -3404,7 +3404,7 @@
       "k9": 2,
       "police_horse": 8
     },
-    "chances": { "patient_transport": 25 },
+    "chances": { "patient_transport": 25, "police_helicopters": 70 },
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 2,
@@ -3457,7 +3457,7 @@
       "/images/theft_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 4 },
-    "chances": {},
+    "chances": { "police_helicopters": 25 },
     "additional": {
       "expansion_missions_ids": [105],
       "max_possible_prisoners": 3,
@@ -3483,7 +3483,11 @@
       "/images/shooting_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 8, "k9": 1 },
-    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "chances": {
+      "patient_transport": 100,
+      "patient_critical_care": 50,
+      "police_helicopters": 50
+    },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
@@ -3547,7 +3551,7 @@
       "/images/theft_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 4, "k9": 1 },
-    "chances": {},
+    "chances": { "police_helicopters": 25 },
     "additional": {
       "max_possible_prisoners": 2,
       "swat_personnel": 5,
@@ -4009,7 +4013,7 @@
   },
   {
     "id": 165,
-    "name": "Snatteri",
+    "name": "Ringa stöld",
     "place": "Mataffär",
     "place_array": ["Mataffär"],
     "average_credits": 400,
@@ -4331,7 +4335,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [179],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
@@ -4806,7 +4810,7 @@
       "/images/theft_rot.png"
     ],
     "requirements": { "police_helicopters": 2, "police_cars": 10, "k9": 5 },
-    "chances": { "patient_transport": 80 },
+    "chances": { "patient_transport": 80, "police_helicopters": 60 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -5830,7 +5834,7 @@
   },
   {
     "id": 239,
-    "name": "Jägareolycka - civilperson",
+    "name": "Jaktolycka - civilperson",
     "place": "Skog",
     "place_array": ["Skog"],
     "average_credits": null,
@@ -7248,7 +7252,7 @@
   },
   {
     "id": 292,
-    "name": "Akut amputiation",
+    "name": "Akut amputation",
     "place": "",
     "place_array": [],
     "average_credits": null,
@@ -7610,7 +7614,7 @@
   },
   {
     "id": 305,
-    "name": "Flyghändelse - flygplan i vattet, litet",
+    "name": "Flyghändelse - flygplan i vatten, litet",
     "place": "Sjö",
     "place_array": ["Sjö"],
     "average_credits": 4000,
@@ -8231,6 +8235,27 @@
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 332,
+    "name": "Fylleri/LOB",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/bar_coktail_gruen.png",
+      "/images/bar_coktail_gelb.png",
+      "/images/bar_coktail_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
     "alternate_version": null
   }
 ]
