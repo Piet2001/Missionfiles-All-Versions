@@ -17450,6 +17450,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_us_code_possible": ["26-Ω-20"],
+      "allow_ktw_instead_of_rtw": true,
       "patient_specializations": "General Internal"
     },
     "prerequisites": { "main_building": 3, "rescue_stations": 1 },
@@ -19017,78 +19018,88 @@
     "place": "Park\nForest",
     "place_array": ["Park", "Forest"],
     "average_credits": 500,
-    "generated_by": "Police station",
+    "generated_by": "Fire station",
     "icons": [
       "/images/zoom_gruen.png",
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "game_warden": 2 },
+    "requirements": { "brush_truck": 1, "fire_investigation": 2 },
     "chances": {},
     "additional": {
-      "filter_id": "police_station_missions",
+      "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [549, 550]
     },
     "prerequisites": {
-      "main_building": 5,
-      "police_stations": 6,
-      "game_warden_count": 2
+      "main_building": 0,
+      "brush_extension": 1,
+      "fire_investigation_count": 2
     },
     "alternate_version": null
   },
   {
     "id": 549,
-    "name": "Person started bushfire (small)",
+    "name": "Person started brushfire (small)",
     "place": "Park\nForest",
     "place_array": ["Park", "Forest"],
-    "average_credits": 500,
-    "generated_by": "Police station",
+    "average_credits": 600,
+    "generated_by": "Fire station",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "brush_truck": 1, "game_warden": 1 },
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 1,
+      "police_cars": 1,
+      "fire_investigation": 1
+    },
     "chances": {},
     "additional": {
-      "filter_id": "police_station_missions",
+      "filter_id": "firehouse_missions",
       "subsequent_mission_only": true
     },
     "prerequisites": {
-      "main_building": 5,
-      "police_stations": 6,
+      "main_building": 0,
+      "police_stations": 1,
       "brush_extension": 1,
-      "game_warden_count": 2,
+      "fire_investigation_count": 1,
       "fire_stations": 1
     },
     "alternate_version": null
   },
   {
     "id": 550,
-    "name": "Person started bushfire (large)",
+    "name": "Person started brushfire (large)",
     "place": "Park\nForest",
     "place_array": ["Park", "Forest"],
-    "average_credits": 750,
-    "generated_by": "Police station",
+    "average_credits": 1200,
+    "generated_by": "Fire station",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "brush_truck": 1, "game_warden": 1 },
+    "requirements": {
+      "firetrucks": 2,
+      "brush_truck": 2,
+      "police_cars": 2,
+      "fire_investigation": 3
+    },
     "chances": {},
     "additional": {
       "followup_missions_ids": [432],
       "max_possible_prisoners": 3,
-      "filter_id": "police_station_missions",
+      "filter_id": "firehouse_missions",
       "subsequent_mission_only": true
     },
     "prerequisites": {
-      "main_building": 5,
-      "police_stations": 8,
-      "brush_extension": 1,
-      "game_warden_count": 2,
-      "fire_stations": 3
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 2,
+      "fire_investigation_count": 2,
+      "fire_stations": 2
     },
     "alternate_version": null
   },
