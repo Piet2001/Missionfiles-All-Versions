@@ -6733,5 +6733,33 @@
     },
     "prerequisites": { "main_building": 0, "fire_stations": 11 },
     "alternate_version": null
+  },
+  {
+    "id": 263,
+    "name": "ATM 폭발",
+    "place": "은행",
+    "place_array": ["은행"],
+    "average_credits": 5000,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 5 },
+    "chances": { "patient_transport": 25, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "심장 의학과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 8,
+      "fire_stations": 5
+    },
+    "alternate_version": null
   }
 ]
