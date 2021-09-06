@@ -520,7 +520,7 @@
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 1,
-      "expansion_missions_ids": [24, 2],
+      "expansion_missions_ids": [24, 2, 29],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Traumatologia"
     },
@@ -8051,6 +8051,44 @@
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 13 },
+    "alternate_version": null
+  },
+  {
+    "id": 324,
+    "name": "386 Metsään eksynyt aikuinen",
+    "place": "Metsä",
+    "place_array": ["Metsä"],
+    "average_credits": 1300,
+    "generated_by": "Poliisiasema",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 1, "k9": 2 },
+    "chances": {
+      "k9": 50,
+      "patient_transport": 14,
+      "helicopter": 2,
+      "patient_critical_care": 4,
+      "police_helicopters": 8
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 20,
+      "average_min_police_personnel": 10,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "fire_stations": 5
+    },
     "alternate_version": null
   }
 ]
