@@ -8217,7 +8217,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [
-        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
+        25, 120, 121, 122, 123, 124, 125, 126, 127, 128
       ],
       "filter_id": "police_station_missions"
     },
@@ -19985,6 +19985,44 @@
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 669,
+    "name": "Reihenhaus in Flammen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 15,
+      "nef": 40,
+      "patient_transport": 80,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "fire_stations": 8
+    },
     "alternate_version": null
   }
 ]
