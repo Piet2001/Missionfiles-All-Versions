@@ -1298,7 +1298,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
-      "expansion_missions_ids": [370],
+      "expansion_missions_ids": [],
       "max_possible_prisoners": 2,
       "patient_uk_code_possible": ["C-3", "C-4"],
       "filter_id": "police_station_missions",
@@ -5575,7 +5575,7 @@
     "requirements": { "police_cars": 3, "k9": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [201, 370],
+      "expansion_missions_ids": [201],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -11088,6 +11088,42 @@
       "main_building": 0,
       "rescue_stations": 1,
       "fire_stations": 1
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 368,
+    "name": "Person stuck in wood chipper",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Ambulance Station",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 60,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-1"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "fire_stations": 6
     },
     "alternate_version": null
   }
