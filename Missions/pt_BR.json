@@ -401,7 +401,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
@@ -449,6 +453,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 7500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -529,7 +534,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
@@ -575,6 +584,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -678,33 +688,6 @@
     "alternate_version": null
   },
   {
-    "id": 33,
-    "name": "Incêndio em supermercado pequeno",
-    "place": "Supermercado (pequeno)",
-    "place_array": ["Supermercado (pequeno)"],
-    "average_credits": 1500,
-    "generated_by": "Unidade de bombeiros militar",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Clínica médica"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 5
-    },
-    "alternate_version": null
-  },
-  {
     "id": 34,
     "name": "Incêndio em hospital",
     "place": "Hospital",
@@ -717,6 +700,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -728,6 +712,8 @@
       "possible_patient": 25,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -735,7 +721,45 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 34,
+        "name": "Incêndio em hospital",
+        "place": "Hospital",
+        "place_array": ["Hospital"],
+        "average_credits": 6400,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 50 },
+        "additional": {
+          "possible_patient": 25,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 35,
@@ -890,6 +914,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -903,6 +928,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -911,7 +938,49 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "Fogo em oficina mecânica",
+        "place": "Oficina mecânica",
+        "place_array": ["Oficina mecânica"],
+        "average_credits": 7000,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "foam": 2
+        },
+        "chances": { "water_tankers": 40, "patient_transport": 50 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1288,6 +1357,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1297,6 +1367,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -1304,7 +1376,43 @@
       "rescue_stations": 2,
       "fire_stations": 9
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 60,
+        "name": "Fogo em salão de esportes",
+        "place": "Escola",
+        "place_array": ["Escola"],
+        "average_credits": 2200,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 50 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 9
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 62,
@@ -1449,8 +1557,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
@@ -1461,6 +1571,8 @@
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -1469,7 +1581,48 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 68,
+        "name": "Incêndio em supermercado grande",
+        "place": "Supermercado (grande)",
+        "place_array": ["Supermercado (grande)"],
+        "average_credits": 3200,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 1,
+          "pump": 1
+        },
+        "chances": { "water_tankers": 20, "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 3,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 69,
@@ -1496,41 +1649,6 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 70,
-    "name": "Incêndio em supermercado grande",
-    "place": "Supermercado (grande)",
-    "place_array": ["Supermercado (grande)"],
-    "average_credits": 3000,
-    "generated_by": "Unidade de bombeiros militar",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "police_cars": 1
-    },
-    "chances": { "water_tankers": 20, "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 6,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Clínica médica"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 2,
-      "fire_stations": 8
     },
     "alternate_version": null
   },
@@ -1571,6 +1689,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -1636,6 +1755,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 37000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -1717,7 +1837,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 2,
@@ -1804,15 +1928,50 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 80,
+        "name": "Incêndio num silo",
+        "place": "Silo",
+        "place_array": ["Silo"],
+        "average_credits": 3200,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 20000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 8 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 81,
@@ -1858,6 +2017,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -2190,79 +2350,11 @@
   {
     "id": 95,
     "name": "Descarrilamento de Comboio de Carga",
-    "place": "Passagem de Nível",
-    "place_array": ["Passagem de Nível"],
-    "average_credits": 10000,
-    "generated_by": "Unidade de bombeiros militar",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 4,
-      "hazmat_vehicles": 2,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 4,
-      "possible_patient_min": 0,
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "Traumatologia"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 3,
-      "fire_stations": 15
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 96,
-    "name": "Descarrilamento de Comboio de Carga",
-    "place": "Estação de trem (tráfego regional)",
-    "place_array": ["Estação de trem (tráfego regional)"],
-    "average_credits": 10000,
-    "generated_by": "Unidade de bombeiros militar",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 4,
-      "hazmat_vehicles": 2,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 4,
-      "possible_patient_min": 0,
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "Traumatologia"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 3,
-      "fire_stations": 15
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 97,
-    "name": "Descarrilamento de Comboio de Carga",
-    "place": "Estação de trem (tráfego regional e viagem de longa distância)",
+    "place": "Estação de trem (tráfego regional)\nEstação de trem (tráfego regional e viagem de longa distância)\nPassagem de Nível",
     "place_array": [
-      "Estação de trem (tráfego regional e viagem de longa distância)"
+      "Estação de trem (tráfego regional)",
+      "Estação de trem (tráfego regional e viagem de longa distância)",
+      "Passagem de Nível"
     ],
     "average_credits": 10000,
     "generated_by": "Unidade de bombeiros militar",
@@ -2272,6 +2364,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
@@ -2412,6 +2505,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -2719,7 +2813,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 6,
@@ -2747,6 +2841,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -2801,14 +2896,20 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
-    "chances": { "water_tankers": 10, "patient_transport": 40 },
+    "chances": {
+      "water_tankers": 10,
+      "mobile_air_vehicles": 30,
+      "patient_transport": 40
+    },
     "additional": {
       "possible_patient": 20,
       "expansion_missions_ids": [119],
@@ -2836,11 +2937,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 41000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 6
     },
     "chances": { "patient_transport": 40 },
@@ -3008,10 +3112,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 4,
+      "expansion_missions_ids": [260],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Clínica médica"
     },
@@ -3035,11 +3144,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 32000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 3,
       "heavy_rescue_vehicles": 4,
       "water_tankers": 2,
+      "mobile_air_vehicles": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4
     },
@@ -3098,6 +3210,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
@@ -3110,6 +3223,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -3118,7 +3233,47 @@
       "police_stations": 3,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 128,
+        "name": "Incêndio num edifício empresarial",
+        "place": "Edifício comercial",
+        "place_array": ["Edifício comercial"],
+        "average_credits": 7400,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 4,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "police_cars": 3,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 3,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 129,
@@ -3133,17 +3288,22 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 48000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 3,
       "water_tankers": 3,
+      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -3152,7 +3312,50 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 129,
+        "name": "Incendio num centro de reciclagem",
+        "place": "Centro de reciclagem",
+        "place_array": ["Centro de reciclagem"],
+        "average_credits": 11100,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7800,
+          "water_needed": 48000,
+          "firetrucks": 12,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 3,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": { "patient_transport": 20 },
+        "additional": {
+          "possible_patient": 2,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 130,
@@ -3189,12 +3392,19 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -3202,7 +3412,43 @@
       "rescue_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 131,
+        "name": "Pequeno incêndio numa fábrica",
+        "place": "Fábrica",
+        "place_array": ["Fábrica"],
+        "average_credits": 2200,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 132,
@@ -3217,11 +3463,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 30 },
@@ -3229,6 +3478,8 @@
       "possible_patient": 7,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -3237,7 +3488,51 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 132,
+        "name": "Grande incêndio numa fábrica",
+        "place": "Fábrica",
+        "place_array": ["Fábrica"],
+        "average_credits": 10400,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2,
+          "foam": 2
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 7,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 133,
@@ -3391,11 +3686,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 4,
       "water_tankers": 1,
+      "mobile_air_vehicles": 2,
       "police_cars": 2
     },
     "chances": { "water_tankers": 20 },
@@ -3466,8 +3764,12 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30 },
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
@@ -3654,7 +3956,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -3696,16 +4002,21 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 25 },
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Clínica médica"
     },
     "prerequisites": {
@@ -3714,7 +4025,47 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 152,
+        "name": "Incêndio em oficina de carpintaria",
+        "place": "Oficina de carpintaria",
+        "place_array": ["Oficina de carpintaria"],
+        "average_credits": 4600,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 25 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Clínica médica"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 153,
@@ -3729,16 +4080,19 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
       "platform_trucks": 50,
       "water_tankers": 20,
+      "mobile_air_vehicles": 20,
       "patient_transport": 60
     },
     "additional": {
@@ -4142,6 +4496,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40500,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -4258,7 +4613,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 12,
@@ -4380,7 +4739,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
@@ -4515,12 +4878,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
-    "chances": { "patient_transport": 50 },
+    "chances": { "mobile_air_vehicles": 30, "patient_transport": 50 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
@@ -4929,6 +5294,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "platform_trucks": 1
@@ -5240,6 +5606,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -5367,6 +5734,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5441,11 +5809,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 3,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
       "police_cars": 8
     },
@@ -5453,6 +5824,8 @@
     "additional": {
       "possible_patient": 15,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -5461,7 +5834,51 @@
       "police_stations": 6,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 221,
+        "name": "Incêndio na estação de trem (Grande)",
+        "place": "Estação de trem (tráfego regional)",
+        "place_array": ["Estação de trem (tráfego regional)"],
+        "average_credits": 11100,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7000,
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 8,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": { "water_tankers": 20, "patient_transport": 40 },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 13,
+          "police_stations": 6,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 222,
@@ -5852,7 +6269,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "kdow_orgl": 1 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4, "kdow_orgl": 1 },
     "chances": {
       "patient_transport": 40,
       "kdow_orgl": 25,
@@ -5884,6 +6301,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5918,12 +6336,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Cirurgião geral"
     },
     "prerequisites": {
@@ -5931,7 +6355,42 @@
       "rescue_stations": 1,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 239,
+        "name": "Fogo plano em habitação protegida",
+        "place": "Habitação Protegida",
+        "place_array": ["Habitação Protegida"],
+        "average_credits": 3900,
+        "generated_by": "Unidade de bombeiros militar",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+        "additional": {
+          "possible_patient": 1,
+          "possible_patient_min": 1,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Cirurgião geral"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 240,
@@ -5974,6 +6433,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6011,11 +6471,14 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "water_needed": 74500,
       "firetrucks": 25,
       "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 4,
       "water_tankers": 2,
+      "mobile_air_vehicles": 2,
       "hazmat_vehicles": 4,
       "police_cars": 8
     },
@@ -6052,6 +6515,7 @@
     "requirements": {
       "firetrucks": 11,
       "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "police_cars": 3
     },
@@ -6330,10 +6794,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -6582,6 +7049,290 @@
       "rescue_stations": 3,
       "police_stations": 1,
       "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 263,
+    "name": "Incêndio num trem de carga",
+    "place": "Estação de trem (tráfego regional)\nEstação de mercadorias\nPassagem de Nível\nCruzamento Ferroviário",
+    "place_array": [
+      "Estação de trem (tráfego regional)",
+      "Estação de mercadorias",
+      "Passagem de Nível",
+      "Cruzamento Ferroviário"
+    ],
+    "average_credits": 2200,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 264,
+    "name": "Grande acidente de carro num túnel",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 7400,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "pump": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Clínica médica"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 265,
+    "name": "Incêndio em restaurante de fast food",
+    "place": "Lanchonete de fast food",
+    "place_array": ["Lanchonete de fast food"],
+    "average_credits": 1850,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 266,
+    "name": "Incêndio industrial (pequeno)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4600,
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "hazmat_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [267],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirurgião geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 267,
+    "name": "Incêndio industrial (médio)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [268],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirurgião geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 268,
+    "name": "Incêndio industrial (grande)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 9600,
+      "water_needed": 20000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirurgião geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 269,
+    "name": "Incêndio num quarto",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Neurologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 270,
+    "name": "Incêndio em refinaria de petróleo",
+    "place": "Refinaria de petróleo",
+    "place_array": ["Refinaria de petróleo"],
+    "average_credits": 7700,
+    "generated_by": "Unidade de bombeiros militar",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 8400,
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 11
     },
     "alternate_version": null
   }
