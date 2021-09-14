@@ -405,7 +405,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -457,6 +461,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 7500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -537,7 +542,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
@@ -583,6 +592,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -686,33 +696,6 @@
     "alternate_version": null
   },
   {
-    "id": 33,
-    "name": "Небольшое возгорание в супермаркете",
-    "place": "Супермаркет (небольшой)",
-    "place_array": ["Супермаркет (небольшой)"],
-    "average_credits": 1500,
-    "generated_by": "Пожарная станция",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Терапевт общего профиля"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 5
-    },
-    "alternate_version": null
-  },
-  {
     "id": 34,
     "name": "Возгорание в больнице",
     "place": "Больница",
@@ -725,6 +708,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -736,6 +720,8 @@
       "possible_patient": 25,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -743,7 +729,45 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 34,
+        "name": "Возгорание в больнице",
+        "place": "Больница",
+        "place_array": ["Больница"],
+        "average_credits": 6400,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 25,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 35,
@@ -898,6 +922,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -915,6 +940,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -923,7 +950,53 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "Возгорание в автомастерской",
+        "place": "Автомастерская",
+        "place_array": ["Автомастерская"],
+        "average_credits": 7000,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "foam": 2
+        },
+        "chances": {
+          "water_tankers": 40,
+          "patient_transport": 50,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1298,6 +1371,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1307,6 +1381,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -1314,7 +1390,43 @@
       "rescue_stations": 2,
       "fire_stations": 9
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 60,
+        "name": "Возгорание в спортзале",
+        "place": "Школа",
+        "place_array": ["Школа"],
+        "average_credits": 2200,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 9
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 62,
@@ -1463,8 +1575,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
@@ -1479,6 +1593,8 @@
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -1487,7 +1603,52 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 68,
+        "name": "Большое возгорание в супермаркете",
+        "place": "Супермаркет (большой)",
+        "place_array": ["Супермаркет (большой)"],
+        "average_credits": 3200,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 1,
+          "pump": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 3,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 69,
@@ -1514,45 +1675,6 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 70,
-    "name": "Большое возгорание в супермаркете",
-    "place": "Супермаркет (большой)",
-    "place_array": ["Супермаркет (большой)"],
-    "average_credits": 3000,
-    "generated_by": "Пожарная станция",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "police_cars": 1
-    },
-    "chances": {
-      "water_tankers": 20,
-      "patient_transport": 30,
-      "patient_critical_care": 5
-    },
-    "additional": {
-      "possible_patient": 6,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Терапевт общего профиля"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 2,
-      "fire_stations": 8
     },
     "alternate_version": null
   },
@@ -1593,6 +1715,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -1662,6 +1785,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 37000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -1888,7 +2012,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3 },
+    "requirements": { "water_needed": 7500, "firetrucks": 3 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -2002,7 +2126,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -2141,6 +2269,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -2268,6 +2397,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
@@ -2295,6 +2425,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 2,
       "water_tankers": 1,
@@ -2469,7 +2600,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
@@ -2560,15 +2695,50 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 109,
+        "name": "Возгорание силоса",
+        "place": "Силос",
+        "place_array": ["Силос"],
+        "average_credits": 3200,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 20000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 8 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 110,
@@ -2798,6 +2968,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40500,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -2848,6 +3019,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -3803,6 +3975,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4110,7 +4283,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4 },
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 6,
@@ -4138,6 +4311,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -4192,6 +4366,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -4233,6 +4408,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 41000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4403,10 +4579,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 4,
+      "expansion_missions_ids": [319],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Терапевт общего профиля"
     },
@@ -4452,6 +4633,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 32000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4517,18 +4699,26 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 43000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "patient_transport": 30,
+      "patient_critical_care": 5
+    },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -4537,7 +4727,52 @@
       "police_stations": 3,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 181,
+        "name": "Пожар в офисном здании",
+        "place": "Офисное здание",
+        "place_array": ["Офисное здание"],
+        "average_credits": 7400,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 43000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 4,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 3,
+          "pump": 2
+        },
+        "chances": {
+          "mobile_air_vehicles": 50,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 3,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 182,
@@ -4552,6 +4787,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 48000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4565,6 +4801,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -4573,7 +4811,50 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 182,
+        "name": "Пожар на предприятии по переработке отходов",
+        "place": "Центр переработки ВО",
+        "place_array": ["Центр переработки ВО"],
+        "average_credits": 11100,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7800,
+          "water_needed": 48000,
+          "firetrucks": 12,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 3,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": { "patient_transport": 20, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 2,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 183,
@@ -4610,12 +4891,19 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -4623,7 +4911,43 @@
       "rescue_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 184,
+        "name": "Небольшой пожар на фабрике",
+        "place": "Фабрика",
+        "place_array": ["Фабрика"],
+        "average_credits": 2200,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 185,
@@ -4638,6 +4962,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4652,6 +4977,8 @@
       "possible_patient": 7,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -4660,7 +4987,51 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 185,
+        "name": "Крупный пожар на фабрике",
+        "place": "Фабрика",
+        "place_array": ["Фабрика"],
+        "average_credits": 10400,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2,
+          "foam": 2
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 7,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 186,
@@ -4814,6 +5185,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -5087,7 +5459,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -5194,7 +5570,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -5557,6 +5937,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -5569,6 +5950,8 @@
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Терапевт общего профиля"
     },
     "prerequisites": {
@@ -5577,7 +5960,47 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 222,
+        "name": "Пожар в столярной мастерской",
+        "place": "Cтолярная мастерская",
+        "place_array": ["Cтолярная мастерская"],
+        "average_credits": 4600,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Терапевт общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 223,
@@ -5592,6 +6015,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5997,7 +6421,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 12,
@@ -6364,6 +6792,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "platform_trucks": 1
@@ -6675,6 +7104,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -6802,6 +7232,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6876,6 +7307,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -6894,6 +7326,8 @@
     "additional": {
       "possible_patient": 15,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Травматология"
     },
     "prerequisites": {
@@ -6902,7 +7336,55 @@
       "police_stations": 6,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 271,
+        "name": "Пожар на ж/д станции (крупный)",
+        "place": "Железнодорожная станция",
+        "place_array": ["Железнодорожная станция"],
+        "average_credits": 11100,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7000,
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 8,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 40,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Травматология"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 13,
+          "police_stations": 6,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 272,
@@ -7266,7 +7748,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "kdow_orgl": 1 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4, "kdow_orgl": 1 },
     "chances": {
       "patient_transport": 40,
       "kdow_orgl": 25,
@@ -7298,6 +7780,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -7332,12 +7815,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Хирург общего профиля"
     },
     "prerequisites": {
@@ -7345,7 +7834,42 @@
       "rescue_stations": 1,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 288,
+        "name": "Пожар в закрытом помещении",
+        "place": "закрытом помещении",
+        "place_array": ["закрытом помещении"],
+        "average_credits": 3900,
+        "generated_by": "Пожарная станция",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+        "additional": {
+          "possible_patient": 1,
+          "possible_patient_min": 1,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Хирург общего профиля"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 289,
@@ -7388,6 +7912,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -7425,6 +7950,7 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "water_needed": 74500,
       "firetrucks": 25,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
@@ -7984,10 +8510,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -8236,6 +8765,290 @@
       "rescue_stations": 3,
       "police_stations": 1,
       "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 322,
+    "name": "Возгорание на поезде (грузовой поезд)",
+    "place": "Железнодорожная станция\nТоварная станция\nПешеходный переезд\nЖелезнодорожный переезд",
+    "place_array": [
+      "Железнодорожная станция",
+      "Товарная станция",
+      "Пешеходный переезд",
+      "Железнодорожный переезд"
+    ],
+    "average_credits": 2200,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 323,
+    "name": "Большое ДТП в тоннеле",
+    "place": "Тоннель",
+    "place_array": ["Тоннель"],
+    "average_credits": 7400,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "pump": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 324,
+    "name": "Возгорание в ресторане быстрого питания",
+    "place": "Ресторан быстрого питания",
+    "place_array": ["Ресторан быстрого питания"],
+    "average_credits": 1850,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 325,
+    "name": "Возгорание на промышленном предприятии (небольшое)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4600,
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "hazmat_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [326],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Хирург общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 326,
+    "name": "Возгорание на промышленном предприятии (среднее)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [327],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Хирург общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 327,
+    "name": "Возгорание на промышленном предприятии (большое)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 9600,
+      "water_needed": 20000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Хирург общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 328,
+    "name": "Возгорание в спальне",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Неврология"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 329,
+    "name": "Возгорание на нефтеперерабатывающем заводе",
+    "place": "Нефтеперерабатывающий завод",
+    "place_array": ["Нефтеперерабатывающий завод"],
+    "average_credits": 7700,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 8400,
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 11
     },
     "alternate_version": null
   }
