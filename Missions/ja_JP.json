@@ -405,7 +405,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -457,6 +461,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 7500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -537,7 +542,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
@@ -583,6 +592,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -686,33 +696,6 @@
     "alternate_version": null
   },
   {
-    "id": 33,
-    "name": "小型スーパーの火災",
-    "place": "スーパーマーケット（小型）",
-    "place_array": ["スーパーマーケット（小型）"],
-    "average_credits": 1500,
-    "generated_by": "消防局",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "一般内科"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 5
-    },
-    "alternate_version": null
-  },
-  {
     "id": 34,
     "name": "病院火災",
     "place": "病院",
@@ -725,6 +708,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -736,6 +720,8 @@
       "possible_patient": 25,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -743,7 +729,45 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 34,
+        "name": "病院火災",
+        "place": "病院",
+        "place_array": ["病院"],
+        "average_credits": 6400,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 25,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 35,
@@ -898,6 +922,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -915,6 +940,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -923,7 +950,53 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "車整備店にて火災",
+        "place": "車整備店",
+        "place_array": ["車整備店"],
+        "average_credits": 7000,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "foam": 2
+        },
+        "chances": {
+          "water_tankers": 40,
+          "patient_transport": 50,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1298,6 +1371,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1307,6 +1381,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -1314,7 +1390,43 @@
       "rescue_stations": 2,
       "fire_stations": 9
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 60,
+        "name": "スポーツホールにて火災",
+        "place": "学校",
+        "place_array": ["学校"],
+        "average_credits": 2200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 9
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 61,
@@ -1490,8 +1602,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
@@ -1506,6 +1620,8 @@
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -1514,7 +1630,52 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 68,
+        "name": "大型スーパーの火災",
+        "place": "スーパーマーケット（大型）",
+        "place_array": ["スーパーマーケット（大型）"],
+        "average_credits": 3200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 1,
+          "pump": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 3,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 69,
@@ -1541,45 +1702,6 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 70,
-    "name": "大型スーパーの火災",
-    "place": "スーパーマーケット（大型）",
-    "place_array": ["スーパーマーケット（大型）"],
-    "average_credits": 3000,
-    "generated_by": "消防局",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "police_cars": 1
-    },
-    "chances": {
-      "water_tankers": 20,
-      "patient_transport": 30,
-      "patient_critical_care": 5
-    },
-    "additional": {
-      "possible_patient": 6,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "一般内科"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 2,
-      "fire_stations": 8
     },
     "alternate_version": null
   },
@@ -1620,6 +1742,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -1689,6 +1812,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 37000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -1747,6 +1871,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -1875,15 +2000,50 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 81,
+        "name": "サイロ火事",
+        "place": "サイロ",
+        "place_array": ["サイロ"],
+        "average_credits": 3200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 20000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 8 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 82,
@@ -1929,6 +2089,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -2481,6 +2642,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -2788,7 +2950,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4 },
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 6,
@@ -2816,6 +2978,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -2870,6 +3033,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -2911,6 +3075,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 41000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -3081,10 +3246,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 4,
+      "expansion_missions_ids": [168, 169],
       "filter_id": "firehouse_missions",
       "patient_specializations": "一般内科"
     },
@@ -3108,6 +3278,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 32000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -3173,18 +3344,26 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "patient_transport": 30,
+      "patient_critical_care": 5
+    },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -3193,7 +3372,52 @@
       "police_stations": 3,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 129,
+        "name": "オフィスビル火災",
+        "place": "オフィスビル",
+        "place_array": ["オフィスビル"],
+        "average_credits": 7400,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 4,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 3,
+          "pump": 2
+        },
+        "chances": {
+          "mobile_air_vehicles": 50,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 3,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 130,
@@ -3208,6 +3432,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 48000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -3221,6 +3446,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -3229,7 +3456,50 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 130,
+        "name": "リサイクルセンターの火事",
+        "place": "リサイクルセンター",
+        "place_array": ["リサイクルセンター"],
+        "average_credits": 11100,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7800,
+          "water_needed": 48000,
+          "firetrucks": 12,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 3,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": { "patient_transport": 20, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 2,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 131,
@@ -3266,12 +3536,19 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -3279,7 +3556,43 @@
       "rescue_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 132,
+        "name": "工場の小規模火災",
+        "place": "工場",
+        "place_array": ["工場"],
+        "average_credits": 2200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 133,
@@ -3294,6 +3607,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -3308,6 +3622,8 @@
       "possible_patient": 7,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -3316,7 +3632,51 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 133,
+        "name": "工場全焼",
+        "place": "工場",
+        "place_array": ["工場"],
+        "average_credits": 10400,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2,
+          "foam": 2
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 7,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 134,
@@ -3470,6 +3830,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -3743,7 +4104,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -3785,6 +4150,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -3797,6 +4163,8 @@
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -3805,7 +4173,47 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 153,
+        "name": "大工の工房火災",
+        "place": "大工の工房",
+        "place_array": ["大工の工房"],
+        "average_credits": 4600,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 154,
@@ -3820,6 +4228,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4052,6 +4461,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4075,8 +4485,8 @@
   {
     "id": 164,
     "name": "貨物列車火災",
-    "place": "歩行者用踏切",
-    "place_array": ["歩行者用踏切"],
+    "place": "駅（普通車両）\n雑貨屋\n踏切\n歩行者用踏切",
+    "place_array": ["駅（普通車両）", "雑貨屋", "踏切", "歩行者用踏切"],
     "average_credits": 2000,
     "generated_by": "消防局",
     "icons": [
@@ -4085,6 +4495,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -4092,81 +4503,44 @@
       "mobile_air_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
-    "alternate_version": null
-  },
-  {
-    "id": 165,
-    "name": "貨物列車火災",
-    "place": "踏切",
-    "place_array": ["踏切"],
-    "average_credits": 2000,
-    "generated_by": "消防局",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
     },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 13 },
-    "alternate_version": null
-  },
-  {
-    "id": 166,
-    "name": "貨物列車火災",
-    "place": "駅（普通車両）",
-    "place_array": ["駅（普通車両）"],
-    "average_credits": 2000,
-    "generated_by": "消防局",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1
-    },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
-    "alternate_version": null
-  },
-  {
-    "id": 167,
-    "name": "貨物列車火災",
-    "place": "雑貨屋",
-    "place_array": ["雑貨屋"],
-    "average_credits": 2000,
-    "generated_by": "消防局",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1
-    },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 164,
+        "name": "貨物列車火災",
+        "place": "駅（普通車両）\n雑貨屋\n踏切\n歩行者用踏切",
+        "place_array": ["駅（普通車両）", "雑貨屋", "踏切", "歩行者用踏切"],
+        "average_credits": 2200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 16000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 13 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 168,
@@ -4181,6 +4555,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4194,6 +4569,8 @@
     "additional": {
       "possible_patient": 14,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -4202,7 +4579,48 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 168,
+        "name": "トンネル内での大規模車両事故",
+        "place": "トンネル",
+        "place_array": ["トンネル"],
+        "average_credits": 7400,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 3,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 14,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 7,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 169,
@@ -4217,6 +4635,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -4233,6 +4652,8 @@
     "additional": {
       "possible_patient": 8,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般内科"
     },
     "prerequisites": {
@@ -4240,7 +4661,50 @@
       "rescue_stations": 4,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 169,
+        "name": "トンネル内での多重車両火災",
+        "place": "トンネル",
+        "place_array": ["トンネル"],
+        "average_credits": 5400,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 1,
+          "mobile_command_vehicles": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "pump": 2
+        },
+        "chances": {
+          "water_tankers": 40,
+          "mobile_air_vehicles": 50,
+          "patient_transport": 60,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 8,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般内科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 4,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 170,
@@ -4255,6 +4719,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4263,14 +4728,49 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
     },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 170,
+        "name": "ファストフードレストラン火災",
+        "place": "ファストフードレストラン",
+        "place_array": ["ファストフードレストラン"],
+        "average_credits": 2550,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "mobile_air_vehicles": 1,
+          "pump": 1,
+          "foam": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 6 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 171,
-    "name": "産業火災",
+    "name": "産業火災 (中)",
     "place": "",
     "place_array": [],
     "average_credits": 5300,
@@ -4281,6 +4781,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4290,8 +4791,11 @@
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 4,
+      "expansion_missions_ids": [266],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "一般外科"
     },
     "prerequisites": {
@@ -4299,7 +4803,48 @@
       "rescue_stations": 2,
       "fire_stations": 6
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 171,
+        "name": "産業火災 (中)",
+        "place": "",
+        "place_array": [],
+        "average_credits": 6200,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "hazmat_vehicles": 1,
+          "pump": 2,
+          "foam": 1
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 4,
+          "expansion_missions_ids": [266],
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "一般外科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 172,
@@ -4443,7 +4988,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 12,
@@ -4565,7 +5114,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -4704,6 +5257,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5119,6 +5673,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "platform_trucks": 1
@@ -5430,6 +5985,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -5557,6 +6113,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5631,6 +6188,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -5657,7 +6215,53 @@
       "police_stations": 6,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 225,
+        "name": "鉄道駅火災（大規模)",
+        "place": "駅（普通車両）",
+        "place_array": ["駅（普通車両）"],
+        "average_credits": 11100,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7000,
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 8,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 40,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "patient_specializations": "災害外科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 13,
+          "police_stations": 6,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 226,
@@ -5994,7 +6598,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "kdow_orgl": 1 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4, "kdow_orgl": 1 },
     "chances": {
       "patient_transport": 40,
       "kdow_orgl": 25,
@@ -6026,6 +6630,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6060,7 +6665,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 1,
@@ -6073,7 +6682,40 @@
       "rescue_stations": 1,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 241,
+        "name": "養護施設火災",
+        "place": "養護施設",
+        "place_array": ["養護施設"],
+        "average_credits": 3900,
+        "generated_by": "消防局",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+        "additional": {
+          "possible_patient": 1,
+          "possible_patient_min": 1,
+          "filter_id": "firehouse_missions",
+          "patient_specializations": "一般外科"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 242,
@@ -6116,6 +6758,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6153,6 +6796,7 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "water_needed": 74500,
       "firetrucks": 25,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
@@ -6468,10 +7112,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -6720,6 +7367,143 @@
       "rescue_stations": 3,
       "police_stations": 1,
       "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 265,
+    "name": "産業火災（小)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "消防局",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4600,
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "hazmat_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [171],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 266,
+    "name": "産業火災 (大)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "消防局",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 9600,
+      "water_needed": 20000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 267,
+    "name": "寝室火災",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "消防局",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "神経科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 268,
+    "name": "石油精製所火災",
+    "place": "石油精製所",
+    "place_array": ["石油精製所"],
+    "average_credits": 7700,
+    "generated_by": "消防局",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 8400,
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 11
     },
     "alternate_version": null
   }
