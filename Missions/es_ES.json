@@ -405,7 +405,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -457,6 +461,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 7500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -537,7 +542,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
@@ -583,6 +592,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -686,33 +696,6 @@
     "alternate_version": null
   },
   {
-    "id": 33,
-    "name": "Incendio en supermercado pequeño",
-    "place": "Supermercado (pequeño)",
-    "place_array": ["Supermercado (pequeño)"],
-    "average_credits": 1500,
-    "generated_by": "Parque de bomberos",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Medicina interna general"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 5
-    },
-    "alternate_version": null
-  },
-  {
     "id": 34,
     "name": "Incendio en hospital",
     "place": "Hospital",
@@ -725,6 +708,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -736,6 +720,8 @@
       "possible_patient": 25,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -743,7 +729,45 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 34,
+        "name": "Incendio en hospital",
+        "place": "Hospital",
+        "place_array": ["Hospital"],
+        "average_credits": 6400,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 25,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 35,
@@ -898,6 +922,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -915,6 +940,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -923,7 +950,53 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "Incendio en taller",
+        "place": "Taller",
+        "place_array": ["Taller"],
+        "average_credits": 7000,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "foam": 2
+        },
+        "chances": {
+          "water_tankers": 40,
+          "patient_transport": 50,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1298,6 +1371,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1307,6 +1381,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -1314,7 +1390,43 @@
       "rescue_stations": 2,
       "fire_stations": 9
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 60,
+        "name": "Estadio en llamas",
+        "place": "Escuela",
+        "place_array": ["Escuela"],
+        "average_credits": 2200,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 12500,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 9
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 61,
@@ -1329,6 +1441,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "water_needed": 7500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2
@@ -1493,8 +1606,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
@@ -1509,6 +1624,8 @@
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -1517,7 +1634,52 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 68,
+        "name": "Incendio en supermercado grande",
+        "place": "Supermercado (grande)",
+        "place_array": ["Supermercado (grande)"],
+        "average_credits": 3200,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 21000,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 1,
+          "pump": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 3,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 69,
@@ -1544,45 +1706,6 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
-    },
-    "alternate_version": null
-  },
-  {
-    "id": 70,
-    "name": "Incendio en supermercado grande",
-    "place": "Supermercado (grande)",
-    "place_array": ["Supermercado (grande)"],
-    "average_credits": 3000,
-    "generated_by": "Parque de bomberos",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "police_cars": 1
-    },
-    "chances": {
-      "water_tankers": 20,
-      "patient_transport": 30,
-      "patient_critical_care": 5
-    },
-    "additional": {
-      "possible_patient": 6,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Medicina interna general"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 2,
-      "fire_stations": 8
     },
     "alternate_version": null
   },
@@ -1623,6 +1746,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -1692,6 +1816,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 37000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -1762,8 +1887,16 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "patient_transport": 30,
+      "patient_critical_care": 5
+    },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
@@ -1959,7 +2092,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 6, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 6,
@@ -2368,7 +2505,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -2507,6 +2648,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -2616,6 +2758,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
@@ -2643,6 +2786,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 13500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 2,
       "water_tankers": 1,
@@ -2838,7 +2982,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
@@ -2929,15 +3077,50 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 123,
+        "name": "Fuego en el granero",
+        "place": "Granero",
+        "place_array": ["Granero"],
+        "average_credits": 3200,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 20000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 8 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 124,
@@ -2983,6 +3166,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -3725,6 +3909,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40500,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -3775,6 +3960,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 18500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4082,7 +4268,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4 },
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 6,
@@ -4110,6 +4296,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -4164,6 +4351,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -4205,6 +4393,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 41000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4375,10 +4564,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 4,
+      "expansion_missions_ids": [314],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Medicina interna general"
     },
@@ -4402,6 +4596,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 32000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4467,18 +4662,26 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 43000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
-    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "patient_transport": 30,
+      "patient_critical_care": 5
+    },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -4487,7 +4690,52 @@
       "police_stations": 3,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 179,
+        "name": "Incendio en bloque de oficinas",
+        "place": "Edificio de oficinas",
+        "place_array": ["Edificio de oficinas"],
+        "average_credits": 7400,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 43000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 4,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 3,
+          "pump": 2
+        },
+        "chances": {
+          "mobile_air_vehicles": 50,
+          "patient_transport": 30,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 3,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 180,
@@ -4502,6 +4750,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 48000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4515,6 +4764,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -4523,7 +4774,50 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 180,
+        "name": "Incendio en el centro de reciclaje",
+        "place": "Centro de reciclaje",
+        "place_array": ["Centro de reciclaje"],
+        "average_credits": 11100,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7800,
+          "water_needed": 48000,
+          "firetrucks": 12,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 3,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": { "patient_transport": 20, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 2,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 181,
@@ -4560,12 +4854,19 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -4573,7 +4874,43 @@
       "rescue_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 182,
+        "name": "Pequeño incendio industrial",
+        "place": "Fábrica",
+        "place_array": ["Fábrica"],
+        "average_credits": 2200,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 7500,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "pump": 1
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 183,
@@ -4588,6 +4925,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 26000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4602,6 +4940,8 @@
       "possible_patient": 7,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -4610,7 +4950,51 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 183,
+        "name": "Gran incendio industrial",
+        "place": "Fábrica",
+        "place_array": ["Fábrica"],
+        "average_credits": 10400,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 9200,
+          "water_needed": 26000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2,
+          "foam": 2
+        },
+        "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 7,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 184,
@@ -4764,6 +5148,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4820,7 +5205,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -4904,7 +5293,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -5363,7 +5756,7 @@
   },
   {
     "id": 214,
-    "name": "Orden de Busca y Captura",
+    "name": "Orden de Busca y Caputra",
     "place": "",
     "place_array": [],
     "average_credits": 2000,
@@ -5695,6 +6088,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -5707,6 +6101,8 @@
     "additional": {
       "possible_patient": 3,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Medicina interna general"
     },
     "prerequisites": {
@@ -5715,7 +6111,47 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 226,
+        "name": "Incendio en taller de carpintería",
+        "place": "Taller de carpintería",
+        "place_array": ["Taller de carpintería"],
+        "average_credits": 4600,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+        "additional": {
+          "possible_patient": 3,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Medicina interna general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 227,
@@ -5730,6 +6166,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 16000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5837,7 +6274,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 12,
@@ -6204,6 +6645,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 4,
       "platform_trucks": 1
@@ -6520,6 +6962,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -6647,6 +7090,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6721,6 +7165,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 31000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -6739,6 +7184,8 @@
     "additional": {
       "possible_patient": 15,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatología"
     },
     "prerequisites": {
@@ -6747,7 +7194,55 @@
       "police_stations": 6,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 266,
+        "name": "Incendio en estación de tren (Grande)",
+        "place": "Parada de tren (cercanías)",
+        "place_array": ["Parada de tren (cercanías)"],
+        "average_credits": 11100,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 7000,
+          "water_needed": 31000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 3,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 8,
+          "pump": 3,
+          "foam": 1
+        },
+        "chances": {
+          "water_tankers": 20,
+          "patient_transport": 40,
+          "patient_critical_care": 5
+        },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatología"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 13,
+          "police_stations": 6,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 267,
@@ -7115,7 +7610,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "kdow_orgl": 1 },
+    "requirements": { "water_needed": 10000, "firetrucks": 4, "kdow_orgl": 1 },
     "chances": {
       "patient_transport": 40,
       "kdow_orgl": 25,
@@ -7147,6 +7642,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -7181,12 +7677,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Cirugía general"
     },
     "prerequisites": {
@@ -7194,7 +7696,42 @@
       "rescue_stations": 1,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 283,
+        "name": "Incendio en una residencia",
+        "place": "Residencia",
+        "place_array": ["Residencia"],
+        "average_credits": 3900,
+        "generated_by": "Parque de bomberos",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+        "additional": {
+          "possible_patient": 1,
+          "possible_patient_min": 1,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Cirugía general"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 284,
@@ -7237,6 +7774,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -7274,6 +7812,7 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "water_needed": 74500,
       "firetrucks": 25,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
@@ -7836,10 +8375,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "water_tankers": 1,
+      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -8088,6 +8630,290 @@
       "rescue_stations": 3,
       "police_stations": 1,
       "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 317,
+    "name": "Incendio en tren (tren de mercancías)",
+    "place": "Parada de tren (cercanías)\nEstación de mercanías\nPaso a nivel\nPaso de peatones",
+    "place_array": [
+      "Parada de tren (cercanías)",
+      "Estación de mercanías",
+      "Paso a nivel",
+      "Paso de peatones"
+    ],
+    "average_credits": 2200,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 318,
+    "name": "Gran accidente de vehículos en túnel",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 7400,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "pump": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 319,
+    "name": "Incendio en restaurante de comida rápida",
+    "place": "Restaurante de comida rápida",
+    "place_array": ["Restaurante de comida rápida"],
+    "average_credits": 1850,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 320,
+    "name": "Incendio industrial (pequeño)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4600,
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "hazmat_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [321],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirugía general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 321,
+    "name": "Incendio industrial (medio)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [322],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirugía general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 322,
+    "name": "Incendio industrial (grande)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 9600,
+      "water_needed": 20000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Cirugía general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 323,
+    "name": "Incendio en habitación",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Neurología"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 324,
+    "name": "Incendio en refinería petrolera",
+    "place": "Refinería petrolera",
+    "place_array": ["Refinería petrolera"],
+    "average_credits": 7700,
+    "generated_by": "Parque de bomberos",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 8400,
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 11
     },
     "alternate_version": null
   }
