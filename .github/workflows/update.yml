@@ -506,7 +506,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
 
-  en_UK:
+  en_GB:
     runs-on: ubuntu-latest
     continue-on-error: true
     needs: uk_UA
@@ -519,8 +519,8 @@ jobs:
     - name: Update
       run: |
         git pull
-        curl -X GET https://www.missionchief.co.uk/einsaetze.json > Missions/en_UK.json
-        curl -X GET https://www.missionchief.co.uk/alliance_event_types.json > Events/en_UK.json
+        curl -X GET https://www.missionchief.co.uk/einsaetze.json > Missions/en_GB.json
+        curl -X GET https://www.missionchief.co.uk/alliance_event_types.json > Events/en_GB.json
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v3.3
