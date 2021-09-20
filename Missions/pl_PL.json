@@ -5301,7 +5301,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 226, 182],
+      "expansion_missions_ids": [124, 213, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -11234,6 +11234,81 @@
       "allow_traffic_car_instead_of_fustw": true
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 441,
+    "name": "Wypadek kolejowy - Zderzenie czołowe dwóch pociągów",
+    "place": "Przejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": ["Przejazd kolejowy", "Przejazd kolejowo-drogowy"],
+    "average_credits": 28000,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "fwk": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 8,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 10,
+      "patient_critical_care": 15
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 18,
+      "expansion_missions_ids": [349],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 2,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 442,
+    "name": "Pożar lokomotywy",
+    "place": "Dworzec kolejowy (ruch podmiejski)\nDworzec kolejowy (ruch podmiejski i dalekobieżny)\nStacja towarowa\nPrzejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": [
+      "Dworzec kolejowy (ruch podmiejski)",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)",
+      "Stacja towarowa",
+      "Przejazd kolejowy",
+      "Przejazd kolejowo-drogowy"
+    ],
+    "average_credits": 5000,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 18000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [211],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 18 },
     "alternate_version": null
   }
 ]
