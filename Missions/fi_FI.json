@@ -11,7 +11,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -29,7 +29,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -47,7 +47,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [27, 16, 19],
@@ -68,7 +68,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [27],
@@ -89,7 +89,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14],
@@ -111,10 +111,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
+      "water_needed": 18700,
+      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "platform_trucks": 1
     },
     "chances": { "platform_trucks": 30, "patient_transport": 50 },
     "additional": {
@@ -137,7 +137,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 8000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -155,7 +155,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14],
@@ -176,7 +176,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 2500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [20, 22, 6],
@@ -197,7 +197,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14, 6],
@@ -208,7 +208,7 @@
   },
   {
     "id": 10,
-    "name": "411 Traktoripalo",
+    "name": "412 Traktoripalo",
     "place": "Maatila",
     "place_array": ["Maatila"],
     "average_credits": 600,
@@ -218,7 +218,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 5900, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -236,7 +236,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -277,8 +277,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "water_tankers": 1 },
-    "chances": {},
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": { "battalion_chief_vehicles": 33 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "alternate_version": null
@@ -295,10 +299,10 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "water_tankers": 1 },
+    "requirements": { "water_needed": 12000, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [15],
+      "expansion_missions_ids": [15, 329],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -316,9 +320,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "water_tankers": 1 },
+    "requirements": { "water_needed": 14800, "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [331],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "alternate_version": null
   },
@@ -334,8 +341,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
+    "requirements": {
+      "water_needed": 4500,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": { "battalion_chief_vehicles": 33 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "alternate_version": null
@@ -352,7 +363,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -370,7 +381,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -388,7 +399,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -407,11 +418,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
-    "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
+    "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
@@ -433,6 +444,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 500,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -458,10 +470,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 21000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "platform_trucks": 1
     },
     "chances": { "platform_trucks": 100 },
     "additional": { "filter_id": "firehouse_missions" },
@@ -480,7 +492,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -498,7 +510,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -540,9 +552,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -570,7 +582,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "water_tankers": 1 },
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
@@ -589,10 +605,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1
+      "heavy_rescue_vehicles": 1
     },
     "chances": {},
     "additional": {
@@ -636,10 +652,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 11000,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "platform_trucks": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -658,7 +674,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "water_tankers": 1 },
+    "requirements": { "water_needed": 13500, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -676,7 +692,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 25000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
@@ -704,17 +724,20 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 55000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 3,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 3
+      "heavy_rescue_vehicles": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 25,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -722,7 +745,45 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 34,
+        "name": "403 Sairaalapalo",
+        "place": "Sairaala",
+        "place_array": ["Sairaala"],
+        "average_credits": 8500,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 85000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 2,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+        "additional": {
+          "possible_patient": 25,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 36,
@@ -856,11 +917,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 3700,
+      "water_needed": 45000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 3,
       "hazmat_vehicles": 1,
       "police_cars": 2
     },
@@ -869,6 +931,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 25,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -877,7 +941,48 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "403 Autokorjaamopalo",
+        "place": "Autokorjaamo",
+        "place_array": ["Autokorjaamo"],
+        "average_credits": 7000,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 3700,
+          "water_needed": 60000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 50 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 25,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1235,9 +1340,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 11500,
       "firetrucks": 2,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -1267,7 +1372,7 @@
     "name": "402 Urheiluhallipalo",
     "place": "Koulu",
     "place_array": ["Koulu"],
-    "average_credits": 2000,
+    "average_credits": 3500,
     "generated_by": "Paloasema",
     "icons": [
       "/images/fire_gruen.png",
@@ -1275,6 +1380,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 38000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1284,6 +1390,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 20,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -1291,7 +1399,43 @@
       "rescue_stations": 2,
       "fire_stations": 9
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 60,
+        "name": "403 Urheiluhallipalo",
+        "place": "Koulu",
+        "place_array": ["Koulu"],
+        "average_credits": 4500,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 48000,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 50 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 20,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 9
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 61,
@@ -1305,7 +1449,12 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 13500,
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 1
+    },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 4,
@@ -1400,7 +1549,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 12000, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -1419,10 +1568,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
+      "water_needed": 18700,
+      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "platform_trucks": 1
     },
     "chances": { "platform_trucks": 30, "patient_transport": 50 },
     "additional": {
@@ -1470,11 +1619,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 46500,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 3,
       "police_cars": 1
     },
     "chances": { "patient_transport": 30 },
@@ -1482,6 +1631,8 @@
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 20,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -1490,7 +1641,47 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 68,
+        "name": "403 Valintamyymäläpalo, suuri",
+        "place": "Valintamyymälä (iso)",
+        "place_array": ["Valintamyymälä (iso)"],
+        "average_credits": 4000,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 51500,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "police_cars": 1,
+          "hose": 1
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 20,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 69,
@@ -1533,18 +1724,20 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 46500,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
       "police_cars": 1
     },
-    "chances": { "water_tankers": 20, "patient_transport": 30 },
+    "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 6,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 20,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -1553,7 +1746,47 @@
       "police_stations": 2,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 70,
+        "name": "403 Valintamyymäläpalo, suuri",
+        "place": "Valintamyymälä (iso)",
+        "place_array": ["Valintamyymälä (iso)"],
+        "average_credits": 4000,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 51500,
+          "firetrucks": 6,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "police_cars": 1,
+          "hose": 1
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 6,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 20,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 71,
@@ -1593,10 +1826,11 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 21500,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
       "hazmat_vehicles": 1
     },
     "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
@@ -1659,20 +1893,55 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 96000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 3
+      "heavy_rescue_vehicles": 2
     },
     "chances": {},
     "additional": {
       "only_alliance_mission": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 1
     },
     "prerequisites": { "main_building": 0 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 74,
+        "name": "433 Suuri tulipalo",
+        "place": "",
+        "place_array": [],
+        "average_credits": 12210,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/blast_gruen.png",
+          "/images/blast_gelb.png",
+          "/images/blast_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 96000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "hose": 4,
+          "pump": 4
+        },
+        "chances": {},
+        "additional": {
+          "only_alliance_mission": true,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 75,
@@ -1957,15 +2226,49 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 75500,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
-      "platform_trucks": 3,
-      "water_tankers": 3
+      "platform_trucks": 3
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 15 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 85,
+        "name": "403 Maatilan tulipalo, suuri",
+        "place": "Maatila",
+        "place_array": ["Maatila"],
+        "average_credits": 10300,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 75500,
+          "firetrucks": 9,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 3,
+          "hose": 3,
+          "pump": 2
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 15 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 86,
@@ -2004,15 +2307,49 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1200,
+      "water_needed": 24500,
       "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
-    "chances": { "water_tankers": 30 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 2
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 87,
+        "name": "433 Kaatopaikan tulipalo",
+        "place": "Kaatopaikka",
+        "place_array": ["Kaatopaikka"],
+        "average_credits": 4700,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1800,
+          "water_needed": 30000,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 2,
+          "hose": 2,
+          "pump": 2
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 8 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 88,
@@ -2291,7 +2628,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -2306,14 +2643,14 @@
     "name": "401 Hotellipalo, pieni",
     "place": "Hotelli",
     "place_array": ["Hotelli"],
-    "average_credits": 3000,
+    "average_credits": 2000,
     "generated_by": "Paloasema",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 11000, "firetrucks": 2 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 6,
@@ -2341,6 +2678,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -2395,22 +2733,20 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
       "police_cars": 3
     },
-    "chances": {
-      "water_tankers": 10,
-      "patient_transport": 40,
-      "patient_critical_care": 10
-    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 20,
       "expansion_missions_ids": [104],
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -2419,7 +2755,46 @@
       "police_stations": 3,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 103,
+        "name": "403 Hotellipalo, suuri",
+        "place": "Hotelli",
+        "place_array": ["Hotelli"],
+        "average_credits": 8300,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 35000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 1,
+          "police_cars": 3,
+          "hose": 1
+        },
+        "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+        "additional": {
+          "possible_patient": 20,
+          "expansion_missions_ids": [104],
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 10,
+          "police_stations": 3,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 104,
@@ -2434,12 +2809,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 55000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "police_cars": 6
     },
@@ -2447,6 +2822,8 @@
     "additional": {
       "possible_patient": 50,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -2455,7 +2832,47 @@
       "police_stations": 6,
       "fire_stations": 20
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 104,
+        "name": "403 Hotellipalo, erittäin suuri",
+        "place": "Hotelli",
+        "place_array": ["Hotelli"],
+        "average_credits": 12600,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 55000,
+          "firetrucks": 14,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "mobile_air_vehicles": 1,
+          "police_cars": 6,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 40, "patient_critical_care": 20 },
+        "additional": {
+          "possible_patient": 50,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 15,
+          "police_stations": 6,
+          "fire_stations": 20
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 105,
@@ -2493,17 +2910,19 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 4
+      "heavy_rescue_vehicles": 1
     },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -2511,7 +2930,45 @@
       "rescue_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 106,
+        "name": "403 Logistiikkakeskuksen tulipalo",
+        "place": "Varastorakennus",
+        "place_array": ["Varastorakennus"],
+        "average_credits": 9300,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 80000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "hose": 3,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 60 },
+        "additional": {
+          "possible_patient": 2,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 107,
@@ -2526,9 +2983,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35500,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
-      "water_tankers": 3
+      "battalion_chief_vehicles": 2
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2548,9 +3005,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35500,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
-      "water_tankers": 3
+      "battalion_chief_vehicles": 2
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2570,9 +3027,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35500,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
-      "water_tankers": 3
+      "battalion_chief_vehicles": 2
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2592,9 +3049,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35500,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
-      "water_tankers": 3
+      "battalion_chief_vehicles": 2
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2650,6 +3107,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 24000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -2657,11 +3115,7 @@
       "water_tankers": 1,
       "mobile_air_vehicles": 1
     },
-    "chances": {
-      "water_tankers": 40,
-      "mobile_air_vehicles": 50,
-      "patient_transport": 60
-    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 60 },
     "additional": {
       "possible_patient": 8,
       "expansion_missions_ids": [111],
@@ -2688,10 +3142,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 22500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1
     },
     "chances": {},
@@ -2715,11 +3169,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 55500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
-      "water_tankers": 3,
       "hazmat_vehicles": 1
     },
     "chances": { "patient_transport": 30 },
@@ -2727,6 +3181,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleiskirurgi"
     },
     "prerequisites": {
@@ -2734,7 +3190,46 @@
       "rescue_stations": 2,
       "fire_stations": 6
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 114,
+        "name": "403 Teollisuusrakennuspalo",
+        "place": "",
+        "place_array": [],
+        "average_credits": 5900,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1800,
+          "water_needed": 30000,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "hazmat_vehicles": 1,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleiskirurgi"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 115,
@@ -2778,9 +3273,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "water_needed": 3500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -2919,7 +3414,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 12000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 4,
@@ -2947,12 +3446,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2500,
+      "water_needed": 76500,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
       "platform_trucks": 3,
       "heavy_rescue_vehicles": 4,
-      "water_tankers": 4,
       "mobile_air_vehicles": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4
@@ -2962,6 +3462,8 @@
       "possible_patient": 10,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 3,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -2970,7 +3472,51 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 122,
+        "name": "403 Voimalaitospalo",
+        "place": "Voimalaitos",
+        "place_array": ["Voimalaitos"],
+        "average_credits": 15800,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 2500,
+          "water_needed": 76500,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 4,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 3,
+          "heavy_rescue_vehicles": 4,
+          "mobile_air_vehicles": 2,
+          "hazmat_vehicles": 1,
+          "police_cars": 4,
+          "hose": 3,
+          "pump": 2
+        },
+        "chances": { "patient_transport": 60 },
+        "additional": {
+          "possible_patient": 10,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 3,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 8,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 123,
@@ -3012,11 +3558,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
+      "water_needed": 59000,
+      "firetrucks": 8,
       "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
+      "platform_trucks": 3,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 3,
       "police_cars": 3
     },
     "chances": { "patient_transport": 30 },
@@ -3024,6 +3570,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 30,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -3032,7 +3580,46 @@
       "police_stations": 3,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 124,
+        "name": "403 Toimistorakennuspalo",
+        "place": "Toimistorakennus",
+        "place_array": ["Toimistorakennus"],
+        "average_credits": 7700,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 62500,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 4,
+          "heavy_rescue_vehicles": 2,
+          "police_cars": 3
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 30,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 3,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 125,
@@ -3100,12 +3687,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 64800,
       "firetrucks": 12,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 3,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
       "police_cars": 2
     },
@@ -3158,7 +3745,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 6700,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
@@ -3186,12 +3777,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 75500,
       "firetrucks": 8,
-      "battalion_chief_vehicles": 4,
+      "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 4,
       "mobile_air_vehicles": 1,
       "police_cars": 2
     },
@@ -3200,6 +3791,8 @@
       "possible_patient": 7,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -3208,7 +3801,48 @@
       "police_stations": 2,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 130,
+        "name": "403 Tehdaspalo, suuri",
+        "place": "Tehdas",
+        "place_array": ["Tehdas"],
+        "average_credits": 10400,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 75500,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "mobile_air_vehicles": 1,
+          "police_cars": 2,
+          "hose": 3
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 7,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "police_stations": 2,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 131,
@@ -3832,7 +4466,7 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -3854,7 +4488,7 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 5800, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -3877,6 +4511,7 @@
       "/images/ghost_rot.png"
     ],
     "requirements": {
+      "water_needed": 500,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1
@@ -4069,9 +4704,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 17500,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -4114,11 +4749,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
       "police_cars": 2
     },
@@ -4149,11 +4784,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 29500,
       "firetrucks": 6,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 2,
       "mobile_air_vehicles": 1,
       "police_cars": 2
     },
@@ -4207,7 +4843,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4229,7 +4865,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1500, "firetrucks": 1 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
@@ -4253,7 +4889,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4275,7 +4911,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 3500, "firetrucks": 1 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
@@ -4441,7 +5077,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 12,
@@ -4497,7 +5137,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 2500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4519,7 +5159,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 600, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4541,7 +5181,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 2500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4564,9 +5204,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 19500,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
     "additional": {
@@ -4591,7 +5231,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4614,6 +5254,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 8500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -4639,7 +5280,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4661,7 +5302,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -4706,6 +5347,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 14500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5098,16 +5740,19 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 55000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
-      "platform_trucks": 2,
-      "water_tankers": 1
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2
     },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 20,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 40,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Yleislääkäri"
     },
     "prerequisites": {
@@ -5115,7 +5760,44 @@
       "rescue_stations": 6,
       "fire_stations": 10
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 208,
+        "name": "403 Kerrostalopalo",
+        "place": "Pilvenpiirtäjä",
+        "place_array": ["Pilvenpiirtäjä"],
+        "average_credits": 4400,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 55000,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "hose": 3
+        },
+        "chances": { "patient_transport": 20 },
+        "additional": {
+          "possible_patient": 20,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 40,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Yleislääkäri"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 6,
+          "fire_stations": 10
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 209,
@@ -5138,6 +5820,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [328],
       "filter_id": "ambulance_station_missions",
       "subsequent_missions_ids": [207],
       "patient_specializations": "Yleiskirurgi"
@@ -5417,6 +6100,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -5448,7 +6132,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1500, "firetrucks": 1 },
     "chances": { "patient_transport": 70 },
     "additional": {
       "possible_patient": 2,
@@ -5544,6 +6228,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 11600,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5619,12 +6304,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 59900,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
       "police_cars": 8
@@ -5633,6 +6318,8 @@
     "additional": {
       "possible_patient": 15,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -5641,7 +6328,48 @@
       "police_stations": 6,
       "fire_stations": 15
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 229,
+        "name": "403 Rautatieasemapalo, suuri",
+        "place": "Rautatieasema (paikallisliikenne)",
+        "place_array": ["Rautatieasema (paikallisliikenne)"],
+        "average_credits": 10600,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 59900,
+          "firetrucks": 10,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 8,
+          "hose": 2
+        },
+        "chances": { "patient_transport": 40 },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 13,
+          "police_stations": 6,
+          "fire_stations": 15
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 230,
@@ -5788,7 +6516,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -5843,7 +6571,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 500, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -5985,7 +6713,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -6029,7 +6757,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 500, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -6051,7 +6779,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 11600,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -6414,10 +7146,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12000,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
+      "platform_trucks": 1
     },
     "chances": {},
     "additional": {
@@ -6633,9 +7365,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 15800,
       "firetrucks": 2,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -7013,7 +7745,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 500, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -7035,7 +7767,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 2500, "firetrucks": 1 },
     "chances": { "patient_transport": 70 },
     "additional": {
       "possible_patient": 2,
@@ -7064,7 +7796,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [288],
@@ -7087,7 +7819,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 3000, "firetrucks": 2 },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 2,
@@ -7174,11 +7906,11 @@
       "/images/tramway_rot.png"
     ],
     "requirements": {
+      "water_needed": 12500,
       "firetrucks": 7,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 5,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "police_cars": 6
     },
@@ -7569,7 +8301,7 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 500, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -7646,7 +8378,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1, "police_cars": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -7769,10 +8501,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4200,
+      "water_needed": 40000,
       "firetrucks": 5,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
       "platform_trucks": 1,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2
@@ -7990,9 +8724,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1200,
+      "water_needed": 12900,
       "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": {},
     "additional": {
@@ -8015,9 +8750,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1800,
+      "water_needed": 41700,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 3
+      "battalion_chief_vehicles": 1
     },
     "chances": {},
     "additional": {
@@ -8040,10 +8776,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2200,
+      "water_needed": 107200,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 8
+      "mobile_command_vehicles": 1
     },
     "chances": {},
     "additional": {
@@ -8160,6 +8897,361 @@
       "subsequent_missions_ids": [312]
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 329,
+    "name": "422 Maastopalo, keskisuuri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 35000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "hose": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [330],
+      "followup_missions_ids": [14],
+      "average_min_fire_personnel": 20,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 330,
+    "name": "423 Maastopalo, suuri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 57600,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "hose": 2,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [14, 329],
+      "average_min_fire_personnel": 45,
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 33,
+      "overlay_on_fire_support_count": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": {
+      "mission_type": {
+        "id": 330,
+        "name": "423 Maastopalo, erittäin suuri",
+        "place": "",
+        "place_array": [],
+        "average_credits": 4500,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 76600,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "hose": 3,
+          "pump": 3
+        },
+        "chances": {},
+        "additional": {
+          "followup_missions_ids": [14, 329],
+          "average_min_fire_personnel": 60,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 33,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "fire_support_count": 1,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
+  },
+  {
+    "id": 331,
+    "name": "422 Metsäpalo, keskisuuri",
+    "place": "Metsä",
+    "place_array": ["Metsä"],
+    "average_credits": 1400,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 28500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "hose": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [332],
+      "followup_missions_ids": [15],
+      "average_min_fire_personnel": 24,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 332,
+    "name": "423 Metsäpalo, suuri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2850,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 52500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "hose": 2,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [15, 331],
+      "average_min_fire_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 22,
+      "overlay_on_fire_support_count": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": {
+      "mission_type": {
+        "id": 332,
+        "name": "423 Maastopalo, erittäin suuri",
+        "place": "",
+        "place_array": [],
+        "average_credits": 4000,
+        "generated_by": "Paloasema",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "water_needed": 71500,
+          "firetrucks": 7,
+          "battalion_chief_vehicles": 3,
+          "mobile_command_vehicles": 1,
+          "hose": 4,
+          "pump": 1
+        },
+        "chances": {},
+        "additional": {
+          "followup_missions_ids": [15, 331],
+          "average_min_fire_personnel": 50,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 22,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "fire_support_count": 1,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
+  },
+  {
+    "id": 333,
+    "name": "413 Palava kaatunut täysperävaunurekka",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "Ambulanssiasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 3300,
+      "water_needed": 12500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 51
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [207],
+      "patient_specializations": "Yleiskirurgi"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 334,
+    "name": "402 Saunapalo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 17700,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "platform_trucks": 15, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 335,
+    "name": "402 Siilopalo",
+    "place": "Maatila",
+    "place_array": ["Maatila"],
+    "average_credits": 1450,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 22500,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "alternate_version": null
+  },
+  {
+    "id": 336,
+    "name": "401 Kuivuripalo",
+    "place": "Maatila",
+    "place_array": ["Maatila"],
+    "average_credits": 1100,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 7200, "firetrucks": 2 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 337,
+    "name": "401 Palovaroitin soi asunnossa",
+    "place": "Pilvenpiirtäjä",
+    "place_array": ["Pilvenpiirtäjä"],
+    "average_credits": 500,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [23, 5, 66, 116, 58, 65, 334],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 338,
+    "name": "401 Palovaroitin soi huoneessa",
+    "place": "Hotelli",
+    "place_array": ["Hotelli"],
+    "average_credits": 500,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [5, 66, 116, 100],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "alternate_version": null
   }
 ]
