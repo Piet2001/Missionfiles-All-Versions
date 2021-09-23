@@ -240,14 +240,45 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 400,
+      "foam_needed": 200,
       "water_needed": 1900,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 11,
+        "name": "Zwarcie w instalacji elektrycznej",
+        "place": "",
+        "place_array": [],
+        "average_credits": 340,
+        "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 400,
+          "water_needed": 1900,
+          "firetrucks": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 1 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 12,
@@ -1616,7 +1647,6 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "foam_needed": 10000,
       "water_needed": 120000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
@@ -1743,7 +1773,11 @@
       "date_end": "2020-12-26T23:59:00+01:00",
       "patient_specializations": "Interna"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
     "alternate_version": null
   },
   {
@@ -1767,12 +1801,45 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "date_start": "2020-12-01T10:00:00+01:00",
       "date_end": "2020-12-26T23:59:00+01:00",
       "patient_specializations": "Interna"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 78,
+        "name": "Pożar na jarmarku bożonarodzeniowym",
+        "place": "Jarmark Bożonarodzeniowy",
+        "place_array": ["Jarmark Bożonarodzeniowy"],
+        "average_credits": 460,
+        "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 600,
+          "water_needed": 1600,
+          "firetrucks": 1
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 1,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "date_start": "2020-12-01T10:00:00+01:00",
+          "date_end": "2020-12-26T23:59:00+01:00",
+          "patient_specializations": "Interna"
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 1 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 79,
