@@ -7334,5 +7334,249 @@
       "fire_stations": 11
     },
     "alternate_version": null
+  },
+  {
+    "id": 263,
+    "name": "Persoană care a alunecat pe frunze umede",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stație de ambulanță",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 45 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Chirurg general"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 264,
+    "name": "Accident rutier cauzat de frunzele căzute",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Stație de pompieri",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 265,
+    "name": "Persoană care a căzut într-o grămadă de frunze",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stație de ambulanță",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 266,
+    "name": "Suflantă de frunze scăpată de sub control",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "Secție de poliție",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Chirurg general"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 267,
+    "name": "Canal de scurgere înfundat cu frunze",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "Stație de pompieri",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 268,
+    "name": "Hipotermie după înot în apă rece",
+    "place": "Lac\nRâu",
+    "place_array": ["Lac", "Râu"],
+    "average_credits": null,
+    "generated_by": "Stație de ambulanță",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Internist general"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 269,
+    "name": "Accident pe drum cețos",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Stație de pompieri",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 270,
+    "name": "Accident provocat de un cerb care traversa drumul",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Stație de pompieri",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z",
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 271,
+    "name": "Grămadă de frunze în flăcări",
+    "place": "",
+    "place_array": [],
+    "average_credits": 320,
+    "generated_by": "Stație de pompieri",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-09-24T09:00:00Z",
+      "date_end": "2021-10-01T23:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "alternate_version": null
   }
 ]
