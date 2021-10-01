@@ -8217,7 +8217,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [
-        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
+        25, 120, 121, 122, 123, 124, 125, 126, 127, 128
       ],
       "filter_id": "police_station_missions"
     },
@@ -20346,6 +20346,29 @@
       "date_end": "2021-10-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 681,
+    "name": "Reitsportunfall",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Rettungswache",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "nef": 50, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
     "alternate_version": null
   }
 ]
