@@ -21634,5 +21634,73 @@
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "alternate_version": null
+  },
+  {
+    "id": 633,
+    "name": "Flooded Tunnel (small)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 2400,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 12,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["14-C-1"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 634,
+    "name": "Flooded Tunnel (large)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 4500,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 2,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 30,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["14-C-1"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "fire_stations": 6
+    },
+    "alternate_version": null
   }
 ]
