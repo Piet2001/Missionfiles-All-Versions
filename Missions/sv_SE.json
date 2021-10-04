@@ -4335,7 +4335,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [179],
+      "expansion_missions_ids": [],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
@@ -8679,6 +8679,29 @@
       "date_end": "2021-10-01T23:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 346,
+    "name": "Personskada - överdos",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
     "alternate_version": null
   }
 ]
