@@ -12029,5 +12029,35 @@
     },
     "prerequisites": { "main_building": 2, "rescue_stations": 1 },
     "alternate_version": null
+  },
+  {
+    "id": 386,
+    "name": "Stabbing",
+    "place": "Office Building",
+    "place_array": ["Office Building"],
+    "average_credits": 6000,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "k9": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 6,
+      "patient_uk_code_possible": ["C1", "C2"],
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 10
+    },
+    "alternate_version": null
   }
 ]
