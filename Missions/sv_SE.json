@@ -575,6 +575,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 2000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -583,10 +584,46 @@
     "chances": { "water_tankers": 30 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2
     },
     "prerequisites": { "main_building": 0, "fire_stations": 5 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 28,
+        "name": "Brand i byggnad - industri, maskin",
+        "place": "",
+        "place_array": [],
+        "average_credits": 3470,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1500,
+          "water_needed": 2000,
+          "firetrucks": 3,
+          "battalion_chief_vehicles": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hose": 1,
+          "pump": 1,
+          "foam": 1
+        },
+        "chances": { "water_tankers": 30 },
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 5 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 29,
@@ -601,6 +638,7 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
+      "water_needed": 1500,
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
@@ -608,13 +646,55 @@
       "police_cars": 3
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 29,
+        "name": "Utsläpp farligt ämne - övrigt",
+        "place": "",
+        "place_array": [],
+        "average_credits": 6300,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/oil_gruen.png",
+          "/images/oil_gelb.png",
+          "/images/oil_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "water_needed": 1500,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "heavy_rescue_vehicles": 2,
+          "hazmat_vehicles": 2,
+          "police_cars": 3,
+          "hose": 1,
+          "pump": 1,
+          "foam": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 30,
@@ -890,6 +970,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 2000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -907,6 +988,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 3,
       "patient_specializations": "Invärtesmedicinare"
     },
     "prerequisites": {
@@ -915,7 +998,55 @@
       "police_stations": 2,
       "fire_stations": 14
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 41,
+        "name": "Brand i byggnad - industri, verkstad",
+        "place": "Bilverkstad",
+        "place_array": ["Bilverkstad"],
+        "average_credits": 7800,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 4000,
+          "water_needed": 2000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2,
+          "hose": 2,
+          "pump": 1,
+          "foam": 2
+        },
+        "chances": {
+          "water_tankers": 40,
+          "patient_transport": 50,
+          "patient_critical_care": 25
+        },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "fire_alarm_system_possible": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 3,
+          "patient_specializations": "Invärtesmedicinare"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "police_stations": 2,
+          "fire_stations": 14
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 42,
@@ -1486,6 +1617,7 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
+      "water_needed": 1000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
@@ -1493,13 +1625,53 @@
       "police_cars": 3
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 69,
+        "name": "Utsläpp farligt ämne - övrigt",
+        "place": "",
+        "place_array": [],
+        "average_credits": 4800,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/oil_gruen.png",
+          "/images/oil_gelb.png",
+          "/images/oil_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 2000,
+          "water_needed": 1000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 2,
+          "heavy_rescue_vehicles": 2,
+          "hazmat_vehicles": 1,
+          "police_cars": 3,
+          "foam": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 70,
@@ -2287,13 +2459,53 @@
       "police_cars": 1
     },
     "chances": { "water_tankers": 10 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
       "fire_stations": 7
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 101,
+        "name": "Brand ute - fordon, lastfordon",
+        "place": "",
+        "place_array": [],
+        "average_credits": 2900,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "firetrucks": 3,
+          "battalion_chief_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 1,
+          "hose": 1,
+          "pump": 1,
+          "foam": 2
+        },
+        "chances": { "water_tankers": 10 },
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 1,
+          "fire_stations": 7
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 102,
@@ -3371,7 +3583,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [132],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
       "need_police_horse_only_if_present": true,
@@ -6999,6 +7211,7 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "water_needed": 14000,
       "firetrucks": 25,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
@@ -7013,6 +7226,8 @@
     "additional": {
       "possible_patient": 80,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 3,
       "patient_specializations": "Invärtesmedicinare"
     },
     "prerequisites": {
@@ -7021,7 +7236,52 @@
       "police_stations": 10,
       "fire_stations": 40
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 283,
+        "name": "Kärnkraftverk - olycka",
+        "place": "Kärnkraftverk",
+        "place_array": ["Kärnkraftverk"],
+        "average_credits": 37500,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/radiation_gruen.png",
+          "/images/radiation_gelb.png",
+          "/images/radiation_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 18000,
+          "water_needed": 14000,
+          "firetrucks": 25,
+          "battalion_chief_vehicles": 8,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 4,
+          "water_tankers": 3,
+          "mobile_air_vehicles": 2,
+          "hazmat_vehicles": 4,
+          "police_cars": 10,
+          "hose": 3,
+          "pump": 3,
+          "foam": 2
+        },
+        "chances": { "patient_transport": 65, "patient_critical_care": 100 },
+        "additional": {
+          "possible_patient": 80,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 3,
+          "patient_specializations": "Invärtesmedicinare"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 40,
+          "police_stations": 10,
+          "fire_stations": 40
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 284,
@@ -7065,13 +7325,50 @@
       "police_cars": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 5,
       "fire_stations": 4
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 285,
+        "name": "Brinnande transformatorstation",
+        "place": "",
+        "place_array": [],
+        "average_credits": 2500,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1500,
+          "firetrucks": 2,
+          "battalion_chief_vehicles": 1,
+          "police_cars": 1,
+          "foam": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 5,
+          "fire_stations": 4
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 286,
@@ -7131,6 +7428,8 @@
       "possible_patient": 5,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Traumatologi"
     },
     "prerequisites": {
@@ -7139,7 +7438,47 @@
       "police_stations": 3,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 287,
+        "name": "Flyghändelse - brand i flygplan, litet",
+        "place": "",
+        "place_array": [],
+        "average_credits": 6500,
+        "generated_by": "Brandstation",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 2000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "heavy_rescue_vehicles": 1,
+          "water_tankers": 1,
+          "police_cars": 3,
+          "foam": 1
+        },
+        "chances": { "water_tankers": 80, "patient_transport": 90 },
+        "additional": {
+          "possible_patient": 5,
+          "possible_patient_min": 1,
+          "filter_id": "firehouse_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Traumatologi"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 5,
+          "police_stations": 3,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 288,
@@ -8093,7 +8432,7 @@
     "name": "Skadegörelse, stadshus",
     "place": "",
     "place_array": [],
-    "average_credits": 2800,
+    "average_credits": 1100,
     "generated_by": "Polisstation",
     "icons": [
       "/images/baseball_gruen.png",
@@ -8738,6 +9077,287 @@
       "rescue_stations": 5,
       "police_stations": 3,
       "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 350,
+    "name": "Brand i fordon - tågset",
+    "place": "Tågstation (regionaltåg)\nVarustation\nJärnvägsövergång\nJärnvägskorsning",
+    "place_array": [
+      "Tågstation (regionaltåg)",
+      "Varustation",
+      "Järnvägsövergång",
+      "Järnvägskorsning"
+    ],
+    "average_credits": 2200,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 351,
+    "name": "Trafikolycka - tunnel, singel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 1500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [352],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 352,
+    "name": "Trafikolycka - tunnel, masskrock",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 7400,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "pump": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 353,
+    "name": "Industribrand - liten",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4600,
+      "water_needed": 10000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "hazmat_vehicles": 1,
+      "pump": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [354],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Allmänkirurg"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 354,
+    "name": "Industribrand - mellan",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 12500,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [355],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Allmänkirurg"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 355,
+    "name": "Industribrand - stor",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 9600,
+      "water_needed": 20000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "hazmat_vehicles": 1,
+      "pump": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Allmänkirurg"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 356,
+    "name": "Brand i byggnad - lägenhet, sovrum",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Neurologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "alternate_version": null
+  },
+  {
+    "id": 357,
+    "name": "Brand i byggnad - oljeraffinaderi",
+    "place": "Oljeraffinaderi",
+    "place_array": ["Oljeraffinaderi"],
+    "average_credits": 7700,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 8400,
+      "water_needed": 15000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 11
     },
     "alternate_version": null
   }
