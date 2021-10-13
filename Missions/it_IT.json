@@ -284,7 +284,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 5000, "firetrucks": 2 },
+    "requirements": {
+      "foam_needed": 250,
+      "water_needed": 5000,
+      "firetrucks": 2
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -607,6 +611,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 100,
       "water_needed": 4000,
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1
@@ -985,6 +990,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 500,
       "water_needed": 25000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
@@ -2488,6 +2494,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 500,
       "firetrucks": 3,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
@@ -2514,6 +2521,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 250,
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
@@ -3875,6 +3883,7 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
+      "foam_needed": 600,
       "water_needed": 18000,
       "firetrucks": 3,
       "mobile_command_vehicles": 1,
@@ -4212,6 +4221,8 @@
         "Traumatologia"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -4220,7 +4231,58 @@
       "police_stations": 4,
       "fire_stations": 8
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 149,
+        "name": "Incendio cisterna chimica (GRANDE)",
+        "place": "Grande serbatoio di accumulo sostanze chimiche",
+        "place_array": ["Grande serbatoio di accumulo sostanze chimiche"],
+        "average_credits": 9000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "water_needed": 38000,
+          "firetrucks": 5,
+          "battalion_chief_vehicles": 1,
+          "heavy_rescue_vehicles": 4,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 4
+        },
+        "chances": { "patient_transport": 20, "helicopter": 5 },
+        "additional": {
+          "possible_patient": 10,
+          "possible_patient_min": 2,
+          "average_min_fire_personnel": 40,
+          "patient_it_code_possible": ["LC01R", "LC01G", "LC01V"],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia"
+          ],
+          "allow_ktw_instead_of_rtw": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 5,
+          "police_stations": 4,
+          "fire_stations": 8
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 150,
@@ -4716,6 +4778,8 @@
         "Traumatologia"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -4724,7 +4788,58 @@
       "police_stations": 4,
       "fire_stations": 6
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 166,
+        "name": "Incendio cisterna chimica (MEDIA)",
+        "place": "Piccolo serbatoio di accumulo sostanze chimiche",
+        "place_array": ["Piccolo serbatoio di accumulo sostanze chimiche"],
+        "average_credits": 1900,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 2000,
+          "water_needed": 28000,
+          "firetrucks": 3,
+          "battalion_chief_vehicles": 1,
+          "heavy_rescue_vehicles": 2,
+          "water_tankers": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2
+        },
+        "chances": { "patient_transport": 20, "helicopter": 5 },
+        "additional": {
+          "possible_patient": 10,
+          "possible_patient_min": 2,
+          "average_min_fire_personnel": 25,
+          "patient_it_code_possible": ["LC01R", "LC01G", "LC01V"],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia"
+          ],
+          "allow_ktw_instead_of_rtw": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 5,
+          "police_stations": 4,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 167,
@@ -5208,6 +5323,8 @@
         "Medicina interna generale"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Chirurgia generale"
     },
     "prerequisites": {
@@ -5215,7 +5332,50 @@
       "police_stations": 1,
       "fire_stations": 4
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 180,
+        "name": "Incendio industria (PICCOLO)",
+        "place": "Fabbrica",
+        "place_array": ["Fabbrica"],
+        "average_credits": 1100,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1000,
+          "water_needed": 5000,
+          "firetrucks": 2,
+          "heavy_rescue_vehicles": 1,
+          "police_cars": 1
+        },
+        "chances": { "patient_transport": 40 },
+        "additional": {
+          "possible_patient": 5,
+          "possible_patient_min": 1,
+          "patient_it_code_possible": ["LC03R", "LC03G", "LC03V"],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Medicina interna generale",
+            "Medicina interna generale"
+          ],
+          "allow_ktw_instead_of_rtw": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Chirurgia generale"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 1,
+          "fire_stations": 4
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 181,
@@ -5248,6 +5408,8 @@
         "Medicina interna generale"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -5255,7 +5417,51 @@
       "police_stations": 1,
       "fire_stations": 6
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 181,
+        "name": "Incendio industria (MEDIO)",
+        "place": "Fabbrica",
+        "place_array": ["Fabbrica"],
+        "average_credits": 1525,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 3250,
+          "water_needed": 15000,
+          "firetrucks": 3,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 2,
+          "police_cars": 2
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 25,
+          "possible_patient_min": 4,
+          "patient_it_code_possible": ["LC03R", "LC03G", "LC03V"],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Medicina interna generale",
+            "Medicina interna generale"
+          ],
+          "allow_ktw_instead_of_rtw": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 1,
+          "fire_stations": 6
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 182,
@@ -5291,6 +5497,8 @@
         "Medicina interna generale"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -5298,7 +5506,54 @@
       "police_stations": 2,
       "fire_stations": 13
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 182,
+        "name": "Incendio industria (GRANDE)",
+        "place": "Fabbrica",
+        "place_array": ["Fabbrica"],
+        "average_credits": 3000,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 5000,
+          "water_needed": 35000,
+          "firetrucks": 6,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 4,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "police_cars": 4
+        },
+        "chances": { "patient_transport": 25 },
+        "additional": {
+          "possible_patient": 30,
+          "possible_patient_min": 5,
+          "patient_it_code_possible": ["LC03R", "LC03G", "LC03V"],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Medicina interna generale",
+            "Medicina interna generale"
+          ],
+          "allow_ktw_instead_of_rtw": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2,
+          "patient_specializations": "Traumatologia"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "police_stations": 2,
+          "fire_stations": 13
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 183,
@@ -6492,7 +6747,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [193],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -6691,7 +6946,9 @@
         "Medicina interna generale",
         "Medicina interna generale",
         "Medicina interna generale"
-      ]
+      ],
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1
     },
     "prerequisites": {
       "main_building": 0,
@@ -6699,7 +6956,66 @@
       "police_stations": 4,
       "fire_stations": 11
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 230,
+        "name": "Incendio centrale elettrica (MEDIA)",
+        "place": "Centrale elettrica",
+        "place_array": ["Centrale elettrica"],
+        "average_credits": 4150,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1500,
+          "water_needed": 10000,
+          "firetrucks": 4,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "heavy_rescue_vehicles": 2,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 2
+        },
+        "chances": { "patient_transport": 60 },
+        "additional": {
+          "possible_patient": 10,
+          "possible_patient_min": 4,
+          "patient_it_code_possible": [
+            "ZC01R",
+            "ZC01G",
+            "ZC01V",
+            "ZC03R",
+            "ZC03G",
+            "ZC03V"
+          ],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Medicina interna generale",
+            "Medicina interna generale"
+          ],
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "police_stations": 4,
+          "fire_stations": 11
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 231,
@@ -6771,10 +7087,68 @@
         "Medicina interna generale",
         "Medicina interna generale",
         "Medicina interna generale"
-      ]
+      ],
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2
     },
     "prerequisites": { "main_building": 0, "fire_stations": 12 },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 232,
+        "name": "Incendio centrale elettrica (GRANDE)",
+        "place": "Centrale elettrica",
+        "place_array": ["Centrale elettrica"],
+        "average_credits": 8300,
+        "generated_by": "Caserma dei vigili del fuoco",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 3000,
+          "water_needed": 36000,
+          "firetrucks": 8,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 4,
+          "water_tankers": 1,
+          "mobile_air_vehicles": 1,
+          "hazmat_vehicles": 1,
+          "police_cars": 4
+        },
+        "chances": { "hazmat_vehicles": 20, "patient_transport": 40 },
+        "additional": {
+          "possible_patient": 20,
+          "possible_patient_min": 10,
+          "patient_it_code_possible": [
+            "ZC01R",
+            "ZC01G",
+            "ZC01V",
+            "ZC03R",
+            "ZC03G",
+            "ZC03V"
+          ],
+          "filter_id": "firehouse_missions",
+          "possible_patient_specializations": [
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Traumatologia",
+            "Medicina interna generale",
+            "Medicina interna generale",
+            "Medicina interna generale"
+          ],
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": { "main_building": 0, "fire_stations": 12 },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 233,
@@ -7228,13 +7602,48 @@
     ],
     "requirements": { "police_cars": 2, "commerce_police": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 2
+    },
     "prerequisites": {
       "main_building": 6,
       "police_stations": 6,
       "commerce_police_stations": 1
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 250,
+        "name": "Controllo mezzi pesanti",
+        "place": "Uscita autostradale",
+        "place_array": ["Uscita autostradale"],
+        "average_credits": 1500,
+        "generated_by": "Stazione di polizia",
+        "icons": [
+          "/images/shooting_gruen.png",
+          "/images/shooting_gelb.png",
+          "/images/shooting_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 4000,
+          "police_cars": 2,
+          "commerce_police": 1
+        },
+        "chances": {},
+        "additional": {
+          "filter_id": "police_station_missions",
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 2
+        },
+        "prerequisites": {
+          "main_building": 6,
+          "police_stations": 6,
+          "commerce_police_stations": 1
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 251,
