@@ -532,7 +532,7 @@
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 1,
-      "expansion_missions_ids": [24, 2],
+      "expansion_missions_ids": [24, 2, 29],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Traumatologia"
     },
@@ -9638,6 +9638,49 @@
       "followup_missions_ids": [312],
       "max_possible_prisoners": 3,
       "average_min_police_personnel": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 352,
+    "name": "09 Luvaton henkilö voimalaitosalueella",
+    "place": "Voimalaitos",
+    "place_array": ["Voimalaitos"],
+    "average_credits": 500,
+    "generated_by": "Poliisiasema",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "alternate_version": null
+  },
+  {
+    "id": 353,
+    "name": "361 Tappelun ääniä asunnosta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Poliisiasema",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [55, 67, 152, 153, 311],
+      "max_possible_prisoners": 3,
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
