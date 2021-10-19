@@ -1348,6 +1348,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 150,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -1384,6 +1385,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 150,
           "firetrucks": 4,
           "battalion_chief_vehicles": 1,
           "mobile_command_vehicles": 1,
@@ -1424,6 +1426,7 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
+      "foam_needed": 75,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -2433,6 +2436,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 175,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -2470,6 +2474,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 175,
           "firetrucks": 5,
           "battalion_chief_vehicles": 2,
           "mobile_command_vehicles": 1,
@@ -2829,6 +2834,7 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
+      "foam_needed": 100,
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -3661,6 +3667,8 @@
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["29-D-1a"],
       "allow_arff_instead_of_lf": true,
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "General Internal"
     },
     "prerequisites": {
@@ -3670,7 +3678,47 @@
       "fire_stations": 10,
       "main_building_extensions": [1]
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 120,
+        "name": "Large Aircraft Crash",
+        "place": "Large Airport (Runway)",
+        "place_array": ["Large Airport (Runway)"],
+        "average_credits": 6300,
+        "generated_by": "Fire station",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 2600,
+          "firetrucks": 3,
+          "battalion_chief_vehicles": 2,
+          "arff": 4,
+          "police_cars": 5
+        },
+        "chances": { "patient_transport": 30 },
+        "additional": {
+          "possible_patient": 25,
+          "possible_patient_min": 5,
+          "filter_id": "firehouse_missions",
+          "patient_us_code_possible": ["29-D-1a"],
+          "allow_arff_instead_of_lf": true,
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "General Internal"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 7,
+          "police_stations": 4,
+          "fire_stations": 10,
+          "main_building_extensions": [1]
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 121,
@@ -4295,6 +4343,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 350,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4334,6 +4383,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 350,
           "firetrucks": 10,
           "battalion_chief_vehicles": 2,
           "mobile_command_vehicles": 1,
@@ -5026,6 +5076,8 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["29-D-1a"],
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Traumatology"
     },
     "prerequisites": {
@@ -5034,7 +5086,38 @@
       "fire_stations": 4,
       "main_building_extensions": [1]
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 162,
+        "name": "Light Aircraft Crash (Airfield)",
+        "place": "Small Airport (Runway)",
+        "place_array": ["Small Airport (Runway)"],
+        "average_credits": 2700,
+        "generated_by": "Fire station",
+        "icons": [
+          "/images/planecrash_gruen.png",
+          "/images/planecrash_gelb.png",
+          "/images/planecrash_rot.png"
+        ],
+        "requirements": { "foam_needed": 1300, "firetrucks": 1, "arff": 2 },
+        "chances": { "patient_transport": 60 },
+        "additional": {
+          "possible_patient": 4,
+          "filter_id": "firehouse_missions",
+          "patient_us_code_possible": ["29-D-1a"],
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 2,
+          "fire_stations": 4,
+          "main_building_extensions": [1]
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 163,
@@ -5049,6 +5132,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "foam_needed": 100,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -5420,6 +5504,7 @@
       "/images/river_rot.png"
     ],
     "requirements": {
+      "foam_needed": 100,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -5455,6 +5540,7 @@
       "/images/river_rot.png"
     ],
     "requirements": {
+      "foam_needed": 100,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -5902,6 +5988,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 200,
       "firetrucks": 4,
       "large_rescue_boat": 1,
       "large_fire_boat": 1,
@@ -5942,6 +6029,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 200,
           "firetrucks": 4,
           "large_rescue_boat": 1,
           "large_fire_boat": 1,
@@ -6832,6 +6920,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 350,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -6872,6 +6961,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 350,
           "firetrucks": 8,
           "battalion_chief_vehicles": 4,
           "mobile_command_vehicles": 1,
@@ -6915,7 +7005,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "requirements": {
+      "foam_needed": 100,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
@@ -6945,6 +7039,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 100,
           "firetrucks": 4,
           "battalion_chief_vehicles": 2,
           "fire_investigation": 1
@@ -6981,6 +7076,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 250,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -7020,6 +7116,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 250,
           "firetrucks": 8,
           "battalion_chief_vehicles": 4,
           "mobile_command_vehicles": 1,
@@ -7203,6 +7300,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 300,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -7236,6 +7334,7 @@
           "/images/fire_rot.png"
         ],
         "requirements": {
+          "foam_needed": 300,
           "firetrucks": 6,
           "battalion_chief_vehicles": 2,
           "mobile_command_vehicles": 1,
@@ -7738,6 +7837,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 200,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -7812,6 +7912,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 200,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -10118,6 +10219,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 250,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -11835,6 +11937,8 @@
         "7-C-4F",
         "7-A-1F"
       ],
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "General Internal"
     },
     "prerequisites": {
@@ -11845,7 +11949,67 @@
       "rescue_boat_docks": 1,
       "fire_stations": 20
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 320,
+        "name": "Tanker ship on fire",
+        "place": "Cargo port",
+        "place_array": ["Cargo port"],
+        "average_credits": 15200,
+        "generated_by": "Fire station",
+        "icons": [
+          "/images/fire_gruen.png",
+          "/images/fire_gelb.png",
+          "/images/fire_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1300,
+          "firetrucks": 8,
+          "large_rescue_boat": 1,
+          "large_fire_boat": 3,
+          "battalion_chief_vehicles": 2,
+          "mobile_command_vehicles": 1,
+          "platform_trucks": 2,
+          "heavy_rescue_vehicles": 2,
+          "mobile_air_vehicles": 2,
+          "hazmat_vehicles": 3,
+          "police_cars": 3
+        },
+        "chances": { "patient_transport": 60 },
+        "additional": {
+          "possible_patient": 15,
+          "filter_id": "firehouse_missions",
+          "patient_us_code_possible": [
+            "8-D-1",
+            "8-D-2",
+            "8-D-3",
+            "8-D-5",
+            "8-C-1",
+            "8-B-1",
+            "7-E-1F",
+            "7-D-2F",
+            "7-D-3F",
+            "7-D-4F",
+            "7-C-2F",
+            "7-C-3F",
+            "7-C-4F",
+            "7-A-1F"
+          ],
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "General Internal"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 10,
+          "police_stations": 2,
+          "fire_boat_docks": 2,
+          "rescue_boat_docks": 1,
+          "fire_stations": 20
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 321,
@@ -12699,6 +12863,7 @@
       "/images/cruiseship_rot.png"
     ],
     "requirements": {
+      "foam_needed": 250,
       "firetrucks": 7,
       "large_fire_boat": 2,
       "battalion_chief_vehicles": 2,
@@ -12817,6 +12982,7 @@
       "/images/cruiseship_rot.png"
     ],
     "requirements": {
+      "foam_needed": 300,
       "firetrucks": 7,
       "large_fire_boat": 2,
       "battalion_chief_vehicles": 2,
@@ -13517,6 +13683,8 @@
       "expansion_missions_ids": [120],
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["29-D-1a"],
+      "overlay_on_fire_support_chance": 100,
+      "overlay_on_fire_support_count": 1,
       "patient_specializations": "Traumatology"
     },
     "prerequisites": {
@@ -13525,7 +13693,47 @@
       "fire_stations": 8,
       "main_building_extensions": [1]
     },
-    "alternate_version": null
+    "alternate_version": {
+      "mission_type": {
+        "id": 376,
+        "name": "Plane off the runway",
+        "place": "Large Airport (Runway)",
+        "place_array": ["Large Airport (Runway)"],
+        "average_credits": 3200,
+        "generated_by": "Fire station",
+        "icons": [
+          "/images/planecrash_gruen.png",
+          "/images/planecrash_gelb.png",
+          "/images/planecrash_rot.png"
+        ],
+        "requirements": {
+          "foam_needed": 1300,
+          "firetrucks": 2,
+          "ambulances": 2,
+          "battalion_chief_vehicles": 1,
+          "platform_trucks": 1,
+          "arff": 2
+        },
+        "chances": { "platform_trucks": 50, "patient_transport": 25 },
+        "additional": {
+          "possible_patient": 20,
+          "possible_patient_min": 10,
+          "expansion_missions_ids": [120],
+          "filter_id": "firehouse_missions",
+          "patient_us_code_possible": ["29-D-1a"],
+          "overlay_on_fire_support_chance": 100,
+          "overlay_on_fire_support_count": 1,
+          "patient_specializations": "Traumatology"
+        },
+        "prerequisites": {
+          "main_building": 0,
+          "rescue_stations": 1,
+          "fire_stations": 8,
+          "main_building_extensions": [1]
+        },
+        "alternate_version": null
+      }
+    }
   },
   {
     "id": 377,
@@ -15974,6 +16182,7 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
+      "foam_needed": 150,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -18215,6 +18424,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "foam_needed": 25,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "arff": 1,
@@ -18246,6 +18456,7 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "foam_needed": 25,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "arff": 1,
