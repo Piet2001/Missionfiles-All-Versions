@@ -3779,7 +3779,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [128, 668],
-      "followup_missions_ids": [43, 83],
+      "followup_missions_ids": [27, 43, 83],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
@@ -20430,6 +20430,44 @@
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "alternate_version": null
+  },
+  {
+    "id": 684,
+    "name": "Brand in metallverarbeitendem Betrieb",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2700,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "heavy_rescue_vehicles": 50,
+      "nef": 20,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 3,
+      "average_min_fire_personnel": 24,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 7
+    },
     "alternate_version": null
   }
 ]
