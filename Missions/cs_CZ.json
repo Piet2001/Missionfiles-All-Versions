@@ -10014,5 +10014,38 @@
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 367
+  },
+  {
+    "id": "368",
+    "name": "Požár na staveništi",
+    "place": "Staveniště",
+    "place_array": ["Staveniště"],
+    "average_credits": 3000,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3
+    },
+    "chances": { "patient_transport": 70, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 368
   }
 ]
