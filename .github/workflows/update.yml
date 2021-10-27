@@ -22,7 +22,7 @@ jobs:
         curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
 
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update en_AU
@@ -46,7 +46,7 @@ jobs:
         curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
     
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update pt_BR
@@ -70,7 +70,7 @@ jobs:
         curl -X GET https://www.operacni-stredisko.cz/alliance_event_types.json > Events/cs_CZ.json
 
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update cs_CZ
@@ -94,7 +94,7 @@ jobs:
         curl -X GET https://www.leitstellenspiel.de/alliance_event_types.json > Events/de_DE.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update de_DE
@@ -118,7 +118,7 @@ jobs:
         curl -X GET https://www.alarmcentral-spil.dk/alliance_event_types.json > Events/da_DK.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update da_DK
@@ -142,7 +142,7 @@ jobs:
         curl -X GET https://www.centro-de-mando.es/alliance_event_types.json > Events/es_ES.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update es_ES
@@ -166,7 +166,7 @@ jobs:
         curl -X GET https://www.hatakeskuspeli.com/alliance_event_types.json > Events/fi_FI.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update fi_FI
@@ -190,7 +190,7 @@ jobs:
         curl -X GET https://www.operateur112.fr/alliance_event_types.json > Events/fr_FR.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update fr_FR
@@ -214,12 +214,12 @@ jobs:
         curl -X GET https://www.operatore112.it/alliance_event_types.json > Events/it_IT.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update it_IT
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        GITHUB_TOKEN: ${{ secrets.MISSIONBOT }}  
 
   ja_JP:
     runs-on: ubuntu-latest
@@ -238,7 +238,7 @@ jobs:
         curl -X GET https://www.missionchief-japan.com/alliance_event_types.json > Events/ja_JP.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update ja_JP
@@ -262,7 +262,7 @@ jobs:
         curl -X GET https://www.missionchief-korea.com/alliance_event_types.json > Events/ko_KR.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update ko_KR
@@ -286,7 +286,7 @@ jobs:
         curl -X GET https://www.centro-de-mando.mx/alliance_event_types.json > Events/es_MX.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update es_MX
@@ -310,7 +310,7 @@ jobs:
         curl -X GET https://www.meldkamerspel.com/alliance_event_types.json > Events/nl_NL.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update nl_NL
@@ -334,7 +334,7 @@ jobs:
         curl -X GET https://www.nodsentralspillet.com/alliance_event_types.json > Events/nb_NO.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update nb_NO
@@ -358,7 +358,7 @@ jobs:
         curl -X GET https://www.operatorratunkowy.pl/alliance_event_types.json > Events/pl_PL.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update pl_PL
@@ -382,7 +382,7 @@ jobs:
         curl -X GET https://www.jogo-operador112.com/alliance_event_types.json > Events/pt_PT.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update pt_PT
@@ -406,7 +406,7 @@ jobs:
         curl -X GET https://www.jocdispecerat112.com/alliance_event_types.json > Events/ro_RO.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update ro_RO
@@ -430,7 +430,7 @@ jobs:
         curl -X GET https://www.dispetcher112.ru/alliance_event_types.json > Events/ru_RU.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update ru_RU
@@ -454,7 +454,7 @@ jobs:
        curl -X GET https://www.larmcentralen-spelet.se/alliance_event_types.json > Events/sv_SE.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update sv_SE
@@ -478,7 +478,7 @@ jobs:
         curl -X GET https://www.112-merkez.com/alliance_event_types.json > Events/tr_TR.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update tr_TR
@@ -502,7 +502,7 @@ jobs:
         curl -X GET https://www.dyspetcher101-game.com/alliance_event_types.json > Events/uk_UA.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update uk_UA
@@ -526,7 +526,7 @@ jobs:
         curl -X GET https://www.missionchief.co.uk/alliance_event_types.json > Events/en_GB.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update en_GB
@@ -550,7 +550,7 @@ jobs:
         curl -X GET https://www.missionchief.com/alliance_event_types.json > Events/en_US.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update en_US
@@ -574,7 +574,7 @@ jobs:
         curl -X GET https://www.dispecerske-centrum.com/alliance_event_types.json > Events/sk_SK.json
         
     - name: Prettify code & PUSH
-      uses: creyD/prettier_action@v3.3
+      uses: creyD/prettier_action@v4.0
       with:
         prettier_options: --write **/*.{js,md,json}
         commit_message: Update sk_SK
