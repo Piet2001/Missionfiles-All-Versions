@@ -4699,7 +4699,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [179],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
@@ -9720,5 +9720,42 @@
     },
     "overlay_index": null,
     "base_mission_id": 357
+  },
+  {
+    "id": "358",
+    "name": "Kommendering - fotbollsmatch, högrisk",
+    "place": "Arena",
+    "place_array": ["Arena"],
+    "average_credits": 3400,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 2,
+      "police_helicopters": 2,
+      "police_cars": 5,
+      "police_horse": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "followup_missions_ids": [55, 154],
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_allow_first_responder_chance": 1,
+      "need_police_horse_only_if_present": true,
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 358
   }
 ]
