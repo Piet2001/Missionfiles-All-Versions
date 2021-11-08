@@ -6069,7 +6069,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 182],
+      "expansion_missions_ids": [124, 213, 226, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -13421,5 +13421,56 @@
     "prerequisites": { "main_building": 2, "rescue_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 466
+  },
+  {
+    "id": "467",
+    "name": "Zadymienie w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 4500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [241, 273],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 467
+  },
+  {
+    "id": "468",
+    "name": "Zadymienie na dworcu kolejowym",
+    "place": "Dworzec kolejowy (ruch podmiejski)\nDworzec kolejowy (ruch podmiejski i dalekobieżny)",
+    "place_array": [
+      "Dworzec kolejowy (ruch podmiejski)",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)"
+    ],
+    "average_credits": 5300,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "platform_trucks": 30 },
+    "additional": {
+      "expansion_missions_ids": [442],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "overlay_index": null,
+    "base_mission_id": 468
   }
 ]
