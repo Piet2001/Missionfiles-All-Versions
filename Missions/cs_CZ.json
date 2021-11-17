@@ -279,6 +279,34 @@
     "base_mission_id": 12
   },
   {
+    "id": "12-0",
+    "name": "Strom přes cestu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 710,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "fwk": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [25],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_dlk_instead_of_lf": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 12
+  },
+  {
     "id": "13",
     "name": "Hořící kamion",
     "place": "",
@@ -553,6 +581,34 @@
     },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
+    "base_mission_id": 25
+  },
+  {
+    "id": "25-0",
+    "name": "Dopravní nehoda",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "fwk": 1, "traffic_car": 1 },
+    "chances": { "patient_transport": 40, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": 0,
     "base_mission_id": 25
   },
   {
@@ -1683,6 +1739,44 @@
     "base_mission_id": 73
   },
   {
+    "id": "73-0",
+    "name": "Vážná nehoda autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "traffic_car": 1,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Všeobecný chirurg"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": 0,
+    "base_mission_id": 73
+  },
+  {
     "id": "74",
     "name": "Velký oheň",
     "place": "",
@@ -1773,6 +1867,45 @@
       "fire_stations": 4
     },
     "overlay_index": null,
+    "base_mission_id": 76
+  },
+  {
+    "id": "76-0",
+    "name": "Dopravní nehoda s převrácením",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "traffic_car": 1,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 90 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [193],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": 0,
     "base_mission_id": 76
   },
   {
@@ -2605,6 +2738,43 @@
     "base_mission_id": 105
   },
   {
+    "id": "105-0",
+    "name": "Vykolejení vlaku",
+    "place": "Železniční přejezd",
+    "place_array": ["Železniční přejezd"],
+    "average_credits": 10400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": 0,
+    "base_mission_id": 105
+  },
+  {
     "id": "106",
     "name": "Vykolejení vlaku",
     "place": "Železniční stanice (regionální doprava)",
@@ -2640,6 +2810,43 @@
     "base_mission_id": 106
   },
   {
+    "id": "106-0",
+    "name": "Vykolejení vlaku",
+    "place": "Železniční stanice (regionální doprava)",
+    "place_array": ["Železniční stanice (regionální doprava)"],
+    "average_credits": 10400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": 0,
+    "base_mission_id": 106
+  },
+  {
     "id": "107",
     "name": "Vykolejení vlaku",
     "place": "Železniční stanice (regionální a dálková doprava)",
@@ -2672,6 +2879,43 @@
       "fire_stations": 15
     },
     "overlay_index": null,
+    "base_mission_id": 107
+  },
+  {
+    "id": "107-0",
+    "name": "Vykolejení vlaku",
+    "place": "Železniční stanice (regionální a dálková doprava)",
+    "place_array": ["Železniční stanice (regionální a dálková doprava)"],
+    "average_credits": 10400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": 0,
     "base_mission_id": 107
   },
   {
@@ -3854,6 +4098,48 @@
     "base_mission_id": 151
   },
   {
+    "id": "151-0",
+    "name": "Velká DN v tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 5800,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "traffic_car": 1,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": 0,
+    "base_mission_id": 151
+  },
+  {
     "id": "152",
     "name": "Požár více vozidel v tunelu",
     "place": "Tunel",
@@ -4385,6 +4671,44 @@
     "base_mission_id": 170
   },
   {
+    "id": "170-0",
+    "name": "Dopravní nehoda cisterny",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 170
+  },
+  {
     "id": "171",
     "name": "Nález nabouraného vozidla",
     "place": "",
@@ -4783,6 +5107,33 @@
     "base_mission_id": 184
   },
   {
+    "id": "184-0",
+    "name": "Hořící strašák",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "road_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 184
+  },
+  {
     "id": "185",
     "name": "Hořící dýňové pole",
     "place": "",
@@ -5017,6 +5368,46 @@
       "fire_stations": 7
     },
     "overlay_index": null,
+    "base_mission_id": 193
+  },
+  {
+    "id": "193-0",
+    "name": "Vážná dopravní nehoda",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "traffic_car": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 25,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "disaster_response_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": 0,
     "base_mission_id": 193
   },
   {
@@ -6817,6 +7208,46 @@
     "base_mission_id": 259
   },
   {
+    "id": "259-0",
+    "name": "Auto ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 3200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 259
+  },
+  {
     "id": "260",
     "name": "Auto ve vodě",
     "place": "Rybník",
@@ -6851,6 +7282,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 260
+  },
+  {
+    "id": "260-0",
+    "name": "Auto ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 3200,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 260
   },
   {
@@ -6892,6 +7362,46 @@
     "base_mission_id": 261
   },
   {
+    "id": "261-0",
+    "name": "Auto ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 3200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 261
+  },
+  {
     "id": "262",
     "name": "Auto ve vodě",
     "place": "Řeka",
@@ -6926,6 +7436,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 262
+  },
+  {
+    "id": "262-0",
+    "name": "Auto ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 3200,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 262
   },
   {
@@ -6967,6 +7516,46 @@
     "base_mission_id": 263
   },
   {
+    "id": "263-0",
+    "name": "Auto ve vodě",
+    "place": "Malý přístav",
+    "place_array": ["Malý přístav"],
+    "average_credits": 3200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 263
+  },
+  {
     "id": "264",
     "name": "Auto ve vodě",
     "place": "Malý přístav",
@@ -7001,6 +7590,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 264
+  },
+  {
+    "id": "264-0",
+    "name": "Auto ve vodě",
+    "place": "Malý přístav",
+    "place_array": ["Malý přístav"],
+    "average_credits": 3200,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 2,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "divers_extension_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 264
   },
   {
@@ -7042,6 +7670,46 @@
     "base_mission_id": 265
   },
   {
+    "id": "265-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 265
+  },
+  {
     "id": "266",
     "name": "Nákladní auto ve vodě",
     "place": "Rybník",
@@ -7076,6 +7744,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 266
+  },
+  {
+    "id": "266-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 266
   },
   {
@@ -7117,6 +7824,46 @@
     "base_mission_id": 267
   },
   {
+    "id": "267-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 267
+  },
+  {
     "id": "268",
     "name": "Nákladní auto ve vodě",
     "place": "Řeka",
@@ -7151,6 +7898,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 268
+  },
+  {
+    "id": "268-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 268
   },
   {
@@ -7192,6 +7978,46 @@
     "base_mission_id": 269
   },
   {
+    "id": "269-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Nákladní přístav",
+    "place_array": ["Nákladní přístav"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 269
+  },
+  {
     "id": "270",
     "name": "Nákladní auto ve vodě",
     "place": "Nákladní přístav",
@@ -7226,6 +8052,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 270
+  },
+  {
+    "id": "270-0",
+    "name": "Nákladní auto ve vodě",
+    "place": "Nákladní přístav",
+    "place_array": ["Nákladní přístav"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 270
   },
   {
@@ -7267,6 +8132,46 @@
     "base_mission_id": 271
   },
   {
+    "id": "271-0",
+    "name": "Autobus ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 271
+  },
+  {
     "id": "272",
     "name": "Autobus ve vodě",
     "place": "Rybník",
@@ -7301,6 +8206,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 272
+  },
+  {
+    "id": "272-0",
+    "name": "Autobus ve vodě",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 272
   },
   {
@@ -7342,6 +8286,46 @@
     "base_mission_id": 273
   },
   {
+    "id": "273-0",
+    "name": "Autobus ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 273
+  },
+  {
     "id": "274",
     "name": "Autobus ve vodě",
     "place": "Řeka",
@@ -7376,6 +8360,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 274
+  },
+  {
+    "id": "274-0",
+    "name": "Autobus ve vodě",
+    "place": "Řeka",
+    "place_array": ["Řeka"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 274
   },
   {
@@ -7417,6 +8440,46 @@
     "base_mission_id": 275
   },
   {
+    "id": "275-0",
+    "name": "Autobus ve vodě",
+    "place": "Most",
+    "place_array": ["Most"],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": 0,
+    "base_mission_id": 275
+  },
+  {
     "id": "276",
     "name": "Autobus ve vodě",
     "place": "Most",
@@ -7451,6 +8514,45 @@
       "fire_stations": 6
     },
     "overlay_index": null,
+    "base_mission_id": 276
+  },
+  {
+    "id": "276-0",
+    "name": "Autobus ve vodě",
+    "place": "Most",
+    "place_array": ["Most"],
+    "average_credits": 4400,
+    "generated_by": "Vodní záchranná služba ČČK",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 3,
+      "boats": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "divers_extension_count": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
     "base_mission_id": 276
   },
   {
@@ -10134,5 +11236,466 @@
     },
     "overlay_index": null,
     "base_mission_id": 371
+  },
+  {
+    "id": "374",
+    "name": "Pád stromu na osobu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 60,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 374
+  },
+  {
+    "id": "375",
+    "name": "Sesuv půdy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 375
+  },
+  {
+    "id": "375-0",
+    "name": "Sesuv půdy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1700,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": 0,
+    "base_mission_id": 375
+  },
+  {
+    "id": "376",
+    "name": "Pád stromu na elektrické vedení",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 376
+  },
+  {
+    "id": "376-0",
+    "name": "Pád stromu na elektrické vedení",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "fwk": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_count": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": 0,
+    "base_mission_id": 376
+  },
+  {
+    "id": "377",
+    "name": "Pád stromu na dům",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "platform_trucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 377
+  },
+  {
+    "id": "377-0",
+    "name": "Pád stromu na dům",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "fwk": 1,
+      "platform_trucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": 0,
+    "base_mission_id": 377
+  },
+  {
+    "id": "378",
+    "name": "Odtržení části střechy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "platform_trucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 378
+  },
+  {
+    "id": "379",
+    "name": "Čerpání vody ze sklepa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_crew_carrier_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 379
+  },
+  {
+    "id": "380",
+    "name": "Náraz vlaku do spadlého stromu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3100,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 70, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 8,
+      "expansion_missions_ids": [105],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 380
+  },
+  {
+    "id": "380-0",
+    "name": "Náraz vlaku do spadlého stromu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 70, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 8,
+      "expansion_missions_ids": [105],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 380
+  },
+  {
+    "id": "381",
+    "name": "Náraz autobusu do spadlého stromu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 70, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 381
+  },
+  {
+    "id": "381-0",
+    "name": "Náraz autobusu do spadlého stromu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 70, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 381
+  },
+  {
+    "id": "382",
+    "name": "Odtržení střechy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "platform_trucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 382
+  },
+  {
+    "id": "382-0",
+    "name": "Odtržení střechy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "fwk": 1,
+      "platform_trucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": 0,
+    "base_mission_id": 382
+  },
+  {
+    "id": "383",
+    "name": "Čerpání vody ze zatopené cesty",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_crew_carrier_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 383
+  },
+  {
+    "id": "384",
+    "name": "Monitoring vodního toku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_crew_carrier_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 384
   }
 ]
