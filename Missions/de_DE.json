@@ -1778,7 +1778,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 3 },
+    "requirements": { "police_cars": 3, "police_service_group_leader": 1 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
@@ -1787,7 +1787,11 @@
       "filter_id": "police_station_missions",
       "patient_specializations": "Unfallchirurgie"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 3 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 73
   },
@@ -1849,14 +1853,14 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 7 },
+    "requirements": { "police_cars": 7, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 2
     },
-    "prerequisites": { "main_building": 6 },
+    "prerequisites": { "main_building": 6, "police_service_group_leader": 1 },
     "overlay_index": 0,
     "base_mission_id": 75
   },
@@ -2113,7 +2117,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 40,
@@ -2132,6 +2137,7 @@
       "main_building": 0,
       "rescue_stations": 1,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -2288,7 +2294,8 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 10,
@@ -2305,6 +2312,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -2391,7 +2399,8 @@
       "heavy_rescue_vehicles": 1,
       "gwoil": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "battalion_chief_vehicles": 75,
@@ -2408,6 +2417,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -2540,7 +2550,8 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "police_cars": 5
+      "police_cars": 5,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 30 },
     "additional": {
@@ -2553,6 +2564,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -2749,7 +2761,8 @@
       "mobile_air_vehicles": 1,
       "gwoil": 1,
       "gwmess": 1,
-      "police_cars": 10
+      "police_cars": 10,
+      "police_service_group_leader": 2
     },
     "chances": {
       "mobile_air_vehicles": 45,
@@ -2764,7 +2777,7 @@
       "filter_id": "firehouse_missions",
       "patient_specializations": "Unfallchirurgie"
     },
-    "prerequisites": { "main_building": 0 },
+    "prerequisites": { "main_building": 0, "police_service_group_leader": 2 },
     "overlay_index": 0,
     "base_mission_id": 99
   },
@@ -2994,7 +3007,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 5, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 5,
@@ -3003,7 +3016,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 6,
-      "max_rescue_stations": 2
+      "max_rescue_stations": 2,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 106
@@ -3049,7 +3063,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 5, "police_service_group_leader": 1 },
     "chances": { "nef": 10, "patient_transport": 30 },
     "additional": {
       "possible_patient": 6,
@@ -3061,7 +3075,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 3,
-      "police_stations": 6
+      "police_stations": 6,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 107
@@ -3315,14 +3330,18 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
+    "requirements": { "police_cars": 4, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2021-10-15T09:00:00Z",
       "date_end": "2021-10-31T23:59:00+01:00"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 116
   },
@@ -3385,14 +3404,18 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "police_cars": 3 },
+    "requirements": { "police_cars": 3, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2021-10-15T09:00:00Z",
       "date_end": "2021-10-31T23:59:00+01:00"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 118
   },
@@ -3508,7 +3531,8 @@
       "fwk": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 75, "nef": 50, "patient_transport": 50 },
     "additional": {
@@ -3522,6 +3546,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -3727,7 +3752,8 @@
     "requirements": {
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 70 },
     "additional": {
@@ -3740,6 +3766,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -4088,7 +4115,8 @@
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "police_cars": 3,
-      "helicopter_bucket": 1
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 30,
@@ -4105,6 +4133,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 20
     },
     "overlay_index": 0,
@@ -4363,7 +4392,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 30,
@@ -4380,6 +4410,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -4508,14 +4539,18 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 3 },
+    "requirements": { "police_cars": 3, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1
     },
-    "prerequisites": { "main_building": 6, "police_stations": 3 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 151
   },
@@ -5145,7 +5180,8 @@
       "thw_gkw": 1,
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -5158,7 +5194,8 @@
       "thw": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 174
@@ -5299,7 +5336,8 @@
       "thw_gkw": 2,
       "thw_mtwtz": 1,
       "thw_brmg_r": 2,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 75, "platform_trucks": 30, "patient_transport": 30 },
     "additional": {
@@ -5317,6 +5355,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -5393,7 +5432,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_brmg_r": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 40,
@@ -5415,6 +5455,7 @@
       "thw": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -5689,7 +5730,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_lkw": 1,
-      "thw_dle": 1
+      "thw_dle": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 15, "nef": 20, "patient_transport": 65 },
     "additional": {
@@ -5708,6 +5750,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 18
     },
     "overlay_index": 0,
@@ -6020,13 +6063,19 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "lebefkw": 1, "police_cars": 2, "grukw": 3 },
+    "requirements": {
+      "lebefkw": 1,
+      "police_cars": 2,
+      "grukw": 3,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": { "filter_id": "riot_police_missions" },
     "prerequisites": {
       "main_building": 11,
       "police_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0]
     },
     "overlay_index": 0,
@@ -6109,7 +6158,8 @@
       "gefkw": 1,
       "police_cars": 2,
       "grukw": 6,
-      "k9": 1
+      "k9": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -6124,6 +6174,7 @@
       "main_building": 11,
       "police_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 2]
     },
     "overlay_index": 0,
@@ -6185,7 +6236,8 @@
       "police_cars": 2,
       "grukw": 9,
       "fukw": 1,
-      "k9": 1
+      "k9": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "k9": 40 },
     "additional": {
@@ -6200,6 +6252,7 @@
       "main_building": 11,
       "police_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 2]
     },
     "overlay_index": 0,
@@ -6356,7 +6409,8 @@
       "platform_trucks": 2,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 75,
@@ -6378,6 +6432,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -6460,7 +6515,8 @@
       "thw_gkw": 2,
       "thw_mtwtz": 1,
       "thw_brmg_r": 2,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 15,
@@ -6484,6 +6540,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 30
     },
     "overlay_index": 0,
@@ -6560,7 +6617,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 2,
       "thw_lkw": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -6574,7 +6632,8 @@
       "main_building": 0,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 207
@@ -6649,7 +6708,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "water_tankers": 20,
@@ -6668,6 +6728,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -6862,7 +6923,8 @@
       "thw_mzkw": 1,
       "thw_lkw": 1,
       "thw_dle": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 40,
@@ -6886,6 +6948,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 25
     },
     "overlay_index": 0,
@@ -6990,7 +7053,8 @@
       "mobile_air_vehicles": 2,
       "gwmess": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 70 },
     "additional": {
@@ -7003,6 +7067,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -7197,7 +7262,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 2,
       "thw_mzkw": 1,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 80, "patient_transport": 30 },
     "additional": {
@@ -7212,7 +7278,8 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 1
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 2
     },
     "overlay_index": 0,
     "base_mission_id": 221
@@ -7285,7 +7352,8 @@
       "police_cars": 6,
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 80, "patient_transport": 30 },
     "additional": {
@@ -7298,7 +7366,8 @@
     "prerequisites": {
       "main_building": 0,
       "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 222
@@ -7483,7 +7552,8 @@
       "lebefkw": 2,
       "police_cars": 3,
       "grukw": 6,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -7502,6 +7572,7 @@
       "rescue_stations": 1,
       "police_stations": 3,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1]
     },
     "overlay_index": 0,
@@ -7626,7 +7697,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 10, "k9": 1 },
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 1,
+      "police_service_group_leader": 1
+    },
     "chances": { "k9": 15 },
     "additional": {
       "max_possible_prisoners": 1,
@@ -7637,7 +7713,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 7,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 231
@@ -7681,7 +7758,11 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 2 },
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -7691,7 +7772,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 2,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 232
@@ -7745,7 +7827,8 @@
     "requirements": {
       "firetrucks": 1,
       "police_helicopters": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -7759,6 +7842,7 @@
       "rescue_stations": 1,
       "police_stations": 2,
       "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 1
     },
     "overlay_index": 0,
@@ -7813,7 +7897,8 @@
       "firetrucks": 10,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "police_cars": 5
+      "police_cars": 5,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -7825,6 +7910,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -7956,7 +8042,8 @@
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 80, "patient_transport": 90 },
     "additional": {
@@ -7968,6 +8055,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 9
     },
     "overlay_index": 0,
@@ -8023,7 +8111,8 @@
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 20, "patient_transport": 50 },
     "additional": {
@@ -8036,6 +8125,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -8097,7 +8187,8 @@
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 40, "patient_transport": 80 },
     "additional": {
@@ -8110,6 +8201,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -8216,7 +8308,12 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "gwmess": 1, "police_cars": 3 },
+    "requirements": {
+      "firetrucks": 2,
+      "gwmess": 1,
+      "police_cars": 3,
+      "police_service_group_leader": 1
+    },
     "chances": { "gwmess": 50, "nef": 10, "patient_transport": 20 },
     "additional": {
       "possible_patient": 15,
@@ -8227,6 +8324,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -8395,7 +8493,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 2,
       "diver_units": 2,
-      "boats": 2
+      "boats": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 90, "patient_transport": 90 },
     "additional": {
@@ -8409,6 +8508,7 @@
       "wasserrettung": 2,
       "rescue_stations": 1,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -8466,7 +8566,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 3,
       "diver_units": 3,
-      "boats": 3
+      "boats": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 90 },
     "additional": {
@@ -8479,6 +8580,7 @@
       "wasserrettung": 3,
       "rescue_stations": 1,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -8536,7 +8638,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 3,
       "diver_units": 3,
-      "boats": 3
+      "boats": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 90 },
     "additional": {
@@ -8549,6 +8652,7 @@
       "wasserrettung": 3,
       "rescue_stations": 10,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -8689,7 +8793,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 2,
       "diver_units": 2,
-      "boats": 2
+      "boats": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 90, "patient_transport": 90 },
     "additional": {
@@ -8703,6 +8808,7 @@
       "wasserrettung": 2,
       "rescue_stations": 1,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -8760,7 +8866,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 3,
       "diver_units": 3,
-      "boats": 3
+      "boats": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 90 },
     "additional": {
@@ -8773,6 +8880,7 @@
       "wasserrettung": 3,
       "rescue_stations": 1,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -8830,7 +8938,8 @@
       "battalion_chief_vehicles": 1,
       "police_cars": 3,
       "diver_units": 3,
-      "boats": 3
+      "boats": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 90 },
     "additional": {
@@ -8843,6 +8952,7 @@
       "wasserrettung": 3,
       "rescue_stations": 10,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -8897,7 +9007,8 @@
       "mobile_command_vehicles": 1,
       "police_cars": 5,
       "diver_units": 6,
-      "boats": 6
+      "boats": 6,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 90 },
     "additional": {
@@ -8906,7 +9017,7 @@
       "filter_id": "firehouse_missions",
       "patient_specializations": "Allgemeine Innere"
     },
-    "prerequisites": { "main_building": 0 },
+    "prerequisites": { "main_building": 0, "police_service_group_leader": 1 },
     "overlay_index": 0,
     "base_mission_id": 256
   },
@@ -8988,7 +9099,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 75, "patient_transport": 30 },
     "additional": {
@@ -8999,6 +9111,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -9273,7 +9386,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 30,
@@ -9292,6 +9406,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -9401,7 +9516,8 @@
       "hazmat_vehicles": 1,
       "police_cars": 3,
       "thw_gkw": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -9410,6 +9526,7 @@
       "police_stations": 3,
       "thw": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -9566,7 +9683,8 @@
       "lebefkw": 3,
       "police_cars": 4,
       "grukw": 9,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -9583,6 +9701,7 @@
       "rescue_stations": 4,
       "police_stations": 7,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 2,
       "main_building_extensions": [0, 1]
     },
@@ -9705,7 +9824,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 75,
@@ -9727,6 +9847,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -9799,7 +9920,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 75,
@@ -9821,6 +9943,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -9963,7 +10086,8 @@
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "heavy_rescue_vehicles": 30,
@@ -9981,6 +10105,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -10082,7 +10207,8 @@
       "thw_gkw": 1,
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -10090,7 +10216,12 @@
       "date_start": "2021-03-26T10:00:00Z",
       "date_end": "2021-04-05T23:59:00+02:00"
     },
-    "prerequisites": { "main_building": 9, "police_stations": 2, "thw": 1 },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 286
   },
@@ -10259,7 +10390,8 @@
       "lebefkw": 3,
       "police_cars": 4,
       "grukw": 9,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -10277,6 +10409,7 @@
       "rescue_stations": 4,
       "police_stations": 7,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 2,
       "main_building_extensions": [0, 1]
     },
@@ -10397,7 +10530,8 @@
       "police_cars": 5,
       "grukw": 27,
       "fukw": 3,
-      "k9": 2
+      "k9": 2,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -10415,6 +10549,7 @@
       "rescue_stations": 3,
       "police_stations": 5,
       "bereitschaftspolizei": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 2,
       "main_building_extensions": [0, 1]
     },
@@ -10457,7 +10592,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 6 },
+    "requirements": { "police_cars": 6, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [569],
@@ -10465,7 +10600,11 @@
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1
     },
-    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 295
   },
@@ -10728,7 +10867,8 @@
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
       "gwoil": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "platform_trucks": 50,
@@ -10747,6 +10887,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -10843,7 +10984,8 @@
       "grukw": 6,
       "fukw": 1,
       "k9": 2,
-      "wasserwerfer": 3
+      "wasserwerfer": 3,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -10862,6 +11004,7 @@
       "rescue_stations": 3,
       "police_stations": 6,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 1,
       "main_building_extensions": [0, 1, 3]
     },
@@ -10934,7 +11077,8 @@
       "grukw": 27,
       "fukw": 3,
       "k9": 2,
-      "wasserwerfer": 3
+      "wasserwerfer": 3,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -10952,6 +11096,7 @@
       "rescue_stations": 3,
       "police_stations": 5,
       "bereitschaftspolizei": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 2,
       "main_building_extensions": [0, 1, 3]
     },
@@ -11019,7 +11164,8 @@
       "police_cars": 8,
       "grukw": 9,
       "fukw": 1,
-      "wasserwerfer": 2
+      "wasserwerfer": 2,
+      "police_service_group_leader": 2
     },
     "chances": {},
     "additional": {
@@ -11036,6 +11182,7 @@
       "rescue_stations": 4,
       "police_stations": 7,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 2,
       "fire_stations": 2,
       "main_building_extensions": [0, 1, 3]
     },
@@ -11099,7 +11246,8 @@
       "grukw": 9,
       "fukw": 1,
       "k9": 1,
-      "wasserwerfer": 3
+      "wasserwerfer": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "k9": 40 },
     "additional": {
@@ -11113,6 +11261,7 @@
       "police_stations": 5,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 3]
     },
     "overlay_index": 0,
@@ -11417,7 +11566,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 75 },
     "additional": {
@@ -11429,6 +11579,7 @@
       "main_building": 0,
       "rescue_stations": 7,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -11607,7 +11758,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 100 },
     "additional": {
@@ -11626,6 +11778,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 30
     },
     "overlay_index": 0,
@@ -11677,13 +11830,15 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -11824,7 +11979,8 @@
       "thw_mtwtz": 2,
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 50 },
     "additional": {
@@ -11842,6 +11998,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 25
     },
     "overlay_index": 0,
@@ -11906,7 +12063,8 @@
       "police_cars": 10,
       "grukw": 18,
       "fukw": 2,
-      "wasserwerfer": 2
+      "wasserwerfer": 2,
+      "police_service_group_leader": 2
     },
     "chances": {},
     "additional": {
@@ -11922,6 +12080,7 @@
       "police_stations": 6,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 3,
+      "police_service_group_leader": 2,
       "main_building_extensions": [0, 1, 3]
     },
     "overlay_index": 0,
@@ -12590,7 +12749,8 @@
       "thw_gkw": 1,
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
-      "grukw": 3
+      "grukw": 3,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -12608,6 +12768,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 3,
       "main_building_extensions": [0, 1]
     },
@@ -12678,7 +12839,8 @@
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
       "height_rescue_units": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "nef": 75,
@@ -12695,6 +12857,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -12777,7 +12940,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 25, "patient_transport": 30, "helicopter": 10 },
     "additional": {
@@ -12795,6 +12959,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 25
     },
     "overlay_index": 0,
@@ -12901,7 +13066,8 @@
       "thw_mtwtz": 2,
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 30 },
     "additional": {
@@ -12916,7 +13082,8 @@
       "thw_bergung_count": 2,
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 2
     },
     "overlay_index": 0,
     "base_mission_id": 350
@@ -12977,7 +13144,8 @@
       "platform_trucks": 2,
       "mobile_air_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 30 },
     "additional": {
@@ -12989,6 +13157,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 10,
       "main_building_extensions": [8]
     },
@@ -13054,7 +13223,8 @@
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 30, "helicopter": 25 },
     "additional": {
@@ -13066,6 +13236,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -13113,7 +13284,12 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "lebefkw": 1, "police_cars": 3, "grukw": 3 },
+    "requirements": {
+      "lebefkw": 1,
+      "police_cars": 3,
+      "grukw": 3,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
@@ -13126,6 +13302,7 @@
       "main_building": 11,
       "police_stations": 3,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0]
     },
     "overlay_index": 0,
@@ -13195,14 +13372,24 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "mek": 4, "police_cars": 4, "fukw": 1 },
+    "requirements": {
+      "mek": 4,
+      "police_cars": 4,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 2
     },
-    "prerequisites": { "main_building": 6, "mek": 1, "police_stations": 3 },
+    "prerequisites": {
+      "main_building": 6,
+      "mek": 1,
+      "police_stations": 3,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 355
   },
@@ -13242,7 +13429,12 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "sek": 4, "police_cars": 4, "fukw": 1 },
+    "requirements": {
+      "sek": 4,
+      "police_cars": 4,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
@@ -13250,7 +13442,12 @@
       "filter_id": "police_station_missions",
       "patient_specializations": "Unfallchirurgie"
     },
-    "prerequisites": { "main_building": 6, "sek": 1, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "sek": 1,
+      "police_stations": 4,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 356
   },
@@ -13289,14 +13486,18 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [358],
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 357
   },
@@ -13353,7 +13554,8 @@
       "sek": 4,
       "police_helicopters": 1,
       "police_cars": 8,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 40, "patient_transport": 80, "helicopter": 5 },
     "additional": {
@@ -13369,7 +13571,8 @@
       "sek": 1,
       "rescue_stations": 1,
       "police_stations": 8,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 358
@@ -13430,7 +13633,8 @@
       "police_helicopters": 1,
       "police_cars": 5,
       "grukw": 6,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -13443,6 +13647,7 @@
       "mek": 1,
       "police_stations": 4,
       "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 2]
     },
     "overlay_index": 0,
@@ -13538,7 +13743,12 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "sek": 4, "police_cars": 6, "fukw": 1 },
+    "requirements": {
+      "sek": 4,
+      "police_cars": 6,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
     "chances": { "nef": 10, "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
@@ -13551,7 +13761,8 @@
       "main_building": 6,
       "sek": 1,
       "rescue_stations": 3,
-      "police_stations": 9
+      "police_stations": 9,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 367
@@ -13632,7 +13843,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "thw_dle": 1
+      "thw_dle": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 40, "patient_transport": 60, "helicopter": 20 },
     "additional": {
@@ -13649,6 +13861,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -13730,13 +13943,17 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
+    "requirements": { "police_cars": 4, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [83, 89, 125, 126, 127],
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 370
   },
@@ -14339,7 +14556,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 3,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "water_tankers": 10,
@@ -14358,6 +14576,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 3,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -14545,7 +14764,8 @@
       "heavy_rescue_vehicles": 1,
       "gwoil": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": {
       "gwoil": 25,
@@ -14563,6 +14783,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -15077,7 +15298,8 @@
       "height_rescue_units": 1,
       "police_helicopters": 1,
       "police_cars": 2,
-      "thw_gkw": 2
+      "thw_gkw": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 30 },
     "additional": {
@@ -15093,6 +15315,7 @@
       "police_helicopter_stations": 1,
       "thw": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -15374,7 +15597,8 @@
       "water_tankers": 1,
       "mobile_air_vehicles": 2,
       "gwmess": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 50 },
     "additional": {
@@ -15387,6 +15611,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 5,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -15535,7 +15760,8 @@
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "water_tankers": 10,
@@ -15552,6 +15778,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -15642,7 +15869,8 @@
       "thw_mzkw": 1,
       "thw_lkw": 1,
       "thw_dle": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 10,
@@ -15664,6 +15892,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -15851,7 +16080,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_brmg_r": 1
+      "thw_brmg_r": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "platform_trucks": 70,
@@ -15873,6 +16103,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -15942,7 +16173,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 2,
       "police_cars": 8,
-      "hazmat_dekon": 2
+      "hazmat_dekon": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 35, "patient_transport": 30 },
     "additional": {
@@ -15955,6 +16187,7 @@
       "main_building": 0,
       "rescue_stations": 15,
       "police_stations": 10,
+      "police_service_group_leader": 1,
       "fire_stations": 20
     },
     "overlay_index": 0,
@@ -16036,7 +16269,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 10, "patient_transport": 10 },
     "additional": {
@@ -16049,6 +16283,7 @@
       "main_building": 0,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 3
     },
     "overlay_index": 0,
@@ -16117,7 +16352,8 @@
       "heavy_rescue_vehicles": 2,
       "gwmess": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 5
+      "police_cars": 5,
+      "police_service_group_leader": 1
     },
     "chances": {
       "gwmess": 30,
@@ -16135,6 +16371,7 @@
       "main_building": 0,
       "rescue_stations": 7,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -16204,7 +16441,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 3,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
     "additional": {
@@ -16217,6 +16455,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -16290,7 +16529,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 3,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
     "additional": {
@@ -16303,6 +16543,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -16377,7 +16618,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "police_service_group_leader": 1 },
     "chances": { "nef": 20, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
@@ -16388,7 +16629,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 2
+      "police_stations": 2,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 437
@@ -16446,7 +16688,8 @@
       "heavy_rescue_vehicles": 1,
       "gwoil": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "hazmat_vehicles": 10, "nef": 10, "patient_transport": 30 },
     "additional": {
@@ -16458,6 +16701,7 @@
       "main_building": 0,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -16535,7 +16779,8 @@
       "thw_mtwtz": 2,
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 70, "helicopter": 10 },
     "additional": {
@@ -16552,6 +16797,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 20
     },
     "overlay_index": 0,
@@ -16816,7 +17062,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 40, "nef": 30, "patient_transport": 50 },
     "additional": {
@@ -16832,6 +17079,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -16914,7 +17162,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 10,
@@ -16931,6 +17180,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -16994,7 +17244,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 10,
@@ -17011,6 +17262,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -17074,7 +17326,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 5,
@@ -17091,6 +17344,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -17275,7 +17529,12 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "lebefkw": 1, "police_cars": 3, "grukw": 3 },
+    "requirements": {
+      "lebefkw": 1,
+      "police_cars": 3,
+      "grukw": 3,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
@@ -17287,6 +17546,7 @@
       "main_building": 11,
       "police_stations": 3,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1]
     },
     "overlay_index": 0,
@@ -17477,7 +17737,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "nef": 30,
@@ -17499,6 +17760,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 27
     },
     "overlay_index": 0,
@@ -17550,7 +17812,8 @@
     "requirements": {
       "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "heavy_rescue_vehicles": 40 },
     "additional": {
@@ -17561,6 +17824,7 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 1
     },
     "overlay_index": 0,
@@ -17623,7 +17887,8 @@
       "police_cars": 3,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 75 },
     "additional": { "filter_id": "technical_aid_organization_missions" },
@@ -17634,6 +17899,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 6,
       "main_building_extensions": [0, 1]
     },
@@ -17734,7 +18000,8 @@
       "thw_mzkw": 2,
       "thw_lkw": 1,
       "thw_dle": 1,
-      "hazmat_dekon": 2
+      "hazmat_dekon": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 40, "patient_transport": 50, "helicopter": 20 },
     "additional": {
@@ -17753,6 +18020,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 30
     },
     "overlay_index": 0,
@@ -17886,7 +18154,8 @@
       "fwk": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 5,
@@ -17903,6 +18172,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 3
     },
     "overlay_index": 0,
@@ -17963,7 +18233,8 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 75, "patient_transport": 30, "helicopter": 10 },
     "additional": {
@@ -17977,6 +18248,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -18089,7 +18361,8 @@
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 6
+      "police_cars": 6,
+      "police_service_group_leader": 1
     },
     "chances": {
       "platform_trucks": 50,
@@ -18107,6 +18380,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18167,7 +18441,8 @@
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 6
+      "police_cars": 6,
+      "police_service_group_leader": 1
     },
     "chances": {
       "platform_trucks": 50,
@@ -18185,6 +18460,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18245,7 +18521,8 @@
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 6
+      "police_cars": 6,
+      "police_service_group_leader": 1
     },
     "chances": {
       "platform_trucks": 50,
@@ -18263,6 +18540,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18361,7 +18639,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 80,
@@ -18381,6 +18660,7 @@
       "main_building": 0,
       "rescue_stations": 9,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18451,7 +18731,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 80,
@@ -18471,6 +18752,7 @@
       "main_building": 0,
       "rescue_stations": 9,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18541,7 +18823,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 80,
@@ -18561,6 +18844,7 @@
       "main_building": 0,
       "rescue_stations": 9,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -18767,7 +19051,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 2,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 50,
@@ -18787,6 +19072,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -18859,7 +19145,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "water_tankers": 50,
@@ -18875,6 +19162,7 @@
       "main_building": -2,
       "werkfeuerwehr": 1,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -18932,7 +19220,8 @@
       "lebefkw": 1,
       "police_helicopters": 1,
       "police_cars": 4,
-      "grukw": 3
+      "grukw": 3,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -18946,6 +19235,7 @@
       "police_stations": 4,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13,
       "main_building_extensions": [0]
     },
@@ -19049,7 +19339,8 @@
       "heavy_rescue_vehicles": 1,
       "mobile_air_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 14
+      "police_cars": 14,
+      "police_service_group_leader": 2
     },
     "chances": {
       "mobile_command_vehicles": 50,
@@ -19069,6 +19360,7 @@
       "main_building": 2,
       "rescue_stations": 46,
       "police_stations": 9,
+      "police_service_group_leader": 2,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -19136,7 +19428,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 6,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 10,
@@ -19155,6 +19448,7 @@
       "main_building": 2,
       "rescue_stations": 15,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -19220,7 +19514,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 5,
@@ -19239,6 +19534,7 @@
       "main_building": 2,
       "rescue_stations": 10,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -19307,7 +19603,7 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "police_cars": 9 },
+    "requirements": { "police_cars": 9, "police_service_group_leader": 1 },
     "chances": { "nef": 20, "patient_transport": 40, "helicopter": 2 },
     "additional": {
       "possible_patient": 17,
@@ -19318,7 +19614,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 10,
-      "police_stations": 9
+      "police_stations": 9,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 495
@@ -19405,7 +19702,8 @@
       "battalion_chief_vehicles": 1,
       "police_helicopters": 1,
       "police_cars": 6,
-      "boats": 2
+      "boats": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 90, "patient_transport": 100, "helicopter": 25 },
     "additional": {
@@ -19424,6 +19722,7 @@
       "rescue_stations": 1,
       "police_stations": 4,
       "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -19487,7 +19786,8 @@
       "battalion_chief_vehicles": 1,
       "police_helicopters": 1,
       "police_cars": 6,
-      "boats": 2
+      "boats": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 90, "patient_transport": 100, "helicopter": 25 },
     "additional": {
@@ -19506,6 +19806,7 @@
       "rescue_stations": 1,
       "police_stations": 4,
       "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -19563,7 +19864,8 @@
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 5,
       "gwoil": 2,
-      "police_cars": 8
+      "police_cars": 8,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 40, "patient_transport": 60, "helicopter": 10 },
     "additional": {
@@ -19576,6 +19878,7 @@
       "main_building": 0,
       "rescue_stations": 9,
       "police_stations": 8,
+      "police_service_group_leader": 2,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -19680,7 +19983,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 2,
       "thw_lkw": 1,
-      "thw_dle": 1
+      "thw_dle": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 80,
@@ -19702,6 +20006,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -19763,7 +20068,8 @@
       "platform_trucks": 4,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 10, "patient_transport": 90 },
     "additional": {
@@ -19776,6 +20082,7 @@
       "main_building": 0,
       "rescue_stations": 11,
       "police_stations": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -19853,7 +20160,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "water_damage_pump": 2
+      "water_damage_pump": 2,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -19870,6 +20178,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -19947,7 +20256,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "water_damage_pump": 2
+      "water_damage_pump": 2,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -19964,6 +20274,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -20044,7 +20355,8 @@
       "thw_mzkw": 3,
       "diver_units": 2,
       "boats": 3,
-      "water_damage_pump": 2
+      "water_damage_pump": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 30, "helicopter": 10 },
     "additional": {
@@ -20062,6 +20374,7 @@
       "thw_bergung_count": 3,
       "thw_zugtrupp_count": 3,
       "thw_gkw_count": 4,
+      "police_service_group_leader": 2,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -20165,7 +20478,8 @@
       "thw_mzkw": 3,
       "diver_units": 2,
       "boats": 3,
-      "water_damage_pump": 2
+      "water_damage_pump": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 30, "helicopter": 10 },
     "additional": {
@@ -20182,6 +20496,7 @@
       "thw_bergung_count": 3,
       "thw_zugtrupp_count": 3,
       "thw_gkw_count": 4,
+      "police_service_group_leader": 2,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -20274,7 +20589,8 @@
       "platform_trucks": 2,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "mobile_command_vehicles": 15 },
     "additional": {
@@ -20284,6 +20600,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -20418,7 +20735,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 45, "nef": 30, "patient_transport": 70 },
     "additional": {
@@ -20435,6 +20753,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -20545,7 +20864,8 @@
       "police_cars": 4,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "gwmess": 30, "nef": 25, "patient_transport": 40 },
     "additional": {
@@ -20563,6 +20883,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 18
     },
     "overlay_index": 0,
@@ -20740,7 +21061,8 @@
       "police_cars": 4,
       "thw_gkw": 2,
       "thw_mtwtz": 2,
-      "thw_mzkw": 2
+      "thw_mzkw": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "gwmess": 40, "nef": 40, "patient_transport": 50 },
     "additional": {
@@ -20757,6 +21079,7 @@
       "thw_bergung_count": 2,
       "thw_zugtrupp_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -20854,7 +21177,8 @@
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
       "thw_lkw": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 75, "patient_transport": 85 },
     "additional": {
@@ -20875,6 +21199,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 30
     },
     "overlay_index": 0,
@@ -21016,7 +21341,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 15,
@@ -21040,6 +21366,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -21123,7 +21450,8 @@
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
       "thw_lkw": 2,
-      "thw_dle": 2
+      "thw_dle": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 60,
@@ -21146,6 +21474,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -21222,7 +21551,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "thw_dle": 1
+      "thw_dle": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
     "additional": {
@@ -21240,6 +21570,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -21435,7 +21766,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 2,
       "thw_mzkw": 1,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "fwk": 75, "platform_trucks": 30, "patient_transport": 30 },
     "additional": {
@@ -21454,6 +21786,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -21549,7 +21882,8 @@
       "thw_lkw": 1,
       "thw_dle": 1,
       "hazmat_dekon": 1,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 40,
@@ -21574,6 +21908,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 25
     },
     "overlay_index": 0,
@@ -21632,7 +21967,8 @@
       "firetrucks": 1,
       "police_helicopters": 1,
       "police_cars": 2,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -21648,6 +21984,7 @@
       "police_stations": 2,
       "police_helicopter_stations": 1,
       "rescue_dog_units": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 1
     },
     "overlay_index": 0,
@@ -21714,7 +22051,8 @@
       "police_helicopters": 1,
       "police_cars": 6,
       "boats": 2,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 90, "patient_transport": 100, "helicopter": 25 },
     "additional": {
@@ -21734,6 +22072,7 @@
       "police_stations": 4,
       "police_helicopter_stations": 1,
       "rescue_dog_units": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -21815,7 +22154,8 @@
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
       "thw_lkw": 2,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 70, "helicopter": 10 },
     "additional": {
@@ -21834,6 +22174,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 20
     },
     "overlay_index": 0,
@@ -21917,7 +22258,8 @@
       "thw_mzkw": 2,
       "thw_lkw": 1,
       "thw_dle": 1,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 80,
@@ -21940,6 +22282,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -22008,7 +22351,11 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 4 },
+    "requirements": {
+      "firetrucks": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1
+    },
     "chances": { "firetrucks": 10 },
     "additional": {
       "max_possible_prisoners": 1,
@@ -22019,6 +22366,7 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 1
     },
     "overlay_index": 0,
@@ -22115,7 +22463,8 @@
       "thw_brmg_r": 2,
       "thw_mzkw": 2,
       "thw_lkw": 2,
-      "rescue_dog_units": 2
+      "rescue_dog_units": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 100, "helicopter": 15 },
     "additional": {
@@ -22135,6 +22484,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 3
     },
     "overlay_index": 0,
@@ -22224,7 +22574,8 @@
       "thw_lkw": 4,
       "grukw": 9,
       "fukw": 1,
-      "rescue_dog_units": 3
+      "rescue_dog_units": 3,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 50, "patient_transport": 50, "helicopter": 20 },
     "additional": {
@@ -22245,6 +22596,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 4,
       "thw_gkw_count": 4,
+      "police_service_group_leader": 1,
       "fire_stations": 30
     },
     "overlay_index": 0,
@@ -22305,7 +22657,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_lkw": 1,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -22319,7 +22672,8 @@
       "rescue_dog_units": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 541
@@ -22406,7 +22760,8 @@
       "thw_mzkw": 2,
       "thw_lkw": 2,
       "thw_dle": 2,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 60,
@@ -22431,6 +22786,7 @@
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -22511,7 +22867,8 @@
       "thw_mzkw": 1,
       "thw_lkw": 1,
       "thw_dle": 1,
-      "rescue_dog_units": 1
+      "rescue_dog_units": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
     "additional": {
@@ -22531,6 +22888,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -22592,7 +22950,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 75, "patient_transport": 100, "helicopter": 5 },
     "additional": {
@@ -22605,6 +22964,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -22693,7 +23053,8 @@
       "thw_mtwtz": 1,
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
-      "thw_lkw": 1
+      "thw_lkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 25,
@@ -22719,6 +23080,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -22773,7 +23135,8 @@
       "ambulances": 4,
       "gw_san": 1,
       "police_cars": 2,
-      "seg_elw": 1
+      "seg_elw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -22786,7 +23149,12 @@
       "date_start": "2021-06-25T09:00:00Z",
       "date_end": "2021-08-27T23:59:00Z"
     },
-    "prerequisites": { "main_building": 12, "police_stations": 2, "seg": 2 },
+    "prerequisites": {
+      "main_building": 12,
+      "police_stations": 2,
+      "seg": 2,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 546
   },
@@ -22925,7 +23293,8 @@
       "heavy_rescue_vehicles": 3,
       "gwoil": 1,
       "police_cars": 4,
-      "thw_gkw": 1
+      "thw_gkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "gwoil": 80,
@@ -22944,6 +23313,7 @@
       "police_stations": 2,
       "thw": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -22984,14 +23354,18 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "police_service_group_leader": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1
     },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 551
   },
@@ -23052,7 +23426,8 @@
       "water_tankers": 2,
       "mobile_air_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 60, "patient_transport": 80 },
     "additional": {
@@ -23064,6 +23439,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -23185,7 +23561,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 30,
@@ -23202,6 +23579,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -23275,7 +23653,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 30,
@@ -23292,6 +23671,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -23354,7 +23734,8 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 5
+      "police_cars": 5,
+      "police_service_group_leader": 1
     },
     "chances": {
       "gwoil": 40,
@@ -23372,6 +23753,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 9
     },
     "overlay_index": 0,
@@ -23438,7 +23820,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 5,
@@ -23456,6 +23839,7 @@
       "main_building": 0,
       "rescue_stations": 7,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -23528,7 +23912,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 40,
@@ -23546,6 +23931,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -23659,7 +24045,8 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "gwoil": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "gwoil": 80, "nef": 50, "patient_transport": 70 },
     "additional": {
@@ -23672,6 +24059,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -23738,7 +24126,8 @@
       "lebefkw": 3,
       "police_cars": 12,
       "grukw": 9,
-      "fukw": 1
+      "fukw": 1,
+      "police_service_group_leader": 2
     },
     "chances": {},
     "additional": {
@@ -23756,6 +24145,7 @@
       "police_stations": 12,
       "bereitschaftspolizei": 1,
       "seg": 1,
+      "police_service_group_leader": 2,
       "fire_stations": 3
     },
     "overlay_index": 0,
@@ -23819,14 +24209,24 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "mek": 4, "police_cars": 4, "fukw": 1 },
+    "requirements": {
+      "mek": 4,
+      "police_cars": 4,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 5,
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 2
     },
-    "prerequisites": { "main_building": 6, "mek": 1, "police_stations": 5 },
+    "prerequisites": {
+      "main_building": 6,
+      "mek": 1,
+      "police_stations": 5,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 565
   },
@@ -23932,7 +24332,8 @@
       "police_cars": 10,
       "grukw": 9,
       "fukw": 1,
-      "k9": 1
+      "k9": 1,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -23946,6 +24347,7 @@
       "police_stations": 7,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 2,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 2]
     },
     "overlay_index": 0,
@@ -23993,7 +24395,12 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "sek": 4, "police_cars": 6, "fukw": 1 },
+    "requirements": {
+      "sek": 4,
+      "police_cars": 6,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
     "chances": { "nef": 20, "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
@@ -24006,7 +24413,8 @@
       "main_building": 6,
       "sek": 1,
       "rescue_stations": 2,
-      "police_stations": 6
+      "police_stations": 6,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 569
@@ -24062,7 +24470,8 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "platform_trucks": 70, "nef": 35, "patient_transport": 60 },
     "additional": {
@@ -24074,6 +24483,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -24128,7 +24538,8 @@
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 35, "patient_transport": 50 },
     "additional": {
@@ -24140,6 +24551,7 @@
       "main_building": 0,
       "rescue_stations": 2,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -24182,7 +24594,7 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 6 },
+    "requirements": { "police_cars": 6, "police_service_group_leader": 1 },
     "chances": { "nef": 0, "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
@@ -24191,7 +24603,11 @@
       "max_civil_patrol_replacing_police_cars": 1,
       "patient_specializations": "Allgemeine Chirurgie"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "police_service_group_leader": 1
+    },
     "overlay_index": 0,
     "base_mission_id": 572
   },
@@ -24263,7 +24679,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 75,
@@ -24282,6 +24699,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -24402,7 +24820,8 @@
       "gwoil": 1,
       "gwmess": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "hazmat_vehicles": 15, "nef": 20, "patient_transport": 50 },
     "additional": {
@@ -24414,6 +24833,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -24508,7 +24928,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 25, "patient_transport": 100 },
     "additional": {
@@ -24521,6 +24942,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -24589,7 +25011,8 @@
       "gwmess": 2,
       "hazmat_vehicles": 1,
       "police_cars": 4,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 25, "patient_transport": 100 },
     "additional": {
@@ -24603,6 +25026,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 4,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 14
     },
     "overlay_index": 0,
@@ -24650,7 +25074,12 @@
       "/images/bar_coktail_gelb.png",
       "/images/bar_coktail_rot.png"
     ],
-    "requirements": { "lebefkw": 2, "police_cars": 6, "grukw": 6 },
+    "requirements": {
+      "lebefkw": 2,
+      "police_cars": 6,
+      "grukw": 6,
+      "police_service_group_leader": 1
+    },
     "chances": { "nef": 20, "patient_transport": 10 },
     "additional": {
       "possible_patient": 5,
@@ -24663,6 +25092,7 @@
       "rescue_stations": 3,
       "police_stations": 8,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0]
     },
     "overlay_index": 0,
@@ -24780,7 +25210,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 5,
@@ -24801,6 +25232,7 @@
       "main_building": 2,
       "rescue_stations": 10,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -24870,7 +25302,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 6,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 10,
@@ -24891,6 +25324,7 @@
       "main_building": 2,
       "rescue_stations": 15,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -24963,7 +25397,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 14,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 2
     },
     "chances": {
       "mobile_command_vehicles": 50,
@@ -24985,6 +25420,7 @@
       "main_building": 2,
       "rescue_stations": 46,
       "police_stations": 9,
+      "police_service_group_leader": 2,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -25238,7 +25674,8 @@
       "police_cars": 10,
       "grukw": 9,
       "fukw": 1,
-      "wasserwerfer": 3
+      "wasserwerfer": 3,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 30, "patient_transport": 20 },
     "additional": {
@@ -25256,6 +25693,7 @@
       "police_stations": 7,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
+      "police_service_group_leader": 2,
       "main_building_extensions": [0, 1, 3]
     },
     "overlay_index": 0,
@@ -25361,7 +25799,8 @@
       "police_cars": 6,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 50,
@@ -25380,6 +25819,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 22
     },
     "overlay_index": 0,
@@ -25461,7 +25901,8 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 65, "patient_transport": 80, "helicopter": 10 },
     "additional": {
@@ -25476,6 +25917,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -25794,7 +26236,8 @@
       "thw_mtwtz": 3,
       "thw_brmg_r": 2,
       "thw_mzkw": 3,
-      "thw_lkw": 2
+      "thw_lkw": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 25, "patient_transport": 40 },
     "additional": {
@@ -25812,6 +26255,7 @@
       "thw_zugtrupp_count": 3,
       "thw_fg_raeumen_count": 2,
       "thw_gkw_count": 3,
+      "police_service_group_leader": 2,
       "fire_stations": 32
     },
     "overlay_index": 0,
@@ -25952,7 +26396,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 6,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "hazmat_dekon": 20, "nef": 40, "patient_transport": 30 },
     "additional": {
@@ -25966,6 +26411,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 18
     },
     "overlay_index": 0,
@@ -26029,7 +26475,8 @@
       "police_cars": 10,
       "grukw": 9,
       "fukw": 1,
-      "k9": 1
+      "k9": 1,
+      "police_service_group_leader": 2
     },
     "chances": { "k9": 40, "nef": 40, "patient_transport": 35 },
     "additional": {
@@ -26046,6 +26493,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 2,
       "guard_dog_count": 1,
+      "police_service_group_leader": 2,
       "main_building_extensions": [0, 1, 3]
     },
     "overlay_index": 0,
@@ -26111,7 +26559,8 @@
       "police_cars": 17,
       "grukw": 24,
       "fukw": 2,
-      "k9": 2
+      "k9": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 40, "patient_transport": 35 },
     "additional": {
@@ -26128,6 +26577,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 5,
       "guard_dog_count": 1,
+      "police_service_group_leader": 2,
       "main_building_extensions": [0, 1, 3]
     },
     "overlay_index": 0,
@@ -26285,7 +26735,8 @@
       "police_cars": 2,
       "thw_gkw": 2,
       "thw_mtwtz": 1,
-      "thw_mzkw": 2
+      "thw_mzkw": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "gwoil": 10, "nef": 15, "patient_transport": 30 },
     "additional": {
@@ -26303,6 +26754,7 @@
       "thw_bergung_count": 2,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 6
     },
     "overlay_index": 0,
@@ -26372,7 +26824,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "police_cars": 6,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 10,
@@ -26393,6 +26846,7 @@
       "main_building": 2,
       "rescue_stations": 15,
       "police_stations": 5,
+      "police_service_group_leader": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -26469,7 +26923,8 @@
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
       "diver_units": 2,
-      "boats": 4
+      "boats": 4,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 30, "patient_transport": 40 },
     "additional": {
@@ -26487,6 +26942,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -26555,7 +27011,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 75, "patient_transport": 100, "helicopter": 10 },
     "additional": {
@@ -26569,6 +27026,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -26637,7 +27095,8 @@
       "gwmess": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 75, "patient_transport": 100, "helicopter": 10 },
     "additional": {
@@ -26651,6 +27110,7 @@
       "werkfeuerwehr": 1,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -26749,7 +27209,8 @@
       "police_cars": 2,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "nef": 80,
@@ -26771,6 +27232,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 4
     },
     "overlay_index": 0,
@@ -26847,7 +27309,8 @@
       "police_cars": 8,
       "thw_gkw": 1,
       "thw_mtwtz": 1,
-      "thw_mzkw": 1
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 25,
@@ -26869,6 +27332,7 @@
       "thw_bergung_count": 1,
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 16
     },
     "overlay_index": 0,
@@ -27024,7 +27488,11 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 3 },
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 3,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -27034,7 +27502,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 2,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": 0,
     "base_mission_id": 629
@@ -27128,7 +27597,11 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 5, "civil_patrolcar": 1 },
+    "requirements": {
+      "police_cars": 5,
+      "civil_patrolcar": 1,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
@@ -27138,6 +27611,7 @@
       "main_building": 6,
       "police_stations": 5,
       "criminal_investigation_count": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [11]
     },
     "overlay_index": 0,
@@ -27213,7 +27687,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 4, "k9": 1, "civil_patrolcar": 1 },
+    "requirements": {
+      "police_cars": 4,
+      "k9": 1,
+      "civil_patrolcar": 1,
+      "police_service_group_leader": 1
+    },
     "chances": { "civil_patrolcar": 70 },
     "additional": {
       "expansion_missions_ids": [635],
@@ -27225,6 +27704,7 @@
       "police_stations": 3,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [11]
     },
     "overlay_index": 0,
@@ -27280,7 +27760,8 @@
       "police_helicopters": 1,
       "police_cars": 6,
       "k9": 1,
-      "civil_patrolcar": 1
+      "civil_patrolcar": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "k9": 50, "civil_patrolcar": 70 },
     "additional": {
@@ -27293,6 +27774,7 @@
       "police_helicopter_stations": 1,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_service_group_leader": 1,
       "main_building_extensions": [11]
     },
     "overlay_index": 0,
@@ -27353,7 +27835,8 @@
       "police_helicopters": 1,
       "police_cars": 4,
       "fukw": 1,
-      "civil_patrolcar": 2
+      "civil_patrolcar": 2,
+      "police_service_group_leader": 1
     },
     "chances": {},
     "additional": {
@@ -27367,6 +27850,7 @@
       "police_stations": 10,
       "police_helicopter_stations": 1,
       "criminal_investigation_count": 2,
+      "police_service_group_leader": 1,
       "main_building_extensions": [11]
     },
     "overlay_index": 0,
@@ -27526,7 +28010,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "fwk": 50,
@@ -27550,6 +28035,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -27686,7 +28172,8 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "height_rescue_units": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 100, "patient_transport": 100, "helicopter": 25 },
     "additional": {
@@ -27700,6 +28187,7 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 12
     },
     "overlay_index": 0,
@@ -27757,7 +28245,8 @@
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "mobile_air_vehicles": 15 },
     "additional": {
@@ -27768,6 +28257,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 9
     },
     "overlay_index": 0,
@@ -27826,7 +28316,8 @@
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "mobile_air_vehicles": 15 },
     "additional": {
@@ -27838,6 +28329,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 9
     },
     "overlay_index": 0,
@@ -28070,7 +28562,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "thw_dle": 1
+      "thw_dle": 1,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_command_vehicles": 30,
@@ -28091,6 +28584,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -28168,7 +28662,8 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 15, "patient_transport": 25 },
     "additional": {
@@ -28181,6 +28676,7 @@
       "main_building": 0,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 5
     },
     "overlay_index": 0,
@@ -28251,7 +28747,8 @@
       "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "gwmess": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "police_service_group_leader": 1
     },
     "chances": {
       "water_tankers": 65,
@@ -28269,6 +28766,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 3,
+      "police_service_group_leader": 1,
       "fire_stations": 17
     },
     "overlay_index": 0,
@@ -28436,7 +28934,8 @@
       "thw_mtwtz": 1,
       "thw_mzkw": 2,
       "pump": 2,
-      "min_pump_speed": 27000
+      "min_pump_speed": 27000,
+      "police_service_group_leader": 1
     },
     "chances": { "mobile_command_vehicles": 30, "water_tankers": 50 },
     "additional": {
@@ -28451,6 +28950,7 @@
       "thw_zugtrupp_count": 1,
       "thw_gkw_count": 2,
       "water_damage_pump_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -28535,7 +29035,8 @@
       "grukw": 9,
       "fukw": 1,
       "pump": 4,
-      "min_pump_speed": 55000
+      "min_pump_speed": 55000,
+      "police_service_group_leader": 2
     },
     "chances": {},
     "additional": {
@@ -28553,6 +29054,7 @@
       "thw_zugtrupp_count": 5,
       "thw_gkw_count": 5,
       "water_damage_pump_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 25
     },
     "overlay_index": 0,
@@ -28738,7 +29240,8 @@
       "thw_lkw": 1,
       "thw_dle": 1,
       "pump": 1,
-      "min_pump_speed": 25000
+      "min_pump_speed": 25000,
+      "police_service_group_leader": 1
     },
     "chances": { "gwoil": 50 },
     "additional": {
@@ -28754,6 +29257,7 @@
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
       "water_damage_pump_count": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -28836,7 +29340,8 @@
       "diver_units": 2,
       "boats": 3,
       "pump": 3,
-      "water_damage_pump": 2
+      "water_damage_pump": 2,
+      "police_service_group_leader": 2
     },
     "chances": { "nef": 50, "patient_transport": 30, "helicopter": 10 },
     "additional": {
@@ -28854,6 +29359,7 @@
       "thw_zugtrupp_count": 3,
       "thw_gkw_count": 4,
       "water_damage_pump_count": 2,
+      "police_service_group_leader": 2,
       "fire_stations": 15
     },
     "overlay_index": 0,
@@ -28943,7 +29449,8 @@
       "platform_trucks": 1,
       "water_tankers": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 40,
@@ -28960,6 +29467,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -29088,7 +29596,8 @@
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
     "chances": {
       "mobile_air_vehicles": 15,
@@ -29105,6 +29614,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 2,
+      "police_service_group_leader": 1,
       "fire_stations": 8
     },
     "overlay_index": 0,
@@ -29186,7 +29696,8 @@
       "thw_brmg_r": 1,
       "thw_mzkw": 1,
       "thw_lkw": 1,
-      "hazmat_dekon": 1
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 20, "patient_transport": 60 },
     "additional": {
@@ -29203,6 +29714,7 @@
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
       "fire_stations": 20
     },
     "overlay_index": 0,
@@ -29758,7 +30270,11 @@
       "/images/glasses_gelb.png",
       "/images/glasses_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 4 },
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
@@ -29767,7 +30283,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 3,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1
     },
     "overlay_index": null,
     "base_mission_id": 688
@@ -29793,7 +30310,8 @@
       "fukw": 2,
       "k9": 2,
       "wasserwerfer": 3,
-      "civil_patrolcar": 2
+      "civil_patrolcar": 2,
+      "police_service_group_leader": 1
     },
     "chances": { "nef": 20, "patient_transport": 50 },
     "additional": {
@@ -29811,6 +30329,7 @@
       "bereitschaftspolizei": 3,
       "guard_dog_count": 2,
       "criminal_investigation_count": 2,
+      "police_service_group_leader": 1,
       "main_building_extensions": [0, 1, 2, 3]
     },
     "overlay_index": null,
