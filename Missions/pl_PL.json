@@ -6069,7 +6069,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 182],
+      "expansion_missions_ids": [124, 213, 226, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -13479,5 +13479,63 @@
     "prerequisites": { "main_building": 2, "rescue_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 470
+  },
+  {
+    "id": "471",
+    "name": "Wybuch w fabryce fajerwerków",
+    "place": "Fabryka",
+    "place_array": ["Fabryka"],
+    "average_credits": 18000,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 60000,
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 22 },
+    "overlay_index": null,
+    "base_mission_id": 471
+  },
+  {
+    "id": "471-0",
+    "name": "Wybuch w fabryce fajerwerków",
+    "place": "Fabryka",
+    "place_array": ["Fabryka"],
+    "average_credits": 14500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 3000,
+      "water_needed": 60000,
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 1,
+      "foam": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 2,
+      "fire_stations": 22
+    },
+    "overlay_index": 0,
+    "base_mission_id": 471
   }
 ]
