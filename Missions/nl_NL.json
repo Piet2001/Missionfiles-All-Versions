@@ -11946,7 +11946,7 @@
     "name": "Brand in kerkgebouw",
     "place": "Kerkgebouw",
     "place_array": ["Kerkgebouw"],
-    "average_credits": 8720,
+    "average_credits": 7920,
     "generated_by": "Brandweer, Kazerne",
     "icons": [
       "/images/fire_gruen.png",
@@ -11964,7 +11964,7 @@
       "water_tankers": 2,
       "mobile_air_vehicles": 1,
       "police_cars": 2,
-      "foam": 2
+      "foam": 1
     },
     "chances": { "heavy_rescue_vehicles": 20, "patient_transport": 40 },
     "additional": {
@@ -27128,6 +27128,50 @@
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
+    "base_mission_id": 878
+  },
+  {
+    "id": "878-0",
+    "name": "Afzetten straat voor brandweer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "Politie, Opkomstbureau",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": 0,
+    "base_mission_id": 878
+  },
+  {
+    "id": "878-1",
+    "name": "Afzetten straat voor brandweer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 840,
+    "generated_by": "Politie, Opkomstbureau",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": 1,
     "base_mission_id": 878
   },
   {
