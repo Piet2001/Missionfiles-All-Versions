@@ -10177,5 +10177,34 @@
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 361
+  },
+  {
+    "id": "362",
+    "name": "480 Lapsi lukittu autoon",
+    "place": "Pysäköintihalli",
+    "place_array": ["Pysäköintihalli"],
+    "average_credits": 500,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 95,
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 362
   }
 ]
