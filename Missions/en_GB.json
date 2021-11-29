@@ -13589,7 +13589,11 @@
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
     },
-    "prerequisites": { "main_building": 0 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 392
   },
@@ -13612,7 +13616,11 @@
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true
     },
-    "prerequisites": { "main_building": 0 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 393
   },
@@ -13702,7 +13710,7 @@
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6 },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 395
   },
