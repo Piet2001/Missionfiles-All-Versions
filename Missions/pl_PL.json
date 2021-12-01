@@ -1780,6 +1780,220 @@
     "base_mission_id": 75
   },
   {
+    "id": "76",
+    "name": "Kradzież na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 300,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 76
+  },
+  {
+    "id": "77",
+    "name": "Płonący stragan bożonarodzeniowy",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 610,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 400,
+      "water_needed": 1200,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 77
+  },
+  {
+    "id": "78",
+    "name": "Pożar na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 310,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 600,
+      "water_needed": 1600,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 78
+  },
+  {
+    "id": "78-1",
+    "name": "Pożar na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 460,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 600,
+      "water_needed": 1600,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": 1,
+    "base_mission_id": 78
+  },
+  {
+    "id": "79",
+    "name": "Wypadek drogowy - lód",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1410,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 35 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 79
+  },
+  {
+    "id": "80",
+    "name": "Płonąca choinka",
+    "place": "",
+    "place_array": [],
+    "average_credits": 870,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 1200, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 80
+  },
+  {
+    "id": "81",
+    "name": "Płonący wieniec adwentowy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 800, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 81
+  },
+  {
+    "id": "82",
+    "name": "Bójka na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 600,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2021-12-01T10:00:00+01:00",
+      "date_end": "2021-12-26T23:59:00+01:00",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 82
+  },
+  {
     "id": "83",
     "name": "Osoba uwięziona pod maszyną",
     "place": "",
