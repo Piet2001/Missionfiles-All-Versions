@@ -2269,6 +2269,186 @@
     "base_mission_id": 78
   },
   {
+    "id": "79",
+    "name": "Theft at christmas market",
+    "place": "Christmas market",
+    "place_array": ["Christmas market"],
+    "average_credits": 300,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 79
+  },
+  {
+    "id": "80",
+    "name": "Burning christmas market stall",
+    "place": "Christmas market",
+    "place_array": ["Christmas market"],
+    "average_credits": 610,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["69-E-3"],
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 80
+  },
+  {
+    "id": "81",
+    "name": "Fire at christmas market",
+    "place": "Christmas market",
+    "place_array": ["Christmas market"],
+    "average_credits": 310,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["69-E-3"],
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 81
+  },
+  {
+    "id": "82",
+    "name": "Traffic accident - ice",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1410,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["72D-1"],
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 82
+  },
+  {
+    "id": "83",
+    "name": "Burning christmas tree",
+    "place": "",
+    "place_array": [],
+    "average_credits": 870,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 83
+  },
+  {
+    "id": "84",
+    "name": "Burning advent wreath",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 84
+  },
+  {
+    "id": "85",
+    "name": "Brawl at christmas market",
+    "place": "Christmas market",
+    "place_array": ["Christmas market"],
+    "average_credits": 600,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1",
+        "30-B-2",
+        "30-A-1"
+      ],
+      "date_start": "2021-12-01T10:00:00-05:00",
+      "date_end": "2021-12-26T23:59:00-05:00",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 85
+  },
+  {
     "id": "86",
     "name": "MVA Rollover",
     "place": "",
