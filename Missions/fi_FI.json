@@ -557,7 +557,7 @@
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 1,
-      "expansion_missions_ids": [24, 2],
+      "expansion_missions_ids": [24, 2, 29],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Traumatologia"
     },
@@ -10206,5 +10206,73 @@
     },
     "overlay_index": null,
     "base_mission_id": 362
+  },
+  {
+    "id": "363",
+    "name": "771 Sokeritasapainon häiriö",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "Ambulanssiasema",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 363
+  },
+  {
+    "id": "364",
+    "name": "403 Suuri varastorakennuspalo",
+    "place": "Varastorakennus\nVarasto",
+    "place_array": ["Varastorakennus", "Varasto"],
+    "average_credits": 9500,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/warehouse_gruen.png",
+      "/images/warehouse_gelb.png",
+      "/images/warehouse_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 72500,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 3,
+      "hose": 2
+    },
+    "chances": {
+      "patient_transport": 33,
+      "helicopter": 2,
+      "patient_critical_care": 33
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 364
   }
 ]
