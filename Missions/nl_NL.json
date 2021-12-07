@@ -6125,12 +6125,12 @@
     "name": "Schietincident",
     "place": "",
     "place_array": [],
-    "average_credits": 1500,
+    "average_credits": 2480,
     "generated_by": "Politie, Opkomstbureau",
     "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
     ],
     "requirements": { "police_cars": 5, "ovdp": 1 },
     "chances": { "nef": 100, "patient_transport": 100 },
@@ -6144,7 +6144,7 @@
     "prerequisites": {
       "main_building": 5,
       "rescue_stations": 10,
-      "police_stations": 5
+      "police_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 236
@@ -8593,12 +8593,12 @@
     "name": "Bedreiging met vuurwapen",
     "place": "",
     "place_array": [],
-    "average_credits": 1100,
+    "average_credits": 670,
     "generated_by": "Politie, Opkomstbureau",
     "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
@@ -8606,7 +8606,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 316
   },
@@ -8615,12 +8615,12 @@
     "name": "Bedreiging met vuurwapen",
     "place": "",
     "place_array": [],
-    "average_credits": 2000,
+    "average_credits": 1010,
     "generated_by": "Politie, Opkomstbureau",
     "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
     ],
     "requirements": { "police_cars": 4 },
     "chances": {},
@@ -8628,7 +8628,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 5, "police_stations": 6 },
+    "prerequisites": { "main_building": 5, "police_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 317
   },
@@ -26100,6 +26100,7 @@
       "police_stations": 14,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 3,
+      "prisoner_transport_count": 1,
       "main_building_extensions": [2]
     },
     "overlay_index": null,
@@ -26530,7 +26531,7 @@
     "requirements": { "firetrucks": 1, "police_cars": 1, "water_rescue": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [867, 868],
+      "expansion_missions_ids": [867, 868, 880, 881, 882],
       "filter_id": "water_watch_missions"
     },
     "prerequisites": {
@@ -26563,7 +26564,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [868],
+      "expansion_missions_ids": [868, 880, 881, 882],
       "filter_id": "water_watch_missions"
     },
     "prerequisites": {
@@ -26606,7 +26607,7 @@
     "additional": {
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
       "filter_id": "water_watch_missions",
-      "subsequent_missions_ids": [877],
+      "subsequent_missions_ids": [880, 881, 882],
       "need_bike_police_only_if_present": true
     },
     "prerequisites": {
@@ -27256,7 +27257,7 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
-      "expansion_missions_ids": [866, 867],
+      "expansion_missions_ids": [881, 882],
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
       "filter_id": "water_watch_missions",
       "subsequent_missions_ids": [877],
@@ -27312,7 +27313,7 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
-      "expansion_missions_ids": [867],
+      "expansion_missions_ids": [882],
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
       "filter_id": "water_watch_missions",
       "allow_arff_instead_of_lf": true,
