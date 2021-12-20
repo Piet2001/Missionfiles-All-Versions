@@ -14182,5 +14182,54 @@
     "overlay_index": null,
     "base_mission_id": 476,
     "additive_overlays": ""
+  },
+  {
+    "id": "477",
+    "name": "Pożar na kempingu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 5200,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 2 },
+    "chances": { "patient_transport": 35, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 4,
+      "followup_missions_ids": [15],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": ""
+  },
+  {
+    "id": "478",
+    "name": "Płonący kontener na śmieci",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 3900, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 478,
+    "additive_overlays": ""
   }
 ]
