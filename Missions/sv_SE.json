@@ -3844,7 +3844,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [132],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
       "need_police_horse_only_if_present": true,
@@ -4880,7 +4880,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [179],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
@@ -10167,6 +10167,7 @@
     },
     "additional": {
       "possible_patient": 1,
+      "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_specializations": "Allmänkirurg"
     },
@@ -10284,6 +10285,29 @@
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 364,
+    "additive_overlays": ""
+  },
+  {
+    "id": "365",
+    "name": "Olaga intrång",
+    "place": "Kontorsbyggnad\nHöghus\nHotell",
+    "place_array": ["Kontorsbyggnad", "Höghus", "Hotell"],
+    "average_credits": 754,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 365,
     "additive_overlays": ""
   }
 ]
