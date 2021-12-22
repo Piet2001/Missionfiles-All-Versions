@@ -30994,5 +30994,67 @@
     "overlay_index": null,
     "base_mission_id": 694,
     "additive_overlays": ""
+  },
+  {
+    "id": "696",
+    "name": "Blitzeinschlag auf Veranstaltungsgelände",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 4
+    },
+    "chances": { "nef": 30, "patient_transport": 70, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 144, 7],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 696,
+    "additive_overlays": ""
+  },
+  {
+    "id": "697",
+    "name": "Abwasserkanal droht zu überfluten",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "THW",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "thw_gkw": 1, "thw_mtwtz": 1, "thw_mzkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "main_building_extensions": [1, 0, 8]
+    },
+    "overlay_index": null,
+    "base_mission_id": 697,
+    "additive_overlays": ""
   }
 ]
