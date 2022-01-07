@@ -11154,7 +11154,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [
-        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
+        25, 120, 121, 122, 123, 124, 125, 126, 127, 128
       ],
       "filter_id": "police_station_missions"
     },
@@ -31761,6 +31761,40 @@
     },
     "overlay_index": null,
     "base_mission_id": 697,
+    "additive_overlays": ""
+  },
+  {
+    "id": "698",
+    "name": "Autogasaustritt am PKW",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "battalion_chief_vehicles": 30,
+      "heavy_rescue_vehicles": 80,
+      "gwmess": 5
+    },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 698,
     "additive_overlays": ""
   }
 ]
