@@ -8773,5 +8773,75 @@
     "overlay_index": null,
     "base_mission_id": 293,
     "additive_overlays": ""
+  },
+  {
+    "id": "294",
+    "name": "경기장 화재(소형)",
+    "place": "경기장",
+    "place_array": ["경기장"],
+    "average_credits": 4000,
+    "generated_by": "소방서",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 6,
+      "expansion_missions_ids": [295],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 294,
+    "additive_overlays": ""
+  },
+  {
+    "id": "295",
+    "name": "경기장 화재 (중형)",
+    "place": "경기장",
+    "place_array": ["경기장"],
+    "average_credits": 7500,
+    "generated_by": "소방서",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 3,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": ""
   }
 ]
