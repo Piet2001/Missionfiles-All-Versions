@@ -16357,5 +16357,124 @@
     "overlay_index": null,
     "base_mission_id": 404,
     "additive_overlays": ""
+  },
+  {
+    "id": "405",
+    "name": "Kidnapping",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 1,
+      "traffic_car": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 60,
+      "traffic_car": 75
+    },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 6,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "patient_allow_first_responder_chance": 80,
+      "need_traffic_car_only_if_present": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 11,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 405,
+    "additive_overlays": ""
+  },
+  {
+    "id": "405-0",
+    "name": "Kidnapping",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 1,
+      "traffic_car": 3,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "emergency_welfare": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 60,
+      "traffic_car": 75
+    },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 6,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "patient_allow_first_responder_chance": 80,
+      "need_traffic_car_only_if_present": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 11,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 405,
+    "additive_overlays": ""
+  },
+  {
+    "id": "406",
+    "name": "Stack of containers on fire",
+    "place": "Container Holding Area",
+    "place_array": ["Container Holding Area"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 6,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "foam": 1
+    },
+    "chances": { "platform_trucks": 40, "water_tankers": 60, "foam": 50 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 406,
+    "additive_overlays": ""
   }
 ]
