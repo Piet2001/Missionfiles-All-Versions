@@ -8766,7 +8766,7 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [387],
       "filter_id": "firehouse_missions",
       "need_elw_police_only_if_present": true,
       "patient_specializations": "Traumatologi"
@@ -12200,6 +12200,76 @@
     "prerequisites": { "main_building": 2, "rescue_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 383,
+    "additive_overlays": ""
+  },
+  {
+    "id": "384",
+    "name": " Brand på stadion (Lille)",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 4000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 6,
+      "expansion_missions_ids": [385],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 384,
+    "additive_overlays": ""
+  },
+  {
+    "id": "385",
+    "name": "Brand på stadion (Mellem)",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 7500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 3,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [276],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 385,
     "additive_overlays": ""
   }
 ]
