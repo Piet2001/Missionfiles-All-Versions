@@ -7173,7 +7173,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [193],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -14882,6 +14882,33 @@
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 460,
+    "additive_overlays": ""
+  },
+  {
+    "id": "461",
+    "name": "Scarica ICD",
+    "place": "",
+    "place_array": [],
+    "average_credits": 950,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["KC02R"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": ["Cardiologia", "Chirurgia cardiaca"],
+      "patient_specializations": "Chirurgia cardiaca"
+    },
+    "prerequisites": { "main_building": 2 },
+    "overlay_index": null,
+    "base_mission_id": 461,
     "additive_overlays": ""
   }
 ]
