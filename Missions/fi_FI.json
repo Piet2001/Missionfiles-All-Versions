@@ -10935,5 +10935,87 @@
     "overlay_index": null,
     "base_mission_id": 373,
     "additive_overlays": ""
+  },
+  {
+    "id": "374",
+    "name": "201 Auto ojassa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Poliisiasema",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [375],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 374,
+    "additive_overlays": ""
+  },
+  {
+    "id": "375",
+    "name": "202 Auto ajanut ojaan",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {
+      "patient_transport": 25,
+      "helicopter": 1,
+      "patient_critical_care": 2
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 375,
+    "additive_overlays": ""
+  },
+  {
+    "id": "376",
+    "name": "202 Henkilöauto osunut lyhtypylvääseen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1350,
+    "generated_by": "Paloasema",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 2,
+      "patient_critical_care": 6
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Yleiskirurgi"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 376,
+    "additive_overlays": ""
   }
 ]
