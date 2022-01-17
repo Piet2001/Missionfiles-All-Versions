@@ -16450,5 +16450,60 @@
     "overlay_index": 0,
     "base_mission_id": 405,
     "additive_overlays": ""
+  },
+  {
+    "id": "406",
+    "name": "Stack of containers on fire",
+    "place": "Container Holding Area",
+    "place_array": ["Container Holding Area"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 6,
+      "platform_trucks": 1,
+      "water_tankers": 1
+    },
+    "chances": { "platform_trucks": 40, "water_tankers": 60 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 406,
+    "additive_overlays": ""
+  },
+  {
+    "id": "406/a",
+    "name": "Stack of containers on fire",
+    "place": "Container Holding Area",
+    "place_array": ["Container Holding Area"],
+    "average_credits": 8400,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 6,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "foam": 1
+    },
+    "chances": { "platform_trucks": 40, "water_tankers": 60 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 406,
+    "additive_overlays": "a"
   }
 ]
