@@ -321,7 +321,7 @@
     "requirements": { "firetrucks": 2 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [15],
+      "expansion_missions_ids": [],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -9732,6 +9732,39 @@
     "prerequisites": { "main_building": 2 },
     "overlay_index": null,
     "base_mission_id": 354,
+    "additive_overlays": ""
+  },
+  {
+    "id": "355",
+    "name": "Colisão entre motociclos",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "Corpo de Bombeiros",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 355,
     "additive_overlays": ""
   }
 ]
