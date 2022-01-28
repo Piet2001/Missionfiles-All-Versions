@@ -508,7 +508,7 @@
     },
     "chances": { "battalion_chief_vehicles": 50 },
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [701],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -2968,7 +2968,7 @@
     },
     "chances": { "battalion_chief_vehicles": 70, "platform_trucks": 50 },
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [701],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -3046,7 +3046,7 @@
     },
     "additional": {
       "possible_patient": 3,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [701],
       "filter_id": "firehouse_missions",
       "patient_specializations": "Allgemeine Innere"
     },
@@ -11165,7 +11165,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [
-        25, 120, 121, 122, 123, 124, 125, 126, 127, 128
+        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
       ],
       "filter_id": "police_station_missions"
     },
@@ -12295,7 +12295,7 @@
     },
     "chances": { "heavy_rescue_vehicles": 50 },
     "additional": {
-      "expansion_missions_ids": [105, 104, 103, 102],
+      "expansion_missions_ids": [105, 104, 103, 102, 701],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -31669,5 +31669,87 @@
     "overlay_index": 0,
     "base_mission_id": 700,
     "additive_overlays": ""
+  },
+  {
+    "id": "701",
+    "name": "Wohnhausbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5250,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 20,
+      "nef": 60,
+      "patient_transport": 80,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 7,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 701,
+    "additive_overlays": ""
+  },
+  {
+    "id": "701/a",
+    "name": "Wohnhausbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5650,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 20,
+      "nef": 60,
+      "patient_transport": 80,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 7,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "police_service_group_leader": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 701,
+    "additive_overlays": "a"
   }
 ]
