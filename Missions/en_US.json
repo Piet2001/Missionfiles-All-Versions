@@ -6329,7 +6329,7 @@
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 6,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [651],
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-C-1F"],
       "patient_specializations": "General Internal"
@@ -6373,7 +6373,7 @@
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 6,
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [651],
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-C-1F"],
       "patient_specializations": "General Internal"
@@ -23755,6 +23755,119 @@
     },
     "overlay_index": null,
     "base_mission_id": 650,
+    "additive_overlays": ""
+  },
+  {
+    "id": "651",
+    "name": "Container ship fire with explosion",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 22000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 300,
+      "firetrucks": 12,
+      "large_rescue_boat": 1,
+      "large_fire_boat": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 5,
+      "boats": 2,
+      "fbi": 2,
+      "fbi_investigation": 1,
+      "fbi_mcc": 1,
+      "fbi_bomb": 1,
+      "sheriff": 1,
+      "police_boat": 1,
+      "fire_investigation": 2
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [652],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-B-1"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "fire_boat_docks": 1,
+      "rescue_boat_docks": 1,
+      "federalpolice_stations": 1,
+      "water_police_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 651,
+    "additive_overlays": ""
+  },
+  {
+    "id": "652",
+    "name": "Container ship fire \u0026 explosion with hull breach",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 27000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 500,
+      "firetrucks": 20,
+      "large_rescue_boat": 2,
+      "large_fire_boat": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 8,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "police_cars": 8,
+      "boats": 2,
+      "fbi": 4,
+      "fbi_investigation": 1,
+      "fbi_mcc": 1,
+      "fbi_bomb": 1,
+      "sheriff": 2,
+      "police_boat": 1,
+      "fire_investigation": 4
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-B-1", "21-B-1"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "fire_boat_docks": 1,
+      "rescue_boat_docks": 1,
+      "federalpolice_stations": 1,
+      "water_police_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
     "additive_overlays": ""
   }
 ]
