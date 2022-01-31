@@ -6287,7 +6287,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 182],
+      "expansion_missions_ids": [124, 213, 226, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -14274,6 +14274,102 @@
     },
     "overlay_index": null,
     "base_mission_id": 487,
+    "additive_overlays": ""
+  },
+  {
+    "id": "488",
+    "name": "Wypadek przy pracy na wysokościach",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "height_rescue_units": 1
+    },
+    "chances": {
+      "patient_transport": 0,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Neurologia"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 4,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 488,
+    "additive_overlays": ""
+  },
+  {
+    "id": "489",
+    "name": "Mały pożar nasypu kolejowego",
+    "place": "Przejazd kolejowy\nDworzec kolejowy (ruch podmiejski i dalekobieżny)\nStacja towarowa\nPrzejazd kolejowo-drogowy",
+    "place_array": [
+      "Przejazd kolejowy",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)",
+      "Stacja towarowa",
+      "Przejazd kolejowo-drogowy"
+    ],
+    "average_credits": 3000,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 8000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 489,
+    "additive_overlays": ""
+  },
+  {
+    "id": "490",
+    "name": "Niezidentyfikowana substancja na drodze",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 11 },
+    "overlay_index": null,
+    "base_mission_id": 490,
     "additive_overlays": ""
   }
 ]
