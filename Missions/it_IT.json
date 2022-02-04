@@ -7199,7 +7199,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [193],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -10683,6 +10683,295 @@
     },
     "overlay_index": null,
     "base_mission_id": 330,
+    "additive_overlays": ""
+  },
+  {
+    "id": "331",
+    "name": "La coppia ha mangiato troppo cioccolato",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC09R", "ZC09G", "ZC09V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Chirurgia generale",
+        "Gastroenterologia",
+        "Chirurgia generale",
+        "Gastroenterologia",
+        "Chirurgia generale",
+        "Gastroenterologia"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 331,
+    "additive_overlays": ""
+  },
+  {
+    "id": "332",
+    "name": "Farfalle nello stomaco",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC09R", "ZC09G", "ZC09V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Chirurgia generale",
+        "Gastroenterologia",
+        "Chirurgia generale",
+        "Gastroenterologia",
+        "Chirurgia generale",
+        "Gastroenterologia"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 332,
+    "additive_overlays": ""
+  },
+  {
+    "id": "333",
+    "name": "Attacco di cuore per la proposta di matrimonio",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC02R", "ZC02G"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Cardiologia",
+        "Chirurgia cardiaca",
+        "Cardiologia",
+        "Chirurgia cardiaca"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 333,
+    "additive_overlays": ""
+  },
+  {
+    "id": "334",
+    "name": "Cuore spezzato",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC02R", "ZC02G"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Cardiologia",
+        "Chirurgia cardiaca",
+        "Cardiologia",
+        "Chirurgia cardiaca"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 334,
+    "additive_overlays": ""
+  },
+  {
+    "id": "335",
+    "name": "Decorazioni di san valentino in fiamme nel ristorante",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 8,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 335,
+    "additive_overlays": ""
+  },
+  {
+    "id": "336",
+    "name": "Fuoco causato dal lume di candela",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 336,
+    "additive_overlays": ""
+  },
+  {
+    "id": "337",
+    "name": "Alla ricerca del fidanzato perduto",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "Stazione di polizia",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 337,
+    "additive_overlays": ""
+  },
+  {
+    "id": "338",
+    "name": "Lamentela per quiete turbata da una lite di coppia",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "Stazione di polizia",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 338,
+    "additive_overlays": ""
+  },
+  {
+    "id": "339",
+    "name": "Cuore rubato",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "Stazione di polizia",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-02-04T10:00:00Z",
+      "date_end": "2022-02-15T10:00:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 339,
     "additive_overlays": ""
   },
   {
