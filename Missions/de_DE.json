@@ -4630,7 +4630,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [128, 668],
-      "followup_missions_ids": [43, 83],
+      "followup_missions_ids": [27, 43, 83],
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
@@ -9921,7 +9921,7 @@
     },
     "chances": {},
     "additional": {
-      "followup_missions_ids": [],
+      "followup_missions_ids": [529],
       "filter_id": "water_watch_missions",
       "max_civil_patrol_replacing_police_cars": 1
     },
@@ -11165,7 +11165,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [
-        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
+        25, 120, 121, 122, 123, 124, 125, 126, 127, 128
       ],
       "filter_id": "police_station_missions"
     },
@@ -31708,6 +31708,108 @@
     },
     "overlay_index": null,
     "base_mission_id": 701,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "702",
+    "name": "Brand in Großwäscherei",
+    "place": "Textilverarbeitung",
+    "place_array": ["Textilverarbeitung"],
+    "average_credits": 7000,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "mobile_air_vehicles": 30,
+      "gwmess": 30,
+      "hazmat_vehicles": 40,
+      "nef": 30,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [462],
+      "followup_missions_ids": [528, 240],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": ""
+  },
+  {
+    "id": "702/a",
+    "name": "Brand in Großwäscherei",
+    "place": "Textilverarbeitung",
+    "place_array": ["Textilverarbeitung"],
+    "average_credits": 7400,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "mobile_air_vehicles": 30,
+      "gwmess": 30,
+      "hazmat_vehicles": 40,
+      "nef": 30,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [462],
+      "followup_missions_ids": [528, 240],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "police_service_group_leader": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
     "additive_overlays": "a"
   }
 ]
