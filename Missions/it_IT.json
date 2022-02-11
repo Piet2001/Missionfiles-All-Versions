@@ -7199,7 +7199,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [193],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -15037,6 +15037,160 @@
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 465,
+    "additive_overlays": ""
+  },
+  {
+    "id": "469",
+    "name": "Sensibilizzare i ragazzi delle scuole sull'utilizzo del 112",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 2500,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 469,
+    "additive_overlays": ""
+  },
+  {
+    "id": "470",
+    "name": "Sensibilizzare i ragazzi delle scuole sull'utilizzo del 112",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 2500,
+    "generated_by": "Stazione di polizia",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": ""
+  },
+  {
+    "id": "471",
+    "name": "Annuncio delle nuove funzionalità del 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "ambulances": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [472],
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": ""
+  },
+  {
+    "id": "472",
+    "name": "Celebrazione della Giornata Europea del 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": ""
+  },
+  {
+    "id": "473",
+    "name": "Cerimonia di Premiazione nazionale del 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [472],
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 473,
     "additive_overlays": ""
   }
 ]
