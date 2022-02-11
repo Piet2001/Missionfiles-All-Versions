@@ -6287,7 +6287,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 182],
+      "expansion_missions_ids": [124, 213, 226, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -14654,6 +14654,160 @@
     },
     "overlay_index": null,
     "base_mission_id": 491,
+    "additive_overlays": ""
+  },
+  {
+    "id": "493",
+    "name": "Działania profilaktyczne w szkole nt. numeru 112",
+    "place": "Szkoła",
+    "place_array": ["Szkoła"],
+    "average_credits": 2500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 493,
+    "additive_overlays": ""
+  },
+  {
+    "id": "494",
+    "name": "Działania profilaktyczne w szkole nt. numeru 112",
+    "place": "Szkoła",
+    "place_array": ["Szkoła"],
+    "average_credits": 2500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 494,
+    "additive_overlays": ""
+  },
+  {
+    "id": "495",
+    "name": "Ogłoszenie nowych funkcji numeru 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "ambulances": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [496],
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 495,
+    "additive_overlays": ""
+  },
+  {
+    "id": "496",
+    "name": "Europejskie obchody Dnia Numeru Alarmowego 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 496,
+    "additive_overlays": ""
+  },
+  {
+    "id": "497",
+    "name": "Uroczystość wręczenia nagród 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [496],
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-02-11T10:00:00+01:00",
+      "date_end": "2022-02-11T23:59:00+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 497,
     "additive_overlays": ""
   }
 ]
