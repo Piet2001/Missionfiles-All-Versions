@@ -321,7 +321,7 @@
     "requirements": { "firetrucks": 2 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [],
+      "expansion_missions_ids": [15],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -10286,6 +10286,43 @@
     "additive_overlays": ""
   },
   {
+    "id": "358",
+    "name": "Incêndio numa pilha de veículos",
+    "place": "Sucata",
+    "place_array": ["Sucata"],
+    "average_credits": 7800,
+    "generated_by": "Corpo de Bombeiros",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 5,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 358,
+    "additive_overlays": ""
+  },
+  {
     "id": "361",
     "name": "Sensibilizar as crianças da escola para o 112",
     "place": "Escola",
@@ -10348,7 +10385,7 @@
     "requirements": { "firetrucks": 1, "ambulances": 1, "police_cars": 1 },
     "chances": {},
     "additional": {
-      "followup_missions_ids": [],
+      "followup_missions_ids": [364],
       "filter_id": "firehouse_missions",
       "date_start": "2022-02-11T10:00:00Z",
       "date_end": "2022-02-12T10:00:00Z"
@@ -10424,7 +10461,7 @@
     },
     "chances": {},
     "additional": {
-      "followup_missions_ids": [],
+      "followup_missions_ids": [364],
       "filter_id": "firehouse_missions",
       "date_start": "2022-02-11T10:00:00Z",
       "date_end": "2022-02-12T10:00:00Z"
