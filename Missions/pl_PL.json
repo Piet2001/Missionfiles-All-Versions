@@ -237,9 +237,9 @@
     "average_credits": 600,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": { "water_needed": 2500, "firetrucks": 1 },
     "chances": {},
@@ -257,9 +257,9 @@
     "average_credits": 240,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
     ],
     "requirements": {
       "foam_needed": 200,
@@ -281,9 +281,9 @@
     "average_credits": 340,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
     ],
     "requirements": {
       "foam_needed": 400,
@@ -354,11 +354,11 @@
     "average_credits": 1000,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
-    "requirements": { "water_needed": 5200, "firetrucks": 1 },
+    "requirements": { "water_needed": 5200, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [15],
@@ -381,7 +381,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 2400, "firetrucks": 1 },
+    "requirements": { "water_needed": 7000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -489,12 +489,8 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 1
     },
-    "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "Interna"
-    },
+    "chances": { "battalion_chief_vehicles": 90 },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 20,
@@ -776,7 +772,7 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "prerequisites": { "main_building": 0, "fire_stations": 14 },
     "overlay_index": null,
     "base_mission_id": 31,
     "additive_overlays": ""
@@ -1736,7 +1732,6 @@
       "water_needed": 4000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 2
     },
@@ -2186,9 +2181,9 @@
     "average_credits": 1700,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": {
       "water_needed": 2400,
@@ -2606,8 +2601,7 @@
       "water_needed": 9200,
       "firetrucks": 3,
       "battalion_chief_vehicles": 2,
-      "water_tankers": 1,
-      "police_cars": 1
+      "water_tankers": 1
     },
     "chances": { "water_tankers": 20 },
     "additional": { "filter_id": "firehouse_missions" },
@@ -3029,33 +3023,6 @@
     "additive_overlays": ""
   },
   {
-    "id": "115",
-    "name": "Pomoc Policji w otwarciu mieszkania",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1000,
-    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 115,
-    "additive_overlays": ""
-  },
-  {
     "id": "116",
     "name": "Czujka czadu w budynku mieszkalnym",
     "place": "",
@@ -3072,7 +3039,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 0,
-      "expansion_missions_ids": [5],
+      "expansion_missions_ids": [5, 335],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specializations": "Interna"
@@ -3755,12 +3722,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 6000,
+      "foam_needed": 1500,
       "water_needed": 25000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
-      "police_cars": 1,
       "hose": 1
     },
     "chances": { "hose": 15 },
@@ -3859,9 +3825,9 @@
     "average_credits": 1200,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 1, "flood_equipment": 1 },
     "chances": { "flood_equipment": 20 },
@@ -4262,9 +4228,9 @@
     "average_credits": 1000,
     "generated_by": "Komenda Policji",
     "icons": [
-      "/images/shooting_gruen.png",
-      "/images/shooting_gelb.png",
-      "/images/shooting_rot.png"
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
     ],
     "requirements": { "police_cars": 6, "k9": 1 },
     "chances": { "patient_transport": 100, "patient_critical_care": 90 },
@@ -4823,12 +4789,12 @@
     "average_credits": 1200,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -4843,12 +4809,12 @@
     "average_credits": 1200,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 20 },
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -5111,7 +5077,10 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 184,
@@ -5464,12 +5433,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 4000,
+      "foam_needed": 1500,
       "water_needed": 10000,
-      "firetrucks": 4,
+      "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
       "hazmat_vehicles": 1,
       "police_cars": 1
     },
@@ -5502,7 +5470,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 8000,
+      "foam_needed": 3500,
       "water_needed": 50000,
       "firetrucks": 7,
       "battalion_chief_vehicles": 1,
@@ -5627,9 +5595,9 @@
     "average_credits": 2000,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
     ],
     "requirements": { "water_rescue": 1, "diver_units": 1, "boats": 2 },
     "chances": { "patient_transport": 90 },
@@ -5754,9 +5722,9 @@
     "average_credits": 2000,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
     ],
     "requirements": {
       "firetrucks": 3,
@@ -5779,7 +5747,7 @@
       "wasserrettung": 2,
       "rescue_stations": 1,
       "police_stations": 2,
-      "fire_stations": 4
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 202,
@@ -5793,9 +5761,9 @@
     "average_credits": 3400,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
     ],
     "requirements": {
       "firetrucks": 5,
@@ -5810,6 +5778,7 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -5817,7 +5786,7 @@
       "wasserrettung": 3,
       "rescue_stations": 1,
       "police_stations": 3,
-      "fire_stations": 5
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 203,
@@ -5831,9 +5800,9 @@
     "average_credits": 4000,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
     ],
     "requirements": {
       "firetrucks": 5,
@@ -5854,7 +5823,7 @@
       "wasserrettung": 3,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 5
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 204,
@@ -6148,9 +6117,9 @@
     "average_credits": 4100,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": {
       "water_needed": 50000,
@@ -6254,8 +6223,7 @@
       "water_needed": 7800,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1
+      "platform_trucks": 1
     },
     "chances": { "heavy_rescue_vehicles": 25 },
     "additional": {
@@ -6265,107 +6233,6 @@
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 216,
-    "additive_overlays": ""
-  },
-  {
-    "id": "217",
-    "name": "Podpalacz",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2000,
-    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "water_needed": 9000,
-      "firetrucks": 2,
-      "battalion_chief_vehicles": 2,
-      "police_cars": 2
-    },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [124, 213, 226, 182],
-      "max_possible_prisoners": 1,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 7
-    },
-    "overlay_index": null,
-    "base_mission_id": 217,
-    "additive_overlays": ""
-  },
-  {
-    "id": "218",
-    "name": "Pomoc Zespołowi Ratownictwa Medycznego",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1170,
-    "generated_by": "Stacja Pogotowia Ratunkowego",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
-    "chances": {
-      "patient_transport": 100,
-      "helicopter": 0,
-      "patient_critical_care": 60
-    },
-    "additional": {
-      "possible_patient": 2,
-      "possible_patient_min": 1,
-      "max_possible_prisoners": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_specializations": "Chirurg ogólny"
-    },
-    "prerequisites": {
-      "main_building": 2,
-      "rescue_stations": 1,
-      "police_stations": 2,
-      "fire_stations": 7
-    },
-    "overlay_index": null,
-    "base_mission_id": 218,
-    "additive_overlays": ""
-  },
-  {
-    "id": "219",
-    "name": "Zabezpieczenie lądowiska LPR  podczas wypadku",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1010,
-    "generated_by": "Stacja Pogotowia Ratunkowego",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {
-      "patient_transport": 100,
-      "helicopter": 100,
-      "patient_critical_care": 60
-    },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_specializations": "Interna"
-    },
-    "prerequisites": {
-      "main_building": 2,
-      "rescue_stations": 1,
-      "fire_stations": 7
-    },
-    "overlay_index": null,
-    "base_mission_id": 219,
     "additive_overlays": ""
   },
   {
@@ -6484,9 +6351,9 @@
     "average_credits": 2000,
     "generated_by": "Komenda Policji",
     "icons": [
-      "/images/shooting_gruen.png",
-      "/images/shooting_gelb.png",
-      "/images/shooting_rot.png"
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 3, "k9": 1 },
     "chances": { "patient_transport": 45 },
@@ -6549,7 +6416,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 8000,
+      "foam_needed": 3000,
       "water_needed": 42000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
@@ -6845,7 +6712,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 5000,
+      "foam_needed": 1000,
       "water_needed": 9500,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
@@ -6854,7 +6721,7 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "prerequisites": { "main_building": 0, "fire_stations": 14 },
     "overlay_index": null,
     "base_mission_id": 237,
     "additive_overlays": ""
@@ -6872,7 +6739,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 5000,
+      "foam_needed": 1000,
       "water_needed": 9500,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
@@ -6885,7 +6752,7 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
-      "fire_stations": 7
+      "fire_stations": 14
     },
     "overlay_index": 1,
     "base_mission_id": 237,
@@ -7072,6 +6939,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "rescue_stations": 5,
       "police_stations": 2,
       "fire_stations": 15
     },
@@ -7202,16 +7070,16 @@
     "average_credits": 2200,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "flood_equipment": 1
     },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
     "overlay_index": null,
@@ -7342,11 +7210,15 @@
     "requirements": { "police_cars": 2 },
     "chances": { "patient_transport": 40 },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient_min": 1,
       "filter_id": "police_station_missions",
       "patient_specializations": "Interna"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 250,
     "additive_overlays": ""
@@ -8026,7 +7898,7 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 1,
+      "rescue_stations": 8,
       "police_stations": 1,
       "fire_stations": 6
     },
@@ -8066,7 +7938,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "ambulances": 1 },
+    "requirements": { "firetrucks": 2 },
     "chances": {
       "patient_transport": 50,
       "helicopter": 30,
@@ -8613,6 +8485,7 @@
     ],
     "requirements": {
       "firetrucks": 10,
+      "fwk": 1,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 6,
@@ -8634,7 +8507,7 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 6,
-      "fire_stations": 12
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 299,
@@ -8675,12 +8548,12 @@
     "average_credits": 850,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 2, "flood_equipment": 1 },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -8994,7 +8867,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
-      "fire_stations": 4
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -9021,40 +8894,6 @@
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 313,
-    "additive_overlays": ""
-  },
-  {
-    "id": "314",
-    "name": "Awaria Windy",
-    "place": "Wieżowiec",
-    "place_array": ["Wieżowiec"],
-    "average_credits": 800,
-    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
-    },
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "Interna"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "police_stations": 1,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 314,
     "additive_overlays": ""
   },
   {
@@ -9219,11 +9058,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 2,
+      "firetrucks": 8,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
       "heavy_rescue_vehicles": 3,
-      "police_cars": 3
+      "police_cars": 2
     },
     "chances": {
       "platform_trucks": 60,
@@ -9239,7 +9079,7 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 3,
-      "fire_stations": 8
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 320,
@@ -10269,7 +10109,7 @@
     "name": "Rozległy pożar lasu",
     "place": "Las",
     "place_array": ["Las"],
-    "average_credits": 40600,
+    "average_credits": 40000,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/blast_gruen.png",
@@ -10279,53 +10119,23 @@
     "requirements": {
       "foam_needed": 20000,
       "water_needed": 300000,
-      "firetrucks": 40,
-      "battalion_chief_vehicles": 5,
-      "mobile_command_vehicles": 2,
-      "water_tankers": 6,
-      "mobile_air_vehicles": 3,
-      "hose": 2
+      "firetrucks": 160,
+      "battalion_chief_vehicles": 25,
+      "mobile_command_vehicles": 5,
+      "water_tankers": 28,
+      "mobile_air_vehicles": 5,
+      "police_cars": 20,
+      "hose": 10,
+      "foam": 12
     },
     "chances": {},
     "additional": {
       "only_alliance_mission": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
-    "base_mission_id": 351,
-    "additive_overlays": ""
-  },
-  {
-    "id": "351-1",
-    "name": "Rozległy pożar lasu",
-    "place": "Las",
-    "place_array": ["Las"],
-    "average_credits": 42100,
-    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "foam_needed": 20000,
-      "water_needed": 300000,
-      "firetrucks": 40,
-      "battalion_chief_vehicles": 5,
-      "mobile_command_vehicles": 2,
-      "water_tankers": 6,
-      "mobile_air_vehicles": 3,
-      "hose": 2,
-      "foam": 5
-    },
-    "chances": {},
-    "additional": {
-      "only_alliance_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": { "main_building": 0, "fire_support_count": 3 },
-    "overlay_index": 1,
     "base_mission_id": 351,
     "additive_overlays": ""
   },
@@ -10477,6 +10287,7 @@
       "average_min_police_personnel": 10,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -10497,9 +10308,9 @@
     "average_credits": 1200,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
     ],
     "requirements": { "firetrucks": 1, "boats": 1, "traffic_car": 1 },
     "chances": {
@@ -10534,9 +10345,9 @@
     "average_credits": 3500,
     "generated_by": "Stacja WOPR",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
     ],
     "requirements": {
       "firetrucks": 3,
@@ -10610,6 +10421,7 @@
       "main_building": 6,
       "rescue_stations": 12,
       "police_stations": 20,
+      "police_helicopter_stations": 1,
       "fire_stations": 14
     },
     "overlay_index": null,
@@ -11420,7 +11232,7 @@
       "/images/zoom_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
+      "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
     },
@@ -12138,9 +11950,9 @@
     "average_credits": 1400,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 1, "flood_equipment": 1 },
     "chances": { "flood_equipment": 20 },
@@ -12158,12 +11970,16 @@
     "average_credits": 2000,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1, "flood_equipment": 2 },
-    "chances": {},
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "flood_equipment": 1
+    },
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12178,12 +11994,12 @@
     "average_credits": 1800,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 20 },
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12198,12 +12014,12 @@
     "average_credits": 1600,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "flood_equipment": 1 },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12218,12 +12034,12 @@
     "average_credits": 1600,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": { "flood_equipment": 1 },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12238,16 +12054,16 @@
     "average_credits": 2400,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1,
       "flood_equipment": 1
     },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12262,16 +12078,16 @@
     "average_credits": 3200,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 4,
       "heavy_rescue_vehicles": 1,
       "flood_equipment": 2
     },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12286,9 +12102,9 @@
     "average_credits": 3800,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 5,
@@ -12296,7 +12112,7 @@
       "heavy_rescue_vehicles": 2,
       "flood_equipment": 3
     },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
@@ -12329,6 +12145,7 @@
       "max_possible_prisoners": 2,
       "swat_personnel": 4,
       "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
       "fire_alarm_system_possible": true
     },
     "prerequisites": {
@@ -12556,9 +12373,9 @@
     "average_credits": 10050,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 6,
@@ -12566,7 +12383,7 @@
       "heavy_rescue_vehicles": 1,
       "flood_equipment": 2
     },
-    "chances": {},
+    "chances": { "flood_equipment": 50 },
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
@@ -12584,9 +12401,9 @@
     "average_credits": 8300,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
     ],
     "requirements": {
       "firetrucks": 4,
@@ -12665,9 +12482,9 @@
     "average_credits": 21500,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": {
       "water_needed": 180000,
@@ -12699,9 +12516,9 @@
     "average_credits": 16500,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": {
       "water_needed": 100000,
@@ -12732,9 +12549,9 @@
     "average_credits": 15500,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
     ],
     "requirements": {
       "water_needed": 86000,
@@ -12800,7 +12617,7 @@
   },
   {
     "id": "435",
-    "name": "Poważdy wypadek na autostradzie",
+    "name": "Poważny wypadek na autostradzie",
     "place": "Zjazd z autostrady",
     "place_array": ["Zjazd z autostrady"],
     "average_credits": 12000,
@@ -12839,7 +12656,7 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 6,
-      "fire_stations": 10
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 435,
@@ -13964,7 +13781,7 @@
     "name": "Wybuch w fabryce fajerwerków",
     "place": "Fabryka",
     "place_array": ["Fabryka"],
-    "average_credits": 18000,
+    "average_credits": 14500,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/blast_gruen.png",
@@ -13991,7 +13808,7 @@
     "name": "Wybuch w fabryce fajerwerków",
     "place": "Fabryka",
     "place_array": ["Fabryka"],
-    "average_credits": 14500,
+    "average_credits": 18000,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/blast_gruen.png",
@@ -14541,7 +14358,7 @@
       "height_rescue_units": 1
     },
     "chances": {
-      "patient_transport": 0,
+      "patient_transport": 80,
       "helicopter": 20,
       "patient_critical_care": 30
     },
