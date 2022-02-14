@@ -6287,7 +6287,7 @@
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [124, 213, 182],
+      "expansion_missions_ids": [124, 213, 226, 182],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions"
     },
@@ -14657,6 +14657,37 @@
     "additive_overlays": ""
   },
   {
+    "id": "492",
+    "name": "Pożar na dworcu kolejowym",
+    "place": "Dworzec kolejowy (ruch podmiejski)\nDworzec kolejowy (ruch podmiejski i dalekobieżny)",
+    "place_array": [
+      "Dworzec kolejowy (ruch podmiejski)",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)"
+    ],
+    "average_credits": 4500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [442],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 12 },
+    "overlay_index": null,
+    "base_mission_id": 492,
+    "additive_overlays": ""
+  },
+  {
     "id": "493",
     "name": "Działania profilaktyczne w szkole nt. numeru 112",
     "place": "Szkoła",
@@ -14808,6 +14839,45 @@
     },
     "overlay_index": null,
     "base_mission_id": 497,
+    "additive_overlays": ""
+  },
+  {
+    "id": "498",
+    "name": "Zagrożenie skażeniem chemicznym w pociągu",
+    "place": "Dworzec kolejowy (ruch podmiejski)\nDworzec kolejowy (ruch podmiejski i dalekobieżny)",
+    "place_array": [
+      "Dworzec kolejowy (ruch podmiejski)",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)"
+    ],
+    "average_credits": 10500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 4
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Neurologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 498,
     "additive_overlays": ""
   }
 ]
