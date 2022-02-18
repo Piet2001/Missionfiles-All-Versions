@@ -32238,5 +32238,81 @@
     "overlay_index": null,
     "base_mission_id": 708,
     "additive_overlays": ""
+  },
+  {
+    "id": "709",
+    "name": "Bus in Haltestelle",
+    "place": "Bushaltestelle",
+    "place_array": ["Bushaltestelle"],
+    "average_credits": 2600,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "gwoil": 1,
+      "police_cars": 4
+    },
+    "chances": { "fwk": 10, "gwoil": 10, "nef": 20, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": ""
+  },
+  {
+    "id": "709/a",
+    "name": "Bus in Haltestelle",
+    "place": "Bushaltestelle",
+    "place_array": ["Bushaltestelle"],
+    "average_credits": 3000,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "gwoil": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1
+    },
+    "chances": { "fwk": 10, "gwoil": 10, "nef": 20, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "police_service_group_leader": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "a"
   }
 ]
