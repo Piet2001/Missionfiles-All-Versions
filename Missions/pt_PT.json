@@ -10361,6 +10361,46 @@
     "additive_overlays": ""
   },
   {
+    "id": "360",
+    "name": "Queda de grua em obras",
+    "place": "Depósito",
+    "place_array": ["Depósito"],
+    "average_credits": 15000,
+    "generated_by": "Corpo de Bombeiros",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "police_cars": 5,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 18,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 360,
+    "additive_overlays": ""
+  },
+  {
     "id": "361",
     "name": "Sensibilizar as crianças da escola para o 112",
     "place": "Escola",
@@ -10572,7 +10612,11 @@
       "date_end": "2022-03-01T23:59:00Z",
       "patient_specializations": "Clinica Geral"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 367,
     "additive_overlays": ""
@@ -10599,7 +10643,11 @@
       "date_end": "2022-03-01T23:59:00Z",
       "patient_specializations": "Clinica Geral"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 368,
     "additive_overlays": ""
