@@ -12845,5 +12845,250 @@
     "overlay_index": null,
     "base_mission_id": 418,
     "additive_overlays": ""
+  },
+  {
+    "id": "419",
+    "name": "Surveillance de lieu de culte",
+    "place": "Lieu de culte",
+    "place_array": ["Lieu de culte"],
+    "average_credits": 1000,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "riot_police": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [421],
+      "average_min_police_personnel": 6,
+      "filter_id": "riot_police_missions",
+      "allow_streifenwagen_instead_of_riot_police_van": true
+    },
+    "prerequisites": { "main_building": 11, "bereitschaftspolizei": 1 },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": ""
+  },
+  {
+    "id": "420",
+    "name": "Surveillance d'évènement public",
+    "place": "Parc\nGare ferroviaire (trajets régionaux et grandes lignes)\nÉcole\nCentre commercial\nCentre-ville",
+    "place_array": [
+      "Parc",
+      "Gare ferroviaire (trajets régionaux et grandes lignes)",
+      "École",
+      "Centre commercial",
+      "Centre-ville"
+    ],
+    "average_credits": 1500,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "riot_police": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [421],
+      "average_min_police_personnel": 16,
+      "filter_id": "riot_police_missions",
+      "allow_streifenwagen_instead_of_riot_police_van": true
+    },
+    "prerequisites": { "main_building": 11, "bereitschaftspolizei": 1 },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": ""
+  },
+  {
+    "id": "421",
+    "name": "Sécurisation de Manifestation (Moyen)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6400,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "detention_unit": 1,
+      "riot_police": 12,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [422],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 64,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 10,
+      "bereitschaftspolizei": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": ""
+  },
+  {
+    "id": "422",
+    "name": "Sécurisation de Manifestation (Grand)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "wasserwerfer": 1,
+      "detention_unit": 1,
+      "riot_police": 15,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_trailer": 2,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [423],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 88,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 14,
+      "bereitschaftspolizei": 3,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 422,
+    "additive_overlays": ""
+  },
+  {
+    "id": "423",
+    "name": "Sécurisation de Manifestation (Majeur)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18200,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "wasserwerfer": 2,
+      "detention_unit": 2,
+      "riot_police": 30,
+      "riot_police_command": 2,
+      "riot_police_equipment": 2,
+      "riot_police_trailer": 3,
+      "riot_police_maintenance": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [421],
+      "max_possible_prisoners": 16,
+      "average_min_police_personnel": 162,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 20,
+      "bereitschaftspolizei": 4,
+      "water_cannon": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 423,
+    "additive_overlays": ""
+  },
+  {
+    "id": "424",
+    "name": "Sécurisation de match de foot (Normal)",
+    "place": "Stade",
+    "place_array": ["Stade"],
+    "average_credits": 7200,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "detention_unit": 1,
+      "riot_police": 12,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [421],
+      "max_possible_prisoners": 16,
+      "average_min_police_personnel": 61,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 10,
+      "bereitschaftspolizei": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": ""
+  },
+  {
+    "id": "425",
+    "name": "Sécurisation de match de foot (Risqué)",
+    "place": "Stade",
+    "place_array": ["Stade"],
+    "average_credits": 15400,
+    "generated_by": "Compagnie de CRS",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 10,
+      "wasserwerfer": 1,
+      "detention_unit": 2,
+      "riot_police": 27,
+      "riot_police_command": 2,
+      "riot_police_equipment": 2,
+      "riot_police_trailer": 2,
+      "riot_police_maintenance": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [421],
+      "max_possible_prisoners": 16,
+      "average_min_police_personnel": 137,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 20,
+      "bereitschaftspolizei": 2,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 425,
+    "additive_overlays": ""
   }
 ]
