@@ -17304,8 +17304,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 3,
-      "fire_stations": 20,
-      "main_building_extensions": [3]
+      "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 420,
@@ -17313,6 +17312,77 @@
   },
   {
     "id": "420/a",
+    "name": "Scrapyard Fire Large",
+    "place": "Scrap yard",
+    "place_array": ["Scrap yard"],
+    "average_credits": 21000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "hazard_response_primary": 1,
+      "emergency_welfare": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "hazard_response_ems": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "420/b",
+    "name": "Scrapyard Fire Large",
+    "place": "Scrap yard",
+    "place_array": ["Scrap yard"],
+    "average_credits": 20400,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "foam": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": "b"
+  },
+  {
+    "id": "420/ab",
     "name": "Scrapyard Fire Large",
     "place": "Scrap yard",
     "place_array": ["Scrap yard"],
@@ -17341,11 +17411,12 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 3,
-      "fire_stations": 20,
-      "main_building_extensions": [3]
+      "fire_support_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 420,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
   }
 ]
