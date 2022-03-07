@@ -8158,6 +8158,7 @@
     "requirements": { "police_cars": 3, "k9": 1 },
     "chances": { "k9": 40 },
     "additional": {
+      "expansion_missions_ids": [390],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions"
     },
@@ -11444,6 +11445,49 @@
     },
     "overlay_index": null,
     "base_mission_id": 389,
+    "additive_overlays": ""
+  },
+  {
+    "id": "390",
+    "name": "09 Piiritystilanne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "Poliisiasema",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "police_helicopters": 1,
+      "police_cars": 12,
+      "k9": 2
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 20,
+      "patient_critical_care": 90,
+      "police_helicopters": 33
+    },
+    "additional": {
+      "possible_patient": 2,
+      "followup_missions_ids": [138, 312],
+      "max_possible_prisoners": 3,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 390,
     "additive_overlays": ""
   }
 ]
