@@ -24940,5 +24940,46 @@
     "overlay_index": null,
     "base_mission_id": 670,
     "additive_overlays": ""
+  },
+  {
+    "id": "671",
+    "name": "Off-Road Vehicle Collision",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "brush_truck": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "game_warden": 2
+    },
+    "chances": { "patient_transport": 90, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["29-D-2k"],
+      "subsequent_missions_ids": [95],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "brush_extension": 1,
+      "game_warden_count": 1,
+      "fire_stations": 4,
+      "main_building_extensions": [11]
+    },
+    "overlay_index": null,
+    "base_mission_id": 671,
+    "additive_overlays": ""
   }
 ]
