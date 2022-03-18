@@ -10808,5 +10808,254 @@
     "overlay_index": null,
     "base_mission_id": 363,
     "additive_overlays": ""
+  },
+  {
+    "id": "366",
+    "name": "Аллергия на пчелиные укусы",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Кардиология"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 366,
+    "additive_overlays": ""
+  },
+  {
+    "id": "367",
+    "name": "Аллергия на пыльцу",
+    "place": "",
+    "place_array": [],
+    "average_credits": 650,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Кардиология"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 367,
+    "additive_overlays": ""
+  },
+  {
+    "id": "368",
+    "name": "Падение с лестницы во время весенней уборки",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Травматология"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 368,
+    "additive_overlays": ""
+  },
+  {
+    "id": "369",
+    "name": "Атака дикого животного на весеннем пикнике",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Полицейский участок",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 60, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Травматология"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 369,
+    "additive_overlays": ""
+  },
+  {
+    "id": "370",
+    "name": "Отравление дикими ягодами",
+    "place": "Парк\nЛес",
+    "place_array": ["Парк", "Лес"],
+    "average_credits": 800,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 50,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Хирург общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": ""
+  },
+  {
+    "id": "371",
+    "name": "Горящая корзина для пикника",
+    "place": "Парк\nЛес",
+    "place_array": ["Парк", "Лес"],
+    "average_credits": 800,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": ""
+  },
+  {
+    "id": "372",
+    "name": "Преступник ворует телят",
+    "place": "Ферма",
+    "place_array": ["Ферма"],
+    "average_credits": 900,
+    "generated_by": "Полицейский участок",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [373, 374],
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": ""
+  },
+  {
+    "id": "373",
+    "name": "Вор убегает",
+    "place": "Лес",
+    "place_array": ["Лес"],
+    "average_credits": 900,
+    "generated_by": "Полицейский участок",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 5, "k9": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 373,
+    "additive_overlays": ""
+  },
+  {
+    "id": "374",
+    "name": "Корова атаковала вора",
+    "place": "Ферма",
+    "place_array": ["Ферма"],
+    "average_credits": 860,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 60,
+      "subsequent_mission_only": true,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+03:00",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 374,
+    "additive_overlays": ""
   }
 ]
