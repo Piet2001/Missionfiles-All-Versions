@@ -10950,5 +10950,254 @@
     "overlay_index": null,
     "base_mission_id": 377,
     "additive_overlays": "a"
+  },
+  {
+    "id": "380",
+    "name": "Reakcja alergiczna po użądleniu",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Estação de Ambulâncias",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 380,
+    "additive_overlays": ""
+  },
+  {
+    "id": "381",
+    "name": "Reakcja alergiczna - pyłki",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Estação de Ambulâncias",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 381,
+    "additive_overlays": ""
+  },
+  {
+    "id": "382",
+    "name": "Upadek z drabiny podczas wiosennych porządków",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Estação de Ambulâncias",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 382,
+    "additive_overlays": ""
+  },
+  {
+    "id": "383",
+    "name": "Atak dzikiego zwierzęcia podczas pikniku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Esquadra de Polícia",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 60, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 383,
+    "additive_overlays": ""
+  },
+  {
+    "id": "384",
+    "name": "Zatrucie pokarmowe po spożyciu dzikich jagód",
+    "place": "Parque\nFloresta",
+    "place_array": ["Parque", "Floresta"],
+    "average_credits": null,
+    "generated_by": "Estação de Ambulâncias",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 50,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Cirurgia Geral"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 384,
+    "additive_overlays": ""
+  },
+  {
+    "id": "385",
+    "name": "Kosz piknikowy w ogniu",
+    "place": "Parque\nFloresta",
+    "place_array": ["Parque", "Floresta"],
+    "average_credits": 800,
+    "generated_by": "Corpo de Bombeiros",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 385,
+    "additive_overlays": ""
+  },
+  {
+    "id": "386",
+    "name": "Złodziej kradnie cielaki",
+    "place": "Quinta",
+    "place_array": ["Quinta"],
+    "average_credits": 900,
+    "generated_by": "Esquadra de Polícia",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [387, 388],
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 386,
+    "additive_overlays": ""
+  },
+  {
+    "id": "387",
+    "name": "Złodziej krów ucieka",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 900,
+    "generated_by": "Esquadra de Polícia",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 5, "k9": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 387,
+    "additive_overlays": ""
+  },
+  {
+    "id": "388",
+    "name": "Złodziej został zaatakowany przez krowę",
+    "place": "Quinta",
+    "place_array": ["Quinta"],
+    "average_credits": 860,
+    "generated_by": "Estação de Ambulâncias",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 60,
+      "subsequent_mission_only": true,
+      "date_start": "2022-03-18T10:00:00Z",
+      "date_end": "2022-03-28T23:59:59+01:00",
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 388,
+    "additive_overlays": ""
   }
 ]
