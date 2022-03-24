@@ -10309,7 +10309,7 @@
   },
   {
     "id": "365",
-    "name": "Bank robbery",
+    "name": "Bank robbery (Small)",
     "place": "Bank",
     "place_array": ["Bank"],
     "average_credits": 2500,
@@ -10322,8 +10322,9 @@
     "requirements": { "police_cars": 5, "k9": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [394],
       "max_possible_prisoners": 2,
-      "swat_personnel": 4,
+      "swat_personnel": 6,
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 8 },
@@ -11105,6 +11106,252 @@
     "prerequisites": { "main_building": 2, "rescue_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 393,
+    "additive_overlays": ""
+  },
+  {
+    "id": "394",
+    "name": "Bank robbery (Medium)",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 3300,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 7,
+      "k9": 2,
+      "police_service_group_leader": 1,
+      "riot_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "max_possible_prisoners": 5,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "police_service_group_leader": 1,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": ""
+  },
+  {
+    "id": "395",
+    "name": "Bank robbery (Large)",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 4400,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 9,
+      "k9": 3,
+      "police_service_group_leader": 2,
+      "riot_police": 1,
+      "riot_police_equipment": 1,
+      "riot_police_suv": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 7,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 15,
+      "police_service_group_leader": 2,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": ""
+  },
+  {
+    "id": "396",
+    "name": "Crowd Control",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "k9": 5,
+      "police_service_group_leader": 1,
+      "riot_police": 2,
+      "riot_police_equipment": 1,
+      "riot_police_suv": 3
+    },
+    "chances": {},
+    "additional": {
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_service_group_leader": 1,
+      "riot_police": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 396,
+    "additive_overlays": ""
+  },
+  {
+    "id": "397",
+    "name": "Bus Hijacking",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2100,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "k9": 2,
+      "riot_police": 2,
+      "riot_police_equipment": 1,
+      "riot_police_suv": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 397,
+    "additive_overlays": ""
+  },
+  {
+    "id": "398",
+    "name": "Train Hijacking",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 2100,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "k9": 3,
+      "riot_police": 2,
+      "riot_police_equipment": 1,
+      "riot_police_suv": 2
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 398,
+    "additive_overlays": ""
+  },
+  {
+    "id": "399",
+    "name": "Plane Hijacking (Small)",
+    "place": "Small Airport (Runway)\nLarge Airport (Runway)\nAirport Terminal",
+    "place_array": [
+      "Small Airport (Runway)",
+      "Large Airport (Runway)",
+      "Airport Terminal"
+    ],
+    "average_credits": 1250,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "k9": 1, "riot_police": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [400],
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 399,
+    "additive_overlays": ""
+  },
+  {
+    "id": "400",
+    "name": "Plane Hijacking (Large)",
+    "place": "Small Airport (Runway)\nLarge Airport (Runway)\nAirport Terminal",
+    "place_array": [
+      "Small Airport (Runway)",
+      "Large Airport (Runway)",
+      "Airport Terminal"
+    ],
+    "average_credits": 3800,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 7,
+      "k9": 3,
+      "police_service_group_leader": 2,
+      "riot_police": 2,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 12,
+      "police_service_group_leader": 2,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 400,
     "additive_overlays": ""
   }
 ]
