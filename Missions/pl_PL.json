@@ -15603,5 +15603,57 @@
     "overlay_index": null,
     "base_mission_id": 531,
     "additive_overlays": ""
+  },
+  {
+    "id": "532",
+    "name": "Rozległy pożar traw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "firetrucks": 9,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1
+    },
+    "chances": { "water_tankers": 10 },
+    "additional": {
+      "followup_missions_ids": [15, 14],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 532,
+    "additive_overlays": ""
+  },
+  {
+    "id": "533",
+    "name": "Podpalacz",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1700,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [0, 1, 2, 3, 4, 6, 7, 8, 14, 15, 24, 213],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 533,
+    "additive_overlays": ""
   }
 ]
