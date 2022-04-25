@@ -18061,6 +18061,127 @@
     "additive_overlays": ""
   },
   {
+    "id": "441",
+    "name": "LPG Fuelled vehicle fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 3, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 441,
+    "additive_overlays": ""
+  },
+  {
+    "id": "442",
+    "name": "LPG Fuelled vehicle fire (Persons Reported)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 0, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 442,
+    "additive_overlays": ""
+  },
+  {
+    "id": "443",
+    "name": "LPG Fuelled vehicle fire (fast road) (Persons Reported)",
+    "place": "Major Road Standby Point",
+    "place_array": ["Major Road Standby Point"],
+    "average_credits": 3700,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "traffic_car": 2
+    },
+    "chances": { "patient_transport": 0, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 443,
+    "additive_overlays": ""
+  },
+  {
+    "id": "444",
+    "name": "LPG Fuelled vehicle fire (fast road)",
+    "place": "Major Road Standby Point",
+    "place_array": ["Major Road Standby Point"],
+    "average_credits": 3500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 4, "police_cars": 1, "traffic_car": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 444,
+    "additive_overlays": ""
+  },
+  {
     "id": "445",
     "name": "Bar Fight",
     "place": "Bar",
