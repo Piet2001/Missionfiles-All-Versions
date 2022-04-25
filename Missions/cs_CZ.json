@@ -13626,5 +13626,79 @@
     "overlay_index": null,
     "base_mission_id": 430,
     "additive_overlays": ""
+  },
+  {
+    "id": "431",
+    "name": "Čelní střet dvou vozidel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 3, "police_cars": 2, "traffic_car": 1 },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 30,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": ""
+  },
+  {
+    "id": "431/a",
+    "name": "Čelní střet dvou vozidel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4400,
+    "generated_by": "Požární stanice",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "police_cars": 2,
+      "traffic_car": 1,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 30,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": "a"
   }
 ]
