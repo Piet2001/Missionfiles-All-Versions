@@ -23519,6 +23519,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 2,
+      "expansion_missions_ids": [689],
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specializations": "General Surgeon"
@@ -23562,6 +23563,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 2,
+      "expansion_missions_ids": [690],
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specializations": "General Surgeon"
@@ -25521,6 +25523,114 @@
     },
     "overlay_index": null,
     "base_mission_id": 688,
+    "additive_overlays": ""
+  },
+  {
+    "id": "689",
+    "name": "Cargo plane fire with oil leak",
+    "place": "Large Airport (Runway)",
+    "place_array": ["Large Airport (Runway)"],
+    "average_credits": 15500,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4000,
+      "firetrucks": 13,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 6,
+      "heavy_rescue_vehicles": 4,
+      "arff": 6,
+      "hazmat_vehicles": 4,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-C-1",
+        "7-C-2",
+        "7-C-4",
+        "7-D-2",
+        "7-D-5",
+        "8-B-1G",
+        "8-C-1G",
+        "8-D-1G",
+        "8-D-2G",
+        "8-D-6G"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "fire_stations": 13,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 689,
+    "additive_overlays": ""
+  },
+  {
+    "id": "690",
+    "name": "Large cargo plane fire with oil leak",
+    "place": "Large Airport (Runway)",
+    "place_array": ["Large Airport (Runway)"],
+    "average_credits": 19000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5500,
+      "firetrucks": 16,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 8,
+      "heavy_rescue_vehicles": 6,
+      "arff": 8,
+      "hazmat_vehicles": 4,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 24 }
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-C-1",
+        "7-C-2",
+        "7-C-4",
+        "7-D-2",
+        "7-D-5",
+        "8-B-1G",
+        "8-C-1G",
+        "8-D-1G",
+        "8-D-2G",
+        "8-D-6G"
+      ],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "HazMat": 24 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_stations": 15,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 690,
     "additive_overlays": ""
   }
 ]
