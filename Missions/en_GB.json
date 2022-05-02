@@ -18581,5 +18581,46 @@
     "overlay_index": null,
     "base_mission_id": 449,
     "additive_overlays": "a"
+  },
+  {
+    "id": "450",
+    "name": "Fire in multi-storey car park (Major Incident)",
+    "place": "Multi-Storey Car Park",
+    "place_array": ["Multi-Storey Car Park"],
+    "average_credits": 25000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "average_min_fire_personnel": 90,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 10,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 450,
+    "additive_overlays": ""
   }
 ]
