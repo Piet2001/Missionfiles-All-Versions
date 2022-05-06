@@ -9894,6 +9894,168 @@
     "additive_overlays": ""
   },
   {
+    "id": "314",
+    "name": "Person gled i smeltet chokolade",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulancestation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z",
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 314,
+    "additive_overlays": ""
+  },
+  {
+    "id": "315",
+    "name": "Brændende buket",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 315,
+    "additive_overlays": ""
+  },
+  {
+    "id": "316",
+    "name": "Soveværelsesbrand fra stearinlys",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z",
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 316,
+    "additive_overlays": ""
+  },
+  {
+    "id": "317",
+    "name": "Brændende kage i ovn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [318],
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 317,
+    "additive_overlays": ""
+  },
+  {
+    "id": "318",
+    "name": "Køkken, der brænder ned",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z",
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 318,
+    "additive_overlays": ""
+  },
+  {
+    "id": "319",
+    "name": "Chokoladerøveri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "Politistation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2022-05-06T09:00:00Z",
+      "date_end": "2022-05-08T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 319,
+    "additive_overlays": ""
+  },
+  {
     "id": "320",
     "name": "Atomkraftværk Hændelse",
     "place": "Atomkraftværk",
