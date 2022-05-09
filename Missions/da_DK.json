@@ -405,7 +405,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 100, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -12161,11 +12161,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 2, "elw_police": 2 },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 2,
       "filter_id": "police_station_missions",
+      "need_elw_police_only_if_present": true,
       "patient_specializations": "Kirurg"
     },
     "prerequisites": {
@@ -13438,16 +13439,23 @@
       "/images/fallingrocks_rot.png"
     ],
     "requirements": {
-      "firetrucks": 7,
-      "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
-      "police_cars": 2
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3,
+      "elw_police": 1
     },
-    "chances": { "patient_transport": 75, "patient_critical_care": 10 },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 20,
+      "patient_critical_care": 10
+    },
     "additional": {
-      "possible_patient": 2,
+      "possible_patient": 4,
+      "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
-      "patient_specializations": "Specialister i intern medicin"
+      "need_elw_police_only_if_present": true,
+      "patient_specializations": "Traumatologi"
     },
     "prerequisites": {
       "main_building": 0,
@@ -13574,6 +13582,40 @@
     },
     "overlay_index": null,
     "base_mission_id": 429,
+    "additive_overlays": ""
+  },
+  {
+    "id": "430",
+    "name": "Brand i forsamlingssal",
+    "place": "Skole",
+    "place_array": ["Skole"],
+    "average_credits": 1300,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
     "additive_overlays": ""
   }
 ]
