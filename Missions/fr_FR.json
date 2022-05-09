@@ -13854,5 +13854,45 @@
     "overlay_index": null,
     "base_mission_id": 449,
     "additive_overlays": ""
+  },
+  {
+    "id": "450",
+    "name": "Feu d'embarcation de plaisance",
+    "place": "Rivière\nVoie navigable\nQuai\nLac",
+    "place_array": ["Rivière", "Voie navigable", "Quai", "Lac"],
+    "average_credits": 6000,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "brush_truck": 1,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
+      "police_cars": 3,
+      "water_rescue": 1,
+      "boats": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "fire_support_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 450,
+    "additive_overlays": ""
   }
 ]
