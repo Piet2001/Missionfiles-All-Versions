@@ -18622,5 +18622,43 @@
     "overlay_index": null,
     "base_mission_id": 450,
     "additive_overlays": ""
+  },
+  {
+    "id": "451",
+    "name": "Bridge Strike (Double Decker Bus) (Persons reported)",
+    "place": "Low Bridge",
+    "place_array": ["Low Bridge"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 4,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 6,
+      "traffic_car": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 16,
+      "police_stations": 8,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 451,
+    "additive_overlays": ""
   }
 ]
