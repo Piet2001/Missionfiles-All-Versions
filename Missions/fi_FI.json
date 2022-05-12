@@ -6239,7 +6239,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "expansion_missions_ids": [328, 333],
+      "expansion_missions_ids": [333],
       "followup_missions_ids": [207],
       "filter_id": "ambulance_station_missions",
       "patient_specializations": "Yleiskirurgi"
@@ -6288,10 +6288,10 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "platform_trucks": 1 },
+    "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": ""
@@ -6738,7 +6738,8 @@
       "duration_text": "30 minuuttia",
       "duration": 1800,
       "guard_mission": true,
-      "filter_id": "police_station_missions"
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true
     },
     "prerequisites": {
       "main_building": 6,
@@ -10581,7 +10582,10 @@
     ],
     "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 360,
