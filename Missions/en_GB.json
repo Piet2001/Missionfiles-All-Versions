@@ -18660,5 +18660,94 @@
     "overlay_index": null,
     "base_mission_id": 451,
     "additive_overlays": ""
+  },
+  {
+    "id": "452",
+    "name": "Medical emergency whilst driving",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 1, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 452,
+    "additive_overlays": ""
+  },
+  {
+    "id": "453",
+    "name": "Medical emergency whilst driving (fast road)",
+    "place": "Major Road Standby Point",
+    "place_array": ["Major Road Standby Point"],
+    "average_credits": 800,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "police_cars": 2, "traffic_car": 1 },
+    "chances": { "patient_transport": 1, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 453,
+    "additive_overlays": ""
+  },
+  {
+    "id": "454",
+    "name": "Vehicle driving towards traffic (fast road)",
+    "place": "Major Road Standby Point",
+    "place_array": ["Major Road Standby Point"],
+    "average_credits": 1300,
+    "generated_by": "Police Station",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "traffic_car": 2 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "max_possible_prisoners": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "need_traffic_car_only_if_present": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 6 },
+    "overlay_index": null,
+    "base_mission_id": 454,
+    "additive_overlays": ""
   }
 ]
