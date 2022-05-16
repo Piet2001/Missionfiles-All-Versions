@@ -11653,5 +11653,50 @@
     "overlay_index": null,
     "base_mission_id": 409,
     "additive_overlays": ""
+  },
+  {
+    "id": "410",
+    "name": "Car into Shop Wall",
+    "place": "Supermarket (small)\nSupermarket (big)\nMall",
+    "place_array": ["Supermarket (small)", "Supermarket (big)", "Mall"],
+    "average_credits": 3500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 3,
+      "water_rescue": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": ""
   }
 ]
