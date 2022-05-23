@@ -25881,7 +25881,7 @@
     "name": "Abdominal Pain",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -25917,7 +25917,7 @@
     "name": "Abdominal Pain",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -25946,6 +25946,165 @@
     "prerequisites": { "main_building": 3, "rescue_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 695,
+    "additive_overlays": ""
+  },
+  {
+    "id": "696",
+    "name": "Airplane Crash in Urban Area",
+    "place": "City centre\nVillage",
+    "place_array": ["City centre", "Village"],
+    "average_credits": 15000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 1500,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 2,
+      "arff": 3,
+      "hazmat_vehicles": 2,
+      "police_cars": 6,
+      "personnel_educations": { "gw_gefahrgut": 8 },
+      "sheriff": 1
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [697, 698],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 7,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 696,
+    "additive_overlays": ""
+  },
+  {
+    "id": "697",
+    "name": "Airplane Crash in Urban Area with Fire",
+    "place": "City centre\nVillage",
+    "place_array": ["City centre", "Village"],
+    "average_credits": 20000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "firetrucks": 13,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 3,
+      "mobile_air_vehicles": 2,
+      "arff": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 8 },
+      "sheriff": 2
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [698],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "fire_stations": 10,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 697,
+    "additive_overlays": ""
+  },
+  {
+    "id": "698",
+    "name": "Airplane Crash in Urban Area with Explosion",
+    "place": "City centre\nVillage",
+    "place_array": ["City centre", "Village"],
+    "average_credits": 22500,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2500,
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 6,
+      "mobile_air_vehicles": 3,
+      "arff": 5,
+      "hazmat_vehicles": 3,
+      "police_cars": 10,
+      "personnel_educations": { "gw_gefahrgut": 12 },
+      "fbi": 2,
+      "fbi_investigation": 2,
+      "fbi_mcc": 1,
+      "fbi_bomb": 1,
+      "sheriff": 2
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "fbi": 25,
+      "fbi_investigation": 10,
+      "fbi_mcc": 10,
+      "fbi_bomb": 10
+    },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "federalpolice_stations": 1,
+      "fire_support_count": 1,
+      "fire_stations": 10,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 698,
     "additive_overlays": ""
   }
 ]
