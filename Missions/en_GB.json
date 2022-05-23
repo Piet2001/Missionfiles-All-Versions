@@ -18609,7 +18609,7 @@
     "additional": {
       "possible_patient": 12,
       "average_min_fire_personnel": 90,
-      "patient_uk_code_possible": ["C-2", "C-3"],
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "patient_specializations": "General Internal"
     },
@@ -18677,7 +18677,7 @@
     "chances": { "patient_transport": 1, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 1,
-      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "patient_uk_code_possible": ["C-1", "C-2"],
       "filter_id": "police_station_missions",
       "allow_swat_instead_of_police": true,
       "patient_specializations": "General Internal"
@@ -18748,6 +18748,30 @@
     "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 454,
+    "additive_overlays": ""
+  },
+  {
+    "id": "455",
+    "name": "Fire alarm activation in commercial premises",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 8,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 455,
     "additive_overlays": ""
   }
 ]
