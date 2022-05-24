@@ -718,7 +718,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_traffic_car_instead_of_fustw": true
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
       "main_building": 0,
@@ -996,6 +997,7 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -1041,6 +1043,7 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -1298,35 +1301,12 @@
       "possible_patient": 3,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 55,
-    "additive_overlays": ""
-  },
-  {
-    "id": "56",
-    "name": "Zamieszki",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "Komenda Policji",
-    "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [55],
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 56,
     "additive_overlays": ""
   },
   {
@@ -1514,7 +1494,10 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 62,
@@ -1560,14 +1543,12 @@
     "requirements": {
       "water_needed": 2700,
       "firetrucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "traffic_car": 1
+      "heavy_rescue_vehicles": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 15 },
     "additional": {
       "possible_patient": 12,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
@@ -1579,6 +1560,45 @@
     "overlay_index": null,
     "base_mission_id": 64,
     "additive_overlays": ""
+  },
+  {
+    "id": "64/a",
+    "name": "Wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1510,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2700,
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "patient_critical_care": 15,
+      "road_rescue": 30
+    },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "a"
   },
   {
     "id": "67",
@@ -1598,6 +1618,7 @@
       "possible_patient": 3,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": { "main_building": 6, "police_stations": 3 },
@@ -1732,25 +1753,57 @@
       "water_needed": 4000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "traffic_car": 2
+      "heavy_rescue_vehicles": 2
     },
     "chances": { "patient_transport": 80, "patient_critical_care": 60 },
     "additional": {
       "possible_patient": 12,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 2,
       "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 73,
     "additive_overlays": ""
+  },
+  {
+    "id": "73/a",
+    "name": "Poważny wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3440,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 3,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "a"
   },
   {
     "id": "74",
@@ -1838,6 +1891,7 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Interna"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
@@ -2058,6 +2112,7 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2021-12-01T10:00:00+01:00",
       "date_end": "2021-12-26T23:59:00+01:00",
       "patient_specializations": "Traumatologia"
@@ -2133,6 +2188,40 @@
       "water_needed": 1200,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 85,
+    "additive_overlays": ""
+  },
+  {
+    "id": "85/a",
+    "name": "Dachowanie samochodu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1505,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1200,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "traffic_car": 1
     },
@@ -2146,12 +2235,11 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 2,
-      "police_stations": 1,
       "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 85,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "86",
@@ -2188,14 +2276,12 @@
     "requirements": {
       "water_needed": 2400,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "traffic_car": 1
+      "battalion_chief_vehicles": 1
     },
     "chances": { "patient_transport": 0 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
@@ -2206,6 +2292,39 @@
     "overlay_index": null,
     "base_mission_id": 87,
     "additive_overlays": ""
+  },
+  {
+    "id": "87/a",
+    "name": "Wypadek traktora",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 1905,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2400,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 87,
+    "additive_overlays": "a"
   },
   {
     "id": "88",
@@ -2601,10 +2720,14 @@
       "water_needed": 9200,
       "firetrucks": 3,
       "battalion_chief_vehicles": 2,
-      "water_tankers": 1
+      "water_tankers": 1,
+      "police_cars": 1
     },
     "chances": { "water_tankers": 20 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
@@ -2629,6 +2752,39 @@
     "requirements": {
       "water_needed": 1700,
       "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 35 },
+    "additional": {
+      "possible_patient": 2,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 103,
+    "additive_overlays": ""
+  },
+  {
+    "id": "103/a",
+    "name": "Wypadek motocyklowy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2505,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1700,
+      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "traffic_car": 1
     },
@@ -2637,18 +2793,16 @@
       "possible_patient": 2,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "police_stations": 1,
       "fire_stations": 3
     },
     "overlay_index": null,
     "base_mission_id": 103,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "104",
@@ -2656,6 +2810,45 @@
     "place": "",
     "place_array": [],
     "average_credits": 3500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 35
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 104,
+    "additive_overlays": ""
+  },
+  {
+    "id": "104/a",
+    "name": "Wypadek dwóch samochodów - Zderzenie boczne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3705,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2679,18 +2872,16 @@
       "possible_patient_min": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 104,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "105",
@@ -2698,6 +2889,46 @@
     "place": "",
     "place_array": [],
     "average_credits": 2200,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2300,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 105,
+    "additive_overlays": ""
+  },
+  {
+    "id": "105/a",
+    "name": "Najechanie na tył samochodu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2405,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2721,19 +2952,17 @@
       "possible_patient_min": 0,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 2,
-      "police_stations": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 105,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "106",
@@ -2741,6 +2970,45 @@
     "place": "",
     "place_array": [],
     "average_credits": 3500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 70,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 106,
+    "additive_overlays": ""
+  },
+  {
+    "id": "106/a",
+    "name": "Wypadek dwóch samochodów - Zderzenie czołowe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3910,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2764,18 +3032,16 @@
       "possible_patient_min": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 106,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "107",
@@ -2793,8 +3059,7 @@
       "water_needed": 3800,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "traffic_car": 1
+      "heavy_rescue_vehicles": 1
     },
     "chances": {
       "patient_transport": 50,
@@ -2806,18 +3071,58 @@
       "possible_patient_min": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Chirurg ogólny"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 2,
-      "police_stations": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 107,
     "additive_overlays": ""
+  },
+  {
+    "id": "107/a",
+    "name": "Wypadek na przejeździe kolejowym",
+    "place": "Przejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": ["Przejazd kolejowy", "Przejazd kolejowo-drogowy"],
+    "average_credits": 4370,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 3800,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 50,
+      "patient_critical_care": 60,
+      "road_rescue": 80
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 107,
+    "additive_overlays": "a"
   },
   {
     "id": "108",
@@ -3936,6 +4241,7 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -4054,6 +4360,44 @@
     "additive_overlays": ""
   },
   {
+    "id": "148/a",
+    "name": "Mały niebezpieczny protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7300,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "k9": 1,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 42 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [149],
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Szkolenie Personalne OPP": 42 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 60 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 148,
+    "additive_overlays": "a"
+  },
+  {
     "id": "149",
     "name": "Średni niebezpieczny protest",
     "place": "",
@@ -4069,6 +4413,7 @@
     "chances": { "patient_transport": 30, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 5,
+      "expansion_missions_ids": [553],
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
       "patient_specializations": "Traumatologia"
@@ -4082,6 +4427,47 @@
     "overlay_index": null,
     "base_mission_id": 149,
     "additive_overlays": ""
+  },
+  {
+    "id": "149/a",
+    "name": "Średni niebezpieczny protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 1,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 64 },
+      "riot_police_equipment": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [553],
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Szkolenie Personalne OPP": 64 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 75 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 149,
+    "additive_overlays": "a"
   },
   {
     "id": "150",
@@ -4347,6 +4733,7 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "date_start": "2022-04-08T09:00:00Z",
       "date_end": "2022-04-18T23:59:59+02:00"
     },
@@ -4433,6 +4820,7 @@
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "date_start": "2022-04-08T09:00:00Z",
       "date_end": "2022-04-18T23:59:59+02:00"
     },
@@ -4492,6 +4880,7 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "date_start": "2022-04-08T09:00:00Z",
       "date_end": "2022-04-18T23:59:59+02:00"
     },
@@ -4556,6 +4945,7 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "date_start": "2022-04-08T09:00:00Z",
       "date_end": "2022-04-18T23:59:59+02:00"
     },
@@ -4857,6 +5247,35 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
+    "requirements": { "firetrucks": 3, "heavy_rescue_vehicles": 1 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 179,
+    "additive_overlays": ""
+  },
+  {
+    "id": "179/a",
+    "name": "Potrącenie na przejściu dla pieszych",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2705,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
     "requirements": {
       "firetrucks": 3,
       "heavy_rescue_vehicles": 1,
@@ -4867,18 +5286,16 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 1,
       "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 179,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "180",
@@ -4886,6 +5303,40 @@
     "place": "",
     "place_array": [],
     "average_credits": 5500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 180,
+    "additive_overlays": ""
+  },
+  {
+    "id": "180/a",
+    "name": "Wypadek małego busa przewożącego osoby",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5705,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -4904,18 +5355,16 @@
       "possible_patient": 5,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 5,
-      "police_stations": 1,
       "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 180,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "181",
@@ -5183,7 +5632,10 @@
       "police_cars": 3
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -5220,7 +5672,10 @@
       "foam": 2
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -5254,6 +5709,7 @@
     "additional": {
       "possible_patient": 5,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -5281,8 +5737,7 @@
     "requirements": {
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "traffic_car": 3
+      "heavy_rescue_vehicles": 2
     },
     "chances": {
       "patient_transport": 50,
@@ -5293,18 +5748,55 @@
       "possible_patient": 4,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 2,
-      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 189,
     "additive_overlays": ""
+  },
+  {
+    "id": "189/a",
+    "name": "Zderzenie wozu strażackiego z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3440,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 3,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 189,
+    "additive_overlays": "a"
   },
   {
     "id": "190",
@@ -5322,8 +5814,7 @@
       "water_needed": 3000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "traffic_car": 3
+      "heavy_rescue_vehicles": 2
     },
     "chances": {
       "patient_transport": 50,
@@ -5334,18 +5825,56 @@
       "possible_patient": 4,
       "possible_patient_min": 2,
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 2,
-      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 190,
     "additive_overlays": ""
+  },
+  {
+    "id": "190/a",
+    "name": "Zderzenie radiowozu z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3645,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 3000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 4,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 190,
+    "additive_overlays": "a"
   },
   {
     "id": "191",
@@ -5362,8 +5891,7 @@
     "requirements": {
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "traffic_car": 2
+      "heavy_rescue_vehicles": 2
     },
     "chances": {
       "patient_transport": 75,
@@ -5374,18 +5902,56 @@
       "possible_patient": 4,
       "possible_patient_min": 2,
       "filter_id": "ambulance_station_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 2,
       "rescue_stations": 3,
-      "police_stations": 4,
       "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 191,
     "additive_overlays": ""
+  },
+  {
+    "id": "191/a",
+    "name": "Zderzenie karetki z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3040,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 20,
+      "patient_critical_care": 40,
+      "road_rescue": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 191,
+    "additive_overlays": "a"
   },
   {
     "id": "192",
@@ -5516,8 +6082,7 @@
       "heavy_rescue_vehicles": 2,
       "police_helicopters": 1,
       "police_cars": 1,
-      "k9": 3,
-      "traffic_car": 5
+      "k9": 3
     },
     "chances": { "patient_transport": 10, "patient_critical_care": 20 },
     "additional": {
@@ -5525,7 +6090,6 @@
       "max_possible_prisoners": 5,
       "swat_personnel": 12,
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Traumatologia"
     },
@@ -5538,6 +6102,51 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": ""
+  },
+  {
+    "id": "195/a",
+    "name": "Wypadek więziennego autobusu",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4810,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_helicopters": 1,
+      "police_cars": 1,
+      "k9": 3,
+      "traffic_car": 4,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 10,
+      "patient_critical_care": 20,
+      "road_rescue": 90
+    },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 5,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 9,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "a"
   },
   {
     "id": "196",
@@ -5649,6 +6258,7 @@
       "average_min_fire_personnel": 9,
       "average_min_police_personnel": 12,
       "filter_id": "water_watch_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -5778,6 +6388,7 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "water_watch_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -5994,6 +6605,7 @@
       "max_possible_prisoners": 6,
       "swat_personnel": 16,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -6061,7 +6673,10 @@
       "hose": 1
     },
     "chances": { "platform_trucks": 80 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -6098,7 +6713,10 @@
       "foam": 3
     },
     "chances": { "platform_trucks": 80 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -6195,6 +6813,7 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -6849,6 +7468,7 @@
       "possible_patient": 30,
       "possible_patient_min": 20,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -6896,6 +7516,7 @@
       "possible_patient": 30,
       "possible_patient_min": 20,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -6926,26 +7547,58 @@
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 4,
-      "police_cars": 1,
-      "traffic_car": 2
+      "heavy_rescue_vehicles": 4
     },
     "chances": { "patient_transport": 70, "helicopter": 80 },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 5,
-      "police_stations": 2,
       "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 241,
     "additive_overlays": ""
+  },
+  {
+    "id": "241/a",
+    "name": "Karambol w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 3710,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": { "patient_transport": 70, "helicopter": 80, "road_rescue": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 241,
+    "additive_overlays": "a"
   },
   {
     "id": "242",
@@ -6971,6 +7624,7 @@
       "possible_patient": 2,
       "expansion_missions_ids": [29],
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -7167,10 +7821,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 248,
     "additive_overlays": ""
@@ -7471,10 +8124,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 260,
     "additive_overlays": ""
@@ -7495,10 +8147,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 261,
     "additive_overlays": ""
@@ -7519,10 +8170,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 262,
     "additive_overlays": ""
@@ -7543,10 +8193,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 263,
     "additive_overlays": ""
@@ -7567,10 +8216,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 264,
     "additive_overlays": ""
@@ -7591,10 +8239,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 265,
     "additive_overlays": ""
@@ -7615,10 +8262,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 266,
     "additive_overlays": ""
@@ -7639,10 +8285,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 267,
     "additive_overlays": ""
@@ -7663,10 +8308,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 268,
     "additive_overlays": ""
@@ -7677,6 +8321,42 @@
     "place": "Zjazd z autostrady",
     "place_array": ["Zjazd z autostrady"],
     "average_credits": 2300,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2
+    },
+    "chances": {
+      "patient_transport": 65,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": ""
+  },
+  {
+    "id": "271/a",
+    "name": "Wypadek drogowy z udziałem samochodu ciężarowego",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 2505,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -7706,7 +8386,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 271,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "272",
@@ -7722,7 +8402,10 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 272,
@@ -7752,6 +8435,7 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -7861,7 +8545,7 @@
       "filter_id": "police_station_missions",
       "patient_specializations": "Interna"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
     "overlay_index": null,
     "base_mission_id": 276,
     "additive_overlays": ""
@@ -7881,8 +8565,7 @@
     "requirements": {
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "traffic_car": 2
+      "heavy_rescue_vehicles": 4
     },
     "chances": {
       "patient_transport": 70,
@@ -7894,18 +8577,57 @@
       "possible_patient_min": 1,
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 277,
     "additive_overlays": ""
+  },
+  {
+    "id": "277/a",
+    "name": "Karambol",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4810,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 50,
+      "patient_critical_care": 60,
+      "road_rescue": 30
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 277,
+    "additive_overlays": "a"
   },
   {
     "id": "278",
@@ -8127,6 +8849,7 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "date_start": "2021-11-19T11:00:00+01:00",
       "date_end": "2021-11-22T23:59:00+01:00"
     },
@@ -8177,6 +8900,7 @@
     "additional": {
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2021-11-19T11:00:00+01:00",
       "date_end": "2021-11-22T23:59:00+01:00"
     },
@@ -8346,6 +9070,7 @@
       "duration": 1200,
       "guard_mission": true,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2021-11-19T11:00:00+01:00",
       "date_end": "2021-11-22T23:59:00+01:00"
     },
@@ -8466,7 +9191,10 @@
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 298,
@@ -8502,6 +9230,7 @@
     "additional": {
       "possible_patient": 8,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -8715,6 +9444,7 @@
       "duration": 5400,
       "guard_mission": true,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "date_start": "2021-12-27T10:00:00Z",
       "date_end": "2022-01-01T23:00:00Z"
     },
@@ -8803,6 +9533,7 @@
       "possible_patient_min": 1,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2021-12-27T10:00:00Z",
       "date_end": "2022-01-01T23:00:00Z",
       "patient_specializations": "Traumatologia"
@@ -8833,6 +9564,7 @@
     "additional": {
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "date_start": "2021-12-27T10:00:00Z",
       "date_end": "2022-01-01T23:00:00Z"
     },
@@ -8853,6 +9585,29 @@
       "/images/icy_road_gelb.png",
       "/images/icy_road_rot.png"
     ],
+    "requirements": { "firetrucks": 2, "fwk": 1, "heavy_rescue_vehicles": 1 },
+    "chances": { "fwk": 75 },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 12 },
+    "overlay_index": null,
+    "base_mission_id": 312,
+    "additive_overlays": ""
+  },
+  {
+    "id": "312/a",
+    "name": "Pojazd w rowie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1605,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
     "requirements": {
       "firetrucks": 2,
       "fwk": 1,
@@ -8862,17 +9617,12 @@
     "chances": { "fwk": 75 },
     "additional": {
       "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true
+      "filter_id": "firehouse_missions"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 12
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 12 },
     "overlay_index": null,
     "base_mission_id": 312,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "313",
@@ -9118,6 +9868,7 @@
       "possible_patient": 20,
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -9202,7 +9953,10 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 324,
@@ -9442,6 +10196,7 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2022-02-04T10:00:00Z",
       "date_end": "2022-02-15T10:00:00Z"
     },
@@ -9842,6 +10597,7 @@
       "possible_patient": 70,
       "possible_patient_min": 50,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -9886,6 +10642,7 @@
       "possible_patient": 70,
       "possible_patient_min": 50,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -9926,7 +10683,10 @@
       "hose": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 5,
@@ -9964,7 +10724,10 @@
       "foam": 4
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 5,
@@ -10005,6 +10768,7 @@
       "possible_patient": 2,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -10171,6 +10935,7 @@
       "possible_patient": 20,
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -10215,6 +10980,7 @@
       "possible_patient": 20,
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -10249,6 +11015,7 @@
       "allow_rw_instead_of_lf": true,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -10289,6 +11056,7 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 3,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -10313,7 +11081,7 @@
       "/images/boat_gelb.png",
       "/images/boat_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "boats": 1, "traffic_car": 1 },
+    "requirements": { "firetrucks": 1, "boats": 1 },
     "chances": {
       "patient_transport": 90,
       "helicopter": 10,
@@ -10323,7 +11091,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "water_watch_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -10414,8 +11181,8 @@
       "swat_personnel": 24,
       "average_min_police_personnel": 32,
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
@@ -10465,6 +11232,7 @@
       "swat_personnel": 32,
       "average_min_police_personnel": 50,
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Traumatologia"
     },
@@ -10918,6 +11686,7 @@
       "possible_patient_min": 0,
       "filter_id": "ambulance_station_missions",
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -10960,6 +11729,7 @@
       "average_min_police_personnel": 18,
       "filter_id": "ambulance_station_missions",
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Interna"
     },
@@ -11012,8 +11782,7 @@
     "requirements": {
       "firetrucks": 3,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 4,
-      "traffic_car": 1
+      "police_cars": 4
     },
     "chances": {
       "patient_transport": 80,
@@ -11024,18 +11793,50 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "fire_stations": 6
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 378,
     "additive_overlays": ""
+  },
+  {
+    "id": "378/a",
+    "name": "Wypadek podczas pościgu policyjnego",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5640,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 4,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 40,
+      "road_rescue": 70
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 378,
+    "additive_overlays": "a"
   },
   {
     "id": "379",
@@ -11394,6 +12195,49 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 5,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "fire_stations": 21
+    },
+    "overlay_index": null,
+    "base_mission_id": 392,
+    "additive_overlays": ""
+  },
+  {
+    "id": "392/a",
+    "name": "Zawalenie mostu",
+    "place": "Most",
+    "place_array": ["Most"],
+    "average_credits": 10910,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 5,
       "police_cars": 4,
       "traffic_car": 2
     },
@@ -11406,8 +12250,8 @@
       "possible_patient": 8,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -11418,7 +12262,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 392,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "393",
@@ -11501,7 +12345,8 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2
     },
     "prerequisites": { "main_building": 6, "police_stations": 10 },
     "overlay_index": null,
@@ -11524,7 +12369,8 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": { "main_building": 6, "police_stations": 10 },
     "overlay_index": null,
@@ -12147,7 +12993,8 @@
       "swat_personnel": 4,
       "filter_id": "police_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "fire_alarm_system_possible": true
+      "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 2
     },
     "prerequisites": {
       "main_building": 6,
@@ -12185,7 +13032,8 @@
       "max_possible_prisoners": 2,
       "swat_personnel": 4,
       "filter_id": "police_station_missions",
-      "fire_alarm_system_possible": true
+      "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
       "main_building": 6,
@@ -12253,7 +13101,10 @@
       "hose": 1
     },
     "chances": { "hose": 10 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
@@ -12291,7 +13142,10 @@
       "foam": 2
     },
     "chances": { "hose": 10 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
@@ -12498,7 +13352,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_traffic_car_instead_of_fustw": true
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
       "main_building": 0,
@@ -12634,8 +13489,7 @@
       "fwk": 1,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
-      "police_cars": 4,
-      "traffic_car": 2
+      "police_cars": 4
     },
     "chances": {
       "fwk": 60,
@@ -12649,8 +13503,8 @@
       "max_possible_prisoners": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -12662,6 +13516,55 @@
     "overlay_index": null,
     "base_mission_id": 435,
     "additive_overlays": ""
+  },
+  {
+    "id": "435/a",
+    "name": "Poważny wypadek na autostradzie",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 12890,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1500,
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 4,
+      "traffic_car": 3,
+      "road_rescue": 1
+    },
+    "chances": {
+      "fwk": 60,
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 75,
+      "road_rescue": 85
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": "a"
   },
   {
     "id": "436",
@@ -12790,10 +13693,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 439,
     "additive_overlays": ""
@@ -12814,10 +13716,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 440,
     "additive_overlays": ""
@@ -13197,6 +14098,7 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2021-09-24T09:00:00Z",
       "date_end": "2021-11-26T23:59:00+01:00",
       "patient_specializations": "Traumatologia"
@@ -13460,6 +14362,49 @@
       "heavy_rescue_vehicles": 3,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 2,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 60,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 2,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": ""
+  },
+  {
+    "id": "460/a",
+    "name": "Wypadek z udziałem cysterny przewożącej niebezpieczną substancję",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11410,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
       "police_cars": 3,
       "traffic_car": 2
     },
@@ -13472,8 +14417,8 @@
       "possible_patient": 2,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -13484,7 +14429,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 460,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "461",
@@ -13551,10 +14496,9 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": { "main_building": 6 },
     "overlay_index": null,
     "base_mission_id": 463,
     "additive_overlays": ""
@@ -13565,6 +14509,48 @@
     "place": "Przystanek tramwajowy",
     "place_array": ["Przystanek tramwajowy"],
     "average_credits": 8950,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 9,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 30,
+      "patient_transport": 60,
+      "helicopter": 10,
+      "patient_critical_care": 15
+    },
+    "additional": {
+      "possible_patient": 28,
+      "possible_patient_min": 4,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 464,
+    "additive_overlays": ""
+  },
+  {
+    "id": "464/a",
+    "name": "Zderzenie dwóch tramwajów",
+    "place": "Przystanek tramwajowy",
+    "place_array": ["Przystanek tramwajowy"],
+    "average_credits": 9360,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/tramway_gruen.png",
@@ -13590,7 +14576,6 @@
       "possible_patient_min": 4,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -13601,7 +14586,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 464,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "465",
@@ -13609,6 +14594,45 @@
     "place": "Przystanek tramwajowy",
     "place_array": ["Przystanek tramwajowy"],
     "average_credits": 8400,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 2,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": ""
+  },
+  {
+    "id": "465/a",
+    "name": "Wypadek tramwaju z samochodem osobowym",
+    "place": "Przystanek tramwajowy",
+    "place_array": ["Przystanek tramwajowy"],
+    "average_credits": 8810,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/tramway_gruen.png",
@@ -13631,19 +14655,17 @@
       "possible_patient_min": 2,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 5,
-      "police_stations": 2,
       "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 465,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "466",
@@ -13988,18 +15010,41 @@
       "/images/icy_road_gelb.png",
       "/images/icy_road_rot.png"
     ],
-    "requirements": { "police_cars": 4, "traffic_car": 2 },
+    "requirements": { "police_cars": 4 },
     "chances": {},
     "additional": {
       "followup_missions_ids": [260, 266, 268],
       "max_possible_prisoners": 6,
-      "filter_id": "police_station_missions",
-      "need_traffic_car_only_if_present": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 476,
     "additive_overlays": ""
+  },
+  {
+    "id": "476/a",
+    "name": "Nielegalne wyścigi samochodowe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5210,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "traffic_car": 2 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [260, 266, 268],
+      "max_possible_prisoners": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "overlay_index": null,
+    "base_mission_id": 476,
+    "additive_overlays": "a"
   },
   {
     "id": "477",
@@ -14228,7 +15273,8 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "subsequent_missions_ids": [250]
+      "subsequent_missions_ids": [250],
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -14251,8 +15297,7 @@
       "firetrucks": 6,
       "fwk": 1,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
-      "traffic_car": 2
+      "heavy_rescue_vehicles": 2
     },
     "chances": {
       "fwk": 15,
@@ -14265,18 +15310,59 @@
       "possible_patient_min": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 4,
-      "police_stations": 5,
       "fire_stations": 10
     },
     "overlay_index": null,
     "base_mission_id": 485,
     "additive_overlays": ""
+  },
+  {
+    "id": "485/a",
+    "name": "Karambol na moście",
+    "place": "Most",
+    "place_array": ["Most"],
+    "average_credits": 4610,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "fwk": 15,
+      "patient_transport": 65,
+      "helicopter": 5,
+      "patient_critical_care": 20,
+      "road_rescue": 30
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 485,
+    "additive_overlays": "a"
   },
   {
     "id": "486",
@@ -14452,15 +15538,13 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 3,
       "heavy_rescue_vehicles": 1,
-      "police_cars": 1,
-      "traffic_car": 1
+      "police_cars": 1
     },
     "chances": { "patient_transport": 40, "patient_critical_care": 15 },
     "additional": {
       "possible_patient": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
@@ -14473,6 +15557,43 @@
     "overlay_index": null,
     "base_mission_id": 491,
     "additive_overlays": ""
+  },
+  {
+    "id": "491/a",
+    "name": "Wypadek - samochód wjechał w barierki",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4310,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 491,
+    "additive_overlays": "a"
   },
   {
     "id": "492",
@@ -14715,8 +15836,7 @@
       "fwk": 1,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 3,
-      "police_cars": 3,
-      "traffic_car": 2
+      "police_cars": 3
     },
     "chances": {
       "fwk": 25,
@@ -14728,7 +15848,6 @@
       "possible_patient": 18,
       "possible_patient_min": 6,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
@@ -14741,6 +15860,51 @@
     "overlay_index": null,
     "base_mission_id": 499,
     "additive_overlays": ""
+  },
+  {
+    "id": "499/a",
+    "name": "Dachowanie autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9455,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "police_cars": 3,
+      "traffic_car": 2,
+      "road_rescue": 1
+    },
+    "chances": {
+      "fwk": 25,
+      "patient_transport": 30,
+      "helicopter": 5,
+      "patient_critical_care": 5,
+      "road_rescue": 45
+    },
+    "additional": {
+      "possible_patient": 18,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "a"
   },
   {
     "id": "500",
@@ -16008,6 +17172,46 @@
     "requirements": {
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 30,
+      "heavy_rescue_vehicles": 70,
+      "patient_transport": 40,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": ""
+  },
+  {
+    "id": "546/a",
+    "name": "Potrącenie na drodze leśnej",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 3305,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "traffic_car": 1
     },
@@ -16023,18 +17227,16 @@
       "possible_patient_min": 1,
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
-      "need_traffic_car_only_if_present": true,
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 2,
-      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 546,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "547",
@@ -16072,6 +17274,279 @@
     },
     "overlay_index": null,
     "base_mission_id": 547,
+    "additive_overlays": ""
+  },
+  {
+    "id": "548",
+    "name": "Zabezpieczenie niezapowiedzianego zgromadzenia (małe)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "riot_police": 28 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 28 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 60 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": ""
+  },
+  {
+    "id": "549",
+    "name": "Zabezpieczenie niezapowiedzianego zgromadzenia (duże)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "k9": 1,
+      "personnel_educations": { "riot_police": 76 },
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 76 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 150 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": ""
+  },
+  {
+    "id": "550",
+    "name": "Mały protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6600,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "personnel_educations": { "riot_police": 30 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [551, 148],
+      "max_possible_prisoners": 2,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 30 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 60 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 550,
+    "additive_overlays": ""
+  },
+  {
+    "id": "551",
+    "name": "Średni protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9800,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 7,
+      "personnel_educations": { "riot_police": 48 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [552, 149],
+      "max_possible_prisoners": 5,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 48 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 100 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": ""
+  },
+  {
+    "id": "552",
+    "name": "Duży protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "personnel_educations": { "riot_police": 76 },
+      "police_service_group_leader": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [553],
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 76 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_service_group_leader": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 150 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": ""
+  },
+  {
+    "id": "553",
+    "name": "Duży niebezpieczny protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18000,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 16,
+      "k9": 2,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 82 },
+      "police_service_group_leader": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 18,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 82 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "police_service_group_leader": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 160 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 553,
+    "additive_overlays": ""
+  },
+  {
+    "id": "554",
+    "name": "Średnie zamieszki",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 25 }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 16,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 25 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 50 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 554,
+    "additive_overlays": ""
+  },
+  {
+    "id": "555",
+    "name": "Duże zamieszki",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12000,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 15,
+      "k9": 3,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 76 },
+      "police_service_group_leader": 1,
+      "riot_police_equipment": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [146, 0, 2, 3],
+      "max_possible_prisoners": 32,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Szkolenie Personalne OPP": 76 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 12,
+      "police_service_group_leader": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 150 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 555,
     "additive_overlays": ""
   }
 ]
