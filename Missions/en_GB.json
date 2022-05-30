@@ -18773,5 +18773,108 @@
     "overlay_index": null,
     "base_mission_id": 455,
     "additive_overlays": ""
+  },
+  {
+    "id": "456",
+    "name": "Care home fire",
+    "place": "Care Home",
+    "place_array": ["Care Home"],
+    "average_credits": 3000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "platform_trucks": 2 },
+    "additional": {
+      "followup_missions_ids": [457],
+      "average_min_fire_personnel": 8,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 456,
+    "additive_overlays": ""
+  },
+  {
+    "id": "457",
+    "name": "Care home fire (Persons Reported)",
+    "place": "Care Home",
+    "place_array": ["Care Home"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "kdow_orgl": 1
+    },
+    "chances": {
+      "platform_trucks": 80,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 70,
+      "hazmat_vehicles": 10,
+      "patient_transport": 70,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 12,
+      "average_min_fire_personnel": 8,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 457,
+    "additive_overlays": ""
+  },
+  {
+    "id": "458",
+    "name": "Fire alarm activation in care home",
+    "place": "Care Home",
+    "place_array": ["Care Home"],
+    "average_credits": 1000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 3 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [456, 457],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 458,
+    "additive_overlays": ""
   }
 ]
