@@ -11762,5 +11762,390 @@
     "overlay_index": null,
     "base_mission_id": 412,
     "additive_overlays": ""
+  },
+  {
+    "id": "413",
+    "name": "Small Mining Accident",
+    "place": "Mine",
+    "place_array": ["Mine"],
+    "average_credits": 3000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [414],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 413,
+    "additive_overlays": ""
+  },
+  {
+    "id": "414",
+    "name": "Medium Mining Accident",
+    "place": "Mine",
+    "place_array": ["Mine"],
+    "average_credits": 5000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [415],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 414,
+    "additive_overlays": ""
+  },
+  {
+    "id": "415",
+    "name": "Large Mining Accident",
+    "place": "Mine",
+    "place_array": ["Mine"],
+    "average_credits": 9000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "kdow_orgl": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "expansion_missions_ids": [416],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 415,
+    "additive_overlays": ""
+  },
+  {
+    "id": "416",
+    "name": "Major Mining Accident",
+    "place": "Mine",
+    "place_array": ["Mine"],
+    "average_credits": 11500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 4,
+      "kdow_orgl": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 416,
+    "additive_overlays": ""
+  },
+  {
+    "id": "417",
+    "name": "Small Bushfire Staging Area",
+    "place": "Park\nForest\nHill\nHeathland\nMoorland\nField",
+    "place_array": ["Park", "Forest", "Hill", "Heathland", "Moorland", "Field"],
+    "average_credits": 2500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "water_rescue": 1
+    },
+    "chances": { "mobile_command_vehicles": 20 },
+    "additional": {
+      "expansion_missions_ids": [418],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 4,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 417,
+    "additive_overlays": ""
+  },
+  {
+    "id": "418",
+    "name": "Medium Bushfire Staging Area",
+    "place": "Park\nForest\nHill\nHeathland\nMoorland\nField",
+    "place_array": ["Park", "Forest", "Hill", "Heathland", "Moorland", "Field"],
+    "average_credits": 4500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 2,
+      "police_cars": 2,
+      "water_rescue": 2
+    },
+    "chances": { "mobile_command_vehicles": 60 },
+    "additional": {
+      "expansion_missions_ids": [419],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "police_stations": 2,
+      "fire_stations": 8,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 418,
+    "additive_overlays": ""
+  },
+  {
+    "id": "419",
+    "name": "Large Bushfire Staging Area",
+    "place": "Park\nForest\nHill\nHeathland\nMoorland\nField",
+    "place_array": ["Park", "Forest", "Hill", "Heathland", "Moorland", "Field"],
+    "average_credits": 7000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 4,
+      "police_cars": 3,
+      "water_rescue": 2,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [420],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "police_service_group_leader": 1,
+      "fire_stations": 10,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": ""
+  },
+  {
+    "id": "420",
+    "name": "Major Bushfire Staging Area",
+    "place": "Park\nForest\nHill\nHeathland\nMoorland\nField",
+    "place_array": ["Park", "Forest", "Hill", "Heathland", "Moorland", "Field"],
+    "average_credits": 12500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 2,
+      "brush_truck": 10,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 6,
+      "police_cars": 4,
+      "water_rescue": 3,
+      "kdow_orgl": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "police_service_group_leader": 1,
+      "fire_stations": 15,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": ""
+  },
+  {
+    "id": "421",
+    "name": "Cardiac Arrest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10,
+    "generated_by": "Ambulance Station",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "Cardiology"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": ""
+  },
+  {
+    "id": "422",
+    "name": "Ammonia Leak",
+    "place": "Cold Storage Warehouse",
+    "place_array": ["Cold Storage Warehouse"],
+    "average_credits": 9500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 5,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 10,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 30,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 422,
+    "additive_overlays": ""
   }
 ]
