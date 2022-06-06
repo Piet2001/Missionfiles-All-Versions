@@ -17706,5 +17706,53 @@
     "overlay_index": null,
     "base_mission_id": 562,
     "additive_overlays": ""
+  },
+  {
+    "id": "563",
+    "name": "Zabezpieczenie meczu piłkarskiego",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 10900,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 12,
+      "k9": 2,
+      "wasserwerfer": 1,
+      "personnel_educations": { "riot_police": 76 },
+      "police_service_group_leader": 1,
+      "riot_police_equipment": 1,
+      "riot_police_ambulance": 1
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "duration_text": "2 godziny",
+      "duration": 7200,
+      "possible_patient": 4,
+      "followup_missions_ids": [556, 0],
+      "max_possible_prisoners": 14,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Interna",
+      "personnel_educations": { "Szkolenie Personalne OPP": 76 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_service_group_leader": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 100 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 563,
+    "additive_overlays": ""
   }
 ]
