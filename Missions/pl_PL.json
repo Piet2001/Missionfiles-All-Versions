@@ -17701,7 +17701,7 @@
       "main_building": 6,
       "police_stations": 8,
       "riot_police": 1,
-      "personnel_educations": { "riot_police": 40 }
+      "personnel_educations": { "riot_police": 50 }
     },
     "overlay_index": null,
     "base_mission_id": 562,
@@ -17748,11 +17748,52 @@
       "police_stations": 8,
       "police_service_group_leader": 1,
       "riot_police": 2,
-      "personnel_educations": { "riot_police": 100 },
+      "personnel_educations": { "riot_police": 150 },
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 563,
+    "additive_overlays": ""
+  },
+  {
+    "id": "564",
+    "name": "Zabezpieczenie przemówienia VIPa",
+    "place": "Dyskoteka",
+    "place_array": ["Dyskoteka"],
+    "average_credits": 5800,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "k9": 2,
+      "personnel_educations": { "riot_police": 28 },
+      "riot_police_ambulance": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "40 minut",
+      "duration": 2400,
+      "max_possible_prisoners": 2,
+      "swat_personnel": 18,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "max_municipal_police_replacing_police_cars": 1,
+      "personnel_educations": { "Szkolenie Personalne OPP": 28 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 15,
+      "police_helicopter_stations": 1,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 60 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
     "additive_overlays": ""
   }
 ]
