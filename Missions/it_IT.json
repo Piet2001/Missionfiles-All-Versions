@@ -16939,5 +16939,37 @@
     "overlay_index": 1,
     "base_mission_id": 522,
     "additive_overlays": ""
+  },
+  {
+    "id": "523",
+    "name": "Trauma Distorsivo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01G", "SC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 523,
+    "additive_overlays": ""
   }
 ]
