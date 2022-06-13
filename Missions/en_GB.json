@@ -19082,5 +19082,60 @@
     "overlay_index": null,
     "base_mission_id": 465,
     "additive_overlays": ""
+  },
+  {
+    "id": "466",
+    "name": "Caravan roll over RTC",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 466,
+    "additive_overlays": ""
+  },
+  {
+    "id": "467",
+    "name": "Caravan roll over RTC (Fast Road)",
+    "place": "Highway exit\nMajor Road Standby Point",
+    "place_array": ["Highway exit", "Major Road Standby Point"],
+    "average_credits": 7000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 4, "traffic_car": 2 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 467,
+    "additive_overlays": ""
   }
 ]
