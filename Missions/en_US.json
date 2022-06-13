@@ -26212,5 +26212,47 @@
     "overlay_index": null,
     "base_mission_id": 701,
     "additive_overlays": ""
+  },
+  {
+    "id": "702",
+    "name": "Driving Under The Influence of Narcotics",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/courthouse_gruen.png",
+      "/images/courthouse_gelb.png",
+      "/images/courthouse_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "k9": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [95],
+      "followup_missions_ids": [25, 47, 125, 158, 159, 452, 86],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "23-B-1",
+        "23-C-1",
+        "23-C-2",
+        "23-C-4",
+        "23-C-4V",
+        "23-C-5",
+        "23-D-3"
+      ],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": ""
   }
 ]
