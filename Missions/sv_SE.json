@@ -1201,6 +1201,33 @@
     "additive_overlays": ""
   },
   {
+    "id": "44/a",
+    "name": "Stöld",
+    "place": "Mataffär",
+    "place_array": ["Mataffär"],
+    "average_credits": 200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "bike_police": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 44,
+    "additive_overlays": "a"
+  },
+  {
     "id": "45",
     "name": "Stöld",
     "place": "Stormarknad",
@@ -1222,6 +1249,33 @@
     "overlay_index": null,
     "base_mission_id": 45,
     "additive_overlays": ""
+  },
+  {
+    "id": "45/a",
+    "name": "Stöld",
+    "place": "Stormarknad",
+    "place_array": ["Stormarknad"],
+    "average_credits": 200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "bike_police": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 45,
+    "additive_overlays": "a"
   },
   {
     "id": "46",
@@ -1308,6 +1362,33 @@
     "overlay_index": null,
     "base_mission_id": 49,
     "additive_overlays": ""
+  },
+  {
+    "id": "49/a",
+    "name": "Personrån",
+    "place": "Park",
+    "place_array": ["Park"],
+    "average_credits": 250,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "bike_police": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 49,
+    "additive_overlays": "a"
   },
   {
     "id": "50",
@@ -1626,6 +1707,42 @@
     "overlay_index": null,
     "base_mission_id": 64,
     "additive_overlays": ""
+  },
+  {
+    "id": "64/a",
+    "name": "Trafikolycka - singel, buss",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "traffic_car": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "traffic_police": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "a"
   },
   {
     "id": "65",
@@ -3899,6 +4016,131 @@
     "overlay_index": null,
     "base_mission_id": 143,
     "additive_overlays": ""
+  },
+  {
+    "id": "143/a",
+    "name": "Ordningslagen, demonstration utan tillstånd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 2,
+      "police_horse": 8,
+      "detention_unit": 2
+    },
+    "chances": { "patient_transport": 25, "police_helicopters": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 25,
+      "swat_personnel": 3,
+      "filter_id": "police_station_missions",
+      "need_police_horse_only_if_present": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 12,
+      "police_helicopter_stations": 1,
+      "detention_unit_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "143/b",
+    "name": "Ordningslagen, demonstration utan tillstånd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 2,
+      "police_horse": 8,
+      "bike_police": 1
+    },
+    "chances": { "patient_transport": 25, "police_helicopters": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 25,
+      "swat_personnel": 3,
+      "filter_id": "police_station_missions",
+      "need_police_horse_only_if_present": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "b"
+  },
+  {
+    "id": "143/ab",
+    "name": "Ordningslagen, demonstration utan tillstånd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 2,
+      "police_horse": 8,
+      "bike_police": 1,
+      "detention_unit": 2
+    },
+    "chances": { "patient_transport": 25, "police_helicopters": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 25,
+      "swat_personnel": 3,
+      "filter_id": "police_station_missions",
+      "need_police_horse_only_if_present": true,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 12,
+      "police_helicopter_stations": 1,
+      "detention_unit_count": 2,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "ab"
   },
   {
     "id": "144",
@@ -6549,6 +6791,30 @@
     "additive_overlays": ""
   },
   {
+    "id": "240/a",
+    "name": "Kvarglömt bagage",
+    "place": "Busshållplats",
+    "place_array": ["Busshållplats"],
+    "average_credits": 550,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 240,
+    "additive_overlays": "a"
+  },
+  {
     "id": "241",
     "name": "Kvarglömt bagage",
     "place": "Spårvagnshållplats",
@@ -6567,6 +6833,30 @@
     "overlay_index": null,
     "base_mission_id": 241,
     "additive_overlays": ""
+  },
+  {
+    "id": "241/a",
+    "name": "Kvarglömt bagage",
+    "place": "Spårvagnshållplats",
+    "place_array": ["Spårvagnshållplats"],
+    "average_credits": 550,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 241,
+    "additive_overlays": "a"
   },
   {
     "id": "242",
@@ -6589,6 +6879,30 @@
     "additive_overlays": ""
   },
   {
+    "id": "242/a",
+    "name": "Kvarglömt bagage",
+    "place": "Tågstation (regionaltåg)",
+    "place_array": ["Tågstation (regionaltåg)"],
+    "average_credits": 550,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 242,
+    "additive_overlays": "a"
+  },
+  {
     "id": "243",
     "name": "Kvarglömt bagage",
     "place": "Tågstation (regional- och fjärrtåg)",
@@ -6607,6 +6921,30 @@
     "overlay_index": null,
     "base_mission_id": 243,
     "additive_overlays": ""
+  },
+  {
+    "id": "243/a",
+    "name": "Kvarglömt bagage",
+    "place": "Tågstation (regional- och fjärrtåg)",
+    "place_array": ["Tågstation (regional- och fjärrtåg)"],
+    "average_credits": 550,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 243,
+    "additive_overlays": "a"
   },
   {
     "id": "244",
@@ -7983,6 +8321,45 @@
     "additive_overlays": ""
   },
   {
+    "id": "287/a",
+    "name": "Flyghändelse - brand i flygplan, litet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6400,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 3,
+      "police_service_group_leader": 1
+    },
+    "chances": { "water_tankers": 80, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 287,
+    "additive_overlays": "a"
+  },
+  {
     "id": "287-1",
     "name": "Flyghändelse - brand i flygplan, litet",
     "place": "",
@@ -8021,6 +8398,48 @@
     "overlay_index": 1,
     "base_mission_id": 287,
     "additive_overlays": ""
+  },
+  {
+    "id": "287-1/a",
+    "name": "Flyghändelse - brand i flygplan, litet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6900,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 3,
+      "foam": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": { "water_tankers": 80, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "fire_support_count": 1,
+      "police_service_group_leader": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": 1,
+    "base_mission_id": 287,
+    "additive_overlays": "a"
   },
   {
     "id": "288",
@@ -8569,6 +8988,49 @@
     "additive_overlays": ""
   },
   {
+    "id": "305/a",
+    "name": "Flyghändelse - flygplan i vatten, litet",
+    "place": "Sjö",
+    "place_array": ["Sjö"],
+    "average_credits": 4400,
+    "generated_by": "Sjöräddning",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "boats": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 305,
+    "additive_overlays": "a"
+  },
+  {
     "id": "306",
     "name": "Trafikolycka - eldrivet fordon",
     "place": "",
@@ -9038,6 +9500,45 @@
     "overlay_index": null,
     "base_mission_id": 322,
     "additive_overlays": ""
+  },
+  {
+    "id": "322/a",
+    "name": "Flyghändelse - flygplan i vatten, stort",
+    "place": "Sjö",
+    "place_array": ["Sjö"],
+    "average_credits": 8400,
+    "generated_by": "Sjöräddning",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "boats": 2,
+      "police_service_group_leader": 1
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 40,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 322,
+    "additive_overlays": "a"
   },
   {
     "id": "323",
@@ -11704,10 +12205,812 @@
   },
   {
     "id": "407",
-    "name": "Brand i byggnad - matsal",
+    "name": "Fordon - okänt utsläpp",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4300,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "traffic_car": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "traffic_police": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 407,
+    "additive_overlays": ""
+  },
+  {
+    "id": "408",
+    "name": "Trafikhändelse, bil stannar inte",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 4,
+      "k9": 1,
+      "traffic_car": 2
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "traffic_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 408,
+    "additive_overlays": ""
+  },
+  {
+    "id": "409",
+    "name": "Kidnappning",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 1,
+      "traffic_car": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "patient_critical_care": 60,
+      "traffic_car": 75
+    },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "patient_allow_first_responder_chance": 80,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 11,
+      "police_helicopter_stations": 1,
+      "traffic_police": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 409,
+    "additive_overlays": ""
+  },
+  {
+    "id": "410",
+    "name": "Trafikhändelse, bro - störning",
+    "place": "Bro",
+    "place_array": ["Bro"],
+    "average_credits": 1300,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 3, "traffic_car": 1 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "patient_allow_first_responder_chance": 70,
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "traffic_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": ""
+  },
+  {
+    "id": "411",
+    "name": "Trafikolycka, lastbil - tappat gods",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 1, "traffic_car": 1 },
+    "chances": { "traffic_car": 25 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "traffic_police": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 411,
+    "additive_overlays": ""
+  },
+  {
+    "id": "412",
+    "name": "Brand i fordon, buss",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 5
+    },
+    "chances": { "nef": 30, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 11,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 412,
+    "additive_overlays": ""
+  },
+  {
+    "id": "412/a",
+    "name": "Brand i fordon, buss",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3400,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 5,
+      "police_service_group_leader": 1
+    },
+    "chances": { "nef": 30, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 11,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 412,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "413",
+    "name": "Bråk, många personer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 413,
+    "additive_overlays": ""
+  },
+  {
+    "id": "413/a",
+    "name": "Bråk, många personer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 5, "police_service_group_leader": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 413,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "414",
+    "name": "Trafikolycka, lastbil - påkörd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "battalion_chief_vehicles": 75,
+      "hazmat_vehicles": 10,
+      "nef": 70,
+      "patient_transport": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 414,
+    "additive_overlays": ""
+  },
+  {
+    "id": "414/a",
+    "name": "Trafikolycka, lastbil - påkörd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 75,
+      "hazmat_vehicles": 10,
+      "nef": 70,
+      "patient_transport": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 414,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "415",
+    "name": "Upplopp - orolighet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8580,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 16,
+      "bike_police": 2,
+      "detention_unit": 2
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 12,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 13,
+      "detention_unit_count": 2,
+      "bike_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 415,
+    "additive_overlays": ""
+  },
+  {
+    "id": "416",
+    "name": "Händelse, våldsam fotbollssupporter - sjukhus",
+    "place": "Arena\nSnabbmatsrestaurang\nHotell\nBar",
+    "place_array": ["Arena", "Snabbmatsrestaurang", "Hotell", "Bar"],
+    "average_credits": 6010,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 10, "detention_unit": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "detention_unit_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 416,
+    "additive_overlays": ""
+  },
+  {
+    "id": "417",
+    "name": "Händelse, avbrott upplopp",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9565,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 17,
+      "bike_police": 1,
+      "detention_unit": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 12,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 16,
+      "detention_unit_count": 2,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 417,
+    "additive_overlays": ""
+  },
+  {
+    "id": "418",
+    "name": "Störningar i grannskapet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5125,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "bike_police": 1,
+      "detention_unit": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 9,
+      "detention_unit_count": 1,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 418,
+    "additive_overlays": ""
+  },
+  {
+    "id": "419",
+    "name": "Väpnat råd - förföljande av fordon",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 3 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 10,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": ""
+  },
+  {
+    "id": "420",
+    "name": "Våldsamt upplopp, mindre",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "k9": 1 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [421],
+      "max_possible_prisoners": 2,
+      "swat_personnel": 8,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": ""
+  },
+  {
+    "id": "421",
+    "name": "Våldsamt upplopp, medium",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 7, "k9": 1 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [422],
+      "max_possible_prisoners": 4,
+      "swat_personnel": 16,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": ""
+  },
+  {
+    "id": "422",
+    "name": "Våldsamt upplopp, stor",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 10, "k9": 2 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 4,
+      "max_possible_prisoners": 8,
+      "swat_personnel": 24,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Allmänkirurg"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 6,
+      "police_stations": 12,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 422,
+    "additive_overlays": ""
+  },
+  {
+    "id": "423",
+    "name": "VIP besök",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 6, "k9": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "30 minuter",
+      "duration": 1800,
+      "swat_personnel": 4,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 15 },
+    "overlay_index": null,
+    "base_mission_id": 423,
+    "additive_overlays": ""
+  },
+  {
+    "id": "424",
+    "name": "Misstänkt läge",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2, "bike_police": 1 },
+    "chances": { "bike_police": 10 },
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": ""
+  },
+  {
+    "id": "425",
+    "name": "Misstänkt föremål, bomb - skola",
     "place": "Skola",
     "place_array": ["Skola"],
-    "average_credits": 1300,
+    "average_credits": 3700,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 4,
+      "k9": 1,
+      "fbi_bomb": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "bomb_disposal_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 425,
+    "additive_overlays": ""
+  },
+  {
+    "id": "426",
+    "name": "Misstänkt föremål, bomb - tågstation",
+    "place": "Tågstation (regionaltåg)",
+    "place_array": ["Tågstation (regionaltåg)"],
+    "average_credits": 3500,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 4,
+      "k9": 1,
+      "fbi_bomb": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "bomb_disposal_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 426,
+    "additive_overlays": ""
+  },
+  {
+    "id": "427",
+    "name": "Brand i byggnad - lagerlokal, sprängmedel",
+    "place": "Varuhus",
+    "place_array": ["Varuhus"],
+    "average_credits": 13000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "fbi_bomb": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 3,
+      "bomb_disposal_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 427,
+    "additive_overlays": ""
+  },
+  {
+    "id": "428",
+    "name": "Upphittad ammunition",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 3, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "bomb_disposal_count": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 428,
+    "additive_overlays": ""
+  },
+  {
+    "id": "429",
+    "name": "Olycka - litet flygplan",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
     "generated_by": "Brandstation",
     "icons": [
       "/images/fire_gruen.png",
@@ -11717,31 +13020,37 @@
     "requirements": {
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "police_cars": 1
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
     },
-    "chances": { "patient_transport": 50 },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "nef": 80,
+      "patient_transport": 100
+    },
     "additional": {
-      "possible_patient": 2,
+      "possible_patient": 5,
+      "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specializations": "Invärtesmedicinare"
+      "patient_specializations": "Traumatologi"
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 2,
-      "police_stations": 1,
+      "rescue_stations": 3,
+      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
-    "base_mission_id": 407,
+    "base_mission_id": 429,
     "additive_overlays": ""
   },
   {
-    "id": "408",
-    "name": "Olycka - nedfallen lyktstolpe",
+    "id": "429/a",
+    "name": "Olycka - litet flygplan",
     "place": "",
     "place_array": [],
-    "average_credits": 2500,
+    "average_credits": 3400,
     "generated_by": "Brandstation",
     "icons": [
       "/images/fire_gruen.png",
@@ -11749,23 +13058,33 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
+      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1
     },
-    "chances": { "patient_transport": 20 },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "nef": 80,
+      "patient_transport": 100
+    },
     "additional": {
-      "possible_patient": 6,
+      "possible_patient": 5,
+      "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "patient_specializations": "Invärtesmedicinare"
+      "patient_specializations": "Traumatologi"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "fire_stations": 7
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 6
     },
     "overlay_index": null,
-    "base_mission_id": 408,
-    "additive_overlays": ""
+    "base_mission_id": 429,
+    "additive_overlays": "a"
   }
 ]
