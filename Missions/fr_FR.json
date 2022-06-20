@@ -1425,7 +1425,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 6500,
+      "water_needed": 4000,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -1649,7 +1649,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 3500,
+      "water_needed": 2000,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1674,7 +1674,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 6500,
+      "water_needed": 4000,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -2232,38 +2232,6 @@
     "additive_overlays": ""
   },
   {
-    "id": "84",
-    "name": "Accident de tracteur",
-    "place": "Ferme",
-    "place_array": ["Ferme"],
-    "average_credits": 1000,
-    "generated_by": "Centre de secours",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 3,
-      "ambulances": 1,
-      "battalion_chief_vehicles": 1
-    },
-    "chances": { "patient_transport": 70, "patient_critical_care": 30 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "Chirurgien général"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 3
-    },
-    "overlay_index": null,
-    "base_mission_id": 84,
-    "additive_overlays": ""
-  },
-  {
     "id": "85",
     "name": "Feu de voiture causé par des feux d'artifice",
     "place": "",
@@ -2656,7 +2624,7 @@
   },
   {
     "id": "99",
-    "name": "Poids lourd en feu",
+    "name": "Feu de PL",
     "place": "",
     "place_array": [],
     "average_credits": 1200,
@@ -2684,7 +2652,7 @@
   },
   {
     "id": "99-1",
-    "name": "Poids lourd en feu",
+    "name": "Feu de PL",
     "place": "",
     "place_array": [],
     "average_credits": 1700,
@@ -9704,7 +9672,7 @@
     "name": "Accident d'engin de chantier",
     "place": "",
     "place_array": [],
-    "average_credits": 950,
+    "average_credits": 2500,
     "generated_by": "Centre de secours",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -9712,11 +9680,12 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
+      "firetrucks": 1,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
     },
-    "chances": { "patient_transport": 70 },
+    "chances": { "patient_transport": 75, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -9725,8 +9694,9 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 9
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 320,
@@ -11940,7 +11910,7 @@
     ],
     "requirements": {
       "firetrucks": 2,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "police_cars": 2
     },
@@ -12309,7 +12279,7 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "patient_specializations": "Gynécologie"
+      "patient_specializations": "Traumatologie"
     },
     "prerequisites": {
       "main_building": 0,
