@@ -5960,6 +5960,155 @@
     "additive_overlays": ""
   },
   {
+    "id": "184",
+    "name": "Insolazione",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC19G", "ZC19R"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 184,
+    "additive_overlays": ""
+  },
+  {
+    "id": "185",
+    "name": "Colpo di calore",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC19G", "ZC19R"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 185,
+    "additive_overlays": ""
+  },
+  {
+    "id": "186",
+    "name": "Crampo da calore",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC19G"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": ["Medicina interna generale"],
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 186,
+    "additive_overlays": ""
+  },
+  {
+    "id": "187",
+    "name": "Persona disidratata",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC19G", "ZC19V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 187,
+    "additive_overlays": ""
+  },
+  {
+    "id": "188",
+    "name": "Barbecue in fiamme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 200, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 188,
+    "additive_overlays": ""
+  },
+  {
     "id": "189",
     "name": "Incendio palo elettrico",
     "place": "",
@@ -13028,6 +13177,99 @@
     "prerequisites": { "main_building": 2, "rescue_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 408,
+    "additive_overlays": ""
+  },
+  {
+    "id": "409",
+    "name": "Sicurezza alla gara di nuoto",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 2000,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "ambulances": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 ore",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 409,
+    "additive_overlays": ""
+  },
+  {
+    "id": "410",
+    "name": "Carretto dei gelati contaminato",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC07G", "SC07V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": ""
+  },
+  {
+    "id": "411",
+    "name": "Falò illegale nel parco",
+    "place": "Parco",
+    "place_array": ["Parco"],
+    "average_credits": 600,
+    "generated_by": "Caserma dei vigili del fuoco",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 1500, "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 411,
     "additive_overlays": ""
   },
   {
