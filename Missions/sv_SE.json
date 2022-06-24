@@ -4927,6 +4927,138 @@
     "additive_overlays": ""
   },
   {
+    "id": "171",
+    "name": "Solsting",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 171,
+    "additive_overlays": ""
+  },
+  {
+    "id": "172",
+    "name": "Värmeslag",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": ""
+  },
+  {
+    "id": "173",
+    "name": "Värmekramp",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 173,
+    "additive_overlays": ""
+  },
+  {
+    "id": "174",
+    "name": "Uttorkad person",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": ""
+  },
+  {
+    "id": "175",
+    "name": "Grillbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 175,
+    "additive_overlays": ""
+  },
+  {
     "id": "176",
     "name": "Påträffad person, överfall",
     "place": "",
@@ -9243,6 +9375,94 @@
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 318,
+    "additive_overlays": ""
+  },
+  {
+    "id": "319",
+    "name": "Livräddare under en simtävling",
+    "place": "Sjö\nFlod",
+    "place_array": ["Sjö", "Flod"],
+    "average_credits": 2000,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "ambulances": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 timmar",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 319,
+    "additive_overlays": ""
+  },
+  {
+    "id": "320",
+    "name": "Förorenad glassvagn",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Ambulansstation",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 20, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": ""
+  },
+  {
+    "id": "321",
+    "name": "Olaglig brasa i parken",
+    "place": "Park",
+    "place_array": ["Park"],
+    "average_credits": 600,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 321,
     "additive_overlays": ""
   },
   {
