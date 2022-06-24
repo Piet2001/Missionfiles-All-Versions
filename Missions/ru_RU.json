@@ -4453,6 +4453,138 @@
     "additive_overlays": ""
   },
   {
+    "id": "162",
+    "name": "Солнечный удар",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 162,
+    "additive_overlays": ""
+  },
+  {
+    "id": "163",
+    "name": "Тепловой удар",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 163,
+    "additive_overlays": ""
+  },
+  {
+    "id": "164",
+    "name": "Тепловые судороги",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 164,
+    "additive_overlays": ""
+  },
+  {
+    "id": "165",
+    "name": "Обезвоживание организма",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 165,
+    "additive_overlays": ""
+  },
+  {
+    "id": "166",
+    "name": "Возгорание гриля",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 166,
+    "additive_overlays": ""
+  },
+  {
     "id": "167",
     "name": "Малый пожар в гостинице",
     "place": "Гостиница",
@@ -8767,6 +8899,94 @@
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 304,
+    "additive_overlays": ""
+  },
+  {
+    "id": "305",
+    "name": "Обеспечение безопасности соревнований по плаванию",
+    "place": "Озеро\nРека",
+    "place_array": ["Озеро", "Река"],
+    "average_credits": 2000,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "ambulances": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 часа",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 305,
+    "additive_overlays": ""
+  },
+  {
+    "id": "306",
+    "name": "Загрязненная тележка с мороженным",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Станция скорой помощи",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 20, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": ""
+  },
+  {
+    "id": "307",
+    "name": "Незаконное разведение костра в парке",
+    "place": "Парк",
+    "place_array": ["Парк"],
+    "average_credits": 600,
+    "generated_by": "Пожарная станция",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 307,
     "additive_overlays": ""
   },
   {
