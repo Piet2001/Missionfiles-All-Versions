@@ -6426,6 +6426,138 @@
     "additive_overlays": ""
   },
   {
+    "id": "205",
+    "name": "Porażenie słoneczne",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": ""
+  },
+  {
+    "id": "206",
+    "name": "Udar cieplny",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": ""
+  },
+  {
+    "id": "207",
+    "name": "Kurcze cieplne",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 207,
+    "additive_overlays": ""
+  },
+  {
+    "id": "208",
+    "name": "Odwodniona osoba",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 208,
+    "additive_overlays": ""
+  },
+  {
+    "id": "209",
+    "name": "Pożar podczas grilla",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 1800, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 209,
+    "additive_overlays": ""
+  },
+  {
     "id": "210",
     "name": "Napad na sklep w centrum handlowym",
     "place": "Centrum handlowe",
@@ -12515,6 +12647,84 @@
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 406,
+    "additive_overlays": ""
+  },
+  {
+    "id": "407",
+    "name": "Zabezpieczenie akwenu",
+    "place": "Jezioro\nRzeka",
+    "place_array": ["Jezioro", "Rzeka"],
+    "average_credits": 800,
+    "generated_by": "Stacja WOPR",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "water_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 godzina",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "overlay_index": null,
+    "base_mission_id": 407,
+    "additive_overlays": ""
+  },
+  {
+    "id": "408",
+    "name": "Rozłożenie kurtyny wodnej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 408,
+    "additive_overlays": ""
+  },
+  {
+    "id": "409",
+    "name": "Nieprzytomna osoba na plaży",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2022-06-24T09:00:00Z",
+      "date_end": "2022-08-21T21:59:00Z",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 409,
     "additive_overlays": ""
   },
   {
