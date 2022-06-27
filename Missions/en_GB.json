@@ -19157,5 +19157,71 @@
     "overlay_index": null,
     "base_mission_id": 468,
     "additive_overlays": ""
+  },
+  {
+    "id": "469",
+    "name": "Tram fire",
+    "place": "Tram stop",
+    "place_array": ["Tram stop"],
+    "average_credits": 6000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 4,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [470],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 469,
+    "additive_overlays": ""
+  },
+  {
+    "id": "470",
+    "name": "Tram fire (Persons Reported)",
+    "place": "Tram stop",
+    "place_array": ["Tram stop"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": ""
   }
 ]
