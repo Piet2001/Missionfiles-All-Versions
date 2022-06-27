@@ -13086,5 +13086,116 @@
     "overlay_index": null,
     "base_mission_id": 429,
     "additive_overlays": "a"
+  },
+  {
+    "id": "430",
+    "name": "Brand i byggnad - matsal",
+    "place": "Skola",
+    "place_array": ["Skola"],
+    "average_credits": 1300,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": ""
+  },
+  {
+    "id": "431",
+    "name": "Olycka - nedfallen lyktstolpe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 6,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": ""
+  },
+  {
+    "id": "432",
+    "name": "Händelse - stopp i trafiken",
+    "place": "Bro",
+    "place_array": ["Bro"],
+    "average_credits": 6000,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 timme",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 432,
+    "additive_overlays": ""
+  },
+  {
+    "id": "433",
+    "name": "Stöld, person - smycken",
+    "place": "Köpcentrum",
+    "place_array": ["Köpcentrum"],
+    "average_credits": 800,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": ""
   }
 ]
