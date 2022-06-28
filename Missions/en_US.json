@@ -27494,5 +27494,588 @@
     "overlay_index": null,
     "base_mission_id": 727,
     "additive_overlays": ""
+  },
+  {
+    "id": "728",
+    "name": "Overturned Small Vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_command": 1 },
+      "coastal_boat": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "73-D-5",
+        "73-D-2",
+        "73-D-1",
+        "73-B-2",
+        "73-B-1"
+      ],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Lifeguard Supervisor": 1 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "personnel_educations": { "coastal_command": 5 },
+      "coastal_rescue_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 728,
+    "additive_overlays": ""
+  },
+  {
+    "id": "729",
+    "name": "Overturned Large Vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_command": 1 },
+      "coastal_boat": 4,
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "73-D-5",
+        "73-D-2",
+        "73-D-1",
+        "73-B-2",
+        "73-B-1"
+      ],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Lifeguard Supervisor": 1 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 8,
+      "personnel_educations": { "coastal_command": 5 },
+      "coastal_rescue_count": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 729,
+    "additive_overlays": ""
+  },
+  {
+    "id": "730",
+    "name": "Drowning Surfer",
+    "place": "Lake\nBeach",
+    "place_array": ["Lake", "Beach"],
+    "average_credits": 1000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["73-D-5", "73-D-3", "73-D-1", "73-B-5"],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Cardiology"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 730,
+    "additive_overlays": ""
+  },
+  {
+    "id": "731",
+    "name": "Missing Vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_command": 1 },
+      "coastal_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["72-B-2", "73-D-5"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Lifeguard Supervisor": 1 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "personnel_educations": { "coastal_command": 5 },
+      "coastal_rescue_count": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 731,
+    "additive_overlays": ""
+  },
+  {
+    "id": "732",
+    "name": "Oil Rig Fire",
+    "place": "Oil Rig",
+    "place_array": ["Oil Rig"],
+    "average_credits": 10000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "large_fire_boat": 2,
+      "personnel_educations": { "coastal_command": 1 },
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["69-D-10"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Lifeguard Supervisor": 1 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 6,
+      "fire_boat_docks": 2,
+      "personnel_educations": { "coastal_command": 5 },
+      "coastal_rescue_count": 5,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 732,
+    "additive_overlays": ""
+  },
+  {
+    "id": "733",
+    "name": "Oil Rig Explosion",
+    "place": "Oil Rig",
+    "place_array": ["Oil Rig"],
+    "average_credits": 35000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "large_fire_boat": 6,
+      "personnel_educations": { "coastal_command": 4, "coastal_rescue": 8 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 6,
+      "coastal_helicopter": 5,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["69-D-10", "61-D-5"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Lifeguard Supervisor": 4, "Lifeguard": 8 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 16,
+      "fire_boat_docks": 6,
+      "personnel_educations": { "coastal_command": 10, "coastal_rescue": 20 },
+      "coastal_rescue_count": 20,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 733,
+    "additive_overlays": ""
+  },
+  {
+    "id": "734",
+    "name": "Shark Attack",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 1000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "72-D-5",
+        "72-D-6",
+        "72-D-7",
+        "3-D-2",
+        "3-D-4",
+        "3-D-5"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 734,
+    "additive_overlays": ""
+  },
+  {
+    "id": "735",
+    "name": "Smuggling via Boat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 12 },
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 2,
+      "coastal_plane": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "personnel_educations": { "TACLET": 12 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 2,
+      "personnel_educations": { "law_enforcement_marine": 25 },
+      "coastal_rescue_count": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 735,
+    "additive_overlays": ""
+  },
+  {
+    "id": "736",
+    "name": "Parasailing Accident",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 2500,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "coastal_command": 1,
+      "coastal_boat": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["73-D-1", "73-D-4", "72-D-7"],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 736,
+    "additive_overlays": ""
+  },
+  {
+    "id": "737",
+    "name": "Deep Water Search \u0026 Rescue",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_rescue": 8 },
+      "coastal_boat": 2,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["73-D-5", "73-D-3", "73-D-1", "73-B-5"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Lifeguard": 8 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "personnel_educations": { "coastal_rescue": 20 },
+      "coastal_rescue_count": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 737,
+    "additive_overlays": ""
+  },
+  {
+    "id": "738",
+    "name": "Hostage Rescue Aboard Cargo Ship",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8500,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 18 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["4-D-3", "27-B-4"],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "TACLET": 18 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 40 },
+      "coastal_rescue_count": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 738,
+    "additive_overlays": ""
+  },
+  {
+    "id": "739",
+    "name": "Whaling Vessel Performing Illegal Operations",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 8 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "personnel_educations": { "TACLET": 8 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 20 },
+      "coastal_rescue_count": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 739,
+    "additive_overlays": ""
+  },
+  {
+    "id": "740",
+    "name": "Multiple Whaling Vessels Performing Illegal Operations",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 24 },
+      "coastal_boat": 6,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "personnel_educations": { "TACLET": 24 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 14,
+      "personnel_educations": { "law_enforcement_marine": 50 },
+      "coastal_rescue_count": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 740,
+    "additive_overlays": ""
+  },
+  {
+    "id": "741",
+    "name": "Sailors Trapped in Capsized Naval Vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["73-D-2", "72-D-7", "73-B-1", "73-B-2"],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 741,
+    "additive_overlays": ""
+  },
+  {
+    "id": "742",
+    "name": "Distressed Yacht Caught in Hurricane",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 1,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["73-D-5", "73-D-3", "73-B-5", "73-B-1"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": ""
+  },
+  {
+    "id": "743",
+    "name": "Oil Tanker on Fire in Ocean",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "Coastal Rescue Station",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "large_fire_boat": 4,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "73-B-2",
+        "73-B-1",
+        "7-E-1",
+        "7-D-3",
+        "7-D-1",
+        "7-C-1",
+        "7-B-1",
+        "7-A-3"
+      ],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 10,
+      "fire_boat_docks": 4,
+      "coastal_rescue_count": 12,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": ""
   }
 ]
