@@ -27503,9 +27503,9 @@
     "average_credits": 8000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "coastal_command": 1 },
@@ -27523,6 +27523,8 @@
         "73-B-2",
         "73-B-1"
       ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "Traumatology",
       "personnel_educations": { "Lifeguard Supervisor": 1 }
     },
@@ -27530,7 +27532,8 @@
       "main_building": 23,
       "rescue_stations": 3,
       "personnel_educations": { "coastal_command": 5 },
-      "coastal_rescue_count": 3
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 728,
@@ -27544,9 +27547,9 @@
     "average_credits": 14000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "coastal_command": 1 },
@@ -27565,6 +27568,8 @@
         "73-B-2",
         "73-B-1"
       ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "Traumatology",
       "personnel_educations": { "Lifeguard Supervisor": 1 }
     },
@@ -27572,7 +27577,8 @@
       "main_building": 23,
       "rescue_stations": 8,
       "personnel_educations": { "coastal_command": 5 },
-      "coastal_rescue_count": 8
+      "coastal_rescue_count": 8,
+      "coastal_helicopter_count": 4
     },
     "overlay_index": null,
     "base_mission_id": 729,
@@ -27590,13 +27596,14 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": {},
+    "requirements": { "water_rescue": 1 },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["73-D-5", "73-D-3", "73-D-1", "73-B-5"],
+      "vehicle_groups": ["ocean_missions", "default"],
       "patient_at_end_of_mission": true,
       "patient_specializations": "Cardiology"
     },
@@ -27617,9 +27624,9 @@
     "average_credits": 7000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "coastal_command": 1 },
@@ -27631,6 +27638,8 @@
       "possible_patient": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["72-B-2", "73-D-5"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "General Internal",
       "personnel_educations": { "Lifeguard Supervisor": 1 }
     },
@@ -27638,7 +27647,8 @@
       "main_building": 23,
       "rescue_stations": 3,
       "personnel_educations": { "coastal_command": 5 },
-      "coastal_rescue_count": 4
+      "coastal_rescue_count": 4,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 731,
@@ -27652,9 +27662,9 @@
     "average_credits": 10000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
     ],
     "requirements": {
       "large_fire_boat": 2,
@@ -27667,6 +27677,8 @@
       "possible_patient": 5,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["69-D-10"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "General Surgeon",
       "personnel_educations": { "Lifeguard Supervisor": 1 }
     },
@@ -27676,6 +27688,7 @@
       "fire_boat_docks": 2,
       "personnel_educations": { "coastal_command": 5 },
       "coastal_rescue_count": 5,
+      "coastal_helicopter_count": 4,
       "fire_stations": 8
     },
     "overlay_index": null,
@@ -27690,12 +27703,13 @@
     "average_credits": 35000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
     ],
     "requirements": {
       "large_fire_boat": 6,
+      "water_rescue": 2,
       "personnel_educations": { "coastal_command": 4, "coastal_rescue": 8 },
       "coastal_boat": 2,
       "large_coastal_boat": 6,
@@ -27707,6 +27721,8 @@
       "possible_patient": 2,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["69-D-10", "61-D-5"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "General Surgeon",
       "personnel_educations": { "Lifeguard Supervisor": 4, "Lifeguard": 8 }
     },
@@ -27716,6 +27732,8 @@
       "fire_boat_docks": 6,
       "personnel_educations": { "coastal_command": 10, "coastal_rescue": 20 },
       "coastal_rescue_count": 20,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 5,
       "fire_stations": 20
     },
     "overlay_index": null,
@@ -27734,7 +27752,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_boat": 1 },
+    "requirements": { "water_rescue": 1, "coastal_boat": 1 },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 1,
@@ -27748,6 +27766,7 @@
         "3-D-4",
         "3-D-5"
       ],
+      "vehicle_groups": ["ocean_missions", "default"],
       "patient_at_end_of_mission": true,
       "patient_specializations": "General Surgeon"
     },
@@ -27768,9 +27787,9 @@
     "average_credits": 4000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "law_enforcement_marine": 12 },
@@ -27781,13 +27800,17 @@
     "chances": {},
     "additional": {
       "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "personnel_educations": { "TACLET": 12 }
     },
     "prerequisites": {
       "main_building": 23,
       "police_stations": 2,
       "personnel_educations": { "law_enforcement_marine": 25 },
-      "coastal_rescue_count": 6
+      "coastal_rescue_count": 6,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 735,
@@ -27806,6 +27829,7 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
+      "water_rescue": 2,
       "coastal_command": 1,
       "coastal_boat": 1,
       "coastal_helicopter": 1
@@ -27816,13 +27840,15 @@
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["73-D-1", "73-D-4", "72-D-7"],
+      "vehicle_groups": ["ocean_missions", "default"],
       "patient_at_end_of_mission": true,
       "patient_specializations": "General Surgeon"
     },
     "prerequisites": {
       "main_building": 23,
       "rescue_stations": 2,
-      "coastal_rescue_count": 5
+      "coastal_rescue_count": 5,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 736,
@@ -27850,6 +27876,8 @@
       "possible_patient": 3,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["73-D-5", "73-D-3", "73-D-1", "73-B-5"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "Traumatology",
       "personnel_educations": { "Lifeguard": 8 }
     },
@@ -27857,7 +27885,8 @@
       "main_building": 23,
       "rescue_stations": 2,
       "personnel_educations": { "coastal_rescue": 20 },
-      "coastal_rescue_count": 6
+      "coastal_rescue_count": 6,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 737,
@@ -27871,9 +27900,9 @@
     "average_credits": 8500,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "law_enforcement_marine": 18 },
@@ -27887,6 +27916,8 @@
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["4-D-3", "27-B-4"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Traumatology",
       "personnel_educations": { "TACLET": 18 }
@@ -27896,7 +27927,8 @@
       "rescue_stations": 5,
       "police_stations": 6,
       "personnel_educations": { "law_enforcement_marine": 40 },
-      "coastal_rescue_count": 10
+      "coastal_rescue_count": 10,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 738,
@@ -27910,9 +27942,9 @@
     "average_credits": 8000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "law_enforcement_marine": 8 },
@@ -27922,6 +27954,8 @@
     "chances": {},
     "additional": {
       "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "personnel_educations": { "TACLET": 8 }
     },
     "prerequisites": {
@@ -27942,9 +27976,9 @@
     "average_credits": 10000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "personnel_educations": { "law_enforcement_marine": 24 },
@@ -27955,13 +27989,16 @@
     "chances": {},
     "additional": {
       "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "personnel_educations": { "TACLET": 24 }
     },
     "prerequisites": {
       "main_building": 23,
       "police_stations": 14,
       "personnel_educations": { "law_enforcement_marine": 50 },
-      "coastal_rescue_count": 14
+      "coastal_rescue_count": 14,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 740,
@@ -27986,13 +28023,16 @@
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["73-D-2", "72-D-7", "73-B-1", "73-B-2"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specializations": "Traumatology"
     },
     "prerequisites": {
       "main_building": 23,
       "rescue_stations": 3,
-      "coastal_rescue_count": 7
+      "coastal_rescue_count": 7,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 741,
@@ -28006,9 +28046,9 @@
     "average_credits": 5000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "large_coastal_boat": 1,
@@ -28021,12 +28061,16 @@
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
       "patient_us_code_possible": ["73-D-5", "73-D-3", "73-B-5", "73-B-1"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "Traumatology"
     },
     "prerequisites": {
       "main_building": 23,
       "rescue_stations": 3,
-      "coastal_rescue_count": 6
+      "coastal_rescue_count": 6,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 2
     },
     "overlay_index": null,
     "base_mission_id": 742,
@@ -28040,9 +28084,9 @@
     "average_credits": 15000,
     "generated_by": "Coastal Rescue Station",
     "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
     ],
     "requirements": {
       "large_fire_boat": 4,
@@ -28065,6 +28109,8 @@
         "7-B-1",
         "7-A-3"
       ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
       "patient_specializations": "General Surgeon"
     },
     "prerequisites": {
@@ -28072,6 +28118,8 @@
       "rescue_stations": 10,
       "fire_boat_docks": 4,
       "coastal_rescue_count": 12,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 6,
       "fire_stations": 12
     },
     "overlay_index": null,
