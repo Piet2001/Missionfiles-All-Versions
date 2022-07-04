@@ -17902,5 +17902,63 @@
     "overlay_index": null,
     "base_mission_id": 567,
     "additive_overlays": ""
+  },
+  {
+    "id": "568",
+    "name": "Pożar poszycia leśnego",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 900,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 4200, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [15],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 568,
+    "additive_overlays": ""
+  },
+  {
+    "id": "569",
+    "name": "Duży pożar lasu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 15500,
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 200000,
+      "firetrucks": 28,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2,
+      "hose": 1
+    },
+    "chances": { "hose": 15 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 569,
+    "additive_overlays": ""
   }
 ]
