@@ -25641,37 +25641,6 @@
     "additive_overlays": ""
   },
   {
-    "id": "802-0",
-    "name": "Surfer gewond",
-    "place": "Strand",
-    "place_array": ["Strand"],
-    "average_credits": 5900,
-    "generated_by": "Waterreddingspost",
-    "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
-    ],
-    "requirements": { "water_rescue": 1, "boats": 1, "police_horse": 2 },
-    "chances": { "patient_transport": 80 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "water_watch_missions",
-      "patient_at_end_of_mission": true,
-      "patient_specializations": "Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 16,
-      "water_rescue_2": 2,
-      "rescue_stations": 1,
-      "bereitschaftspolizei": 1,
-      "police_horse": 1
-    },
-    "overlay_index": 0,
-    "base_mission_id": 802,
-    "additive_overlays": ""
-  },
-  {
     "id": "803",
     "name": "Persoon vermist rondom mui",
     "place": "Strand",
@@ -25740,6 +25709,45 @@
       "police_helicopter_stations": 1
     },
     "overlay_index": null,
+    "base_mission_id": 804,
+    "additive_overlays": ""
+  },
+  {
+    "id": "804-0",
+    "name": "Grote zoekactie vermist persoon",
+    "place": "Duinen\nStrand",
+    "place_array": ["Duinen", "Strand"],
+    "average_credits": 5900,
+    "generated_by": "Waterreddingspost",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "water_rescue": 4,
+      "boats": 2,
+      "police_horse": 2
+    },
+    "chances": { "nef": 10, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 16,
+      "water_rescue_2": 6,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "police_horse": 1
+    },
+    "overlay_index": 0,
     "base_mission_id": 804,
     "additive_overlays": ""
   },
