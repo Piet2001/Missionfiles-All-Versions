@@ -19249,5 +19249,55 @@
     "overlay_index": null,
     "base_mission_id": 471,
     "additive_overlays": ""
+  },
+  {
+    "id": "472",
+    "name": "Ceiling Collapse Minor",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": ""
+  },
+  {
+    "id": "473",
+    "name": "Ceiling Collapse Minor (Person Trapped)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": { "patient_transport": 40, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 473,
+    "additive_overlays": ""
   }
 ]
