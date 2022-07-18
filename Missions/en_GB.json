@@ -1151,6 +1151,50 @@
     "name": "Car workshop fire - persons reported",
     "place": "Car workshop",
     "place_array": ["Car workshop"],
+    "average_credits": 7500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 1
+    },
+    "chances": { "water_tankers": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [349, 349, 349, 349],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "41/b",
+    "name": "Car workshop fire - persons reported",
+    "place": "Car workshop",
+    "place_array": ["Car workshop"],
     "average_credits": 7200,
     "generated_by": "Fire Station",
     "icons": [
@@ -1186,10 +1230,10 @@
     },
     "overlay_index": null,
     "base_mission_id": 41,
-    "additive_overlays": "a"
+    "additive_overlays": "b"
   },
   {
-    "id": "41-1",
+    "id": "41/c",
     "name": "Car workshop fire - persons reported",
     "place": "Car workshop",
     "place_array": ["Car workshop"],
@@ -1228,12 +1272,12 @@
       "hazard_response_ems": 1,
       "fire_stations": 16
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 41,
-    "additive_overlays": ""
+    "additive_overlays": "c"
   },
   {
-    "id": "41-1/a",
+    "id": "41/ab",
     "name": "Car workshop fire - persons reported",
     "place": "Car workshop",
     "place_array": ["Car workshop"],
@@ -1274,9 +1318,145 @@
       "hazard_response_ems": 1,
       "fire_stations": 16
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 41,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
+  },
+  {
+    "id": "41/ac",
+    "name": "Car workshop fire - persons reported",
+    "place": "Car workshop",
+    "place_array": ["Car workshop"],
+    "average_credits": 9000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 2
+    },
+    "chances": { "water_tankers": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "followup_missions_ids": [349, 349, 349, 349],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "ac"
+  },
+  {
+    "id": "41/bc",
+    "name": "Car workshop fire - persons reported",
+    "place": "Car workshop",
+    "place_array": ["Car workshop"],
+    "average_credits": 8700,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 1,
+      "foam": 1
+    },
+    "chances": { "water_tankers": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [349, 349, 349, 349],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "bc"
+  },
+  {
+    "id": "41/abc",
+    "name": "Car workshop fire - persons reported",
+    "place": "Car workshop",
+    "place_array": ["Car workshop"],
+    "average_credits": 10200,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 2,
+      "foam": 1
+    },
+    "chances": { "water_tankers": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "followup_missions_ids": [349, 349, 349, 349],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "abc"
   },
   {
     "id": "42",
@@ -2019,6 +2199,45 @@
     "name": "Light Aircraft Crash",
     "place": "",
     "place_array": [],
+    "average_credits": 6750,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "atv_carrier": 1
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 72,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "72/b",
+    "name": "Light Aircraft Crash",
+    "place": "",
+    "place_array": [],
     "average_credits": 4800,
     "generated_by": "Fire Station",
     "icons": [
@@ -2049,14 +2268,14 @@
     },
     "overlay_index": null,
     "base_mission_id": 72,
-    "additive_overlays": "a"
+    "additive_overlays": "b"
   },
   {
-    "id": "72-1",
+    "id": "72/c",
     "name": "Light Aircraft Crash",
     "place": "",
     "place_array": [],
-    "average_credits": 8000,
+    "average_credits": 6000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/planecrash_gruen.png",
@@ -2086,16 +2305,16 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 72,
-    "additive_overlays": ""
+    "additive_overlays": "c"
   },
   {
-    "id": "72-1/a",
+    "id": "72/ab",
     "name": "Light Aircraft Crash",
     "place": "",
     "place_array": [],
-    "average_credits": 8800,
+    "average_credits": 7550,
     "generated_by": "Fire Station",
     "icons": [
       "/images/planecrash_gruen.png",
@@ -2127,9 +2346,130 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 72,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
+  },
+  {
+    "id": "72/ac",
+    "name": "Light Aircraft Crash",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8750,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 4,
+      "atv_carrier": 2
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 72,
+    "additive_overlays": "ac"
+  },
+  {
+    "id": "72/bc",
+    "name": "Light Aircraft Crash",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6800,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "atv_carrier": 1,
+      "foam": 2
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 72,
+    "additive_overlays": "bc"
+  },
+  {
+    "id": "72/abc",
+    "name": "Light Aircraft Crash",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9550,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 4,
+      "atv_carrier": 2,
+      "foam": 2
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 72,
+    "additive_overlays": "abc"
   },
   {
     "id": "73",
@@ -2169,11 +2509,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "73-1",
+    "id": "73/a",
     "name": "Serious Accident Involving a Bus",
     "place": "",
     "place_array": [],
-    "average_credits": 4000,
+    "average_credits": 3000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2204,9 +2544,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 5
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 73,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "74",
@@ -2271,7 +2611,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "75-1",
+    "id": "75/a",
     "name": "Partial Building Collapse",
     "place": "",
     "place_array": [],
@@ -2302,9 +2642,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 5
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 75,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "76",
@@ -2718,7 +3058,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "89-1",
+    "id": "89/a",
     "name": "Road Traffic Collision (Major)",
     "place": "",
     "place_array": [],
@@ -2746,9 +3086,9 @@
       "patient_specializations": "Traumatology"
     },
     "prerequisites": { "main_building": 0, "mass_casualty_count": 1 },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 89,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "90",
@@ -4360,11 +4700,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "143-1",
+    "id": "143/a",
     "name": "Stuck Climber",
     "place": "",
     "place_array": [],
-    "average_credits": 1500,
+    "average_credits": 1650,
     "generated_by": "Fire Station",
     "icons": [
       "/images/climbing_gruen.png",
@@ -4398,9 +4738,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 4
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 143,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "144",
@@ -4474,7 +4814,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "145-1",
+    "id": "145/a",
     "name": "Fire in an office building - Major Incident",
     "place": "Office Building",
     "place_array": ["Office Building"],
@@ -4513,9 +4853,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 15
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 145,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "146",
@@ -4552,11 +4892,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "146-1",
+    "id": "146/a",
     "name": "Injured person on high voltage mast",
     "place": "",
     "place_array": [],
-    "average_credits": 1500,
+    "average_credits": 1650,
     "generated_by": "Ambulance Station",
     "icons": [
       "/images/climbing_gruen.png",
@@ -4584,9 +4924,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 4
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 146,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "147",
@@ -5318,11 +5658,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "168-1",
+    "id": "168/a",
     "name": "Trench Rescue",
     "place": "",
     "place_array": [],
-    "average_credits": 7000,
+    "average_credits": 5500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -5352,9 +5692,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 5
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 168,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "169",
@@ -5521,11 +5861,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "173-1",
+    "id": "173/a",
     "name": "Warehouse Fire - Major Incident",
     "place": "Warehouse",
     "place_array": ["Warehouse"],
-    "average_credits": 17000,
+    "average_credits": 16500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -5556,9 +5896,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 20
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 173,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "174",
@@ -5597,11 +5937,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "174-1",
+    "id": "174/a",
     "name": "Warehouse Fire - Major Incident",
     "place": "Cold Storage Warehouse",
     "place_array": ["Cold Storage Warehouse"],
-    "average_credits": 17000,
+    "average_credits": 16500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -5632,9 +5972,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 20
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 174,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "175",
@@ -5904,11 +6244,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "182-1",
+    "id": "182/a",
     "name": "Flat Fire in High Rise - Persons Reported",
     "place": "High Rise",
     "place_array": ["High Rise"],
-    "average_credits": 7000,
+    "average_credits": 8000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -5938,9 +6278,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 182,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "183",
@@ -6248,7 +6588,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "192-1",
+    "id": "192/a",
     "name": "Hotel fire (large)",
     "place": "Hotel",
     "place_array": ["Hotel"],
@@ -6291,9 +6631,9 @@
       "mass_casualty_count": 1,
       "fire_stations": 10
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 192,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "193",
@@ -6593,11 +6933,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "196-1",
+    "id": "196/a",
     "name": "Flat Fire in Clad High Rise - Persons Reported",
     "place": "High Rise with Cladding",
     "place_array": ["High Rise with Cladding"],
-    "average_credits": 9000,
+    "average_credits": 10000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -6627,9 +6967,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 196,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "197",
@@ -6959,11 +7299,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "207-1",
+    "id": "207/a",
     "name": "Firearms Attack (Major Incident)",
     "place": "",
     "place_array": [],
-    "average_credits": 18000,
+    "average_credits": 17500,
     "generated_by": "Police Station",
     "icons": [
       "/images/shooting_gruen.png",
@@ -6996,9 +7336,9 @@
       "police_helicopter_stations": 1,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 207,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "208",
@@ -8095,11 +8435,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "240-1",
+    "id": "240/a",
     "name": "Fire in shopping centre",
     "place": "Mall",
     "place_array": ["Mall"],
-    "average_credits": 8500,
+    "average_credits": 9000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -8137,9 +8477,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 240,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "241",
@@ -10187,11 +10527,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "298-1",
+    "id": "298/a",
     "name": "University halls fire (Major)",
     "place": "University",
     "place_array": ["University"],
-    "average_credits": 17300,
+    "average_credits": 17500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -10228,12 +10568,12 @@
       "main_building": 0,
       "rescue_stations": 25,
       "police_stations": 4,
-      "mass_casualty_count": 1,
+      "mass_casualty_count": 2,
       "fire_stations": 20
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 298,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "299",
@@ -11242,11 +11582,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "308-1",
+    "id": "308/a",
     "name": "Fallen person",
     "place": "Farm\nForest\nHeathland\nGolf course\nMoorland",
     "place_array": ["Farm", "Forest", "Heathland", "Golf course", "Moorland"],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance Station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11268,9 +11608,9 @@
       "rescue_stations": 1,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 308,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "309",
@@ -11299,11 +11639,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "309-1",
+    "id": "309/a",
     "name": "Spinal injury",
     "place": "Farm\nForest\nHeathland\nGolf course\nMoorland",
     "place_array": ["Farm", "Forest", "Heathland", "Golf course", "Moorland"],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance Station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11324,9 +11664,9 @@
       "rescue_stations": 2,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 309,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "310",
@@ -11355,11 +11695,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "310-1",
+    "id": "310/a",
     "name": "Serious head injury",
     "place": "Farm\nForest\nHeathland\nGolf course\nMoorland",
     "place_array": ["Farm", "Forest", "Heathland", "Golf course", "Moorland"],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance Station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11380,9 +11720,9 @@
       "rescue_stations": 3,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 310,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "311",
@@ -11411,11 +11751,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "311-1",
+    "id": "311/a",
     "name": "Traumatic limb amputation",
     "place": "Farm\nForest\nHeathland\nGolf course\nMoorland",
     "place_array": ["Farm", "Forest", "Heathland", "Golf course", "Moorland"],
-    "average_credits": null,
+    "average_credits": 500,
     "generated_by": "Ambulance Station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11436,9 +11776,9 @@
       "rescue_stations": 4,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 311,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "312",
@@ -11680,11 +12020,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "320-1",
+    "id": "320/a",
     "name": "Person trapped in agricultural machinery",
     "place": "",
     "place_array": [],
-    "average_credits": 5000,
+    "average_credits": 4000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11712,9 +12052,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 6
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 320,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "321",
@@ -11811,11 +12151,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "323-1",
+    "id": "323/a",
     "name": "Chlorine leak",
     "place": "Swimming bath",
     "place_array": ["Swimming bath"],
-    "average_credits": 5000,
+    "average_credits": 4500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/gas_gruen.png",
@@ -11843,9 +12183,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 12
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 323,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "324",
@@ -11889,7 +12229,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "324-1",
+    "id": "324/a",
     "name": "Freight Train Derailment",
     "place": "Railroad Crossing\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
     "place_array": [
@@ -11897,7 +12237,7 @@
       "Train station (regional traffic)",
       "Train station (regional traffic and long-distance travel)"
     ],
-    "average_credits": 12000,
+    "average_credits": 11000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/bus_gruen.png",
@@ -11928,9 +12268,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 15
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 324,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "325",
@@ -11970,11 +12310,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "325-1",
+    "id": "325/a",
     "name": "Ammonia leak (Gas alarm system)",
     "place": "Cold Storage Warehouse",
     "place_array": ["Cold Storage Warehouse"],
-    "average_credits": 7000,
+    "average_credits": 6000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/gas_gruen.png",
@@ -12005,9 +12345,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 325,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "326",
@@ -12094,90 +12434,6 @@
     "name": "Power station fire",
     "place": "Power Plant",
     "place_array": ["Power Plant"],
-    "average_credits": 15000,
-    "generated_by": "Fire Station",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 12,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "police_cars": 2,
-      "emergency_welfare": 1
-    },
-    "chances": { "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 12,
-      "patient_uk_code_possible": ["C-2"],
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 2,
-      "hazard_response_ems": 1,
-      "fire_stations": 25
-    },
-    "overlay_index": null,
-    "base_mission_id": 326,
-    "additive_overlays": "b"
-  },
-  {
-    "id": "326/ab",
-    "name": "Power station fire",
-    "place": "Power Plant",
-    "place_array": ["Power Plant"],
-    "average_credits": 16600,
-    "generated_by": "Fire Station",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 12,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "police_cars": 2,
-      "emergency_welfare": 1,
-      "foam": 4
-    },
-    "chances": { "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 12,
-      "patient_uk_code_possible": ["C-2"],
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 2,
-      "fire_support_count": 2,
-      "hazard_response_ems": 1,
-      "fire_stations": 25
-    },
-    "overlay_index": null,
-    "base_mission_id": 326,
-    "additive_overlays": "ab"
-  },
-  {
-    "id": "326-1",
-    "name": "Power station fire",
-    "place": "Power Plant",
-    "place_array": ["Power Plant"],
     "average_credits": 17000,
     "generated_by": "Fire Station",
     "icons": [
@@ -12212,12 +12468,54 @@
       "hazard_response_ems": 1,
       "fire_stations": 25
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 326,
-    "additive_overlays": ""
+    "additive_overlays": "b"
   },
   {
-    "id": "326-1/a",
+    "id": "326/c",
+    "name": "Power station fire",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 16500,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "hazard_response_ems": 4,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 326,
+    "additive_overlays": "c"
+  },
+  {
+    "id": "326/ab",
     "name": "Power station fire",
     "place": "Power Plant",
     "place_array": ["Power Plant"],
@@ -12257,16 +12555,16 @@
       "hazard_response_ems": 1,
       "fire_stations": 25
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 326,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
   },
   {
-    "id": "326-1/b",
+    "id": "326/ac",
     "name": "Power station fire",
     "place": "Power Plant",
     "place_array": ["Power Plant"],
-    "average_credits": 17500,
+    "average_credits": 18100,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -12284,50 +12582,6 @@
       "police_cars": 2,
       "hazard_response_primary": 2,
       "hazard_response_secondary": 2,
-      "emergency_welfare": 2
-    },
-    "chances": { "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 12,
-      "patient_uk_code_possible": ["C-2"],
-      "filter_id": "firehouse_missions",
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 2,
-      "hazard_response_ems": 1,
-      "fire_stations": 25
-    },
-    "overlay_index": 1,
-    "base_mission_id": 326,
-    "additive_overlays": "b"
-  },
-  {
-    "id": "326-1/ab",
-    "name": "Power station fire",
-    "place": "Power Plant",
-    "place_array": ["Power Plant"],
-    "average_credits": 19100,
-    "generated_by": "Fire Station",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 12,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "police_cars": 2,
-      "hazard_response_primary": 2,
-      "hazard_response_secondary": 2,
-      "emergency_welfare": 2,
       "foam": 4
     },
     "chances": { "patient_transport": 60 },
@@ -12342,12 +12596,100 @@
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_support_count": 2,
-      "hazard_response_ems": 1,
+      "hazard_response_ems": 4,
       "fire_stations": 25
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 326,
-    "additive_overlays": "ab"
+    "additive_overlays": "ac"
+  },
+  {
+    "id": "326/bc",
+    "name": "Power station fire",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 19000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 4,
+      "emergency_welfare": 1
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "hazard_response_ems": 4,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 326,
+    "additive_overlays": "bc"
+  },
+  {
+    "id": "326/abc",
+    "name": "Power station fire",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 20600,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 4,
+      "emergency_welfare": 1,
+      "foam": 4
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "hazard_response_ems": 4,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 326,
+    "additive_overlays": "abc"
   },
   {
     "id": "327",
@@ -12422,11 +12764,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "328-1",
+    "id": "328/a",
     "name": "Bulk hazardous storage tank leak (large)",
     "place": "Large chemical storage tank",
     "place_array": ["Large chemical storage tank"],
-    "average_credits": 12000,
+    "average_credits": 7000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/oil_gruen.png",
@@ -12457,9 +12799,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 11
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 328,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "329",
@@ -12926,11 +13268,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "335-1",
+    "id": "335/a",
     "name": "Large abandoned building on fire",
     "place": "Abandoned Building",
     "place_array": ["Abandoned Building"],
-    "average_credits": 14000,
+    "average_credits": 13000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -12962,9 +13304,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 15
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 335,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "336",
@@ -13379,7 +13721,7 @@
     "additive_overlays": ""
   },
   {
-    "id": "350-1",
+    "id": "350/a",
     "name": "Protester needing rescuing from height",
     "place": "",
     "place_array": [],
@@ -13413,9 +13755,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 10
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 350,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "351",
@@ -13602,11 +13944,11 @@
     "additive_overlays": "a"
   },
   {
-    "id": "355-1",
+    "id": "355/b",
     "name": "Large fire in nightclub (Major Incident)",
     "place": "Nightclub",
     "place_array": ["Nightclub"],
-    "average_credits": 17000,
+    "average_credits": 16000,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -13633,19 +13975,19 @@
       "main_building": 0,
       "rescue_stations": 15,
       "police_stations": 2,
-      "hazard_response_ems": 1,
+      "hazard_response_ems": 2,
       "fire_stations": 25
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 355,
-    "additive_overlays": ""
+    "additive_overlays": "b"
   },
   {
-    "id": "355-1/a",
+    "id": "355/ab",
     "name": "Large fire in nightclub (Major Incident)",
     "place": "Nightclub",
     "place_array": ["Nightclub"],
-    "average_credits": 17500,
+    "average_credits": 16500,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -13673,12 +14015,12 @@
       "main_building": 0,
       "rescue_stations": 15,
       "police_stations": 2,
-      "hazard_response_ems": 1,
+      "hazard_response_ems": 2,
       "fire_stations": 25
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 355,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
   },
   {
     "id": "356",
@@ -13728,7 +14070,7 @@
     "name": "Large fire in nightclub (Persons Reported)",
     "place": "Nightclub",
     "place_array": ["Nightclub"],
-    "average_credits": 9500,
+    "average_credits": 10300,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -13741,12 +14083,15 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "police_cars": 2,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
       "emergency_welfare": 1
     },
     "chances": {
       "platform_trucks": 20,
       "patient_transport": 25,
-      "patient_critical_care": 10
+      "patient_critical_care": 10,
+      "emergency_welfare": 60
     },
     "additional": {
       "possible_patient": 15,
@@ -13769,7 +14114,7 @@
     "additive_overlays": "a"
   },
   {
-    "id": "356-1",
+    "id": "356/b",
     "name": "Large fire in nightclub (Persons Reported)",
     "place": "Nightclub",
     "place_array": ["Nightclub"],
@@ -13807,19 +14152,19 @@
       "main_building": 0,
       "rescue_stations": 7,
       "police_stations": 2,
-      "hazard_response_ems": 1,
+      "hazard_response_ems": 2,
       "fire_stations": 15
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 356,
-    "additive_overlays": ""
+    "additive_overlays": "b"
   },
   {
-    "id": "356-1/a",
+    "id": "356/ab",
     "name": "Large fire in nightclub (Persons Reported)",
     "place": "Nightclub",
     "place_array": ["Nightclub"],
-    "average_credits": 10500,
+    "average_credits": 11300,
     "generated_by": "Fire Station",
     "icons": [
       "/images/fire_gruen.png",
@@ -13832,14 +14177,15 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "police_cars": 2,
-      "hazard_response_primary": 1,
-      "hazard_response_secondary": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
       "emergency_welfare": 1
     },
     "chances": {
       "platform_trucks": 20,
       "patient_transport": 25,
-      "patient_critical_care": 10
+      "patient_critical_care": 10,
+      "emergency_welfare": 60
     },
     "additional": {
       "possible_patient": 15,
@@ -13854,12 +14200,12 @@
       "main_building": 0,
       "rescue_stations": 7,
       "police_stations": 2,
-      "hazard_response_ems": 1,
+      "hazard_response_ems": 2,
       "fire_stations": 15
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 356,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
   },
   {
     "id": "357",
@@ -14215,11 +14561,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "363-1",
+    "id": "363/a",
     "name": "Standoff with armed suspect",
     "place": "",
     "place_array": [],
-    "average_credits": 10500,
+    "average_credits": 9500,
     "generated_by": "Police Station",
     "icons": [
       "/images/shooting_gruen.png",
@@ -14250,9 +14596,9 @@
       "police_helicopter_stations": 1,
       "hazard_response_ems": 1
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 363,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "364",
@@ -14294,11 +14640,11 @@
     "additive_overlays": ""
   },
   {
-    "id": "364-1",
+    "id": "364/a",
     "name": "Standoff with armed suspect (Threatening to set fire)",
     "place": "",
     "place_array": [],
-    "average_credits": 11000,
+    "average_credits": 10000,
     "generated_by": "Police Station",
     "icons": [
       "/images/shooting_gruen.png",
@@ -14332,9 +14678,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 6
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 364,
-    "additive_overlays": ""
+    "additive_overlays": "a"
   },
   {
     "id": "365",
@@ -14517,7 +14863,7 @@
     "additive_overlays": "a"
   },
   {
-    "id": "369-1",
+    "id": "369/b",
     "name": "Crashed military fast jet off airport",
     "place": "",
     "place_array": [],
@@ -14551,12 +14897,12 @@
       "hazard_response_ems": 1,
       "fire_stations": 11
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 369,
-    "additive_overlays": ""
+    "additive_overlays": "b"
   },
   {
-    "id": "369-1/a",
+    "id": "369/ab",
     "name": "Crashed military fast jet off airport",
     "place": "",
     "place_array": [],
@@ -14592,9 +14938,9 @@
       "hazard_response_ems": 1,
       "fire_stations": 11
     },
-    "overlay_index": 1,
+    "overlay_index": null,
     "base_mission_id": 369,
-    "additive_overlays": "a"
+    "additive_overlays": "ab"
   },
   {
     "id": "370",
@@ -19299,5 +19645,65 @@
     "overlay_index": null,
     "base_mission_id": 473,
     "additive_overlays": ""
+  },
+  {
+    "id": "474",
+    "name": "Penetrating Trauma - Central Wound",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Ambulance Station",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "kdow_orgl": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": ""
+  },
+  {
+    "id": "474/a",
+    "name": "Penetrating Trauma - Central Wound",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "Ambulance Station",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "kdow_orgl": 1,
+      "hazard_response_primary": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 4,
+      "hazard_response_ems": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "a"
   }
 ]
