@@ -28150,5 +28150,80 @@
     "overlay_index": null,
     "base_mission_id": 744,
     "additive_overlays": ""
+  },
+  {
+    "id": "745",
+    "name": "Multi Vehicle Pile-up",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 3000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [746],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_support_count": 4,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": ""
+  },
+  {
+    "id": "746",
+    "name": "Multi Vehicle Pile-up (Large)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 6000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 90, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_support_count": 6,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": ""
   }
 ]
