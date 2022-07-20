@@ -1138,6 +1138,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_stations": 16
@@ -1181,6 +1182,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "hazard_response_ems": 1,
@@ -1223,6 +1225,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -1267,6 +1270,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "hazard_response_ems": 1,
@@ -1312,6 +1316,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -1357,6 +1362,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "hazard_response_ems": 1,
@@ -1402,6 +1408,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -1448,6 +1455,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -2187,6 +2195,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_stations": 13
     },
@@ -2225,6 +2234,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "hazard_response_ems": 1,
       "fire_stations": 13
@@ -2262,6 +2272,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "fire_stations": 13
@@ -2301,6 +2312,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "hazard_response_ems": 1,
       "fire_stations": 13
@@ -2341,6 +2353,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "hazard_response_ems": 1,
@@ -2381,6 +2394,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "hazard_response_ems": 1,
       "fire_stations": 13
@@ -2421,6 +2435,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "hazard_response_ems": 1,
@@ -2462,6 +2477,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "hazard_response_ems": 1,
@@ -2674,6 +2690,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_stations": 6
     },
@@ -2710,6 +2727,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "fire_stations": 6
@@ -3179,7 +3197,11 @@
       "swat_personnel": 4,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 8
+    },
     "overlay_index": null,
     "base_mission_id": 92,
     "additive_overlays": ""
@@ -3204,7 +3226,11 @@
       "filter_id": "police_station_missions",
       "allow_swat_instead_of_police": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 9 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 9
+    },
     "overlay_index": null,
     "base_mission_id": 93,
     "additive_overlays": ""
@@ -3442,7 +3468,11 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 5
+    },
     "overlay_index": null,
     "base_mission_id": 102,
     "additive_overlays": ""
@@ -3472,6 +3502,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 5
     },
@@ -3559,7 +3590,11 @@
     },
     "chances": { "water_tankers": 20 },
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 8 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 8
+    },
     "overlay_index": null,
     "base_mission_id": 107,
     "additive_overlays": ""
@@ -3586,6 +3621,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 2,
       "fire_stations": 8
     },
@@ -3615,6 +3651,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "hazard_response_ems": 1,
       "fire_stations": 8
     },
@@ -3645,6 +3682,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 2,
       "hazard_response_ems": 1,
       "fire_stations": 8
@@ -4186,6 +4224,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 1,
       "fire_stations": 7
     },
@@ -4220,6 +4259,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 1,
       "fire_support_count": 1,
       "fire_stations": 7
@@ -4484,7 +4524,11 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 13
+    },
     "overlay_index": null,
     "base_mission_id": 134,
     "additive_overlays": ""
@@ -4518,6 +4562,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 13
     },
@@ -7013,7 +7058,11 @@
       "max_possible_prisoners": 8,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 12 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 12
+    },
     "overlay_index": null,
     "base_mission_id": 198,
     "additive_overlays": ""
@@ -7049,6 +7098,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 12,
       "personnel_educations": {
         "level_2_public_order": 40,
@@ -7126,7 +7176,11 @@
       "swat_personnel": 4,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 8
+    },
     "overlay_index": null,
     "base_mission_id": 201,
     "additive_overlays": ""
@@ -7252,6 +7306,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 6,
       "police_stations": 12,
       "police_helicopter_stations": 1
@@ -7290,6 +7345,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 9,
       "police_stations": 18,
       "police_helicopter_stations": 1
@@ -7331,6 +7387,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 9,
       "police_stations": 18,
       "police_helicopter_stations": 1,
@@ -8265,7 +8322,11 @@
     "requirements": { "firetrucks": 5, "battalion_chief_vehicles": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 6
+    },
     "overlay_index": null,
     "base_mission_id": 236,
     "additive_overlays": ""
@@ -8291,6 +8352,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 6
     },
@@ -8512,6 +8574,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 1,
       "police_stations": 2,
       "fire_stations": 15
@@ -8552,6 +8615,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 1,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -8820,7 +8884,11 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 15 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 15
+    },
     "overlay_index": null,
     "base_mission_id": 244,
     "additive_overlays": ""
@@ -8854,6 +8922,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 3,
       "fire_stations": 15
     },
@@ -8941,7 +9010,11 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 11 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 11
+    },
     "overlay_index": null,
     "base_mission_id": 251,
     "additive_overlays": ""
@@ -8969,6 +9042,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 11
     },
@@ -9550,7 +9624,11 @@
       "average_min_fire_personnel": 30,
       "filter_id": "firehouse_missions"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 13
+    },
     "overlay_index": null,
     "base_mission_id": 272,
     "additive_overlays": ""
@@ -9583,6 +9661,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 13
     },
@@ -9618,6 +9697,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
@@ -9654,6 +9734,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "hazard_response_ems": 1,
       "fire_stations": 13
@@ -10638,6 +10719,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_stations": 20
@@ -10681,6 +10763,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -10725,6 +10808,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "hazard_response_ems": 1,
@@ -10770,6 +10854,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -10820,6 +10905,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "mass_casualty_count": 1,
@@ -10871,6 +10957,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -10922,6 +11009,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "mass_casualty_count": 1,
@@ -10973,6 +11061,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -11022,6 +11111,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "hazard_response_ems": 1,
@@ -11070,6 +11160,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -11118,6 +11209,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "hazard_response_ems": 1,
@@ -11166,6 +11258,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -11212,6 +11305,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "mass_casualty_count": 1,
@@ -11258,6 +11352,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -11305,6 +11400,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "mass_casualty_count": 1,
@@ -11353,6 +11449,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 30,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -12380,6 +12477,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_stations": 25
@@ -12420,6 +12518,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -12463,6 +12562,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "hazard_response_ems": 1,
@@ -12505,6 +12605,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "hazard_response_ems": 4,
@@ -12549,6 +12650,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -12593,6 +12695,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -12637,6 +12740,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "hazard_response_ems": 4,
@@ -12681,6 +12785,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 2,
       "fire_support_count": 2,
@@ -12833,6 +12938,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 4,
       "fire_stations": 18
@@ -12872,6 +12978,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 4,
       "fire_support_count": 1,
@@ -12915,6 +13022,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 4,
       "hazard_response_ems": 1,
@@ -12959,6 +13067,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 4,
       "fire_support_count": 1,
@@ -13778,7 +13887,11 @@
       "swat_personnel": 6,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 12 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 12
+    },
     "overlay_index": null,
     "base_mission_id": 351,
     "additive_overlays": ""
@@ -14552,6 +14665,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 4,
       "police_stations": 8,
       "police_helicopter_stations": 1
@@ -14591,6 +14705,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 4,
       "police_stations": 8,
       "police_helicopter_stations": 1,
@@ -14630,6 +14745,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 4,
       "police_stations": 8,
       "police_helicopter_stations": 1,
@@ -14672,6 +14788,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 4,
       "police_stations": 8,
       "police_helicopter_stations": 1,
@@ -14818,6 +14935,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_stations": 11
     },
@@ -14854,6 +14972,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_support_count": 1,
       "fire_stations": 11
@@ -14893,6 +15012,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "hazard_response_ems": 1,
       "fire_stations": 11
@@ -14933,6 +15053,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_support_count": 1,
       "hazard_response_ems": 1,
@@ -16109,6 +16230,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "rescue_stations": 4,
       "police_stations": 10
     },
@@ -16701,6 +16823,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 11,
       "police_helicopter_stations": 1
     },
@@ -16748,6 +16871,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 11,
       "police_helicopter_stations": 1,
       "hazard_response_ems": 1
@@ -16776,7 +16900,11 @@
     },
     "chances": { "platform_trucks": 40, "water_tankers": 60 },
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 10
+    },
     "overlay_index": null,
     "base_mission_id": 406,
     "additive_overlays": ""
@@ -16804,6 +16932,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 10
     },
@@ -16873,6 +17002,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 2,
       "fire_stations": 13
@@ -16917,6 +17047,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 2,
       "fire_support_count": 1,
@@ -16963,6 +17094,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 2,
       "hazard_response_ems": 1,
@@ -17010,6 +17142,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 6,
       "police_stations": 2,
       "fire_support_count": 1,
@@ -17055,6 +17188,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 4,
       "fire_stations": 13
@@ -17099,6 +17233,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 4,
       "fire_support_count": 1,
@@ -17145,6 +17280,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 4,
       "hazard_response_ems": 1,
@@ -17192,6 +17328,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 4,
       "fire_support_count": 1,
@@ -17238,6 +17375,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 15,
       "police_stations": 8,
       "fire_stations": 30
@@ -17283,6 +17421,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 15,
       "police_stations": 8,
       "fire_support_count": 1,
@@ -17330,6 +17469,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 15,
       "police_stations": 8,
       "hazard_response_ems": 1,
@@ -17378,6 +17518,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 15,
       "police_stations": 8,
       "fire_support_count": 1,
@@ -17686,6 +17827,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 3,
       "fire_stations": 20
     },
@@ -17722,6 +17864,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 3,
       "hazard_response_ems": 1,
       "fire_stations": 20
@@ -17758,6 +17901,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 3,
       "fire_support_count": 1,
       "fire_stations": 20
@@ -17796,6 +17940,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 3,
       "fire_support_count": 1,
       "hazard_response_ems": 1,
@@ -17985,7 +18130,11 @@
       "filter_id": "police_station_missions",
       "allow_swat_instead_of_police": true
     },
-    "prerequisites": { "main_building": 6, "police_stations": 10 },
+    "prerequisites": {
+      "main_building": 6,
+      "building_specializations": ["riot_police"],
+      "police_stations": 10
+    },
     "overlay_index": null,
     "base_mission_id": 425,
     "additive_overlays": ""
@@ -18554,6 +18703,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 8,
       "personnel_educations": { "police_sergeant": 5 }
     },
@@ -18596,6 +18746,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 8,
       "personnel_educations": {
         "police_sergeant": 5,
@@ -18634,6 +18785,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 10,
       "personnel_educations": { "level_2_public_order": 50 }
     },
@@ -18674,6 +18826,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 10,
       "personnel_educations": {
         "level_2_public_order": 50,
@@ -18711,6 +18864,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 8,
       "personnel_educations": { "level_2_public_order": 40 }
     },
@@ -18756,6 +18910,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 10,
       "riot_police": 1,
       "personnel_educations": {
@@ -18809,6 +18964,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 10,
       "riot_police": 1,
       "personnel_educations": {
@@ -18861,6 +19017,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 12,
       "riot_police": 2,
       "personnel_educations": {
@@ -18914,6 +19071,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 12,
       "riot_police": 2,
       "personnel_educations": {
@@ -19259,6 +19417,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["riot_police"],
       "police_stations": 8,
       "riot_police": 2,
       "personnel_educations": { "level_2_public_order": 25 }
