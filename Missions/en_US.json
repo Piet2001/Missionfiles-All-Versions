@@ -28225,5 +28225,87 @@
     "overlay_index": null,
     "base_mission_id": 746,
     "additive_overlays": ""
+  },
+  {
+    "id": "747",
+    "name": "Jetbridge Collapse (Small)",
+    "place": "Airport Terminal",
+    "place_array": ["Airport Terminal"],
+    "average_credits": 3000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "arff": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [748],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-B-3", "22-D-3"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 5,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 747,
+    "additive_overlays": ""
+  },
+  {
+    "id": "748",
+    "name": "Jetbridge Collapse (Large)",
+    "place": "Airport Terminal",
+    "place_array": ["Airport Terminal"],
+    "average_credits": 6000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "arff": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "patient_transport": 50,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-B-3", "22-D-3"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "fire_stations": 7,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": ""
   }
 ]
