@@ -28307,5 +28307,185 @@
     "overlay_index": null,
     "base_mission_id": 748,
     "additive_overlays": ""
+  },
+  {
+    "id": "749",
+    "name": "Faulty Heating Boiler",
+    "place": "Hotel\nMuseum\nOffice Building\nSchool",
+    "place_array": ["Hotel", "Museum", "Office Building", "School"],
+    "average_credits": 400,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [750],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-B-1M", "8-C-1M"],
+      "patient_allow_first_responder_chance": 50,
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 749,
+    "additive_overlays": ""
+  },
+  {
+    "id": "750",
+    "name": "Carbon Monoxide Leak (Small)",
+    "place": "Hotel\nMuseum\nOffice Building\nSchool",
+    "place_array": ["Hotel", "Museum", "Office Building", "School"],
+    "average_credits": 1100,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": { "firetrucks": 4, "mobile_air_vehicles": 1 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [751],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-B-1M", "8-C-1M", "8-D-2M"],
+      "patient_allow_first_responder_chance": 50,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 750,
+    "additive_overlays": ""
+  },
+  {
+    "id": "751",
+    "name": "Carbon Monoxide Leak (Large)",
+    "place": "Hotel\nMuseum\nOffice Building\nSchool",
+    "place_array": ["Hotel", "Museum", "Office Building", "School"],
+    "average_credits": 4700,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [752],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5M"],
+      "patient_allow_first_responder_chance": 50,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 751,
+    "additive_overlays": ""
+  },
+  {
+    "id": "752",
+    "name": "Carbon Monoxide Leak (Large)",
+    "place": "Hotel\nMuseum\nOffice Building\nSchool",
+    "place_array": ["Hotel", "Museum", "Office Building", "School"],
+    "average_credits": 9500,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 17,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5M"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 752,
+    "additive_overlays": ""
+  },
+  {
+    "id": "752/a",
+    "name": "Carbon Monoxide Leak (Large)",
+    "place": "Hotel\nMuseum\nOffice Building\nSchool",
+    "place_array": ["Hotel", "Museum", "Office Building", "School"],
+    "average_credits": 10500,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 17,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 2,
+      "fire_investigation": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5M"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "fire_investigation_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 752,
+    "additive_overlays": "a"
   }
 ]
