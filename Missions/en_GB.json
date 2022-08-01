@@ -20102,5 +20102,87 @@
     "overlay_index": null,
     "base_mission_id": 478,
     "additive_overlays": "a"
+  },
+  {
+    "id": "479",
+    "name": "Locomotive train fire",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 3,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "water_tankers": 30, "hazmat_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
+      "followup_missions_ids": [211, 212, 213, 214],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "police_stations": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": ""
+  },
+  {
+    "id": "479/a",
+    "name": "Locomotive train fire",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 8400,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 3,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "foam": 1
+    },
+    "chances": { "water_tankers": 30, "hazmat_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
+      "followup_missions_ids": [211, 212, 213, 214],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "a"
   }
 ]
