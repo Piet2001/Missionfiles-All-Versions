@@ -18198,5 +18198,95 @@
     "overlay_index": null,
     "base_mission_id": 576,
     "additive_overlays": ""
+  },
+  {
+    "id": "577",
+    "name": "Awaryjne lądowanie samolotu pasażerskiego na wodzie",
+    "place": "Jezioro\nRzeka",
+    "place_array": ["Jezioro", "Rzeka"],
+    "average_credits": 32000,
+    "generated_by": "Stacja WOPR",
+    "icons": [
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_helicopters": 1,
+      "water_rescue": 3,
+      "diver_units": 4,
+      "boats": 8
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 5,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 18,
+      "followup_missions_ids": [200, 201],
+      "average_min_police_personnel": 24,
+      "filter_id": "water_watch_missions",
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 4,
+      "rescue_stations": 20,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "fire_stations": 26
+    },
+    "overlay_index": null,
+    "base_mission_id": 577,
+    "additive_overlays": ""
+  },
+  {
+    "id": "578",
+    "name": "Wodowanie awionetki",
+    "place": "Jezioro\nRzeka",
+    "place_array": ["Jezioro", "Rzeka"],
+    "average_credits": 9000,
+    "generated_by": "Stacja WOPR",
+    "icons": [
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "water_rescue": 1,
+      "diver_units": 2,
+      "boats": 3
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "average_min_police_personnel": 5,
+      "filter_id": "water_watch_missions",
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 578,
+    "additive_overlays": ""
   }
 ]
