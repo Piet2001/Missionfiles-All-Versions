@@ -28487,5 +28487,111 @@
     "overlay_index": null,
     "base_mission_id": 752,
     "additive_overlays": "a"
+  },
+  {
+    "id": "753",
+    "name": "Sports Fan Brawl (Small)",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 3000,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 10 },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [754],
+      "max_possible_prisoners": 7,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "4-A-1",
+        "4-A-2",
+        "4-B-1",
+        "4-B-2",
+        "4-D-2",
+        "4-D-3",
+        "4-D-4"
+      ],
+      "patient_allow_first_responder_chance": 25,
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 5,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 753,
+    "additive_overlays": ""
+  },
+  {
+    "id": "754",
+    "name": "Sports Fan Brawl (Medium)",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 6000,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 15, "sheriff": 1 },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 7,
+      "expansion_missions_ids": [755],
+      "max_possible_prisoners": 12,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["4-D-5A"],
+      "patient_allow_first_responder_chance": 25,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 8,
+      "police_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 754,
+    "additive_overlays": ""
+  },
+  {
+    "id": "755",
+    "name": "Sports Fan Brawl (Large)",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 9500,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 25, "k9": 2, "sheriff": 2 },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 45,
+      "possible_patient_min": 10,
+      "max_possible_prisoners": 30,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["4-D-5A"],
+      "patient_allow_first_responder_chance": 25,
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 10,
+      "police_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 755,
+    "additive_overlays": ""
   }
 ]
