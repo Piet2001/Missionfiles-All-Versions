@@ -20210,5 +20210,87 @@
     "overlay_index": null,
     "base_mission_id": 480,
     "additive_overlays": ""
+  },
+  {
+    "id": "481",
+    "name": "Fire in turbine",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 6000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [326],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 481,
+    "additive_overlays": ""
+  },
+  {
+    "id": "482",
+    "name": "Fire in turbine (Nuclear Power station)",
+    "place": "Nuclear power station",
+    "place_array": ["Nuclear power station"],
+    "average_credits": 8000,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 6, "battalion_chief_vehicles": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [242],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 482,
+    "additive_overlays": ""
+  },
+  {
+    "id": "482/a",
+    "name": "Fire in turbine (Nuclear Power station)",
+    "place": "Nuclear power station",
+    "place_array": ["Nuclear power station"],
+    "average_credits": 8400,
+    "generated_by": "Fire Station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 3,
+      "foam": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [242],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_support_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 482,
+    "additive_overlays": "a"
   }
 ]
