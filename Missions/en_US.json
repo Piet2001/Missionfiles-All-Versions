@@ -28593,5 +28593,100 @@
     "overlay_index": null,
     "base_mission_id": 755,
     "additive_overlays": ""
+  },
+  {
+    "id": "756",
+    "name": "Arborist Accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "Ambulance station",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "platform_trucks": 1 },
+    "chances": {
+      "platform_trucks": 50,
+      "patient_transport": 90,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "17-A-1",
+        "17-A-2",
+        "17-B-1",
+        "17-B-2",
+        "17-D-1",
+        "17-D-2",
+        "17-D-3",
+        "17-D-4",
+        "17-D-5",
+        "21-B-1T",
+        "21-B-2T",
+        "21-D-1T",
+        "21-B-2T",
+        "21-D-1T",
+        "21-D-2T",
+        "21-D-3T",
+        "21-D-4T",
+        "21-D-5T",
+        "30-A-1",
+        "30-A-2",
+        "30-B-1",
+        "30-B-2",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-D-4"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 756,
+    "additive_overlays": ""
+  },
+  {
+    "id": "757",
+    "name": "Person Pinned Under Tank Trailer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-5"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 757,
+    "additive_overlays": ""
   }
 ]
