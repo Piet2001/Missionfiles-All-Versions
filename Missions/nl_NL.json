@@ -32025,5 +32025,63 @@
     "overlay_index": null,
     "base_mission_id": 953,
     "additive_overlays": ""
+  },
+  {
+    "id": "954",
+    "name": "Verkeersruzie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1640,
+    "generated_by": "Politie, Opkomstbureau",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 3, "ovdp": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [955],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 954,
+    "additive_overlays": ""
+  },
+  {
+    "id": "955",
+    "name": "Verkeersruzie loopt uit de hand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3955,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 2,
+      "gefkw": 1,
+      "police_cars": 5,
+      "ovdp": 1,
+      "bike_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "riot_police_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 8,
+      "bereitschaftspolizei": 3,
+      "prisoner_transport_count": 1,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": null,
+    "base_mission_id": 955,
+    "additive_overlays": ""
   }
 ]
