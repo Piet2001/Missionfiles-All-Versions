@@ -32073,5 +32073,109 @@
     "overlay_index": null,
     "base_mission_id": 955,
     "additive_overlays": ""
+  },
+  {
+    "id": "956",
+    "name": "Brand in station",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 500,
+    "generated_by": "Brandweer, Kazerne",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 956,
+    "additive_overlays": ""
+  },
+  {
+    "id": "956-0",
+    "name": "Brand in station",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 2540,
+    "generated_by": "Brandweer, Kazerne",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 8000,
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 956,
+    "additive_overlays": ""
+  },
+  {
+    "id": "956-1",
+    "name": "Brand in station",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 13220,
+    "generated_by": "Brandweer, Kazerne",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 39000,
+      "firetrucks": 1,
+      "spokesman": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 8,
+      "ovdp": 2,
+      "bike_police": 2
+    },
+    "chances": { "nef": 15, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 30,
+      "filter_id": "firehouse_missions",
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 13,
+      "fire_stations": 20
+    },
+    "overlay_index": 1,
+    "base_mission_id": 956,
+    "additive_overlays": ""
   }
 ]
