@@ -28688,5 +28688,183 @@
     "overlay_index": null,
     "base_mission_id": 757,
     "additive_overlays": ""
+  },
+  {
+    "id": "758",
+    "name": "Methane Leak",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 1000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "mobile_air_vehicles": 50, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [759],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-B-1M", "8-C-1M"],
+      "patient_allow_first_responder_chance": 50,
+      "fire_alarm_system_possible": true,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 758,
+    "additive_overlays": ""
+  },
+  {
+    "id": "759",
+    "name": "Methane Fire",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 4000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 2000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 3,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [760],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-B-1M", "8-C-1M", "8-D-3M"],
+      "patient_allow_first_responder_chance": 50,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 759,
+    "additive_overlays": ""
+  },
+  {
+    "id": "760",
+    "name": "Methane Explosion",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 9000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 6000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "police_cars": 5,
+      "foam": 3
+    },
+    "chances": { "patient_transport": 40, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 11,
+      "possible_patient_min": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5"],
+      "patient_allow_first_responder_chance": 50,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 760,
+    "additive_overlays": ""
+  },
+  {
+    "id": "760/a",
+    "name": "Methane Explosion",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 15000,
+    "generated_by": "Fire station",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5000,
+      "water_needed": 6000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "police_cars": 7,
+      "foam": 3,
+      "fire_investigation": 2
+    },
+    "chances": { "patient_transport": 40, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 11,
+      "possible_patient_min": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5"],
+      "patient_allow_first_responder_chance": 50,
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "fire_investigation_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 760,
+    "additive_overlays": "a"
   }
 ]
