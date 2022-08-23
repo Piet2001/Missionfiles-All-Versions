@@ -3284,7 +3284,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {},
     "chances": {},
     "additional": {
       "duration_text": "15 minuten",
@@ -32176,6 +32176,202 @@
     },
     "overlay_index": 1,
     "base_mission_id": 956,
+    "additive_overlays": ""
+  },
+  {
+    "id": "958",
+    "name": "Voetbalwedstrijd",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 10200,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "lebefkw": 1,
+      "grukw": 3,
+      "police_horse": 4
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 1,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 958,
+    "additive_overlays": ""
+  },
+  {
+    "id": "959",
+    "name": "Voetbalwedstrijd, risicowedstrijd",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 20910,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 2,
+      "ambulances": 2,
+      "lebefkw": 1,
+      "gefkw": 1,
+      "grukw": 6,
+      "police_horse": 8
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "bereitschaftspolizei": 6,
+      "riot_unit_count": 2,
+      "prisoner_transport_count": 1,
+      "police_horse": 2,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": null,
+    "base_mission_id": 959,
+    "additive_overlays": ""
+  },
+  {
+    "id": "960",
+    "name": "Begeleiding demonstratie (klein)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11220,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "lebefkw": 1,
+      "police_cars": 3,
+      "grukw": 3,
+      "police_horse": 4
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 3,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 1,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 960,
+    "additive_overlays": ""
+  },
+  {
+    "id": "961",
+    "name": "Toezicht Horeca",
+    "place": "Café/Club",
+    "place_array": ["Café/Club"],
+    "average_credits": 8745,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 1,
+      "police_cars": 3,
+      "police_horse": 4,
+      "bike_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 6,
+      "bereitschaftspolizei": 2,
+      "police_horse": 1,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": null,
+    "base_mission_id": 961,
+    "additive_overlays": ""
+  },
+  {
+    "id": "962",
+    "name": "Begeleiding supporters",
+    "place": "Stadion\nStadscentrum",
+    "place_array": ["Stadion", "Stadscentrum"],
+    "average_credits": 15608,
+    "generated_by": "Politie, Hoofdbureau",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 2,
+      "lebefkw": 1,
+      "gefkw": 1,
+      "police_cars": 10,
+      "grukw": 6,
+      "ovdp": 2,
+      "police_horse": 4,
+      "bike_police": 1,
+      "detention_unit": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "45 minuten",
+      "duration": 2700,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 13,
+      "bereitschaftspolizei": 6,
+      "riot_unit_count": 2,
+      "detention_unit_count": 1,
+      "prisoner_transport_count": 1,
+      "police_horse": 1,
+      "main_building_extensions": [2]
+    },
+    "overlay_index": null,
+    "base_mission_id": 962,
     "additive_overlays": ""
   }
 ]
