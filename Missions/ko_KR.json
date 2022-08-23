@@ -8611,9 +8611,14 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
+      "swat_personnel": 4,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 1
+    },
     "overlay_index": null,
     "base_mission_id": 287,
     "additive_overlays": ""
@@ -10267,6 +10272,589 @@
     },
     "overlay_index": null,
     "base_mission_id": 342,
+    "additive_overlays": ""
+  },
+  {
+    "id": "344",
+    "name": "위험한 팬의 에스코트",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17000,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 10,
+      "wasserwerfer": 1,
+      "detention_unit": 2,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "riot_police": 7,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 344,
+    "additive_overlays": ""
+  },
+  {
+    "id": "345",
+    "name": "위험 팬의 충돌 및 폭행",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23000,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 20,
+      "wasserwerfer": 1,
+      "detention_unit": 6,
+      "riot_police": 14,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 25,
+      "max_possible_prisoners": 40,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 18,
+      "riot_police": 10,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 345,
+    "additive_overlays": ""
+  },
+  {
+    "id": "346",
+    "name": "스포츠 경기 감독",
+    "place": "경기장",
+    "place_array": ["경기장"],
+    "average_credits": 2500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "riot_police": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 346,
+    "additive_overlays": ""
+  },
+  {
+    "id": "347",
+    "name": "위험한 스포츠 경기의 감독",
+    "place": "경기장",
+    "place_array": ["경기장"],
+    "average_credits": 9500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "detention_unit": 1,
+      "riot_police": 6,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 347,
+    "additive_overlays": ""
+  },
+  {
+    "id": "348",
+    "name": "뮤직 페스티벌 감독",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8200,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "riot_police": 4,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 348,
+    "additive_overlays": ""
+  },
+  {
+    "id": "349",
+    "name": "무단 테크노 파티",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 10,
+      "wasserwerfer": 1,
+      "detention_unit": 2,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 20,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "riot_police": 7,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 349,
+    "additive_overlays": ""
+  },
+  {
+    "id": "350",
+    "name": "소규모 항의",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5200,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "riot_police": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [351],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "외상학과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 350,
+    "additive_overlays": ""
+  },
+  {
+    "id": "351",
+    "name": "중간 항의",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 7,
+      "riot_police": 3,
+      "riot_police_equipment": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [352],
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "외상학과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": ""
+  },
+  {
+    "id": "352",
+    "name": "대규모 시위",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "detention_unit": 1,
+      "riot_police": 6,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [353],
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 352,
+    "additive_overlays": ""
+  },
+  {
+    "id": "353",
+    "name": "대규모 위험한 시위",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18000,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 16,
+      "wasserwerfer": 1,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 18,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "riot_police": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 353,
+    "additive_overlays": ""
+  },
+  {
+    "id": "354",
+    "name": "공개 이벤트 모니터링",
+    "place": "공원\n기차역(지역 교통 및 장거리 여행역)\n학교\n쇼핑몰",
+    "place_array": [
+      "공원",
+      "기차역(지역 교통 및 장거리 여행역)",
+      "학교",
+      "쇼핑몰"
+    ],
+    "average_credits": 1500,
+    "generated_by": "진압 경찰",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "riot_police": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [355],
+      "average_min_police_personnel": 16,
+      "filter_id": "riot_police_missions",
+      "allow_streifenwagen_instead_of_riot_police_van": true
+    },
+    "prerequisites": { "main_building": 11, "riot_police": 1 },
+    "overlay_index": null,
+    "base_mission_id": 354,
+    "additive_overlays": ""
+  },
+  {
+    "id": "355",
+    "name": "징후 확보(중)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6400,
+    "generated_by": "진압 경찰",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "detention_unit": 1,
+      "riot_police": 12,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [356],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 64,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 10,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 355,
+    "additive_overlays": ""
+  },
+  {
+    "id": "356",
+    "name": "징후 확보(대)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "진압 경찰",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "wasserwerfer": 1,
+      "detention_unit": 1,
+      "riot_police": 15,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [357],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 88,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 14,
+      "riot_police": 3,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 356,
+    "additive_overlays": ""
+  },
+  {
+    "id": "357",
+    "name": "발현확보(전공)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18200,
+    "generated_by": "진압 경찰",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "wasserwerfer": 2,
+      "detention_unit": 2,
+      "riot_police": 30,
+      "riot_police_equipment": 2,
+      "riot_police_maintenance": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [355],
+      "max_possible_prisoners": 16,
+      "average_min_police_personnel": 162,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 20,
+      "riot_police": 4,
+      "water_cannon": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 357,
+    "additive_overlays": ""
+  },
+  {
+    "id": "358",
+    "name": "마약 양조장에 대한 개입",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 358,
+    "additive_overlays": ""
+  },
+  {
+    "id": "359",
+    "name": "총기로 바리케이드된 사람",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "police_cars": 7 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 359,
+    "additive_overlays": ""
+  },
+  {
+    "id": "360",
+    "name": "무장 차량 추격",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "외상학과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 360,
+    "additive_overlays": ""
+  },
+  {
+    "id": "361",
+    "name": "홈 인베이전",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1250,
+    "generated_by": "경찰서",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "swat_personnel": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 9,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 361,
     "additive_overlays": ""
   }
 ]
