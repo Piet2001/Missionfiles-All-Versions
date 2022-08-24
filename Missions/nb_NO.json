@@ -13547,5 +13547,453 @@
     "overlay_index": null,
     "base_mission_id": 428,
     "additive_overlays": ""
+  },
+  {
+    "id": "430",
+    "name": "fangerflukt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "k9": 2,
+      "personnel_educations": { "riot_police": 2 },
+      "riot_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [431],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Demonstrasjonstrent": 2 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "riot_police": 4,
+      "personnel_educations": { "riot_police": 2 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": ""
+  },
+  {
+    "id": "431",
+    "name": "tilfluktsrom med gjeng",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "k9": 2,
+      "personnel_educations": { "riot_police": 4 },
+      "fbi_drone": 3,
+      "riot_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "swat_personnel": 4,
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true,
+      "personnel_educations": { "Demonstrasjonstrent": 4 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 12,
+      "riot_police": 5,
+      "personnel_educations": { "riot_police": 6 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": ""
+  },
+  {
+    "id": "432",
+    "name": "flykter mistenkt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 5, "riot_police": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 432,
+    "additive_overlays": ""
+  },
+  {
+    "id": "433",
+    "name": "Masseslagsmål",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": ""
+  },
+  {
+    "id": "433/a",
+    "name": "Masseslagsmål",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 5, "police_service_group_leader": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "434",
+    "name": "Lett flyulykke",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "Brannstasjon",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "nef": 80,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traume"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 434,
+    "additive_overlays": ""
+  },
+  {
+    "id": "434/a",
+    "name": "Lett flyulykke",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3400,
+    "generated_by": "Brannstasjon",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "nef": 80,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Traume"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 434,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "435",
+    "name": "Eskorte av risikable fans",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 4,
+      "police_horse": 6,
+      "traffic_car": 1,
+      "detention_unit": 2,
+      "riot_police": 10,
+      "riot_police_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "police_helicopter_stations": 1,
+      "riot_police": 5,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": ""
+  },
+  {
+    "id": "436",
+    "name": "sammenstøt og angrep av risikofans",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 20,
+      "k9": 4,
+      "police_horse": 6,
+      "traffic_car": 1,
+      "detention_unit": 6,
+      "riot_police": 14,
+      "riot_police_command": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 25,
+      "max_possible_prisoners": 40,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 18,
+      "police_helicopter_stations": 1,
+      "riot_police": 8,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 436,
+    "additive_overlays": ""
+  },
+  {
+    "id": "437",
+    "name": "Liten matbutikkran",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2, "bike_police": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 437,
+    "additive_overlays": ""
+  },
+  {
+    "id": "438",
+    "name": "En stor protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15400,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 14,
+      "personnel_educations": { "riot_police": 16 },
+      "bike_police": 2,
+      "riot_police": 1
+    },
+    "chances": { "patient_transport": 33 },
+    "additional": {
+      "possible_patient": 5,
+      "max_possible_prisoners": 10,
+      "average_min_police_personnel": 30,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "subsequent_missions_ids": [439],
+      "patient_at_end_of_mission": true,
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Demonstrasjonstrent": 16 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "riot_police": 32 },
+      "bike_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 438,
+    "additive_overlays": ""
+  },
+  {
+    "id": "439",
+    "name": "Legger ned en protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9100,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "personnel_educations": { "riot_police_command": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "average_min_police_personnel": 24,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "personnel_educations": { "Demonstrasjonsinnsatsleder": 2 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "personnel_educations": { "riot_police_command": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 439,
+    "additive_overlays": ""
+  },
+  {
+    "id": "439/a",
+    "name": "Legger ned en protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10100,
+    "generated_by": "Politistasjon",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "personnel_educations": { "riot_police_command": 2, "riot_police": 10 }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "average_min_police_personnel": 24,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "personnel_educations": {
+        "Demonstrasjonsinnsatsleder": 2,
+        "Demonstrasjonstrent": 10
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "personnel_educations": { "riot_police_command": 4, "riot_police": 15 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 439,
+    "additive_overlays": "a"
   }
 ]
