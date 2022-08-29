@@ -642,7 +642,11 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "prerequisites": {
+      "main_building": 0,
+      "building_specializations": ["fire_support"],
+      "fire_stations": 5
+    },
     "overlay_index": null,
     "base_mission_id": 28,
     "additive_overlays": ""
@@ -677,6 +681,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 2,
       "fire_stations": 5
     },
@@ -708,6 +713,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_stations": 13
     },
@@ -743,6 +749,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_support_count": 2,
       "fire_stations": 13
@@ -1069,6 +1076,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_stations": 14
@@ -1116,6 +1124,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "police_stations": 2,
       "fire_support_count": 3,
@@ -1701,6 +1710,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["traffic_police"],
       "rescue_stations": 8,
       "fire_stations": 3
     },
@@ -1735,6 +1745,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["traffic_police"],
       "rescue_stations": 8,
       "police_stations": 2,
       "traffic_police": 1,
@@ -1874,6 +1885,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_stations": 13
     },
@@ -1907,6 +1919,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 2,
       "fire_support_count": 1,
       "fire_stations": 13
@@ -2766,6 +2779,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 1,
       "fire_stations": 7
     },
@@ -2799,6 +2813,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 1,
       "fire_support_count": 2,
       "fire_stations": 7
@@ -4570,6 +4585,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 2,
       "rescue_stations": 1,
       "police_stations": 2,
@@ -4606,6 +4622,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 3,
       "rescue_stations": 1,
       "police_stations": 3,
@@ -4642,6 +4659,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 3,
       "rescue_stations": 10,
       "police_stations": 3,
@@ -4674,6 +4692,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 1
     },
@@ -4712,6 +4731,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 2,
       "rescue_stations": 1,
       "police_stations": 4,
@@ -4737,7 +4757,11 @@
     "requirements": { "boats": 1 },
     "chances": {},
     "additional": { "filter_id": "water_watch_missions" },
-    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "prerequisites": {
+      "main_building": 15,
+      "building_specializations": ["water_rescue"],
+      "wasserrettung": 1
+    },
     "overlay_index": null,
     "base_mission_id": 163,
     "additive_overlays": ""
@@ -4765,6 +4789,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 1
     },
@@ -5287,6 +5312,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 1,
       "fire_stations": 3,
       "main_building_extensions": [2]
@@ -5321,6 +5347,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 2,
       "fire_stations": 8,
       "main_building_extensions": [2]
@@ -5355,6 +5382,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 3,
       "fire_stations": 10,
       "main_building_extensions": [2]
@@ -5390,6 +5418,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "police_stations": 4,
       "brush_extension": 4,
       "fire_stations": 14,
@@ -5419,6 +5448,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 1,
       "fire_stations": 2,
       "main_building_extensions": [2]
@@ -5447,6 +5477,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 1,
       "fire_stations": 3,
       "main_building_extensions": [2]
@@ -5476,6 +5507,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 3,
       "fire_stations": 6,
       "main_building_extensions": [2]
@@ -5501,6 +5533,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 2,
       "fire_stations": 2,
       "main_building_extensions": [2]
@@ -7440,6 +7473,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 2,
       "fire_stations": 9,
       "main_building_extensions": [2]
@@ -7476,6 +7510,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "rescue_stations": 4,
       "brush_extension": 1,
       "fire_stations": 9,
@@ -7513,6 +7548,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "rescue_stations": 2,
       "brush_extension": 1,
       "fire_stations": 9,
@@ -7542,6 +7578,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 1,
       "main_building_extensions": [2]
     },
@@ -7574,6 +7611,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 2,
       "fire_stations": 5,
       "main_building_extensions": [2]
@@ -7607,6 +7645,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 3,
       "fire_stations": 7,
       "main_building_extensions": [2]
@@ -7640,6 +7679,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["forestry"],
       "brush_extension": 4,
       "fire_aviation_count": 1,
       "fire_stations": 8,
@@ -8110,6 +8150,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 40,
       "police_stations": 10,
       "fire_stations": 40
@@ -8154,6 +8195,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 40,
       "police_stations": 10,
       "fire_support_count": 3,
@@ -8210,6 +8252,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 5,
       "fire_stations": 4
     },
@@ -8240,6 +8283,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "police_stations": 5,
       "fire_support_count": 1,
       "fire_stations": 4
@@ -8312,6 +8356,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 5,
       "police_stations": 3,
       "fire_stations": 13
@@ -8350,6 +8395,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 5,
       "police_stations": 7,
       "police_service_group_leader": 1,
@@ -8390,6 +8436,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 5,
       "police_stations": 3,
       "fire_support_count": 1,
@@ -8431,6 +8478,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 5,
       "police_stations": 7,
       "fire_support_count": 1,
@@ -8979,6 +9027,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 3,
       "fire_stations": 11
@@ -9020,6 +9069,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 3,
       "police_stations": 7,
@@ -9493,6 +9543,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 3,
       "fire_stations": 11
@@ -9530,6 +9581,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 1,
       "rescue_stations": 3,
       "police_stations": 7,
@@ -10319,6 +10371,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 13
     },
@@ -10432,6 +10485,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 1,
       "fire_stations": 6
@@ -10473,6 +10527,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 2,
       "fire_stations": 13
@@ -10514,6 +10569,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 2,
       "fire_support_count": 3,
       "fire_stations": 15
@@ -10579,6 +10635,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 2,
       "fire_stations": 11
     },
@@ -10850,6 +10907,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "fire_support_count": 1,
       "fire_stations": 5
     },
@@ -10987,6 +11045,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 5,
       "fire_stations": 14
@@ -11028,6 +11087,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 8,
       "police_stations": 5,
       "fire_support_count": 1,
@@ -11068,6 +11128,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 6,
       "fire_stations": 15
@@ -11108,6 +11169,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 10,
       "police_stations": 6,
       "fire_support_count": 1,
@@ -11222,6 +11284,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["fire_support"],
       "rescue_stations": 5,
       "fire_support_count": 1,
       "fire_stations": 10,
@@ -11994,6 +12057,7 @@
     },
     "prerequisites": {
       "main_building": 15,
+      "building_specializations": ["water_rescue"],
       "wasserrettung": 2,
       "police_stations": 1,
       "fire_stations": 1
@@ -12228,6 +12292,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["traffic_police"],
       "police_stations": 2,
       "traffic_police": 1,
       "fire_stations": 13
@@ -12261,6 +12326,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["traffic_police"],
       "police_stations": 7,
       "police_helicopter_stations": 1,
       "traffic_police": 2
@@ -12304,6 +12370,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["traffic_police"],
       "rescue_stations": 2,
       "police_stations": 11,
       "police_helicopter_stations": 1,
@@ -12337,6 +12404,7 @@
     },
     "prerequisites": {
       "main_building": 6,
+      "building_specializations": ["traffic_police"],
       "rescue_stations": 1,
       "police_stations": 3,
       "traffic_police": 1
@@ -12362,6 +12430,7 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
+      "building_specializations": ["traffic_police"],
       "police_stations": 1,
       "traffic_police": 1,
       "fire_stations": 2
