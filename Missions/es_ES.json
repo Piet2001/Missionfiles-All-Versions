@@ -6259,6 +6259,43 @@
     "additive_overlays": ""
   },
   {
+    "id": "217/a",
+    "name": "Pequeña protesta violenta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5200,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "swat_armored_vehicle": 2,
+      "police_cars": 4,
+      "k9": 1,
+      "riot_police": 1,
+      "riot_police_command": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [218],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatología"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 8,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 217,
+    "additive_overlays": "a"
+  },
+  {
     "id": "218",
     "name": "Protesta violenta media",
     "place": "",
@@ -6279,6 +6316,7 @@
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 5,
+      "expansion_missions_ids": [407],
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
       "patient_specializations": "Traumatología"
@@ -6292,6 +6330,46 @@
     "overlay_index": null,
     "base_mission_id": 218,
     "additive_overlays": ""
+  },
+  {
+    "id": "218/a",
+    "name": "Protesta violenta media",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "swat_armored_vehicle": 4,
+      "police_helicopters": 1,
+      "police_cars": 7,
+      "k9": 1,
+      "riot_police": 3,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [407],
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Traumatología"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 218,
+    "additive_overlays": "a"
   },
   {
     "id": "219",
@@ -11870,6 +11948,429 @@
     },
     "overlay_index": null,
     "base_mission_id": 400,
+    "additive_overlays": ""
+  },
+  {
+    "id": "401",
+    "name": "Escolta de aficionados de riesgo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17000,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 4,
+      "wasserwerfer": 1,
+      "detention_unit": 2,
+      "riot_police": 10,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "police_helicopter_stations": 1,
+      "riot_police": 5,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 401,
+    "additive_overlays": ""
+  },
+  {
+    "id": "402",
+    "name": "Contención y asalto de hinchas de riesgo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23000,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 20,
+      "k9": 4,
+      "wasserwerfer": 1,
+      "police_horse": 6,
+      "detention_unit": 6,
+      "riot_police": 14,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 25,
+      "max_possible_prisoners": 40,
+      "filter_id": "police_station_missions",
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 18,
+      "police_helicopter_stations": 1,
+      "riot_police": 8,
+      "water_cannon": 1,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 402,
+    "additive_overlays": ""
+  },
+  {
+    "id": "403",
+    "name": "Supervisión en un partido deportivo",
+    "place": "Estadio",
+    "place_array": ["Estadio"],
+    "average_credits": 2500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "riot_police": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 403,
+    "additive_overlays": ""
+  },
+  {
+    "id": "404",
+    "name": "Supervisión de un partido de deportes de riesgo",
+    "place": "Estadio",
+    "place_array": ["Estadio"],
+    "average_credits": 9500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "k9": 2,
+      "detention_unit": 1,
+      "riot_police": 6,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 404,
+    "additive_overlays": ""
+  },
+  {
+    "id": "405",
+    "name": "Supervisión en festival de música",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8200,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "k9": 1,
+      "riot_police": 4,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 405,
+    "additive_overlays": ""
+  },
+  {
+    "id": "406",
+    "name": "Fiesta techno no autorizada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 3,
+      "wasserwerfer": 1,
+      "police_horse": 2,
+      "detention_unit": 2,
+      "riot_police": 10,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 20,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "police_helicopter_stations": 1,
+      "riot_police": 5,
+      "water_cannon": 1,
+      "police_horse": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 406,
+    "additive_overlays": ""
+  },
+  {
+    "id": "407",
+    "name": "Gran protesta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "detention_unit": 1,
+      "riot_police": 6,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [408],
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 407,
+    "additive_overlays": ""
+  },
+  {
+    "id": "408",
+    "name": "Gran protesta peligrosa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18000,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 16,
+      "k9": 2,
+      "wasserwerfer": 1,
+      "riot_police": 10,
+      "riot_police_command": 2,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 18,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "riot_police": 6,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 408,
+    "additive_overlays": ""
+  },
+  {
+    "id": "409",
+    "name": "Supervisión de eventos públicos",
+    "place": "Parque\nParada de tren (cercanías y larga distancia)\nEscuela\nCentro comercial",
+    "place_array": [
+      "Parque",
+      "Parada de tren (cercanías y larga distancia)",
+      "Escuela",
+      "Centro comercial"
+    ],
+    "average_credits": 1500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "riot_police": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [410],
+      "average_min_police_personnel": 16,
+      "filter_id": "riot_police_missions",
+      "allow_streifenwagen_instead_of_riot_police_van": true
+    },
+    "prerequisites": { "main_building": 6, "riot_police": 1 },
+    "overlay_index": null,
+    "base_mission_id": 409,
+    "additive_overlays": ""
+  },
+  {
+    "id": "410",
+    "name": "Manifestación segura (media)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6400,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "detention_unit": 1,
+      "riot_police": 12,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [411],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 64,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": ""
+  },
+  {
+    "id": "411",
+    "name": "Manifestación segura (grande)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "wasserwerfer": 1,
+      "detention_unit": 1,
+      "riot_police": 15,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [412],
+      "max_possible_prisoners": 8,
+      "average_min_police_personnel": 88,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 14,
+      "riot_police": 3,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 411,
+    "additive_overlays": ""
+  },
+  {
+    "id": "412",
+    "name": "Aseguramiento de la Manifestación (Mayor)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18200,
+    "generated_by": "Comisaría de policía",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "wasserwerfer": 2,
+      "detention_unit": 2,
+      "riot_police": 30,
+      "riot_police_command": 2,
+      "riot_police_equipment": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [410],
+      "max_possible_prisoners": 16,
+      "average_min_police_personnel": 162,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 20,
+      "riot_police": 4,
+      "water_cannon": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 412,
     "additive_overlays": ""
   }
 ]
