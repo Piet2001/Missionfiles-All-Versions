@@ -60,11 +60,42 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [28, 138, 141, 146],
+      "expansion_missions_ids": [28, 138, 141, 303],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": ""
+  },
+  {
+    "id": "2-0",
+    "name": "Brennender PKW (E-Auto)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 25, "police_cars": 30 },
+    "additional": {
+      "expansion_missions_ids": [28, 138, 141, 303],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": 0,
     "base_mission_id": 2,
     "additive_overlays": ""
   },
@@ -9463,6 +9494,39 @@
     "additive_overlays": ""
   },
   {
+    "id": "259-0",
+    "name": "Brennender PKW (E-Auto)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 25, "police_cars": 30 },
+    "additional": {
+      "expansion_missions_ids": [28, 138, 141, 146],
+      "filter_id": "firehouse_missions",
+      "date_start": "2021-12-27T10:00:00Z",
+      "date_end": "2022-01-01T23:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": 0,
+    "base_mission_id": 259,
+    "additive_overlays": ""
+  },
+  {
     "id": "260",
     "name": "Sperrmüllbrand durch Feuerwerkskörper",
     "place": "",
@@ -12873,13 +12937,48 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [344, 576],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": {
       "main_building": 0,
       "fire_stations": 1,
       "main_building_extensions": [8]
     },
     "overlay_index": null,
+    "base_mission_id": 337,
+    "additive_overlays": ""
+  },
+  {
+    "id": "337-0",
+    "name": "Brennender PKW (E-Auto)",
+    "place": "Flughafen (groß): Parkhaus",
+    "place_array": ["Flughafen (groß): Parkhaus"],
+    "average_credits": 800,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 25, "police_cars": 30 },
+    "additional": {
+      "expansion_missions_ids": [344, 576],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 2,
+      "main_building_extensions": [8]
+    },
+    "overlay_index": 0,
     "base_mission_id": 337,
     "additive_overlays": ""
   },
@@ -15519,16 +15618,23 @@
     "name": "Brennender PKW",
     "place": "Automobilindustrie",
     "place_array": ["Automobilindustrie"],
-    "average_credits": 400,
+    "average_credits": 900,
     "generated_by": "Werkfeuerwehr",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": { "filter_id": "factory_fire_brigade_missions" },
+    "requirements": {
+      "firetrucks": 1,
+      "ulf": 1,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": { "battalion_chief_vehicles": 50 },
+    "additional": {
+      "expansion_missions_ids": [485],
+      "filter_id": "factory_fire_brigade_missions"
+    },
     "prerequisites": {
       "main_building": -2,
       "werkfeuerwehr": 1,
