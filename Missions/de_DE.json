@@ -113,11 +113,41 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [14, 28, 144, 303],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 3,
     "additive_overlays": ""
+  },
+  {
+    "id": "3/a",
+    "name": "Motorrad-Brand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 490,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [14, 28, 144, 303],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 3,
+    "additive_overlays": "a"
   },
   {
     "id": "4",
@@ -12996,7 +13026,10 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [576],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": {
       "main_building": 0,
       "fire_stations": 1,
@@ -13005,6 +13038,34 @@
     "overlay_index": null,
     "base_mission_id": 338,
     "additive_overlays": ""
+  },
+  {
+    "id": "338/a",
+    "name": "Motorrad-Brand",
+    "place": "Flughafen (groß): Parkhaus",
+    "place_array": ["Flughafen (groß): Parkhaus"],
+    "average_credits": 490,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [576],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1,
+      "main_building_extensions": [8]
+    },
+    "overlay_index": null,
+    "base_mission_id": 338,
+    "additive_overlays": "a"
   },
   {
     "id": "339",
