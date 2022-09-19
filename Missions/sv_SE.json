@@ -13603,5 +13603,72 @@
     "overlay_index": null,
     "base_mission_id": 445,
     "additive_overlays": ""
+  },
+  {
+    "id": "446",
+    "name": "Trafikstockning vid köpcentrum",
+    "place": "Köpcentrum",
+    "place_array": ["Köpcentrum"],
+    "average_credits": 1200,
+    "generated_by": "Polisstation",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 2, "traffic_car": 1 },
+    "chances": { "traffic_car": 25 },
+    "additional": {
+      "average_min_police_personnel": 6,
+      "filter_id": "police_station_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "traffic_police": 1,
+      "building_specializations": ["traffic_police"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 446,
+    "additive_overlays": ""
+  },
+  {
+    "id": "447",
+    "name": "Olycka under polisjakt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Brandstation",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 447,
+    "additive_overlays": ""
   }
 ]
