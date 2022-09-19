@@ -1542,7 +1542,7 @@
     "name": "Crash d'aéronef",
     "place": "Petit aéroport (piste)",
     "place_array": ["Petit aéroport (piste)"],
-    "average_credits": 2000,
+    "average_credits": 4000,
     "generated_by": "Centre de secours",
     "icons": [
       "/images/planecrash_gruen.png",
@@ -1683,7 +1683,8 @@
       "water_needed": 4000,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "platform_trucks": 1,
+      "police_cars": 2
     },
     "chances": {
       "battalion_chief_vehicles": 40,
@@ -1695,7 +1696,11 @@
       "filter_id": "firehouse_missions",
       "patient_specializations": "Interne général"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 66,
     "additive_overlays": ""
@@ -12450,7 +12455,12 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "police_cars": 1,
+      "thw_gkw": 1
+    },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
     "additional": {
       "possible_patient": 1,
@@ -12462,6 +12472,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
+      "police_stations": 1,
       "fire_stations": 2
     },
     "overlay_index": null,
@@ -14645,5 +14656,43 @@
     "overlay_index": null,
     "base_mission_id": 472,
     "additive_overlays": "a"
+  },
+  {
+    "id": "473",
+    "name": "AVP multiples suite à contresens sur l'autoroute",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 8,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 1,
+      "kdow_orgl": 1
+    },
+    "chances": { "patient_transport": 65, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [457],
+      "filter_id": "firehouse_missions",
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 473,
+    "additive_overlays": ""
   }
 ]
