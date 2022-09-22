@@ -494,7 +494,7 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 1
     },
-    "chances": { "battalion_chief_vehicles": 90 },
+    "chances": { "battalion_chief_vehicles": 60 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
@@ -519,7 +519,7 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
     },
-    "chances": {},
+    "chances": { "battalion_chief_vehicles": 50 },
     "additional": {
       "expansion_missions_ids": [22],
       "filter_id": "firehouse_missions"
@@ -776,7 +776,7 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
     },
-    "chances": {},
+    "chances": { "battalion_chief_vehicles": 30 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 14 },
     "overlay_index": null,
@@ -2191,7 +2191,10 @@
     ],
     "requirements": { "firetrucks": 1, "platform_trucks": 1 },
     "chances": { "platform_trucks": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 84,
@@ -2450,7 +2453,7 @@
       "firetrucks": 3,
       "battalion_chief_vehicles": 1
     },
-    "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
+    "chances": { "battalion_chief_vehicles": 60, "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
@@ -2720,7 +2723,6 @@
     "requirements": {
       "water_needed": 14000,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
       "water_tankers": 1,
       "police_cars": 1
     },
@@ -2750,20 +2752,12 @@
     "requirements": {
       "water_needed": 9200,
       "firetrucks": 3,
-      "battalion_chief_vehicles": 2,
-      "water_tankers": 1,
-      "police_cars": 1
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1
     },
     "chances": { "water_tankers": 20 },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 1
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 7
-    },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 102,
     "additive_overlays": ""
@@ -3184,9 +3178,9 @@
     ],
     "requirements": {},
     "chances": {
-      "patient_transport": 50,
+      "patient_transport": 100,
       "helicopter": 30,
-      "patient_critical_care": 25
+      "patient_critical_care": 40
     },
     "additional": {
       "possible_patient": 1,
@@ -3385,7 +3379,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "battalion_chief_vehicles": 1 },
+    "requirements": { "firetrucks": 2 },
     "chances": { "patient_transport": 80, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 2,
@@ -3775,7 +3769,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 6000,
+      "foam_needed": 2000,
       "water_needed": 45000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
@@ -3819,7 +3813,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 6000,
+      "foam_needed": 2000,
       "water_needed": 45000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
@@ -3890,11 +3884,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "water_needed": 8500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
-    },
+    "requirements": { "water_needed": 8500, "firetrucks": 3 },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 2,
@@ -3969,7 +3959,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "fire_stations": 4
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 131,
@@ -4001,8 +3991,8 @@
   {
     "id": "133",
     "name": "Zagrożenie dla urzędnika państwowego",
-    "place": "Stacja metra",
-    "place_array": ["Stacja metra"],
+    "place": "Centrum Miasta",
+    "place_array": ["Centrum Miasta"],
     "average_credits": 750,
     "generated_by": "Komenda Policji",
     "icons": [
@@ -4428,7 +4418,7 @@
     "name": "Mały niebezpieczny protest",
     "place": "",
     "place_array": [],
-    "average_credits": 7300,
+    "average_credits": 9600,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -4499,7 +4489,7 @@
     "name": "Średni niebezpieczny protest",
     "place": "",
     "place_array": [],
-    "average_credits": 13500,
+    "average_credits": 15500,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -5230,11 +5220,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "water_needed": 8500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
-    },
+    "requirements": { "water_needed": 8500, "firetrucks": 3 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
@@ -5517,7 +5503,7 @@
       "foam_needed": 6000,
       "water_needed": 70000,
       "firetrucks": 17,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
       "hazmat_vehicles": 1,
@@ -5551,7 +5537,7 @@
       "foam_needed": 6000,
       "water_needed": 70000,
       "firetrucks": 17,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
       "hazmat_vehicles": 1,
@@ -5786,7 +5772,7 @@
     ],
     "requirements": {
       "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2
     },
     "chances": {
@@ -5824,7 +5810,7 @@
     ],
     "requirements": {
       "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 3,
       "road_rescue": 1
@@ -6709,7 +6695,7 @@
       "foam_needed": 1500,
       "water_needed": 30000,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
@@ -6824,7 +6810,10 @@
       "hose": 1
     },
     "chances": { "hose": 10 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [431],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 213,
@@ -6844,7 +6833,7 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 1
     },
@@ -6921,7 +6910,7 @@
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
     },
-    "chances": { "heavy_rescue_vehicles": 25 },
+    "chances": { "battalion_chief_vehicles": 50, "heavy_rescue_vehicles": 25 },
     "additional": {
       "expansion_missions_ids": [22],
       "filter_id": "firehouse_missions"
@@ -7106,8 +7095,8 @@
   {
     "id": "227",
     "name": "Pożar w zajezdni tramwajowej",
-    "place": "",
-    "place_array": [],
+    "place": "Przystanek tramwajowy",
+    "place_array": ["Przystanek tramwajowy"],
     "average_credits": 4800,
     "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
@@ -7171,6 +7160,7 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "patient_specializations": "Interna"
     },
     "prerequisites": {
@@ -7884,7 +7874,7 @@
     "requirements": {
       "water_needed": 42000,
       "firetrucks": 7,
-      "battalion_chief_vehicles": 3,
+      "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1
@@ -9407,7 +9397,7 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1
     },
-    "chances": {},
+    "chances": { "battalion_chief_vehicles": 20 },
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
@@ -10051,7 +10041,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 5000,
+      "foam_needed": 1000,
       "water_needed": 14500,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
@@ -11350,6 +11340,7 @@
       "swat_personnel": 24,
       "average_min_police_personnel": 32,
       "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
       "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 2,
       "patient_specializations": "Traumatologia"
@@ -11932,7 +11923,7 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1
     },
-    "chances": { "battalion_chief_vehicles": 25 },
+    "chances": { "battalion_chief_vehicles": 20 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
@@ -12187,11 +12178,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
-    },
+    "requirements": { "firetrucks": 4, "platform_trucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [118, 121],
@@ -12214,11 +12201,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
-    },
+    "requirements": { "firetrucks": 5, "platform_trucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [194, 212],
@@ -12247,7 +12230,10 @@
       "battalion_chief_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [532],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 12 },
     "overlay_index": null,
     "base_mission_id": 387,
@@ -12450,7 +12436,7 @@
   },
   {
     "id": "393",
-    "name": "Zawalenie mostu",
+    "name": "Zawalenie wiaduktu",
     "place": "Most",
     "place_array": ["Most"],
     "average_credits": 9500,
@@ -12920,7 +12906,7 @@
       "water_needed": 54000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
+      "platform_trucks": 2,
       "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
       "mobile_air_vehicles": 1
@@ -13377,17 +13363,13 @@
     "place": "",
     "place_array": [],
     "average_credits": 1200,
-    "generated_by": "Stacja Pogotowia Ratunkowego",
+    "generated_by": "Jednostka Ratowniczo-Gaśnicza",
     "icons": [
       "/images/medicalstore_gruen.png",
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
-      "police_cars": 2
-    },
+    "requirements": { "firetrucks": 1, "police_cars": 2 },
     "chances": {
       "patient_transport": 100,
       "helicopter": 75,
@@ -13401,7 +13383,7 @@
       "patient_specializations": "Interna"
     },
     "prerequisites": {
-      "main_building": 2,
+      "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 4,
       "fire_stations": 2
@@ -13424,7 +13406,7 @@
     ],
     "requirements": {
       "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "flood_equipment": 2
     },
@@ -13534,7 +13516,7 @@
     "requirements": {
       "water_needed": 180000,
       "firetrucks": 30,
-      "battalion_chief_vehicles": 8,
+      "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
       "water_tankers": 2,
       "police_cars": 2
@@ -13771,11 +13753,7 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
-      "police_cars": 1
-    },
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
     "chances": {
       "battalion_chief_vehicles": 30,
       "patient_transport": 60,
@@ -15389,7 +15367,7 @@
   },
   {
     "id": "481",
-    "name": "Oparzenie I stopnia",
+    "name": "Gorączka wywołana oparzeniem",
     "place": "",
     "place_array": [],
     "average_credits": 200,
@@ -15695,6 +15673,7 @@
       "possible_patient_min": 1,
       "allow_rw_instead_of_lf": true,
       "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
       "patient_specializations": "Neurologia"
     },
     "prerequisites": {
@@ -15723,11 +15702,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "water_needed": 8000,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
-    },
+    "requirements": { "water_needed": 8000, "firetrucks": 3 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -15777,7 +15752,7 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "battalion_chief_vehicles": 3,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
     },
@@ -15814,7 +15789,7 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "battalion_chief_vehicles": 3,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1,
       "traffic_car": 1
@@ -16476,7 +16451,10 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 511,
@@ -16496,7 +16474,10 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 512,
@@ -16622,7 +16603,10 @@
       "height_rescue_units": 1
     },
     "chances": { "height_rescue_units": 80 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 14 },
     "overlay_index": null,
     "base_mission_id": 517,
@@ -17533,7 +17517,7 @@
     "name": "Zabezpieczenie niezapowiedzianego zgromadzenia (małe)",
     "place": "",
     "place_array": [],
-    "average_credits": 3800,
+    "average_credits": 4300,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/zoom_gruen.png",
@@ -17564,7 +17548,7 @@
     "name": "Zabezpieczenie niezapowiedzianego zgromadzenia (duże)",
     "place": "",
     "place_array": [],
-    "average_credits": 7500,
+    "average_credits": 8600,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/zoom_gruen.png",
@@ -17598,7 +17582,7 @@
     "name": "Mały protest",
     "place": "",
     "place_array": [],
-    "average_credits": 6600,
+    "average_credits": 7500,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -17632,7 +17616,7 @@
     "name": "Średni protest",
     "place": "",
     "place_array": [],
-    "average_credits": 9800,
+    "average_credits": 11200,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -17666,7 +17650,7 @@
     "name": "Duży protest",
     "place": "",
     "place_array": [],
-    "average_credits": 12500,
+    "average_credits": 14300,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -17703,7 +17687,7 @@
     "name": "Duży niebezpieczny protest",
     "place": "",
     "place_array": [],
-    "average_credits": 18000,
+    "average_credits": 20700,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -17741,7 +17725,7 @@
     "name": "Średnie zamieszki",
     "place": "",
     "place_array": [],
-    "average_credits": 8500,
+    "average_credits": 9700,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -17775,7 +17759,7 @@
     "name": "Duże zamieszki",
     "place": "",
     "place_array": [],
-    "average_credits": 12000,
+    "average_credits": 18800,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -17814,7 +17798,7 @@
     "name": "Małe zamieszki",
     "place": "",
     "place_array": [],
-    "average_credits": 5000,
+    "average_credits": 5700,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -17847,7 +17831,7 @@
     "name": "Planowane zgromadzenie (małe)",
     "place": "",
     "place_array": [],
-    "average_credits": 3500,
+    "average_credits": 4000,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/clock_gruen.png",
@@ -17881,7 +17865,7 @@
     "name": "Planowane zgromadzenie (średnie)",
     "place": "",
     "place_array": [],
-    "average_credits": 6500,
+    "average_credits": 7400,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/clock_gruen.png",
@@ -17915,7 +17899,7 @@
     "name": "Planowane zgromadzenie (duże)",
     "place": "",
     "place_array": [],
-    "average_credits": 7000,
+    "average_credits": 8000,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/clock_gruen.png",
@@ -17953,7 +17937,7 @@
     "name": "Zabezpieczenie meczu piłkarskiego",
     "place": "Stadion",
     "place_array": ["Stadion"],
-    "average_credits": 10900,
+    "average_credits": 12500,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/stadium_gruen.png",
@@ -18002,7 +17986,7 @@
     "name": "Zabezpieczenie przemówienia VIPa",
     "place": "Dyskoteka",
     "place_array": ["Dyskoteka"],
-    "average_credits": 5800,
+    "average_credits": 6600,
     "generated_by": "Komenda Policji",
     "icons": [
       "/images/clock_gruen.png",
@@ -18129,33 +18113,6 @@
     "additive_overlays": ""
   },
   {
-    "id": "567",
-    "name": "Kontrola trzeźwości",
-    "place": "",
-    "place_array": [],
-    "average_credits": 3500,
-    "generated_by": "Komenda Policji",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "police_cars": 1, "traffic_car": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "subsequent_missions_ids": [268]
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "traffic_police": 4,
-      "building_specializations": ["traffic_police"]
-    },
-    "overlay_index": null,
-    "base_mission_id": 567,
-    "additive_overlays": ""
-  },
-  {
     "id": "568",
     "name": "Pożar poszycia leśnego",
     "place": "Las",
@@ -18218,7 +18175,7 @@
     "name": "Małe ekstremistyczne zamieszki",
     "place": "",
     "place_array": [],
-    "average_credits": 9500,
+    "average_credits": 10900,
     "generated_by": "Poligon Oddziału Prewencji Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -18260,7 +18217,7 @@
     "name": "Średnie ekstremistyczne zamieszki",
     "place": "",
     "place_array": [],
-    "average_credits": 14900,
+    "average_credits": 17100,
     "generated_by": "Poligon Oddziału Prewencji Policji",
     "icons": [
       "/images/baseball_gruen.png",
@@ -18846,6 +18803,35 @@
     },
     "overlay_index": null,
     "base_mission_id": 587,
+    "additive_overlays": ""
+  },
+  {
+    "id": "589",
+    "name": "Kontrola trzeźwości",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "Komenda Policji",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "traffic_car": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 godzina",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "traffic_police": 4,
+      "building_specializations": ["traffic_police"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 589,
     "additive_overlays": ""
   }
 ]
