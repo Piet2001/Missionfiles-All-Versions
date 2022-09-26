@@ -15011,11 +15011,10 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
-      "ambulances": 2,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
+      "police_cars": 1,
+      "water_rescue": 1,
+      "boats": 1
     },
     "chances": { "patient_transport": 65, "helicopter": 15 },
     "additional": {
@@ -15028,6 +15027,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 4,
       "police_stations": 5,
       "fire_stations": 15,
@@ -15050,11 +15050,10 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
+      "police_cars": 1,
+      "water_rescue": 1,
+      "boats": 1
     },
     "chances": { "patient_transport": 65, "helicopter": 50 },
     "additional": {
@@ -15068,6 +15067,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 8,
       "police_stations": 5,
       "fire_stations": 15,
@@ -15091,10 +15091,10 @@
     ],
     "requirements": {
       "firetrucks": 1,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
+      "police_cars": 1,
+      "water_rescue": 1,
+      "boats": 1
     },
     "chances": { "patient_transport": 65, "helicopter": 15 },
     "additional": {
@@ -15107,6 +15107,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 1,
       "police_stations": 1,
       "fire_stations": 6,
@@ -15129,12 +15130,12 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "police_cars": 2,
-      "kdow_orgl": 1
+      "water_rescue": 2,
+      "boats": 2,
+      "kdow_orgl": 1,
+      "personnel_educations": { "gw_taucher": 3, "gw_wasserrettung": 2 }
     },
     "chances": { "patient_transport": 65, "helicopter": 50 },
     "additional": {
@@ -15143,10 +15144,15 @@
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Chirurgien général"],
-      "patient_specializations": "Chirurgien général"
+      "patient_specializations": "Chirurgien général",
+      "personnel_educations": {
+        "PLG (Plongeur)": 3,
+        "SAV (Sauvetage Aquatique)": 2
+      }
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 8,
       "police_stations": 5,
       "fire_stations": 15
