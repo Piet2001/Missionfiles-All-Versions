@@ -14936,5 +14936,187 @@
     "overlay_index": null,
     "base_mission_id": 473,
     "additive_overlays": ""
+  },
+  {
+    "id": "474",
+    "name": "Crise hypertensive",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Poste Ambulancier",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiologie"],
+      "patient_specializations": "Cardiologie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": ""
+  },
+  {
+    "id": "475",
+    "name": "Plan SATER Charlie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [61],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 475,
+    "additive_overlays": ""
+  },
+  {
+    "id": "476",
+    "name": "Naufrage d'un bateau de plaisance",
+    "place": "Lac\nRivière\nMarina\nVoie navigable\nQuai",
+    "place_array": ["Lac", "Rivière", "Marina", "Voie navigable", "Quai"],
+    "average_credits": 1500,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 65, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 4,
+      "police_stations": 5,
+      "fire_stations": 15,
+      "building_specializations": ["water_rescue"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 476,
+    "additive_overlays": ""
+  },
+  {
+    "id": "477",
+    "name": "Panne de moteur de bateau",
+    "place": "Lac\nRivière\nMarina\nVoie navigable\nQuai",
+    "place_array": ["Lac", "Rivière", "Marina", "Voie navigable", "Quai"],
+    "average_credits": 1500,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [476],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "fire_stations": 15,
+      "building_specializations": ["water_rescue"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": ""
+  },
+  {
+    "id": "478",
+    "name": "Découverte de noyé",
+    "place": "Lac\nRivière\nMarina\nVoie navigable\nQuai",
+    "place_array": ["Lac", "Rivière", "Marina", "Voie navigable", "Quai"],
+    "average_credits": 5000,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 65, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6,
+      "building_specializations": ["water_rescue"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 478,
+    "additive_overlays": ""
   }
 ]
