@@ -14210,5 +14210,38 @@
     "overlay_index": null,
     "base_mission_id": 464,
     "additive_overlays": ""
+  },
+  {
+    "id": "465",
+    "name": "752 Lääkemyrkytys",
+    "place": "Puisto",
+    "place_array": ["Puisto"],
+    "average_credits": 300,
+    "generated_by": "Ambulanssiasema",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "kdow_orgl": 1 },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 25,
+      "kdow_orgl": 30,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": ""
   }
 ]
