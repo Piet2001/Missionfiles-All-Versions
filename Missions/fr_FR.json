@@ -15028,7 +15028,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "wasserrettung": 1,
       "rescue_stations": 4,
       "police_stations": 5,
       "fire_stations": 15,
@@ -15069,7 +15068,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "wasserrettung": 1,
       "rescue_stations": 8,
       "police_stations": 5,
       "fire_stations": 15,
@@ -15109,7 +15107,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "wasserrettung": 1,
       "rescue_stations": 1,
       "police_stations": 1,
       "fire_stations": 6,
@@ -15117,6 +15114,45 @@
     },
     "overlay_index": null,
     "base_mission_id": 478,
+    "additive_overlays": ""
+  },
+  {
+    "id": "479",
+    "name": "Recherche d'un nageur emporté par le courant",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "kdow_orgl": 1
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
     "additive_overlays": ""
   }
 ]
