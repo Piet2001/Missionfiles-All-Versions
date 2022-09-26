@@ -17670,5 +17670,38 @@
     "overlay_index": null,
     "base_mission_id": 539,
     "additive_overlays": ""
+  },
+  {
+    "id": "540",
+    "name": "Crise Hipertensiva",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "Stazione ambulanze",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC20R", "SC20G", "SC20V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiologia"],
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": ""
   }
 ]
