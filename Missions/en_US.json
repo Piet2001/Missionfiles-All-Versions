@@ -29865,5 +29865,180 @@
     "overlay_index": null,
     "base_mission_id": 768,
     "additive_overlays": ""
+  },
+  {
+    "id": "769",
+    "name": "Collision with Jackknifed Semi-Trailer (Small)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 1000,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [770],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 769,
+    "additive_overlays": ""
+  },
+  {
+    "id": "770",
+    "name": "Collision with Jackknifed Semi-Trailer (Medium)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 4700,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 35, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [771],
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "29-B-1",
+        "29-B-3",
+        "29-D-3",
+        "29-D-5",
+        "29-D-6",
+        "29-D-7",
+        "29-D-8",
+        "29-D-9"
+      ],
+      "patient_allow_first_responder_chance": 70,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 770,
+    "additive_overlays": ""
+  },
+  {
+    "id": "771",
+    "name": "Collision with Jackknifed Semi-Trailer (Large)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 14500,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 9,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 3,
+      "police_cars": 9,
+      "sheriff": 1
+    },
+    "chances": { "patient_transport": 45, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [772],
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "29-B-1",
+        "29-B-3",
+        "29-D-3",
+        "29-D-5",
+        "29-D-6",
+        "29-D-7",
+        "29-D-8",
+        "29-D-9"
+      ],
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 8,
+      "police_stations": 7,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 771,
+    "additive_overlays": ""
+  },
+  {
+    "id": "772",
+    "name": "Collision with Jackknifed Semi-Trailer (Major)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 24000,
+    "generated_by": "Police station",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 11,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 15,
+      "sheriff": 2
+    },
+    "chances": { "patient_transport": 60, "helicopter": 30 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 0,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "29-B-1",
+        "29-B-3",
+        "29-D-3",
+        "29-D-5",
+        "29-D-6",
+        "29-D-7",
+        "29-D-8",
+        "29-D-9"
+      ],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 772,
+    "additive_overlays": ""
   }
 ]
