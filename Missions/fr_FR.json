@@ -15437,5 +15437,96 @@
     "overlay_index": null,
     "base_mission_id": 479,
     "additive_overlays": ""
+  },
+  {
+    "id": "480",
+    "name": "Incendie dans un entrepôt de carburant avec risque d'explosion",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20000,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 14,
+      "ambulances": 10,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 5,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_stations": 20,
+      "building_specializations": ["fire_support"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": ""
+  },
+  {
+    "id": "480/a",
+    "name": "Incendie dans un entrepôt de carburant avec risque d'explosion",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20500,
+    "generated_by": "Centre de secours",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 14,
+      "ambulances": 10,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 5,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "pump": 1,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "fire_stations": 20,
+      "building_specializations": ["fire_support"]
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "a"
   }
 ]
