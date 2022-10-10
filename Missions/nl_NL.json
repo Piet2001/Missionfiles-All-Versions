@@ -34204,5 +34204,38 @@
     "overlay_index": 0,
     "base_mission_id": 978,
     "additive_overlays": ""
+  },
+  {
+    "id": "979",
+    "name": "Verward persoon bij spoor",
+    "place": "Station\nCentraal Station\nSpoorwegovergang",
+    "place_array": ["Station", "Centraal Station", "Spoorwegovergang"],
+    "average_credits": 840,
+    "generated_by": "Ambulance, standplaats",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [86],
+      "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 1,
+      "police_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 979,
+    "additive_overlays": ""
   }
 ]
