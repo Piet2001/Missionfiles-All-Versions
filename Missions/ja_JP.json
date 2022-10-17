@@ -12297,5 +12297,37 @@
     "base_mission_id": 377,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "378",
+    "name": "電車の乗客に暴力を振るう",
+    "place": "駅（普通車両）\n駅（普通車両と長距離路線）",
+    "place_array": ["駅（普通車両）", "駅（普通車両と長距離路線）"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [380],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 378,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
