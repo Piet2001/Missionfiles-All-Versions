@@ -11888,5 +11888,37 @@
     "base_mission_id": 368,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "369",
+    "name": "공격적인 기차 승객",
+    "place": "기차역(지역 교통)\n기차역(지역 교통 및 장거리 여행역)",
+    "place_array": ["기차역(지역 교통)", "기차역(지역 교통 및 장거리 여행역)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [371],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 369,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
