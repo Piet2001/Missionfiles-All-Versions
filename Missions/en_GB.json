@@ -22215,5 +22215,507 @@
     "base_mission_id": 507,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "508",
+    "name": "Articles Thrown into Prison",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 3, "k9": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 508,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "509",
+    "name": "Suspicious Person on Prison Grounds",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 509,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "510",
+    "name": "Violent Prison Fight (Small)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [511],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 10,
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 510,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "510/a",
+    "name": "Violent Prison Fight (Small)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "personnel_educations": {
+        "level_2_public_order": 18,
+        "police_sergeant": 2
+      }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [511],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 18,
+        "Police Sergeant": 2
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 10,
+      "personnel_educations": {
+        "level_2_public_order": 30,
+        "police_sergeant": 5
+      },
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 510,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "511",
+    "name": "Violent Prison Fight (Medium)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "k9": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [512],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 511,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "511/a",
+    "name": "Violent Prison Fight (Medium)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 11200,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "k9": 1,
+      "personnel_educations": {
+        "level_2_public_order": 24,
+        "police_sergeant": 3,
+        "police_inspector": 1
+      }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [512],
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 24,
+        "Police Sergeant": 3,
+        "Police Inspector": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "personnel_educations": {
+        "level_2_public_order": 35,
+        "police_sergeant": 6,
+        "police_inspector": 3
+      },
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 511,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "512",
+    "name": "Violent Prison Fight (Large)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 8, "k9": 2 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 7,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 25,
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 512,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "512/a",
+    "name": "Violent Prison Fight (Large)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 17200,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "k9": 2,
+      "personnel_educations": {
+        "level_1_public_order": 18,
+        "level_2_public_order": 24,
+        "police_sergeant": 5,
+        "police_inspector": 2
+      },
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 7,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Level 1 Public Order Officer": 18,
+        "Level 2 Public Order Officer": 24,
+        "Police Sergeant": 5,
+        "Police Inspector": 2
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 25,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "level_1_public_order": 36,
+        "level_2_public_order": 35,
+        "police_sergeant": 10,
+        "police_inspector": 5
+      },
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 512,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "513",
+    "name": "Cell Fire",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [517, 518],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 513,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "514",
+    "name": "Cell Fire (Persons Reported)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [515, 516],
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 514,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "515",
+    "name": "Prison Wing Fire (Persons Reported)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [516],
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 515,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "516",
+    "name": "Prison Wing Fire (Major Incident) (Persons Reported)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 4,
+      "k9": 1
+    },
+    "chances": {
+      "water_tankers": 5,
+      "patient_transport": 60,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 7,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 516,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "517",
+    "name": "Prison Wing Fire",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [518],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 517,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "518",
+    "name": "Prison Wing Fire (Major Incident)",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1
+    },
+    "chances": { "water_tankers": 5 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 15 },
+    "overlay_index": null,
+    "base_mission_id": 518,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
