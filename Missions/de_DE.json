@@ -359,20 +359,56 @@
     "name": "Brennender LKW",
     "place": "",
     "place_array": [],
-    "average_credits": 980,
+    "average_credits": 1080,
     "generated_by": "Feuerwache",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "chances": { "battalion_chief_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [610],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [650]
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 13,
     "additive_overlays": ""
+  },
+  {
+    "id": "13/a",
+    "name": "Brennender LKW",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1230,
+    "generated_by": "Feuerwache",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [610],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [650]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a"
   },
   {
     "id": "14",
@@ -3492,8 +3528,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -3516,8 +3552,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -3545,8 +3581,8 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z",
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00",
       "patient_specialization_ids": [5],
       "patient_specialization_captions": ["Neurologie"],
       "patient_specializations": "Neurologie"
@@ -3577,8 +3613,8 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z",
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
       "patient_specializations": "Unfallchirurgie"
@@ -3606,8 +3642,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z",
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00",
       "patient_specialization_ids": [5],
       "patient_specialization_captions": ["Neurologie"],
       "patient_specializations": "Neurologie"
@@ -3633,8 +3669,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -3657,8 +3693,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -3686,8 +3722,8 @@
     "additional": {
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1,
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
@@ -3710,8 +3746,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -3734,8 +3770,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -3763,8 +3799,8 @@
     "additional": {
       "filter_id": "police_station_missions",
       "max_civil_patrol_replacing_police_cars": 1,
-      "date_start": "2022-10-14T09:00:00Z",
-      "date_end": "2022-11-01T10:00:00Z"
+      "date_start": "2021-10-15T09:00:00Z",
+      "date_end": "2021-10-31T23:59:00+01:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
@@ -16247,54 +16283,6 @@
     "additive_overlays": ""
   },
   {
-    "id": "405",
-    "name": "Brennender LKW",
-    "place": "Industrie-Allgemein",
-    "place_array": ["Industrie-Allgemein"],
-    "average_credits": 980,
-    "generated_by": "Werkfeuerwehr",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": { "filter_id": "factory_fire_brigade_missions" },
-    "prerequisites": {
-      "main_building": -2,
-      "werkfeuerwehr": 1,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 405,
-    "additive_overlays": ""
-  },
-  {
-    "id": "406",
-    "name": "Brennender LKW",
-    "place": "Automobilindustrie",
-    "place_array": ["Automobilindustrie"],
-    "average_credits": 980,
-    "generated_by": "Werkfeuerwehr",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": { "filter_id": "factory_fire_brigade_missions" },
-    "prerequisites": {
-      "main_building": -2,
-      "werkfeuerwehr": 1,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 406,
-    "additive_overlays": ""
-  },
-  {
     "id": "407",
     "name": "Brennende Filteranlage",
     "place": "Industrie-Allgemein",
@@ -16360,18 +16348,22 @@
   {
     "id": "409",
     "name": "Brennender LKW",
-    "place": "Chemiepark",
-    "place_array": ["Chemiepark"],
-    "average_credits": 980,
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie",
+    "place_array": ["Chemiepark", "Industrie-Allgemein", "Automobilindustrie"],
+    "average_credits": 1250,
     "generated_by": "Werkfeuerwehr",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": { "filter_id": "factory_fire_brigade_missions" },
+    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "chances": { "battalion_chief_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [779],
+      "filter_id": "factory_fire_brigade_missions",
+      "subsequent_missions_ids": [650]
+    },
     "prerequisites": {
       "main_building": -2,
       "werkfeuerwehr": 1,
@@ -16380,6 +16372,39 @@
     "overlay_index": null,
     "base_mission_id": 409,
     "additive_overlays": ""
+  },
+  {
+    "id": "409/a",
+    "name": "Brennender LKW",
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie",
+    "place_array": ["Chemiepark", "Industrie-Allgemein", "Automobilindustrie"],
+    "average_credits": 1400,
+    "generated_by": "Werkfeuerwehr",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [779],
+      "filter_id": "factory_fire_brigade_missions",
+      "subsequent_missions_ids": [650]
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "police_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 409,
+    "additive_overlays": "a"
   },
   {
     "id": "410",
@@ -36051,6 +36076,104 @@
     },
     "overlay_index": null,
     "base_mission_id": 778,
+    "additive_overlays": "a"
+  },
+  {
+    "id": "779",
+    "name": "Gefahrgut-LKW in Brand",
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie",
+    "place_array": ["Chemiepark", "Industrie-Allgemein", "Automobilindustrie"],
+    "average_credits": 5250,
+    "generated_by": "Werkfeuerwehr",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "ulf": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 6,
+      "hazmat_dekon": 1
+    },
+    "chances": {
+      "ulf": 75,
+      "hazmat_dekon": 20,
+      "nef": 40,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [213],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": ""
+  },
+  {
+    "id": "779/a",
+    "name": "Gefahrgut-LKW in Brand",
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie",
+    "place_array": ["Chemiepark", "Industrie-Allgemein", "Automobilindustrie"],
+    "average_credits": 5650,
+    "generated_by": "Werkfeuerwehr",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "ulf": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 6,
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "ulf": 75,
+      "hazmat_dekon": 20,
+      "nef": 40,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [213],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
     "additive_overlays": "a"
   }
 ]
