@@ -20,6 +20,11 @@ jobs:
         git pull
         curl -X GET https://www.missionchief-australia.com/einsaetze.json > Missions/en_AU.json
         curl -X GET https://www.missionchief-australia.com/alliance_event_types.json > Events/en_AU.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
 
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -44,6 +49,11 @@ jobs:
         git pull
         curl -X GET https://www.operador193.com/einsaetze.json > Missions/pt_BR.json
         curl -X GET https://www.operador193.com/alliance_event_types.json > Events/pt_BR.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
     
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -68,6 +78,11 @@ jobs:
         git pull
         curl -X GET https://www.operacni-stredisko.cz/einsaetze.json > Missions/cs_CZ.json
         curl -X GET https://www.operacni-stredisko.cz/alliance_event_types.json > Events/cs_CZ.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
 
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -92,6 +107,11 @@ jobs:
         git pull
         curl -X GET https://www.leitstellenspiel.de/einsaetze.json > Missions/de_DE.json
         curl -X GET https://www.leitstellenspiel.de/alliance_event_types.json > Events/de_DE.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -116,6 +136,11 @@ jobs:
         git pull
         curl -X GET https://www.alarmcentral-spil.dk/einsaetze.json > Missions/da_DK.json
         curl -X GET https://www.alarmcentral-spil.dk/alliance_event_types.json > Events/da_DK.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -139,7 +164,12 @@ jobs:
       run: |
         git pull
         curl -X GET https://www.centro-de-mando.es/einsaetze.json > Missions/es_ES.json
-        curl -X GET https://www.centro-de-mando.es/alliance_event_types.json > Events/es_ES.json
+        curl -X GET https://www.centro-de-mando.es/alliance_event_types.json > Events/es_ES.json   
+        
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -164,6 +194,11 @@ jobs:
         git pull
         curl -X GET https://www.hatakeskuspeli.com/einsaetze.json > Missions/fi_FI.json
         curl -X GET https://www.hatakeskuspeli.com/alliance_event_types.json > Events/fi_FI.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -188,6 +223,11 @@ jobs:
         git pull
         curl -X GET https://www.operateur112.fr/einsaetze.json > Missions/fr_FR.json
         curl -X GET https://www.operateur112.fr/alliance_event_types.json > Events/fr_FR.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -212,6 +252,11 @@ jobs:
         git pull
         curl -X GET https://www.operatore112.it/einsaetze.json > Missions/it_IT.json
         curl -X GET https://www.operatore112.it/alliance_event_types.json > Events/it_IT.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -236,6 +281,11 @@ jobs:
         git pull
         curl -X GET https://www.missionchief-japan.com/einsaetze.json > Missions/ja_JP.json
         curl -X GET https://www.missionchief-japan.com/alliance_event_types.json > Events/ja_JP.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -260,6 +310,11 @@ jobs:
         git pull
         curl -X GET https://www.missionchief-korea.com/einsaetze.json > Missions/ko_KR.json
         curl -X GET https://www.missionchief-korea.com/alliance_event_types.json > Events/ko_KR.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -284,6 +339,11 @@ jobs:
         git pull
         curl -X GET https://www.centro-de-mando.mx/einsaetze.json > Missions/es_MX.json
         curl -X GET https://www.centro-de-mando.mx/alliance_event_types.json > Events/es_MX.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -308,6 +368,11 @@ jobs:
         git pull
         curl -X GET https://www.meldkamerspel.com/einsaetze.json > Missions/nl_NL.json
         curl -X GET https://www.meldkamerspel.com/alliance_event_types.json > Events/nl_NL.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -332,6 +397,11 @@ jobs:
         git pull
         curl -X GET https://www.nodsentralspillet.com/einsaetze.json > Missions/nb_NO.json
         curl -X GET https://www.nodsentralspillet.com/alliance_event_types.json > Events/nb_NO.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -356,6 +426,11 @@ jobs:
         git pull
         curl -X GET https://www.operatorratunkowy.pl/einsaetze.json > Missions/pl_PL.json
         curl -X GET https://www.operatorratunkowy.pl/alliance_event_types.json > Events/pl_PL.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -380,6 +455,11 @@ jobs:
         git pull
         curl -X GET https://www.jogo-operador112.com/einsaetze.json > Missions/pt_PT.json
         curl -X GET https://www.jogo-operador112.com/alliance_event_types.json > Events/pt_PT.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -404,6 +484,11 @@ jobs:
         git pull
         curl -X GET https://www.jocdispecerat112.com/einsaetze.json > Missions/ro_RO.json
         curl -X GET https://www.jocdispecerat112.com/alliance_event_types.json > Events/ro_RO.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -428,6 +513,11 @@ jobs:
         git pull
         curl -X GET https://www.dispetcher112.ru/einsaetze.json > Missions/ru_RU.json
         curl -X GET https://www.dispetcher112.ru/alliance_event_types.json > Events/ru_RU.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -452,6 +542,11 @@ jobs:
        git pull
        curl -X GET https://www.larmcentralen-spelet.se/einsaetze.json > Missions/sv_SE.json
        curl -X GET https://www.larmcentralen-spelet.se/alliance_event_types.json > Events/sv_SE.json
+               
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -476,6 +571,11 @@ jobs:
         git pull
         curl -X GET https://www.112-merkez.com/einsaetze.json > Missions/tr_TR.json
         curl -X GET https://www.112-merkez.com/alliance_event_types.json > Events/tr_TR.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -500,6 +600,11 @@ jobs:
         git pull
         curl -X GET https://www.dyspetcher101-game.com/einsaetze.json > Missions/uk_UA.json
         curl -X GET https://www.dyspetcher101-game.com/alliance_event_types.json > Events/uk_UA.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -524,6 +629,11 @@ jobs:
         git pull
         curl -X GET https://www.missionchief.co.uk/einsaetze.json > Missions/en_GB.json
         curl -X GET https://www.missionchief.co.uk/alliance_event_types.json > Events/en_GB.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -548,6 +658,11 @@ jobs:
         git pull
         curl -X GET https://www.missionchief.com/einsaetze.json > Missions/en_US.json
         curl -X GET https://www.missionchief.com/alliance_event_types.json > Events/en_US.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
@@ -572,6 +687,11 @@ jobs:
         git pull
         curl -X GET https://www.dispecerske-centrum.com/einsaetze.json > Missions/sk_SK.json
         curl -X GET https://www.dispecerske-centrum.com/alliance_event_types.json > Events/sk_SK.json
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
         
     - name: Prettify code & PUSH
       uses: creyD/prettier_action@v4.0
