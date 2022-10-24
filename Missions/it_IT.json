@@ -4016,7 +4016,7 @@
   },
   {
     "id": "125",
-    "name": "Ostacolo in corsia",
+    "name": "Ostacolo in Autostrada",
     "place": "Uscita autostradale",
     "place_array": ["Uscita autostradale"],
     "average_credits": 500,
@@ -4026,14 +4026,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "police_cars": 1, "traffic_car": 2 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "traffic_police": 2
+    },
     "overlay_index": null,
     "base_mission_id": 125,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "126",
@@ -4093,7 +4097,8 @@
       "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "traffic_car": 2
     },
     "chances": { "hazmat_vehicles": 20, "patient_transport": 35 },
     "additional": {
@@ -4119,12 +4124,13 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 2,
+      "traffic_police": 2,
       "fire_stations": 2
     },
     "overlay_index": null,
     "base_mission_id": 127,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "traffic_police_specialization"]
   },
   {
     "id": "128",
@@ -4245,7 +4251,8 @@
       "firetrucks": 1,
       "fwk": 1,
       "heavy_rescue_vehicles": 2,
-      "police_cars": 2
+      "police_cars": 2,
+      "water_rescue": 1
     },
     "chances": { "fwk": 50, "patient_transport": 90 },
     "additional": {
@@ -4268,6 +4275,7 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 1,
       "police_stations": 1,
       "fire_stations": 2
@@ -4275,7 +4283,7 @@
     "overlay_index": null,
     "base_mission_id": 131,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_rescue_specialization"]
   },
   {
     "id": "132",
@@ -7510,8 +7518,8 @@
   {
     "id": "219",
     "name": "Caduta sugli scogli",
-    "place": "Lago",
-    "place_array": ["Lago"],
+    "place": "Scogliera",
+    "place_array": ["Scogliera"],
     "average_credits": 550,
     "generated_by": "",
     "icons": [
@@ -7519,8 +7527,16 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
-    "chances": { "patient_transport": 95, "helicopter": 35 },
+    "requirements": {
+      "firetrucks": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "patient_transport": 95,
+      "helicopter": 35
+    },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -7539,7 +7555,7 @@
     "prerequisites": {
       "main_building": 2,
       "rescue_stations": 2,
-      "fire_stations": 2
+      "fire_stations": 3
     },
     "overlay_index": null,
     "base_mission_id": 219,
@@ -7643,7 +7659,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "traffic_car": 2 },
     "chances": {},
     "additional": {
       "duration_text": "45 minuti",
@@ -7651,11 +7667,15 @@
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "traffic_police": 2
+    },
     "overlay_index": null,
     "base_mission_id": 222,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "223",
@@ -8249,7 +8269,7 @@
   },
   {
     "id": "235",
-    "name": "Guidatore Contromano",
+    "name": "Veicolo Contromano in Autostrada",
     "place": "Uscita autostradale",
     "place_array": ["Uscita autostradale"],
     "average_credits": 1000,
@@ -8259,17 +8279,21 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "traffic_car": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25, 73, 106, 109],
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "traffic_police": 2
+    },
     "overlay_index": null,
     "base_mission_id": 235,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "236",
@@ -11904,17 +11928,21 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 2, "traffic_car": 2 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "traffic_police": 2
+    },
     "overlay_index": null,
     "base_mission_id": 348,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "349",
@@ -14070,17 +14098,18 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "police_cars": 1, "traffic_car": 1 },
     "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "traffic_police": 1
     },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 412,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "413",
@@ -16591,41 +16620,6 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "484",
-    "name": "Canale fognario in piena",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2000,
-    "generated_by": "",
-    "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "police_cars": 2,
-      "water_rescue": 2
-    },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [290, 296],
-      "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 2
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "wasserrettung": 1,
-      "police_stations": 2,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 484,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "water_rescue_specialization"]
-  },
-  {
     "id": "485",
     "name": "Bus contro pensilina",
     "place": "Fermata dell'autobus",
@@ -18046,17 +18040,21 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "firetrucks": 1, "water_rescue": 1 },
     "chances": {},
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 526,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_rescue_specialization"]
   },
   {
     "id": "527",
@@ -18070,17 +18068,21 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "firetrucks": 1, "water_rescue": 1 },
     "chances": {},
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 527,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_rescue_specialization"]
   },
   {
     "id": "528",
@@ -18592,41 +18594,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 543,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "544",
-    "name": "Operazione Anti-Riciclaggio",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2400,
-    "generated_by": "",
-    "icons": [
-      "/images/zoom_gruen.png",
-      "/images/zoom_gelb.png",
-      "/images/zoom_rot.png"
-    ],
-    "requirements": {
-      "swat_suv": 2,
-      "police_helicopters": 1,
-      "police_cars": 8,
-      "k9": 1,
-      "commerce_police": 4
-    },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 8,
-      "filter_id": "police_station_missions"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "police_stations": 8,
-      "police_helicopter_stations": 1,
-      "commerce_police_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 544,
     "additive_overlays": "",
     "mission_categories": ["police"]
   }
