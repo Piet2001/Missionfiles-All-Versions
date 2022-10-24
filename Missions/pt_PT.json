@@ -4405,7 +4405,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 6, "police_motorcycle": 2 },
+    "requirements": { "police_cars": 6, "police_motorcycle": 3 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 4,
@@ -4436,7 +4436,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 6, "police_motorcycle": 2 },
+    "requirements": { "police_cars": 6, "police_motorcycle": 3 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 10,
@@ -9681,7 +9681,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 3, "police_motorcycle": 1 },
+    "requirements": { "police_cars": 3, "police_motorcycle": 3 },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
     "additional": {
       "possible_patient": 10,
@@ -12768,7 +12768,7 @@
     "requirements": {
       "ambulances": 10,
       "police_cars": 6,
-      "police_motorcycle": 2
+      "police_motorcycle": 3
     },
     "chances": { "patient_transport": 0, "patient_critical_care": 25 },
     "additional": {
@@ -13208,7 +13208,7 @@
       "/images/bar_coktail_gelb.png",
       "/images/bar_coktail_rot.png"
     ],
-    "requirements": { "police_cars": 4, "k9": 2 },
+    "requirements": { "police_cars": 4, "k9": 2, "riot_police": 2 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
@@ -13240,7 +13240,7 @@
       "swat_armored_vehicle": 1,
       "police_cars": 5,
       "k9": 2,
-      "riot_police": 1
+      "riot_police": 2
     },
     "chances": {},
     "additional": {
@@ -13269,7 +13269,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 8, "k9": 2, "riot_police": 1 },
+    "requirements": { "police_cars": 6, "k9": 2, "riot_police": 2 },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 2,
@@ -13431,7 +13431,7 @@
       "/images/cuffs_gelb.png",
       "/images/cuffs_rot.png"
     ],
-    "requirements": { "police_cars": 2, "bike_police": 1 },
+    "requirements": { "police_cars": 2, "bike_police": 2 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -13459,7 +13459,6 @@
     "requirements": {
       "swat_armored_vehicle": 2,
       "police_cars": 6,
-      "bike_police": 2,
       "riot_police_command": 1
     },
     "chances": {},
@@ -13470,8 +13469,7 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 7,
-      "riot_police": 2,
-      "bike_police": 2
+      "riot_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 431,
@@ -13480,7 +13478,7 @@
   },
   {
     "id": "432",
-    "name": "Posse ilegal de armas - faca",
+    "name": "Posse Ilegal de Arma Branca",
     "place": "",
     "place_array": [],
     "average_credits": 1200,
@@ -13504,7 +13502,7 @@
   },
   {
     "id": "433",
-    "name": "fumos visíveis",
+    "name": "Fumos Densos",
     "place": "",
     "place_array": [],
     "average_credits": 1000,
@@ -13717,5 +13715,39 @@
     "base_mission_id": 439,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "440",
+    "name": "Posse Ilegal de Arma de Fogo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3750,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "k9": 1,
+      "riot_police": 1,
+      "police_motorcycle": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 11,
+      "riot_police": 1,
+      "main_building_extensions": [10]
+    },
+    "overlay_index": null,
+    "base_mission_id": 440,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
   }
 ]
