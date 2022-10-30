@@ -16502,5 +16502,126 @@
     "base_mission_id": 504,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "505",
+    "name": "LPG Leak from Refueling Car",
+    "place": "Gas station",
+    "place_array": ["Gas station"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "hazmat_vehicles": 60, "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "506",
+    "name": "Petrol Spill from Bowser",
+    "place": "Gas station",
+    "place_array": ["Gas station"],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "hazmat_vehicles": 40, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [507],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 506,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "507",
+    "name": "Petrol Bowser Fire",
+    "place": "Gas station",
+    "place_array": ["Gas station"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "mobile_air_vehicles": 10,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
