@@ -9164,7 +9164,7 @@
     "name": "Verkeersongeval met touringcar",
     "place": "",
     "place_array": [],
-    "average_credits": 5730,
+    "average_credits": 3250,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -35435,5 +35435,245 @@
     "base_mission_id": 982,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "983",
+    "name": "Zeiljacht in problemen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3080,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 2,
+      "coastal_rescue_small_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 983,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "984",
+    "name": "Drugssmokkel op zee",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4980,
+    "generated_by": "",
+    "icons": [
+      "/images/cannabis_gruen.png",
+      "/images/cannabis_gelb.png",
+      "/images/cannabis_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 3
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19]
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "police_stations": 3,
+      "police_helicopter_stations": 1,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 984,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "985",
+    "name": "Olietanker in de problemen",
+    "place": "Haventerrein",
+    "place_array": ["Haventerrein"],
+    "average_credits": 19360,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 16,
+      "spokesman": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "ovdp": 1,
+      "coastal_boat": 2,
+      "coastal_guard_boat": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"]
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "coastal_rescue_count": 1,
+      "coastal_rescue_small_count": 2,
+      "fire_stations": 36
+    },
+    "overlay_index": null,
+    "base_mission_id": 985,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "986",
+    "name": "Surfer vermist",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 4080,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 2,
+      "coastal_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "water_rescue_2": 2,
+      "rescue_stations": 1,
+      "coastal_rescue_small_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 986,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "987",
+    "name": "Schipbreukeling vermist",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 5880,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 2,
+      "coastal_boat": 3,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "water_rescue_2": 2,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1,
+      "coastal_rescue_small_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 987,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "988",
+    "name": "Persoon onwel op schip",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 5, 7],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Neurologie",
+        "Cardiologie"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Neurologie, Cardiologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "coastal_rescue_small_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 988,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
