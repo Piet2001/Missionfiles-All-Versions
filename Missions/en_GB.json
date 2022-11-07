@@ -22845,5 +22845,50 @@
     "base_mission_id": 522,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "523",
+    "name": "Debris in carriageway",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 523,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "524",
+    "name": "Debris in carriageway (Fast Road)",
+    "place": "Highway exit\nMajor Road Standby Point",
+    "place_array": ["Highway exit", "Major Road Standby Point"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "traffic_car": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "need_traffic_car_only_if_present": true
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 524,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
