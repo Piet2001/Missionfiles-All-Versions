@@ -15061,5 +15061,39 @@
     "base_mission_id": 470,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "471",
+    "name": "792 Varautuminen ensihoitotehtävään",
+    "place": "",
+    "place_array": [],
+    "average_credits": 250,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "kdow_orgl": 1 },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 25,
+      "kdow_orgl": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [138, 141, 380, 439, 390],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
