@@ -184,17 +184,65 @@
     "name": "Zimmerbrand",
     "place": "",
     "place_array": [],
-    "average_credits": 1400,
+    "average_credits": 1600,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "platform_trucks": 1 },
-    "chances": { "platform_trucks": 30, "nef": 50, "patient_transport": 50 },
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 50,
+      "platform_trucks": 40,
+      "nef": 40,
+      "patient_transport": 40
+    },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient": 3,
+      "expansion_missions_ids": [102, 103, 104, 105],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 5,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "5/a",
+    "name": "Zimmerbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 50,
+      "platform_trucks": 40,
+      "nef": 40,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [102, 103, 104, 105],
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Allgemeine Innere"],
@@ -202,12 +250,12 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "max_police_stations": 7,
+      "police_stations": 1,
       "fire_stations": 2
     },
     "overlay_index": null,
     "base_mission_id": 5,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -3223,43 +3271,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 100,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "101",
-    "name": "Zimmerbrand",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2, "platform_trucks": 1, "police_cars": 1 },
-    "chances": {
-      "platform_trucks": 30,
-      "police_cars": 50,
-      "nef": 50,
-      "patient_transport": 50
-    },
-    "additional": {
-      "possible_patient": 1,
-      "expansion_missions_ids": [102, 103, 104, 105],
-      "filter_id": "firehouse_missions",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Allgemeine Innere"],
-      "patient_specializations": "Allgemeine Innere"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 8,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 101,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
