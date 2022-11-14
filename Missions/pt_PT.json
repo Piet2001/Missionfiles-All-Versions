@@ -3536,14 +3536,14 @@
     "name": "Assalto a Carrinha de Transporte de Valores",
     "place": "",
     "place_array": [],
-    "average_credits": 2250,
+    "average_credits": 4250,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 5, "k9": 1, "riot_police": 1 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
@@ -3553,7 +3553,11 @@
       "patient_specialization_captions": ["Clinica Geral"],
       "patient_specializations": "Clinica Geral"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 1
+    },
     "overlay_index": null,
     "base_mission_id": 129,
     "additive_overlays": "",
@@ -4204,7 +4208,7 @@
     "name": "Agressões entre Adeptos",
     "place": "Estádio",
     "place_array": ["Estádio"],
-    "average_credits": 4500,
+    "average_credits": 6500,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
@@ -4214,7 +4218,9 @@
     "requirements": {
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "police_cars": 5
+      "police_cars": 5,
+      "k9": 2,
+      "riot_police": 2
     },
     "chances": { "patient_transport": 70, "helicopter": 20 },
     "additional": {
@@ -4228,6 +4234,7 @@
       "main_building": 6,
       "rescue_stations": 10,
       "police_stations": 8,
+      "riot_police": 1,
       "fire_stations": 10
     },
     "overlay_index": null,
@@ -7882,18 +7889,19 @@
     "name": "Sismo de Pequena Magnitude",
     "place": "",
     "place_array": [],
-    "average_credits": 5500,
+    "average_credits": 8500,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
     ],
     "requirements": {
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "police_cars": 3
+      "police_cars": 3,
+      "k9": 1
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 10 },
     "additional": {
@@ -7919,12 +7927,12 @@
     "name": "Sismo de Grande Magnitude",
     "place": "",
     "place_array": [],
-    "average_credits": 21000,
+    "average_credits": 22000,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
     ],
     "requirements": {
       "firetrucks": 15,
@@ -7936,7 +7944,8 @@
       "water_tankers": 5,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 5,
-      "police_cars": 6
+      "police_cars": 6,
+      "k9": 2
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 10 },
     "additional": {
@@ -7948,9 +7957,9 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 3,
-      "fire_stations": 10
+      "rescue_stations": 15,
+      "police_stations": 8,
+      "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 269,
@@ -11641,7 +11650,7 @@
     "name": "Prevenção a derby da primeira liga",
     "place": "Estádio",
     "place_array": ["Estádio"],
-    "average_credits": 23000,
+    "average_credits": 25000,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -11649,21 +11658,23 @@
       "/images/clock_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "fwk": 2,
+      "firetrucks": 6,
       "ambulances": 10,
-      "battalion_chief_vehicles": 4,
+      "swat_armored_vehicle": 2,
+      "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "elw3": 1,
-      "heavy_rescue_vehicles": 5,
+      "heavy_rescue_vehicles": 2,
       "police_cars": 6,
-      "fbi_bomb": 3
+      "k9": 2,
+      "riot_police": 2,
+      "police_motorcycle": 3
     },
-    "chances": { "patient_transport": 0 },
+    "chances": { "patient_transport": 50 },
     "additional": {
       "duration_text": "1 hora 45 minutos",
       "duration": 6300,
-      "possible_patient": 25,
+      "possible_patient": 10,
       "max_possible_prisoners": 10,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
@@ -11673,8 +11684,9 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 6,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "riot_police": 1,
       "fire_stations": 15
     },
     "overlay_index": null,
@@ -11687,7 +11699,7 @@
     "name": "Prevenção a derby da primeira liga",
     "place": "Estádio",
     "place_array": ["Estádio"],
-    "average_credits": 24000,
+    "average_credits": 26000,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -11695,22 +11707,24 @@
       "/images/clock_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "fwk": 2,
+      "firetrucks": 6,
       "ambulances": 10,
-      "battalion_chief_vehicles": 4,
+      "swat_armored_vehicle": 2,
+      "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "elw3": 1,
-      "heavy_rescue_vehicles": 5,
+      "heavy_rescue_vehicles": 2,
       "police_cars": 6,
-      "fbi_bomb": 3,
-      "foam": 2
+      "k9": 2,
+      "foam": 2,
+      "riot_police": 2,
+      "police_motorcycle": 3
     },
-    "chances": { "patient_transport": 0 },
+    "chances": { "patient_transport": 50 },
     "additional": {
       "duration_text": "1 hora 45 minutos",
       "duration": 6300,
-      "possible_patient": 25,
+      "possible_patient": 10,
       "max_possible_prisoners": 10,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
@@ -11720,9 +11734,10 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 6,
+      "rescue_stations": 10,
+      "police_stations": 10,
       "fire_support_count": 2,
+      "riot_police": 1,
       "fire_stations": 15
     },
     "overlay_index": null,
@@ -12166,7 +12181,7 @@
     "name": "Sequestro com pedido de resgate",
     "place": "",
     "place_array": [],
-    "average_credits": 3250,
+    "average_credits": 5250,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
@@ -12177,7 +12192,8 @@
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "police_cars": 6,
-      "fbi_bomb": 1
+      "k9": 2,
+      "riot_police": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
     "additional": {
@@ -12192,6 +12208,7 @@
       "main_building": 6,
       "rescue_stations": 2,
       "police_stations": 7,
+      "riot_police": 1,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -13700,7 +13717,6 @@
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 4,
-      "expansion_missions_ids": [441],
       "filter_id": "police_station_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
