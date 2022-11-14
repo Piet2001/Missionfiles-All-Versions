@@ -4564,7 +4564,7 @@
     "requirements": { "police_cars": 3, "k9": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [138],
+      "expansion_missions_ids": [138, 471],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [451]
@@ -4678,6 +4678,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
+      "expansion_missions_ids": [471],
       "followup_missions_ids": [312],
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
@@ -11981,6 +11982,7 @@
     "additional": {
       "duration_text": "2 tuntia",
       "duration": 7200,
+      "expansion_missions_ids": [471],
       "followup_missions_ids": [56, 67, 349, 126],
       "swat_personnel": 8,
       "average_min_police_personnel": 40,
@@ -12310,6 +12312,7 @@
     },
     "additional": {
       "possible_patient": 2,
+      "expansion_missions_ids": [471],
       "followup_missions_ids": [138, 312],
       "max_possible_prisoners": 3,
       "swat_personnel": 12,
@@ -13965,6 +13968,7 @@
     "chances": { "patient_transport": 33 },
     "additional": {
       "possible_patient": 8,
+      "expansion_missions_ids": [471],
       "followup_missions_ids": [434, 435, 141, 436, 138, 55, 88, 135, 137],
       "max_possible_prisoners": 24,
       "swat_personnel": 16,
@@ -15084,7 +15088,6 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "expansion_missions_ids": [138, 141, 380, 439, 390],
       "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -15095,5 +15098,40 @@
     "base_mission_id": 471,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "472",
+    "name": "601 Poltettu ravintola",
+    "place": "Pikaruokaravintola\nRavintola",
+    "place_array": ["Pikaruokaravintola", "Ravintola"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "arson_investigator": 2 },
+      "civil_patrolcar": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "personnel_educations": { "Palonsyyntutkija": 2 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1,
+      "personnel_educations": { "arson_investigator": 4 },
+      "main_building_extensions": [11]
+    },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
