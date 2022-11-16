@@ -1058,6 +1058,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -4834,6 +4835,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "swat_personnel": 6,
       "filter_id": "police_station_missions",
@@ -5043,6 +5045,7 @@
     "requirements": { "police_cars": 4 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -8868,6 +8871,7 @@
     "requirements": { "police_cars": 4 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 3,
       "filter_id": "police_station_missions",
       "date_start": "2022-01-07T11:00:00+01:00",
@@ -8894,6 +8898,7 @@
     "requirements": { "police_cars": 5 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 2,
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
       "date_start": "2022-01-07T11:00:00+01:00",
@@ -11055,6 +11060,7 @@
     "additional": {
       "possible_patient": 30,
       "possible_patient_min": 4,
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "patient_specialization_ids": [0],
@@ -13718,6 +13724,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "date_start": "2022-02-25T10:00:00Z",
@@ -13824,6 +13831,7 @@
     "requirements": { "police_cars": 2 },
     "chances": {},
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -15638,5 +15646,196 @@
     "base_mission_id": 467,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "470",
+    "name": "Sejlbåd i problemer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3080,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 50, "coastal_helicopter": 45 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "471",
+    "name": "Olietanker i problemer",
+    "place": "Havneområde",
+    "place_array": ["Havneområde"],
+    "average_credits": 19360,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 16,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "coastal_boat": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 10,
+      "coastal_rescue_count": 1,
+      "fire_stations": 36
+    },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "472",
+    "name": "Surfer savnes",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 4080,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 2,
+      "coastal_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "473",
+    "name": "Kajakrose mangler",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 5880,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 2,
+      "coastal_boat": 1,
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 473,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "474",
+    "name": "Person, der er syg på skibet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 5, 7],
+      "patient_specialization_captions": [
+        "Specialister i intern medicin",
+        "Neurologi",
+        "Kardiologi"
+      ],
+      "patient_specializations": "Specialister i intern medicin, Neurologi, Kardiologi"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
