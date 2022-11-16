@@ -4182,22 +4182,26 @@
   {
     "id": "148",
     "name": "Assalto a um Banco",
-    "place": "Banco",
-    "place_array": ["Banco"],
-    "average_credits": 2500,
+    "place": "Museu",
+    "place_array": ["Museu"],
+    "average_credits": 4500,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 5, "k9": 1, "riot_police": 2 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 1
+    },
     "overlay_index": null,
     "base_mission_id": 148,
     "additive_overlays": "",
