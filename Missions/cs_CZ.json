@@ -16451,5 +16451,45 @@
     "base_mission_id": 469,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "470",
+    "name": "Zasypaná osoba uvnitř sila",
+    "place": "Silo",
+    "place_array": ["Silo"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 3
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 80,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
