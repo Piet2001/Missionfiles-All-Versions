@@ -22942,5 +22942,40 @@
     "base_mission_id": 525,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "526",
+    "name": "Fire Station Open Day",
+    "place": "Fire Station",
+    "place_array": ["Fire Station"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 1
+    },
+    "chances": { "platform_trucks": 20, "water_tankers": 10 },
+    "additional": {
+      "duration_text": "3 hours",
+      "duration": 10800,
+      "allow_rw_instead_of_lf": true,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_dlk_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 526,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
