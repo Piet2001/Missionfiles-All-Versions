@@ -12844,8 +12844,8 @@
   {
     "id": "401",
     "name": "Brand ute - badstrand",
-    "place": "Beach",
-    "place_array": ["Beach"],
+    "place": "Strand",
+    "place_array": ["Strand"],
     "average_credits": 760,
     "generated_by": "",
     "icons": [
@@ -14937,5 +14937,291 @@
     "base_mission_id": 456,
     "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "458",
+    "name": "Kontroll",
+    "place": "Strand\nÖ\nKust",
+    "place_array": ["Strand", "Ö", "Kust"],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_rescue": 2 },
+      "coastal_boat": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Livräddare": 2 }
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "personnel_educations": { "coastal_rescue": 5 },
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 458,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "459",
+    "name": "Sjöfylleri",
+    "place": "Strand\nÖ\nKust",
+    "place_array": ["Strand", "Ö", "Kust"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/bar_coktail_gruen.png",
+      "/images/bar_coktail_gelb.png",
+      "/images/bar_coktail_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "handoff_possible_via_building_types": [24],
+      "patient_at_end_of_mission": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 459,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "460",
+    "name": "Oljespill - liten",
+    "place": "Ö",
+    "place_array": ["Ö"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 1,
+      "coastal_guard_boat": 1,
+      "coastal_boat_trailer": 1,
+      "coastal_boat_hover": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [461],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 5 },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "461",
+    "name": "Oljespill - stor",
+    "place": "Ö",
+    "place_array": ["Ö"],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 4,
+      "large_coastal_boat": 2,
+      "coastal_guard_boat": 3,
+      "coastal_boat_trailer": 2,
+      "coastal_boat_hover": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 10 },
+    "overlay_index": null,
+    "base_mission_id": 461,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "462",
+    "name": "Strandnära oljespill",
+    "place": "Kust",
+    "place_array": ["Kust"],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "large_coastal_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 4 },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "463",
+    "name": "Grovt sjöfylleri - fartyg",
+    "place": "Strand\nÖ",
+    "place_array": ["Strand", "Ö"],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/bar_coktail_gruen.png",
+      "/images/bar_coktail_gelb.png",
+      "/images/bar_coktail_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_guard_boat": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Invärtesmedicinare"],
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 4 },
+    "overlay_index": null,
+    "base_mission_id": 463,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "464",
+    "name": "Nödbogsering - fartyg",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1050,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 1, "coastal_boat_hover": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24]
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 4 },
+    "overlay_index": null,
+    "base_mission_id": 464,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "465",
+    "name": "Kontroll - Hummerfiske",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "466",
+    "name": "Sjötrafikkontroll",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 466,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "467",
+    "name": "Övervakning till sjöss",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_guard_boat": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [458, 459, 460, 461, 462, 463, 464],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 24, "coastal_rescue_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 467,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
