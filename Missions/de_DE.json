@@ -8478,6 +8478,96 @@
     "name": "Angemeldete Demonstration",
     "place": "",
     "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "lebefkw": 2,
+      "police_cars": 3,
+      "grukw": 6,
+      "fukw": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/a",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "lebefkw": 2,
+      "police_cars": 3,
+      "grukw": 6,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/b",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
     "average_credits": 5570,
     "generated_by": "",
     "icons": [
@@ -8516,11 +8606,11 @@
     },
     "overlay_index": null,
     "base_mission_id": 227,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "227/a",
+    "id": "227/ab",
     "name": "Angemeldete Demonstration",
     "place": "",
     "place_array": [],
@@ -8564,11 +8654,38 @@
     },
     "overlay_index": null,
     "base_mission_id": 227,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
     "id": "228",
+    "name": "Absicherung Musikumzug",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 Stunde",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 228,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "228/a",
     "name": "Absicherung Musikumzug",
     "place": "",
     "place_array": [],
@@ -8595,11 +8712,44 @@
     },
     "overlay_index": null,
     "base_mission_id": 228,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
     "id": "229",
+    "name": "Absicherung Radrennen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "ambulances": 2, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 2,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 229,
+    "additive_overlays": "",
+    "mission_categories": ["seg_medical_service"]
+  },
+  {
+    "id": "229/a",
     "name": "Absicherung Radrennen",
     "place": "",
     "place_array": [],
@@ -8633,7 +8783,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 229,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["seg_medical_service"]
   },
   {
@@ -10908,6 +11058,94 @@
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
     "place_array": ["Stadion"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 3,
+      "police_cars": 4,
+      "grukw": 9,
+      "fukw": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/a",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 3,
+      "police_cars": 4,
+      "grukw": 9,
+      "fukw": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/b",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
     "average_credits": 8140,
     "generated_by": "",
     "icons": [
@@ -10945,11 +11183,11 @@
     },
     "overlay_index": null,
     "base_mission_id": 275,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "275/a",
+    "id": "275/ab",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
     "place_array": ["Stadion"],
@@ -10992,7 +11230,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 275,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
@@ -11825,6 +12063,104 @@
     "name": "Fußball Bundesliga-Risikospiel",
     "place": "Stadion",
     "place_array": ["Stadion"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 9,
+      "gefkw": 2,
+      "police_cars": 5,
+      "grukw": 27,
+      "fukw": 3,
+      "k9": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "expansion_missions_ids": [540],
+      "average_min_police_personnel": 150,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "bereitschaftspolizei": 4,
+      "riot_unit_count": 12,
+      "detention_unit_count": 3,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 294,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "294/a",
+    "name": "Fußball Bundesliga-Risikospiel",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 12400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 9,
+      "gefkw": 2,
+      "police_cars": 5,
+      "grukw": 27,
+      "fukw": 3,
+      "k9": 2,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "expansion_missions_ids": [540],
+      "average_min_police_personnel": 150,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "bereitschaftspolizei": 4,
+      "riot_unit_count": 12,
+      "detention_unit_count": 3,
+      "police_service_group_leader": 5,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 294,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "294/b",
+    "name": "Fußball Bundesliga-Risikospiel",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
     "average_credits": 13140,
     "generated_by": "",
     "icons": [
@@ -11867,11 +12203,11 @@
     },
     "overlay_index": null,
     "base_mission_id": 294,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "294/a",
+    "id": "294/ab",
     "name": "Fußball Bundesliga-Risikospiel",
     "place": "Stadion",
     "place_array": ["Stadion"],
@@ -11919,7 +12255,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 294,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
@@ -12326,6 +12662,106 @@
     "name": "Angemeldete Demonstration - Gefahrenpotential",
     "place": "",
     "place_array": [],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 3,
+      "lebefkw": 3,
+      "police_cars": 6,
+      "grukw": 6,
+      "fukw": 1,
+      "k9": 2,
+      "wasserwerfer": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "average_min_police_personnel": 60,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 6,
+      "bereitschaftspolizei": 3,
+      "riot_unit_count": 3,
+      "water_cannon": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 304,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "304/a",
+    "name": "Angemeldete Demonstration - Gefahrenpotential",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6900,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 3,
+      "lebefkw": 3,
+      "police_cars": 6,
+      "grukw": 6,
+      "fukw": 1,
+      "k9": 2,
+      "wasserwerfer": 3,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "average_min_police_personnel": 60,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "bereitschaftspolizei": 3,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "water_cannon": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 304,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "304/b",
+    "name": "Angemeldete Demonstration - Gefahrenpotential",
+    "place": "",
+    "place_array": [],
     "average_credits": 7640,
     "generated_by": "",
     "icons": [
@@ -12369,11 +12805,11 @@
     },
     "overlay_index": null,
     "base_mission_id": 304,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "304/a",
+    "id": "304/ab",
     "name": "Angemeldete Demonstration - Gefahrenpotential",
     "place": "",
     "place_array": [],
@@ -12422,7 +12858,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 304,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
@@ -12430,7 +12866,109 @@
     "name": "Fußball Bundesliga-Risikospiel",
     "place": "Stadion",
     "place_array": ["Stadion"],
-    "average_credits": 14040,
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 10,
+      "gefkw": 2,
+      "police_cars": 7,
+      "grukw": 27,
+      "fukw": 3,
+      "k9": 2,
+      "wasserwerfer": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "expansion_missions_ids": [540],
+      "average_min_police_personnel": 150,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "bereitschaftspolizei": 4,
+      "riot_unit_count": 12,
+      "detention_unit_count": 3,
+      "water_cannon": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 305,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "305/a",
+    "name": "Fußball Bundesliga-Risikospiel",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 10,
+      "gefkw": 2,
+      "police_cars": 7,
+      "grukw": 27,
+      "fukw": 3,
+      "k9": 2,
+      "wasserwerfer": 3,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "expansion_missions_ids": [540],
+      "average_min_police_personnel": 150,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_k9_only_if_guard_dogs_present": true,
+      "max_civil_patrol_replacing_police_cars": 2,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "bereitschaftspolizei": 4,
+      "riot_unit_count": 12,
+      "detention_unit_count": 3,
+      "police_service_group_leader": 5,
+      "water_cannon": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 305,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "305/b",
+    "name": "Fußball Bundesliga-Risikospiel",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 14140,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -12474,15 +13012,15 @@
     },
     "overlay_index": null,
     "base_mission_id": 305,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "305/a",
+    "id": "305/ab",
     "name": "Fußball Bundesliga-Risikospiel",
     "place": "Stadion",
     "place_array": ["Stadion"],
-    "average_credits": 14440,
+    "average_credits": 14540,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -12528,7 +13066,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 305,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
@@ -12536,7 +13074,101 @@
     "name": "Absicherung Rockkonzert - Gefahrenpotential",
     "place": "Stadion",
     "place_array": ["Stadion"],
-    "average_credits": 8570,
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 4,
+      "police_cars": 12,
+      "grukw": 9,
+      "fukw": 1,
+      "wasserwerfer": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/a",
+    "name": "Absicherung Rockkonzert - Gefahrenpotential",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "ambulances": 4,
+      "lebefkw": 4,
+      "police_cars": 12,
+      "grukw": 9,
+      "fukw": 1,
+      "wasserwerfer": 2,
+      "police_service_group_leader": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/b",
+    "name": "Absicherung Rockkonzert - Gefahrenpotential",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 9140,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -12576,15 +13208,15 @@
     },
     "overlay_index": null,
     "base_mission_id": 306,
-    "additive_overlays": "",
+    "additive_overlays": "b",
     "mission_categories": ["riot_police"]
   },
   {
-    "id": "306/a",
+    "id": "306/ab",
     "name": "Absicherung Rockkonzert - Gefahrenpotential",
     "place": "Stadion",
     "place_array": ["Stadion"],
-    "average_credits": 9370,
+    "average_credits": 9940,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -12626,7 +13258,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 306,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
   },
   {
