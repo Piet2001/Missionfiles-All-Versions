@@ -32578,5 +32578,277 @@
     "base_mission_id": 799,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "800",
+    "name": "Conflagration (Small)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 3750,
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [801],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 800,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "801",
+    "name": "Conflagration (Medium)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 7500,
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "police_cars": 7,
+      "sheriff": 1
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [802],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 801,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "802",
+    "name": "Conflagration (Large)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 17500,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 1,
+      "police_cars": 10,
+      "sheriff": 2
+    },
+    "chances": { "patient_transport": 75, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "expansion_missions_ids": [803],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 25,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 802,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "802/a",
+    "name": "Conflagration (Large)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 17500,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 1,
+      "police_cars": 10,
+      "sheriff": 2,
+      "fire_investigation": 2
+    },
+    "chances": { "patient_transport": 75, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "expansion_missions_ids": [803],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 25,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_investigation_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 802,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "803",
+    "name": "Conflagration (Major)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 17500,
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 10,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 2,
+      "police_cars": 14,
+      "sheriff": 4
+    },
+    "chances": { "patient_transport": 85, "helicopter": 30 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 15,
+      "followup_missions_ids": [726],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 15,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 15,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 803,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "803/a",
+    "name": "Conflagration (Major)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 17500,
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 10,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 2,
+      "police_cars": 14,
+      "sheriff": 4,
+      "fire_investigation": 4
+    },
+    "chances": { "patient_transport": 85, "helicopter": 30 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 15,
+      "followup_missions_ids": [726],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 15,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 15,
+      "fire_investigation_count": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 803,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
   }
 ]
