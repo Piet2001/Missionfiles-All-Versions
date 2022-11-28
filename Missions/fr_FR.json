@@ -16750,5 +16750,83 @@
     "base_mission_id": 500,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "501",
+    "name": "Amerrissage petit avion",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 5,
+      "coastal_helicopter": 3,
+      "coastal_guard_boat": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "coastal_rescue_missions",
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 1,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 501,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "502",
+    "name": "Amerrissage d'un avion de ligne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 7,
+      "coastal_helicopter": 5,
+      "coastal_guard_boat": 4
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 10,
+      "filter_id": "coastal_rescue_missions",
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 2,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 502,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
