@@ -35801,5 +35801,82 @@
     "base_mission_id": 991,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "992",
+    "name": "Gijzeling",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9930,
+    "generated_by": "",
+    "icons": [
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 3,
+      "gefkw": 1,
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "grukw": 2,
+      "ovdp": 1,
+      "at_c": 1,
+      "at_o": 4,
+      "at_m": 1,
+      "detention_unit": 1
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "followup_missions_ids": [993],
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "riot_police_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 6,
+      "riot_unit_count": 1,
+      "detention_unit_count": 1,
+      "prisoner_transport_count": 1,
+      "at": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 992,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "993",
+    "name": "Straat afzetten voor politie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 993,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
