@@ -15029,5 +15029,488 @@
     "base_mission_id": 474,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "475",
+    "name": "221 Kaatunut pieni alus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 80, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 475,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "476",
+    "name": "222 Kaatunut suuri alus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 4,
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 8,
+      "coastal_rescue_count": 4,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 476,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "477",
+    "name": "68 Rajatarkastus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "478",
+    "name": "481 Kadonnut alus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 478,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "479",
+    "name": "68 Rajavalvonta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "480",
+    "name": "610 Salakuljetus veneellä",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 12 },
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 2,
+      "coastal_plane": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "personnel_educations": { "Lainvalvonnan merivoimat": 12 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 2,
+      "personnel_educations": { "law_enforcement_marine": 25 },
+      "coastal_rescue_count": 2,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "481",
+    "name": "391 Laskuvarjohyppyonnettomuus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "coastal_rescue": 2,
+      "coastal_boat": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Yleiskirurgi"],
+      "patient_specializations": "Yleiskirurgi"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 481,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "482",
+    "name": "481 Syvän veden etsintä ja pelastus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 2 },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 482,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "483",
+    "name": "480 Panttivankien pelastaminen rahtilaivalla",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 18 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Lainvalvonnan merivoimat": 18 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 40 },
+      "coastal_rescue_count": 4,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 483,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "484",
+    "name": "223 Laitonta toimintaa harjoittava valaanpyyntialus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 8 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 1
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 8,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "personnel_educations": { "Lainvalvonnan merivoimat": 8 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 20 },
+      "coastal_rescue_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 484,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "485",
+    "name": "223 Useat valaanpyyntialukset harjoittavat laitonta toimintaa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 24 },
+      "coastal_boat": 6,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 10,
+      "max_possible_prisoners": 24,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "personnel_educations": { "Lainvalvonnan merivoimat": 24 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 14,
+      "personnel_educations": { "law_enforcement_marine": 50 },
+      "coastal_rescue_count": 6,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 485,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "486",
+    "name": "223 Merimiehet loukussa kaatuneessa laivaston aluksessa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 7,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 486,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "487",
+    "name": "223 Ahdinkoon joutunut jahti joutui hirmumyrskyn kouriin",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 1,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 4,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 487,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
