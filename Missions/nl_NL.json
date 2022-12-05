@@ -35898,5 +35898,49 @@
     "base_mission_id": 993,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "994",
+    "name": "Helikopter crash",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "arff": 1,
+      "police_cars": 4,
+      "ovdp": 1,
+      "elw_airport": 1
+    },
+    "chances": { "nef": 25, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 4,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "airport": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 994,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
   }
 ]
