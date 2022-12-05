@@ -20177,5 +20177,44 @@
     "base_mission_id": 598,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "599",
+    "name": "Samochód w rzece",
+    "place": "Rzeka",
+    "place_array": ["Rzeka"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "boats": 1
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 599,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue", "water_rescue_specialization"]
   }
 ]
