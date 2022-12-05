@@ -32860,5 +32860,38 @@
     "base_mission_id": 803,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "804",
+    "name": "Boat at Anchor in a Protected Area",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 4 },
+      "coastal_boat": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "TACLET": 4 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "personnel_educations": { "law_enforcement_marine": 10 },
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 804,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
