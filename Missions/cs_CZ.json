@@ -16562,5 +16562,337 @@
     "base_mission_id": 472,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "473",
+    "name": "Kouř v kabině letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)\nPojezdové dráha",
+    "place_array": [
+      "Malé letiště (ranvej)",
+      "Velké letiště (ranvej)",
+      "Pojezdové dráha"
+    ],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 2, "rettungstreppe": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 473,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "474",
+    "name": "Pád letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)\nPojezdové dráha",
+    "place_array": [
+      "Malé letiště (ranvej)",
+      "Velké letiště (ranvej)",
+      "Pojezdové dráha"
+    ],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "arff": 4,
+      "police_cars": 8,
+      "kdow_orgl": 1
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "airport": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "475",
+    "name": "Požár letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)\nPojezdové dráha",
+    "place_array": [
+      "Malé letiště (ranvej)",
+      "Velké letiště (ranvej)",
+      "Pojezdové dráha"
+    ],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "arff": 4,
+      "rettungstreppe": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 475,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "476",
+    "name": "Prasklá pneumatika na podvozku letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)\nHangár\nPojezdové dráha",
+    "place_array": [
+      "Malé letiště (ranvej)",
+      "Velké letiště (ranvej)",
+      "Hangár",
+      "Pojezdové dráha"
+    ],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 476,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "477",
+    "name": "Asistence při přistávnání letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)",
+    "place_array": ["Malé letiště (ranvej)", "Velké letiště (ranvej)"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "478",
+    "name": "Únik leteckého paliva na ranvej",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)",
+    "place_array": ["Malé letiště (ranvej)", "Velké letiště (ranvej)"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1, "arff": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 478,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "479",
+    "name": "Transport invalidní osoby z letadla",
+    "place": "Malé letiště (ranvej)\nVelké letiště (ranvej)\nPojezdové dráha",
+    "place_array": [
+      "Malé letiště (ranvej)",
+      "Velké letiště (ranvej)",
+      "Pojezdové dráha"
+    ],
+    "average_credits": 100,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "480",
+    "name": "Zdravotní problém pasažéra v letadle",
+    "place": "Pojezdové dráha",
+    "place_array": ["Pojezdové dráha"],
+    "average_credits": 150,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "rettungstreppe": 1 },
+    "chances": { "patient_transport": 90, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": { "main_building": 0, "rescue_stations": 1, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "481",
+    "name": "Požár v letištním terminálu",
+    "place": "Letištní terminál",
+    "place_array": ["Letištní terminál"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 2,
+      "arff": 4,
+      "crew_carrier": 5
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "airport": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 481,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "482",
+    "name": "Požár v hangáru",
+    "place": "Hangár",
+    "place_array": ["Hangár"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "arff": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 8 },
+    "overlay_index": null,
+    "base_mission_id": 482,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
