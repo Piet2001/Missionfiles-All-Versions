@@ -4408,9 +4408,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 20 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 15000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 140,
@@ -5519,9 +5522,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 12000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 175,
@@ -5540,9 +5546,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 14000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 176,
@@ -8225,12 +8234,8 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1,
-      "flood_equipment": 1
-    },
-    "chances": { "flood_equipment": 50 },
+    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
     "overlay_index": null,
@@ -9882,9 +9887,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 24000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 301,
@@ -10434,98 +10442,6 @@
     "base_mission_id": 319,
     "additive_overlays": "",
     "mission_categories": ["police"]
-  },
-  {
-    "id": "320",
-    "name": "Zawalenie Budynku Mieszkalnego",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4500,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 8,
-      "fwk": 1,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 3,
-      "police_cars": 2
-    },
-    "chances": {
-      "platform_trucks": 60,
-      "patient_transport": 45,
-      "patient_critical_care": 15
-    },
-    "additional": {
-      "possible_patient": 5,
-      "filter_id": "firehouse_missions",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interna"],
-      "patient_specializations": "Interna"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 5,
-      "police_stations": 3,
-      "fire_stations": 12
-    },
-    "overlay_index": null,
-    "base_mission_id": 320,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "321",
-    "name": "Zawalenie Wieżowca",
-    "place": "Wieżowiec",
-    "place_array": ["Wieżowiec"],
-    "average_credits": 14000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 15,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 5,
-      "mobile_air_vehicles": 2,
-      "police_helicopters": 1,
-      "police_cars": 5
-    },
-    "chances": {
-      "battalion_chief_vehicles": 90,
-      "platform_trucks": 70,
-      "patient_transport": 45,
-      "helicopter": 10,
-      "patient_critical_care": 25
-    },
-    "additional": {
-      "possible_patient": 20,
-      "possible_patient_min": 5,
-      "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 1,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interna"],
-      "patient_specializations": "Interna"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 5,
-      "police_stations": 5,
-      "police_helicopter_stations": 1,
-      "fire_stations": 15
-    },
-    "overlay_index": null,
-    "base_mission_id": 321,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
   },
   {
     "id": "322",
@@ -13234,7 +13150,6 @@
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13261,7 +13176,6 @@
     "additional": {
       "filter_id": "police_station_missions",
       "allow_traffic_car_instead_of_fustw": true,
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13290,7 +13204,6 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z",
       "patient_specialization_ids": [1],
@@ -13322,7 +13235,6 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z",
       "patient_specialization_ids": [1],
@@ -13352,7 +13264,6 @@
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13378,7 +13289,6 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13406,7 +13316,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z",
       "patient_specialization_ids": [0],
@@ -13437,7 +13346,6 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z",
       "patient_specialization_ids": [0],
@@ -13466,7 +13374,6 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13496,7 +13403,6 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
       "date_start": "2022-11-18T10:00:00Z",
       "date_end": "2022-12-18T22:59:00Z"
     },
@@ -13678,9 +13584,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 20 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 16000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 412,
@@ -13699,13 +13608,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "flood_equipment": 1
-    },
+    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 28000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 413,
@@ -13724,9 +13632,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 8000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 414,
@@ -13745,9 +13656,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 415,
@@ -13766,9 +13680,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "flood_equipment": 1 },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 16000
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 416,
@@ -13787,13 +13704,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "flood_equipment": 1
+    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 25000
     },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 417,
@@ -13815,11 +13731,14 @@
     "requirements": {
       "firetrucks": 4,
       "heavy_rescue_vehicles": 1,
-      "flood_equipment": 2
+      "min_pump_speed": 8000
     },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 8 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 40000
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 16 },
     "overlay_index": null,
     "base_mission_id": 418,
     "additive_overlays": "",
@@ -13841,11 +13760,14 @@
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "flood_equipment": 3
+      "min_pump_speed": 8000
     },
-    "chances": { "flood_equipment": 50 },
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 8 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 42000
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 16 },
     "overlay_index": null,
     "base_mission_id": 419,
     "additive_overlays": "",
@@ -14128,12 +14050,14 @@
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "flood_equipment": 2
+      "water_damage_pump": 2,
+      "min_pump_speed": 20000
     },
-    "chances": { "flood_equipment": 50 },
+    "chances": {},
     "additional": {
       "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 100000
     },
     "prerequisites": { "main_building": 0, "fire_stations": 15 },
     "overlay_index": null,
@@ -14156,14 +14080,15 @@
     "requirements": {
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "flood_equipment": 1
+      "min_pump_speed": 10500
     },
     "chances": {},
     "additional": {
       "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 12 },
+    "prerequisites": { "main_building": 0, "fire_stations": 20 },
     "overlay_index": null,
     "base_mission_id": 427,
     "additive_overlays": "",
@@ -20218,5 +20143,487 @@
     "base_mission_id": 599,
     "additive_overlays": "",
     "mission_categories": ["water_rescue", "water_rescue_specialization"]
+  },
+  {
+    "id": "600",
+    "name": "Zaginięcie w lesie",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 12800,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 2,
+      "police_cars": 1,
+      "rescue_dog_units": 2,
+      "personnel_educations": { "search_and_rescue": 8 },
+      "search_and_rescue": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "average_min_fire_personnel": 40,
+      "average_min_police_personnel": 12,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "search_and_rescue": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 600,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "601",
+    "name": "Poszukiwania osoby na otwartym terenie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 3,
+      "police_cars": 2,
+      "rescue_dog_units": 4,
+      "personnel_educations": { "search_and_rescue": 14 },
+      "search_and_rescue": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "average_min_fire_personnel": 60,
+      "average_min_police_personnel": 24,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "personnel_educations": { "search_and_rescue": 30 },
+      "search_and_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 601,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "602",
+    "name": "Poszukiwania osoby na otwartym terenie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 3,
+      "police_cars": 2,
+      "rescue_dog_units": 4,
+      "personnel_educations": { "search_and_rescue": 14 },
+      "search_and_rescue": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "average_min_fire_personnel": 60,
+      "average_min_police_personnel": 24,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "personnel_educations": { "search_and_rescue": 18 },
+      "search_and_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 602,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "603",
+    "name": "Poszukiwania wielkoobszarowe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 42000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 46,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 2,
+      "police_helicopters": 2,
+      "police_cars": 12,
+      "rescue_dog_units": 16,
+      "personnel_educations": { "search_and_rescue": 40, "riot_police": 82 },
+      "police_service_group_leader": 2,
+      "search_and_rescue": 6
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 1,
+      "only_alliance_mission": true,
+      "allow_rw_instead_of_lf": true,
+      "average_min_fire_personnel": 240,
+      "average_min_police_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": {
+        "Ratownictwo poszukiwawczo - ratownicze": 40,
+        "Szkolenie Personalne OPP": 82
+      }
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 603,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "604",
+    "name": "Poszukiwania zbiegłego przestępcy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "k9": 2,
+      "police_service_group_leader": 1,
+      "search_and_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "swat_personnel": 4,
+      "average_min_police_personnel": 85,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 18,
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
+      "search_and_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 604,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "605",
+    "name": "Zawalony dach budynku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 3,
+      "height_rescue_units": 1,
+      "police_cars": 2,
+      "rescue_dog_units": 4,
+      "personnel_educations": { "search_and_rescue": 8 },
+      "search_and_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 75,
+      "height_rescue_units": 40,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "search_and_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 605,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "606",
+    "name": "Zawalony budynek mieszkalny",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 2,
+      "rescue_dog_units": 2,
+      "personnel_educations": { "search_and_rescue": 12 },
+      "search_and_rescue": 1
+    },
+    "chances": {
+      "platform_trucks": 50,
+      "patient_transport": 70,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 25 },
+      "search_and_rescue": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "607",
+    "name": "Zawalony dach sklepu",
+    "place": "Supermarket (mały)\nSupermarket (duży)",
+    "place_array": ["Supermarket (mały)", "Supermarket (duży)"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "fwk": 1,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 5,
+      "police_cars": 3,
+      "rescue_dog_units": 6,
+      "personnel_educations": { "search_and_rescue": 16 },
+      "search_and_rescue": 2
+    },
+    "chances": {
+      "platform_trucks": 80,
+      "patient_transport": 60,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 14,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 16 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 14,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 30 },
+      "search_and_rescue": 1,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 607,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "608",
+    "name": "Zawalona kamienica",
+    "place": "",
+    "place_array": [],
+    "average_credits": 38000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 18,
+      "fwk": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 7,
+      "height_rescue_units": 2,
+      "police_cars": 9,
+      "k9": 1,
+      "rescue_dog_units": 10,
+      "personnel_educations": { "search_and_rescue": 25 },
+      "search_and_rescue": 4
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 45,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 24,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 25 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 4,
+      "personnel_educations": { "search_and_rescue": 50 },
+      "search_and_rescue": 3,
+      "fire_stations": 35
+    },
+    "overlay_index": null,
+    "base_mission_id": 608,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "609",
+    "name": "Zawalenie się wieży kościoła",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10200,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "height_rescue_units": 1,
+      "police_cars": 1,
+      "personnel_educations": { "search_and_rescue": 14 },
+      "search_and_rescue": 2
+    },
+    "chances": {
+      "fwk": 80,
+      "patient_transport": 70,
+      "helicopter": 5,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 30 },
+      "search_and_rescue": 1,
+      "fire_stations": 17
+    },
+    "overlay_index": null,
+    "base_mission_id": 609,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
