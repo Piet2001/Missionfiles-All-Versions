@@ -1429,7 +1429,7 @@
     "name": "Tankstellenbrand",
     "place": "Tankstelle",
     "place_array": ["Tankstelle"],
-    "average_credits": 3720,
+    "average_credits": 3900,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1442,12 +1442,14 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
+      "gwoil": 1,
       "gwmess": 1,
-      "hazmat_vehicles": 1
+      "hazmat_vehicles": 1,
+      "police_cars": 2
     },
     "chances": {
       "mobile_command_vehicles": 10,
-      "heavy_rescue_vehicles": 30,
+      "heavy_rescue_vehicles": 45,
       "gwmess": 80,
       "hazmat_vehicles": 70
     },
@@ -1455,7 +1457,11 @@
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 11 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
     "overlay_index": null,
     "base_mission_id": 42,
     "additive_overlays": "",
@@ -38985,5 +38991,56 @@
     "base_mission_id": 781,
     "additive_overlays": "ab",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "782",
+    "name": "Tankstellenbrand",
+    "place": "Chemiepark\nIndustrie-Allgemein",
+    "place_array": ["Chemiepark", "Industrie-Allgemein"],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "ulf": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "gwoil": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_command_vehicles": 25,
+      "heavy_rescue_vehicles": 60,
+      "nef": 10,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 782,
+    "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
   }
 ]
