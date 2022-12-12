@@ -16900,7 +16900,7 @@
     "name": "Porucha letadla v podvozku",
     "place": "Velké letiště (ranvej)",
     "place_array": ["Velké letiště (ranvej)"],
-    "average_credits": 8570,
+    "average_credits": 9000,
     "generated_by": "",
     "icons": [
       "/images/planecrash_gruen.png",
@@ -16915,7 +16915,8 @@
       "heavy_rescue_vehicles": 1,
       "arff": 2,
       "hazmat_vehicles": 1,
-      "police_cars": 5
+      "police_cars": 5,
+      "rettungstreppe": 1
     },
     "chances": { "patient_transport": 10 },
     "additional": {
@@ -16937,5 +16938,109 @@
     "base_mission_id": 483,
     "additive_overlays": "",
     "mission_categories": ["airport"]
+  },
+  {
+    "id": "484",
+    "name": "Požár vánoční výzdoby",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 484,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "485",
+    "name": "Santovy saně blokující silnici",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 485,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "486",
+    "name": "Krádež vánočního stromku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 486,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "487",
+    "name": "Krádež vánočních dárků v nákupním centru",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 487,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
