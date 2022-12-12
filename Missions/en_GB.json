@@ -23224,35 +23224,25 @@
   },
   {
     "id": "530",
-    "name": "Library Fire (Small)",
-    "place": "Library",
-    "place_array": ["Library"],
-    "average_credits": 2250,
+    "name": "Lithium Battery Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
-    "chances": { "patient_transport": 25 },
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
     "additional": {
-      "possible_patient": 5,
-      "possible_patient_min": 0,
-      "expansion_missions_ids": [531],
-      "patient_uk_code_possible": ["C-3"],
-      "filter_id": "firehouse_missions",
-      "patient_allow_first_responder_chance": 50,
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "duration_text": "2 hours",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 1
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 530,
     "additive_overlays": "",
@@ -23260,39 +23250,25 @@
   },
   {
     "id": "531",
-    "name": "Library Fire (Medium)",
-    "place": "Library",
-    "place_array": ["Library"],
-    "average_credits": 6500,
+    "name": "Christmas Decoration Caught Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "water_tankers": 1
-    },
-    "chances": { "patient_transport": 50 },
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
     "additional": {
-      "possible_patient": 10,
-      "possible_patient_min": 3,
-      "expansion_missions_ids": [532],
-      "patient_uk_code_possible": ["C-3"],
       "filter_id": "firehouse_missions",
-      "patient_allow_first_responder_chance": 25,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 2,
-      "fire_stations": 7
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 531,
     "additive_overlays": "",
@@ -23300,89 +23276,80 @@
   },
   {
     "id": "532",
-    "name": "Library Fire (Large)",
-    "place": "Library",
-    "place_array": ["Library"],
-    "average_credits": 10000,
+    "name": "Santa's Sled Blocking the Road",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 2,
-      "mobile_air_vehicles": 1,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 60 },
+    "requirements": { "police_cars": 2 },
+    "chances": {},
     "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 8,
-      "expansion_missions_ids": [533],
-      "patient_uk_code_possible": ["C-3"],
-      "filter_id": "firehouse_missions",
-      "patient_allow_first_responder_chance": 15,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 1,
-      "fire_stations": 10
-    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 532,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
   },
   {
     "id": "533",
-    "name": "Library Fire (Major)",
-    "place": "Library",
-    "place_array": ["Library"],
-    "average_credits": 20000,
+    "name": "Christmas Tree Stolen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 15,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 4,
-      "water_tankers": 3,
-      "mobile_air_vehicles": 2,
-      "police_cars": 4
-    },
-    "chances": { "patient_transport": 75 },
+    "requirements": { "police_cars": 3 },
+    "chances": {},
     "additional": {
-      "possible_patient": 50,
-      "possible_patient_min": 15,
-      "patient_uk_code_possible": ["C-3"],
-      "filter_id": "firehouse_missions",
-      "patient_allow_first_responder_chance": 10,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 20,
-      "police_stations": 7,
-      "fire_stations": 14
-    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 533,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "534",
+    "name": "Christmas Presents Stolen in Mall",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2022-12-12T09:00:00Z",
+      "date_end": "2022-12-24T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 534,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
