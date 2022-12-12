@@ -20627,5 +20627,46 @@
     "base_mission_id": 609,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "610",
+    "name": "Osoba uwięziona w silosie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1860,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "personnel_educations": { "search_and_rescue": 8 },
+      "search_and_rescue": 2
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 610,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
