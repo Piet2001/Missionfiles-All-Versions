@@ -14888,7 +14888,8 @@
     "additional": {
       "expansion_missions_ids": [370],
       "followup_missions_ids": [471],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -14898,7 +14899,7 @@
     "overlay_index": null,
     "base_mission_id": 369,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "369/a",
@@ -14923,7 +14924,8 @@
     "additional": {
       "expansion_missions_ids": [370],
       "followup_missions_ids": [471],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -14934,7 +14936,85 @@
     "overlay_index": null,
     "base_mission_id": 369,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "369/b",
+    "name": "Medium Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 12000,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [370],
+      "followup_missions_ids": [471],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 2,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 369,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "369/ab",
+    "name": "Medium Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 12000,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "personnel_educations": { "hotshot": 20 },
+      "fire_investigation": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [370],
+      "followup_missions_ids": [471],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 2,
+      "fire_investigation_count": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 369,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "370",
@@ -14957,8 +15037,9 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [371],
-      "followup_missions_ids": [472],
-      "filter_id": "firehouse_missions"
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -14968,7 +15049,7 @@
     "overlay_index": null,
     "base_mission_id": 370,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "370/a",
@@ -14992,8 +15073,9 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [371],
-      "followup_missions_ids": [472],
-      "filter_id": "firehouse_missions"
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -15004,7 +15086,567 @@
     "overlay_index": null,
     "base_mission_id": 370,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/b",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/c",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "c",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/d",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "brush_command": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "d",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/ab",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/ac",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "ac",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/ad",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "ad",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/bc",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 80 },
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "bc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/bd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "bd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/cd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "cd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/abc",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 80 },
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "abc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/abd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "abd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/acd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "acd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/bcd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "bcd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "370/abcd",
+    "name": "Large Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 16000,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "water_tankers": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [371],
+      "followup_missions_ids": [472, 812],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 370,
+    "additive_overlays": "abcd",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "371",
@@ -15029,7 +15671,8 @@
     "chances": {},
     "additional": {
       "followup_missions_ids": [473],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -15040,7 +15683,7 @@
     "overlay_index": null,
     "base_mission_id": 371,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "371/a",
@@ -15066,7 +15709,8 @@
     "chances": {},
     "additional": {
       "followup_missions_ids": [473],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -15078,7 +15722,1291 @@
     "overlay_index": null,
     "base_mission_id": 371,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/b",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/c",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "c",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/d",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "d",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/e",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "e",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ab",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ac",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ac",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ad",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ad",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ae",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ae",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bc",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/be",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "be",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/cd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "cd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ce",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ce",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/de",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "de",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abc",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abe",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abe",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/acd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "acd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ace",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ace",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/ade",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "ade",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bcd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bcd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bce",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bce",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bde",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/cde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "cde",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abcd",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abcd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abce",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abce",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abde",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/acde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "acde",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/bcde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "bcde",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "371/abcde",
+    "name": "Major Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 30000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "water_tankers": 8,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [473],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "abcde",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "372",
@@ -15097,7 +17025,8 @@
     "additional": {
       "expansion_missions_ids": [373],
       "followup_missions_ids": [471],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -15107,7 +17036,7 @@
     "overlay_index": null,
     "base_mission_id": 372,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "373",
@@ -15129,7 +17058,8 @@
     "chances": {},
     "additional": {
       "followup_missions_ids": [472],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -15139,7 +17069,7 @@
     "overlay_index": null,
     "base_mission_id": 373,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "374",
@@ -15155,7 +17085,10 @@
     ],
     "requirements": { "brush_truck": 2 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 2,
@@ -15164,7 +17097,7 @@
     "overlay_index": null,
     "base_mission_id": 374,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "375",
@@ -15193,7 +17126,7 @@
     "overlay_index": null,
     "base_mission_id": 375,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "376",
@@ -15306,6 +17239,7 @@
       "possible_patient_min": 0,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["22-D-5a"],
+      "uses_custom_spawn_area": true,
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["General Surgeon"],
       "patient_specializations": "General Surgeon"
@@ -15318,7 +17252,7 @@
     "overlay_index": null,
     "base_mission_id": 377,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "378",
@@ -15711,7 +17645,7 @@
     "overlay_index": null,
     "base_mission_id": 389,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "390",
@@ -15795,7 +17729,7 @@
     "overlay_index": null,
     "base_mission_id": 391,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "391/a",
@@ -15849,7 +17783,7 @@
     "overlay_index": null,
     "base_mission_id": 391,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "392",
@@ -15901,7 +17835,7 @@
     "overlay_index": null,
     "base_mission_id": 392,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "392/a",
@@ -15955,7 +17889,7 @@
     "overlay_index": null,
     "base_mission_id": 392,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "393",
@@ -15989,7 +17923,7 @@
     "overlay_index": null,
     "base_mission_id": 393,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "393/a",
@@ -16025,7 +17959,83 @@
     "overlay_index": null,
     "base_mission_id": 393,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "393/b",
+    "name": "Medium forest fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 9000,
+      "brush_truck": 5,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 2,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [394],
+      "followup_missions_ids": [471],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 393,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "393/ab",
+    "name": "Medium forest fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 9000,
+      "brush_truck": 5,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 2,
+      "personnel_educations": { "hotshot": 20 },
+      "fire_investigation": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [394],
+      "followup_missions_ids": [471],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_investigation_count": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 393,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "394",
@@ -16049,7 +18059,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [395],
-      "followup_missions_ids": [472],
+      "followup_missions_ids": [472, 812],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -16060,7 +18070,7 @@
     "overlay_index": null,
     "base_mission_id": 394,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "394/a",
@@ -16085,7 +18095,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [395],
-      "followup_missions_ids": [472],
+      "followup_missions_ids": [472, 812],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -16097,7 +18107,243 @@
     "overlay_index": null,
     "base_mission_id": 394,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/b",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "personnel_educations": { "hotshot": 120 },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/c",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 10900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "brush_air_command": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "c",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/ab",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/ac",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 11900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "fire_investigation_count": 2,
+      "brush_air_command": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "ac",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/bc",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 13900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "bc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "394/abc",
+    "name": "Large Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 60 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [472, 812],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 5,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "brush_air_command": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "abc",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "395",
@@ -16135,7 +18381,7 @@
     "overlay_index": null,
     "base_mission_id": 395,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "395/a",
@@ -16175,7 +18421,609 @@
     "overlay_index": null,
     "base_mission_id": 395,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/b",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "hotshot": 160 },
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/c",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 13900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "c",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/d",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "brush_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "d",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/ab",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 160 },
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "ab",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/ac",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "ac",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/ad",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 12400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "ad",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/bc",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 16900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "bc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/bd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "bd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/cd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "cd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/abc",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 17900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "abc",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/abd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 15400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_investigation": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "abd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/acd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 15300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "acd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/bcd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 17300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "bcd",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "395/abcd",
+    "name": "Major Forest Fire",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 18300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 19000,
+      "brush_truck": 10,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_investigation": 2,
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [369, 389, 473],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Hotshot": 80 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 7,
+      "fire_aviation_count": 1,
+      "fire_investigation_count": 2,
+      "personnel_educations": { "hotshot": 160 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "abcd",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "396",
@@ -16205,7 +19053,7 @@
     "overlay_index": null,
     "base_mission_id": 396,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "397",
@@ -17771,7 +20619,8 @@
     "additional": {
       "expansion_missions_ids": [369],
       "followup_missions_ids": [470],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -17781,7 +20630,7 @@
     "overlay_index": null,
     "base_mission_id": 432,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "432/a",
@@ -17805,7 +20654,8 @@
     "additional": {
       "expansion_missions_ids": [369],
       "followup_missions_ids": [470],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -17816,7 +20666,7 @@
     "overlay_index": null,
     "base_mission_id": 432,
     "additive_overlays": "a",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "433",
@@ -17835,7 +20685,8 @@
     "additional": {
       "expansion_missions_ids": [372],
       "followup_missions_ids": [470],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -17845,7 +20696,7 @@
     "overlay_index": null,
     "base_mission_id": 433,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "434",
@@ -19029,12 +21880,15 @@
     ],
     "requirements": { "brush_truck": 2 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
     "prerequisites": { "main_building": 0, "brush_extension": 1 },
     "overlay_index": null,
     "base_mission_id": 470,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "471",
@@ -19050,7 +21904,10 @@
     ],
     "requirements": { "firetrucks": 1, "brush_truck": 4 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 2,
@@ -19059,7 +21916,41 @@
     "overlay_index": null,
     "base_mission_id": 471,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "471/a",
+    "name": "Medium wildfire cleanup",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 4,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 2,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "472",
@@ -19079,7 +21970,10 @@
       "battalion_chief_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 2,
@@ -19088,7 +21982,42 @@
     "overlay_index": null,
     "base_mission_id": 472,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "472/a",
+    "name": "Large wildfire cleanup",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "brush_truck": 7,
+      "battalion_chief_vehicles": 1,
+      "personnel_educations": { "hotshot": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 2,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "473",
@@ -19109,7 +22038,10 @@
       "mobile_command_vehicles": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 2,
@@ -19118,7 +22050,43 @@
     "overlay_index": null,
     "base_mission_id": 473,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "473/a",
+    "name": "Major wildfire cleanup",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "brush_truck": 10,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "personnel_educations": { "hotshot": 60 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 60 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 2,
+      "personnel_educations": { "hotshot": 120 },
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 473,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
   },
   {
     "id": "474",
@@ -21588,7 +24556,7 @@
     "overlay_index": null,
     "base_mission_id": 548,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "549",
@@ -21623,7 +24591,7 @@
     "overlay_index": null,
     "base_mission_id": 549,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "550",
@@ -21661,7 +24629,7 @@
     "overlay_index": null,
     "base_mission_id": 550,
     "additive_overlays": "",
-    "mission_categories": ["forestry", "forestry_specialization"]
+    "mission_categories": ["forestry"]
   },
   {
     "id": "551",
@@ -30976,6 +33944,384 @@
     "mission_categories": ["fire", "forestry_specialization"]
   },
   {
+    "id": "766/a",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/b",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8750,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/c",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/ab",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9750,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/ac",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 20 },
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/bc",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11650,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "766/abc",
+    "name": "Light Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12650,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "firetrucks": 6,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "hotshot": 20 },
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 50,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [432],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "brush_extension": 1,
+      "personnel_educations": { "hotshot": 40 },
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
     "id": "767",
     "name": "Large Aircraft Crash in Wildland",
     "place": "",
@@ -31028,6 +34374,903 @@
     "overlay_index": null,
     "base_mission_id": 767,
     "additive_overlays": "",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/a",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/b",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8750,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/c",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/d",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6900,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "d",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/ab",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9750,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/ac",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/ad",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "ad",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/bc",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11650,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/bd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9150,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "bd",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/cd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9800,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "cd",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/abc",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12650,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/abd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10150,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "abd",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/acd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "acd",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/bcd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12050,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "bcd",
+    "mission_categories": ["fire", "forestry_specialization"]
+  },
+  {
+    "id": "767/abcd",
+    "name": "Large Aircraft Crash in Wildland",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13050,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 8,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 0,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "personnel_educations": { "hotshot": 40 },
+      "sheriff": 1,
+      "brush_air_command": 1
+    },
+    "chances": {
+      "hazmat_vehicles": 75,
+      "patient_transport": 60,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [369],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 20,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "brush_air_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "abcd",
     "mission_categories": ["fire", "forestry_specialization"]
   },
   {
@@ -33078,5 +37321,299 @@
     "base_mission_id": 811,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "812",
+    "name": "Dam threatens to break",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "boats": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [813],
+      "followup_missions_ids": [595, 595, 595, 169, 169, 170],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "brush_command": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 812,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue", "fire", "forestry"]
+  },
+  {
+    "id": "813",
+    "name": "Dam break",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 35500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 35,
+      "battalion_chief_vehicles": 6,
+      "elw3": 2,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 6,
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "boats": 6,
+      "personnel_educations": { "hotshot": 10 }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "followup_missions_ids": [595, 595, 595, 595, 171, 171, 171, 172, 172],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Hotshot": 10 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 4,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "hotshot": 20 },
+      "brush_command": 2,
+      "smoke_jumper": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 813,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue", "fire", "forestry"]
+  },
+  {
+    "id": "814",
+    "name": "Smoke Sighting",
+    "place": "Forest\nForest Cabin\nCampsite\nValley",
+    "place_array": ["Forest", "Forest Cabin", "Campsite", "Valley"],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "brush_truck": 1, "battalion_chief_vehicles": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [389, 432, 433],
+      "filter_id": "firehouse_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 814,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "815",
+    "name": "Small Rapid Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2000,
+      "brush_truck": 1,
+      "water_tankers": 1,
+      "personnel_educations": { "hotshot": 10 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [816],
+      "followup_missions_ids": [815, 815],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [470],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 10 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 20 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 815,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "816",
+    "name": "Medium Rapid Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "brush_truck": 2,
+      "battalion_chief_vehicles": 1,
+      "elw3": 1,
+      "water_tankers": 2,
+      "personnel_educations": { "hotshot": 20 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [817],
+      "followup_missions_ids": [816, 816],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [471],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 40 },
+      "brush_command": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "817",
+    "name": "Large Rapid Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7550,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 6000,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 1,
+      "elw3": 2,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 30 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [818],
+      "followup_missions_ids": [817, 817],
+      "smoke_jumper_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [472],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 30 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 60 },
+      "brush_command": 1,
+      "smoke_jumper": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "818",
+    "name": "Major Rapid Wildfire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 6000,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 1,
+      "elw3": 2,
+      "water_tankers": 3,
+      "personnel_educations": { "hotshot": 40 },
+      "brush_air_command": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [818, 818],
+      "smoke_jumper_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [473],
+      "uses_custom_spawn_area": true,
+      "personnel_educations": { "Hotshot": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "personnel_educations": { "hotshot": 80 },
+      "brush_command": 1,
+      "smoke_jumper": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
   }
 ]
