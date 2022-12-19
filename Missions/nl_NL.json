@@ -22794,20 +22794,24 @@
     "name": "Vluchtende verdachte in voetgangersgebied",
     "place": "Supermarkt",
     "place_array": ["Supermarkt"],
-    "average_credits": 945,
+    "average_credits": 1445,
     "generated_by": "",
     "icons": [
       "/images/cuffs_gruen.png",
       "/images/cuffs_gelb.png",
       "/images/cuffs_rot.png"
     ],
-    "requirements": { "police_cars": 2, "bike_police": 1 },
+    "requirements": { "hondengeleider": 1, "police_cars": 2, "bike_police": 1 },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
       "need_bike_police_only_if_present": true
     },
-    "prerequisites": { "main_building": 5, "police_stations": 6 },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "hondengeleider": 1
+    },
     "overlay_index": null,
     "base_mission_id": 672,
     "additive_overlays": "",
@@ -22852,21 +22856,25 @@
     "name": "Aanhouding verdachte in winkelcentrum",
     "place": "Winkelcentrum",
     "place_array": ["Winkelcentrum"],
-    "average_credits": 945,
+    "average_credits": 1445,
     "generated_by": "",
     "icons": [
       "/images/cuffs_gruen.png",
       "/images/cuffs_gelb.png",
       "/images/cuffs_rot.png"
     ],
-    "requirements": { "police_cars": 2, "bike_police": 1 },
+    "requirements": { "hondengeleider": 1, "police_cars": 2, "bike_police": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "need_bike_police_only_if_present": true
     },
-    "prerequisites": { "main_building": 5, "police_stations": 6 },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "hondengeleider": 1
+    },
     "overlay_index": null,
     "base_mission_id": 674,
     "additive_overlays": "",
@@ -34162,6 +34170,69 @@
     "name": "Brand in station",
     "place": "Centraal Station\nStation",
     "place_array": ["Centraal Station", "Station"],
+    "average_credits": 31970,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 150000,
+      "firetrucks": 1,
+      "hondengeleider": 2,
+      "spokesman": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3,
+      "mobile_air_vehicles": 2,
+      "lebefkw": 1,
+      "gwmess": 6,
+      "hazmat_vehicles": 2,
+      "gefkw": 1,
+      "police_helicopters": 1,
+      "police_cars": 20,
+      "grukw": 6,
+      "ovdp": 2,
+      "bike_police": 2,
+      "detention_unit": 1
+    },
+    "chances": { "nef": 5, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "min_possible_prisoners": 10,
+      "max_possible_prisoners": 30,
+      "filter_id": "riot_police_missions",
+      "subsequent_missions_ids": [877],
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": false,
+      "patient_specialization_ids": [4, 0],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Interne Geneeskunde"
+      ],
+      "patient_specializations": "Traumatologie, Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 956,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "956-1",
+    "name": "Brand in station",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
     "average_credits": 2540,
     "generated_by": "",
     "icons": [
@@ -34187,17 +34258,17 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "fire_stations": 6
+      "rescue_stations": 12,
+      "police_stations": 13,
+      "fire_stations": 20
     },
-    "overlay_index": 0,
+    "overlay_index": 1,
     "base_mission_id": 956,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
   {
-    "id": "956-1",
+    "id": "956-2",
     "name": "Brand in station",
     "place": "Centraal Station\nStation",
     "place_array": ["Centraal Station", "Station"],
@@ -34235,11 +34306,17 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 12,
-      "police_stations": 13,
-      "fire_stations": 20
+      "rescue_stations": 33,
+      "police_stations": 23,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 5,
+      "riot_unit_count": 2,
+      "detention_unit_count": 1,
+      "prisoner_transport_count": 1,
+      "hondengeleider": 1,
+      "fire_stations": 46
     },
-    "overlay_index": 1,
+    "overlay_index": 2,
     "base_mission_id": 956,
     "additive_overlays": "",
     "mission_categories": ["fire"]
