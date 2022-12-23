@@ -1156,7 +1156,7 @@
     "name": "Kaminbrand",
     "place": "",
     "place_array": [],
-    "average_credits": 1310,
+    "average_credits": 1500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1164,16 +1164,55 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
+      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
     },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "chances": { "platform_trucks": 25 },
+    "additional": {
+      "expansion_missions_ids": [21, 701, 102, 103, 104, 352, 669],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 32,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "32/a",
+    "name": "Kaminbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "platform_trucks": 25, "nef": 30, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [21, 701, 102, 103, 104, 352, 669],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 32,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
