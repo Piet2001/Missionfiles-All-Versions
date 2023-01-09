@@ -36249,6 +36249,86 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "1001",
+    "name": "Verdachte door politiehond gebeten",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 65 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "subsequent_mission_only": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1001,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1002",
+    "name": "Blokkade door boze menigte",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14530,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 4,
+      "lebefkw": 1,
+      "gefkw": 2,
+      "police_helicopters": 1,
+      "police_cars": 20,
+      "grukw": 6,
+      "ovdp": 1,
+      "police_horse": 10,
+      "detention_unit": 1
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 10,
+      "max_possible_prisoners": 40,
+      "filter_id": "riot_police_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 8,
+      "police_stations": 18,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 10,
+      "riot_unit_count": 2,
+      "detention_unit_count": 1,
+      "prisoner_transport_count": 1,
+      "police_horse": 3,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1002,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
+  },
+  {
     "id": "1003",
     "name": "Houtschuur in brand door kampvuur",
     "place": "",
