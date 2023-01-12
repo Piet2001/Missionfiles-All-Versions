@@ -23680,5 +23680,981 @@
     "base_mission_id": 540,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "542",
+    "name": "Investigate Flare from coastline",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": { "filter_id": "coastal_rescue_missions" },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "543",
+    "name": "Investigate Flare",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2 },
+    "chances": { "patient_transport": 70, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 543,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "544",
+    "name": "Abandoned Flares",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": { "filter_id": "coastal_rescue_missions" },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 544,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "545",
+    "name": "Mud Rescue",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_mud_rescue": 15 },
+      "mud_rescue": 1,
+      "coastal_mud_rescue": 2
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Mud Rescue Operator": 15 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "coastal_mud_rescue": 30 },
+      "mud_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "546",
+    "name": "Hovercraft Assist Coastguard Mud Rescue",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_mud_rescue": 15 },
+      "coastal_boat_hover": 1,
+      "mud_rescue": 1,
+      "coastal_mud_rescue": 2
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Mud Rescue Operator": 15 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "coastal_mud_rescue": 30 },
+      "coastal_rescue_count": 1,
+      "mud_rescue": 2,
+      "coastal_hover_boat": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "547",
+    "name": "Person Stuck on Cliff",
+    "place": "Cliff",
+    "place_array": ["Cliff"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "height_rescue_units": 2,
+      "personnel_educations": { "gw_hoehenrettung": 10 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Rope Rescue Operator": 10 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "gw_hoehenrettung": 20 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 547,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "548",
+    "name": "Fallen From Cliff",
+    "place": "Cliff",
+    "place_array": ["Cliff"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "height_rescue_units": 2,
+      "personnel_educations": { "gw_hoehenrettung": 10 }
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Rope Rescue Operator": 10 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "gw_hoehenrettung": 20 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "549",
+    "name": "Fallen From Cliff, Winch Required",
+    "place": "Cliff",
+    "place_array": ["Cliff"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "height_rescue_units": 2,
+      "personnel_educations": { "gw_hoehenrettung": 10 },
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Rope Rescue Operator": 10 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "gw_hoehenrettung": 20 },
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "550",
+    "name": "Medical Evacuation From Coastline, Broken Leg",
+    "place": "Beach\nCliff\nHarbour\nMarina",
+    "place_array": ["Beach", "Cliff", "Harbour", "Marina"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 1,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 550,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "551",
+    "name": "Medical Evacuation from Moored Vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 2,
+      "rescue_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "552",
+    "name": "Evacuation from Cruise Liner",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 10,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "553",
+    "name": "Evacuation from Cruise Liner MAJOR",
+    "place": "",
+    "place_array": [],
+    "average_credits": 25000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 6, "coastal_helicopter": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 18,
+      "possible_patient_min": 6,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 14,
+      "coastal_rescue_count": 10,
+      "coastal_helicopter_count": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 553,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "554",
+    "name": "Investigate Washed Up Boat",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 1,
+      "rescue_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 554,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "555",
+    "name": "Persons Cut off by Tide",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 2 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 3,
+      "rescue_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 555,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "556",
+    "name": "Give Safety Advice",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": { "filter_id": "coastal_rescue_missions" },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 556,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "557",
+    "name": "Public Engagement",
+    "place": "School\nMall",
+    "place_array": ["School", "Mall"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "filter_id": "coastal_rescue_missions"
+    },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 557,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "558",
+    "name": "Man Remote Radio Site",
+    "place": "Radio Site",
+    "place_array": ["Radio Site"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1 },
+    "chances": {},
+    "additional": { "filter_id": "coastal_rescue_missions" },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 558,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "559",
+    "name": "Man Remote Radio Site - Prolonged Outage",
+    "place": "Radio Site",
+    "place_array": ["Radio Site"],
+    "average_credits": 40000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1, "coastal_support": 1 },
+    "chances": {},
+    "additional": { "filter_id": "coastal_rescue_missions" },
+    "prerequisites": { "main_building": 28, "water_rescue_2": 2 },
+    "overlay_index": null,
+    "base_mission_id": 559,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "560",
+    "name": "Broken Down Boat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_guard_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "allow_large_coastal_boat_instead_of_coastal_guard_boat": 1
+    },
+    "prerequisites": { "main_building": 27, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 560,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "561",
+    "name": "Medivac from vessel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "chances": {
+      "patient_transport": 100,
+      "patient_critical_care": 40,
+      "coastal_helicopter": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "allow_large_coastal_boat_instead_of_coastal_guard_boat": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 561,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "562",
+    "name": "Swimmer in distress",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "water_rescue": 1, "coastal_rescue": 2 },
+    "chances": { "patient_transport": 60, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 2,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 562,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "562/a",
+    "name": "Swimmer in distress",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 1,
+      "coastal_rescue": 2,
+      "coastal_jetski": 1
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 2,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "coastal_rescue_extension": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 562,
+    "additive_overlays": "a",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "563",
+    "name": "Medical Emergency on beach",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "water_rescue": 1, "coastal_rescue": 1 },
+    "chances": { "patient_transport": 60, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 1,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 563,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "564",
+    "name": "Vehicle trapped in flood water",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "coastal_boat": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "564/a",
+    "name": "Vehicle trapped in flood water",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "flood_equipment": 1,
+      "coastal_boat": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "flood_equipment": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "565",
+    "name": "Person trapped in flood water",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "flood_equipment": 1, "coastal_rescue": 2 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 2,
+      "rescue_stations": 3,
+      "flood_equipment": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 565,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "566",
+    "name": "Rescue Boat Assist Coastguard Mud Rescue",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_mud_rescue": 15 },
+      "coastal_boat": 1,
+      "mud_rescue": 2,
+      "coastal_mud_rescue": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Mud Rescue Operator": 15 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 4,
+      "rescue_stations": 3,
+      "personnel_educations": { "coastal_mud_rescue": 30 },
+      "coastal_rescue_count": 1,
+      "mud_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 566,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "567",
+    "name": "Mud Rescue MAJOR",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "coastal_mud_rescue": 30 },
+      "coastal_command": 1,
+      "coastal_boat": 1,
+      "coastal_boat_hover": 1,
+      "mud_rescue": 4,
+      "coastal_support": 1,
+      "coastal_mud_rescue": 2
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Mud Rescue Operator": 30 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 6,
+      "rescue_stations": 10,
+      "personnel_educations": { "coastal_mud_rescue": 60 },
+      "coastal_rescue_count": 3,
+      "mud_rescue": 4,
+      "coastal_hover_boat": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 567,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "568",
+    "name": "Rescue Boat Assist Coastguard, Persons Cut off by Tide",
+    "place": "Estuary\nHarbour\nBeach\nMarina",
+    "place_array": ["Estuary", "Harbour", "Beach", "Marina"],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 2, "coastal_boat": 1 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 3,
+      "rescue_stations": 5,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 568,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
   }
 ]
