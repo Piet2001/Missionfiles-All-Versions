@@ -17818,5 +17818,91 @@
     "base_mission_id": 539,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "540",
+    "name": "Minor House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "water_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [541],
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "541",
+    "name": "Moderate House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "water_rescue": 1, "road_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [542],
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "overlay_index": null,
+    "base_mission_id": 541,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "542",
+    "name": "Significant House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 2,
+      "road_rescue": 2
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 0,
+      "filter_id": "water_watch_missions",
+      "patient_allow_first_responder_chance": 50,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   }
 ]
