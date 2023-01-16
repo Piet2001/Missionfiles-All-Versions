@@ -15580,5 +15580,36 @@
     "base_mission_id": 479,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "480",
+    "name": "Smuggling via båt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_guard_boat": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24]
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "police_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
