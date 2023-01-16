@@ -13699,16 +13699,18 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
+      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
       "police_cars": 2,
-      "diver_units": 2,
-      "boats": 2
+      "diver_units": 1,
+      "boats": 1
     },
-    "chances": { "patient_transport": 90, "patient_critical_care": 90 },
+    "chances": { "patient_transport": 75 },
     "additional": {
-      "possible_patient": 1,
-      "filter_id": "coastal_rescue_missions",
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
@@ -13717,14 +13719,14 @@
     "prerequisites": {
       "main_building": 0,
       "wasserrettung": 2,
-      "rescue_stations": 1,
+      "rescue_stations": 2,
       "police_stations": 2,
       "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 453,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "fire"]
   },
   {
     "id": "454",
@@ -13740,15 +13742,23 @@
     ],
     "requirements": {
       "firetrucks": 5,
+      "fwk": 1,
       "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
       "police_cars": 3,
-      "diver_units": 3,
-      "boats": 3
+      "diver_units": 1,
+      "boats": 1
     },
-    "chances": { "patient_transport": 90, "patient_critical_care": 30 },
+    "chances": {
+      "hazmat_vehicles": 40,
+      "patient_transport": 0,
+      "patient_critical_care": 30
+    },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient": 2,
+      "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
+      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
       "patient_specializations": "Clinica Geral"
@@ -13756,14 +13766,14 @@
     "prerequisites": {
       "main_building": 0,
       "wasserrettung": 3,
-      "rescue_stations": 1,
+      "rescue_stations": 2,
       "police_stations": 3,
-      "fire_stations": 5
+      "fire_stations": 11
     },
     "overlay_index": null,
     "base_mission_id": 454,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "fire"]
   },
   {
     "id": "455",
@@ -13779,15 +13789,25 @@
     ],
     "requirements": {
       "firetrucks": 5,
+      "fwk": 2,
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
       "police_cars": 3,
       "diver_units": 3,
       "boats": 3
     },
-    "chances": { "patient_transport": 90, "patient_critical_care": 30 },
+    "chances": {
+      "mobile_air_vehicles": 20,
+      "hazmat_vehicles": 40,
+      "patient_transport": 90,
+      "patient_critical_care": 30
+    },
     "additional": {
       "possible_patient": 15,
       "filter_id": "coastal_rescue_missions",
+      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
       "patient_specializations": "Clinica Geral"
@@ -13797,12 +13817,12 @@
       "wasserrettung": 3,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 5
+      "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 455,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "fire"]
   },
   {
     "id": "456",
@@ -13850,10 +13870,10 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
+      "brush_truck": 3,
       "battalion_chief_vehicles": 1,
-      "police_cars": 6,
-      "boats": 2
+      "boats": 2,
+      "bike_police": 4
     },
     "chances": {
       "patient_transport": 100,
@@ -13881,7 +13901,7 @@
     "overlay_index": null,
     "base_mission_id": 457,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "fire"]
   },
   {
     "id": "458",
@@ -13895,14 +13915,28 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "boats": 1 },
-    "chances": {},
-    "additional": { "filter_id": "coastal_rescue_missions" },
-    "prerequisites": { "main_building": 0, "wasserrettung": 1 },
+    "requirements": { "firetrucks": 1, "elw3": 1, "police_cars": 2 },
+    "chances": { "patient_transport": 90, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [459, 265],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 2
+    },
     "overlay_index": null,
     "base_mission_id": 458,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "fire"]
   },
   {
     "id": "459",
@@ -13939,7 +13973,7 @@
   },
   {
     "id": "460",
-    "name": "Navio pequeno virado",
+    "name": "Pequena embarcação virada",
     "place": "",
     "place_array": [],
     "average_credits": 8000,
@@ -13973,7 +14007,7 @@
   },
   {
     "id": "461",
-    "name": "Navio grande virado",
+    "name": "Grande embarcação virada",
     "place": "",
     "place_array": [],
     "average_credits": 14000,
@@ -14010,7 +14044,7 @@
     "name": "Surfista afogado",
     "place": "Lago\nPraia",
     "place_array": ["Lago", "Praia"],
-    "average_credits": 1000,
+    "average_credits": 3000,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -14022,12 +14056,11 @@
       "coastal_command": 2,
       "coastal_jetski": 2
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 90 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "coastal_rescue_missions",
-      "vehicle_groups": ["ocean_missions", "default"],
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [7],
       "patient_specialization_captions": ["Cardiologia"],
@@ -14045,7 +14078,7 @@
   },
   {
     "id": "463",
-    "name": "Navio desaparecido",
+    "name": "Embarcação desaparecida",
     "place": "",
     "place_array": [],
     "average_credits": 7000,
@@ -14082,7 +14115,7 @@
     "name": "Ataque de tubarão",
     "place": "Praia",
     "place_array": ["Praia"],
-    "average_credits": 1000,
+    "average_credits": 2200,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -14094,7 +14127,7 @@
       "coastal_command": 1,
       "coastal_jetski": 1
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 90 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
