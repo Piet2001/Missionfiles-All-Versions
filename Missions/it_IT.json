@@ -19743,5 +19743,48 @@
     "base_mission_id": 577,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "578",
+    "name": "Bagnante Colpito da Imbarcazione",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 80, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01R", "ZC01G"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 578,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
