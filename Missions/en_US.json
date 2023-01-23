@@ -37838,5 +37838,44 @@
     "base_mission_id": 826,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "827",
+    "name": "Burst Tire - Aircraft",
+    "place": "Small Airport (Runway)\nLarge Airport (Runway)",
+    "place_array": ["Small Airport (Runway)", "Large Airport (Runway)"],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "arff": 6
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["30-B-1", "30-B-2", "30-D-5"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "airport": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 827,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
