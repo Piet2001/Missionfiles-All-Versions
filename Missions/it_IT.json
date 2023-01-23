@@ -501,7 +501,7 @@
       "firetrucks": 1,
       "platform_trucks": 1
     },
-    "chances": {},
+    "chances": { "platform_trucks": 30 },
     "additional": {
       "expansion_missions_ids": [22],
       "filter_id": "firehouse_missions"
@@ -530,7 +530,7 @@
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1
     },
-    "chances": {},
+    "chances": { "platform_trucks": 60 },
     "additional": {
       "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [460]
@@ -598,7 +598,8 @@
     "requirements": {
       "water_needed": 800,
       "firetrucks": 1,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
     },
     "chances": { "patient_transport": 40 },
     "additional": {
@@ -614,6 +615,7 @@
         "Medicina interna generale",
         "Traumatologia"
       ],
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia"
@@ -621,6 +623,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
+      "police_stations": 1,
       "fire_stations": 2
     },
     "overlay_index": null,
@@ -643,7 +646,8 @@
     "requirements": {
       "water_needed": 6000,
       "firetrucks": 3,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
     },
     "chances": { "patient_transport": 35 },
     "additional": {
@@ -658,6 +662,7 @@
       ],
       "subsequent_missions_ids": [460],
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -665,6 +670,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
+      "police_stations": 1,
       "fire_stations": 5
     },
     "overlay_index": null,
@@ -784,31 +790,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "31",
-    "name": "Camino in fiamme",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1310,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "water_needed": 2000,
-      "firetrucks": 1,
-      "platform_trucks": 1
-    },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 6 },
-    "overlay_index": null,
-    "base_mission_id": 31,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "32",
     "name": "Mietitrice in fiamme",
     "place": "",
@@ -826,50 +807,6 @@
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 32,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "33",
-    "name": "Incendio in supermercato (PICCOLO)",
-    "place": "Supermercato (piccolo)",
-    "place_array": ["Supermercato (piccolo)"],
-    "average_credits": 1100,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "water_needed": 7500,
-      "firetrucks": 3,
-      "heavy_rescue_vehicles": 1
-    },
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 4,
-      "patient_it_code_possible": ["PC03G", "PC03R", "PC01G"],
-      "filter_id": "firehouse_missions",
-      "possible_patient_specializations": [
-        "Medicina interna generale",
-        "Medicina interna generale",
-        "Medicina interna generale",
-        "Traumatologia"
-      ],
-      "subsequent_missions_ids": [460],
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Medicina interna generale"],
-      "patient_specializations": "Medicina interna generale"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "fire_stations": 5
-    },
-    "overlay_index": null,
-    "base_mission_id": 33,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -893,7 +830,8 @@
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 3,
       "water_tankers": 1,
-      "mobile_air_vehicles": 1
+      "mobile_air_vehicles": 1,
+      "police_cars": 4
     },
     "chances": { "patient_transport": 40 },
     "additional": {
@@ -908,6 +846,7 @@
       "allow_ktw_instead_of_rtw": true,
       "subsequent_missions_ids": [460],
       "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -915,6 +854,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
+      "police_stations": 4,
       "fire_stations": 10
     },
     "overlay_index": null,
@@ -4098,8 +4038,7 @@
       "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 4,
-      "traffic_car": 2
+      "police_cars": 4
     },
     "chances": { "hazmat_vehicles": 20, "patient_transport": 35 },
     "additional": {
@@ -4125,13 +4064,12 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 2,
-      "traffic_police": 2,
       "fire_stations": 2
     },
     "overlay_index": null,
     "base_mission_id": 127,
     "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
+    "mission_categories": ["police"]
   },
   {
     "id": "128",
@@ -16061,8 +15999,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 9000,
-      "water_needed": 45000,
       "firetrucks": 4,
       "brush_truck": 6,
       "fire_aviation": 1,
@@ -17086,7 +17022,8 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 4
+      "police_cars": 4,
+      "traffic_car": 4
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -17110,12 +17047,13 @@
       "main_building": 0,
       "rescue_stations": 4,
       "police_stations": 2,
+      "traffic_police": 4,
       "fire_stations": 11
     },
     "overlay_index": null,
     "base_mission_id": 497,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "traffic_police_specialization"]
   },
   {
     "id": "498",
@@ -17198,14 +17136,18 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "police_cars": 1, "traffic_car": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "traffic_police": 1
+    },
     "overlay_index": null,
     "base_mission_id": 500,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "501",
@@ -19226,7 +19168,7 @@
   },
   {
     "id": "561",
-    "name": "Pulizia dei binari",
+    "name": "Pulizia Sede Stradale",
     "place": "",
     "place_array": [],
     "average_credits": 1000,
@@ -19242,7 +19184,10 @@
       "police_cars": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
@@ -19255,7 +19200,7 @@
   },
   {
     "id": "562",
-    "name": "Sincope recuperata",
+    "name": "Perdita di Coscienza Transitoria",
     "place": "",
     "place_array": [],
     "average_credits": 750,
@@ -19270,7 +19215,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "patient_it_code_possible": ["YC01R", "YC01G", "YC01V"],
+      "patient_it_code_possible": ["YC01R", "YC01G", "YC01V", "KC04R", "KC04G"],
       "filter_id": "ambulance_station_missions",
       "possible_patient_specializations": [
         "Medicina interna generale",
@@ -19278,7 +19223,11 @@
         "Medicina interna generale",
         "Traumatologia",
         "Medicina interna generale",
-        "Traumatologia"
+        "Traumatologia",
+        "Neurologia",
+        "Neurochirurgia",
+        "Neurologia",
+        "Neurochirurgia"
       ],
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
