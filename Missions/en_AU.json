@@ -17939,5 +17939,265 @@
     "base_mission_id": 543,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "545",
+    "name": "Burnt Lamingtons",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "546",
+    "name": "Search for Missing Prime Minister",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "water_rescue": 2,
+      "k9": 1,
+      "police_horse": 1,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "need_police_horse_only_if_present": true,
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "wasserrettung": 3,
+      "rescue_stations": 1,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "547",
+    "name": "Pursuit of Motorised Esky",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "police_service_group_leader": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 547,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "548",
+    "name": "Drop Bear Attack",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 25,
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "549",
+    "name": "Drunk Person Fighting Kangaroo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/bar_cocktail_gruen.png",
+      "/images/bar_cocktail_gelb.png",
+      "/images/bar_cocktail_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_allow_first_responder_chance": 50,
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "550",
+    "name": "Pub with No Bear Crawl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/bar_cocktail_gruen.png",
+      "/images/bar_cocktail_gelb.png",
+      "/images/bar_cocktail_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 10,
+      "police_service_group_leader": 1,
+      "riot_police": 1,
+      "riot_police_suv": 1
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 10,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 20,
+      "filter_id": "police_station_missions",
+      "patient_allow_first_responder_chance": 30,
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 6,
+      "police_stations": 8,
+      "police_service_group_leader": 1,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 550,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "551",
+    "name": "Fight at a Backyard Cricket Game",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": true,
+      "date_start": "2023-01-26T11:00:00+11:00",
+      "date_end": "2023-01-27T11:00:00+11:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
