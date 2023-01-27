@@ -866,10 +866,14 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
-    "chances": { "battalion_chief_vehicles": 90, "patient_transport": 30 },
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": { "battalion_chief_vehicles": 90 },
     "additional": {
-      "possible_patient": 2,
+      "expansion_missions_ids": [701, 102, 103, 104, 352, 669],
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Allgemeine Innere"],
@@ -879,6 +883,126 @@
     "overlay_index": null,
     "base_mission_id": 20,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "20/a",
+    "name": "Kellerbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "battalion_chief_vehicles": 90 },
+    "additional": {
+      "expansion_missions_ids": [701, 102, 103, 104, 352, 669],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 20,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "20/b",
+    "name": "Kellerbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 90,
+      "nef": 30,
+      "patient_transport": 80
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [701, 102, 103, 104, 352, 669],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 20,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "20/ab",
+    "name": "Kellerbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 90,
+      "nef": 30,
+      "patient_transport": 80
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [701, 102, 103, 104, 352, 669],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 20,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
