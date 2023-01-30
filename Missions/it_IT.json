@@ -19735,5 +19735,51 @@
     "base_mission_id": 578,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "579",
+    "name": "Persona Dispersa in Mare",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 2,
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 40, "helicopter": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 4,
+      "coastal_rescue_count": 4,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 579,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
