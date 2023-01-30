@@ -17941,27 +17941,6 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "544",
-    "name": "Fire in a paper mill",
-    "place": "",
-    "place_array": [],
-    "average_credits": 780,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 4 },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 544,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "545",
     "name": "Burnt Lamingtons",
     "place": "",
@@ -18138,7 +18117,7 @@
   },
   {
     "id": "550",
-    "name": "Pub with No Bear Crawl",
+    "name": "Pub with No Beer Crawl",
     "place": "",
     "place_array": [],
     "average_credits": 4000,
@@ -18220,5 +18199,144 @@
     "base_mission_id": 551,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "552",
+    "name": "Out of Control Burnoff (Small)",
+    "place": "Farm",
+    "place_array": ["Farm"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 4,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [553],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "553",
+    "name": "Out of Control Burnoff (Medium)",
+    "place": "Farm",
+    "place_array": ["Farm"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 13000,
+      "firetrucks": 2,
+      "brush_truck": 6,
+      "battalion_chief_vehicles": 3,
+      "water_tankers": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [554],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 4,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 553,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "554",
+    "name": "Out of Control Burnoff (Large)",
+    "place": "Farm",
+    "place_array": ["Farm"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 40000,
+      "firetrucks": 3,
+      "brush_truck": 9,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 6,
+      "water_tankers": 3
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [555],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 6,
+      "fire_aviation_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 554,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "555",
+    "name": "Out of Control Burnoff (Large)",
+    "place": "Farm",
+    "place_array": ["Farm"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 80000,
+      "firetrucks": 5,
+      "brush_truck": 15,
+      "fire_aviation": 2,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 11,
+      "fire_aviation_count": 2,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 555,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
   }
 ]
