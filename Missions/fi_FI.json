@@ -16154,30 +16154,111 @@
   },
   {
     "id": "503",
-    "name": "752 Spontaani ilmarinta",
+    "name": "602 Jengiväkivaltatutkinta",
     "place": "",
     "place_array": [],
-    "average_credits": 750,
+    "average_credits": 800,
     "generated_by": "",
     "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
     ],
-    "requirements": {},
-    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "requirements": { "police_cars": 3, "k9": 1, "civil_patrolcar": 1 },
+    "chances": {},
     "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Yleislääkäri"],
-      "patient_specializations": "Yleislääkäri"
+      "max_possible_prisoners": 4,
+      "swat_personnel": 6,
+      "average_min_police_personnel": 6,
+      "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "criminal_investigation_count": 1
+    },
     "overlay_index": null,
     "base_mission_id": 503,
     "additive_overlays": "",
-    "mission_categories": ["ambulance"]
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "504",
+    "name": "Onnettomuus leipomisessa ystävänpäivä illallinen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "505",
+    "name": "palava Valentine kukkakimppu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "506",
+    "name": "Tulipalo kynttilänvalo illallinen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [222],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 506,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
