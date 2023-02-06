@@ -14070,12 +14070,12 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "police_stations": 1 },
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 344,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
   },
   {
     "id": "345",
@@ -14091,12 +14091,12 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "police_stations": 1 },
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 345,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
   },
   {
     "id": "346",
@@ -14112,12 +14112,12 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "police_stations": 1 },
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 346,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
   },
   {
     "id": "347",
@@ -14135,12 +14135,12 @@
     ],
     "requirements": { "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "police_stations": 1 },
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 347,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["police"]
   },
   {
     "id": "348",
@@ -37974,6 +37974,85 @@
     },
     "overlay_index": null,
     "base_mission_id": 829,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "831",
+    "name": "Accident when baking valentine dinner",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 831,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "832",
+    "name": "Burning Valentine Bouquet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 832,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "833",
+    "name": "Fire from candle light dinner",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [533],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 833,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   }
