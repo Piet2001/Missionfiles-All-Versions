@@ -18350,30 +18350,128 @@
   },
   {
     "id": "556",
-    "name": "Spontaneous pneumothorax",
-    "place": "",
-    "place_array": [],
-    "average_credits": 750,
+    "name": "Landfill Fire",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 3500,
     "generated_by": "",
     "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
     ],
-    "requirements": {},
-    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "requirements": {
+      "water_needed": 25000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 60,
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient": 3,
       "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 20,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
     },
-    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
     "overlay_index": null,
     "base_mission_id": 556,
     "additive_overlays": "",
-    "mission_categories": ["ambulance"]
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "557",
+    "name": "Accident when baking valentine dinner",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 557,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "558",
+    "name": "Burning Valentine Bouquet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 558,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "559",
+    "name": "Fire from candle light dinner",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [280],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-02-03T10:00:00Z",
+      "date_end": "2023-02-15T23:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 559,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
