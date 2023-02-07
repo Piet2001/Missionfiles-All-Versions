@@ -13418,5 +13418,406 @@
     "base_mission_id": 413,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "414",
+    "name": "小型船舶の転覆事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 80, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 414,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "415",
+    "name": "大型船舶の転覆事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 4,
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 8,
+      "coastal_rescue_count": 8,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 415,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "416",
+    "name": "溺れるサーファー",
+    "place": "ビーチ",
+    "place_array": ["ビーチ"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["循環器"],
+      "patient_specializations": "循環器"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 416,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "417",
+    "name": "消えた船",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_plane": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 4,
+      "coastal_plane_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 417,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "418",
+    "name": "シャークアタック",
+    "place": "ビーチ",
+    "place_array": ["ビーチ"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1, "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 418,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "419",
+    "name": "ボートによる密輸",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_plane": 1, "coastal_guard_boat": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "police_stations": 2,
+      "coastal_rescue_count": 4,
+      "coastal_plane_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "420",
+    "name": "パラセーリング事故",
+    "place": "ビーチ",
+    "place_array": ["ビーチ"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 420,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "421",
+    "name": "深海の捜索・救助",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 2 },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 6,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "422",
+    "name": "海軍艦艇の転覆事故による船員の閉じ込めについて",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 7,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 422,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "423",
+    "name": "ハリケーンに巻き込まれた遭難ヨット",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 1,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 6,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 423,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "424",
+    "name": "海上で火災が発生したオイルタンカー",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "large_fire_boat": 4,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2,
+      "coastal_plane": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 10,
+      "fire_boat_docks": 4,
+      "coastal_rescue_count": 10,
+      "coastal_plane_count": 1,
+      "coastal_helicopter_count": 6,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
