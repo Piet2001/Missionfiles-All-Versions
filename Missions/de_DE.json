@@ -39190,5 +39190,86 @@
     "base_mission_id": 792,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "793",
+    "name": "Tier auf Eisfläche gefangen",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "date_start": "2023-02-10T11:00:00Z",
+      "date_end": "2023-03-20T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 793,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "794",
+    "name": "Unbefugtes betreten einer Eisfläche",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2023-02-10T11:00:00Z",
+      "date_end": "2023-03-20T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 794,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "795",
+    "name": "Absicherung Eisbaden",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "boats": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 Stunde",
+      "duration": 3600,
+      "filter_id": "water_watch_missions",
+      "date_start": "2023-02-10T11:00:00Z",
+      "date_end": "2023-03-20T22:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "wasserrettung": 1,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 795,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
