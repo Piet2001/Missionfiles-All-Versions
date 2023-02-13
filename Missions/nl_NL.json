@@ -37199,5 +37199,90 @@
     "base_mission_id": 1015,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1016",
+    "name": "Aanvaring veerpont",
+    "place": "Pontsteiger",
+    "place_array": ["Pontsteiger"],
+    "average_credits": 12630,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 5,
+      "boats": 2,
+      "coastal_boat": 5,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 3
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 30,
+      "followup_missions_ids": [1017],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "water_rescue_2": 7,
+      "rescue_stations": 35,
+      "coastal_rescue_count": 3,
+      "coastal_rescue_small_count": 4,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1016,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1017",
+    "name": "Redding overboord geslagen slachtoffers",
+    "place": "Pontsteiger",
+    "place_array": ["Pontsteiger"],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "followup_mission_only": true,
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 4, 1],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "coastal_rescue_small_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1017,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
