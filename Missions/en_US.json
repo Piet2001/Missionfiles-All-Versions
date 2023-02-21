@@ -38126,5 +38126,255 @@
     "base_mission_id": 834,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "835",
+    "name": "Tanker Truck Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1
+    },
+    "chances": { "patient_transport": 50, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [836],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-A-1",
+        "7-A-3",
+        "7-C-2",
+        "7-C-3",
+        "7-C-4",
+        "7-D-2",
+        "7-D-3",
+        "7-D-4",
+        "7-D-5"
+      ],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 835,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "836",
+    "name": "Tanker Truck Explosion (Small)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [837],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-B-1E",
+        "7-C-2E",
+        "7-C-4E",
+        "7-D-2E",
+        "7-D-3E",
+        "7-D-4E",
+        "7-D-5E"
+      ],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 836,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "837",
+    "name": "Tanker Truck Explosion (Medium)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 4,
+      "personnel_educations": { "gw_gefahrgut": 8 }
+    },
+    "chances": { "patient_transport": 50, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [838],
+      "followup_missions_ids": [211],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1E"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 837,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "838",
+    "name": "Tanker Truck Explosion (Large)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 7000,
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "police_cars": 6,
+      "personnel_educations": { "gw_gefahrgut": 12 },
+      "sheriff": 1,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 75, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [839],
+      "followup_missions_ids": [211],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1E"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "fire_support_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 838,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "839",
+    "name": "Tanker Truck Explosion (Major)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 26000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 14000,
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "heavy_rescue_vehicles": 6,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "police_cars": 12,
+      "personnel_educations": { "gw_gefahrgut": 15 },
+      "sheriff": 1,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 80, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [211, 728],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1E"],
+      "patient_allow_first_responder_chance": 10,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 15 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 839,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
