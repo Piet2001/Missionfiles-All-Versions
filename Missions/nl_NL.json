@@ -22916,6 +22916,7 @@
     "requirements": { "hondengeleider": 1, "police_cars": 2, "bike_police": 1 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [1001],
@@ -23165,6 +23166,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [684, 685],
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -23190,6 +23192,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [685],
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 2,
       "filter_id": "riot_police_missions"
     },
@@ -23221,6 +23224,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 3,
       "filter_id": "riot_police_missions",
       "patient_specialization_ids": [1],
@@ -25711,6 +25715,7 @@
     "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -25735,6 +25740,7 @@
     "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
+      "followup_missions_ids": [1018],
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions"
     },
@@ -28407,7 +28413,10 @@
     ],
     "requirements": { "police_cars": 3 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "followup_missions_ids": [1018],
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 834,
@@ -34035,7 +34044,10 @@
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "followup_missions_ids": [1018],
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 947,
@@ -37299,5 +37311,30 @@
     "base_mission_id": 1017,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1018",
+    "name": "Assistentie collega",
+    "place": "",
+    "place_array": [],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 1018,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
