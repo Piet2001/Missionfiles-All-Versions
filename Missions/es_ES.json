@@ -14328,5 +14328,680 @@
     "base_mission_id": 445,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "446",
+    "name": "Simulacro de incendio industrial",
+    "place": "Almacén\nAlmacén frigorífico\nCentral eléctrica\nFábrica\nAlmacén químico pequeño\nAlmacén químico grande",
+    "place_array": [
+      "Almacén",
+      "Almacén frigorífico",
+      "Central eléctrica",
+      "Fábrica",
+      "Almacén químico pequeño",
+      "Almacén químico grande"
+    ],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "45 minutos",
+      "duration": 2700,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 446,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "447",
+    "name": "Simulacro de incendio institucional",
+    "place": "Escuela\nEdificio de oficinas",
+    "place_array": ["Escuela", "Edificio de oficinas"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "30 minutos",
+      "duration": 1800,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 447,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "450",
+    "name": "Pescador se precipitó por un acantilado",
+    "place": "Acantilado",
+    "place_array": ["Acantilado"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "height_rescue_units": 2,
+      "coastal_rescue": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "coastal_rescue_small_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 450,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "451",
+    "name": "Persona enferma en un crucero",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 451,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "452",
+    "name": "Lancha con inmigrantes a bordo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "police_boat": 2,
+      "coastal_boat": 2,
+      "large_coastal_boat": 1,
+      "large_police_boat": 1
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "coastal_rescue_count": 2,
+      "police_boat_dock": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 452,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "453",
+    "name": "Embarcación sospechosa de narcotráfico",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_boat": 1,
+      "speed_police_boat": 1,
+      "customs_boat": 1,
+      "police_plane": 1,
+      "customs_helicopter": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [456],
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 2,
+      "police_stations": 3,
+      "police_boat_dock": 1,
+      "customs_helicopter": 1,
+      "police_plane": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 453,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "454",
+    "name": "Embarcación solicita auxilio, fuego inminente",
+    "place": "Puerto deportivo\nMuelle",
+    "place_array": ["Puerto deportivo", "Muelle"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "police_cars": 2,
+      "diver_units": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "water_watch_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "police_stations": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 454,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_rescue"]
+  },
+  {
+    "id": "455",
+    "name": "Mancha en el mar de un buque cisterna",
+    "place": "Puerto deportivo\nPlaya",
+    "place_array": ["Puerto deportivo", "Playa"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "coastal_plane": 1,
+      "coastal_support": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "coastal_plane_count": 1,
+      "coastal_rescue_extension": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 455,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "456",
+    "name": "Narcotraficantes a la fuga",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_boat": 2,
+      "speed_police_boat": 2,
+      "customs_boat": 1,
+      "customs_helicopter": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23]
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 2,
+      "police_stations": 3,
+      "police_helicopter_stations": 1,
+      "coastal_rescue_count": 2,
+      "coastal_plane_count": 1,
+      "police_boat_dock": 2,
+      "customs_helicopter": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 456,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "457",
+    "name": "Autobús accidentado se cae al rio",
+    "place": "Puente\nRío",
+    "place_array": ["Puente", "Río"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "water_rescue": 1,
+      "diver_units": 1,
+      "boats": 2,
+      "coastal_command": 1
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 3,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "water_rescue_police": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 457,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_rescue"]
+  },
+  {
+    "id": "458",
+    "name": "Bañistas en apuros",
+    "place": "Playa",
+    "place_array": ["Playa"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "boats": 1, "coastal_rescue": 2, "coastal_jetski": 1 },
+    "chances": { "patient_transport": 60, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_small_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 458,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "459",
+    "name": "Inundaciones tras las fuertes lluvias",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1620,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "diver_units": 1, "flood_equipment": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [460],
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 459,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "460",
+    "name": "Evacuación de zona inundada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1550,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "water_rescue": 1,
+      "diver_units": 2,
+      "boats": 2,
+      "flood_equipment": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_rescue_police": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "461",
+    "name": "Coche cae en una presa",
+    "place": "Río",
+    "place_array": ["Río"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "water_rescue": 1,
+      "diver_units": 1,
+      "boats": 2,
+      "coastal_command": 1
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "water_rescue_police": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 461,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "462",
+    "name": "Barco se hunde",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_boat": 1,
+      "coastal_boat": 3,
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 10,
+      "coastal_rescue_count": 4,
+      "coastal_helicopter_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "463",
+    "name": "Derrame de petróleo en el mar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "police_boat": 1,
+      "coastal_boat": 1,
+      "large_coastal_boat": 1,
+      "coastal_plane": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "coastal_rescue_count": 1,
+      "coastal_plane_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 463,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "464",
+    "name": "Windsurfista en apuros",
+    "place": "Lago\nPlaya",
+    "place_array": ["Lago", "Playa"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_rescue": 1, "coastal_jetski": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiología"],
+      "patient_specializations": "Cardiología"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_small_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 464,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "465",
+    "name": "Persona desaparecida en el mar",
+    "place": "Playa",
+    "place_array": ["Playa"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 1,
+      "boats": 1,
+      "coastal_command": 1,
+      "coastal_boat": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 25,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1,
+      "water_rescue_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "",
+    "mission_categories": ["police", "water_rescue"]
   }
 ]
