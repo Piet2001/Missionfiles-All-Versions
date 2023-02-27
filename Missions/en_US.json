@@ -38379,9 +38379,9 @@
   },
   {
     "id": "840",
-    "name": "Dam threatens to break",
-    "place": "Lake\nRiver\nMarina",
-    "place_array": ["Lake", "River", "Marina"],
+    "name": "Dam Inspection",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
     "average_credits": 12500,
     "generated_by": "",
     "icons": [
@@ -38393,11 +38393,13 @@
       "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
       "boats": 1,
-      "game_warden": 1,
-      "fire_investigation": 2
+      "game_warden": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "followup_missions_ids": [812],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": {
       "main_building": 0,
       "wasserrettung": 2,
