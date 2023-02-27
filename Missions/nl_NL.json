@@ -37336,5 +37336,122 @@
     "base_mission_id": 1018,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1019",
+    "name": "Brand in sauna",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1019,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1019-0",
+    "name": "Brand in sauna",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3970,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "police_cars": 3
+    },
+    "chances": { "water_tankers": 35, "nef": 15, "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [768, 995, 878],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "fire_alarm_system_possible": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1019,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1019-1",
+    "name": "Brand in sauna",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13015,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 54000,
+      "firetrucks": 6,
+      "spokesman": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 6,
+      "ovdp": 1,
+      "bike_police": 1
+    },
+    "chances": { "nef": 15, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 22
+    },
+    "overlay_index": 1,
+    "base_mission_id": 1019,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
