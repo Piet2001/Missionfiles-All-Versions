@@ -14456,7 +14456,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "elw3": 1, "police_cars": 2 },
+    "requirements": { "firetrucks": 1, "police_cars": 2, "boats": 1 },
     "chances": { "patient_transport": 90, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 1,
@@ -15267,7 +15267,7 @@
     "overlay_index": null,
     "base_mission_id": 481,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["water_rescue"]
   },
   {
     "id": "481/a",
@@ -15310,7 +15310,7 @@
     "overlay_index": null,
     "base_mission_id": 481,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["water_rescue"]
   },
   {
     "id": "482",
@@ -15376,6 +15376,46 @@
     },
     "overlay_index": null,
     "base_mission_id": 483,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "484",
+    "name": "Incêndio numa fábrica (Vítimas Reportadas)",
+    "place": "Fábrica",
+    "place_array": ["Fábrica"],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 484,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
