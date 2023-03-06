@@ -37380,7 +37380,7 @@
       "water_tankers": 1,
       "police_cars": 3
     },
-    "chances": { "water_tankers": 35, "nef": 15, "patient_transport": 0 },
+    "chances": { "water_tankers": 35, "nef": 15, "patient_transport": 80 },
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
@@ -37453,5 +37453,47 @@
     "base_mission_id": 1019,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1020",
+    "name": "Rendez-Vous Ambulance",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "nef": 100, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Algemene Heelkunde",
+        "Gynaecologie",
+        "Urologie",
+        "Traumatologie",
+        "Neurologie",
+        "Neurochirurgie",
+        "Cardiologie",
+        "Cardiochirurgie"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Algemene Heelkunde, Gynaecologie, Urologie, Traumatologie, Neurologie, Neurochirurgie, Cardiologie, Cardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 10,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1020,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
