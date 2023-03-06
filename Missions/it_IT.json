@@ -20036,5 +20036,40 @@
     "base_mission_id": 586,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "587",
+    "name": "Shock ipovolemico",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC02R", "ZC02G"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Cardiologia",
+        "Chirurgia cardiaca",
+        "Cardiologia",
+        "Chirurgia cardiaca"
+      ],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 587,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
