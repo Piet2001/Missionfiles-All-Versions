@@ -38229,5 +38229,59 @@
     "base_mission_id": 841,
     "additive_overlays": "",
     "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "842",
+    "name": "Armed Foot Pursuit",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "swat_armored_vehicle": 3,
+      "police_helicopters": 1,
+      "police_cars": 5,
+      "k9": 2,
+      "sheriff": 1
+    },
+    "chances": { "patient_transport": 60, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [180],
+      "followup_missions_ids": [90],
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 18,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4",
+        "27-D-5"
+      ],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 842,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
