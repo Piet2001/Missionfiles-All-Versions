@@ -17000,5 +17000,33 @@
     "base_mission_id": 498,
     "additive_overlays": "a",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "499",
+    "name": "Hypovolæmisk chok",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 75 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Kirurg"],
+      "patient_specializations": "Kirurg"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
