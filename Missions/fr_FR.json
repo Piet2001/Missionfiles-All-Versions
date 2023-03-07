@@ -1653,6 +1653,7 @@
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -12549,8 +12550,8 @@
   {
     "id": "385",
     "name": "Incendie d'entrepôt de stockage de pneus",
-    "place": "Hangar",
-    "place_array": ["Hangar"],
+    "place": "",
+    "place_array": [""],
     "average_credits": 12500,
     "generated_by": "",
     "icons": [
@@ -12593,8 +12594,8 @@
   {
     "id": "385/a",
     "name": "Incendie d'entrepôt de stockage de pneus",
-    "place": "Hangar",
-    "place_array": ["Hangar"],
+    "place": "",
+    "place_array": [""],
     "average_credits": 14500,
     "generated_by": "",
     "icons": [
@@ -17780,8 +17781,8 @@
   {
     "id": "528",
     "name": "Explosion de dépôt de munitions",
-    "place": "Hangar",
-    "place_array": ["Hangar"],
+    "place": "",
+    "place_array": [""],
     "average_credits": 23000,
     "generated_by": "",
     "icons": [
@@ -18010,15 +18011,10 @@
       "hose": 2,
       "pump": 1
     },
-    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "chances": { "patient_critical_care": 50 },
     "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
-      "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
+      "patient_at_end_of_mission": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -18031,5 +18027,500 @@
     "base_mission_id": 534,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "536",
+    "name": "Fumée dans la cabine d'un avion",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "rettungstreppe": 1,
+      "personnel_educations": { "arff": 5 },
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"],
+      "personnel_educations": { "SSLIA": 5 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "arff": 10 },
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 536,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "537",
+    "name": "Animal sur le tarmac",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "elw_airport": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "arff": 1 },
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 537,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "538",
+    "name": "Sortie de piste d'un aéronef",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "arff": 2,
+      "rettungstreppe": 1,
+      "elw_airport": 1,
+      "personnel_educations": { "arff": 15 },
+      "airport_equipment": 1,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"],
+      "max_arff_replacing_riv": 1,
+      "personnel_educations": { "SSLIA": 15 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "arff": 30 },
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 538,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "539",
+    "name": "Incendie d'aéronef",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "arff": 4,
+      "rettungstreppe": 2,
+      "elw_airport": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "540",
+    "name": "Crevaison d'un train d'atterrissage",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place_array": [
+      "Petit aéroport (piste)",
+      "Grand aéroport (piste)",
+      "Hangar"
+    ],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1, "airport_equipment": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "541",
+    "name": "Assistance à l'atterrissage",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "elw_airport": 1, "riv": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"],
+      "max_arff_replacing_riv": 1
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 541,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "542",
+    "name": "Déversement de kérosène sur la piste",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1, "airport_equipment": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "543",
+    "name": "Passager malade",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place_array": [
+      "Petit aéroport (piste)",
+      "Grand aéroport (piste)",
+      "Hangar"
+    ],
+    "average_credits": 150,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "rettungstreppe": 1 },
+    "chances": { "patient_transport": 90, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "personnel_educations": { "arff": 1 },
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 543,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "544",
+    "name": "Incendie dans le terminal de l'aéroport",
+    "place": "Terminal d’aéroport",
+    "place_array": ["Terminal d’aéroport"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 13,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 2,
+      "arff": 4,
+      "elw_airport": 2,
+      "airport_equipment": 1,
+      "riv": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "max_arff_replacing_riv": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "airport": 3,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 544,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "545",
+    "name": "Incendie de hangar",
+    "place": "Hangar",
+    "place_array": ["Hangar"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 9,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "arff": 2,
+      "elw_airport": 2,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "max_arff_replacing_riv": 1
+    },
+    "prerequisites": { "main_building": 0, "airport": 3, "fire_stations": 8 },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "546",
+    "name": "Intoxication alimentaire à bord d'un avion",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "rettungstreppe": 1, "elw_airport": 1, "kdow_orgl": 1 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "filter_id": "ambulance_station_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "547",
+    "name": "Objet sur la piste",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "elw_airport": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "arff": 1 },
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 547,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "548",
+    "name": "Atterissage d'urgence",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)",
+    "place_array": ["Petit aéroport (piste)", "Grand aéroport (piste)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "arff": 3,
+      "rettungstreppe": 2,
+      "elw_airport": 2,
+      "airport_equipment": 1,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "549",
+    "name": "Grand crash d'aéronef",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place_array": [
+      "Petit aéroport (piste)",
+      "Grand aéroport (piste)",
+      "Hangar"
+    ],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 4,
+      "heavy_rescue_vehicles": 2,
+      "arff": 4,
+      "police_cars": 8,
+      "rettungstreppe": 1,
+      "elw_airport": 3,
+      "kdow_orgl": 1,
+      "personnel_educations": { "arff": 30 },
+      "airport_equipment": 2,
+      "riv": 2
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 50,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "max_arff_replacing_riv": 1,
+      "patient_specialization_ids": [20],
+      "patient_specialization_captions": [null],
+      "patient_specializations": "",
+      "personnel_educations": { "SSLIA": 30 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "personnel_educations": { "arff": 60 },
+      "airport": 4,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
