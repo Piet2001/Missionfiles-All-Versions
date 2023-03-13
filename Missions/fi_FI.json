@@ -16415,5 +16415,36 @@
     "base_mission_id": 511,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "512",
+    "name": "481 Onnettomuus turistiveneen kanssa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18750,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": { "main_building": 23, "coastal_rescue_count": 3 },
+    "overlay_index": null,
+    "base_mission_id": 512,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
