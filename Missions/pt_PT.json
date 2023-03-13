@@ -15525,5 +15525,45 @@
     "base_mission_id": 488,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "489",
+    "name": "Colisão entre embarcações",
+    "place": "Lago\nRio\nMarina",
+    "place_array": ["Lago", "Rio", "Marina"],
+    "average_credits": 7250,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "coastal_rescue": 1,
+      "coastal_command": 2,
+      "coastal_boat": 4,
+      "large_coastal_boat": 3,
+      "coastal_jetski": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "coastal_rescue_count": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 489,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
