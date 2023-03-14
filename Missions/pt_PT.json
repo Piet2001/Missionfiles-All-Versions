@@ -14377,7 +14377,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "diver_units": 1, "boats": 1 },
+    "requirements": { "firetrucks": 1, "diver_units": 1, "boats": 1 },
     "chances": { "patient_transport": 90, "patient_critical_care": 90 },
     "additional": {
       "possible_patient": 1,
@@ -14411,6 +14411,7 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
+      "firetrucks": 1,
       "brush_truck": 3,
       "battalion_chief_vehicles": 1,
       "boats": 2,
@@ -14491,7 +14492,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "boats": 1 },
+    "requirements": { "firetrucks": 1, "boats": 1 },
     "chances": { "patient_transport": 90, "patient_critical_care": 90 },
     "additional": {
       "possible_patient": 1,
@@ -15551,6 +15552,7 @@
       "possible_patient": 10,
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
       "patient_specializations": "Clinica Geral"
@@ -15565,5 +15567,275 @@
     "base_mission_id": 489,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "492",
+    "name": "Queda de Grande Aeronave",
+    "place": "Terminal de Aeroporto\nAeroporto",
+    "place_array": ["Terminal de Aeroporto", "Aeroporto"],
+    "average_credits": 32000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 7,
+      "mobile_air_vehicles": 1,
+      "arff": 3,
+      "police_cars": 8,
+      "rettungstreppe": 2,
+      "elw_airport": 1,
+      "riv": 2,
+      "piercing_nozzle": 3,
+      "airport_rescue": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 75,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "airport": 3,
+      "airport_2": 2,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 492,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "493",
+    "name": "Aterragem de emergência",
+    "place": "Terminal de Aeroporto\nAeroporto",
+    "place_array": ["Terminal de Aeroporto", "Aeroporto"],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "police_cars": 3,
+      "riv": 2,
+      "airport_rescue": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "airport": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 493,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "494",
+    "name": "Colisão de aeronaves em pista",
+    "place": "Terminal de Aeroporto\nAeroporto",
+    "place_array": ["Terminal de Aeroporto", "Aeroporto"],
+    "average_credits": 28000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 5,
+      "mobile_air_vehicles": 1,
+      "arff": 2,
+      "police_cars": 6,
+      "rettungstreppe": 2,
+      "elw_airport": 1,
+      "riv": 2,
+      "piercing_nozzle": 2,
+      "airport_rescue": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "airport": 2,
+      "airport_2": 2,
+      "fire_stations": 18,
+      "main_building_extensions": [1]
+    },
+    "overlay_index": null,
+    "base_mission_id": 494,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "495",
+    "name": "Amaragem em rio",
+    "place": "Rio",
+    "place_array": ["Rio"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "police_cars": 4,
+      "diver_units": 2,
+      "boats": 2,
+      "coastal_boat": 3,
+      "large_coastal_boat": 4,
+      "coastal_jetski": 2,
+      "airport_rescue": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "coastal_rescue_count": 2,
+      "airport": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 495,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "496",
+    "name": "Sequestro de aeronave",
+    "place": "Aeroporto\nTerminal de Aeroporto",
+    "place_array": ["Aeroporto", "Terminal de Aeroporto"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "swat_armored_vehicle": 2,
+      "battalion_chief_vehicles": 2,
+      "k9": 2,
+      "rettungstreppe": 2,
+      "elw_airport": 1,
+      "bike_police": 6,
+      "riot_police": 2,
+      "riot_police_command": 1,
+      "police_motorcycle": 3
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 12,
+      "riot_police": 1,
+      "airport": 1,
+      "police_motorcycle": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 496,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "497",
+    "name": "Fuga de combustível em transfega",
+    "place": "Aeródromo\nAeroporto\nTerminal de Aeroporto",
+    "place_array": ["Aeródromo", "Aeroporto", "Terminal de Aeroporto"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "police_cars": 2,
+      "elw_airport": 1,
+      "riv": 2
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 4,
+      "airport": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 497,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
