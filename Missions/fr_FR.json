@@ -12550,8 +12550,8 @@
   {
     "id": "385",
     "name": "Incendie d'entrepôt de stockage de pneus",
-    "place": "",
-    "place_array": [""],
+    "place": "Hangar",
+    "place_array": ["Hangar"],
     "average_credits": 12500,
     "generated_by": "",
     "icons": [
@@ -12594,8 +12594,8 @@
   {
     "id": "385/a",
     "name": "Incendie d'entrepôt de stockage de pneus",
-    "place": "",
-    "place_array": [""],
+    "place": "Hangar",
+    "place_array": ["Hangar"],
     "average_credits": 14500,
     "generated_by": "",
     "icons": [
@@ -17781,8 +17781,8 @@
   {
     "id": "528",
     "name": "Explosion de dépôt de munitions",
-    "place": "",
-    "place_array": [""],
+    "place": "Hangar",
+    "place_array": ["Hangar"],
     "average_credits": 23000,
     "generated_by": "",
     "icons": [
@@ -18011,10 +18011,15 @@
       "hose": 2,
       "pump": 1
     },
-    "chances": { "patient_critical_care": 50 },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
     "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
-      "patient_at_end_of_mission": true
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
     },
     "prerequisites": {
       "main_building": 0,
@@ -18214,11 +18219,11 @@
   {
     "id": "540",
     "name": "Crevaison d'un train d'atterrissage",
-    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar à avions",
     "place_array": [
       "Petit aéroport (piste)",
       "Grand aéroport (piste)",
-      "Hangar"
+      "Hangar à avions"
     ],
     "average_credits": 700,
     "generated_by": "",
@@ -18294,11 +18299,11 @@
   {
     "id": "543",
     "name": "Passager malade",
-    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar à avions",
     "place_array": [
       "Petit aéroport (piste)",
       "Grand aéroport (piste)",
-      "Hangar"
+      "Hangar à avions"
     ],
     "average_credits": 150,
     "generated_by": "",
@@ -18377,8 +18382,8 @@
   {
     "id": "545",
     "name": "Incendie de hangar",
-    "place": "Hangar",
-    "place_array": ["Hangar"],
+    "place": "Hangar à avions",
+    "place_array": ["Hangar à avions"],
     "average_credits": 3000,
     "generated_by": "",
     "icons": [
@@ -18505,11 +18510,11 @@
   {
     "id": "549",
     "name": "Grand crash d'aéronef",
-    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar",
+    "place": "Petit aéroport (piste)\nGrand aéroport (piste)\nHangar à avions",
     "place_array": [
       "Petit aéroport (piste)",
       "Grand aéroport (piste)",
-      "Hangar"
+      "Hangar à avions"
     ],
     "average_credits": 15000,
     "generated_by": "",
