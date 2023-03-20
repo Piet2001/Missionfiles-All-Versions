@@ -38553,5 +38553,223 @@
     "base_mission_id": 843,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "844",
+    "name": "Pipeline Leak",
+    "place": "Pipeline",
+    "place_array": ["Pipeline"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "patient_transport": 40, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [845],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "8-B-1",
+        "8-C-1",
+        "8-D-1",
+        "8-D-2",
+        "8-D-3",
+        "8-D-4",
+        "8-D-6"
+      ],
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 844,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "845",
+    "name": "Pipeline Fire",
+    "place": "Pipeline",
+    "place_array": ["Pipeline"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [846],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-A-1",
+        "7-A-3",
+        "7-C-2",
+        "7-C-3",
+        "7-C-4",
+        "7-D-2",
+        "7-D-3",
+        "7-D-4",
+        "7-D-5"
+      ],
+      "patient_allow_first_responder_chance": 30,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 845,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "846",
+    "name": "Subterranean Pipeline Fire",
+    "place": "Pipeline",
+    "place_array": ["Pipeline"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [847],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-A-1",
+        "7-A-3",
+        "7-C-2",
+        "7-C-3",
+        "7-C-4",
+        "7-D-2",
+        "7-D-3",
+        "7-D-4",
+        "7-D-5"
+      ],
+      "patient_allow_first_responder_chance": 30,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 846,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "847",
+    "name": "Pipeline Explosion",
+    "place": "Pipeline",
+    "place_array": ["Pipeline"],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 5400,
+      "water_needed": 8000,
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 6,
+      "personnel_educations": { "gw_gefahrgut": 8 },
+      "sheriff": 1,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 75, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 24,
+      "possible_patient_min": 0,
+      "followup_missions_ids": [726],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 30,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 7,
+      "fire_support_count": 2,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 847,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization"]
   }
 ]
