@@ -20109,6 +20109,63 @@
     "mission_categories": ["coastal_rescue_ocean"]
   },
   {
+    "id": "589",
+    "name": "Crisi Ostaggi su Aereo Passeggeri",
+    "place": "Grande aeroporto (pista)",
+    "place_array": ["Grande aeroporto (pista)"],
+    "average_credits": 5200,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "swat_suv": 4,
+      "heavy_rescue_vehicles": 2,
+      "arff": 2,
+      "police_helicopters": 1,
+      "police_cars": 12,
+      "k9": 2,
+      "rettungstreppe": 1,
+      "elw_airport": 1
+    },
+    "chances": { "patient_transport": 40, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "allow_arff_instead_of_lf": true,
+      "max_irff_replacing_arff": 2,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 1],
+      "patient_specialization_captions": [
+        "Medicina interna generale",
+        "Chirurgia generale"
+      ],
+      "patient_specializations": "Medicina interna generale, Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "airport": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 589,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
     "id": "591",
     "name": "Atterraggio di Emergenza (Piccolo)",
     "place": "Piccolo aeroporto (pista)\nGrande aeroporto (pista)",
