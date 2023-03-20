@@ -37526,5 +37526,92 @@
     "base_mission_id": 1021,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1022",
+    "name": "Omgevallen hijskraan",
+    "place": "Bouwterrein\nBedrijventerrein",
+    "place_array": ["Bouwterrein", "Bedrijventerrein"],
+    "average_credits": 3110,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "nef": 15, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [870],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1022,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1022-0",
+    "name": "Omgevallen hijskraan",
+    "place": "Bouwterrein\nBedrijventerrein",
+    "place_array": ["Bouwterrein", "Bedrijventerrein"],
+    "average_credits": 10890,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "spokesman": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 2,
+      "gwmess": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 6,
+      "ovdp": 1,
+      "bike_police": 2
+    },
+    "chances": { "nef": 35, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [870, 995],
+      "need_bike_police_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1022,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
