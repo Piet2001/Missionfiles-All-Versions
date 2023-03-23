@@ -15461,7 +15461,7 @@
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [23],
-      "personnel_educations": { "Lainvalvonnan merivoimat": 12 }
+      "personnel_educations": { "RVL Merivartija": 12 }
     },
     "prerequisites": {
       "main_building": 23,
@@ -15581,7 +15581,7 @@
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia",
-      "personnel_educations": { "Lainvalvonnan merivoimat": 18 }
+      "personnel_educations": { "RVL Merivartija": 18 }
     },
     "prerequisites": {
       "main_building": 23,
@@ -15621,7 +15621,7 @@
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [23],
-      "personnel_educations": { "Lainvalvonnan merivoimat": 8 }
+      "personnel_educations": { "RVL Merivartija": 8 }
     },
     "prerequisites": {
       "main_building": 23,
@@ -15660,7 +15660,7 @@
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [23],
-      "personnel_educations": { "Lainvalvonnan merivoimat": 24 }
+      "personnel_educations": { "RVL Merivartija": 24 }
     },
     "prerequisites": {
       "main_building": 23,
@@ -16481,5 +16481,378 @@
     "base_mission_id": 513,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "517",
+    "name": "401 Savu lentokoneen matkustamossa",
+    "place": "Suuri lentokenttä (kiitorata)",
+    "place_array": ["Suuri lentokenttä (kiitorata)"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "rettungstreppe": 1, "riv": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions"],
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "airport_2": 1 },
+    "overlay_index": null,
+    "base_mission_id": 517,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "518",
+    "name": "202 Eläin asfaltilla",
+    "place": "Pieni lentoasema (kiitorata)\nSuuri lentokenttä (kiitorata)",
+    "place_array": [
+      "Pieni lentoasema (kiitorata)",
+      "Suuri lentokenttä (kiitorata)"
+    ],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "elw_airport": 1, "riv": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions"],
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 518,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "519",
+    "name": "202 Kiitotien ylitys",
+    "place": "Pieni lentoasema (kiitorata)\nSuuri lentokenttä (kiitorata)\nHalli",
+    "place_array": [
+      "Pieni lentoasema (kiitorata)",
+      "Suuri lentokenttä (kiitorata)",
+      "Halli"
+    ],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 2, "elw_airport": 1, "riv": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"],
+      "max_arff_replacing_riv": 1,
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 519,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "520",
+    "name": "202 Lento-onnettomuus",
+    "place": "Suuri lentokenttä (kiitorata)",
+    "place_array": ["Suuri lentokenttä (kiitorata)"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 4,
+      "heavy_rescue_vehicles": 2,
+      "arff": 4,
+      "police_cars": 8,
+      "rettungstreppe": 1,
+      "elw_airport": 3,
+      "kdow_orgl": 1,
+      "riv": 2
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "max_arff_replacing_riv": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "airport": 3,
+      "airport_2": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 520,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "521",
+    "name": "Ilma-aluksen tulipalo",
+    "place": "Suuri lentokenttä (kiitorata)",
+    "place_array": ["Suuri lentokenttä (kiitorata)"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "arff": 4,
+      "rettungstreppe": 1,
+      "elw_airport": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "airport": 2,
+      "airport_2": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 521,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "522",
+    "name": "202 Lentokoneen laskutelineen puhjennut rengas",
+    "place": "Pieni lentoasema (kiitorata)\nSuuri lentokenttä (kiitorata)\nHalli",
+    "place_array": [
+      "Pieni lentoasema (kiitorata)",
+      "Suuri lentokenttä (kiitorata)",
+      "Halli"
+    ],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1, "elw_airport": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 522,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "523",
+    "name": "451 Lentopetrolivuoto kiitotiellä",
+    "place": "Pieni lentoasema (kiitorata)\nSuuri lentokenttä (kiitorata)",
+    "place_array": [
+      "Pieni lentoasema (kiitorata)",
+      "Suuri lentokenttä (kiitorata)"
+    ],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "arff": 1, "riv": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 523,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "524",
+    "name": "770 Matkustajan terveysongelma lentokoneessa",
+    "place": "Pieni lentoasema (kiitorata)\nSuuri lentokenttä (kiitorata)",
+    "place_array": [
+      "Pieni lentoasema (kiitorata)",
+      "Suuri lentokenttä (kiitorata)"
+    ],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 0, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 524,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "525",
+    "name": "403 Tulipalo lentoaseman terminaalissa",
+    "place": "Lentokenttäterminaali",
+    "place_array": ["Lentokenttäterminaali"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 4,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 2,
+      "arff": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "airport": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "526",
+    "name": "416 Hangaarin tulipalo",
+    "place": "Halli",
+    "place_array": ["Halli"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "arff": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 8 },
+    "overlay_index": null,
+    "base_mission_id": 526,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "527",
+    "name": "Hätälasku",
+    "place": "Suuri lentokenttä (kiitorata)",
+    "place_array": ["Suuri lentokenttä (kiitorata)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "arff": 3,
+      "rettungstreppe": 1,
+      "elw_airport": 2,
+      "riv": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions"]
+    },
+    "prerequisites": { "main_building": 0, "airport": 3 },
+    "overlay_index": null,
+    "base_mission_id": 527,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
