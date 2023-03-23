@@ -496,7 +496,7 @@
   },
   {
     "id": "21",
-    "name": "Pipebrann",
+    "name": "Skorsteinsbrann",
     "place": "",
     "place_array": [],
     "average_credits": 2400,
@@ -1294,7 +1294,7 @@
   },
   {
     "id": "48",
-    "name": "Innbrudd i bagasjeoppbevaring",
+    "name": "Innbrudd",
     "place": "Godsstasjon",
     "place_array": ["Godsstasjon"],
     "average_credits": 150,
@@ -5362,7 +5362,7 @@
   },
   {
     "id": "165",
-    "name": "Alvorlig påkjørsel av tog",
+    "name": "Person påkjørt av tog",
     "place": "Togstasjon (regional)",
     "place_array": ["Togstasjon (regional)"],
     "average_credits": 3000,
@@ -14187,7 +14187,7 @@
   },
   {
     "id": "416",
-    "name": "Parkpatruljering",
+    "name": "Patruljerer parken",
     "place": "Park",
     "place_array": ["Park"],
     "average_credits": 1500,
@@ -15383,7 +15383,7 @@
   },
   {
     "id": "446",
-    "name": "Lekkasje på bensinstasjon",
+    "name": "Drivstoffsøl på bensinstasjon",
     "place": "Bensinstasjon",
     "place_array": ["Bensinstasjon"],
     "average_credits": 4300,
@@ -17206,5 +17206,323 @@
     "base_mission_id": 497,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "499",
+    "name": "Nødlanding (småfly)",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "arff": 1,
+      "police_cars": 4,
+      "riv": 1
+    },
+    "chances": { "patient_transport": 80, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "airport": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "500",
+    "name": "Nødlanding (stort fly)",
+    "place": "Stor flyplass (flystripe)",
+    "place_array": ["Stor flyplass (flystripe)"],
+    "average_credits": 5200,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "heavy_rescue_vehicles": 2,
+      "arff": 4,
+      "police_cars": 8,
+      "riv": 1
+    },
+    "chances": { "patient_transport": 40, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "airport": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 500,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "501",
+    "name": "Røyk i hytta",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "arff": 2,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 501,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "502",
+    "name": "Overopphetet landingsstell",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 600,
+      "water_needed": 4000,
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "arff": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 502,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "503",
+    "name": "Utslipp av flydrivstoff",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 400,
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "arff": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "504",
+    "name": "Tomt fly brann (liten))",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 16000,
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "arff": 2,
+      "police_cars": 2,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "airport": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "505",
+    "name": "Tomt stort fly i brann",
+    "place": "Stor flyplass (flystripe)",
+    "place_array": ["Stor flyplass (flystripe)"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4000,
+      "water_needed": 50000,
+      "firetrucks": 4,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "arff": 4,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "airport": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "506",
+    "name": "Brann i flymotor",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 20000,
+      "firetrucks": 2,
+      "arff": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "airport": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 506,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "507",
+    "name": "Lufthavnbørstebrann",
+    "place": "Liten flyplass (flystripe)\nStor flyplass (flystripe)",
+    "place_array": ["Liten flyplass (flystripe)", "Stor flyplass (flystripe)"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 8000,
+      "firetrucks": 1,
+      "arff": 1,
+      "riv": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "allow_riv_instead_of_lf": true
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
