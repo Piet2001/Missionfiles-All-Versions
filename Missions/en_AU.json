@@ -18837,5 +18837,37 @@
     "base_mission_id": 569,
     "additive_overlays": "",
     "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "570",
+    "name": "Compulsory hospitalization",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "police_cars": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 570,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
