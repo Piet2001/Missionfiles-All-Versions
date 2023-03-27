@@ -9766,7 +9766,7 @@
     },
     "chances": {},
     "additional": {
-      "followup_missions_ids": [322, 323, 324, 326, 327, 328],
+      "followup_missions_ids": [322, 323, 324, 326, 327, 328, 571],
       "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [336]
     },
@@ -18839,35 +18839,74 @@
     "mission_categories": ["water_rescue"]
   },
   {
-    "id": "570",
-    "name": "Compulsory hospitalization",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
+    "id": "571",
+    "name": "Catastrophic Bushfire",
+    "place": "Park\nHill\nField\nHeathland\nMoorland",
+    "place_array": ["Park", "Hill", "Field", "Heathland", "Moorland"],
+    "average_credits": 37500,
     "generated_by": "",
     "icons": [
-      "/images/cuffs_gruen.png",
-      "/images/cuffs_gelb.png",
-      "/images/cuffs_rot.png"
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
     ],
-    "requirements": { "ambulances": 1, "police_cars": 2 },
-    "chances": { "patient_transport": 100 },
+    "requirements": {
+      "water_needed": 180000,
+      "brush_truck": 50,
+      "fire_aviation": 5,
+      "battalion_chief_vehicles": 20,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 15,
+      "police_cars": 10,
+      "police_service_group_leader": 1
+    },
+    "chances": {},
     "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [571]
     },
     "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 2,
-      "police_stations": 4
+      "main_building": 0,
+      "police_stations": 5,
+      "brush_extension": 30,
+      "fire_stations": 35
     },
     "overlay_index": null,
-    "base_mission_id": 570,
+    "base_mission_id": 571,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "572",
+    "name": "Catastrophic Bushfire Cleanup",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 20,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 8
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 7,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 572,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
   }
 ]
