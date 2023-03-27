@@ -38771,5 +38771,63 @@
     "base_mission_id": 847,
     "additive_overlays": "",
     "mission_categories": ["fire_support_specialization"]
+  },
+  {
+    "id": "848",
+    "name": "Commercial Aircraft - Runway Incursion Collision",
+    "place": "Large Airport (Runway)",
+    "place_array": ["Large Airport (Runway)"],
+    "average_credits": 50000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 10000,
+      "firetrucks": 75,
+      "battalion_chief_vehicles": 15,
+      "mobile_command_vehicles": 4,
+      "platform_trucks": 20,
+      "heavy_rescue_vehicles": 20,
+      "mobile_air_vehicles": 4,
+      "arff": 8,
+      "hazmat_vehicles": 4,
+      "police_cars": 20,
+      "k9": 3,
+      "personnel_educations": { "gw_gefahrgut": 16, "ems_mobile_command": 4 },
+      "fbi": 8,
+      "fbi_investigation": 1,
+      "fbi_mcc": 1,
+      "sheriff": 5,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 15, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 150,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 16, "EMS Mobile Command": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "federalpolice_stations": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "gw_gefahrgut": 32, "ems_mobile_command": 8 },
+      "airport": 3,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 848,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
