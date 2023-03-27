@@ -18614,5 +18614,57 @@
     "base_mission_id": 550,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "551",
+    "name": "Collision ferroviaire",
+    "place": "Passage à niveau",
+    "place_array": ["Passage à niveau"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "ambulances": 10,
+      "brush_truck": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "elw3": 3,
+      "heavy_rescue_vehicles": 6,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 1,
+      "police_cars": 6,
+      "kdow_orgl": 1,
+      "rth": 5
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 30,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 15,
+      "height_rescue_personnel": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
