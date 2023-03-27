@@ -14015,5 +14015,37 @@
     "base_mission_id": 441,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "442",
+    "name": "Принудительная госпитализация",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "police_cars": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Терапевт общего профиля"],
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 442,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
