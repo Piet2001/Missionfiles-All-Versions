@@ -6656,6 +6656,7 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2022-11-17T10:00:00+01:00",
       "date_end": "2022-11-20T22:59:00+01:00"
@@ -7035,17 +7036,12 @@
     ],
     "requirements": {
       "firetrucks": 1,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
+      "police_cars": 3
     },
-    "chances": {},
+    "chances": { "platform_trucks": 20 },
     "additional": {
-      "duration_text": "20 minuter",
-      "duration": 1200,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2022-11-17T10:00:00+01:00",
       "date_end": "2022-11-20T22:59:00+01:00"
@@ -7053,7 +7049,7 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -7066,7 +7062,7 @@
     "name": "Ballonger i behov av uppblåsning på jubileumsfest",
     "place": "",
     "place_array": [],
-    "average_credits": 15000,
+    "average_credits": 2500,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -7075,29 +7071,25 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "ambulances": 2,
       "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1
     },
-    "chances": {},
+    "chances": { "mobile_air_vehicles": 30 },
     "additional": {
-      "duration_text": "10 minuter",
-      "duration": 600,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2022-11-17T10:00:00+01:00",
       "date_end": "2022-11-20T22:59:00+01:00"
     },
     "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 1,
+      "main_building": 0,
       "police_stations": 3,
       "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["fire"]
   },
   {
     "id": "235",
@@ -7116,6 +7108,7 @@
     "additional": {
       "possible_patient": 18,
       "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "date_start": "2022-11-17T10:00:00+01:00",
       "date_end": "2022-11-20T22:59:00+01:00",
@@ -7125,7 +7118,7 @@
     },
     "prerequisites": {
       "main_building": 6,
-      "rescue_stations": 2,
+      "rescue_stations": 6,
       "police_stations": 3,
       "fire_stations": 6
     },
