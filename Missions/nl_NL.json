@@ -25024,6 +25024,7 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-02-09T00:00:00Z",
@@ -25418,7 +25419,7 @@
     "name": "Mensen vermist op dansvloer",
     "place": "",
     "place_array": [],
-    "average_credits": 7305,
+    "average_credits": 7500,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -25428,18 +25429,13 @@
     "requirements": {
       "firetrucks": 1,
       "hondengeleider": 2,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
       "police_cars": 3,
       "ovdp": 1
     },
-    "chances": {},
+    "chances": { "platform_trucks": 20 },
     "additional": {
-      "duration_text": "20 minuten",
-      "duration": 1200,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-02-09T00:00:00Z",
@@ -25448,9 +25444,7 @@
     "prerequisites": {
       "main_building": 5,
       "rescue_stations": 1,
-      "police_stations": 5,
-      "bereitschaftspolizei": 2,
-      "hondengeleider": 1,
+      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -25480,16 +25474,13 @@
     },
     "chances": {},
     "additional": {
-      "duration_text": "10 minuten",
-      "duration": 600,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-02-09T00:00:00Z",
       "date_end": "2023-02-12T23:00:00Z"
     },
     "prerequisites": {
-      "main_building": 5,
+      "main_building": 0,
       "rescue_stations": 1,
       "police_stations": 2,
       "fire_stations": 7
@@ -25497,7 +25488,7 @@
     "overlay_index": null,
     "base_mission_id": 751,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["fire"]
   },
   {
     "id": "752",
@@ -25516,6 +25507,7 @@
     "additional": {
       "possible_patient": 18,
       "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-02-09T00:00:00Z",
@@ -25526,7 +25518,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "rescue_stations": 2,
+      "rescue_stations": 6,
       "police_stations": 3,
       "fire_stations": 6
     },
