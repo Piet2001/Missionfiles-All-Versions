@@ -9394,6 +9394,7 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2022-11-24T10:00:00Z",
       "date_end": "2022-11-27T22:59:00Z"
@@ -9793,17 +9794,12 @@
     ],
     "requirements": {
       "firetrucks": 1,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "police_cars": 1
+      "police_cars": 3
     },
-    "chances": {},
+    "chances": { "platform_trucks": 20 },
     "additional": {
-      "duration_text": "20 minuti",
-      "duration": 1200,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2022-11-24T10:00:00Z",
       "date_end": "2022-11-27T22:59:00Z"
@@ -9811,7 +9807,7 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -9824,7 +9820,7 @@
     "name": "Gonfiaggio dei palloncini per la festa di anniversario",
     "place": "",
     "place_array": [],
-    "average_credits": 15000,
+    "average_credits": 2500,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -9833,29 +9829,25 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "ambulances": 2,
       "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1
     },
-    "chances": {},
+    "chances": { "mobile_air_vehicles": 30 },
     "additional": {
-      "duration_text": "10 minuti",
-      "duration": 600,
-      "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2022-11-24T10:00:00Z",
       "date_end": "2022-11-27T22:59:00Z"
     },
     "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 1,
+      "main_building": 0,
       "police_stations": 3,
       "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 288,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["fire"]
   },
   {
     "id": "289",
@@ -9874,6 +9866,7 @@
     "additional": {
       "possible_patient": 18,
       "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
       "patient_it_code_possible": ["KC07V", "KC07G", "KC07R"],
       "filter_id": "police_station_missions",
       "possible_patient_specializations": [
@@ -9886,7 +9879,7 @@
     },
     "prerequisites": {
       "main_building": 6,
-      "rescue_stations": 4,
+      "rescue_stations": 6,
       "police_stations": 2
     },
     "overlay_index": null,
