@@ -17613,5 +17613,51 @@
     "base_mission_id": 509,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "510",
+    "name": "Obchodní letadlo - srážka s dráhou letu",
+    "place": "Velké letiště (ranvej)",
+    "place_array": ["Velké letiště (ranvej)"],
+    "average_credits": 50000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 75,
+      "battalion_chief_vehicles": 15,
+      "mobile_command_vehicles": 4,
+      "platform_trucks": 20,
+      "heavy_rescue_vehicles": 20,
+      "mobile_air_vehicles": 4,
+      "arff": 8,
+      "hazmat_vehicles": 4,
+      "police_cars": 20,
+      "k9": 3
+    },
+    "chances": { "patient_transport": 15, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 150,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "airport": 3,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 510,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
