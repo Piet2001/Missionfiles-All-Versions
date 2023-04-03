@@ -14055,5 +14055,45 @@
     "base_mission_id": 442,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "443",
+    "name": "Пожар на строительной площадке",
+    "place": "Церковь",
+    "place_array": ["Церковь"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 6,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Терапевт общего профиля"],
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 443,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
