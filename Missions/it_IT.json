@@ -20599,5 +20599,64 @@
     "base_mission_id": 600,
     "additive_overlays": "",
     "mission_categories": ["airport"]
+  },
+  {
+    "id": "601",
+    "name": "Incendio Raffineria",
+    "place": "Raffineria di Petrolio",
+    "place_array": ["Raffineria di Petrolio"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4000,
+      "water_needed": 60000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "irff": 2
+    },
+    "chances": { "patient_transport": 20, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "max_municipal_police_replacing_police_cars": 6,
+      "max_arff_replacing_irff": 2,
+      "patient_specialization_ids": [0, 1],
+      "patient_specialization_captions": [
+        "Medicina interna generale",
+        "Chirurgia generale"
+      ],
+      "patient_specializations": "Medicina interna generale, Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "airport": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 601,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization"]
   }
 ]
