@@ -17126,5 +17126,53 @@
     "base_mission_id": 502,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "503",
+    "name": "Kommercielle fly - kollision ved banekørsel",
+    "place": "Stor Landingsbane",
+    "place_array": ["Stor Landingsbane"],
+    "average_credits": 50000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 75,
+      "battalion_chief_vehicles": 15,
+      "mobile_command_vehicles": 4,
+      "platform_trucks": 20,
+      "heavy_rescue_vehicles": 20,
+      "mobile_air_vehicles": 4,
+      "arff": 8,
+      "hazmat_vehicles": 4,
+      "police_cars": 20,
+      "k9": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 15, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 150,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "airport": 3,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "fire_support_specialization"]
   }
 ]
