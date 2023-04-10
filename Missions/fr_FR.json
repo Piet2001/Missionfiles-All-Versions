@@ -18725,5 +18725,41 @@
     "base_mission_id": 552,
     "additive_overlays": "",
     "mission_categories": ["airport", "fire_support_specialization"]
+  },
+  {
+    "id": "553",
+    "name": "surveillance d'une grèves",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 1,
+      "riot_police": 2,
+      "riot_police_equipment": 1
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [427, 428, 429, 430],
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "riot_police_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": { "main_building": 11, "bereitschaftspolizei": 1 },
+    "overlay_index": null,
+    "base_mission_id": 553,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
