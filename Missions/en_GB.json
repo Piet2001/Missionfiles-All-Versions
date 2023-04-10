@@ -25060,5 +25060,63 @@
     "base_mission_id": 582,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "583",
+    "name": "Medium Aircraft Emergency Landing in Estuary Mud",
+    "place": "Estuary",
+    "place_array": ["Estuary"],
+    "average_credits": 30000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 6,
+      "personnel_educations": { "coastal_mud_rescue": 30 },
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "emergency_welfare": 1,
+      "foam": 6,
+      "mass_casualty_equipment": 1,
+      "ems_mobile_command": 6,
+      "coastal_command": 1,
+      "coastal_boat": 2,
+      "mud_rescue": 6,
+      "coastal_support": 2,
+      "coastal_mud_rescue": 3
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 20,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Mud Rescue Operator": 30 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "water_rescue_2": 6,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "mass_casualty_count": 2,
+      "hazard_response_ems": 2,
+      "personnel_educations": { "coastal_mud_rescue": 60 },
+      "mud_rescue": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 583,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
