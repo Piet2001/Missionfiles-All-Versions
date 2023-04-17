@@ -38913,5 +38913,47 @@
     "base_mission_id": 850,
     "additive_overlays": "",
     "mission_categories": ["airport", "fire_support_specialization"]
+  },
+  {
+    "id": "851",
+    "name": "Protesters stuck on top of a monument",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 3,
+      "platform_trucks": 1,
+      "police_cars": 2,
+      "k9": 1
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["30-D-3", "30-B-2"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 851,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
