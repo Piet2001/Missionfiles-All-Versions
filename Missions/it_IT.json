@@ -20719,60 +20719,49 @@
   },
   {
     "id": "603",
-    "name": "Aeromobile commerciale - Incidente di pista",
-    "place": "Grande aeroporto (pista)",
-    "place_array": ["Grande aeroporto (pista)"],
-    "average_credits": 50000,
+    "name": "Perdita di Ammoniaca in Fabbrica",
+    "place": "Fabbrica",
+    "place_array": ["Fabbrica"],
+    "average_credits": 5000,
     "generated_by": "",
     "icons": [
-      "/images/planecrash_gruen.png",
-      "/images/planecrash_gelb.png",
-      "/images/planecrash_rot.png"
+      "/images/olfass_gruen.png",
+      "/images/olfass_gelb.png",
+      "/images/olfass_rot.png"
     ],
     "requirements": {
-      "foam_needed": 10000,
-      "firetrucks": 75,
-      "battalion_chief_vehicles": 15,
-      "mobile_command_vehicles": 4,
-      "platform_trucks": 20,
-      "heavy_rescue_vehicles": 20,
-      "mobile_air_vehicles": 4,
-      "arff": 8,
-      "hazmat_vehicles": 4,
-      "police_cars": 20,
-      "k9": 3,
-      "personnel_educations": { "gw_gefahrgut": 16 }
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 6
     },
-    "chances": { "patient_transport": 15, "helicopter": 20 },
+    "chances": { "patient_transport": 80, "helicopter": 10 },
     "additional": {
-      "possible_patient": 250,
-      "possible_patient_min": 150,
-      "patient_it_code_possible": ["ZC02R", "ZC02G"],
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "patient_it_code_possible": ["LC07R", "LC07G", "LC07V"],
       "filter_id": "firehouse_missions",
       "possible_patient_specializations": [
-        "Cardiologia",
-        "Chirurgia cardiaca",
-        "Cardiologia",
-        "Chirurgia cardiaca"
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
       ],
-      "patient_allow_first_responder_chance": 40,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologia"],
-      "patient_specializations": "Traumatologia",
-      "personnel_educations": { "N.B.C.R.": 16 }
+      "max_municipal_police_replacing_police_cars": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 40,
-      "police_stations": 10,
-      "fire_support_count": 2,
-      "personnel_educations": { "gw_gefahrgut": 32 },
-      "airport": 3,
-      "fire_stations": 50
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 603,
     "additive_overlays": "",
-    "mission_categories": ["airport", "fire_support_specialization"]
+    "mission_categories": ["fire"]
   }
 ]
