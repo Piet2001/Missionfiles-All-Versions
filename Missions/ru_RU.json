@@ -14123,5 +14123,42 @@
     "base_mission_id": 444,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "445",
+    "name": "Автомобиль врезается в плотину",
+    "place": "плотина",
+    "place_array": ["плотина"],
+    "average_credits": 7280,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 2,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Терапевт общего профиля"],
+      "patient_specializations": "Терапевт общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 445,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
