@@ -17223,7 +17223,7 @@
   },
   {
     "id": "505",
-    "name": "Køretøj kører ind i en dæmning",
+    "name": "Køretøj kørt ned i vand",
     "place": "Dæmning",
     "place_array": ["Dæmning"],
     "average_credits": 7280,
@@ -17235,16 +17235,18 @@
     ],
     "requirements": {
       "firetrucks": 5,
-      "battalion_chief_vehicles": 2,
-      "police_cars": 4,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
       "diver_units": 1,
-      "boats": 1
+      "boats": 1,
+      "elw_police": 1
     },
     "chances": { "patient_transport": 85 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
+      "need_elw_police_only_if_present": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Specialister i intern medicin"],
       "patient_specializations": "Specialister i intern medicin"
