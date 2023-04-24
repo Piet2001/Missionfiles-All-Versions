@@ -38955,5 +38955,49 @@
     "base_mission_id": 851,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "852",
+    "name": "Train collision",
+    "place": "Railroad Crossing",
+    "place_array": ["Railroad Crossing"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "brush_truck": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "elw3": 3,
+      "heavy_rescue_vehicles": 6,
+      "hazmat_vehicles": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 75, "helicopter": 30 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 852,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
