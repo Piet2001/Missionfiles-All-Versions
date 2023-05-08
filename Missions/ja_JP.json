@@ -14508,5 +14508,183 @@
     "base_mission_id": 445,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "446",
+    "name": "図書館火災（小",
+    "place": "図書館",
+    "place_array": ["図書館"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [447],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 446,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "447",
+    "name": "図書館火災（中",
+    "place": "図書館",
+    "place_array": ["図書館"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [448],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 447,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "448",
+    "name": "図書館火災（大",
+    "place": "図書館",
+    "place_array": ["図書館"],
+    "average_credits": 11250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4,
+      "foam": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [449],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 448,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "449",
+    "name": "図書館火災（専攻",
+    "place": "図書館",
+    "place_array": ["図書館"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 6,
+      "foam": 2
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 16,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 449,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
