@@ -17793,5 +17793,183 @@
     "base_mission_id": 514,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "515",
+    "name": "Požár v knihovně (malý)",
+    "place": "Knihovna",
+    "place_array": ["Knihovna"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [516],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 515,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "516",
+    "name": "Požár v knihovně (střední)",
+    "place": "Knihovna",
+    "place_array": ["Knihovna"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [517],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 516,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "517",
+    "name": "Požár v knihovně (velký)",
+    "place": "Knihovna",
+    "place_array": ["Knihovna"],
+    "average_credits": 11250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 25000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4,
+      "kdow_orgl": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [518],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 517,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "518",
+    "name": "Požár knihovny (hlavní)",
+    "place": "Knihovna",
+    "place_array": ["Knihovna"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 50000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 6,
+      "kdow_orgl": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 16,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 518,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
