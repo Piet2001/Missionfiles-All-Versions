@@ -21891,5 +21891,87 @@
     "base_mission_id": 650,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "651",
+    "name": "Mały pożar w bibliotece",
+    "place": "Biblioteki",
+    "place_array": ["Biblioteki"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 800,
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [652],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 651,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "652",
+    "name": "Pożar biblioteki",
+    "place": "Biblioteki",
+    "place_array": ["Biblioteki"],
+    "average_credits": 11250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 52000,
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4,
+      "hose": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
