@@ -20830,5 +20830,251 @@
     "base_mission_id": 605,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "606",
+    "name": "Incendio in biblioteca (piccolo)",
+    "place": "Biblioteca",
+    "place_array": ["Biblioteca"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [607],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "607",
+    "name": "Incendio in biblioteca (medio)",
+    "place": "Biblioteca",
+    "place_array": ["Biblioteca"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [608],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 607,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "608",
+    "name": "Incendio in biblioteca (grande)",
+    "place": "Biblioteca",
+    "place_array": ["Biblioteca"],
+    "average_credits": 11250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 25000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [609],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 608,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "609",
+    "name": "Incendio in biblioteca (maggiore)",
+    "place": "Biblioteca",
+    "place_array": ["Biblioteca"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 50000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 16,
+      "possible_patient_min": 8,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 609,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "613",
+    "name": "Crisi Ostaggi nel Terminal Aeroportuale",
+    "place": "Terminal aeroporto",
+    "place_array": ["Terminal aeroporto"],
+    "average_credits": 5200,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "swat_suv": 4,
+      "heavy_rescue_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 12,
+      "k9": 2
+    },
+    "chances": { "patient_transport": 40, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ]
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 613,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
