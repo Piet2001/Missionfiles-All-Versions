@@ -3550,6 +3550,64 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "104/a",
+    "name": "Hostage Taken",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "personnel_educations": { "sniper": 2 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-D-1S",
+        "27-D-2S",
+        "27-D-3S",
+        "27-D-4S",
+        "27-D-5S",
+        "27-B-2S",
+        "27-B-3S",
+        "27-B-4S",
+        "27-D-1G",
+        "27-D-2G",
+        "27-D-3G",
+        "27-D-4G",
+        "27-D-5G",
+        "27-B-2G",
+        "27-B-3G",
+        "27-B-4G",
+        "27-B-5G"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Sharpshooter": 2 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 104,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "105",
     "name": "Active Shooter",
     "place": "",
@@ -3596,6 +3654,58 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "105/a",
+    "name": "Active Shooter",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 4,
+      "personnel_educations": { "sniper": 3 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "swat_personnel": 24,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-D-1G",
+        "27-D-2G",
+        "27-D-3G",
+        "27-D-4G",
+        "27-D-5G",
+        "27-B-2G",
+        "27-B-3G",
+        "27-B-4G",
+        "27-B-5G"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Sharpshooter": 3 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 9,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "sniper": 6 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 105,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "106",
     "name": "High-Risk Warrant",
     "place": "",
@@ -3610,6 +3720,7 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [105],
       "swat_personnel": 18,
       "filter_id": "police_station_missions",
       "allow_swat_instead_of_police": true
@@ -3618,6 +3729,40 @@
     "overlay_index": null,
     "base_mission_id": 106,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "106/a",
+    "name": "High-Risk Warrant",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "sniper": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [105],
+      "swat_personnel": 18,
+      "filter_id": "police_station_missions",
+      "allow_swat_instead_of_police": true,
+      "personnel_educations": { "Sharpshooter": 2 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 9,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 106,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -4630,6 +4775,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
+      "expansion_missions_ids": [105, 862],
       "max_possible_prisoners": 4,
       "filter_id": "police_station_missions",
       "patient_us_code_possible": ["30-D-3", "30-B-2"],
@@ -4646,7 +4792,49 @@
     "overlay_index": null,
     "base_mission_id": 136,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "136/a",
+    "name": "Medium Violent Protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3750,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 7,
+      "k9": 1,
+      "personnel_educations": { "riot_police": 16 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [105, 862],
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["30-D-3", "30-B-2"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Riot Police Officer": 16 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "riot_police": 32 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
   },
   {
     "id": "137",
@@ -6462,6 +6650,7 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [105],
       "swat_personnel": 6,
       "filter_id": "police_station_missions",
       "patient_us_code_possible": [
@@ -6489,6 +6678,60 @@
     "overlay_index": null,
     "base_mission_id": 180,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "180/a",
+    "name": "Shots fired at Officer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "k9": 2,
+      "personnel_educations": { "sniper": 1 }
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [105],
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-D-1G",
+        "27-D-2G",
+        "27-D-3G",
+        "27-D-4G",
+        "27-D-5G",
+        "27-B-2G",
+        "27-B-3G",
+        "27-B-4G",
+        "27-B-5G"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Sharpshooter": 1 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 180,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -11382,6 +11625,7 @@
     "requirements": { "police_cars": 4, "k9": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [104, 105],
       "max_possible_prisoners": 3,
       "swat_personnel": 6,
       "filter_id": "police_station_missions"
@@ -11390,6 +11634,41 @@
     "overlay_index": null,
     "base_mission_id": 272,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "272/a",
+    "name": "Museum robbery",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "k9": 1,
+      "personnel_educations": { "sniper": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [104, 105],
+      "max_possible_prisoners": 3,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Sharpshooter": 1 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 9,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 272,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -12264,7 +12543,61 @@
     "overlay_index": null,
     "base_mission_id": 298,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "298/a",
+    "name": "Large brawl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "k9": 1,
+      "personnel_educations": { "riot_police": 20 }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "max_possible_prisoners": 6,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-D-1S",
+        "27-D-2S",
+        "27-D-3S",
+        "27-D-4S",
+        "27-B-2S",
+        "27-B-3S",
+        "27-B-4S",
+        "27-D-1P",
+        "27-D-2P",
+        "27-D-3P",
+        "27-D-4P",
+        "27-B-2P",
+        "27-B-3P",
+        "27-B-4P"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Riot Police Officer": 20 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 7,
+      "police_stations": 6,
+      "personnel_educations": { "riot_police": 40 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 298,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
   },
   {
     "id": "299",
@@ -21343,6 +21676,7 @@
     "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [104, 105],
       "max_possible_prisoners": 3,
       "filter_id": "police_station_missions"
     },
@@ -21367,11 +21701,79 @@
     "requirements": { "police_cars": 3, "sheriff": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [104, 105],
       "max_possible_prisoners": 3,
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 5, "police_stations": 7 },
     "overlay_index": 0,
+    "base_mission_id": 455,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "455-1",
+    "name": "Robbery",
+    "place": "",
+    "place_array": [],
+    "average_credits": 100,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 3,
+      "personnel_educations": { "sniper": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [104, 105],
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Sharpshooter": 1 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": 1,
+    "base_mission_id": 455,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "455-2",
+    "name": "Robbery",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1700,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 3,
+      "personnel_educations": { "sniper": 1 },
+      "sheriff": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [104, 105],
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Sharpshooter": 1 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 7,
+      "personnel_educations": { "sniper": 4 }
+    },
+    "overlay_index": 2,
     "base_mission_id": 455,
     "additive_overlays": "",
     "mission_categories": ["police"]
@@ -22606,6 +23008,31 @@
     "overlay_index": null,
     "base_mission_id": 490,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "490/a",
+    "name": "Suspicious package",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2, "k9": 1, "fbi_bomb": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 490,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -24225,6 +24652,64 @@
     "overlay_index": null,
     "base_mission_id": 539,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "539/a",
+    "name": "Bomb Explosion at Chemical Plant",
+    "place": "Large chemical storage tank",
+    "place_array": ["Large chemical storage tank"],
+    "average_credits": 36500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 25,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 10,
+      "heavy_rescue_vehicles": 12,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 4,
+      "police_cars": 12,
+      "personnel_educations": { "gw_gefahrgut": 16, "fbi_bomb_tech": 5 },
+      "fbi_bomb": 2
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-D-3E",
+        "7-D-4E",
+        "7-C-2E",
+        "7-C-4E",
+        "7-B-1E",
+        "7-A-3E",
+        "8-D-5C",
+        "8-D-6C"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 16, "FBI Bomb Technician": 5 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 8,
+      "bomb_disposal_count": 1,
+      "personnel_educations": { "fbi_bomb_tech": 10 },
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -32607,6 +33092,53 @@
     "mission_categories": ["coastal_rescue_ocean"]
   },
   {
+    "id": "738/a",
+    "name": "Hostage Rescue Aboard Cargo Ship",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "law_enforcement_marine": 18, "sniper": 4 },
+      "coastal_boat": 2,
+      "large_coastal_boat": 3,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["4-D-3", "27-B-4"],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "TACLET": 18, "Sharpshooter": 4 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 40, "sniper": 8 },
+      "coastal_rescue_count": 10,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 738,
+    "additive_overlays": "a",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "739",
     "name": "Whaling Vessel Performing Illegal Operations",
     "place": "",
@@ -39138,5 +39670,363 @@
     "base_mission_id": 855,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "856",
+    "name": "Supervision of a risky sports match",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 6,
+      "k9": 2,
+      "personnel_educations": { "riot_police": 10 },
+      "detention_unit": 1,
+      "riot_police": 2,
+      "riot_police_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Riot Police Officer": 10 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 8,
+      "detention_unit_count": 1,
+      "riot_police": 2,
+      "personnel_educations": { "riot_police": 20 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 856,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "857",
+    "name": "Escort of risky fans",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "k9": 4,
+      "personnel_educations": { "riot_police": 30 },
+      "elw_police": 1,
+      "detention_unit": 2,
+      "riot_police": 3,
+      "riot_police_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Riot Police Officer": 30 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 14,
+      "police_helicopter_stations": 1,
+      "detention_unit_count": 2,
+      "riot_police": 3,
+      "personnel_educations": { "riot_police": 60 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 857,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "858",
+    "name": "Clash and assault of risky fans",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 20,
+      "k9": 4,
+      "personnel_educations": { "riot_police": 60 },
+      "elw_police": 1,
+      "detention_unit": 6,
+      "riot_police": 4,
+      "riot_police_trailer": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 25,
+      "max_possible_prisoners": 40,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4",
+        "27-D-5"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Riot Police Officer": 60 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 8,
+      "police_stations": 18,
+      "police_helicopter_stations": 1,
+      "detention_unit_count": 4,
+      "riot_police": 4,
+      "personnel_educations": { "riot_police": 120 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 858,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "859",
+    "name": "Crowd Control",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "k9": 5,
+      "personnel_educations": { "riot_police": 10 },
+      "elw_police": 1,
+      "riot_police": 1,
+      "riot_police_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Riot Police Officer": 10 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 8,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 20 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 859,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "860",
+    "name": "Kidnapped Politician",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "k9": 3,
+      "riot_police": 1,
+      "riot_police_trailer": 1
+    },
+    "chances": { "patient_transport": 33, "patient_critical_care": 33 },
+    "additional": {
+      "possible_patient": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "swat_personnel": 10,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 7,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 860,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "861",
+    "name": "School Bomb Threat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 9,
+      "k9": 4,
+      "fbi_bomb": 1,
+      "elw_police": 1,
+      "riot_police": 2,
+      "riot_police_trailer": 1
+    },
+    "chances": {
+      "patient_transport": 63,
+      "helicopter": 18,
+      "patient_critical_care": 36
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 7,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 9,
+      "bomb_disposal_count": 1,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "861/a",
+    "name": "School Bomb Threat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13750,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 9,
+      "k9": 4,
+      "fbi_bomb": 1,
+      "elw_police": 1,
+      "riot_police": 2,
+      "riot_police_trailer": 1
+    },
+    "chances": {
+      "patient_transport": 63,
+      "helicopter": 18,
+      "patient_critical_care": 36
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 7,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 9,
+      "police_helicopter_stations": 1,
+      "bomb_disposal_count": 1,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "862",
+    "name": "Large Violent Protest",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "personnel_educations": { "riot_police": 32 },
+      "elw_police": 1,
+      "detention_unit": 1,
+      "riot_police": 2,
+      "riot_police_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [105],
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions",
+      "personnel_educations": { "Riot Police Officer": 32 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 8,
+      "detention_unit_count": 1,
+      "riot_police": 3,
+      "personnel_educations": { "riot_police": 64 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 862,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
   }
 ]
