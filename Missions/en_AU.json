@@ -19631,33 +19631,48 @@
   },
   {
     "id": "595",
-    "name": "Airport Tractor on Fire",
-    "place": "Small Airport (Runway)\nLarge Airport (Runway)",
-    "place_array": ["Small Airport (Runway)", "Large Airport (Runway)"],
-    "average_credits": 1800,
+    "name": "Hostage Situation on Aircraft",
+    "place": "Large Airport (Runway)",
+    "place_array": ["Large Airport (Runway)"],
+    "average_credits": 11000,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
     ],
     "requirements": {
-      "water_needed": 12000,
-      "firetrucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "arff": 1,
-      "police_cars": 2
+      "arff": 2,
+      "police_cars": 15,
+      "k9": 3,
+      "rettungstreppe": 1,
+      "police_service_group_leader": 1,
+      "riv": 2
     },
-    "chances": {},
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 85
+    },
     "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 10,
+      "swat_personnel": 24,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [143],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
     },
     "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 12,
+      "police_service_group_leader": 1,
       "airport": 1,
-      "fire_stations": 4
+      "fire_stations": 2
     },
     "overlay_index": null,
     "base_mission_id": 595,
