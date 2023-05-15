@@ -39083,5 +39083,60 @@
     "base_mission_id": 854,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "855",
+    "name": "Nuclear Explosion",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 45000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 15000,
+      "water_needed": 30000,
+      "firetrucks": 60,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 12,
+      "heavy_rescue_vehicles": 18,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 4,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 16, "ems_mobile_command": 2 },
+      "sheriff": 2,
+      "foam": 6
+    },
+    "chances": { "patient_transport": 40, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 65,
+      "possible_patient_min": 20,
+      "followup_missions_ids": [726],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1E"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 16, "EMS Mobile Command": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 25,
+      "fire_support_count": 6,
+      "personnel_educations": { "gw_gefahrgut": 32, "ems_mobile_command": 2 },
+      "fire_stations": 60
+    },
+    "overlay_index": null,
+    "base_mission_id": 855,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
