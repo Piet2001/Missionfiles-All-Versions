@@ -42648,5 +42648,35 @@
     "base_mission_id": 810,
     "additive_overlays": "",
     "mission_categories": ["energy_supply_2"]
+  },
+  {
+    "id": "811",
+    "name": "Produktionshalle überschwemmt",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1
+    },
+    "chances": { "battalion_chief_vehicles": 10, "hazmat_vehicles": 25 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 811,
+    "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
   }
 ]
