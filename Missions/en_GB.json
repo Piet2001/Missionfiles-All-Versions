@@ -25658,5 +25658,46 @@
     "base_mission_id": 597,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "598",
+    "name": "EPIRB Activation (Offshore)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 1,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 1
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 598,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
