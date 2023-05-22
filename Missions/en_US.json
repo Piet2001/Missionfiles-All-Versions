@@ -40020,5 +40020,83 @@
     "base_mission_id": 862,
     "additive_overlays": "",
     "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "863",
+    "name": "Monitoring of small strike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 4, "detention_unit": 1, "riot_police": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 3,
+      "detention_unit_count": 1,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 863,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "864",
+    "name": "Monitoring of a Large strike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 12,
+      "detention_unit": 1,
+      "riot_police": 4
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "patient_us_code_possible": ["30-D-2", "30-D-3", "30-B-1", "30-B-3"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "detention_unit_count": 1,
+      "riot_police": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 864,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police_specialization"]
   }
 ]
