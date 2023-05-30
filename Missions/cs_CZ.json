@@ -11,7 +11,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -32,7 +32,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -53,7 +53,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [27, 16, 19],
@@ -77,7 +77,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 2000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [27],
@@ -101,7 +101,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14],
@@ -146,6 +146,48 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "5/a",
+    "name": "Požár v pokoji",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 9000,
+      "firetrucks": 2,
+      "platform_trucks": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [210, 211, 315],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 8000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 5,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "6",
     "name": "Požár zahradního altánu",
     "place": "",
@@ -157,7 +199,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 7000, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -178,7 +220,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 5000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14],
@@ -202,7 +244,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [20, 22, 6],
@@ -226,7 +268,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [14, 6],
@@ -250,7 +292,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 6000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -271,7 +313,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -350,7 +392,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": {
+      "foam_needed": 900,
+      "water_needed": 15000,
+      "firetrucks": 2
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -371,7 +417,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 12000, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [15],
@@ -395,7 +441,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 3000, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [194],
@@ -419,7 +465,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 10000, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -440,7 +486,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 100, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -461,7 +507,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 400, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -482,7 +528,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -503,7 +549,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {
       "battalion_chief_vehicles": 90,
       "patient_transport": 30,
@@ -523,6 +573,47 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "20/a",
+    "name": "Požár ve sklepě",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "battalion_chief_vehicles": 90,
+      "patient_transport": 30,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 20,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "21",
     "name": "Hořící komín",
     "place": "",
@@ -535,6 +626,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 4000,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -563,6 +655,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 30000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -587,7 +680,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "foam_needed": 6000,
+      "water_needed": 100000,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -608,7 +705,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 3500, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -689,7 +786,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 8000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 30, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 2,
@@ -721,7 +822,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 20000, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
@@ -743,6 +844,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1200,
+      "water_needed": 20000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
@@ -824,6 +927,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 2000,
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -851,7 +955,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 6000, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -873,6 +977,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -897,6 +1002,49 @@
     "overlay_index": null,
     "base_mission_id": 34,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "34/a",
+    "name": "Požár v nemocnici",
+    "place": "Nemocnice",
+    "place_array": ["Nemocnice"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 25000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "kdow_orgl": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "pump_water_amount": 32000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "water_damage_pump_count": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 34,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -1082,6 +1230,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4800,
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -1513,7 +1663,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 9000, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [210],
@@ -1559,6 +1709,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1
@@ -1679,7 +1830,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 9000, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [210],
@@ -1764,6 +1915,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -2200,6 +2352,52 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "78/a",
+    "name": "Částečné zřícení budovy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 10,
+      "patient_critical_care": 60
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 16000,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 78,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "79",
     "name": "Zřícení budovy",
     "place": "",
@@ -2212,6 +2410,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 5000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -2244,6 +2443,54 @@
     "mission_categories": ["fire", "disaster_response_specialization"]
   },
   {
+    "id": "79/a",
+    "name": "Zřícení budovy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 5000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 3,
+      "police_cars": 1,
+      "kdow_orgl": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 70
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 24000,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 79,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "disaster_response_specialization"]
+  },
+  {
     "id": "79-0",
     "name": "Zřícení budovy",
     "place": "",
@@ -2256,6 +2503,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 5000,
       "firetrucks": 4,
       "fwk": 1,
       "battalion_chief_vehicles": 2,
@@ -2287,6 +2535,56 @@
     "overlay_index": 0,
     "base_mission_id": 79,
     "additive_overlays": "",
+    "mission_categories": ["fire", "disaster_response_specialization"]
+  },
+  {
+    "id": "79-0/a",
+    "name": "Zřícení budovy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 5000,
+      "firetrucks": 4,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 3,
+      "police_cars": 1,
+      "kdow_orgl": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 70
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 24000,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 1,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": 0,
+    "base_mission_id": 79,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "disaster_response_specialization"]
   },
   {
@@ -2398,6 +2696,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 7200,
+      "water_needed": 120000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
@@ -2514,7 +2814,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 50000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 2,
@@ -2616,6 +2920,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2400,
+      "water_needed": 40000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -2678,6 +2984,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 5400,
+      "water_needed": 90000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -3850,6 +4158,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
@@ -3875,6 +4184,50 @@
     "overlay_index": null,
     "base_mission_id": 126,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "126/a",
+    "name": "Požár v kancelářské budově",
+    "place": "Kancelářská budova",
+    "place_array": ["Kancelářská budova"],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 100000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "police_cars": 3,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "pump_water_amount": 72000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "water_damage_pump_count": 4,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 126,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -4073,6 +4426,7 @@
       "/images/olfass_rot.png"
     ],
     "requirements": {
+      "water_needed": 12000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
@@ -4249,6 +4603,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 8000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4287,6 +4642,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4356,6 +4712,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4390,6 +4747,56 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "143/a",
+    "name": "Velký požár v hotelu",
+    "place": "Hotel",
+    "place_array": ["Hotel"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 80000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 3,
+      "kdow_orgl": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "water_tankers": 10,
+      "patient_transport": 40,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 20,
+      "expansion_missions_ids": [144],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 72000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "water_damage_pump_count": 4,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "144",
     "name": "Rozsáhlý požár v hotelu",
     "place": "Hotel",
@@ -4402,6 +4809,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 150000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4472,6 +4880,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 60000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -4510,6 +4919,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 3600,
+      "water_needed": 60000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -4684,6 +5095,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2400,
+      "water_needed": 40000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -4727,6 +5140,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4756,6 +5170,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 6000,
+      "water_needed": 100000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4794,6 +5210,7 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
+      "water_needed": 12000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -4826,6 +5243,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 12000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "police_cars": 1
@@ -4848,6 +5266,47 @@
     "overlay_index": null,
     "base_mission_id": 156,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "156/a",
+    "name": "Požár v kuchyni",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 12000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [210, 211, 315],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 8000,
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 156,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -4888,7 +5347,13 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "hazmat_vehicles": 1, "police_cars": 1 },
+    "requirements": {
+      "foam_needed": 900,
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "hazmat_vehicles": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
@@ -4913,7 +5378,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "police_cars": 1 },
+    "requirements": {
+      "foam_needed": 900,
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
@@ -4938,7 +5408,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 8, "police_cars": 1 },
+    "requirements": {
+      "foam_needed": 9000,
+      "water_needed": 150000,
+      "firetrucks": 8,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
@@ -5013,6 +5488,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 35000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -5071,6 +5547,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
@@ -5112,7 +5589,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "requirements": { "water_needed": 200, "firetrucks": 1, "police_cars": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
@@ -5166,6 +5643,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -5476,6 +5954,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4800,
+      "water_needed": 80000,
       "firetrucks": 20,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -5520,6 +6000,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 9000,
+      "water_needed": 150000,
       "firetrucks": 15,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -6081,6 +6563,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 1,
       "police_cars": 1
@@ -6110,6 +6593,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4800,
+      "water_needed": 80000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
@@ -6141,6 +6626,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4800,
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -6607,6 +7094,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 70000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6644,6 +7132,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 23000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -6666,6 +7155,47 @@
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "211/a",
+    "name": "Požár bytu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 23000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 2,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 23000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 211,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -9886,6 +10416,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -10312,6 +10843,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -10752,6 +11284,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 160000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -10780,6 +11313,53 @@
     "overlay_index": null,
     "base_mission_id": 315,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "315/a",
+    "name": "Požár panelového domu",
+    "place": "Panelový dům",
+    "place_array": ["Panelový dům"],
+    "average_credits": 6700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 160000,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4,
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "mobile_air_vehicles": 85,
+      "patient_transport": 60,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 30000,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 315,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -10975,6 +11555,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -11059,6 +11640,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -11105,6 +11687,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 3000,
+      "water_needed": 50000,
       "firetrucks": 13,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -11147,7 +11731,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 6, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 40000,
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -11482,6 +12070,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 2400,
+      "water_needed": 40000,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
@@ -11519,6 +12109,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1800,
+      "water_needed": 30000,
       "firetrucks": 15,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -11752,6 +12344,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 70000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
@@ -11790,6 +12383,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 150000,
       "firetrucks": 25,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -11846,6 +12440,44 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "348/a",
+    "name": "Rozsáhlý požár lesa",
+    "place": "Les",
+    "place_array": ["Les"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 50,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "police_helicopters": 2,
+      "police_cars": 4,
+      "min_pump_speed": 150000
+    },
+    "chances": { "mobile_air_vehicles": 85 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 200000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 348,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "349",
     "name": "Vážná zranění od skla",
     "place": "",
@@ -11886,6 +12518,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 80000,
       "firetrucks": 15,
       "battalion_chief_vehicles": 2,
       "police_cars": 2
@@ -11918,6 +12551,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 30,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -11947,7 +12581,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 1 },
+    "requirements": {
+      "water_needed": 250000,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
@@ -12388,6 +13026,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 9000,
+      "water_needed": 150000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -12491,6 +13131,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -12517,6 +13158,51 @@
     "overlay_index": null,
     "base_mission_id": 369,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "369/a",
+    "name": "Požár výškové budovy",
+    "place": "Výšková budova",
+    "place_array": ["Výšková budova"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 100000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 3,
+      "min_pump_speed": 30000
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "pump_water_amount": 50000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "water_damage_pump_count": 3,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 369,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -13751,6 +14437,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
@@ -14137,7 +14824,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 4000, "firetrucks": 1 },
     "chances": { "patient_transport": 66 },
     "additional": {
       "possible_patient": 1,
@@ -14463,6 +15150,50 @@
     "mission_categories": ["fire", "divers_specialization"]
   },
   {
+    "id": "423/a",
+    "name": "Potápění hausbotu",
+    "place": "Rybník\nMalý přístav\nŘeka\nPřístaviště výletních lodí",
+    "place_array": [
+      "Rybník",
+      "Malý přístav",
+      "Řeka",
+      "Přístaviště výletních lodí"
+    ],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "diver_units": 1,
+      "boats": 2,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 30000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "divers_extension_count": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 423,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "divers_specialization"]
+  },
+  {
     "id": "424",
     "name": "Řídič pod vlivem alkoholu",
     "place": "",
@@ -14500,6 +15231,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 3500,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "police_cars": 1
@@ -14823,6 +15555,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 30,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -14883,7 +15616,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "foam_needed": 900,
+      "water_needed": 15000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -15056,6 +15794,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 8000,
       "firetrucks": 10,
       "ambulances": 2,
       "platform_trucks": 3,
@@ -15098,6 +15837,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 8000,
       "firetrucks": 10,
       "fwk": 1,
       "ambulances": 2,
@@ -15143,6 +15883,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 30000,
       "firetrucks": 12,
       "ambulances": 3,
       "platform_trucks": 4,
@@ -15186,6 +15927,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 30000,
       "firetrucks": 12,
       "fwk": 1,
       "ambulances": 3,
@@ -15232,6 +15974,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 15,
       "ambulances": 4,
       "platform_trucks": 5,
@@ -15277,6 +16020,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 15,
       "fwk": 1,
       "ambulances": 4,
@@ -15325,6 +16069,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 20,
       "ambulances": 6,
       "platform_trucks": 7,
@@ -15369,6 +16114,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 100000,
       "firetrucks": 20,
       "fwk": 1,
       "ambulances": 6,
@@ -15768,6 +16514,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 200000,
       "firetrucks": 35,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
@@ -15856,6 +16603,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 40000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -15896,6 +16644,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -16247,7 +16996,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 20000, "firetrucks": 4 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -16294,6 +17043,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 1800,
+      "water_needed": 30000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -16325,7 +17076,11 @@
       "/images/gas_gelb.png",
       "/images/gas_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "water_needed": 15000,
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -16429,6 +17184,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 10000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1
@@ -16504,7 +17260,13 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "arff": 2, "rettungstreppe": 2 },
+    "requirements": {
+      "foam_needed": 480,
+      "water_needed": 8000,
+      "firetrucks": 1,
+      "arff": 2,
+      "rettungstreppe": 2
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -16585,6 +17347,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 3000,
+      "water_needed": 50000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 3,
       "heavy_rescue_vehicles": 1,
@@ -16761,6 +17525,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 70000,
       "firetrucks": 15,
       "battalion_chief_vehicles": 4,
       "platform_trucks": 3,
@@ -16802,6 +17567,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "foam_needed": 4800,
+      "water_needed": 80000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -17010,6 +17777,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 80000,
       "firetrucks": 8,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -17153,7 +17921,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4 },
+    "requirements": { "water_needed": 30000, "firetrucks": 4 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -17212,6 +17980,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 15,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
@@ -17373,7 +18142,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": {
+      "foam_needed": 1200,
+      "water_needed": 20000,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -17693,6 +18467,7 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
+      "water_needed": 20000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "heavy_rescue_vehicles": 2,
@@ -17907,6 +18682,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 25000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -17955,6 +18731,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "water_needed": 50000,
       "firetrucks": 10,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 2,
@@ -18003,6 +18780,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
+      "water_needed": 90000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
