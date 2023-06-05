@@ -40171,5 +40171,61 @@
     "base_mission_id": 866,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "867",
+    "name": "Fire at a Bus depot",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "ambulances": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "foam": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-A-1",
+        "7-A-3",
+        "7-C-1",
+        "7-C-2",
+        "7-C-4",
+        "7-D-2",
+        "7-D-3",
+        "7-D-4",
+        "7-D-5"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 867,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
