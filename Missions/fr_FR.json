@@ -3222,17 +3222,42 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 109,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "109/a",
+    "name": "Assèchement de locaux",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
     "requirements": { "firetrucks": 1, "thw_gkw": 1, "min_pump_speed": 1000 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "pump_water_amount": 10000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 109,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "110",
@@ -4854,6 +4879,70 @@
     "name": "Rupture de canalisation",
     "place": "",
     "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "pump": 1
+    },
+    "chances": { "heavy_rescue_vehicles": 20 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 156,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "156/b",
+    "name": "Rupture de canalisation",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "heavy_rescue_vehicles": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 45000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 156,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "156/ab",
+    "name": "Rupture de canalisation",
+    "place": "",
+    "place_array": [],
     "average_credits": 2500,
     "generated_by": "",
     "icons": [
@@ -4877,11 +4966,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 3
     },
     "overlay_index": null,
     "base_mission_id": 156,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
@@ -13699,6 +13789,59 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 403,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "403/b",
+    "name": "Épuisement à domicile",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 15000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 403,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "403/ab",
+    "name": "Épuisement à domicile",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
     "requirements": {
       "firetrucks": 1,
       "thw_gkw": 1,
@@ -13718,7 +13861,7 @@
     },
     "overlay_index": null,
     "base_mission_id": 403,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
@@ -15893,6 +16036,30 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [471],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "470/a",
+    "name": "Inondation dans une petite maison suite à intempéries",
+    "place": "",
+    "place_array": [],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
     "requirements": { "firetrucks": 1, "thw_gkw": 1, "min_pump_speed": 1000 },
     "chances": {},
     "additional": {
@@ -15900,11 +16067,15 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 10000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 470,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "471",
@@ -15918,18 +16089,17 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "thw_gkw": 1, "min_pump_speed": 1000 },
+    "requirements": { "firetrucks": 1, "thw_gkw": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [472],
-      "filter_id": "firehouse_missions",
-      "pump_water_amount": 50000
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 471,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "471/a",
@@ -15937,6 +16107,63 @@
     "place": "",
     "place_array": [],
     "average_credits": 2420,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [472],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "471/b",
+    "name": "Inondation dans une grande maison suite à intempéries",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2120,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [472],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 471,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "471/ab",
+    "name": "Inondation dans une grande maison suite à intempéries",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2920,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -15958,12 +16185,13 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 471,
-    "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "472",
@@ -15971,6 +16199,63 @@
     "place": "",
     "place_array": [],
     "average_credits": 2520,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 1,
+      "elw3": 2,
+      "thw_gkw": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "472/a",
+    "name": "Inondation dans un quartier suite à intempéries",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5020,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 1,
+      "elw3": 2,
+      "thw_gkw": 3,
+      "pump": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 472,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "472/b",
+    "name": "Inondation dans un quartier suite à intempéries",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3220,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -15989,18 +16274,22 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 70000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "prerequisites": {
+      "main_building": 0,
+      "flood_equipment": 1,
+      "fire_stations": 7
+    },
     "overlay_index": null,
     "base_mission_id": 472,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
-    "id": "472/a",
+    "id": "472/ab",
     "name": "Inondation dans un quartier suite à intempéries",
     "place": "",
     "place_array": [],
-    "average_credits": 5020,
+    "average_credits": 5720,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -16023,12 +16312,13 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 472,
-    "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "473",
@@ -17704,6 +17994,7 @@
     "additional": {
       "possible_patient": 12,
       "possible_patient_min": 6,
+      "expansion_missions_ids": [582],
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
@@ -19655,6 +19946,31 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "564/a",
+    "name": "Petit parking souterrain inondé",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
     "requirements": {
       "firetrucks": 1,
       "thw_gkw": 1,
@@ -19669,11 +19985,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 3
     },
     "overlay_index": null,
     "base_mission_id": 564,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
@@ -19682,6 +19999,31 @@
     "place": "",
     "place_array": [],
     "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 565,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "565/a",
+    "name": "Local commercial inondé",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1950,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -19702,11 +20044,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 565,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
@@ -19715,6 +20058,34 @@
     "place": "",
     "place_array": [],
     "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [470, 471],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 566,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "566/a",
+    "name": "Sous-sol inondé",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -19736,11 +20107,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 566,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
@@ -19798,18 +20170,12 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 1,
-      "thw_gkw": 1,
-      "pump": 1,
-      "min_pump_speed": 1000
-    },
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [470, 471, 472],
       "followup_missions_ids": [470, 471, 472],
-      "filter_id": "firehouse_missions",
-      "pump_water_amount": 6000
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -19826,11 +20192,80 @@
     ]
   },
   {
+    "id": "568/a",
+    "name": "Cave inondée",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "thw_gkw": 1,
+      "pump": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [470, 471, 472],
+      "followup_missions_ids": [470, 471, 472],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 6000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 568,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "water_damage_and_flood",
+      "fire_support_specialization"
+    ]
+  },
+  {
     "id": "569",
     "name": "Conduite d'eau éclatée dans un appartement",
     "place": "",
     "place_array": [],
     "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 1, "pump": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 569,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "water_damage_and_flood",
+      "fire_support_specialization"
+    ]
+  },
+  {
+    "id": "569/a",
+    "name": "Conduite d'eau éclatée dans un appartement",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
     "generated_by": "",
     "icons": [
       "/images/flood_gruen.png",
@@ -19851,11 +20286,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 11
     },
     "overlay_index": null,
     "base_mission_id": 569,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "water_damage_and_flood",
@@ -19957,6 +20393,36 @@
       "/images/flood_gelb.png",
       "/images/flood_rot.png"
     ],
+    "requirements": { "police_cars": 1, "thw_gkw": 2, "pump": 2 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 572,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "water_damage_and_flood",
+      "fire_support_specialization"
+    ]
+  },
+  {
+    "id": "572/a",
+    "name": "Tunnel sous-marin inondé (petit)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 5070,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
     "requirements": {
       "police_cars": 1,
       "thw_gkw": 2,
@@ -19972,11 +20438,12 @@
       "main_building": 0,
       "police_stations": 1,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 572,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "water_damage_and_flood",
@@ -20001,6 +20468,43 @@
       "elw3": 1,
       "police_cars": 2,
       "thw_gkw": 3,
+      "pump": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 573,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "water_damage_and_flood",
+      "fire_support_specialization"
+    ]
+  },
+  {
+    "id": "573/a",
+    "name": "Tunnel sous-marin inondé (moyen)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "brush_truck": 1,
+      "elw3": 1,
+      "police_cars": 2,
+      "thw_gkw": 3,
       "pump": 3,
       "min_pump_speed": 1000
     },
@@ -20013,11 +20517,12 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_support_count": 2,
+      "flood_equipment": 1,
       "fire_stations": 9
     },
     "overlay_index": null,
     "base_mission_id": 573,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "water_damage_and_flood",
@@ -20169,6 +20674,35 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
+    "requirements": { "firetrucks": 1, "thw_gkw": 2, "pump": 2 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 577,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "water_damage_and_flood",
+      "fire_support_specialization"
+    ]
+  },
+  {
+    "id": "577/a",
+    "name": "Plusieurs sous-sols sous l'eau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1710,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
     "requirements": {
       "firetrucks": 1,
       "thw_gkw": 2,
@@ -20183,11 +20717,12 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "flood_equipment": 1,
       "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 577,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "water_damage_and_flood",
@@ -20377,6 +20912,7 @@
       "water_tankers": 5,
       "mobile_air_vehicles": 4,
       "hazmat_vehicles": 8,
+      "police_helicopters": 1,
       "police_cars": 8,
       "thw_gkw": 2,
       "kdow_orgl": 1,
@@ -20393,7 +20929,6 @@
     "additional": {
       "possible_patient": 70,
       "possible_patient_min": 50,
-      "expansion_missions_ids": [514],
       "filter_id": "firehouse_missions",
       "patient_allow_first_responder_chance": 10,
       "patient_at_end_of_mission": true,
@@ -20406,6 +20941,7 @@
       "main_building": 0,
       "rescue_stations": 30,
       "police_stations": 25,
+      "police_helicopter_stations": 2,
       "fire_support_count": 10,
       "personnel_educations": { "gw_gefahrgut": 14 },
       "fire_stations": 60
