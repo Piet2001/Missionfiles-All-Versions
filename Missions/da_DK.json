@@ -17807,5 +17807,61 @@
     "base_mission_id": 518,
     "additive_overlays": "",
     "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "519",
+    "name": "Stor skovbrand",
+    "place": "Skov",
+    "place_array": ["Skov"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 35000,
+      "firetrucks": 2,
+      "water_tankers": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 519,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "519/a",
+    "name": "Stor skovbrand",
+    "place": "Skov",
+    "place_array": ["Skov"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 35000,
+      "firetrucks": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 519,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
   }
 ]
