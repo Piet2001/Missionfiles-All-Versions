@@ -2484,8 +2484,8 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 7
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 85,
@@ -5593,7 +5593,11 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 50000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 1
+    },
     "overlay_index": null,
     "base_mission_id": 167,
     "additive_overlays": "a",
@@ -9447,6 +9451,101 @@
     "name": "Allagamento (PICCOLO)",
     "place": "",
     "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "water_rescue": 1,
+      "boats": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 272,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "272/b",
+    "name": "Allagamento (PICCOLO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "pump": 1,
+      "min_pump_speed": 2500
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "pump_water_amount": 20000,
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 272,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "272/ab",
+    "name": "Allagamento (PICCOLO)",
+    "place": "",
+    "place_array": [],
     "average_credits": 2800,
     "generated_by": "",
     "icons": [
@@ -9485,11 +9584,12 @@
       "wasserrettung": 1,
       "rescue_stations": 2,
       "police_stations": 2,
+      "water_damage_pump_count": 1,
       "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 272,
-    "additive_overlays": "a",
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -10016,9 +10116,7 @@
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
-      "police_cars": 4,
-      "pump": 2,
-      "min_pump_speed": 5000
+      "police_cars": 4
     },
     "chances": { "patient_transport": 40 },
     "additional": {
@@ -10034,7 +10132,6 @@
         "Medicina interna generale",
         "Traumatologia"
       ],
-      "pump_water_amount": 60000,
       "max_municipal_police_replacing_police_cars": 2
     },
     "prerequisites": {
@@ -10065,6 +10162,202 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "police_cars": 4,
+      "amphibious_rescue": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 4,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "amphibious_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 290,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "290/b",
+    "name": "Allagamento (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 4,
+      "water_rescue": 2,
+      "diver_units": 1,
+      "boats": 2
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 4,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 290,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "290/c",
+    "name": "Allagamento (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 4,
+      "pump": 2,
+      "min_pump_speed": 5000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 4,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "pump_water_amount": 60000,
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "water_damage_pump_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 290,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "290/ab",
+    "name": "Allagamento (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 4,
+      "water_rescue": 2,
+      "diver_units": 1,
+      "boats": 2,
+      "amphibious_rescue": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 4,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "amphibious_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 290,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "290/ac",
+    "name": "Allagamento (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 4,
       "pump": 2,
       "min_pump_speed": 5000,
       "amphibious_rescue": 1
@@ -10090,20 +10383,21 @@
       "main_building": 0,
       "rescue_stations": 8,
       "police_stations": 4,
-      "personnel_educations": { "amphibious_rescue": 4 },
+      "water_damage_pump_count": 1,
+      "amphibious_rescue": 1,
       "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 290,
-    "additive_overlays": "a",
+    "additive_overlays": "ac",
     "mission_categories": ["fire"]
   },
   {
-    "id": "290/b",
+    "id": "290/bc",
     "name": "Allagamento (MEDIO)",
     "place": "",
     "place_array": [],
-    "average_credits": 4500,
+    "average_credits": 5500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10143,19 +10437,20 @@
       "wasserrettung": 2,
       "rescue_stations": 8,
       "police_stations": 4,
+      "water_damage_pump_count": 1,
       "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 290,
-    "additive_overlays": "b",
+    "additive_overlays": "bc",
     "mission_categories": ["fire"]
   },
   {
-    "id": "290/ab",
+    "id": "290/abc",
     "name": "Allagamento (MEDIO)",
     "place": "",
     "place_array": [],
-    "average_credits": 5000,
+    "average_credits": 6000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10196,12 +10491,13 @@
       "wasserrettung": 2,
       "rescue_stations": 8,
       "police_stations": 4,
-      "personnel_educations": { "amphibious_rescue": 4 },
+      "water_damage_pump_count": 1,
+      "amphibious_rescue": 1,
       "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 290,
-    "additive_overlays": "ab",
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -10390,9 +10686,7 @@
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 8,
       "police_helicopters": 1,
-      "police_cars": 8,
-      "pump": 4,
-      "min_pump_speed": 10000
+      "police_cars": 8
     },
     "chances": { "patient_transport": 25 },
     "additional": {
@@ -10409,7 +10703,6 @@
         "Medicina interna generale",
         "Traumatologia"
       ],
-      "pump_water_amount": 200000,
       "max_municipal_police_replacing_police_cars": 4
     },
     "prerequisites": {
@@ -10442,6 +10735,214 @@
       "heavy_rescue_vehicles": 8,
       "police_helicopters": 1,
       "police_cars": 8,
+      "amphibious_rescue": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "average_min_fire_personnel": 40,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "amphibious_rescue": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 296,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "296/b",
+    "name": "Allagamento (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 8,
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "water_rescue": 4,
+      "diver_units": 2,
+      "boats": 4
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "average_min_fire_personnel": 40,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 4,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 296,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "296/c",
+    "name": "Allagamento (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 8,
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "pump": 4,
+      "min_pump_speed": 10000
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "average_min_fire_personnel": 40,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "pump_water_amount": 200000,
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 296,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "296/ab",
+    "name": "Allagamento (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 8,
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "water_rescue": 4,
+      "diver_units": 2,
+      "boats": 4,
+      "amphibious_rescue": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "average_min_fire_personnel": 40,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 4,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "amphibious_rescue": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 296,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "296/ac",
+    "name": "Allagamento (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 8,
+      "police_helicopters": 1,
+      "police_cars": 8,
       "pump": 4,
       "min_pump_speed": 10000,
       "amphibious_rescue": 1
@@ -10469,20 +10970,21 @@
       "rescue_stations": 8,
       "police_stations": 4,
       "police_helicopter_stations": 1,
-      "personnel_educations": { "amphibious_rescue": 4 },
+      "water_damage_pump_count": 2,
+      "amphibious_rescue": 1,
       "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 296,
-    "additive_overlays": "a",
+    "additive_overlays": "ac",
     "mission_categories": ["fire"]
   },
   {
-    "id": "296/b",
+    "id": "296/bc",
     "name": "Allagamento (GRANDE)",
     "place": "",
     "place_array": [],
-    "average_credits": 10500,
+    "average_credits": 13500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10525,19 +11027,20 @@
       "rescue_stations": 8,
       "police_stations": 4,
       "police_helicopter_stations": 1,
+      "water_damage_pump_count": 2,
       "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 296,
-    "additive_overlays": "b",
+    "additive_overlays": "bc",
     "mission_categories": ["fire"]
   },
   {
-    "id": "296/ab",
+    "id": "296/abc",
     "name": "Allagamento (GRANDE)",
     "place": "",
     "place_array": [],
-    "average_credits": 11000,
+    "average_credits": 14000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10581,12 +11084,13 @@
       "rescue_stations": 8,
       "police_stations": 4,
       "police_helicopter_stations": 1,
-      "personnel_educations": { "amphibious_rescue": 4 },
+      "water_damage_pump_count": 2,
+      "amphibious_rescue": 1,
       "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 296,
-    "additive_overlays": "ab",
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -11614,7 +12118,8 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
-      "fire_stations": 7
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 322,
@@ -21711,7 +22216,11 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 40000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 615,
     "additive_overlays": "",
@@ -21740,7 +22249,11 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 10000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 616,
     "additive_overlays": "",
@@ -21769,7 +22282,11 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 25000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 617,
     "additive_overlays": "",
@@ -21798,7 +22315,11 @@
       "filter_id": "firehouse_missions",
       "pump_water_amount": 400000
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 618,
     "additive_overlays": "",
