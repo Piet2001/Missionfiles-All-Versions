@@ -1181,6 +1181,46 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "26/a",
+    "name": "Brand im Supermarkt",
+    "place": "Supermarkt (Klein)",
+    "place_array": ["Supermarkt (Klein)"],
+    "average_credits": 3910,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "platform_trucks": 70,
+      "heavy_rescue_vehicles": 30
+    },
+    "additional": {
+      "average_min_fire_personnel": 25,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "ventilation": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 26,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "27",
     "name": "Auffahrunfall",
     "place": "",
@@ -1464,6 +1504,42 @@
     "overlay_index": null,
     "base_mission_id": 35,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "35/a",
+    "name": "Feuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 4210,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "ventilation": 1
+    },
+    "chances": { "mobile_command_vehicles": 30, "heavy_rescue_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [320],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "ventilation": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 35,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -3543,6 +3619,38 @@
     "overlay_index": null,
     "base_mission_id": 96,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "96/a",
+    "name": "Feuer in Schnellrestaurant",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 3, "ventilation": 1 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "ventilation": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 96,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7208,6 +7316,124 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "186/b",
+    "name": "Lagerhallenbrand",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 6030,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 15, "nef": 20, "patient_transport": 65 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [462],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 9,
+      "thw": 3,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 2,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 186,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "186/ab",
+    "name": "Lagerhallenbrand",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 6430,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "fwk": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 15, "nef": 20, "patient_transport": 65 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [462],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 9,
+      "thw": 3,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "ventilation": 2,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 186,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "187",
     "name": "Feuer im Lagerraum",
     "place": "Lagerhalle",
@@ -7240,6 +7466,43 @@
     "overlay_index": null,
     "base_mission_id": 187,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "187/a",
+    "name": "Feuer im Lagerraum",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 2630,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "gwmess": 1,
+      "ventilation": 1
+    },
+    "chances": { "platform_trucks": 50, "gwmess": 20 },
+    "additional": {
+      "expansion_missions_ids": [186],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 9,
+      "ventilation": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 187,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7850,6 +8113,52 @@
     "overlay_index": null,
     "base_mission_id": 204,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "204/a",
+    "name": "Scheunenbrand",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 14000,
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "platform_trucks": 50,
+      "water_tankers": 60,
+      "mobile_air_vehicles": 25,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [205],
+      "average_min_fire_personnel": 40,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "ventilation": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 204,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -10366,6 +10675,55 @@
     "overlay_index": null,
     "base_mission_id": 240,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "240/a",
+    "name": "Gasgeruch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 1,
+      "hazmat_dekon": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "gwmess": 30,
+      "hazmat_vehicles": 30,
+      "hazmat_dekon": 30,
+      "nef": 40,
+      "patient_transport": 80
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [213, 740],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "ventilation": 3,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 240,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -15024,6 +15382,124 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "320/b",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 3,
+      "gwmess": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "320/ab",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 3,
+      "gwmess": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "321",
     "name": "Saunabrand",
     "place": "",
@@ -15270,6 +15746,124 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "324/b",
+    "name": "Brand in Baumarkt",
+    "place": "Baumarkt",
+    "place_array": ["Baumarkt"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "fwk": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "gwmess": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 5,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 2,
+      "thw_mzkw": 2,
+      "thw_lkw": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "ventilation": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 324,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "324/ab",
+    "name": "Brand in Baumarkt",
+    "place": "Baumarkt",
+    "place_array": ["Baumarkt"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "fwk": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "gwmess": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 5,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 2,
+      "thw_mzkw": 2,
+      "thw_lkw": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 324,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "325",
     "name": "Absicherung Castor-Transport",
     "place": "",
@@ -15429,6 +16023,50 @@
     "overlay_index": null,
     "base_mission_id": 327,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "327/a",
+    "name": "Tiefgaragenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 2,
+      "gwoil": 1,
+      "gwmess": 1,
+      "police_cars": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 25, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "ventilation": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 327,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -16597,6 +17235,118 @@
     "mission_categories": ["fire", "airport"]
   },
   {
+    "id": "350/b",
+    "name": "Flughafenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17400,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 40,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 8,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 2,
+      "arff": 6,
+      "gwmess": 3,
+      "police_helicopters": 2,
+      "police_cars": 10,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 2,
+      "thw_mzkw": 2,
+      "thw_lkw": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "ventilation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 350,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "airport"]
+  },
+  {
+    "id": "350/ab",
+    "name": "Flughafenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18200,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 40,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 8,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 2,
+      "arff": 6,
+      "gwmess": 3,
+      "police_helicopters": 2,
+      "police_cars": 10,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 2,
+      "thw_mzkw": 2,
+      "thw_lkw": 2,
+      "police_service_group_leader": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 10,
+      "ventilation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 350,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "airport"]
+  },
+  {
     "id": "351",
     "name": "Brand im Terminal",
     "place": "Flughafen (groß): Terminal",
@@ -16676,6 +17426,92 @@
     "overlay_index": null,
     "base_mission_id": 351,
     "additive_overlays": "a",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "351/b",
+    "name": "Brand im Terminal",
+    "place": "Flughafen (groß): Terminal",
+    "place_array": ["Flughafen (groß): Terminal"],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "ventilation": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": "b",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "351/ab",
+    "name": "Brand im Terminal",
+    "place": "Flughafen (groß): Terminal",
+    "place_array": ["Flughafen (groß): Terminal"],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": "ab",
     "mission_categories": ["airport"]
   },
   {
@@ -16764,6 +17600,98 @@
     "overlay_index": null,
     "base_mission_id": 352,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "352/b",
+    "name": "Brand in Mehrfamilienhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "ventilation": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 352,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "352/ab",
+    "name": "Brand in Mehrfamilienhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 30, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 352,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -17544,6 +18472,120 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "368/b",
+    "name": "Brennende Kirche",
+    "place": "Kirche",
+    "place_array": ["Kirche"],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 40, "patient_transport": 60, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 368,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "368/ab",
+    "name": "Brennende Kirche",
+    "place": "Kirche",
+    "place_array": ["Kirche"],
+    "average_credits": 8300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 40, "patient_transport": 60, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 368,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "369",
     "name": "Austritt Kohlenmonoxid",
     "place": "",
@@ -18154,6 +19196,51 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "386/a",
+    "name": "Ammoniakaustritt",
+    "place": "Chemiepark",
+    "place_array": ["Chemiepark"],
+    "average_credits": 5900,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "ulf": 1,
+      "turboloescher": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 2,
+      "ventilation": 3,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 386,
+    "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "387",
     "name": "Brennende Pipeline-Isolierung",
     "place": "Chemiepark",
@@ -18232,6 +19319,46 @@
     "overlay_index": null,
     "base_mission_id": 388,
     "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "388/a",
+    "name": "Feuer in Verwaltungsgebäude",
+    "place": "Chemiepark",
+    "place_array": ["Chemiepark"],
+    "average_credits": 2900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 20, "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "factory_fire_brigade_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 2,
+      "ventilation": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 388,
+    "additive_overlays": "a",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
@@ -18613,6 +19740,43 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "395/a",
+    "name": "Maschinenbrand in Produktionshalle",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 3400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": { "mobile_air_vehicles": 10 },
+    "additional": {
+      "expansion_missions_ids": [515],
+      "filter_id": "factory_fire_brigade_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "ventilation": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "396",
     "name": "Maschinenbrand in Produktionshalle",
     "place": "Automobilindustrie",
@@ -18644,6 +19808,42 @@
     "overlay_index": null,
     "base_mission_id": 396,
     "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "396/a",
+    "name": "Maschinenbrand in Produktionshalle",
+    "place": "Automobilindustrie",
+    "place_array": ["Automobilindustrie"],
+    "average_credits": 3400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": { "mobile_air_vehicles": 10 },
+    "additional": {
+      "filter_id": "factory_fire_brigade_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "ventilation": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 396,
+    "additive_overlays": "a",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
@@ -18779,6 +19979,45 @@
     "overlay_index": null,
     "base_mission_id": 400,
     "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "400/a",
+    "name": "Brand in Lackiererei",
+    "place": "Automobilindustrie",
+    "place_array": ["Automobilindustrie"],
+    "average_credits": 5450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "ulf": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "ventilation": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "factory_fire_brigade_missions",
+      "fire_alarm_system_possible": true
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "ventilation": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 400,
+    "additive_overlays": "a",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
@@ -19480,6 +20719,102 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "419/b",
+    "name": "Austritt Flüssiggas",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 4900,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 60, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "ventilation": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": "b",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "419/ab",
+    "name": "Austritt Flüssiggas",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 60, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "ventilation": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 419,
+    "additive_overlays": "ab",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "420",
     "name": "Schlechter Allgemeinzustand",
     "place": "",
@@ -19794,6 +21129,134 @@
     "overlay_index": null,
     "base_mission_id": 424,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "424/b",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 5,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "hazmat_dekon": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "424/ab",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 5,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -20127,6 +21590,104 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "430/b",
+    "name": "Ammoniakaustritt in Eishalle",
+    "place": "Eishalle",
+    "place_array": ["Eishalle"],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 8,
+      "hazmat_dekon": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 35, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "ventilation": 3,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "430/ab",
+    "name": "Ammoniakaustritt in Eishalle",
+    "place": "Eishalle",
+    "place_array": ["Eishalle"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 8,
+      "hazmat_dekon": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 35, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "431",
     "name": "Kreislaufkollaps",
     "place": "",
@@ -20339,6 +21900,108 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "433/b",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 6400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 5,
+      "ventilation": 1
+    },
+    "chances": {
+      "gwmess": 30,
+      "hazmat_vehicles": 10,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "ventilation": 3,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "433/ab",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 5,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "gwmess": 30,
+      "hazmat_vehicles": 10,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "434",
     "name": "Brand in Eloxalanlage",
     "place": "Industrie-Allgemein",
@@ -20430,6 +22093,104 @@
     "overlay_index": null,
     "base_mission_id": 434,
     "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "434/b",
+    "name": "Brand in Eloxalanlage",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 6200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "hazmat_dekon": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 434,
+    "additive_overlays": "b",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "434/ab",
+    "name": "Brand in Eloxalanlage",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 434,
+    "additive_overlays": "ab",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
@@ -20528,6 +22289,108 @@
     "overlay_index": null,
     "base_mission_id": 435,
     "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "435/b",
+    "name": "Brand in Eloxalanlage",
+    "place": "Automobilindustrie",
+    "place_array": ["Automobilindustrie"],
+    "average_credits": 6400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "ulf": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "hazmat_dekon": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": "b",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "435/ab",
+    "name": "Brand in Eloxalanlage",
+    "place": "Automobilindustrie",
+    "place_array": ["Automobilindustrie"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "ulf": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "hazmat_dekon": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "fwk": 10, "nef": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": "ab",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
@@ -22080,6 +23943,134 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "462/b",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 10900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 18,
+      "fwk": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 6,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "nef": 30,
+      "patient_transport": 20,
+      "height_rescue_units": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "462/ab",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 11300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 18,
+      "fwk": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 6,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "nef": 30,
+      "patient_transport": 20,
+      "height_rescue_units": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "463",
     "name": "Gesprengter Geldautomat",
     "place": "Bank",
@@ -22452,6 +24443,140 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "465/b",
+    "name": "Großbrand im Gefahrstofflager",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 10512,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "ulf": 1,
+      "turboloescher": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 3,
+      "gwoil": 1,
+      "gwmess": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 2,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "hazmat_dekon": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 40, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 2,
+      "ventilation": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "b",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "465/ab",
+    "name": "Großbrand im Gefahrstofflager",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 11312,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "ulf": 1,
+      "turboloescher": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 3,
+      "gwoil": 1,
+      "gwmess": 4,
+      "hazmat_vehicles": 2,
+      "police_cars": 10,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 2,
+      "thw_lkw": 1,
+      "thw_dle": 1,
+      "hazmat_dekon": 2,
+      "police_service_group_leader": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 40, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 10,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 10,
+      "ventilation": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "ab",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "466",
     "name": "Badeunfall",
     "place": "Schwimmbad",
@@ -22709,6 +24834,96 @@
     "overlay_index": null,
     "base_mission_id": 470,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "470/b",
+    "name": "Feuer in Museum",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 4210,
+    "generated_by": "",
+    "icons": [
+      "/images/museum_art_gruen.png",
+      "/images/museum_art_gelb.png",
+      "/images/museum_art_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 3,
+      "ventilation": 1
+    },
+    "chances": { "nef": 75, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [685],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "ventilation": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "470/ab",
+    "name": "Feuer in Museum",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 4610,
+    "generated_by": "",
+    "icons": [
+      "/images/museum_art_gruen.png",
+      "/images/museum_art_gelb.png",
+      "/images/museum_art_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 3,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 75, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [685],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 470,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -23849,6 +26064,47 @@
     "overlay_index": null,
     "base_mission_id": 487,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "487/a",
+    "name": "Kleinbrand in Kirche",
+    "place": "Kirche",
+    "place_array": ["Kirche"],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "police_cars": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [368],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "ventilation": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 487,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -25767,6 +28023,122 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "515/b",
+    "name": "Brand einer Produktionshalle",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "ulf": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1
+    },
+    "chances": { "gwmess": 30, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 515,
+    "additive_overlays": "b",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "515/ab",
+    "name": "Brand einer Produktionshalle",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "ulf": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "gwmess": 30, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "factory_fire_brigade_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "rescue_stations": 6,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 515,
+    "additive_overlays": "ab",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "516",
     "name": "Flugzeug Erstlandung",
     "place": "Flughafen (groß): Start-/Landebahn",
@@ -25977,6 +28349,112 @@
     "overlay_index": null,
     "base_mission_id": 520,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "520/b",
+    "name": "Hotelbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "ventilation": 1
+    },
+    "chances": { "gwmess": 40, "nef": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 3,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_gkw_count": 2,
+      "ventilation": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 520,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "520/ab",
+    "name": "Hotelbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "gwmess": 40, "nef": 40, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "ventilation": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 520,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -29850,6 +32328,96 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "552/b",
+    "name": "Brand in Reifenlager",
+    "place": "Auto-Werkstatt",
+    "place_array": ["Auto-Werkstatt"],
+    "average_credits": 5900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "ventilation": 1
+    },
+    "chances": { "nef": 60, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 1,
+      "ventilation": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "552/ab",
+    "name": "Brand in Reifenlager",
+    "place": "Auto-Werkstatt",
+    "place_array": ["Auto-Werkstatt"],
+    "average_credits": 6300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 60, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "553",
     "name": "Verätzung",
     "place": "",
@@ -32537,6 +35105,114 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "594/b",
+    "name": "Brand in Schule",
+    "place": "Schule",
+    "place_array": ["Schule"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "nef": 20,
+      "patient_transport": 35
+    },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 1,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "594/ab",
+    "name": "Brand in Schule",
+    "place": "Schule",
+    "place_array": ["Schule"],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "nef": 20,
+      "patient_transport": 35
+    },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 1,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "595",
     "name": "Person von Blitz getroffen",
     "place": "",
@@ -34973,6 +37649,46 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "637/a",
+    "name": "Ausgefallenes Kühlsystem",
+    "place": "Industrie-Allgemein",
+    "place_array": ["Industrie-Allgemein"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "ulf": 1,
+      "turboloescher": 1,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "turboloescher": 40,
+      "mobile_command_vehicles": 30,
+      "water_tankers": 60
+    },
+    "additional": { "filter_id": "factory_fire_brigade_missions" },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "ventilation": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 637,
+    "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "638",
     "name": "LKW droht umzustürzen",
     "place": "",
@@ -35951,6 +38667,110 @@
     "overlay_index": null,
     "base_mission_id": 654,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "654/b",
+    "name": "Großbrand Möbelhaus",
+    "place": "Möbelhaus",
+    "place_array": ["Möbelhaus"],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "ventilation": 1
+    },
+    "chances": {
+      "water_tankers": 65,
+      "gwmess": 30,
+      "nef": 25,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "ventilation": 3,
+      "fire_stations": 17
+    },
+    "overlay_index": null,
+    "base_mission_id": 654,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "654/ab",
+    "name": "Großbrand Möbelhaus",
+    "place": "Möbelhaus",
+    "place_array": ["Möbelhaus"],
+    "average_credits": 9800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 15,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "water_tankers": 65,
+      "gwmess": 30,
+      "nef": 25,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 17
+    },
+    "overlay_index": null,
+    "base_mission_id": 654,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -37453,6 +40273,52 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "684/a",
+    "name": "Brand in metallverarbeitendem Betrieb",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "ventilation": 1
+    },
+    "chances": {
+      "heavy_rescue_vehicles": 50,
+      "nef": 20,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 3,
+      "average_min_fire_personnel": 24,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "ventilation": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 684,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "685",
     "name": "Großbrand in Museum",
     "place": "Museum",
@@ -37504,6 +40370,62 @@
     "overlay_index": null,
     "base_mission_id": 685,
     "additive_overlays": "",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "685/a",
+    "name": "Großbrand in Museum",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 6,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 1,
+      "thw_mzkw": 1,
+      "thw_lkw": 1,
+      "ventilation": 1
+    },
+    "chances": { "nef": 50, "patient_transport": 75, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 685,
+    "additive_overlays": "a",
     "mission_categories": ["thw"]
   },
   {
@@ -37825,6 +40747,72 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "690/a",
+    "name": "Metallbrand in Industriebetrieb",
+    "place": "Industrie-Allgemein\nAutomobilindustrie",
+    "place_array": ["Industrie-Allgemein", "Automobilindustrie"],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "ulf": 2,
+      "teleskopmast": 1,
+      "gw_werkfeuerwehr": 1,
+      "fwk": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_brmg_r": 2,
+      "thw_mzkw": 1,
+      "thw_lkw": 2,
+      "ventilation": 1
+    },
+    "chances": {
+      "fwk": 50,
+      "mobile_command_vehicles": 30,
+      "nef": 100,
+      "patient_transport": 100,
+      "helicopter": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "werkfeuerwehr": 2,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "ventilation": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 690,
+    "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "691",
     "name": "Lungenödem",
     "place": "",
@@ -37902,6 +40890,60 @@
     "overlay_index": null,
     "base_mission_id": 692,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "692/a",
+    "name": "Rauchentwicklung in Einkaufszentrum",
+    "place": "Einkaufszentrum",
+    "place_array": ["Einkaufszentrum"],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "ventilation": 1
+    },
+    "chances": {
+      "water_tankers": 50,
+      "mobile_air_vehicles": 40,
+      "gwmess": 10,
+      "hazmat_vehicles": 10,
+      "nef": 25,
+      "patient_transport": 25
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [773],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "ventilation": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 692,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -38689,6 +41731,120 @@
     "overlay_index": null,
     "base_mission_id": 702,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "702/b",
+    "name": "Brand in Großwäscherei",
+    "place": "Textilverarbeitung",
+    "place_array": ["Textilverarbeitung"],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "mobile_air_vehicles": 30,
+      "gwmess": 30,
+      "hazmat_vehicles": 40,
+      "nef": 30,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [462],
+      "followup_missions_ids": [528, 240],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "ventilation": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "702/ab",
+    "name": "Brand in Großwäscherei",
+    "place": "Textilverarbeitung",
+    "place_array": ["Textilverarbeitung"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "mobile_air_vehicles": 30,
+      "gwmess": 30,
+      "hazmat_vehicles": 40,
+      "nef": 30,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [462],
+      "followup_missions_ids": [528, 240],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -42283,6 +45439,61 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "797/a",
+    "name": "Brand in Gebäudekomplex",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 12,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_cars": 6,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 15,
+      "water_tankers": 50,
+      "gwmess": 30,
+      "nef": 55,
+      "patient_transport": 85
+    },
+    "additional": {
+      "possible_patient": 13,
+      "possible_patient_min": 4,
+      "expansion_missions_ids": [798],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "police_service_group_leader": 5,
+      "ventilation": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 797,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "798",
     "name": "Großbrand in Gebäudekomplex",
     "place": "",
@@ -42333,6 +45544,61 @@
     "overlay_index": null,
     "base_mission_id": 798,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "798/a",
+    "name": "Großbrand in Gebäudekomplex",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 16,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "gwmess": 1,
+      "police_cars": 8,
+      "police_service_group_leader": 1,
+      "ventilation": 1
+    },
+    "chances": {
+      "heavy_rescue_vehicles": 35,
+      "water_tankers": 50,
+      "gwmess": 50,
+      "nef": 55,
+      "patient_transport": 85
+    },
+    "additional": {
+      "possible_patient": 17,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 798,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
