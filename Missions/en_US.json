@@ -40252,5 +40252,93 @@
     "base_mission_id": 868,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "871",
+    "name": "BBQ on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-06-16T09:00:00Z",
+      "date_end": "2023-06-18T23:59:59-04:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 871,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "872",
+    "name": "Bedroom fire from candle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-C-1"],
+      "optional_event_mission": true,
+      "date_start": "2023-06-16T09:00:00Z",
+      "date_end": "2023-06-18T23:59:59-04:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 872,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "873",
+    "name": "Father went missing",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-06-16T09:00:00Z",
+      "date_end": "2023-06-18T23:59:59-04:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 873,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
