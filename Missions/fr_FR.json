@@ -20984,5 +20984,88 @@
     "base_mission_id": 584,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "585",
+    "name": "Montée des eaux du canal (Inondation)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "brush_truck": 6,
+      "mobile_command_vehicles": 1,
+      "elw3": 5,
+      "police_cars": 4,
+      "thw_gkw": 6,
+      "flood_equipment": 3,
+      "pump": 2,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_support_count": 6,
+      "flood_equipment": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 585,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "586",
+    "name": "Feu de camping-car",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "foam": 1
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 586,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
