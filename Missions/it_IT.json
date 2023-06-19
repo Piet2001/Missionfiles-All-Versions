@@ -22370,5 +22370,55 @@
     "base_mission_id": 619,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "620",
+    "name": "Manifestazione contro la costruzione di un progetto autostradale",
+    "place": "Uscita autostradale",
+    "place_array": ["Uscita autostradale"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "swat_suv": 2,
+      "swat_armored_vehicle": 4,
+      "police_cars": 12,
+      "wasserwerfer": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 10,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 14,
+      "water_cannon": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 620,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
