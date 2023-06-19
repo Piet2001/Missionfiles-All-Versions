@@ -38634,6 +38634,44 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "1035",
+    "name": "Verward persoon dreigt van boord te springen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4, 0],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Interne Geneeskunde"
+      ],
+      "patient_specializations": "Traumatologie, Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "coastal_rescue_small_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1035,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "1037",
     "name": "Barbecuebrand",
     "place": "",
