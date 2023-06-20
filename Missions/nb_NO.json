@@ -4125,7 +4125,40 @@
     "overlay_index": null,
     "base_mission_id": 136,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "136/a",
+    "name": "Ødelagt vannrør",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 400
+    },
+    "chances": { "battalion_chief_vehicles": 20, "heavy_rescue_vehicles": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 4000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "137",
@@ -5539,6 +5572,7 @@
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 10,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -5587,6 +5621,7 @@
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 10,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -5661,6 +5696,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 4,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -5704,6 +5740,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 4,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -5903,6 +5940,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 7,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -5950,6 +5988,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 7,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -6081,6 +6120,49 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "179/a",
+    "name": "Bil under vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 1560,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2,
+      "diver_units": 1,
+      "boats": 2,
+      "personnel_educations": { "gw_wasserrettung": 4 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Overflatereddere": 4 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 8 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 179,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "180",
     "name": "Lastebil under vann",
     "place": "Innsjø",
@@ -6120,6 +6202,48 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "180/a",
+    "name": "Lastebil under vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 1,
+      "boats": 3,
+      "personnel_educations": { "gw_wasserrettung": 8 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Overflatereddere": 8 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 3,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "personnel_educations": { "gw_wasserrettung": 16 },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 180,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "181",
     "name": "Minibuss under vann",
     "place": "Innsjø",
@@ -6156,6 +6280,48 @@
     "overlay_index": null,
     "base_mission_id": 181,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "181/a",
+    "name": "Minibuss under vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 3640,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 3,
+      "diver_units": 2,
+      "boats": 3,
+      "personnel_educations": { "gw_wasserrettung": 16 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Overflatereddere": 16 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 3,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "personnel_educations": { "gw_wasserrettung": 32 },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 181,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -6236,6 +6402,152 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "183/a",
+    "name": "Savnet person ved vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 3400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "diver_units": 1,
+      "boats": 2,
+      "personnel_educations": { "gw_taucher": 2 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 9,
+      "average_min_police_personnel": 12,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Redningsdykker kurs": 2 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 3,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "gw_taucher": 4 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 183,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "183/b",
+    "name": "Savnet person ved vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "boats": 2,
+      "personnel_educations": { "gw_wasserrettung": 5 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 9,
+      "average_min_police_personnel": 12,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Overflatereddere": 5 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "gw_wasserrettung": 10 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 183,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "183/ab",
+    "name": "Savnet person ved vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 6,
+      "diver_units": 1,
+      "boats": 2,
+      "personnel_educations": { "gw_taucher": 2, "gw_wasserrettung": 5 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 9,
+      "average_min_police_personnel": 12,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": {
+        "Redningsdykker kurs": 2,
+        "Overflatereddere": 5
+      }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 3,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "gw_taucher": 4, "gw_wasserrettung": 10 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 183,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "184",
     "name": "Person i vann",
     "place": "Innsjø",
@@ -6257,6 +6569,104 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "184/a",
+    "name": "Person i vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "diver_units": 1,
+      "boats": 1,
+      "personnel_educations": { "gw_taucher": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "personnel_educations": { "Redningsdykker kurs": 2 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "personnel_educations": { "gw_taucher": 4 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 184,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "184/b",
+    "name": "Person i vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "personnel_educations": { "gw_wasserrettung": 5 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "personnel_educations": { "Overflatereddere": 5 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "personnel_educations": { "gw_wasserrettung": 10 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 184,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "184/ab",
+    "name": "Person i vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "diver_units": 1,
+      "boats": 1,
+      "personnel_educations": { "gw_taucher": 2, "gw_wasserrettung": 5 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "personnel_educations": {
+        "Redningsdykker kurs": 2,
+        "Overflatereddere": 5
+      }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "personnel_educations": { "gw_taucher": 4, "gw_wasserrettung": 10 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 184,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "185",
     "name": "Person i vann",
     "place": "Innsjø",
@@ -6268,7 +6678,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "boats": 1 },
+    "requirements": { "diver_units": 1, "boats": 1 },
     "chances": { "patient_transport": 90 },
     "additional": {
       "possible_patient": 1,
@@ -6287,6 +6697,45 @@
     "overlay_index": null,
     "base_mission_id": 185,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "185/a",
+    "name": "Person i vann",
+    "place": "Innsjø",
+    "place_array": ["Innsjø"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "diver_units": 1,
+      "boats": 1,
+      "personnel_educations": { "gw_wasserrettung": 5 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin",
+      "personnel_educations": { "Overflatereddere": 5 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "personnel_educations": { "gw_wasserrettung": 10 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 185,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -6405,6 +6854,7 @@
     },
     "chances": { "water_tankers": 20 },
     "additional": {
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
@@ -6444,6 +6894,7 @@
     },
     "chances": { "water_tankers": 20 },
     "additional": {
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
@@ -12090,6 +12541,7 @@
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 5,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -12451,6 +12903,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -12496,6 +12949,7 @@
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -12539,6 +12993,7 @@
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 20,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -12582,6 +13037,7 @@
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 20,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -14084,6 +14540,7 @@
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 2,
+      "followup_missions_ids": [534, 535, 536],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [0],
@@ -14347,6 +14804,109 @@
     "overlay_index": null,
     "base_mission_id": 421,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "421/a",
+    "name": "Dyr Fanget I Elv",
+    "place": "Elv",
+    "place_array": ["Elv"],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "diver_units": 1,
+      "personnel_educations": { "gw_taucher": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Redningsdykker kurs": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "personnel_educations": { "gw_taucher": 4 },
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "421/b",
+    "name": "Dyr Fanget I Elv",
+    "place": "Elv",
+    "place_array": ["Elv"],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "personnel_educations": { "gw_wasserrettung": 5 }
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Overflatereddere": 5 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "gw_wasserrettung": 10 },
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "421/ab",
+    "name": "Dyr Fanget I Elv",
+    "place": "Elv",
+    "place_array": ["Elv"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "diver_units": 1,
+      "personnel_educations": { "gw_taucher": 2, "gw_wasserrettung": 5 }
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "personnel_educations": {
+        "Redningsdykker kurs": 2,
+        "Overflatereddere": 5
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "personnel_educations": { "gw_taucher": 4, "gw_wasserrettung": 10 },
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 421,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -18185,5 +18745,481 @@
     "base_mission_id": 522,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "524",
+    "name": "Små oversvømmelser på grunn av flom",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "flood_equipment": 1,
+      "min_pump_speed": 400
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [525],
+      "followup_missions_ids": [532],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 524,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "525",
+    "name": "Middels oversvømmelser på grunn av flom",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "boats": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [526],
+      "followup_missions_ids": [533],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "526",
+    "name": "Store oversvømmelser på grunn av flom",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "followup_missions_ids": [533],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 526,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "527",
+    "name": "Zalanie parkingu podziemnego",
+    "place": "Parkeringshus",
+    "place_array": ["Parkeringshus"],
+    "average_credits": 8300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 1,
+      "flood_equipment": 2,
+      "pump": 2,
+      "min_pump_speed": 10000
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [532],
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 80000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 527,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "528",
+    "name": "Idrettsbane under vann",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "min_pump_speed": 500 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 16000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 528,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "529",
+    "name": "Oversvømmelse i kjeller",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "pump": 2,
+      "min_pump_speed": 5000
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [532],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 40000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 529,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "530",
+    "name": "Stabilisering av elvebredden",
+    "place": "Innsjø\nElv",
+    "place_array": ["Innsjø", "Elv"],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "police_helicopters": 1,
+      "police_cars": 3,
+      "flood_equipment": 2,
+      "pump": 3,
+      "min_pump_speed": 10000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [531],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 100000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 2,
+      "water_damage_pump_count": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 530,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "531",
+    "name": "Reaparasjon av lekkasje i demning",
+    "place": "Innsjø\nElv",
+    "place_array": ["Innsjø", "Elv"],
+    "average_credits": 35500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 25,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 6,
+      "police_helicopters": 1,
+      "police_cars": 8,
+      "diver_units": 2,
+      "boats": 3,
+      "flood_equipment": 4,
+      "pump": 4,
+      "min_pump_speed": 55000
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [533],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 500000,
+      "pump_mission_mode": "before_mission"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 2,
+      "water_damage_pump_count": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 531,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "532",
+    "name": "Restverdiredning etter små flom",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "min_pump_speed": 100,
+      "damage_control": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "followup_mission_only": true,
+      "pump_water_amount": 1000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 532,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "533",
+    "name": "Restverdiredning etter store flom",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "min_pump_speed": 200,
+      "damage_control": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "followup_mission_only": true,
+      "pump_water_amount": 2000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 533,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "534",
+    "name": "Røyk- og sotskader",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "damage_control": 1 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 534,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "535",
+    "name": "Varmeskade",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "damage_control": 1 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "followup_mission_only": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "536",
+    "name": "Vannskader på grunn av overflødig slokkevann",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "min_pump_speed": 100,
+      "damage_control": 1
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "followup_mission_only": true,
+      "pump_water_amount": 1500,
+      "pump_mission_mode": "before_mission"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 536,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
   }
 ]
