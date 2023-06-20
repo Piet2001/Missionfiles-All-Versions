@@ -17575,5 +17575,247 @@
     "base_mission_id": 540,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "542",
+    "name": "461 Vesivahingon torjunta, pieni",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "min_pump_speed": 5000,
+      "damage_control": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "pump_water_amount": 8000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "543",
+    "name": "462 Vesivahingon torjunta, keskisuuri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 15000,
+      "damage_control": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "pump_water_amount": 35000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 543,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "544",
+    "name": "463 Vesivahingon torjunta, suuri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 25000,
+      "damage_control": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "pump_water_amount": 75000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 5,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 544,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "545",
+    "name": "461 Tulviva kellari",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "min_pump_speed": 10000,
+      "damage_control": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [543],
+      "pump_water_amount": 30000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 3,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "546",
+    "name": "462 Tulviva ostoskeskus",
+    "place": "Ostoskeskus",
+    "place_array": ["Ostoskeskus"],
+    "average_credits": 6900,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1,
+      "pump": 1,
+      "min_pump_speed": 1500,
+      "damage_control": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [542],
+      "pump_water_amount": 7000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "water_damage_pump_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "547",
+    "name": "461 Tulva leirintäalueella",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "pump": 2,
+      "min_pump_speed": 1500,
+      "damage_control": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [544],
+      "pump_water_amount": 65000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "water_damage_pump_count": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 547,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "548",
+    "name": "462 Vesiputken puhkeaminen asunnossa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [542],
+      "pump_water_amount": 17000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   }
 ]
