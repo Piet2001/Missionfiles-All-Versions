@@ -22420,5 +22420,50 @@
     "base_mission_id": 620,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "621",
+    "name": "Principio d'Incendio nella Stazione della Metropolitana",
+    "place": "Stazione metropolitana",
+    "place_array": ["Stazione metropolitana"],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 8000,
+      "firetrucks": 3,
+      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "police_cars": 4
+    },
+    "chances": { "battalion_chief_vehicles": 40, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["PC20R", "PC20G", "PC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 621,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
