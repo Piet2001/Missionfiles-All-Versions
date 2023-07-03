@@ -3855,7 +3855,7 @@
     "name": "Brandende caravan",
     "place": "",
     "place_array": [],
-    "average_credits": 240,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -3867,6 +3867,45 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136-0",
+    "name": "Brandende caravan",
+    "place": "Snelweg oprit / afrit\nVerzorgingsplaats (Snelweg)",
+    "place_array": ["Snelweg oprit / afrit", "Verzorgingsplaats (Snelweg)"],
+    "average_credits": 2690,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2,
+      "traffic_unit": 1
+    },
+    "chances": { "water_tankers": 45, "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "technical_aid": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": 0,
     "base_mission_id": 136,
     "additive_overlays": "",
     "mission_categories": ["fire"]
