@@ -20031,5 +20031,60 @@
     "base_mission_id": 605,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "606",
+    "name": "Light Aircraft Hanger Break In Alarm",
+    "place": "Small Airport (Runway)",
+    "place_array": ["Small Airport (Runway)"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [607],
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "607",
+    "name": "Light Aircraft Hanger Break In Alarm (Multiple)",
+    "place": "Small Airport (Runway)",
+    "place_array": ["Small Airport (Runway)"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "police_service_group_leader": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 607,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
