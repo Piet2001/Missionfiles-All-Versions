@@ -4648,7 +4648,40 @@
     "overlay_index": null,
     "base_mission_id": 156,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "156/a",
+    "name": "Tubería de agua rota",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "battalion_chief_vehicles": 20, "heavy_rescue_vehicles": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 156,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "157",
@@ -10273,7 +10306,38 @@
     "overlay_index": null,
     "base_mission_id": 329,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "329/a",
+    "name": "Sumidero atascado con hojas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "pump": 1, "min_pump_speed": 1500 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 30000,
+      "date_start": "2022-09-30T09:00:00Z",
+      "date_end": "2022-11-30T22:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 329,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "330",
@@ -14540,6 +14604,43 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "459/a",
+    "name": "Inundaciones tras las fuertes lluvias",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2420,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "diver_units": 1,
+      "flood_equipment": 1,
+      "pump": 1,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [460],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 30000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 459,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "460",
     "name": "Evacuación de zona inundada",
     "place": "",
@@ -14577,6 +14678,51 @@
     "overlay_index": null,
     "base_mission_id": 460,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "460/a",
+    "name": "Evacuación de zona inundada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5550,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "water_rescue": 1,
+      "diver_units": 2,
+      "boats": 2,
+      "flood_equipment": 1,
+      "hose": 1,
+      "pump": 3,
+      "min_pump_speed": 10000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 200000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 3,
+      "water_rescue_police": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -15874,5 +16020,742 @@
     "base_mission_id": 492,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "499",
+    "name": "Pequeño aparcamiento subterráneo inundado",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "pump": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 5500
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "500",
+    "name": "Locales comerciales inundados",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "pump": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 8000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 500,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "501",
+    "name": "Sótano inundado",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "pump": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 12000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 501,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "502",
+    "name": "Grandes inundaciones en un distrito debido al mal tiempo.",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "flood_equipment": 2,
+      "pump": 5,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 80000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 3,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 502,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "502/a",
+    "name": "Grandes inundaciones en un distrito debido al mal tiempo.",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "flood_equipment": 2,
+      "pump": 5,
+      "min_pump_speed": 1500,
+      "mud_rescue": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 80000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 3,
+      "mud_rescue": 1,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 502,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "503",
+    "name": "Rotura de una tubería de agua en un apartamento",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "pump": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 30000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "504",
+    "name": "Inundaciones en una obra",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7820,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "flood_equipment": 1,
+      "pump": 2,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 60000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "504/a",
+    "name": "Inundaciones en una obra",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8820,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "flood_equipment": 1,
+      "pump": 2,
+      "min_pump_speed": 1500,
+      "mud_rescue": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 60000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "mud_rescue": 1,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "505",
+    "name": "Inundaciones en un camping",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 2,
+      "flood_equipment": 2,
+      "pump": 3,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 65000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "flood_equipment": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "505/a",
+    "name": "Inundaciones en un camping",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 2,
+      "flood_equipment": 2,
+      "pump": 3,
+      "min_pump_speed": 1500,
+      "mud_rescue": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 65000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "mud_rescue": 1,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "506",
+    "name": "Túnel submarino inundado (pequeño)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 4470,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "pump": 2, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 80000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 506,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "506/a",
+    "name": "Túnel submarino inundado (pequeño)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 4970,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "pump": 2,
+      "min_pump_speed": 1000,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 80000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_extension": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 506,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "507",
+    "name": "Túnel submarino inundado (medio)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 6300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "police_cars": 2,
+      "flood_equipment": 1,
+      "pump": 3,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 160000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "water_damage_pump_count": 2,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "507/a",
+    "name": "Túnel submarino inundado (medio)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "police_cars": 2,
+      "flood_equipment": 1,
+      "pump": 3,
+      "min_pump_speed": 1000,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 160000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "water_damage_pump_count": 2,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "508",
+    "name": "Túnel submarino inundado (grande)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 12300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "police_cars": 3,
+      "flood_equipment": 2,
+      "hose": 1,
+      "pump": 5,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 200000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "water_damage_pump_count": 3,
+      "flood_equipment": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 508,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "508/a",
+    "name": "Túnel submarino inundado (grande)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 13300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "police_cars": 3,
+      "flood_equipment": 2,
+      "hose": 1,
+      "pump": 5,
+      "min_pump_speed": 1500,
+      "mud_rescue": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 200000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "water_damage_pump_count": 3,
+      "mud_rescue": 1,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 508,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "509",
+    "name": "Túnel submarino inundado (Mayor)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 19300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "police_cars": 3,
+      "flood_equipment": 2,
+      "hose": 2,
+      "pump": 7,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 350000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "flood_equipment": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 509,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "509/a",
+    "name": "Túnel submarino inundado (Mayor)",
+    "place": "Túnel",
+    "place_array": ["Túnel"],
+    "average_credits": 20300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "police_cars": 3,
+      "flood_equipment": 2,
+      "hose": 2,
+      "pump": 7,
+      "min_pump_speed": 1500,
+      "mud_rescue": 1,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 350000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "mud_rescue": 1,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 509,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "510",
+    "name": "Centro comercial inundado",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6900,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "flood_equipment": 2,
+      "hose": 1,
+      "pump": 5,
+      "min_pump_speed": 2500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 200000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "water_damage_pump_count": 3,
+      "flood_equipment": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 510,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "510/a",
+    "name": "Centro comercial inundado",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 1,
+      "flood_equipment": 2,
+      "hose": 1,
+      "pump": 5,
+      "min_pump_speed": 2500,
+      "water_waste": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 200000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "water_damage_pump_count": 3,
+      "coastal_rescue_extension": 1,
+      "flood_equipment": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 510,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "511",
+    "name": "Varios sótanos bajo el agua",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1260,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": { "flood_equipment": 1, "pump": 2, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 70000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 511,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
   }
 ]
