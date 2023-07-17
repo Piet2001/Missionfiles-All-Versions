@@ -480,7 +480,7 @@
     "name": "Brandende aanhangwagen",
     "place": "",
     "place_array": [],
-    "average_credits": 650,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -492,6 +492,32 @@
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
+    "base_mission_id": 19,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "19-0",
+    "name": "Brandende aanhangwagen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1940,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": 0,
     "base_mission_id": 19,
     "additive_overlays": "",
     "mission_categories": ["fire"]
@@ -28287,293 +28313,6 @@
     "base_mission_id": 819,
     "additive_overlays": "",
     "mission_categories": ["water_rescue_2"]
-  },
-  {
-    "id": "820",
-    "name": "Opblazen wedstrijdbal",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 820,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "821",
-    "name": "Spelersbus geparkeerd bij parkeerverbod",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": { "main_building": 5, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 821,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "822",
-    "name": "Behandeling na keepersduik",
-    "place": "",
-    "place_array": [],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "nef": 1, "patient_transport": 0 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z",
-      "patient_specialization_ids": [1],
-      "patient_specialization_captions": ["Algemene Heelkunde"],
-      "patient_specializations": "Algemene Heelkunde"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 822,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "823",
-    "name": "Blessure na raken lat",
-    "place": "",
-    "place_array": [],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 0 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z",
-      "patient_specialization_ids": [1],
-      "patient_specialization_captions": ["Algemene Heelkunde"],
-      "patient_specializations": "Algemene Heelkunde"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 823,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "824",
-    "name": "Doel omgevallen",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 824,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "825",
-    "name": "Gestolen trofee",
-    "place": "",
-    "place_array": [],
-    "average_credits": 670,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": { "main_building": 5, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 825,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "826",
-    "name": "Bevriezing door koelspray",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 20 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne Geneeskunde"],
-      "patient_specializations": "Interne Geneeskunde"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 826,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "827",
-    "name": "Keelpijn na juichen",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 3,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne Geneeskunde"],
-      "patient_specializations": "Interne Geneeskunde"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 827,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "828",
-    "name": "Verloren aanvoerdersarmband",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "police_helicopters": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 2,
-      "police_helicopter_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 828,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "829",
-    "name": "Brandende cornervlag",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": 670,
-    "generated_by": "",
-    "icons": [
-      "/images/soccer_gruen.png",
-      "/images/soccer_gelb.png",
-      "/images/soccer_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2022-11-18T10:00:00Z",
-      "date_end": "2022-12-18T22:59:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 829,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
   },
   {
     "id": "830",
