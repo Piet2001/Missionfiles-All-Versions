@@ -14809,5 +14809,43 @@
     "base_mission_id": 461,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "462",
+    "name": "Срабатывание пожарной сигнализации в аквариуме",
+    "place": "Аквариум",
+    "place_array": ["Аквариум"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [463],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Травматология"],
+      "patient_specializations": "Травматология"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
