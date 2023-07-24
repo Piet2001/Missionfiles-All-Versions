@@ -21344,5 +21344,148 @@
     "base_mission_id": 592,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "593",
+    "name": "Incendie confirmé parc aquarium",
+    "place": "Aquarium",
+    "place_array": ["Aquarium"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 55000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 8,
+      "thw_gkw": 1,
+      "hose": 2,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [594],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 593,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "594",
+    "name": "Explosion dans un parc aquarium",
+    "place": "Aquarium",
+    "place_array": ["Aquarium"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "police_cars": 10,
+      "thw_gkw": 2,
+      "k9": 2,
+      "hose": 2,
+      "pump": 2,
+      "foam": 2
+    },
+    "chances": {
+      "patient_transport": 0,
+      "helicopter": 30,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [595],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "595",
+    "name": "Fuite d’un aquarium dans un parc",
+    "place": "Aquarium",
+    "place_array": ["Aquarium"],
+    "average_credits": 16550,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "brush_truck": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "police_cars": 4,
+      "thw_gkw": 3,
+      "flood_equipment": 2,
+      "hose": 3,
+      "pump": 3,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "pump_water_amount": 140000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "flood_equipment": 2,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 595,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   }
 ]
