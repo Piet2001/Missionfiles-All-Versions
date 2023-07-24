@@ -20131,5 +20131,55 @@
     "base_mission_id": 608,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "609",
+    "name": "Petrol Station Explosion",
+    "place": "Gas station",
+    "place_array": ["Gas station"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 1,
+      "hazmat_vehicles": 2,
+      "police_cars": 6,
+      "police_service_group_leader": 1
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 5,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 90,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "police_service_group_leader": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 609,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
