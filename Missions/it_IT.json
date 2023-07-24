@@ -22607,5 +22607,49 @@
     "base_mission_id": 624,
     "additive_overlays": "",
     "mission_categories": ["fire", "forestry"]
+  },
+  {
+    "id": "625",
+    "name": "Allarme antincendio acquario attivato",
+    "place": "Aquarium",
+    "place_array": ["Aquarium"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [626],
+      "patient_it_code_possible": ["PC20R", "PC20G", "PC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 625,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
