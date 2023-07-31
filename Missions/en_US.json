@@ -40659,5 +40659,65 @@
     "base_mission_id": 877,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "878",
+    "name": "Fire in a Prison",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 14500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 40000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "8-D-1",
+        "8-D-2",
+        "8-D-3",
+        "8-D-5",
+        "8-C-1",
+        "8-B-1",
+        "7-E-1F",
+        "7-D-2F",
+        "7-D-3F",
+        "7-D-4F",
+        "7-C-2F",
+        "7-C-3F",
+        "7-C-4F",
+        "7-A-1F"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 5,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 878,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
