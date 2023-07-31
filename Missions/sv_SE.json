@@ -17594,5 +17594,141 @@
     "base_mission_id": 535,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "536",
+    "name": "Brand i akvarium",
+    "place": "Akvarium",
+    "place_array": ["Akvarium"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 55000,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "police_cars": 8,
+      "pump": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [537],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Invärtesmedicinare"],
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 536,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "537",
+    "name": "Explosion i en akvariepark",
+    "place": "Akvarium",
+    "place_array": ["Akvarium"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "police_cars": 10,
+      "k9": 2,
+      "pump": 2,
+      "foam": 2
+    },
+    "chances": {
+      "patient_transport": 0,
+      "helicopter": 30,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [538],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Invärtesmedicinare"],
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 537,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "538",
+    "name": "Läckage från ett akvarium",
+    "place": "Akvarium",
+    "place_array": ["Akvarium"],
+    "average_credits": 16550,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "police_cars": 4,
+      "hose": 3,
+      "pump": 3,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "pump_water_amount": 140000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 538,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
   }
 ]
