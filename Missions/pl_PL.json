@@ -22412,5 +22412,43 @@
     "base_mission_id": 664,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "665",
+    "name": "Alarm przeciwpożarowy w parku wodnym",
+    "place": "Park wodny",
+    "place_array": ["Park wodny"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [666],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 665,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
