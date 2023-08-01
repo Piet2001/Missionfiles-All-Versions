@@ -4991,7 +4991,41 @@
     "overlay_index": null,
     "base_mission_id": 174,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "174/a",
+    "name": "Broken water pipe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "pump": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "battalion_chief_vehicles": 20, "heavy_rescue_vehicles": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 4000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood_water_rescue"]
   },
   {
     "id": "175",
@@ -17873,7 +17907,42 @@
     "overlay_index": null,
     "base_mission_id": 540,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
+  },
+  {
+    "id": "540/a",
+    "name": "Minor House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "water_rescue": 1, "pump": 1, "min_pump_speed": 1000 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [541],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 10000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
   },
   {
     "id": "541",
@@ -17897,7 +17966,47 @@
     "overlay_index": null,
     "base_mission_id": 541,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
+  },
+  {
+    "id": "541/a",
+    "name": "Moderate House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "water_rescue": 1,
+      "pump": 1,
+      "min_pump_speed": 1500,
+      "road_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [542],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 541,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
   },
   {
     "id": "542",
@@ -17935,7 +18044,55 @@
     "overlay_index": null,
     "base_mission_id": 542,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
+  },
+  {
+    "id": "542/a",
+    "name": "Significant House Flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 2,
+      "pump": 1,
+      "min_pump_speed": 2000,
+      "road_rescue": 2
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 0,
+      "filter_id": "water_watch_missions",
+      "patient_allow_first_responder_chance": 50,
+      "pump_water_amount": 40000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "water_damage_pump_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "water_rescue",
+      "water_damage_and_flood_water_rescue"
+    ]
   },
   {
     "id": "543",
@@ -20219,5 +20376,883 @@
     "base_mission_id": 610,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "615",
+    "name": "Flood Evacuation (Minor)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 2,
+      "flood_equipment": 1,
+      "communication_repeater": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [616],
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 615,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "616",
+    "name": "Flood Evacuation (Moderate)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "flood_equipment": 1,
+      "communication_repeater": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [617],
+      "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [620]
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 616,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "617",
+    "name": "Flood Evacuation (Significant)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3,
+      "water_rescue": 6,
+      "flood_equipment": 2,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [618],
+      "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [621]
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 617,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "618",
+    "name": "Flood Evacuation (Major)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 13500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 6,
+      "water_rescue": 6,
+      "flood_equipment": 2,
+      "police_service_group_leader": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [622]
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 618,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "619",
+    "name": "River Flooding (Minor)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "flood_equipment": 1,
+      "pump": 1,
+      "min_pump_speed": 2000,
+      "light_supply": 1,
+      "communication_repeater": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [620],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 619,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "620",
+    "name": "River Flooding (Moderate)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "flood_equipment": 1,
+      "pump": 1,
+      "min_pump_speed": 5000,
+      "light_supply": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [621],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 620,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "621",
+    "name": "River Flooding (Significant)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "water_rescue": 6,
+      "flood_equipment": 2,
+      "pump": 1,
+      "min_pump_speed": 8000,
+      "light_supply": 2,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [622],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "police_stations": 2,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 621,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "622",
+    "name": "River Flooding (Major)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 3,
+      "police_cars": 6,
+      "water_rescue": 6,
+      "flood_equipment": 3,
+      "pump": 2,
+      "min_pump_speed": 10000,
+      "police_service_group_leader": 1,
+      "light_supply": 3,
+      "elw_water_rescue": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 150000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 3,
+      "police_stations": 3,
+      "water_damage_pump_count": 3,
+      "disaster_response_count": 2,
+      "police_service_group_leader": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 622,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "623",
+    "name": "River Flooding Rescue (Minor)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 2,
+      "boats": 2,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [624],
+      "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [625],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 623,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "624",
+    "name": "River Flooding Rescue (Moderate)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "boats": 4,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 6,
+      "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [626],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 624,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "625",
+    "name": "River Flooding Clean Up (Minor)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 3,
+      "min_pump_speed": 1000,
+      "road_rescue": 1,
+      "energy_supply": 1,
+      "light_supply": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [626],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 3500
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 625,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "626",
+    "name": "River Flooding Clean Up (Moderate)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "min_pump_speed": 1000,
+      "road_rescue": 1,
+      "energy_supply": 1,
+      "light_supply": 1,
+      "airshelta": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [627],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 8000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 626,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "627",
+    "name": "River Flooding Clean Up (Significant)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "water_rescue": 6,
+      "min_pump_speed": 1000,
+      "road_rescue": 3,
+      "energy_supply": 2,
+      "light_supply": 2,
+      "airshelta": 2,
+      "elw_water_rescue": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [628],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 13000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 627,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "628",
+    "name": "River Flooding Clean Up (Major)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_rescue": 10,
+      "min_pump_speed": 1000,
+      "road_rescue": 5,
+      "energy_supply": 2,
+      "light_supply": 2,
+      "airshelta": 3,
+      "elw_water_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 628,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "629",
+    "name": "Vehicle Trapped in Flood Waters (Minor)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 2,
+      "search_and_rescue": 2,
+      "quad": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [632],
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 629,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "630",
+    "name": "Vehicle Trapped in Flood Waters (Moderate)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "boats": 1,
+      "search_and_rescue": 2,
+      "quad": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [631],
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 630,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "631",
+    "name": "Vehicle Trapped in Flood Waters (Significant)",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "boats": 2,
+      "search_and_rescue": 2,
+      "quad": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 631,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood_water_rescue"]
+  },
+  {
+    "id": "632",
+    "name": "Hiker Lost in Forest (Minor)",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 3,
+      "search_and_rescue": 2,
+      "energy_supply": 1,
+      "quad": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [633],
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 632,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "633",
+    "name": "Hiker Lost in Forest (Moderate)",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 4,
+      "search_and_rescue": 2,
+      "energy_supply": 1,
+      "airshelta": 1,
+      "quad": 1,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [634],
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 633,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "634",
+    "name": "Hiker Lost in Forest (Significant)",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 6,
+      "search_and_rescue": 2,
+      "energy_supply": 2,
+      "airshelta": 2,
+      "quad": 2,
+      "elw_water_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 8,
+      "expansion_missions_ids": [635],
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 634,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "635",
+    "name": "Hiker Lost in Forest (Major)",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_rescue": 8,
+      "search_and_rescue": 3,
+      "energy_supply": 2,
+      "airshelta": 3,
+      "quad": 3,
+      "elw_water_rescue": 2
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "water_watch_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 3,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 635,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   }
 ]
