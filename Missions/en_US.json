@@ -2737,6 +2737,51 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "86/a",
+    "name": "MVA Rollover",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 4 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [25, 826],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2p"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 4
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "personnel_educations": { "traffic_control": 8 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 86,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "87",
     "name": "Industrial Fire",
     "place": "",
@@ -2859,7 +2904,46 @@
     "overlay_index": null,
     "base_mission_id": 88,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "88/a",
+    "name": "Partial Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "light_supply": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 88,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "89",
@@ -3218,6 +3302,47 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "98/a",
+    "name": "Large Unknown Tanker Spill",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 100,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 8, "traffic_control": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": {
+        "HazMat": 8,
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 6
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 98,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "99",
     "name": "Commercial Fire",
     "place": "",
@@ -3384,6 +3509,46 @@
     "overlay_index": null,
     "base_mission_id": 101,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "101/a",
+    "name": "Unknown Tanker Spill",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4450,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4, "traffic_control": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": {
+        "HazMat": 4,
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 3
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 6 },
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 101,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -4458,6 +4623,49 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "125/a",
+    "name": "Vehicle Accident - Entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 95 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 6
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 125,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "126",
     "name": "Overdose",
     "place": "",
@@ -5119,6 +5327,100 @@
     "overlay_index": null,
     "base_mission_id": 142,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "142/b",
+    "name": "Warehouse Fire",
+    "place": "Warehouse",
+    "place_array": ["Warehouse"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 350,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 3,
+      "mobile_air_vehicles": 4,
+      "police_cars": 2,
+      "light_supply": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "disaster_response_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 142,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "142/ab",
+    "name": "Warehouse Fire",
+    "place": "Warehouse",
+    "place_array": ["Warehouse"],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 350,
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 3,
+      "mobile_air_vehicles": 4,
+      "police_cars": 2,
+      "fire_investigation": 2,
+      "light_supply": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_investigation_count": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 142,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -6193,7 +6495,53 @@
     "overlay_index": null,
     "base_mission_id": 169,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "169/a",
+    "name": "Small flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1450,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "flood_equipment": 1,
+      "min_pump_speed": 2000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [170],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 40000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 169,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "170",
@@ -6238,7 +6586,154 @@
     "overlay_index": null,
     "base_mission_id": 170,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "170/a",
+    "name": "Medium flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2850,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "boats": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 4000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [171],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 80000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 170,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "170/b",
+    "name": "Medium flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2050,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "boats": 1,
+      "light_supply": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [171],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 170,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "170/ab",
+    "name": "Medium flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3350,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "boats": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 4000,
+      "light_supply": 1
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [171],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 80000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 170,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
   },
   {
     "id": "171",
@@ -6284,7 +6779,157 @@
     "overlay_index": null,
     "base_mission_id": 171,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "171/a",
+    "name": "Large flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "flood_equipment": 2,
+      "min_pump_speed": 8000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "expansion_missions_ids": [172],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 160000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 171,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "171/b",
+    "name": "Large flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "expansion_missions_ids": [172],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 171,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "171/ab",
+    "name": "Large flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "flood_equipment": 2,
+      "min_pump_speed": 8000,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "expansion_missions_ids": [172],
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 160000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 171,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
   },
   {
     "id": "172",
@@ -6332,7 +6977,165 @@
     "overlay_index": null,
     "base_mission_id": 172,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/a",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 3,
+      "boats": 2,
+      "flood_equipment": 3,
+      "min_pump_speed": 16000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 320000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/b",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 3,
+      "boats": 2,
+      "energy_supply": 1,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "disaster_response_count": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/ab",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 3,
+      "boats": 2,
+      "flood_equipment": 3,
+      "min_pump_speed": 16000,
+      "energy_supply": 1,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 320000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
   },
   {
     "id": "173",
@@ -6631,7 +7434,57 @@
     "overlay_index": null,
     "base_mission_id": 179,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "179/a",
+    "name": "Burst water main",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 3000
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [170],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 60000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "water_damage_pump_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 179,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "180",
@@ -7502,6 +8355,54 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "194/a",
+    "name": "Large MVA in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4, "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "HazMat": 4,
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 6
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 194,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "195",
     "name": "Single vehicle fire in tunnel",
     "place": "Tunnel",
@@ -7532,6 +8433,47 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "195/a",
+    "name": "Single vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 1650,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [205],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 3
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "personnel_educations": { "traffic_control": 6 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7901,6 +8843,54 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "205/a",
+    "name": "Multiple vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": {
+      "water_tankers": 40,
+      "mobile_air_vehicles": 25,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 6
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "206",
     "name": "Transformer fire",
     "place": "",
@@ -8059,6 +9049,106 @@
     "overlay_index": null,
     "base_mission_id": 208,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "208/b",
+    "name": "Power Plant fire",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 17000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 350,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "energy_supply": 3,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [778],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "disaster_response_count": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 208,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "208/ab",
+    "name": "Power Plant fire",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 350,
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 4,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "police_cars": 4,
+      "fire_investigation": 2,
+      "energy_supply": 3,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 10,
+      "expansion_missions_ids": [778],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_investigation_count": 2,
+      "disaster_response_count": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 208,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -8250,6 +9340,41 @@
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "211/a",
+    "name": "Multiple vehicles on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "personnel_educations": { "traffic_control": 8 }
+    },
+    "chances": { "water_tankers": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 8
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "traffic_control": 16 },
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 211,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -9126,7 +10251,7 @@
   },
   {
     "id": "232",
-    "name": "Full  Building Collapse",
+    "name": "Full Building Collapse",
     "place": "",
     "place_array": [],
     "average_credits": 10000,
@@ -9162,6 +10287,48 @@
     "overlay_index": null,
     "base_mission_id": 232,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "232/a",
+    "name": "Full Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 4,
+      "police_cars": 2,
+      "light_supply": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 232,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -14323,6 +15490,41 @@
     "overlay_index": null,
     "base_mission_id": 341,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "341/a",
+    "name": "Vehicle Crash - Property Damage",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [144, 125, 158, 295],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 3
+      }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 341,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -20725,6 +21927,48 @@
     "overlay_index": null,
     "base_mission_id": 425,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "425/a",
+    "name": "Construction vehicle accident",
+    "place": "Construction site",
+    "place_array": ["Construction site"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["77-D-1", "77-D-10"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 6
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 425,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -28018,7 +29262,50 @@
     "overlay_index": null,
     "base_mission_id": 633,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "633/a",
+    "name": "Flooded Tunnel (small)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 12,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["14-C-1"],
+      "pump_water_amount": 20000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 633,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "634",
@@ -28057,7 +29344,50 @@
     "overlay_index": null,
     "base_mission_id": 634,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "634/a",
+    "name": "Flooded Tunnel (large)",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 2,
+      "police_cars": 4,
+      "flood_equipment": 1,
+      "min_pump_speed": 2000
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 30,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["14-C-1"],
+      "pump_water_amount": 40000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 634,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
     "id": "635",
@@ -33449,6 +34779,52 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "745/a",
+    "name": "Multi Vehicle Pile-up",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 3150,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [746],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 3
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "personnel_educations": { "traffic_control": 6 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "746",
     "name": "Multi Vehicle Pile-up (Large)",
     "place": "Highway exit",
@@ -33486,6 +34862,51 @@
     "overlay_index": null,
     "base_mission_id": 746,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "746/a",
+    "name": "Multi Vehicle Pile-up (Large)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 6350,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 4,
+      "personnel_educations": { "traffic_control": 7 }
+    },
+    "chances": { "patient_transport": 90, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 7
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "personnel_educations": { "traffic_control": 14 },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -36318,6 +37739,118 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "778/b",
+    "name": "Power Plant Fire - Major",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 26000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 1000,
+      "water_needed": 2500,
+      "firetrucks": 14,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 3,
+      "police_cars": 7,
+      "sheriff": 1,
+      "foam": 1,
+      "energy_supply": 4,
+      "light_supply": 3
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [779],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1F"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "disaster_response_count": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "778/ab",
+    "name": "Power Plant Fire - Major",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 27000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 1000,
+      "water_needed": 2500,
+      "firetrucks": 14,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 3,
+      "police_cars": 7,
+      "sheriff": 1,
+      "foam": 1,
+      "fire_investigation": 1,
+      "energy_supply": 4,
+      "light_supply": 3
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [779],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1F"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "fire_investigation_count": 1,
+      "disaster_response_count": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
     "id": "779",
     "name": "Power Plant Fire - Explosion",
     "place": "Power Plant",
@@ -36429,6 +37962,126 @@
     "overlay_index": null,
     "base_mission_id": 779,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "779/b",
+    "name": "Power Plant Fire - Explosion",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 44000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 8,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 5,
+      "police_cars": 10,
+      "personnel_educations": { "ems_mobile_command": 2 },
+      "sheriff": 2,
+      "foam": 2,
+      "energy_supply": 6,
+      "light_supply": 7
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 15,
+      "expansion_missions_ids": [780],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1F"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "EMS Mobile Command": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 9,
+      "fire_support_count": 2,
+      "disaster_response_count": 5,
+      "personnel_educations": { "ems_mobile_command": 2 },
+      "fire_stations": 33
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "779/ab",
+    "name": "Power Plant Fire - Explosion",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 46500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 2000,
+      "water_needed": 4000,
+      "firetrucks": 20,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 8,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 6,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 5,
+      "police_cars": 10,
+      "personnel_educations": { "ems_mobile_command": 2 },
+      "fbi": 3,
+      "sheriff": 2,
+      "foam": 2,
+      "fire_investigation": 2,
+      "energy_supply": 6,
+      "light_supply": 7
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 15,
+      "expansion_missions_ids": [780],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1F"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "EMS Mobile Command": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 9,
+      "federalpolice_stations": 1,
+      "fire_support_count": 2,
+      "fire_investigation_count": 2,
+      "disaster_response_count": 5,
+      "personnel_educations": { "ems_mobile_command": 2 },
+      "fire_stations": 33
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
@@ -36544,6 +38197,127 @@
     "overlay_index": null,
     "base_mission_id": 780,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "780/b",
+    "name": "Power Plant Fire - CBRNE",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 54000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4000,
+      "water_needed": 8000,
+      "firetrucks": 30,
+      "battalion_chief_vehicles": 9,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 12,
+      "heavy_rescue_vehicles": 15,
+      "water_tankers": 10,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 6,
+      "police_cars": 20,
+      "personnel_educations": { "ems_mobile_command": 2, "gw_gefahrgut": 30 },
+      "sheriff": 4,
+      "foam": 2,
+      "energy_supply": 8,
+      "light_supply": 10
+    },
+    "chances": { "patient_transport": 70, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "expansion_missions_ids": [726],
+      "max_possible_prisoners": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5N"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "EMS Mobile Command": 2, "HazMat": 30 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 15,
+      "fire_support_count": 2,
+      "disaster_response_count": 6,
+      "personnel_educations": { "ems_mobile_command": 2, "gw_gefahrgut": 45 },
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "780/ab",
+    "name": "Power Plant Fire - CBRNE",
+    "place": "Power Plant",
+    "place_array": ["Power Plant"],
+    "average_credits": 56500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 4000,
+      "water_needed": 8000,
+      "firetrucks": 30,
+      "battalion_chief_vehicles": 9,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 12,
+      "heavy_rescue_vehicles": 15,
+      "water_tankers": 10,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 6,
+      "police_cars": 20,
+      "personnel_educations": { "ems_mobile_command": 2, "gw_gefahrgut": 30 },
+      "fbi": 4,
+      "fbi_investigation": 2,
+      "sheriff": 4,
+      "foam": 2,
+      "fire_investigation": 4,
+      "energy_supply": 8,
+      "light_supply": 10
+    },
+    "chances": { "patient_transport": 70, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "expansion_missions_ids": [726],
+      "max_possible_prisoners": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["8-D-5N"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "EMS Mobile Command": 2, "HazMat": 30 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 15,
+      "federalpolice_stations": 2,
+      "fire_support_count": 2,
+      "fire_investigation_count": 2,
+      "disaster_response_count": 6,
+      "personnel_educations": { "ems_mobile_command": 2, "gw_gefahrgut": 45 },
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
@@ -38396,6 +40170,51 @@
     "overlay_index": null,
     "base_mission_id": 826,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "826/a",
+    "name": "MVA Rollover - Ejection",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "personnel_educations": { "traffic_control": 8 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2n"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "\u003Cspan class=\"translation_missing localeapp\" title=\"translation missing: en_US.personal.traffic_control\"\u003ETraffic Control\u003C/span\u003E": 8
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "personnel_educations": { "traffic_control": 16 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 826,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -40719,5 +42538,405 @@
     "base_mission_id": 878,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "879",
+    "name": "Flooded Basement",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [880, 881],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 879,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "880",
+    "name": "Flooding in a small house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 880,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "880/a",
+    "name": "Flooding in a small house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1450,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000,
+      "light_supply": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 880,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "881",
+    "name": "Flooding in a big house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2120,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 881,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "881/a",
+    "name": "Flooding in a big house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2620,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000,
+      "light_supply": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 881,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "882",
+    "name": "Flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3220,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "elw3": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "flood_equipment": 2,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [883, 884],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 70000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 882,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "882/a",
+    "name": "Flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4720,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "elw3": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "flood_equipment": 2,
+      "min_pump_speed": 1000,
+      "energy_supply": 1,
+      "light_supply": 2
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [883, 884],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 70000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 882,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "883",
+    "name": "Major flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "flood_equipment": 3,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [884],
+      "followup_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 95000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 883,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "883/a",
+    "name": "Major flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "flood_equipment": 3,
+      "min_pump_speed": 1500,
+      "energy_supply": 2,
+      "light_supply": 3
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [884],
+      "followup_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 95000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 883,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "884",
+    "name": "Rising waters of the canal (Flood)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "elw3": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "flood_equipment": 5,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "884/a",
+    "name": "Rising waters of the canal (Flood)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 1,
+      "elw3": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "flood_equipment": 5,
+      "min_pump_speed": 1500,
+      "energy_supply": 6,
+      "light_supply": 7
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "disaster_response_count": 5,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
   }
 ]
