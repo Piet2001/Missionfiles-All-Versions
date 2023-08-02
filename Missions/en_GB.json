@@ -26182,5 +26182,224 @@
     "base_mission_id": 610,
     "additive_overlays": "",
     "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "611",
+    "name": "Flooded Basement",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [612, 613],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 611,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "612",
+    "name": "Flooding in a small house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [614],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 10000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 612,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "613",
+    "name": "Flooding in a big house, following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2120,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "flood_equipment": 1,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [614],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 50000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 613,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "614",
+    "name": "Flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3220,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 2,
+      "flood_equipment": 2,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [615, 616],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 70000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_count": 1,
+      "flood_equipment": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 614,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "615",
+    "name": "Major flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "mobile_command_vehicles": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 3,
+      "flood_equipment": 3,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [616],
+      "followup_missions_ids": [614],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 95000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_count": 2,
+      "flood_equipment": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 615,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "616",
+    "name": "Rising waters of the canal (Flood)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "mobile_command_vehicles": 5,
+      "heavy_rescue_vehicles": 6,
+      "water_tankers": 4,
+      "police_cars": 4,
+      "flood_equipment": 5,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 1,
+      "coastal_rescue_count": 3,
+      "flood_equipment": 3,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 616,
+    "additive_overlays": "",
+    "mission_categories": ["water_damage_and_flood"]
   }
 ]
