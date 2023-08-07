@@ -21577,5 +21577,137 @@
     "base_mission_id": 597,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "598",
+    "name": "Feu de tourbe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "brush_truck": 4, "elw3": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [260, 261, 262, 263, 270, 484, 579, 580, 581],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 598,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "599",
+    "name": "Feu dans une usine de fabrication automobile",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "police_cars": 6,
+      "kdow_orgl": 1,
+      "hose": 3,
+      "pump": 3,
+      "foam": 3
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [600],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 599,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "600",
+    "name": "Explosion dans une usine de fabrication automobile",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "platform_trucks": 4,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 5,
+      "police_cars": 8,
+      "thw_gkw": 1,
+      "kdow_orgl": 1,
+      "hose": 4,
+      "pump": 4,
+      "foam": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 8,
+      "fire_support_count": 4,
+      "fire_stations": 21
+    },
+    "overlay_index": null,
+    "base_mission_id": 600,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
