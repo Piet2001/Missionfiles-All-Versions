@@ -39106,5 +39106,43 @@
     "base_mission_id": 1045,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1046",
+    "name": "Verstekeling aan boord",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3030,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_guard_boat": 2 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "coastal_rescue_missions",
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "coastal_rescue_count": 2,
+      "coastal_rescue_small_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1046,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
