@@ -42945,5 +42945,52 @@
     "base_mission_id": 885,
     "additive_overlays": "",
     "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "886",
+    "name": "Fire in an automobile manufacturing plant",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_tankers": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "police_cars": 6,
+      "foam": 3
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 886,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
