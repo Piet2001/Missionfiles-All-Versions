@@ -21709,5 +21709,110 @@
     "base_mission_id": 600,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "601",
+    "name": "Crash d'un hélicoptère",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "arff": 1,
+      "police_cars": 5,
+      "elw_airport": 1,
+      "foam": 1,
+      "airport_equipment": 1,
+      "riv": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "airport": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 601,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "602",
+    "name": "Crash d'un canadair",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 10,
+      "brush_truck": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 2,
+      "arff": 1,
+      "police_cars": 4,
+      "elw_airport": 2,
+      "foam": 2,
+      "airport_equipment": 1,
+      "riv": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "max_arff_replacing_riv": 2,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "airport": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 602,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
