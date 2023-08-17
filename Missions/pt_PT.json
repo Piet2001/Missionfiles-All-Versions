@@ -4894,11 +4894,7 @@
     "overlay_index": null,
     "base_mission_id": 167,
     "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "fire_support_specialization",
-      "water_damage_and_flood"
-    ]
+    "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
     "id": "167-0",
@@ -4917,7 +4913,6 @@
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
       "police_cars": 2,
-      "flood_equipment": 1,
       "pump": 1,
       "min_pump_speed": 1500
     },
@@ -4942,11 +4937,7 @@
     "overlay_index": 0,
     "base_mission_id": 167,
     "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "fire_support_specialization",
-      "water_damage_and_flood"
-    ]
+    "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
     "id": "167-1",
@@ -4988,11 +4979,7 @@
     "overlay_index": 1,
     "base_mission_id": 167,
     "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "fire_support_specialization",
-      "water_damage_and_flood"
-    ]
+    "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
     "id": "168",
@@ -10489,7 +10476,8 @@
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 3,
-      "police_cars": 5
+      "police_cars": 5,
+      "pump": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
@@ -10503,6 +10491,7 @@
       "main_building": 0,
       "rescue_stations": 8,
       "police_stations": 5,
+      "water_damage_pump_count": 1,
       "fire_stations": 13
     },
     "overlay_index": null,
@@ -10546,6 +10535,7 @@
       "main_building": 0,
       "rescue_stations": 8,
       "police_stations": 5,
+      "water_damage_pump_count": 1,
       "fire_stations": 13
     },
     "overlay_index": 0,
@@ -15414,6 +15404,7 @@
       "police_cars": 4,
       "diver_units": 1,
       "boats": 1,
+      "pump": 1,
       "coastal_jetski": 1
     },
     "chances": { "patient_transport": 50 },
@@ -15429,6 +15420,7 @@
       "wasserrettung": 1,
       "rescue_stations": 3,
       "police_stations": 5,
+      "water_damage_pump_count": 1,
       "coastal_rescue_count": 1,
       "fire_stations": 9
     },
@@ -15520,6 +15512,7 @@
       "rescue_stations": 3,
       "police_stations": 5,
       "fire_support_count": 1,
+      "water_damage_pump_count": 1,
       "coastal_rescue_count": 1,
       "fire_stations": 9
     },
@@ -15547,6 +15540,7 @@
       "diver_units": 1,
       "boats": 1,
       "flood_equipment": 1,
+      "pump": 1,
       "min_pump_speed": 7500,
       "coastal_jetski": 1
     },
@@ -16087,7 +16081,7 @@
     "overlay_index": null,
     "base_mission_id": 495,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["water_rescue", "airport"]
   },
   {
     "id": "496",
@@ -16769,7 +16763,7 @@
   },
   {
     "id": "516",
-    "name": "Inundações num parque de campismo",
+    "name": "Parque de campismo inundado",
     "place": "",
     "place_array": [],
     "average_credits": 7500,
@@ -16805,7 +16799,7 @@
   },
   {
     "id": "517",
-    "name": "Túnel subaquático inundado (pequeno)",
+    "name": "Pequena inundação num túnel",
     "place": "Túnel",
     "place_array": ["Túnel"],
     "average_credits": 4470,
@@ -16835,7 +16829,7 @@
   },
   {
     "id": "518",
-    "name": "Túnel subaquático inundado (médio)",
+    "name": "Inundação num túnel",
     "place": "Túnel",
     "place_array": ["Túnel"],
     "average_credits": 6300,
@@ -16871,7 +16865,7 @@
   },
   {
     "id": "519",
-    "name": "Túnel subaquático inundado (grande)",
+    "name": "Grande Inundação num túnel",
     "place": "Túnel",
     "place_array": ["Túnel"],
     "average_credits": 8300,
@@ -16911,7 +16905,7 @@
   },
   {
     "id": "520",
-    "name": "Túnel subaquático inundado (Major)",
+    "name": "Inundação de grandes dimensões num túnel",
     "place": "Túnel",
     "place_array": ["Túnel"],
     "average_credits": 9300,
@@ -16989,7 +16983,7 @@
   },
   {
     "id": "522",
-    "name": "Várias caves debaixo de água",
+    "name": "Várias caves inundadas",
     "place": "",
     "place_array": [],
     "average_credits": 1260,
@@ -17220,7 +17214,7 @@
       "police_cars": 2,
       "foam": 1
     },
-    "chances": { "patient_transport": 0 },
+    "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
