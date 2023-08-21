@@ -15539,5 +15539,46 @@
     "base_mission_id": 476,
     "additive_overlays": "",
     "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "477",
+    "name": "별채에서 발생한 화재",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 100,
+      "firetrucks": 4,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "police_cars": 2,
+      "foam": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
