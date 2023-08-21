@@ -42992,5 +42992,35 @@
     "base_mission_id": 886,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "887",
+    "name": "Sailing ship adrift",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6550,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 6, "large_coastal_boat": 3 },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": ["72-B-2", "73-D-5"],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 23, "coastal_rescue_count": 6 },
+    "overlay_index": null,
+    "base_mission_id": 887,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
