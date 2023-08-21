@@ -17276,5 +17276,38 @@
     "base_mission_id": 529,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "530",
+    "name": "Veleiro à deriva",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10250,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 6,
+      "large_coastal_boat": 3,
+      "coastal_guard_boat": 1
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [25],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": { "main_building": 25, "coastal_rescue_count": 6 },
+    "overlay_index": null,
+    "base_mission_id": 530,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
