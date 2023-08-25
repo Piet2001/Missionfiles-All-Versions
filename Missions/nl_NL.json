@@ -36050,6 +36050,414 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "963",
+    "name": "Grote alcoholcontrole bij race-evenement",
+    "place": "Snelweg oprit / afrit\nTankstation\nVerzorgingsplaats (Snelweg)\nCircuit",
+    "place_array": [
+      "Snelweg oprit / afrit",
+      "Tankstation",
+      "Verzorgingsplaats (Snelweg)",
+      "Circuit"
+    ],
+    "average_credits": 12390,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 4,
+      "gefkw": 2,
+      "police_cars": 14,
+      "ovdp": 1,
+      "bike_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 16,
+      "bereitschaftspolizei": 6,
+      "prisoner_transport_count": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 963,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "964",
+    "name": "Racewagen brand",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 964,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "965",
+    "name": "Crash op Circuit",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 2090,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "nef": 55, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 965,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "966",
+    "name": "Aanhouding persoon zonder geldig toegangsbewijs",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 775,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 1, "bike_police": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 966,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "967",
+    "name": "Persoon van tribune gevallen",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 967,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "968",
+    "name": "Uit de handgelopen overwinningsfeest",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 7740,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 1,
+      "lebefkw": 1,
+      "gefkw": 1,
+      "police_cars": 8,
+      "grukw": 4,
+      "ovdp": 1,
+      "police_horse": 4,
+      "detention_unit": 1
+    },
+    "chances": { "patient_transport": 0, "police_horse": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 6,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 8,
+      "police_stations": 9,
+      "bereitschaftspolizei": 5,
+      "riot_unit_count": 2,
+      "detention_unit_count": 1,
+      "prisoner_transport_count": 1,
+      "police_horse": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "969",
+    "name": "Illegale raceauto op snelweg",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 4330,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 1,
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "ovdp": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 969,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "970",
+    "name": "Racistisch gezang van fans op de tribune",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 970,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "971",
+    "name": "Protest voor racecircuit",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 2530,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "hondengeleider": 1, "police_cars": 5 },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 1,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 971,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "971-0",
+    "name": "Protest voor racecircuit",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": 5230,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "hondengeleider": 1,
+      "lebefkw": 1,
+      "police_cars": 10,
+      "grukw": 3,
+      "police_horse": 2
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "bereitschaftspolizei": 3,
+      "riot_unit_count": 1,
+      "police_horse": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 971,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "972",
+    "name": "Racewinnaar viel van het podium",
+    "place": "Circuit",
+    "place_array": ["Circuit"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 972,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "973",
     "name": "Uit de handgelopen overwinningsfeest",
     "place": "Stadion",
@@ -39174,5 +39582,121 @@
     "base_mission_id": 1047,
     "additive_overlays": "",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1048",
+    "name": "Geluidsoverlast door Racefans",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1048,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1049",
+    "name": "Racefans houden straatrace",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2640,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_helicopters": 1, "police_cars": 3, "ovdp": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1049,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1050",
+    "name": "Vergiftiging door uitlaatgassen",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1050,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1051",
+    "name": "Valse kaartjes race in verkoop",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-08-25T09:00:00Z",
+      "date_end": "2023-08-27T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 1051,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
