@@ -20522,6 +20522,48 @@
     "mission_categories": ["fire", "airport"]
   },
   {
+    "id": "614",
+    "name": "Emergency Landing Medical",
+    "place": "Small Airport (Runway)\nLarge Airport (Runway)",
+    "place_array": ["Small Airport (Runway)", "Large Airport (Runway)"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 2,
+      "arff": 1,
+      "rettungstreppe": 1
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 50,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "airport": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 614,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "airport", "forestry"]
+  },
+  {
     "id": "615",
     "name": "Flood Evacuation (Minor)",
     "place": "River",
