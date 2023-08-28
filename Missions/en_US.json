@@ -43022,5 +43022,49 @@
     "base_mission_id": 887,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "888",
+    "name": "Mass crushing at a festival",
+    "place": "Festival",
+    "place_array": ["Festival"],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "swat_armored_vehicle": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "police_cars": 6,
+      "riot_police": 2
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 100,
+      "max_possible_prisoners": 25,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["135-D-1", "113-D-1", "113-D-2"],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 50,
+      "police_stations": 15,
+      "riot_police": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 888,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
