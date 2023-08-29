@@ -7467,7 +7467,10 @@
     ],
     "requirements": { "police_cars": 3 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 249,
@@ -7488,7 +7491,10 @@
     ],
     "requirements": { "police_helicopters": 1, "police_cars": 3 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": {
       "main_building": 5,
       "police_stations": 3,
@@ -7518,7 +7524,10 @@
       "ovdp": 1
     },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": {
       "main_building": 5,
       "police_stations": 6,
@@ -39539,7 +39548,7 @@
     "name": "Demonstranten vastgelijmd aan snelweg",
     "place": "Snelweg oprit / afrit",
     "place_array": ["Snelweg oprit / afrit"],
-    "average_credits": 11730,
+    "average_credits": 13230,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
@@ -39555,7 +39564,8 @@
       "police_cars": 20,
       "grukw": 3,
       "ovdp": 2,
-      "wasserwerfer": 1
+      "wasserwerfer": 1,
+      "traffic_unit": 2
     },
     "chances": { "patient_transport": 15 },
     "additional": {
@@ -39576,6 +39586,7 @@
       "prisoner_transport_count": 1,
       "water_cannon": 1,
       "hondengeleider": 1,
+      "technical_aid": 3,
       "fire_stations": 4
     },
     "overlay_index": null,
@@ -39837,7 +39848,7 @@
       "ovdp": 2,
       "bike_police": 2
     },
-    "chances": { "nef": 15, "patient_transport": 65 },
+    "chances": { "nef": 5, "patient_transport": 40 },
     "additional": {
       "possible_patient": 50,
       "possible_patient_min": 25,
@@ -39898,7 +39909,7 @@
       "bike_police": 2,
       "foam": 1
     },
-    "chances": { "nef": 15, "patient_transport": 40 },
+    "chances": { "nef": 3, "patient_transport": 20 },
     "additional": {
       "possible_patient": 100,
       "possible_patient_min": 25,
@@ -39965,8 +39976,8 @@
     "chances": {
       "platform_trucks": 65,
       "water_tankers": 60,
-      "nef": 15,
-      "patient_transport": 40
+      "nef": 2,
+      "patient_transport": 10
     },
     "additional": {
       "possible_patient": 200,
