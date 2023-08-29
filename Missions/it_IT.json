@@ -8220,14 +8220,12 @@
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 3,
-      "water_tankers": 2,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
       "battalion_chief_vehicles": 30,
-      "water_tankers": 20,
       "hazmat_vehicles": 20,
       "patient_transport": 30
     },
@@ -14563,10 +14561,10 @@
     "requirements": {
       "water_needed": 19000,
       "brush_truck": 8,
-      "fire_aviation": 1,
+      "fire_aviation": 2,
       "mobile_command_vehicles": 1,
       "elw3": 1,
-      "water_tankers": 2,
+      "water_tankers": 1,
       "police_cars": 4
     },
     "chances": {},
@@ -14579,7 +14577,7 @@
       "main_building": 0,
       "police_stations": 4,
       "brush_extension": 4,
-      "fire_aviation_count": 1,
+      "fire_aviation_count": 2,
       "fire_stations": 16
     },
     "overlay_index": null,
@@ -20531,7 +20529,6 @@
     "requirements": {
       "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "water_tankers": 1,
       "police_cars": 3
     },
     "chances": {},
@@ -21848,7 +21845,7 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "police_cars": 2
     },
@@ -22653,151 +22650,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "626",
-    "name": "Incendio nell'acquario",
-    "place": "Acquario",
-    "place_array": ["Acquario"],
-    "average_credits": 16000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "water_needed": 55000,
-      "firetrucks": 8,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 2,
-      "mobile_air_vehicles": 1,
-      "police_cars": 8,
-      "pump": 2
-    },
-    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
-    "additional": {
-      "possible_patient": 6,
-      "possible_patient_min": 3,
-      "expansion_missions_ids": [627],
-      "patient_it_code_possible": ["PC20R", "PC20G", "PC20V"],
-      "filter_id": "firehouse_missions",
-      "possible_patient_specializations": [
-        "Medicina interna generale",
-        "Medicina interna generale",
-        "Medicina interna generale"
-      ],
-      "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Medicina interna generale"],
-      "patient_specializations": "Medicina interna generale"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 10,
-      "fire_support_count": 2,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 626,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization"]
-  },
-  {
-    "id": "627",
-    "name": "Esplosione in un parco acquari",
-    "place": "Acquario",
-    "place_array": ["Acquario"],
-    "average_credits": 24000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 10,
-      "mobile_command_vehicles": 2,
-      "platform_trucks": 2,
-      "water_tankers": 2,
-      "mobile_air_vehicles": 2,
-      "police_cars": 10,
-      "k9": 2,
-      "pump": 2
-    },
-    "chances": {
-      "patient_transport": 0,
-      "helicopter": 30,
-      "patient_critical_care": 30
-    },
-    "additional": {
-      "possible_patient": 20,
-      "possible_patient_min": 10,
-      "patient_it_code_possible": ["PC20R", "PC20G", "PC20V"],
-      "filter_id": "firehouse_missions",
-      "possible_patient_specializations": [
-        "Medicina interna generale",
-        "Medicina interna generale",
-        "Medicina interna generale"
-      ],
-      "subsequent_missions_ids": [628],
-      "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Medicina interna generale"],
-      "patient_specializations": "Medicina interna generale"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 6,
-      "police_stations": 5,
-      "fire_support_count": 2,
-      "fire_stations": 15
-    },
-    "overlay_index": null,
-    "base_mission_id": 627,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization"]
-  },
-  {
-    "id": "628",
-    "name": "Perdita da un acquario",
-    "place": "Acquario",
-    "place_array": ["Acquario"],
-    "average_credits": 16550,
-    "generated_by": "",
-    "icons": [
-      "/images/flood_gruen.png",
-      "/images/flood_gelb.png",
-      "/images/flood_rot.png"
-    ],
-    "requirements": {
-      "firetrucks": 7,
-      "battalion_chief_vehicles": 5,
-      "mobile_command_vehicles": 1,
-      "police_cars": 4,
-      "pump": 3,
-      "min_pump_speed": 1500
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "subsequent_mission_only": true,
-      "pump_water_amount": 140000
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 6,
-      "fire_support_count": 3,
-      "water_damage_pump_count": 1,
-      "fire_stations": 19
-    },
-    "overlay_index": null,
-    "base_mission_id": 628,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "629",
     "name": "Fuoco in cella",
     "place": "prigione",
@@ -22812,10 +22664,10 @@
     "requirements": {
       "water_needed": 8000,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2
+      "police_cars": 4
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
     "additional": {
@@ -22837,7 +22689,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "police_stations": 2,
+      "police_stations": 6,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -22957,7 +22809,6 @@
       "foam_needed": 100,
       "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "water_tankers": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 25 },
