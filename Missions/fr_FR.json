@@ -2386,7 +2386,6 @@
     ],
     "requirements": {
       "firetrucks": 4,
-      "ambulances": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
@@ -3019,7 +3018,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "ambulances": 1, "thw_gkw": 1 },
+    "requirements": { "firetrucks": 1, "thw_gkw": 1 },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 1,
@@ -3052,7 +3051,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "ambulances": 1, "police_cars": 1, "thw_gkw": 1 },
+    "requirements": { "police_cars": 1, "thw_gkw": 1 },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
@@ -5673,7 +5672,6 @@
     ],
     "requirements": {
       "firetrucks": 3,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
       "police_cars": 1
     },
@@ -6408,7 +6406,6 @@
     "requirements": {
       "water_needed": 4500,
       "firetrucks": 2,
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
       "police_cars": 2
     },
@@ -7537,11 +7534,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 1,
-      "ambulances": 1,
-      "battalion_chief_vehicles": 1
-    },
+    "requirements": { "firetrucks": 1, "battalion_chief_vehicles": 1 },
     "chances": { "patient_transport": 30, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 1,
@@ -7575,11 +7568,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "firetrucks": 1,
-      "ambulances": 1,
-      "battalion_chief_vehicles": 1
-    },
+    "requirements": { "firetrucks": 1, "battalion_chief_vehicles": 1 },
     "chances": { "patient_transport": 30, "patient_critical_care": 40 },
     "additional": {
       "possible_patient": 1,
@@ -8947,6 +8936,7 @@
     "additional": {
       "followup_missions_ids": [264, 265, 266],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [578, 581],
       "vehicle_groups": ["fire_aviation", "default"]
     },
     "prerequisites": {
@@ -8987,6 +8977,7 @@
     "additional": {
       "followup_missions_ids": [264, 265, 266],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [578, 581],
       "vehicle_groups": ["fire_aviation", "default"]
     },
     "prerequisites": {
@@ -13017,7 +13008,6 @@
     ],
     "requirements": {
       "firetrucks": 6,
-      "ambulances": 2,
       "battalion_chief_vehicles": 7,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
@@ -13061,7 +13051,6 @@
     ],
     "requirements": {
       "firetrucks": 6,
-      "ambulances": 2,
       "battalion_chief_vehicles": 7,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
@@ -15952,7 +15941,6 @@
     ],
     "requirements": {
       "firetrucks": 8,
-      "ambulances": 5,
       "battalion_chief_vehicles": 2,
       "water_tankers": 2,
       "hazmat_vehicles": 2,
@@ -16357,7 +16345,6 @@
     ],
     "requirements": {
       "firetrucks": 1,
-      "ambulances": 8,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
       "police_cars": 1,
@@ -16625,7 +16612,6 @@
     ],
     "requirements": {
       "firetrucks": 14,
-      "ambulances": 10,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
@@ -16669,7 +16655,6 @@
     ],
     "requirements": {
       "firetrucks": 14,
-      "ambulances": 10,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
       "platform_trucks": 2,
@@ -17872,7 +17857,6 @@
       "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "height_rescue_units": 2,
       "thw_gkw": 1
     },
     "chances": {},
@@ -20725,7 +20709,6 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [263],
       "vehicle_groups": ["fire_aviation", "default"]
     },
     "prerequisites": {
@@ -20845,7 +20828,6 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [263],
       "vehicle_groups": ["fire_aviation", "default"]
     },
     "prerequisites": {
@@ -21326,7 +21308,8 @@
     },
     "chances": { "patient_transport": 20 },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient": 20,
+      "possible_patient_min": 1,
       "expansion_missions_ids": [593],
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
@@ -21421,7 +21404,7 @@
       "foam": 2
     },
     "chances": {
-      "patient_transport": 0,
+      "patient_transport": 50,
       "helicopter": 30,
       "patient_critical_care": 30
     },
