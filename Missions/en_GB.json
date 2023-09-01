@@ -26502,5 +26502,46 @@
     "base_mission_id": 622,
     "additive_overlays": "",
     "mission_categories": ["police", "riot_police_specialization"]
+  },
+  {
+    "id": "625",
+    "name": "Gain entry - houseboat (concern for welfare)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 2,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "coastal_boat": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 625,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
