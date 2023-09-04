@@ -22837,5 +22837,51 @@
     "base_mission_id": 632,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "633",
+    "name": "Principio d'Incendio nella Scuola",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1000,
+      "firetrucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["QC20R", "QC20G", "QC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "fire_alarm_system_possible": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 633,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
