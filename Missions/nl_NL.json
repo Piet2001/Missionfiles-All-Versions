@@ -40011,5 +40011,46 @@
     "base_mission_id": 1052,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1053",
+    "name": "Zuurstofgebrek aan boord schip",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4480,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 2,
+      "coastal_helicopter": 1,
+      "coastal_guard_boat": 1
+    },
+    "chances": { "nef": 5, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Cardiochirurgie"],
+      "patient_specializations": "Cardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 10,
+      "coastal_rescue_count": 1,
+      "coastal_rescue_small_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1053,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
