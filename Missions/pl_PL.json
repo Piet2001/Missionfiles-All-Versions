@@ -712,13 +712,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12000,
+      "water_needed": 20000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1
+      "heavy_rescue_vehicles": 1
     },
-    "chances": { "water_tankers": 30 },
+    "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
@@ -1044,11 +1043,7 @@
       "hazmat_vehicles": 1,
       "police_cars": 2
     },
-    "chances": {
-      "water_tankers": 40,
-      "patient_transport": 50,
-      "patient_critical_care": 10
-    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
@@ -1093,11 +1088,7 @@
       "police_cars": 2,
       "foam": 1
     },
-    "chances": {
-      "water_tankers": 40,
-      "patient_transport": 50,
-      "patient_critical_care": 10
-    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
@@ -1646,7 +1637,7 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "water_needed": 2700,
+      "water_needed": 35000,
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1
     },
@@ -1682,7 +1673,7 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "water_needed": 2700,
+      "water_needed": 35000,
       "firetrucks": 2,
       "heavy_rescue_vehicles": 1,
       "traffic_car": 2,
@@ -1836,7 +1827,6 @@
       "fwk": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
       "hazmat_vehicles": 1
     },
     "chances": {
@@ -1949,7 +1939,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "water_needed": 120000,
+      "water_needed": 160000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -1982,7 +1972,7 @@
     ],
     "requirements": {
       "foam_needed": 10000,
-      "water_needed": 120000,
+      "water_needed": 160000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
@@ -2000,6 +1990,229 @@
     "overlay_index": null,
     "base_mission_id": 74,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/b",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20680,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "fire_aviation": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_aviation_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/c",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19680,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 2,
+      "hose": 2
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "helicopter_bucket": 2 },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/ab",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21880,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 10000,
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "fire_aviation": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "foam": 4
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_aviation_count": 2,
+      "fire_support_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/ac",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20880,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 10000,
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 2,
+      "hose": 2,
+      "foam": 4
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 3,
+      "helicopter_bucket": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/bc",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21680,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "fire_aviation": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 2,
+      "hose": 2
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_aviation_count": 2,
+      "helicopter_bucket": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "74/abc",
+    "name": "Duży pożar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22880,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 10000,
+      "water_needed": 160000,
+      "firetrucks": 14,
+      "fire_aviation": 2,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 2,
+      "hose": 2,
+      "foam": 4
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_aviation_count": 2,
+      "fire_support_count": 3,
+      "helicopter_bucket": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 74,
+    "additive_overlays": "abc",
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
@@ -2882,12 +3095,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 14000,
+      "water_needed": 22000,
       "firetrucks": 3,
-      "water_tankers": 1,
       "police_cars": 1
     },
-    "chances": { "water_tankers": 10 },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
@@ -2912,13 +3124,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 9200,
+      "water_needed": 26500,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "water_tankers": 1,
       "police_cars": 1
     },
-    "chances": { "water_tankers": 20 },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
@@ -3734,7 +3945,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3765,7 +3976,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3801,7 +4012,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3832,7 +4043,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3868,7 +4079,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3899,7 +4110,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 60000,
+      "water_needed": 70000,
       "firetrucks": 12,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
@@ -3980,7 +4191,7 @@
     ],
     "requirements": {
       "foam_needed": 2000,
-      "water_needed": 45000,
+      "water_needed": 55000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4026,7 +4237,7 @@
     ],
     "requirements": {
       "foam_needed": 2000,
-      "water_needed": 45000,
+      "water_needed": 55000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -4184,12 +4395,13 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
+      "height_rescue": 1,
       "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 131,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["height_rescue"]
   },
   {
     "id": "132",
@@ -4400,7 +4612,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 35000,
+      "water_needed": 50000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1
@@ -5825,7 +6037,7 @@
     ],
     "requirements": {
       "foam_needed": 6000,
-      "water_needed": 70000,
+      "water_needed": 110000,
       "firetrucks": 17,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -5833,7 +6045,7 @@
       "hazmat_vehicles": 1,
       "hose": 1
     },
-    "chances": { "water_tankers": 90, "hazmat_vehicles": 20 },
+    "chances": { "hazmat_vehicles": 20 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
@@ -5859,7 +6071,7 @@
     ],
     "requirements": {
       "foam_needed": 6000,
-      "water_needed": 70000,
+      "water_needed": 110000,
       "firetrucks": 17,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
@@ -5868,7 +6080,7 @@
       "hose": 1,
       "foam": 2
     },
-    "chances": { "water_tankers": 90, "hazmat_vehicles": 20 },
+    "chances": { "hazmat_vehicles": 20 },
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
@@ -6432,7 +6644,7 @@
     ],
     "requirements": {
       "foam_needed": 3500,
-      "water_needed": 50000,
+      "water_needed": 60000,
       "firetrucks": 7,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
@@ -7848,11 +8060,19 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 14 },
+    "prerequisites": {
+      "main_building": 0,
+      "height_rescue": 1,
+      "fire_stations": 14
+    },
     "overlay_index": null,
     "base_mission_id": 237,
     "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "height_rescue"
+    ]
   },
   {
     "id": "237/a",
@@ -7880,12 +8100,17 @@
     "prerequisites": {
       "main_building": 0,
       "fire_support_count": 1,
+      "height_rescue": 1,
       "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 237,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "height_rescue"
+    ]
   },
   {
     "id": "238",
@@ -7910,18 +8135,22 @@
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 19 },
+    "prerequisites": {
+      "main_building": 0,
+      "height_rescue": 1,
+      "fire_stations": 19
+    },
     "overlay_index": null,
     "base_mission_id": 238,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["height_rescue"]
   },
   {
     "id": "239",
     "name": "Pożar komina hutniczego",
     "place": "",
     "place_array": [],
-    "average_credits": 2500,
+    "average_credits": 2800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -7936,15 +8165,20 @@
       "platform_trucks": 2,
       "heavy_rescue_vehicles": 2,
       "water_tankers": 1,
-      "mobile_air_vehicles": 1
+      "mobile_air_vehicles": 1,
+      "height_rescue_units": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 16 },
+    "prerequisites": {
+      "main_building": 0,
+      "height_rescue": 1,
+      "fire_stations": 16
+    },
     "overlay_index": null,
     "base_mission_id": 239,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["height_rescue"]
   },
   {
     "id": "240",
@@ -7989,12 +8223,17 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 5,
+      "height_rescue": 2,
       "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 240,
     "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "height_rescue"
+    ]
   },
   {
     "id": "240/a",
@@ -8041,12 +8280,17 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "fire_support_count": 2,
+      "height_rescue": 2,
       "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 240,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "height_rescue"
+    ]
   },
   {
     "id": "241",
@@ -8177,7 +8421,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 20000,
+      "water_needed": 40000,
       "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
@@ -9056,7 +9300,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 2500,
+      "foam_needed": 2000,
       "water_needed": 38000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
@@ -9084,7 +9328,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 2500,
+      "foam_needed": 2000,
       "water_needed": 38000,
       "firetrucks": 3,
       "battalion_chief_vehicles": 1,
@@ -11332,7 +11576,7 @@
     ],
     "requirements": {
       "foam_needed": 10000,
-      "water_needed": 130000,
+      "water_needed": 160000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -11373,7 +11617,7 @@
     ],
     "requirements": {
       "foam_needed": 10000,
-      "water_needed": 130000,
+      "water_needed": 160000,
       "firetrucks": 14,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
@@ -11462,7 +11706,7 @@
     ],
     "requirements": {
       "foam_needed": 12000,
-      "water_needed": 180000,
+      "water_needed": 210000,
       "firetrucks": 25,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -11508,7 +11752,7 @@
     ],
     "requirements": {
       "foam_needed": 12000,
-      "water_needed": 180000,
+      "water_needed": 210000,
       "firetrucks": 25,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
@@ -11556,7 +11800,7 @@
     ],
     "requirements": {
       "foam_needed": 20000,
-      "water_needed": 300000,
+      "water_needed": 400000,
       "firetrucks": 160,
       "battalion_chief_vehicles": 25,
       "mobile_command_vehicles": 5,
@@ -11579,6 +11823,122 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "351/a",
+    "name": "Rozległy pożar lasu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 44000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 20000,
+      "water_needed": 400000,
+      "firetrucks": 160,
+      "fire_aviation": 4,
+      "battalion_chief_vehicles": 25,
+      "mobile_command_vehicles": 5,
+      "water_tankers": 28,
+      "mobile_air_vehicles": 5,
+      "police_cars": 20,
+      "hose": 10,
+      "foam": 12
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": { "main_building": 0, "fire_aviation_count": 4 },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "351/b",
+    "name": "Rozległy pożar lasu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 43000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 20000,
+      "water_needed": 400000,
+      "firetrucks": 160,
+      "battalion_chief_vehicles": 25,
+      "mobile_command_vehicles": 5,
+      "water_tankers": 28,
+      "mobile_air_vehicles": 5,
+      "police_cars": 20,
+      "helicopter_bucket": 6,
+      "hose": 10,
+      "foam": 12
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": { "main_building": 0, "helicopter_bucket": 6 },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "351/ab",
+    "name": "Rozległy pożar lasu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 47000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "foam_needed": 20000,
+      "water_needed": 400000,
+      "firetrucks": 160,
+      "fire_aviation": 4,
+      "battalion_chief_vehicles": 25,
+      "mobile_command_vehicles": 5,
+      "water_tankers": 28,
+      "mobile_air_vehicles": 5,
+      "police_cars": 20,
+      "helicopter_bucket": 6,
+      "hose": 10,
+      "foam": 12
+    },
+    "chances": {},
+    "additional": {
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_aviation_count": 4,
+      "helicopter_bucket": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 351,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "352",
     "name": "Wybuch zbiorników chemicznych",
     "place": "Duży zbiornik na substancje chemiczne",
@@ -11592,7 +11952,7 @@
     ],
     "requirements": {
       "foam_needed": 17500,
-      "water_needed": 280000,
+      "water_needed": 300000,
       "firetrucks": 40,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
@@ -11639,7 +11999,7 @@
     ],
     "requirements": {
       "foam_needed": 17500,
-      "water_needed": 280000,
+      "water_needed": 300000,
       "firetrucks": 40,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
@@ -13533,7 +13893,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 54000,
+      "water_needed": 80000,
       "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
@@ -14215,6 +14575,44 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "430/a",
+    "name": "Rozległy pożar zboża na pniu",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 22500,
+    "generated_by": "",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 180000,
+      "firetrucks": 30,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_aviation_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "431",
     "name": "Rozległy pożar pola",
     "place": "Gospodarstwo rolne",
@@ -14249,6 +14647,42 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "431/a",
+    "name": "Rozległy pożar pola",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 100000,
+      "firetrucks": 18,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 4,
+      "water_tankers": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_aviation_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "432",
     "name": "Duży pożar zboża na pniu",
     "place": "Gospodarstwo rolne",
@@ -14275,6 +14709,40 @@
     "overlay_index": null,
     "base_mission_id": 432,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "432/a",
+    "name": "Duży pożar zboża na pniu",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 86000,
+      "firetrucks": 15,
+      "fire_aviation": 1,
+      "battalion_chief_vehicles": 3,
+      "water_tankers": 1
+    },
+    "chances": { "water_tankers": 55 },
+    "additional": {
+      "expansion_missions_ids": [430],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_aviation_count": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 432,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -15906,14 +16374,9 @@
     "requirements": {
       "firetrucks": 8,
       "battalion_chief_vehicles": 3,
-      "platform_trucks": 2,
-      "height_rescue_units": 1
+      "platform_trucks": 2
     },
-    "chances": {
-      "patient_transport": 65,
-      "height_rescue_units": 25,
-      "patient_critical_care": 10
-    },
+    "chances": { "patient_transport": 65, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 4,
@@ -15930,7 +16393,45 @@
     "overlay_index": null,
     "base_mission_id": 474,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "height_rescue"]
+  },
+  {
+    "id": "474/a",
+    "name": "Pożar hotelu",
+    "place": "Hotel",
+    "place_array": ["Hotel"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "height_rescue_units": 1
+    },
+    "chances": { "patient_transport": 65, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "height_rescue": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "height_rescue"]
   },
   {
     "id": "475",
@@ -16465,12 +16966,13 @@
     "prerequisites": {
       "main_building": 2,
       "rescue_stations": 4,
+      "height_rescue": 1,
       "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 488,
     "additive_overlays": "",
-    "mission_categories": ["ambulance"]
+    "mission_categories": ["height_rescue"]
   },
   {
     "id": "489",
@@ -17455,10 +17957,9 @@
     "requirements": {
       "firetrucks": 7,
       "battalion_chief_vehicles": 2,
-      "platform_trucks": 2,
-      "height_rescue_units": 1
+      "platform_trucks": 2
     },
-    "chances": { "height_rescue_units": 80 },
+    "chances": {},
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
@@ -17467,7 +17968,40 @@
     "overlay_index": null,
     "base_mission_id": 517,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["height_rescue"]
+  },
+  {
+    "id": "517/a",
+    "name": "Pożar katedry",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 7,
+      "battalion_chief_vehicles": 2,
+      "platform_trucks": 2,
+      "height_rescue_units": 1
+    },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "height_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 517,
+    "additive_overlays": "a",
+    "mission_categories": ["height_rescue"]
   },
   {
     "id": "518",
@@ -19094,6 +19628,44 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "569/a",
+    "name": "Duży pożar lasu",
+    "place": "Las",
+    "place_array": ["Las"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 200000,
+      "firetrucks": 28,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
+      "police_cars": 2,
+      "helicopter_bucket": 1,
+      "hose": 1
+    },
+    "chances": { "hose": 15 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "helicopter_bucket": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 569,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "570",
     "name": "Małe ekstremistyczne zamieszki",
     "place": "",
@@ -20392,7 +20964,6 @@
       "firetrucks": 5,
       "battalion_chief_vehicles": 3,
       "heavy_rescue_vehicles": 3,
-      "height_rescue_units": 1,
       "police_cars": 2,
       "rescue_dog_units": 4,
       "personnel_educations": { "search_and_rescue": 8 },
@@ -20400,7 +20971,6 @@
     },
     "chances": {
       "patient_transport": 75,
-      "height_rescue_units": 40,
       "helicopter": 5,
       "patient_critical_care": 20
     },
@@ -20424,7 +20994,57 @@
     "overlay_index": null,
     "base_mission_id": 605,
     "additive_overlays": "",
-    "mission_categories": ["search_and_rescue"]
+    "mission_categories": ["search_and_rescue", "height_rescue"]
+  },
+  {
+    "id": "605/a",
+    "name": "Zawalony dach budynku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 5,
+      "battalion_chief_vehicles": 3,
+      "heavy_rescue_vehicles": 3,
+      "height_rescue_units": 1,
+      "police_cars": 2,
+      "rescue_dog_units": 4,
+      "personnel_educations": { "search_and_rescue": 8 },
+      "search_and_rescue": 1
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 5,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "search_and_rescue": 1,
+      "height_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 605,
+    "additive_overlays": "a",
+    "mission_categories": ["search_and_rescue", "height_rescue"]
   },
   {
     "id": "606",
@@ -20549,7 +21169,6 @@
       "mobile_command_vehicles": 1,
       "platform_trucks": 3,
       "heavy_rescue_vehicles": 7,
-      "height_rescue_units": 2,
       "police_cars": 9,
       "k9": 1,
       "rescue_dog_units": 10,
@@ -20582,7 +21201,62 @@
     "overlay_index": null,
     "base_mission_id": 608,
     "additive_overlays": "",
-    "mission_categories": ["search_and_rescue"]
+    "mission_categories": ["search_and_rescue", "height_rescue"]
+  },
+  {
+    "id": "608/a",
+    "name": "Zawalona kamienica",
+    "place": "",
+    "place_array": [],
+    "average_credits": 38600,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 18,
+      "fwk": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "platform_trucks": 3,
+      "heavy_rescue_vehicles": 7,
+      "height_rescue_units": 2,
+      "police_cars": 9,
+      "k9": 1,
+      "rescue_dog_units": 10,
+      "personnel_educations": { "search_and_rescue": 25 },
+      "search_and_rescue": 4
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 45,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 24,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 25 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 4,
+      "personnel_educations": { "search_and_rescue": 50 },
+      "search_and_rescue": 3,
+      "height_rescue": 1,
+      "fire_stations": 35
+    },
+    "overlay_index": null,
+    "base_mission_id": 608,
+    "additive_overlays": "a",
+    "mission_categories": ["search_and_rescue", "height_rescue"]
   },
   {
     "id": "609",
@@ -20590,6 +21264,56 @@
     "place": "",
     "place_array": [],
     "average_credits": 10200,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 8,
+      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "platform_trucks": 2,
+      "heavy_rescue_vehicles": 2,
+      "police_cars": 1,
+      "personnel_educations": { "search_and_rescue": 14 },
+      "search_and_rescue": 2
+    },
+    "chances": {
+      "fwk": 80,
+      "patient_transport": 70,
+      "helicopter": 5,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "personnel_educations": { "search_and_rescue": 30 },
+      "search_and_rescue": 1,
+      "fire_stations": 17
+    },
+    "overlay_index": null,
+    "base_mission_id": 609,
+    "additive_overlays": "",
+    "mission_categories": ["search_and_rescue", "height_rescue"]
+  },
+  {
+    "id": "609/a",
+    "name": "Zawalenie się wieży kościoła",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10500,
     "generated_by": "",
     "icons": [
       "/images/constructioncrane_gruen.png",
@@ -20628,12 +21352,13 @@
       "police_stations": 2,
       "personnel_educations": { "search_and_rescue": 30 },
       "search_and_rescue": 1,
+      "height_rescue": 1,
       "fire_stations": 17
     },
     "overlay_index": null,
     "base_mission_id": 609,
-    "additive_overlays": "",
-    "mission_categories": ["search_and_rescue"]
+    "additive_overlays": "a",
+    "mission_categories": ["search_and_rescue", "height_rescue"]
   },
   {
     "id": "610",
@@ -21192,7 +21917,7 @@
     ],
     "requirements": {
       "foam_needed": 8000,
-      "water_needed": 30000,
+      "water_needed": 50000,
       "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "water_tankers": 1
@@ -22698,5 +23423,127 @@
     "base_mission_id": 671,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "677",
+    "name": "Awaria w stacji zasilania",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": { "energy_supply": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "energy_supply": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 677,
+    "additive_overlays": "",
+    "mission_categories": ["energy_supply"]
+  },
+  {
+    "id": "678",
+    "name": "Przerwa w dostawie prądu w szpitalu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": { "energy_supply": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "energy_supply": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 678,
+    "additive_overlays": "",
+    "mission_categories": ["energy_supply"]
+  },
+  {
+    "id": "679",
+    "name": "Festiwal",
+    "place": "Teren wystawowy",
+    "place_array": ["Teren wystawowy"],
+    "average_credits": 35200,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "ambulances": 2, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "8 godzin",
+      "duration": 28800,
+      "average_min_fire_personnel": 18,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 679,
+    "additive_overlays": "",
+    "mission_categories": ["energy_supply"]
+  },
+  {
+    "id": "679/a",
+    "name": "Festiwal",
+    "place": "Teren wystawowy",
+    "place_array": ["Teren wystawowy"],
+    "average_credits": 41600,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "ambulances": 2,
+      "police_cars": 1,
+      "energy_supply": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "8 godzin",
+      "duration": 28800,
+      "average_min_fire_personnel": 18,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "energy_supply": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 679,
+    "additive_overlays": "a",
+    "mission_categories": ["energy_supply"]
   }
 ]
