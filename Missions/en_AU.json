@@ -21481,5 +21481,60 @@
     "base_mission_id": 636,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "637",
+    "name": "Light Aircraft Break In",
+    "place": "Small Airport (Runway)",
+    "place_array": ["Small Airport (Runway)"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [638],
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 637,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "638",
+    "name": "Light Aircraft Break In (Multiple)",
+    "place": "Small Airport (Runway)",
+    "place_array": ["Small Airport (Runway)"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 6, "police_service_group_leader": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 638,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
