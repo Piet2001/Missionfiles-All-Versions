@@ -24018,6 +24018,7 @@
     ],
     "requirements": {
       "height_rescue_units": 2,
+      "coastal_helicopter": 1,
       "personnel_educations": { "gw_hoehenrettung": 10 }
     },
     "chances": { "patient_transport": 100 },
@@ -24122,7 +24123,7 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 2 },
+    "requirements": { "coastal_helicopter": 1, "large_coastal_boat": 2 },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 6,
@@ -24160,7 +24161,7 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 6 },
+    "requirements": { "coastal_helicopter": 3, "large_coastal_boat": 6 },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 18,
@@ -24378,8 +24379,12 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "coastal_helicopter": 50, "coastal_guard_boat": 1 },
-    "chances": { "patient_transport": 100, "patient_critical_care": 40 },
+    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "chances": {
+      "coastal_helicopter": 50,
+      "patient_transport": 100,
+      "patient_critical_care": 40
+    },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -25666,7 +25671,11 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 1, "coastal_guard_boat": 1 },
+    "requirements": {
+      "coastal_helicopter": 1,
+      "large_coastal_boat": 1,
+      "coastal_guard_boat": 1
+    },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 8,
@@ -25704,7 +25713,11 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_rescue": 2, "coastal_boat": 3 },
+    "requirements": {
+      "coastal_rescue": 2,
+      "coastal_helicopter": 1,
+      "coastal_boat": 3
+    },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 8,
@@ -25743,8 +25756,8 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_helicopter": 20, "coastal_guard_boat": 1 },
-    "chances": { "patient_transport": 85 },
+    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "chances": { "coastal_helicopter": 20, "patient_transport": 85 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
