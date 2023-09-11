@@ -23830,5 +23830,62 @@
     "base_mission_id": 644,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "645",
+    "name": "Émeute étudiante",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "police_helicopters": 1,
+      "police_cars": 15,
+      "wasserwerfer": 1,
+      "kdow_orgl": 1,
+      "detention_unit": 2,
+      "riot_police": 28,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_trailer": 1,
+      "riot_police_maintenance": 1
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 12,
+      "filter_id": "riot_police_missions",
+      "allow_streifenwagen_instead_of_riot_police_van": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 6,
+      "police_stations": 25,
+      "police_helicopter_stations": 2,
+      "bereitschaftspolizei": 5,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
