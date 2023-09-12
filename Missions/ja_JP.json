@@ -125,7 +125,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "platform_trucks": 1 },
+    "requirements": { "platform_trucks": 1, "firetrucks": 2 },
     "chances": {
       "platform_trucks": 30,
       "patient_transport": 50,
@@ -468,9 +468,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 7500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 3
     },
     "chances": {
       "battalion_chief_vehicles": 90,
@@ -503,9 +503,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -531,10 +531,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 7500,
-      "firetrucks": 3,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "water_needed": 7500,
+      "firetrucks": 3
     },
     "chances": { "battalion_chief_vehicles": 50 },
     "additional": { "filter_id": "firehouse_missions" },
@@ -627,9 +627,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 10000,
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -684,11 +684,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 13500,
-      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1
+      "water_needed": 13500,
+      "firetrucks": 3
     },
     "chances": { "water_tankers": 30 },
     "additional": {
@@ -714,10 +714,10 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": {},
@@ -769,9 +769,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "firetrucks": 1
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -815,12 +815,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 31000,
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 1
+      "water_needed": 31000,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
@@ -854,13 +854,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 31000,
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 3,
-      "heavy_rescue_vehicles": 2,
+      "battalion_chief_vehicles": 2,
       "water_tankers": 1,
-      "pump": 2
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 31000,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
@@ -1065,13 +1065,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
       "water_needed": 26000,
       "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "hazmat_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
@@ -1111,16 +1111,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 9200,
-      "water_needed": 26000,
-      "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
+      "battalion_chief_vehicles": 2,
+      "foam": 2,
       "hazmat_vehicles": 1,
-      "police_cars": 2,
-      "foam": 2
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 26000,
+      "foam_needed": 9200,
+      "firetrucks": 8,
+      "police_cars": 2
     },
     "chances": {
       "water_tankers": 40,
@@ -1558,7 +1558,7 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -1580,10 +1580,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12500,
-      "firetrucks": 5,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "water_needed": 12500,
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
@@ -1617,11 +1617,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12500,
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "pump": 1
+      "battalion_chief_vehicles": 1,
+      "pump": 1,
+      "water_needed": 12500,
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
@@ -1704,7 +1704,7 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 12,
@@ -1756,7 +1756,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "platform_trucks": 1 },
+    "requirements": { "platform_trucks": 1, "firetrucks": 2 },
     "chances": {
       "platform_trucks": 30,
       "patient_transport": 50,
@@ -1816,13 +1816,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6,
       "police_cars": 1
     },
     "chances": {
@@ -1862,15 +1862,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
       "water_tankers": 1,
-      "police_cars": 1,
-      "pump": 1
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "police_cars": 1
     },
     "chances": {
       "water_tankers": 20,
@@ -1910,10 +1910,10 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": {},
@@ -1970,12 +1970,12 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 16000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
+      "hazmat_vehicles": 1,
       "water_tankers": 1,
-      "hazmat_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 16000,
+      "firetrucks": 4
     },
     "chances": {
       "hazmat_vehicles": 50,
@@ -2012,10 +2012,10 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 2
     },
     "chances": { "patient_transport": 80, "patient_critical_care": 10 },
@@ -2050,12 +2050,12 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "water_needed": 37000,
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 3,
       "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "water_tankers": 2,
       "heavy_rescue_vehicles": 2,
-      "water_tankers": 2
+      "water_needed": 37000,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
@@ -2081,10 +2081,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 2
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -2117,11 +2117,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 15000,
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
-      "hazmat_vehicles": 1
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_needed": 15000,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -2269,11 +2269,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 20000,
-      "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 20000,
+      "firetrucks": 8
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2296,12 +2296,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 20000,
-      "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "pump": 1,
       "heavy_rescue_vehicles": 1,
-      "pump": 1
+      "water_needed": 20000,
+      "firetrucks": 8
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2328,9 +2328,9 @@
       "/images/climbing_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
@@ -2364,10 +2364,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 18500,
-      "firetrucks": 5,
       "battalion_chief_vehicles": 1,
-      "water_tankers": 1
+      "water_tankers": 1,
+      "water_needed": 18500,
+      "firetrucks": 5
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -2468,9 +2468,9 @@
       "/images/fallingrocks_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
       "police_cars": 2
     },
     "chances": {},
@@ -2560,10 +2560,10 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": {},
@@ -2626,7 +2626,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "ambulances": 4, "police_cars": 8 },
+    "requirements": { "ambulances": 4, "firetrucks": 2, "police_cars": 8 },
     "chances": {},
     "additional": {
       "duration_text": "2時間",
@@ -2661,9 +2661,9 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 10 },
     "additional": {
@@ -2726,9 +2726,9 @@
       "/images/constructioncrane_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": {},
@@ -2761,11 +2761,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
-      "heavy_rescue_vehicles": 4,
+      "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 10,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 5 },
@@ -2801,11 +2801,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
-      "heavy_rescue_vehicles": 4,
+      "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 10,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 5 },
@@ -2841,11 +2841,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 4,
-      "heavy_rescue_vehicles": 4,
+      "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 10,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 5 },
@@ -2881,9 +2881,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 3,
       "police_cars": 1
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
@@ -3006,11 +3006,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 18500,
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "water_tankers": 1
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 18500,
+      "firetrucks": 5
     },
     "chances": { "water_tankers": 30 },
     "additional": { "filter_id": "firehouse_missions" },
@@ -3090,9 +3090,9 @@
       "/images/river_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": { "battalion_chief_vehicles": 20, "heavy_rescue_vehicles": 20 },
     "additional": { "filter_id": "firehouse_missions" },
@@ -3405,10 +3405,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 15000,
-      "firetrucks": 6,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "water_needed": 15000,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
     "additional": {
@@ -3468,18 +3468,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
       "water_needed": 26000,
       "firetrucks": 8,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": {
-      "water_tankers": 10,
       "mobile_air_vehicles": 30,
+      "water_tankers": 10,
       "patient_transport": 40,
       "patient_critical_care": 5
     },
@@ -3515,14 +3515,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 41000,
-      "firetrucks": 14,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 41000,
+      "firetrucks": 14,
       "police_cars": 6
     },
     "chances": { "patient_transport": 40, "patient_critical_care": 5 },
@@ -3635,9 +3635,9 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 90, "patient_critical_care": 5 },
@@ -3674,9 +3674,9 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 90, "patient_critical_care": 5 },
@@ -3713,9 +3713,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 7500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 3
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
@@ -3749,15 +3749,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 32000,
-      "firetrucks": 8,
+      "platform_trucks": 3,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 3,
-      "heavy_rescue_vehicles": 4,
-      "water_tankers": 2,
       "mobile_air_vehicles": 2,
       "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 32000,
+      "firetrucks": 8,
       "police_cars": 4
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
@@ -3825,13 +3825,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
       "water_needed": 31000,
       "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1,
       "police_cars": 3
     },
     "chances": {
@@ -3871,15 +3871,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
       "water_needed": 31000,
       "firetrucks": 10,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1,
-      "police_cars": 3,
-      "pump": 2
+      "police_cars": 3
     },
     "chances": {
       "mobile_air_vehicles": 50,
@@ -3919,14 +3919,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 48000,
-      "firetrucks": 12,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 48000,
+      "firetrucks": 12,
       "police_cars": 2
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 5 },
@@ -3961,18 +3961,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 7800,
-      "water_needed": 48000,
-      "firetrucks": 12,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 3,
+      "foam": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2,
+      "water_tankers": 3,
       "pump": 3,
-      "foam": 1
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 48000,
+      "foam_needed": 7800,
+      "firetrucks": 12,
+      "police_cars": 2
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 5 },
     "additional": {
@@ -4035,10 +4035,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 10000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1
+      "mobile_command_vehicles": 1,
+      "water_needed": 10000,
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -4072,11 +4072,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 10000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "pump": 1
+      "pump": 1,
+      "water_needed": 10000,
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -4111,14 +4111,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 26000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 26000,
+      "firetrucks": 8,
       "police_cars": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
@@ -4154,18 +4154,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 9200,
-      "water_needed": 26000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
+      "foam": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 2,
+      "water_tankers": 1,
       "pump": 2,
-      "foam": 2
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 26000,
+      "foam_needed": 9200,
+      "firetrucks": 8,
+      "police_cars": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -4224,7 +4224,7 @@
       "/images/bar_cocktail_gelb.png",
       "/images/bar_cocktail_rot.png"
     ],
-    "requirements": { "police_cars": 3, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -4276,7 +4276,7 @@
       "/images/bar_cocktail_gelb.png",
       "/images/bar_cocktail_rot.png"
     ],
-    "requirements": { "police_cars": 3, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -4328,7 +4328,7 @@
       "/images/bar_cocktail_gelb.png",
       "/images/bar_cocktail_rot.png"
     ],
-    "requirements": { "police_cars": 3, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -4356,7 +4356,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -4412,7 +4412,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "ambulances": 1, "police_cars": 7 },
+    "requirements": { "ambulances": 1, "firetrucks": 2, "police_cars": 7 },
     "chances": {},
     "additional": {
       "duration_text": "1時間",
@@ -4444,14 +4444,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 4,
-      "water_tankers": 1,
       "mobile_air_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 21000,
+      "firetrucks": 6,
       "police_cars": 2
     },
     "chances": { "water_tankers": 20 },
@@ -4532,9 +4532,9 @@
       "/images/ghost_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "mobile_air_vehicles": 1
+      "mobile_air_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": {
       "mobile_air_vehicles": 50,
@@ -4572,7 +4572,7 @@
       "/images/ghost_gelb.png",
       "/images/ghost_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "platform_trucks": 1 },
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 1,
@@ -4760,9 +4760,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 12500,
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 5
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -4811,13 +4811,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 31000,
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 31000,
+      "firetrucks": 10,
       "police_cars": 2
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 5 },
@@ -4852,15 +4852,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 31000,
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 2,
-      "pump": 2
+      "water_tankers": 1,
+      "pump": 2,
+      "water_needed": 31000,
+      "firetrucks": 10,
+      "police_cars": 2
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 5 },
     "additional": {
@@ -4895,19 +4895,19 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
       "water_needed": 16000,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
-      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
       "platform_trucks": 50,
-      "water_tankers": 20,
       "mobile_air_vehicles": 20,
+      "water_tankers": 20,
       "patient_transport": 60,
       "patient_critical_care": 5
     },
@@ -5103,7 +5103,7 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 30, "patient_critical_care": 10 },
     "additional": {
       "possible_patient": 3,
@@ -5163,13 +5163,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 26000,
-      "firetrucks": 8,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 1,
+      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
-      "water_tankers": 1
+      "water_needed": 26000,
+      "firetrucks": 8
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 5 },
     "additional": {
@@ -5202,12 +5202,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 16000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
       "water_tankers": 1,
-      "mobile_air_vehicles": 1
+      "water_needed": 16000,
+      "firetrucks": 4
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -5230,13 +5230,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 16000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "pump": 1
+      "water_tankers": 1,
+      "pump": 1,
+      "water_needed": 16000,
+      "firetrucks": 4
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -5263,14 +5263,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 21000,
+      "firetrucks": 6,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 5 },
@@ -5305,16 +5305,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 3,
-      "pump": 2
+      "water_tankers": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 5 },
     "additional": {
@@ -5349,17 +5349,17 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
+      "mobile_air_vehicles": 1,
       "water_tankers": 1,
-      "mobile_air_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6
     },
     "chances": {
-      "water_tankers": 40,
       "mobile_air_vehicles": 50,
+      "water_tankers": 40,
       "patient_transport": 60,
       "patient_critical_care": 5
     },
@@ -5393,18 +5393,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
-      "pump": 2
+      "water_tankers": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6
     },
     "chances": {
-      "water_tankers": 40,
       "mobile_air_vehicles": 50,
+      "water_tankers": 40,
       "patient_transport": 60,
       "patient_critical_care": 5
     },
@@ -5439,11 +5439,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12500,
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "mobile_air_vehicles": 1
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_needed": 12500,
+      "firetrucks": 5
     },
     "chances": {},
     "additional": {
@@ -5469,14 +5469,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 5000,
-      "water_needed": 12500,
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
       "mobile_air_vehicles": 1,
       "pump": 1,
-      "foam": 1
+      "water_needed": 12500,
+      "foam_needed": 5000,
+      "firetrucks": 5
     },
     "chances": {},
     "additional": {
@@ -5506,12 +5506,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12500,
-      "firetrucks": 5,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "hazmat_vehicles": 1
+      "hazmat_vehicles": 1,
+      "water_needed": 12500,
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -5546,15 +5546,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 5000,
-      "water_needed": 12500,
-      "firetrucks": 5,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
+      "foam": 1,
       "hazmat_vehicles": 1,
       "pump": 2,
-      "foam": 1
+      "water_needed": 12500,
+      "foam_needed": 5000,
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -5590,11 +5590,11 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": {},
@@ -5622,9 +5622,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "mobile_air_vehicles": 1
+      "mobile_air_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": {
       "mobile_air_vehicles": 50,
@@ -5739,9 +5739,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 7500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 3
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 5 },
     "additional": {
@@ -5774,9 +5774,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 70, "patient_critical_care": 5 },
     "additional": {
@@ -5884,9 +5884,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
       "water_needed": 7500,
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 1
+      "firetrucks": 3
     },
     "chances": {
       "battalion_chief_vehicles": 90,
@@ -5945,7 +5945,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "platform_trucks": 1 },
+    "requirements": { "platform_trucks": 1, "firetrucks": 2 },
     "chances": { "platform_trucks": 30 },
     "additional": {
       "filter_id": "firehouse_missions",
@@ -6046,11 +6046,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
       "water_needed": 12500,
       "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 1,
-      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
@@ -6530,10 +6530,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 25000,
-      "firetrucks": 10,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 4,
-      "platform_trucks": 1
+      "water_needed": 25000,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 5 },
     "additional": {
@@ -6567,9 +6567,9 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
@@ -6668,7 +6668,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 2, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 2 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -6714,7 +6714,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "heavy_rescue_vehicles": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 70, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 1,
@@ -6926,10 +6926,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 12500,
-      "firetrucks": 5,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "water_needed": 12500,
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 5 },
     "additional": {
@@ -7078,11 +7078,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 10000,
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 10000,
+      "firetrucks": 4
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -7132,7 +7132,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "ambulances": 1, "police_cars": 1 },
+    "requirements": { "ambulances": 1, "firetrucks": 1, "police_cars": 1 },
     "chances": {},
     "additional": {
       "duration_text": "30分",
@@ -7164,15 +7164,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 31000,
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 31000,
+      "firetrucks": 10,
       "police_cars": 8
     },
     "chances": {
@@ -7211,19 +7211,19 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 7000,
-      "water_needed": 31000,
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 1,
+      "foam": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 8,
+      "water_tankers": 1,
       "pump": 3,
-      "foam": 1
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 31000,
+      "foam_needed": 7000,
+      "firetrucks": 10,
+      "police_cars": 8
     },
     "chances": {
       "water_tankers": 20,
@@ -7262,9 +7262,9 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
     },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
@@ -7432,10 +7432,10 @@
       "/images/paragliding_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
     },
     "chances": {
       "platform_trucks": 10,
@@ -7641,10 +7641,10 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 10000, "firetrucks": 4, "kdow_orgl": 1 },
+    "requirements": { "kdow_orgl": 1, "water_needed": 10000, "firetrucks": 4 },
     "chances": {
-      "patient_transport": 40,
       "kdow_orgl": 25,
+      "patient_transport": 40,
       "patient_critical_care": 50
     },
     "additional": {
@@ -7678,15 +7678,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 15000,
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "kdow_orgl": 1
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "water_needed": 15000,
+      "firetrucks": 6
     },
     "chances": {
-      "patient_transport": 40,
       "kdow_orgl": 50,
+      "patient_transport": 40,
       "patient_critical_care": 50
     },
     "additional": {
@@ -7719,9 +7719,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 2,
       "water_needed": 10000,
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 2
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
@@ -7755,10 +7755,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 10000,
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "pump": 2
+      "pump": 2,
+      "water_needed": 10000,
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 70, "patient_critical_care": 10 },
     "additional": {
@@ -7792,7 +7792,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 8, "kdow_orgl": 1 },
+    "requirements": { "kdow_orgl": 1, "police_cars": 8 },
     "chances": { "patient_transport": 30, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 6,
@@ -7826,16 +7826,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 10000,
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
-      "kdow_orgl": 1
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "water_needed": 10000,
+      "firetrucks": 4
     },
     "chances": {
       "platform_trucks": 10,
-      "patient_transport": 60,
       "kdow_orgl": 50,
+      "patient_transport": 60,
       "patient_critical_care": 50
     },
     "additional": {
@@ -7869,15 +7869,15 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
-      "water_needed": 74500,
-      "firetrucks": 25,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 4,
-      "water_tankers": 2,
       "mobile_air_vehicles": 2,
       "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 74500,
+      "firetrucks": 25,
       "police_cars": 8
     },
     "chances": { "patient_transport": 10, "patient_critical_care": 10 },
@@ -7912,10 +7912,10 @@
       "/images/tramway_rot.png"
     ],
     "requirements": {
-      "firetrucks": 11,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 4,
+      "firetrucks": 11,
       "police_cars": 3
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 10 },
@@ -7951,9 +7951,9 @@
       "/images/tramway_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 4,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 5
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
@@ -7990,10 +7990,10 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 6,
-      "heavy_rescue_vehicles": 1,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
       "police_cars": 10
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 75 },
@@ -8124,9 +8124,9 @@
       "/images/fallingrocks_rot.png"
     ],
     "requirements": {
-      "firetrucks": 9,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 4,
+      "firetrucks": 9,
       "police_cars": 2
     },
     "chances": { "patient_transport": 75 },
@@ -8190,8 +8190,8 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
       "police_cars": 4
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 75 },
@@ -8228,13 +8228,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 21000,
-      "firetrucks": 6,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 21000,
+      "firetrucks": 6,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -8269,10 +8269,10 @@
       "/images/constructioncrane_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
@@ -8308,10 +8308,10 @@
       "/images/constructioncrane_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
@@ -8378,7 +8378,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "hazmat_vehicles": 1 },
+    "requirements": { "hazmat_vehicles": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
     "additional": {
       "possible_patient": 1,
@@ -8439,8 +8439,8 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": {},
@@ -8501,8 +8501,8 @@
       "/images/sawmill_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 80 },
@@ -8538,10 +8538,10 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 4
     },
     "chances": { "patient_transport": 40 },
@@ -8608,14 +8608,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 4600,
-      "water_needed": 10000,
-      "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
       "hazmat_vehicles": 1,
       "pump": 1,
-      "foam": 1
+      "water_needed": 10000,
+      "foam_needed": 4600,
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -8651,15 +8651,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 9600,
-      "water_needed": 20000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
+      "foam": 2,
       "hazmat_vehicles": 1,
       "pump": 3,
-      "foam": 2
+      "water_needed": 20000,
+      "foam_needed": 9600,
+      "firetrucks": 8
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -8695,9 +8695,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "mobile_air_vehicles": 1
+      "mobile_air_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": { "mobile_air_vehicles": 50, "patient_transport": 30 },
     "additional": {
@@ -8730,13 +8730,13 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "foam_needed": 8400,
-      "water_needed": 15000,
-      "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "foam": 2,
       "hazmat_vehicles": 2,
       "pump": 1,
-      "foam": 2
+      "water_needed": 15000,
+      "foam_needed": 8400,
+      "firetrucks": 6
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -8793,8 +8793,8 @@
       "/images/autumn_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 30 },
@@ -8951,7 +8951,7 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "heavy_rescue_vehicles": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 2,
@@ -8985,8 +8985,8 @@
       "/images/autumn_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 1
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 10 },
@@ -9076,13 +9076,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 2,
       "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
       "police_cars": 3
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
@@ -9166,13 +9166,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 15000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 15000,
+      "firetrucks": 8,
       "police_cars": 3
     },
     "chances": { "patient_transport": 20 },
@@ -9231,7 +9231,7 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 5, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 5 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
@@ -9291,9 +9291,9 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50 },
@@ -9356,8 +9356,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 1
     },
     "chances": {},
@@ -9444,9 +9444,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
       "battalion_chief_vehicles": 1,
       "water_tankers": 2,
+      "firetrucks": 5,
       "police_cars": 3
     },
     "chances": { "patient_transport": 10, "patient_critical_care": 10 },
@@ -9482,9 +9482,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "water_tankers": 3,
+      "firetrucks": 8,
       "police_cars": 3
     },
     "chances": { "patient_transport": 10, "patient_critical_care": 10 },
@@ -9551,14 +9551,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 3,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 10,
       "police_cars": 5
     },
     "chances": { "patient_transport": 15, "patient_critical_care": 10 },
@@ -9594,16 +9594,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 3,
+      "foam": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 5,
-      "foam": 1
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 10,
+      "police_cars": 5
     },
     "chances": { "patient_transport": 15, "patient_critical_care": 10 },
     "additional": {
@@ -9639,14 +9639,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 15,
+      "platform_trucks": 3,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 3,
-      "heavy_rescue_vehicles": 4,
-      "water_tankers": 5,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 3,
+      "water_tankers": 5,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 15,
       "police_cars": 5
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 10 },
@@ -9681,16 +9681,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 15,
+      "platform_trucks": 3,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 3,
-      "heavy_rescue_vehicles": 4,
-      "water_tankers": 5,
+      "foam": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 3,
-      "police_cars": 5,
-      "foam": 1
+      "water_tankers": 5,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 15,
+      "police_cars": 5
     },
     "chances": { "patient_transport": 20, "patient_critical_care": 10 },
     "additional": {
@@ -9862,8 +9862,8 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
       "police_cars": 3
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 50 },
@@ -9924,7 +9924,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "platform_trucks": 1 },
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -9976,7 +9976,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 4 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -10293,9 +10293,9 @@
       "/images/clock_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": { "platform_trucks": 20 },
@@ -10329,10 +10329,10 @@
       "/images/clock_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
       "platform_trucks": 2,
+      "mobile_air_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "mobile_air_vehicles": 1
+      "firetrucks": 3
     },
     "chances": { "mobile_air_vehicles": 30 },
     "additional": {
@@ -10739,7 +10739,7 @@
       "/images/climbing_gelb.png",
       "/images/climbing_rot.png"
     ],
-    "requirements": { "police_cars": 5, "k9": 2 },
+    "requirements": { "k9": 2, "police_cars": 5 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -10803,10 +10803,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 3,
+      "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
+      "firetrucks": 6,
       "police_cars": 4
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
@@ -10841,9 +10841,9 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 7,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
+      "firetrucks": 7,
       "police_cars": 4
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
@@ -10902,9 +10902,9 @@
       "/images/fallingrocks_rot.png"
     ],
     "requirements": {
-      "firetrucks": 7,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
+      "firetrucks": 7,
       "police_cars": 2
     },
     "chances": { "patient_transport": 75, "patient_critical_care": 10 },
@@ -10965,10 +10965,10 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "platform_trucks": 70, "patient_transport": 60 },
@@ -11065,8 +11065,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 3,
       "police_cars": 1
     },
     "chances": { "patient_transport": 50 },
@@ -11126,9 +11126,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 8,
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
+      "firetrucks": 8,
       "police_cars": 2
     },
     "chances": {},
@@ -11156,10 +11156,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
       "battalion_chief_vehicles": 4,
-      "heavy_rescue_vehicles": 4,
       "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 10,
       "police_cars": 3
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
@@ -11220,9 +11220,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
     },
     "chances": { "patient_transport": 20 },
     "additional": {
@@ -11374,12 +11374,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
       "water_needed": 13000,
       "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
-      "hazmat_vehicles": 1,
       "police_cars": 2
     },
     "chances": {
@@ -11494,13 +11494,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 2,
       "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 10,
       "police_cars": 4
     },
     "chances": { "patient_transport": 75, "patient_critical_care": 20 },
@@ -11535,11 +11535,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 8,
-      "ambulances": 5,
       "battalion_chief_vehicles": 2,
-      "water_tankers": 2,
       "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "ambulances": 5,
+      "firetrucks": 8,
       "police_cars": 2
     },
     "chances": { "patient_transport": 0 },
@@ -11575,9 +11575,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
+      "firetrucks": 2,
       "police_cars": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 25 },
@@ -11612,13 +11612,13 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "police_cars": 10,
       "k9": 4,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_command": 1,
       "wasserwerfer": 1,
       "detention_unit": 2,
-      "riot_police": 10,
-      "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "police_cars": 10
     },
     "chances": {},
     "additional": {
@@ -11649,13 +11649,13 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "police_cars": 20,
       "k9": 4,
+      "riot_police": 14,
+      "riot_police_equipment": 1,
+      "riot_police_command": 1,
       "wasserwerfer": 1,
       "detention_unit": 6,
-      "riot_police": 14,
-      "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "police_cars": 20
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -11690,7 +11690,7 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "police_cars": 4, "riot_police": 2 },
+    "requirements": { "riot_police": 2, "police_cars": 4 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
@@ -11719,11 +11719,11 @@
       "/images/soccer_rot.png"
     ],
     "requirements": {
-      "police_cars": 6,
       "k9": 2,
-      "detention_unit": 1,
       "riot_police": 6,
-      "riot_police_command": 1
+      "riot_police_command": 1,
+      "detention_unit": 1,
+      "police_cars": 6
     },
     "chances": {},
     "additional": {
@@ -11753,10 +11753,10 @@
       "/images/zoom_rot.png"
     ],
     "requirements": {
-      "police_cars": 8,
       "k9": 1,
       "riot_police": 4,
-      "riot_police_command": 1
+      "riot_police_command": 1,
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
@@ -11786,13 +11786,13 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "police_cars": 10,
       "k9": 3,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_command": 1,
       "wasserwerfer": 1,
       "detention_unit": 2,
-      "riot_police": 10,
-      "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "police_cars": 10
     },
     "chances": {},
     "additional": {
@@ -11823,10 +11823,10 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "police_cars": 4,
       "k9": 1,
       "riot_police": 1,
-      "riot_police_command": 1
+      "riot_police_command": 1,
+      "police_cars": 4
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -11862,11 +11862,11 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "police_cars": 7,
       "k9": 1,
       "riot_police": 3,
+      "riot_police_equipment": 1,
       "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "police_cars": 7
     },
     "chances": { "patient_transport": 30 },
     "additional": {
@@ -11902,11 +11902,11 @@
       "/images/dancinghall_rot.png"
     ],
     "requirements": {
-      "police_cars": 12,
-      "detention_unit": 1,
       "riot_police": 6,
+      "riot_police_equipment": 1,
       "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "detention_unit": 1,
+      "police_cars": 12
     },
     "chances": {},
     "additional": {
@@ -11937,13 +11937,13 @@
       "/images/dancinghall_rot.png"
     ],
     "requirements": {
-      "police_cars": 16,
       "k9": 2,
+      "riot_police": 10,
+      "riot_police_equipment": 1,
+      "riot_police_command": 2,
       "wasserwerfer": 1,
       "detention_unit": 2,
-      "riot_police": 10,
-      "riot_police_command": 2,
-      "riot_police_equipment": 1
+      "police_cars": 16
     },
     "chances": {},
     "additional": {
@@ -12005,11 +12005,11 @@
       "/images/glasses_rot.png"
     ],
     "requirements": {
-      "police_cars": 5,
-      "detention_unit": 1,
       "riot_police": 12,
+      "riot_police_equipment": 1,
       "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "detention_unit": 1,
+      "police_cars": 5
     },
     "chances": {},
     "additional": {
@@ -12041,12 +12041,12 @@
       "/images/glasses_rot.png"
     ],
     "requirements": {
-      "police_cars": 8,
+      "riot_police": 15,
+      "riot_police_equipment": 1,
+      "riot_police_command": 1,
       "wasserwerfer": 1,
       "detention_unit": 1,
-      "riot_police": 15,
-      "riot_police_command": 1,
-      "riot_police_equipment": 1
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
@@ -12079,12 +12079,12 @@
       "/images/glasses_rot.png"
     ],
     "requirements": {
-      "police_cars": 12,
+      "riot_police": 30,
+      "riot_police_equipment": 2,
+      "riot_police_command": 2,
       "wasserwerfer": 2,
       "detention_unit": 2,
-      "riot_police": 30,
-      "riot_police_command": 2,
-      "riot_police_equipment": 2
+      "police_cars": 12
     },
     "chances": {},
     "additional": {
@@ -12140,7 +12140,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "battalion_chief_vehicles": 1 },
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 2 },
     "chances": { "battalion_chief_vehicles": 35 },
     "additional": {
       "expansion_missions_ids": [373, 374],
@@ -12165,11 +12165,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "platform_trucks": 1
+      "firetrucks": 3
     },
-    "chances": { "battalion_chief_vehicles": 25, "platform_trucks": 50 },
+    "chances": { "platform_trucks": 50, "battalion_chief_vehicles": 25 },
     "additional": {
       "expansion_missions_ids": [319, 331],
       "filter_id": "firehouse_missions"
@@ -12192,7 +12192,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 4, "battalion_chief_vehicles": 1 },
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 4 },
     "chances": { "battalion_chief_vehicles": 25 },
     "additional": {
       "expansion_missions_ids": [319],
@@ -12245,10 +12245,10 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 4,
       "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
       "police_cars": 3
     },
     "chances": {},
@@ -12276,8 +12276,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 5,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
@@ -12312,10 +12312,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
       "battalion_chief_vehicles": 1,
-      "police_cars": 2,
-      "foam": 1
+      "foam": 1,
+      "firetrucks": 5,
+      "police_cars": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 10 },
     "additional": {
@@ -12403,11 +12403,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 5,
       "police_cars": 3
     },
     "chances": {},
@@ -12435,14 +12435,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 16000,
-      "firetrucks": 5,
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "hazmat_vehicles": 1,
-      "police_cars": 3,
-      "pump": 2
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 16000,
+      "firetrucks": 5,
+      "police_cars": 3
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
@@ -12470,8 +12470,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": {},
@@ -12527,11 +12527,11 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
-      "water_tankers": 2,
+      "battalion_chief_vehicles": 1,
       "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "firetrucks": 5,
       "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
@@ -12566,13 +12566,13 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
-      "water_tankers": 2,
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
       "hazmat_vehicles": 2,
-      "police_cars": 3,
-      "foam": 1
+      "water_tankers": 2,
+      "firetrucks": 5,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 10 },
     "additional": {
@@ -12909,7 +12909,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 4, "k9": 1, "riot_police": 1 },
+    "requirements": { "k9": 1, "riot_police": 1, "police_cars": 4 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
@@ -12938,8 +12938,8 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 50 },
@@ -12973,7 +12973,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 3, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 3 },
     "chances": { "patient_transport": 0 },
     "additional": {
       "possible_patient": 2,
@@ -13111,9 +13111,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
+      "firetrucks": 2,
       "police_cars": 3
     },
     "chances": {},
@@ -13279,8 +13279,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
       "battalion_chief_vehicles": 2,
+      "firetrucks": 6,
       "police_cars": 4
     },
     "chances": { "patient_transport": 50 },
@@ -13315,7 +13315,7 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 5, "k9": 2, "riot_police": 2 },
+    "requirements": { "k9": 2, "riot_police": 2, "police_cars": 5 },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 10,
@@ -13632,7 +13632,7 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "coastal_plane": 1, "coastal_guard_boat": 1 },
+    "requirements": { "coastal_guard_boat": 1, "coastal_plane": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 4,
@@ -13813,10 +13813,10 @@
       "/images/cruiseship_rot.png"
     ],
     "requirements": {
-      "large_fire_boat": 4,
       "large_coastal_boat": 3,
       "coastal_helicopter": 2,
-      "coastal_plane": 1
+      "coastal_plane": 1,
+      "large_fire_boat": 4
     },
     "chances": { "patient_transport": 100, "helicopter": 10 },
     "additional": {
@@ -13936,7 +13936,7 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "police_cars": 5, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 5 },
     "chances": {},
     "additional": {
       "duration_text": "1時間",
@@ -13962,7 +13962,7 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "police_cars": 15, "k9": 1 },
+    "requirements": { "k9": 1, "police_cars": 15 },
     "chances": {},
     "additional": {
       "duration_text": "1時間",
@@ -14108,10 +14108,10 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 5000,
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
-      "arff": 2
+      "arff": 2,
+      "water_needed": 5000,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -14137,10 +14137,10 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 4200,
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
-      "arff": 1
+      "arff": 1,
+      "water_needed": 4200,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -14166,11 +14166,11 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 3800,
-      "firetrucks": 1,
       "heavy_rescue_vehicles": 1,
       "arff": 1,
-      "riv": 1
+      "riv": 1,
+      "water_needed": 3800,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -14197,13 +14197,13 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 16000,
-      "firetrucks": 2,
       "heavy_rescue_vehicles": 2,
       "arff": 2,
-      "police_cars": 2,
+      "piercing_nozzle": 1,
       "riv": 1,
-      "piercing_nozzle": 1
+      "water_needed": 16000,
+      "firetrucks": 2,
+      "police_cars": 2
     },
     "chances": {},
     "additional": {
@@ -14237,15 +14237,15 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "arff": 4,
+      "piercing_nozzle": 1,
+      "riv": 2,
       "water_needed": 50000,
       "firetrucks": 4,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
-      "arff": 4,
-      "hazmat_vehicles": 1,
-      "police_cars": 4,
-      "riv": 2,
-      "piercing_nozzle": 1
+      "police_cars": 4
     },
     "chances": {},
     "additional": {
@@ -14278,12 +14278,12 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
+      "arff": 2,
+      "rettungstreppe": 2,
+      "piercing_nozzle": 1,
       "water_needed": 20000,
       "firetrucks": 2,
-      "arff": 2,
-      "police_cars": 2,
-      "rettungstreppe": 2,
-      "piercing_nozzle": 1
+      "police_cars": 2
     },
     "chances": {},
     "additional": {
@@ -14316,10 +14316,10 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "water_needed": 8000,
-      "firetrucks": 1,
       "arff": 1,
-      "riv": 2
+      "riv": 2,
+      "water_needed": 8000,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -14346,16 +14346,16 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "firetrucks": 75,
+      "platform_trucks": 20,
       "battalion_chief_vehicles": 15,
       "mobile_command_vehicles": 4,
-      "platform_trucks": 20,
-      "heavy_rescue_vehicles": 20,
+      "foam": 2,
       "mobile_air_vehicles": 4,
-      "arff": 4,
       "hazmat_vehicles": 4,
-      "police_cars": 20,
-      "foam": 2
+      "heavy_rescue_vehicles": 20,
+      "arff": 4,
+      "firetrucks": 75,
+      "police_cars": 20
     },
     "chances": { "patient_transport": 15 },
     "additional": {
@@ -14394,12 +14394,12 @@
       "/images/oil_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
       "battalion_chief_vehicles": 3,
-      "heavy_rescue_vehicles": 2,
-      "water_tankers": 1,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 10,
       "police_cars": 8
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
@@ -14435,8 +14435,8 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
       "battalion_chief_vehicles": 2,
+      "firetrucks": 5,
       "police_cars": 4
     },
     "chances": { "patient_transport": 85 },
@@ -14521,8 +14521,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 1
     },
     "chances": { "patient_transport": 75, "patient_critical_care": 50 },
@@ -14560,10 +14560,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
-      "battalion_chief_vehicles": 2,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
       "water_tankers": 1,
+      "firetrucks": 3,
       "police_cars": 2
     },
     "chances": { "patient_transport": 75, "patient_critical_care": 50 },
@@ -14601,14 +14601,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
+      "foam": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 4,
-      "foam": 1
+      "water_tankers": 1,
+      "firetrucks": 6,
+      "police_cars": 4
     },
     "chances": {
       "patient_transport": 70,
@@ -14650,15 +14650,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
+      "platform_trucks": 4,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 2,
-      "platform_trucks": 4,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 2,
+      "foam": 2,
       "mobile_air_vehicles": 1,
-      "police_cars": 6,
-      "foam": 2
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 10,
+      "police_cars": 6
     },
     "chances": {
       "patient_transport": 70,
@@ -14699,17 +14699,17 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "water_needed": 90000,
-      "firetrucks": 9,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 5,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "heavy_rescue_vehicles": 3,
-      "water_tankers": 1,
+      "foam": 1,
       "hazmat_vehicles": 1,
-      "police_cars": 7,
+      "water_tankers": 1,
       "k9": 2,
-      "foam": 1
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 90000,
+      "firetrucks": 9,
+      "police_cars": 7
     },
     "chances": {
       "patient_transport": 70,
@@ -14750,15 +14750,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
-      "ambulances": 1,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 1,
+      "foam": 2,
       "hazmat_vehicles": 1,
-      "police_cars": 3,
-      "foam": 2
+      "water_tankers": 1,
+      "ambulances": 1,
+      "firetrucks": 5,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
@@ -14795,10 +14795,10 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
-      "firetrucks": 1,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "hazmat_vehicles": 1,
+      "firetrucks": 1,
       "police_cars": 4
     },
     "chances": {
@@ -15019,8 +15019,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 75, "patient_critical_care": 25 },
@@ -15056,8 +15056,8 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "ambulances": 1,
       "battalion_chief_vehicles": 1,
+      "ambulances": 1,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
     },
@@ -15124,10 +15124,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 3,
       "battalion_chief_vehicles": 1,
-      "police_cars": 1,
-      "foam": 1
+      "foam": 1,
+      "firetrucks": 3,
+      "police_cars": 1
     },
     "chances": {
       "patient_transport": 80,
@@ -15254,10 +15254,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 5,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
       "water_tankers": 1,
+      "firetrucks": 5,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50 },
@@ -15296,18 +15296,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 8,
+      "platform_trucks": 3,
       "battalion_chief_vehicles": 6,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 3,
-      "heavy_rescue_vehicles": 1,
-      "water_tankers": 1,
+      "foam": 2,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 4,
-      "police_cars": 6,
+      "water_tankers": 1,
       "kdow_orgl": 1,
       "pump": 3,
-      "foam": 2
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
+      "police_cars": 6
     },
     "chances": {
       "patient_transport": 40,
@@ -15348,9 +15348,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50 },
@@ -15386,8 +15386,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 2,
       "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 20 },
@@ -15424,16 +15424,16 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 55000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 2,
+      "foam": 1,
       "mobile_air_vehicles": 1,
-      "police_cars": 8,
+      "water_tankers": 2,
       "pump": 2,
-      "foam": 1
+      "water_needed": 55000,
+      "firetrucks": 8,
+      "police_cars": 8
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
     "additional": {
@@ -15471,15 +15471,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 10,
-      "mobile_command_vehicles": 2,
       "platform_trucks": 2,
-      "water_tankers": 2,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
       "mobile_air_vehicles": 2,
-      "police_cars": 10,
+      "water_tankers": 2,
       "k9": 2,
       "pump": 2,
-      "foam": 2
+      "firetrucks": 10,
+      "police_cars": 10
     },
     "chances": {
       "patient_transport": 0,
@@ -15520,11 +15520,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
       "water_needed": 8000,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 2,
-      "platform_trucks": 1,
-      "mobile_air_vehicles": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
@@ -15562,15 +15562,15 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "water_needed": 40000,
-      "firetrucks": 8,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
-      "platform_trucks": 2,
-      "water_tankers": 2,
       "mobile_air_vehicles": 2,
-      "police_cars": 5,
-      "pump": 2
+      "water_tankers": 2,
+      "pump": 2,
+      "water_needed": 40000,
+      "firetrucks": 8,
+      "police_cars": 5
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 20 },
     "additional": {
@@ -15606,7 +15606,7 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "pump": 1, "min_pump_speed": 5000, "damage_control": 1 },
+    "requirements": { "pump": 1, "damage_control": 1, "min_pump_speed": 5000 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -15635,7 +15635,7 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "pump": 1, "min_pump_speed": 15000, "damage_control": 2 },
+    "requirements": { "pump": 1, "damage_control": 2, "min_pump_speed": 15000 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -15664,7 +15664,7 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "pump": 1, "min_pump_speed": 25000, "damage_control": 3 },
+    "requirements": { "pump": 1, "damage_control": 3, "min_pump_speed": 25000 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -15693,7 +15693,7 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "pump": 1, "min_pump_speed": 10000, "damage_control": 1 },
+    "requirements": { "pump": 1, "damage_control": 1, "min_pump_speed": 10000 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -15722,12 +15722,12 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
+      "water_tankers": 2,
       "foam_needed": 100,
       "firetrucks": 4,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 2,
-      "police_cars": 2,
-      "foam": 1
+      "police_cars": 2
     },
     "chances": { "patient_transport": 25 },
     "additional": {
@@ -15763,14 +15763,14 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "foam_needed": 2000,
-      "firetrucks": 10,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
+      "foam": 2,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 2,
-      "police_cars": 5,
-      "foam": 2
+      "foam_needed": 2000,
+      "firetrucks": 10,
+      "police_cars": 5
     },
     "chances": { "patient_transport": 20 },
     "additional": {
@@ -15805,7 +15805,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "foam": 1 },
+    "requirements": { "foam": 1, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [481],
@@ -15834,10 +15834,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "firetrucks": 6,
-      "battalion_chief_vehicles": 1,
       "platform_trucks": 2,
-      "foam": 2
+      "battalion_chief_vehicles": 1,
+      "foam": 2,
+      "firetrucks": 6
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
