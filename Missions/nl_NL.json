@@ -40115,5 +40115,156 @@
     "base_mission_id": 1053,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1054",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993]
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
+  },
+  {
+    "id": "1054-0",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 6645,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "hazmat_vehicles": 1,
+      "hondengeleider": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "firetrucks": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
+  },
+  {
+    "id": "1054-1",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 18780,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "at_c": 1,
+      "at_m": 1,
+      "at_o": 4,
+      "bike_police": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "gefkw": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "hondengeleider": 2,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "firetrucks": 3,
+      "police_cars": 20
+    },
+    "chances": { "nef": 4, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 25,
+      "min_possible_prisoners": 3,
+      "max_possible_prisoners": 3,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "patient_specialization_ids": [4, 1],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 33,
+      "police_stations": 21,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 4,
+      "prisoner_transport_count": 1,
+      "at": 1,
+      "hondengeleider": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": 1,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
   }
 ]
