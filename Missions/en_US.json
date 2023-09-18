@@ -43179,5 +43179,52 @@
     "base_mission_id": 890,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "891",
+    "name": "Fire in a fertilizer storage building",
+    "place": "Warehouse",
+    "place_array": ["Warehouse"],
+    "average_credits": 27500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 40, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 891,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
