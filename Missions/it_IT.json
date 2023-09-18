@@ -22933,5 +22933,59 @@
     "base_mission_id": 634,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "635",
+    "name": "Incendio Scuola",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 20000,
+      "foam_needed": 2000,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {
+      "water_tankers": 20,
+      "patient_transport": 10,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 20,
+      "patient_it_code_possible": ["QC20R", "QC20G", "QC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 8,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 635,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
