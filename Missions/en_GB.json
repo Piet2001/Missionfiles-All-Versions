@@ -270,13 +270,11 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw_dlk": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -730,12 +728,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 30,
@@ -3189,14 +3184,13 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "k9": 1, "police_cars": 4 },
+    "requirements": { "k9": 1, "oneof_police_swat": 4, "police_cars": 1 },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 0,
       "max_possible_prisoners": 4,
       "swat_personnel": 8,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 9 },
     "overlay_index": null,
@@ -5405,13 +5399,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "k9": 1, "police_cars": 8 },
+    "requirements": { "k9": 1, "oneof_police_swat": 8, "police_cars": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
       "swat_personnel": 8,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 8 },
     "overlay_index": null,
@@ -5611,12 +5604,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_lf_rw": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-03-31T09:00:00Z",
@@ -8546,16 +8539,15 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "kdow_orgl": 1,
-      "firetrucks": 2
+      "oneof_lf_rw_dlk": 2,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-1", "C-2"],
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
@@ -14220,10 +14212,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -14337,10 +14328,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -15549,7 +15539,11 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "k9": 1, "police_helicopters": 1, "police_cars": 6 },
+    "requirements": {
+      "k9": 1,
+      "oneof_drone_police_helicopter": 1,
+      "police_cars": 6
+    },
     "chances": { "patient_transport": 25, "patient_critical_care": 25 },
     "additional": {
       "possible_patient": 4,
@@ -15589,7 +15583,7 @@
       "hazard_response_primary": 1,
       "hazard_response_secondary": 1,
       "k9": 1,
-      "police_helicopters": 1,
+      "oneof_drone_police_helicopter": 1,
       "police_cars": 6
     },
     "chances": { "patient_transport": 25, "patient_critical_care": 25 },
@@ -15630,7 +15624,7 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "k9": 1,
-      "police_helicopters": 1,
+      "oneof_drone_police_helicopter": 1,
       "firetrucks": 2,
       "police_cars": 6
     },
@@ -15675,7 +15669,7 @@
       "hazard_response_primary": 1,
       "hazard_response_secondary": 1,
       "k9": 1,
-      "police_helicopters": 1,
+      "oneof_drone_police_helicopter": 1,
       "firetrucks": 2,
       "police_cars": 6
     },
@@ -17150,12 +17144,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "requirements": { "oneof_lf_rw": 2, "firetrucks": 1, "police_cars": 2 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -17178,10 +17169,14 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "traffic_car": 1, "firetrucks": 2, "police_cars": 2 },
+    "requirements": {
+      "traffic_car": 1,
+      "oneof_lf_rw": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true
     },
@@ -17622,7 +17617,8 @@
       "k9": 1,
       "police_helicopters": 1,
       "traffic_car": 3,
-      "police_cars": 5
+      "oneof_police_swat": 5,
+      "police_cars": 1
     },
     "chances": {
       "traffic_car": 75,
@@ -17635,7 +17631,6 @@
       "swat_personnel": 6,
       "patient_uk_code_possible": ["C-2"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 80,
       "need_traffic_car_only_if_present": true,
       "patient_at_end_of_mission": true,
@@ -17672,7 +17667,8 @@
       "k9": 1,
       "police_helicopters": 1,
       "traffic_car": 3,
-      "police_cars": 5
+      "oneof_police_swat": 5,
+      "police_cars": 1
     },
     "chances": {
       "traffic_car": 75,
@@ -17685,7 +17681,6 @@
       "swat_personnel": 6,
       "patient_uk_code_possible": ["C-2"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 80,
       "need_traffic_car_only_if_present": true,
       "patient_at_end_of_mission": true,
@@ -17812,15 +17807,14 @@
       "water_tankers": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 6,
-      "police_cars": 2
+      "oneof_police_swat": 2,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 6,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -17859,15 +17853,14 @@
       "water_tankers": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 6,
-      "police_cars": 2
+      "oneof_police_swat": 2,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 6,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -17908,15 +17901,14 @@
       "hazard_response_secondary": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 6,
-      "police_cars": 2
+      "oneof_police_swat": 2,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 6,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -17958,15 +17950,14 @@
       "hazard_response_secondary": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 6,
-      "police_cars": 2
+      "oneof_police_swat": 2,
+      "firetrucks": 6
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 6,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18006,15 +17997,14 @@
       "water_tankers": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10,
-      "police_cars": 4
+      "oneof_police_swat": 4,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 8,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18053,15 +18043,14 @@
       "water_tankers": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10,
-      "police_cars": 4
+      "oneof_police_swat": 4,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 8,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18102,15 +18091,14 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10,
-      "police_cars": 4
+      "oneof_police_swat": 4,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 8,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18152,15 +18140,14 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10,
-      "police_cars": 4
+      "oneof_police_swat": 4,
+      "firetrucks": 10
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 8,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18200,8 +18187,8 @@
       "water_tankers": 8,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 4,
-      "firetrucks": 20,
-      "police_cars": 8
+      "oneof_police_swat": 8,
+      "firetrucks": 20
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
@@ -18209,7 +18196,6 @@
       "possible_patient_min": 5,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18252,8 +18238,8 @@
       "water_tankers": 8,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 4,
-      "firetrucks": 20,
-      "police_cars": 8
+      "oneof_police_swat": 8,
+      "firetrucks": 20
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
@@ -18261,7 +18247,6 @@
       "possible_patient_min": 5,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18306,8 +18291,8 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 4,
-      "firetrucks": 20,
-      "police_cars": 8
+      "oneof_police_swat": 8,
+      "firetrucks": 20
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
@@ -18315,7 +18300,6 @@
       "possible_patient_min": 5,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18361,8 +18345,8 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 4,
-      "firetrucks": 20,
-      "police_cars": 8
+      "oneof_police_swat": 8,
+      "firetrucks": 20
     },
     "chances": { "patient_transport": 60, "patient_critical_care": 50 },
     "additional": {
@@ -18370,7 +18354,6 @@
       "possible_patient_min": 5,
       "patient_uk_code_possible": ["C-2", "C-1"],
       "filter_id": "firehouse_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18405,12 +18388,11 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "oneof_police_swat": 2, "police_cars": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -18430,13 +18412,16 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "traffic_car": 1, "police_cars": 3 },
+    "requirements": {
+      "traffic_car": 1,
+      "oneof_police_swat": 3,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 60 },
     "additional": {
       "possible_patient": 1,
       "patient_uk_code_possible": ["C-3"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "patient_allow_first_responder_chance": 70,
       "need_traffic_car_only_if_present": true,
       "patient_at_end_of_mission": true,
@@ -18625,12 +18610,11 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "oneof_police_swat": 1, "police_cars": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
@@ -18858,13 +18842,12 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 80, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "expansion_missions_ids": [423],
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
@@ -18897,7 +18880,8 @@
     "requirements": {
       "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "firetrucks": 2
+      "oneof_lf_rw": 2,
+      "firetrucks": 1
     },
     "chances": {
       "platform_trucks": 30,
@@ -18907,7 +18891,6 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
@@ -18942,7 +18925,8 @@
       "battalion_chief_vehicles": 1,
       "emergency_welfare": 1,
       "hazard_response_primary": 1,
-      "firetrucks": 2
+      "oneof_lf_rw": 2,
+      "firetrucks": 1
     },
     "chances": {
       "platform_trucks": 30,
@@ -18952,7 +18936,6 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
@@ -19010,14 +18993,18 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "k9": 1, "traffic_car": 4, "police_cars": 3 },
+    "requirements": {
+      "k9": 1,
+      "traffic_car": 4,
+      "oneof_police_swat": 3,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 4,
       "swat_personnel": 6,
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "need_traffic_car_only_if_present": true
     },
     "prerequisites": { "main_building": 6, "police_stations": 10 },
@@ -20134,13 +20121,12 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "oneof_police_swat": 2, "police_cars": 1 },
     "chances": { "patient_transport": 100, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 1,
       "patient_uk_code_possible": ["C-1", "C-2"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -20167,13 +20153,16 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": { "traffic_car": 1, "police_cars": 2 },
+    "requirements": {
+      "traffic_car": 1,
+      "oneof_police_swat": 2,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 100, "patient_critical_care": 20 },
     "additional": {
       "possible_patient": 1,
       "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "need_traffic_car_only_if_present": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -20201,14 +20190,17 @@
       "/images/icy_road_gelb.png",
       "/images/icy_road_rot.png"
     ],
-    "requirements": { "traffic_car": 2, "police_cars": 6 },
+    "requirements": {
+      "traffic_car": 2,
+      "oneof_police_swat": 6,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
       "max_possible_prisoners": 1,
       "patient_uk_code_possible": ["C-2", "C-3"],
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "need_traffic_car_only_if_present": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -20578,12 +20570,9 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 4 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1, "police_cars": 4 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
@@ -20606,10 +20595,14 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "traffic_car": 2, "firetrucks": 2, "police_cars": 4 },
+    "requirements": {
+      "traffic_car": 2,
+      "oneof_lf_rw": 2,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true
     },
@@ -20776,11 +20769,10 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "oneof_lf_rw": 2, "firetrucks": 1 },
     "chances": { "patient_transport": 40, "patient_critical_care": 40 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-1", "C-2"],
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [0],
@@ -21591,12 +21583,11 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_lf_rw": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "patient_uk_code_possible": ["C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "date_start": "2022-09-23T09:00:00Z",
@@ -22113,12 +22104,11 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "k9": 1, "police_cars": 4 },
+    "requirements": { "k9": 1, "oneof_police_swat": 4, "police_cars": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 6 },
     "overlay_index": null,
@@ -22893,17 +22883,15 @@
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 1,
+      "oneof_lf_rw_dlk": 1,
       "police_cars": 1
     },
     "chances": { "platform_trucks": 20, "water_tankers": 10 },
     "additional": {
       "duration_text": "3 hours",
       "duration": 10800,
-      "allow_rw_instead_of_lf": true,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
     "overlay_index": null,
@@ -24061,13 +24049,12 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_guard_boat": 1 },
+    "requirements": { "oneof_coastal_guard_boat_large_coastal_boat": 1 },
     "chances": {},
     "additional": {
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions"],
-      "uses_custom_spawn_area": true,
-      "allow_large_coastal_boat_instead_of_coastal_guard_boat": 1
+      "uses_custom_spawn_area": true
     },
     "prerequisites": { "main_building": 27, "coastal_rescue_count": 1 },
     "overlay_index": null,
@@ -24087,7 +24074,10 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "requirements": {
+      "coastal_helicopter": 1,
+      "oneof_coastal_guard_boat_large_coastal_boat": 1
+    },
     "chances": {
       "coastal_helicopter": 50,
       "patient_transport": 100,
@@ -24101,7 +24091,6 @@
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [27],
-      "allow_large_coastal_boat_instead_of_coastal_guard_boat": 1,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -24894,7 +24883,6 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 3,
       "ems_mobile_command": 1,
       "water_tankers": 1,
       "hazard_response_primary": 1,
@@ -24902,7 +24890,9 @@
       "kdow_orgl": 2,
       "heavy_rescue_vehicles": 1,
       "riv": 1,
-      "firetrucks": 3,
+      "oneof_lf_riv": 3,
+      "oneof_elw1_elw_airport": 3,
+      "firetrucks": 1,
       "police_cars": 2,
       "personnel_educations": { "police_sergeant": 1 }
     },
@@ -24913,8 +24903,6 @@
       "patient_uk_code_possible": ["C-2", "C-3"],
       "filter_id": "firehouse_missions",
       "max_arff_replacing_riv": 1,
-      "allow_riv_instead_of_lf": true,
-      "allow_elw_airport_instead_of_elw": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal",
@@ -24948,8 +24936,6 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 6,
-      "mobile_command_vehicles": 1,
       "emergency_welfare": 1,
       "ems_mobile_command": 1,
       "hazmat_vehicles": 1,
@@ -24964,7 +24950,10 @@
       "airport_equipment": 2,
       "airport_command": 1,
       "elw_airport": 1,
-      "firetrucks": 7,
+      "oneof_lf_arff": 7,
+      "oneof_elw1_elw_airport": 6,
+      "oneof_elw2_elw_airport": 1,
+      "firetrucks": 1,
       "police_cars": 8,
       "personnel_educations": { "police_sergeant": 2, "police_inspector": 1 }
     },
@@ -24974,10 +24963,7 @@
       "possible_patient_min": 75,
       "patient_uk_code_possible": ["C-2", "C-3"],
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "need_traffic_car_only_if_present": true,
-      "allow_elw_airport_instead_of_elw": true,
-      "allow_elw_airport_instead_of_elw_2": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal",
@@ -25012,8 +24998,6 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 6,
-      "mobile_command_vehicles": 1,
       "emergency_welfare": 2,
       "ems_mobile_command": 1,
       "hazmat_vehicles": 2,
@@ -25027,9 +25011,12 @@
       "arff": 5,
       "airport_equipment": 4,
       "airport_command": 2,
-      "rettungstreppe": 1,
       "elw_airport": 1,
-      "firetrucks": 10,
+      "oneof_lf_arff": 10,
+      "oneof_elw1_elw_airport": 6,
+      "oneof_elw2_elw_airport": 1,
+      "oneof_dlk_rescue_stairs": 1,
+      "firetrucks": 1,
       "police_cars": 12,
       "personnel_educations": { "police_sergeant": 4, "police_inspector": 1 }
     },
@@ -25039,11 +25026,7 @@
       "possible_patient_min": 150,
       "patient_uk_code_possible": ["C-2", "C-3"],
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "need_traffic_car_only_if_present": true,
-      "allow_dlk_instead_of_rescue_stairs": true,
-      "allow_elw_airport_instead_of_elw": true,
-      "allow_elw_airport_instead_of_elw_2": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal",
@@ -25091,14 +25074,14 @@
       "airport_equipment": 4,
       "airport_command": 2,
       "elw_airport": 1,
-      "firetrucks": 5,
+      "oneof_lf_arff": 5,
+      "firetrucks": 1,
       "police_cars": 4,
       "personnel_educations": { "police_sergeant": 1, "police_inspector": 1 }
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "need_traffic_car_only_if_present": true,
       "personnel_educations": { "Police Sergeant": 1, "Police Inspector": 1 }
     },
@@ -25131,7 +25114,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "emergency_welfare": 1,
       "ems_mobile_command": 1,
       "hazmat_vehicles": 2,
@@ -25145,16 +25127,16 @@
       "airport_equipment": 4,
       "airport_command": 2,
       "elw_airport": 1,
-      "firetrucks": 7,
+      "oneof_lf_arff": 7,
+      "oneof_elw1_elw_airport": 1,
+      "firetrucks": 1,
       "police_cars": 4,
       "personnel_educations": { "police_sergeant": 1, "police_inspector": 1 }
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "need_traffic_car_only_if_present": true,
-      "allow_elw_airport_instead_of_elw": true,
       "personnel_educations": { "Police Sergeant": 1, "Police Inspector": 1 }
     },
     "prerequisites": {
@@ -25185,13 +25167,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "riv": 1, "firetrucks": 1 },
+    "requirements": { "oneof_lf_riv_arff": 1, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "max_arff_replacing_riv": 1,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 591,
@@ -25215,15 +25193,12 @@
       "water_tankers": 2,
       "hazard_response_primary": 2,
       "hazard_response_secondary": 1,
-      "riv": 1,
-      "firetrucks": 2
+      "oneof_lf_riv": 2,
+      "oneof_riv_arff": 1,
+      "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "max_arff_replacing_riv": 1,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 4,
@@ -25254,15 +25229,12 @@
       "hazard_response_primary": 2,
       "hazard_response_secondary": 1,
       "kdow_orgl": 1,
-      "riv": 2,
-      "firetrucks": 4
+      "oneof_lf_riv": 4,
+      "oneof_riv_arff": 2,
+      "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "max_arff_replacing_riv": 2,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
@@ -25464,7 +25436,10 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "requirements": {
+      "coastal_helicopter": 1,
+      "oneof_coastal_guard_boat_large_coastal_boat": 1
+    },
     "chances": { "coastal_helicopter": 20, "patient_transport": 85 },
     "additional": {
       "possible_patient": 1,
@@ -25474,7 +25449,6 @@
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [27],
-      "allow_large_coastal_boat_instead_of_coastal_guard_boat": 1,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -26545,5 +26519,138 @@
     "base_mission_id": 634,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "635",
+    "name": "High Risk Missing Person",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "search_and_rescue": 1,
+      "search_and_rescue_command": 1,
+      "oneof_drone_police_helicopter": 1,
+      "police_cars": 2,
+      "water_rescue": 2,
+      "personnel_educations": {
+        "search_and_rescue": 10,
+        "search_and_rescue_command": 2
+      }
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Search Advisor": 10, "SAR Commander": 2 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "personnel_educations": {
+        "search_and_rescue": 20,
+        "search_and_rescue_command": 4
+      },
+      "technical_aid": 2,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 635,
+    "additive_overlays": "",
+    "mission_categories": ["search_and_rescue"]
+  },
+  {
+    "id": "636",
+    "name": "Very High Risk Missing Person",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "search_and_rescue": 1,
+      "search_and_rescue_command": 1,
+      "oneof_drone_police_helicopter": 1,
+      "police_cars": 2,
+      "water_rescue": 2,
+      "personnel_educations": {
+        "search_and_rescue": 10,
+        "search_and_rescue_command": 2
+      }
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Search Advisor": 10, "SAR Commander": 2 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "police_stations": 6,
+      "personnel_educations": {
+        "search_and_rescue": 20,
+        "search_and_rescue_command": 4
+      },
+      "technical_aid": 2,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 636,
+    "additive_overlays": "",
+    "mission_categories": ["search_and_rescue"]
+  },
+  {
+    "id": "637",
+    "name": "Community event",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "personnel_educations": { "search_and_rescue": 4 } },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "coastal_rescue_missions",
+      "personnel_educations": { "Search Advisor": 4 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "personnel_educations": { "search_and_rescue": 8 },
+      "technical_aid": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 637,
+    "additive_overlays": "",
+    "mission_categories": ["search_and_rescue"]
   }
 ]
