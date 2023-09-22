@@ -12650,6 +12650,291 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "373",
+    "name": "Une personne a glissé sur des feuilles mouillées",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 45 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 373,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "374",
+    "name": "Accident de la route causé par des feuilles mortes",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 374,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "375",
+    "name": "Une personne tombée dans un tas de feuilles mortes",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 375,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "376",
+    "name": "Perte de contrôle d'un souffleur à feuilles",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 376,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "377",
+    "name": "Bouche d'égout bloquée par des feuilles",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 377,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "378",
+    "name": "Hypothermie après une baignade dans l'eau froide",
+    "place": "Lac\nRivière",
+    "place_array": ["Lac", "Rivière"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 378,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "379",
+    "name": "Accident sur une route dû au brouillard",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 379,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "380",
+    "name": "Accident après avoir croisé un chevreuil",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 380,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "381",
+    "name": "Tas de feuilles en feu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 320,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 381,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "382",
     "name": "Carence ambulance",
     "place": "",
