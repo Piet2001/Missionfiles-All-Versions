@@ -16067,6 +16067,346 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "439",
+    "name": "Persona scivolata sulle foglie bagnate",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 45 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01G", "SC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 439,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "440",
+    "name": "Incidente stradale causato dalle foglie cadute",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 440,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "441",
+    "name": "Persona caduta in un mucchio di foglie",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 441,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "442",
+    "name": "Aspirafoglie fuori controllo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 442,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "443",
+    "name": "Tombino ostruito dalle foglie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 443,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "444",
+    "name": "Ipotermia dopo un bagno in acqua gelida",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 444,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "445",
+    "name": "Incidente su una strada nebbiosa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 445,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "446",
+    "name": "Incidente per l'attraversamento di un cervo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 446,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "447",
+    "name": "Mucchio di foglie in fiamme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 320,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-22T09:00:00Z",
+      "date_end": "2023-11-30T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 447,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "448",
     "name": "Cellulare Rubato",
     "place": "",
