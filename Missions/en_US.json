@@ -43226,5 +43226,48 @@
     "base_mission_id": 891,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "892",
+    "name": "Lack of oxygen onboard",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4480,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "coastal_helicopter": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "73-D-5",
+        "73-D-2",
+        "73-D-1",
+        "73-B-2",
+        "73-B-1"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Cardiac Surgery"],
+      "patient_specializations": "Cardiac Surgery"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 10,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 892,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
