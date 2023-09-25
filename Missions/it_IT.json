@@ -22987,5 +22987,49 @@
     "base_mission_id": 635,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "636",
+    "name": "Occupazione Pacifica della Scuola",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "k9": 1, "swat_armored_vehicle": 2, "police_cars": 8 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 0,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 10,
+      "patient_it_code_possible": ["QC01R", "QC01G", "QC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 636,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
