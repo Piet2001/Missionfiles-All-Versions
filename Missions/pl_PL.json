@@ -23529,6 +23529,52 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "673",
+    "name": "Aktywacja hamulca awaryjnego w pociągu",
+    "place": "Dworzec kolejowy (ruch podmiejski)\nDworzec kolejowy (ruch podmiejski i dalekobieżny)\nPrzejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": [
+      "Dworzec kolejowy (ruch podmiejski)",
+      "Dworzec kolejowy (ruch podmiejski i dalekobieżny)",
+      "Przejazd kolejowy",
+      "Przejazd kolejowo-drogowy"
+    ],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 673,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "677",
     "name": "Awaria w stacji zasilania",
     "place": "",
