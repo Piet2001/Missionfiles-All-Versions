@@ -374,13 +374,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -921,11 +922,10 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25, 47],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -2318,13 +2318,12 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 1,
+      "firetrucks": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 75,
@@ -2464,15 +2463,16 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["22-B-2"],
-      "allow_dlk_instead_of_lf": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
@@ -2944,6 +2944,94 @@
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
+    "id": "88/b",
+    "name": "Partial Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "personnel_educations": { "technical_rescue": 8, "search_and_rescue": 8 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Technical Rescuer": 8, "USAR": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "personnel_educations": {
+        "technical_rescue": 16,
+        "search_and_rescue": 16
+      },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 88,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
+    "id": "88/ab",
+    "name": "Partial Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "light_supply": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "technical_rescue": 8, "search_and_rescue": 8 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Technical Rescuer": 8, "USAR": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "disaster_response_count": 1,
+      "personnel_educations": {
+        "technical_rescue": 16,
+        "search_and_rescue": 16
+      },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 88,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "water_damage_and_flood"]
+  },
+  {
     "id": "89",
     "name": "Trench Rescue",
     "place": "",
@@ -2980,6 +3068,47 @@
     "overlay_index": null,
     "base_mission_id": 89,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "89/a",
+    "name": "Trench Rescue",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "technical_rescue": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-2"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "technical_rescue_equipment": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 89,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -3874,13 +4003,15 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": {
+      "oneof_police_patrol_or_police_swat": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [105],
       "swat_personnel": 18,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 5, "police_stations": 9 },
     "overlay_index": null,
@@ -3901,6 +4032,7 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
+      "oneof_police_patrol_or_police_swat": 1,
       "police_cars": 1,
       "personnel_educations": { "sniper": 2 }
     },
@@ -3909,7 +4041,6 @@
       "expansion_missions_ids": [105],
       "swat_personnel": 18,
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "personnel_educations": { "Sharpshooter": 2 }
     },
     "prerequisites": {
@@ -3934,12 +4065,14 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": {
+      "oneof_police_patrol_or_police_swat": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "swat_personnel": 6,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 5, "police_stations": 8 },
     "overlay_index": null,
@@ -4241,13 +4374,11 @@
     "requirements": {
       "arff": 1,
       "battalion_chief_vehicles": 1,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 115,
@@ -4269,13 +4400,11 @@
     "requirements": {
       "arff": 1,
       "battalion_chief_vehicles": 1,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 116,
@@ -4297,13 +4426,11 @@
     "requirements": {
       "arff": 2,
       "battalion_chief_vehicles": 1,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 117,
@@ -4325,13 +4452,11 @@
     "requirements": {
       "arff": 3,
       "battalion_chief_vehicles": 1,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 118,
@@ -4383,7 +4508,8 @@
     "requirements": {
       "arff": 4,
       "battalion_chief_vehicles": 2,
-      "firetrucks": 3,
+      "oneof_airport_fire_engine_or_fire_engine": 3,
+      "firetrucks": 1,
       "police_cars": 5
     },
     "chances": { "patient_transport": 30 },
@@ -4392,7 +4518,6 @@
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["29-D-1a"],
-      "allow_arff_instead_of_lf": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -4425,7 +4550,8 @@
       "arff": 4,
       "battalion_chief_vehicles": 2,
       "foam_needed": 2600,
-      "firetrucks": 3,
+      "oneof_airport_fire_engine_or_fire_engine": 3,
+      "firetrucks": 1,
       "police_cars": 5
     },
     "chances": { "patient_transport": 30 },
@@ -4434,7 +4560,6 @@
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["29-D-1a"],
-      "allow_arff_instead_of_lf": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -5217,16 +5342,47 @@
       "/images/elevator_gelb.png",
       "/images/elevator_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 141,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "141/a",
+    "name": "Elevator Rescue",
+    "place": "Office Building",
+    "place_array": ["Office Building"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": {
+      "technical_rescue": 1,
+      "oneof_fire_engine_or_fire_rescue": 1,
+      "firetrucks": 1,
+      "personnel_educations": { "technical_rescue": 4 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Technical Rescuer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "technical_rescue": 8 },
+      "technical_rescue_equipment": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 141,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7073,6 +7229,57 @@
     "mission_categories": ["water_rescue", "water_damage_and_flood"]
   },
   {
+    "id": "172/c",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 8,
+      "police_cars": 3,
+      "personnel_educations": { "search_and_rescue": 12 }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "personnel_educations": { "search_and_rescue": 24 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "c",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
     "id": "172/ab",
     "name": "Giant flooding",
     "place": "",
@@ -7125,6 +7332,173 @@
     "overlay_index": null,
     "base_mission_id": 172,
     "additive_overlays": "ab",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/ac",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "flood_equipment": 3,
+      "firetrucks": 8,
+      "police_cars": 3,
+      "personnel_educations": { "search_and_rescue": 12 },
+      "min_pump_speed": 16000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 320000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "personnel_educations": { "search_and_rescue": 24 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "ac",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/bc",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6100,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "light_supply": 2,
+      "energy_supply": 1,
+      "firetrucks": 8,
+      "police_cars": 3,
+      "personnel_educations": { "search_and_rescue": 12 }
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "disaster_response_count": 2,
+      "personnel_educations": { "search_and_rescue": 24 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "bc",
+    "mission_categories": ["water_rescue", "water_damage_and_flood"]
+  },
+  {
+    "id": "172/abc",
+    "name": "Giant flooding",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "flood_equipment": 3,
+      "light_supply": 2,
+      "energy_supply": 1,
+      "firetrucks": 8,
+      "police_cars": 3,
+      "personnel_educations": { "search_and_rescue": 12 },
+      "min_pump_speed": 16000
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "pump_water_amount": 320000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 2,
+      "personnel_educations": { "search_and_rescue": 24 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 172,
+    "additive_overlays": "abc",
     "mission_categories": ["water_rescue", "water_damage_and_flood"]
   },
   {
@@ -7251,6 +7625,55 @@
     "overlay_index": null,
     "base_mission_id": 175,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "175/a",
+    "name": "Bridge collapse",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 8200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "technical_rescue": 2,
+      "firetrucks": 5,
+      "police_cars": 2,
+      "personnel_educations": { "technical_rescue": 12 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["22-D-3X"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 12 }
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 2,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "personnel_educations": { "technical_rescue": 24 },
+      "technical_rescue_equipment": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 175,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -9912,13 +10335,13 @@
       "arff": 3,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [120],
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 11 },
     "overlay_index": null,
@@ -9938,12 +10361,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "arff": 2, "firetrucks": 1 },
+    "requirements": {
+      "arff": 2,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [162],
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 11 },
     "overlay_index": null,
@@ -10031,6 +10457,56 @@
     "mission_categories": ["airport"]
   },
   {
+    "id": "228/a",
+    "name": "Airport Terminal Collapse (Large)",
+    "place": "Airport Terminal",
+    "place_array": ["Airport Terminal"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 8,
+      "police_cars": 2,
+      "personnel_educations": {
+        "technical_rescue": 16,
+        "search_and_rescue": 12
+      }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3", "22-B-1", "22-A-1"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 16, "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "personnel_educations": {
+        "technical_rescue": 32,
+        "search_and_rescue": 24
+      },
+      "airport": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 228,
+    "additive_overlays": "a",
+    "mission_categories": ["airport"]
+  },
+  {
     "id": "229",
     "name": "Airport Terminal Collapse (Major)",
     "place": "Airport Terminal",
@@ -10069,6 +10545,56 @@
     "overlay_index": null,
     "base_mission_id": 229,
     "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "229/a",
+    "name": "Airport Terminal Collapse (Major)",
+    "place": "Airport Terminal",
+    "place_array": ["Airport Terminal"],
+    "average_credits": 13100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 12,
+      "police_cars": 6,
+      "personnel_educations": {
+        "technical_rescue": 24,
+        "search_and_rescue": 18
+      }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 40,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3", "22-B-1", "22-A-1"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 24, "USAR": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 3,
+      "personnel_educations": {
+        "technical_rescue": 48,
+        "search_and_rescue": 36
+      },
+      "airport": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 229,
+    "additive_overlays": "a",
     "mission_categories": ["airport"]
   },
   {
@@ -10310,6 +10836,106 @@
     "overlay_index": null,
     "base_mission_id": 232,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "232/b",
+    "name": "Full Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": {
+        "technical_rescue": 14,
+        "search_and_rescue": 12
+      }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 14, "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "personnel_educations": {
+        "technical_rescue": 28,
+        "search_and_rescue": 24
+      },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 232,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "232/ab",
+    "name": "Full Building Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "light_supply": 2,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": {
+        "technical_rescue": 14,
+        "search_and_rescue": 12
+      }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 14, "USAR": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "personnel_educations": {
+        "technical_rescue": 28,
+        "search_and_rescue": 24
+      },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 232,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -14254,6 +14880,50 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "310/a",
+    "name": "Passenger train derailment (Major)",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 14,
+      "police_cars": 12,
+      "personnel_educations": { "search_and_rescue": 20 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 60,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1d"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 310,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "311",
     "name": "Passenger train derailment (Major)",
     "place": "Train station (regional traffic and long-distance travel)",
@@ -14294,6 +14964,52 @@
     "overlay_index": null,
     "base_mission_id": 311,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "311/a",
+    "name": "Passenger train derailment (Major)",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 14,
+      "police_cars": 12,
+      "personnel_educations": { "search_and_rescue": 20 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 60,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1d"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 311,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -14338,6 +15054,50 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "312/a",
+    "name": "Passenger train derailment (Major)",
+    "place": "Railroad Crossing",
+    "place_array": ["Railroad Crossing"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 14,
+      "police_cars": 12,
+      "personnel_educations": { "search_and_rescue": 20 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 60,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1d"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 312,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "313",
     "name": "Passenger train derailment (Major)",
     "place": "Rail Crossing",
@@ -14376,6 +15136,50 @@
     "overlay_index": null,
     "base_mission_id": 313,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "313/a",
+    "name": "Passenger train derailment (Major)",
+    "place": "Rail Crossing",
+    "place_array": ["Rail Crossing"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 14,
+      "police_cars": 12,
+      "personnel_educations": { "search_and_rescue": 20 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 60,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1d"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 313,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -14551,6 +15355,52 @@
     "overlay_index": null,
     "base_mission_id": 317,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "317/a",
+    "name": "Subway Collapse",
+    "place": "Subway station",
+    "place_array": ["Subway station"],
+    "average_credits": 12800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 8,
+      "police_cars": 2,
+      "personnel_educations": { "technical_rescue": 8, "search_and_rescue": 8 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 8, "USAR": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 1,
+      "personnel_educations": {
+        "technical_rescue": 16,
+        "search_and_rescue": 16
+      },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 317,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -15031,7 +15881,10 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 6 },
+    "requirements": {
+      "oneof_police_patrol_or_police_swat": 6,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 1,
@@ -15046,7 +15899,6 @@
         "30-B-2",
         "30-A-1"
       ],
-      "allow_swat_instead_of_police": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -16194,12 +17046,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_fire_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-03-31T09:00:00Z",
@@ -19208,6 +20060,43 @@
     "overlay_index": null,
     "base_mission_id": 390,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "390/a",
+    "name": "Cliff collapse on highway",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 8,
+      "police_cars": 5,
+      "personnel_educations": { "search_and_rescue": 10 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "USAR": 10 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 390,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -22561,12 +23450,11 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "fbi": 1, "investigation": 1 },
+    "requirements": { "fbi": 1, "oneof_fire_investigation_or_fbi_drone": 1 },
     "chances": {},
     "additional": {
       "filter_id": "federal_police_missions",
-      "subsequent_missions_ids": [442, 443, 568, 571],
-      "allow_drone_instead_of_investigation": true
+      "subsequent_missions_ids": [442, 443, 568, 571]
     },
     "prerequisites": { "main_building": 18, "federalpolice_stations": 1 },
     "overlay_index": null,
@@ -23814,6 +24702,45 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "476/a",
+    "name": "Train station collapse (Small) (Fire alarm system)",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 4150,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "personnel_educations": { "technical_rescue": 2, "search_and_rescue": 4 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 2, "USAR": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "personnel_educations": { "technical_rescue": 4, "search_and_rescue": 8 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 476,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "477",
     "name": "Train station collapse (Small) (Fire alarm system)",
     "place": "Train station (regional traffic and long-distance travel)",
@@ -23852,6 +24779,47 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "477/a",
+    "name": "Train station collapse (Small) (Fire alarm system)",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 3350,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "personnel_educations": { "technical_rescue": 2, "search_and_rescue": 4 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 2, "USAR": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "personnel_educations": { "technical_rescue": 4, "search_and_rescue": 8 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 477,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "478",
     "name": "Train station collapse (Medium)",
     "place": "Train station (regional traffic)",
@@ -23887,6 +24855,50 @@
     "overlay_index": null,
     "base_mission_id": 478,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "478/a",
+    "name": "Train station collapse (Medium)",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 6350,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": { "technical_rescue": 4, "search_and_rescue": 10 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 4, "USAR": 10 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "personnel_educations": {
+        "technical_rescue": 8,
+        "search_and_rescue": 20
+      },
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 478,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -23930,6 +24942,52 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "479/a",
+    "name": "Train station collapse (Medium)",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 6350,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": { "technical_rescue": 4, "search_and_rescue": 10 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 4, "USAR": 10 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "personnel_educations": {
+        "technical_rescue": 8,
+        "search_and_rescue": 20
+      },
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "480",
     "name": "Train station collapse (Large)",
     "place": "Train station (regional traffic)",
@@ -23967,6 +25025,55 @@
     "overlay_index": null,
     "base_mission_id": 480,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "480/a",
+    "name": "Train station collapse (Large)",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 11600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 8,
+      "police_cars": 4,
+      "personnel_educations": {
+        "technical_rescue": 18,
+        "search_and_rescue": 18
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 18, "USAR": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 3,
+      "personnel_educations": {
+        "technical_rescue": 36,
+        "search_and_rescue": 36
+      },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -24012,6 +25119,57 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "481/a",
+    "name": "Train station collapse (Large)",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 11600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 8,
+      "police_cars": 4,
+      "personnel_educations": {
+        "technical_rescue": 18,
+        "search_and_rescue": 18
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 18, "USAR": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 3,
+      "personnel_educations": {
+        "technical_rescue": 36,
+        "search_and_rescue": 36
+      },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 481,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "482",
     "name": "Train station collapse (Major)",
     "place": "Train station (regional traffic)",
@@ -24049,6 +25207,55 @@
     "overlay_index": null,
     "base_mission_id": 482,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "482/a",
+    "name": "Train station collapse (Major)",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 17200,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "heavy_rescue_vehicles": 8,
+      "firetrucks": 12,
+      "police_cars": 6,
+      "personnel_educations": {
+        "technical_rescue": 24,
+        "search_and_rescue": 20
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 24, "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 5,
+      "personnel_educations": {
+        "technical_rescue": 48,
+        "search_and_rescue": 40
+      },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 482,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -24091,6 +25298,57 @@
     "overlay_index": null,
     "base_mission_id": 483,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "483/a",
+    "name": "Train station collapse (Major)",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 17200,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "heavy_rescue_vehicles": 8,
+      "firetrucks": 12,
+      "police_cars": 6,
+      "personnel_educations": {
+        "technical_rescue": 24,
+        "search_and_rescue": 20
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3Y"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 24, "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 5,
+      "personnel_educations": {
+        "technical_rescue": 48,
+        "search_and_rescue": 40
+      },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 483,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -26205,13 +27463,13 @@
     "requirements": {
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 1,
       "firetrucks": 1
     },
     "chances": { "heavy_rescue_vehicles": 30, "patient_transport": 60 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": [
         "17-D-1G",
@@ -26226,7 +27484,6 @@
         "17-A-2G",
         "17-A-3G"
       ],
-      "allow_dlk_instead_of_lf": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -29083,10 +30340,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2023-09-22T09:00:00Z",
       "date_end": "2023-11-30T23:59:59-05:00"
@@ -29547,14 +30803,14 @@
       "platform_trucks": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_fire_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 0 },
     "additional": {
       "possible_patient": 5,
       "possible_patient_min": 2,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specialization_ids": [0],
@@ -29588,6 +30844,7 @@
       "platform_trucks": 3,
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 2,
+      "oneof_fire_engine_or_fire_rescue": 4,
       "firetrucks": 6,
       "police_cars": 4
     },
@@ -29595,7 +30852,6 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 2,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specialization_ids": [0],
@@ -29630,6 +30886,7 @@
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
+      "oneof_fire_engine_or_fire_rescue": 4,
       "firetrucks": 10,
       "police_cars": 4
     },
@@ -29637,7 +30894,6 @@
     "additional": {
       "possible_patient": 20,
       "possible_patient_min": 10,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specialization_ids": [0],
@@ -29674,6 +30930,7 @@
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 6,
       "foam_needed": 4000,
+      "oneof_fire_engine_or_fire_rescue": 4,
       "firetrucks": 14,
       "police_cars": 5
     },
@@ -29681,7 +30938,6 @@
     "additional": {
       "possible_patient": 30,
       "possible_patient_min": 20,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
       "patient_specialization_ids": [0],
@@ -29840,6 +31096,57 @@
     "overlay_index": null,
     "base_mission_id": 642,
     "additive_overlays": "",
+    "mission_categories": ["police", "water_police_specialization"]
+  },
+  {
+    "id": "642/a",
+    "name": "Building Collapsed into Water",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 12200,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fire_investigation": 2,
+      "k9": 2,
+      "large_rescue_boat": 2,
+      "police_boat": 2,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "personnel_educations": { "search_and_rescue": 8 }
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["14-D-6"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "USAR": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "police_stations": 8,
+      "rescue_boat_docks": 1,
+      "water_police_count": 1,
+      "fire_investigation_count": 1,
+      "personnel_educations": { "search_and_rescue": 16 },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 642,
+    "additive_overlays": "a",
     "mission_categories": ["police", "water_police_specialization"]
   },
   {
@@ -31886,6 +33193,49 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "688/a",
+    "name": "Crane Collapse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 7,
+      "police_cars": 3,
+      "personnel_educations": { "technical_rescue": 6 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 13,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["15-D-8"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "personnel_educations": { "technical_rescue": 12 },
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 688,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "689",
     "name": "Cargo plane fire with oil leak",
     "place": "Large Airport (Runway)",
@@ -32557,10 +33907,10 @@
       "dea_unit": 3,
       "fbi": 3,
       "hazmat_vehicles": 1,
-      "investigation": 1,
       "k9": 2,
       "police_helicopters": 1,
       "sheriff": 5,
+      "oneof_fire_investigation_or_fbi_drone": 1,
       "police_cars": 10
     },
     "chances": { "hazmat_vehicles": 20 },
@@ -32568,8 +33918,7 @@
       "min_possible_prisoners": 5,
       "max_possible_prisoners": 10,
       "swat_personnel": 12,
-      "filter_id": "federal_police_missions",
-      "allow_drone_instead_of_investigation": true
+      "filter_id": "federal_police_missions"
     },
     "prerequisites": {
       "main_building": 18,
@@ -32670,10 +34019,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-22T11:00:00Z",
@@ -33897,6 +35245,140 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "725/b",
+    "name": "Refinery Explosion (Major)",
+    "place": "Large chemical storage tank",
+    "place_array": ["Large chemical storage tank"],
+    "average_credits": 44400,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "fbi": 4,
+      "foam": 5,
+      "mobile_air_vehicles": 5,
+      "hazmat_vehicles": 6,
+      "water_tankers": 5,
+      "investigation": 1,
+      "heavy_rescue_vehicles": 10,
+      "sheriff": 4,
+      "water_needed": 15000,
+      "foam_needed": 10000,
+      "search_and_rescue": 8,
+      "firetrucks": 30,
+      "police_cars": 10,
+      "personnel_educations": { "gw_gefahrgut": 24, "search_and_rescue": 40 }
+    },
+    "chances": {
+      "fbi": 50,
+      "investigation": 50,
+      "patient_transport": 40,
+      "helicopter": 20
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 30,
+      "followup_missions_ids": [726],
+      "max_possible_prisoners": 8,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 10,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 24, "USAR": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 15,
+      "federalpolice_stations": 1,
+      "fire_support_count": 3,
+      "personnel_educations": { "search_and_rescue": 80 },
+      "search_and_rescue_equipment": 8,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 725,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "725/ab",
+    "name": "Refinery Explosion (Major)",
+    "place": "Large chemical storage tank",
+    "place_array": ["Large chemical storage tank"],
+    "average_credits": 46900,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "fbi": 4,
+      "fire_investigation": 6,
+      "foam": 5,
+      "mobile_air_vehicles": 5,
+      "hazmat_vehicles": 6,
+      "water_tankers": 5,
+      "investigation": 1,
+      "heavy_rescue_vehicles": 10,
+      "sheriff": 4,
+      "water_needed": 15000,
+      "foam_needed": 10000,
+      "search_and_rescue": 8,
+      "firetrucks": 30,
+      "police_cars": 10,
+      "personnel_educations": { "gw_gefahrgut": 24, "search_and_rescue": 40 }
+    },
+    "chances": {
+      "fbi": 50,
+      "investigation": 50,
+      "patient_transport": 40,
+      "helicopter": 20
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 30,
+      "followup_missions_ids": [726],
+      "max_possible_prisoners": 8,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-D-1"],
+      "patient_allow_first_responder_chance": 10,
+      "subsequent_missions_ids": [727],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 24, "USAR": 40 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 15,
+      "federalpolice_stations": 1,
+      "fire_support_count": 3,
+      "fire_investigation_count": 3,
+      "personnel_educations": { "search_and_rescue": 80 },
+      "search_and_rescue_equipment": 8,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 725,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
     "id": "726",
     "name": "Area Evacuation",
     "place": "",
@@ -34990,6 +36472,54 @@
     "overlay_index": null,
     "base_mission_id": 748,
     "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "748/a",
+    "name": "Jetbridge Collapse (Large)",
+    "place": "Airport Terminal",
+    "place_array": ["Airport Terminal"],
+    "average_credits": 6150,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "arff": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 5,
+      "personnel_educations": { "technical_rescue": 6 }
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "patient_transport": 50,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-B-3", "22-D-3"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Technical Rescuer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "personnel_educations": { "technical_rescue": 12 },
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": "a",
     "mission_categories": ["airport"]
   },
   {
@@ -37202,14 +38732,17 @@
       "/images/fallingrocks_gelb.png",
       "/images/fallingrocks_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_fire_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 65, "helicopter": 20 },
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 0,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["22-D-1"],
-      "allow_dlk_instead_of_lf": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
@@ -37222,6 +38755,48 @@
     "overlay_index": null,
     "base_mission_id": 768,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "768/a",
+    "name": "Confined Space Rescue",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "technical_rescue": 1,
+      "oneof_fire_engine_or_fire_ladder": 1,
+      "firetrucks": 1,
+      "personnel_educations": { "technical_rescue": 6 }
+    },
+    "chances": { "patient_transport": 65, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-1"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "personnel_educations": { "technical_rescue": 12 },
+      "technical_rescue_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 768,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -38796,10 +40371,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -38913,10 +40487,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -40312,6 +41885,54 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "828/a",
+    "name": "Sports Stadium Collapse",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 46800,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 4,
+      "k9": 4,
+      "heavy_rescue_vehicles": 20,
+      "sheriff": 4,
+      "firetrucks": 40,
+      "police_cars": 15,
+      "personnel_educations": { "search_and_rescue": 36 }
+    },
+    "chances": { "patient_transport": 30, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 75,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3M"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 36 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 72 },
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 828,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "829",
     "name": "College Sports Stand Collapse",
     "place": "Stadium",
@@ -40354,6 +41975,54 @@
     "overlay_index": null,
     "base_mission_id": 829,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "829/a",
+    "name": "College Sports Stand Collapse",
+    "place": "Stadium",
+    "place_array": ["Stadium"],
+    "average_credits": 36200,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 3,
+      "k9": 2,
+      "heavy_rescue_vehicles": 20,
+      "sheriff": 3,
+      "firetrucks": 35,
+      "police_cars": 10,
+      "personnel_educations": { "search_and_rescue": 24 }
+    },
+    "chances": { "patient_transport": 30, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3M"],
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "USAR": 24 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 10,
+      "personnel_educations": { "search_and_rescue": 48 },
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 829,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -41255,14 +42924,12 @@
       "heavy_rescue_vehicles": 2,
       "water_needed": 50000,
       "foam_needed": 4000,
-      "firetrucks": 4,
+      "oneof_airport_fire_engine_or_fire_engine": 4,
+      "firetrucks": 1,
       "police_cars": 4
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 8,
@@ -41291,14 +42958,12 @@
       "arff": 2,
       "water_needed": 20000,
       "foam_needed": 2000,
-      "firetrucks": 2,
+      "oneof_airport_fire_engine_or_fire_engine": 2,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
@@ -42867,6 +44532,89 @@
     "mission_categories": ["water_damage_and_flood"]
   },
   {
+    "id": "883/b",
+    "name": "Major flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 2,
+      "flood_equipment": 3,
+      "firetrucks": 3,
+      "personnel_educations": { "search_and_rescue": 16 },
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [884],
+      "followup_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 95000,
+      "personnel_educations": { "USAR": 16 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "personnel_educations": { "search_and_rescue": 32 },
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 883,
+    "additive_overlays": "b",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "883/ab",
+    "name": "Major flooding in a neighborhood following bad weather",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12800,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 2,
+      "flood_equipment": 3,
+      "light_supply": 3,
+      "energy_supply": 2,
+      "firetrucks": 3,
+      "personnel_educations": { "search_and_rescue": 16 },
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [884],
+      "followup_missions_ids": [882],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 95000,
+      "personnel_educations": { "USAR": 16 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 2,
+      "disaster_response_count": 3,
+      "personnel_educations": { "search_and_rescue": 32 },
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 883,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
     "id": "884",
     "name": "Rising waters of the canal (Flood)",
     "place": "",
@@ -42941,6 +44689,89 @@
     "overlay_index": null,
     "base_mission_id": 884,
     "additive_overlays": "a",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "884/b",
+    "name": "Rising waters of the canal (Flood)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "water_tankers": 4,
+      "heavy_rescue_vehicles": 6,
+      "flood_equipment": 5,
+      "firetrucks": 6,
+      "police_cars": 4,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000,
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "b",
+    "mission_categories": ["water_damage_and_flood"]
+  },
+  {
+    "id": "884/ab",
+    "name": "Rising waters of the canal (Flood)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 25000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "water_tankers": 4,
+      "heavy_rescue_vehicles": 6,
+      "flood_equipment": 5,
+      "light_supply": 7,
+      "energy_supply": 6,
+      "firetrucks": 6,
+      "police_cars": 4,
+      "personnel_educations": { "search_and_rescue": 20 },
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 150000,
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "water_damage_pump_count": 4,
+      "disaster_response_count": 5,
+      "personnel_educations": { "search_and_rescue": 40 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "ab",
     "mission_categories": ["water_damage_and_flood"]
   },
   {
@@ -43269,5 +45100,201 @@
     "base_mission_id": 892,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "893",
+    "name": "Car off embankment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "5-D-1",
+        "17-D-1",
+        "17-D-3",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 893,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "893/a",
+    "name": "Car off embankment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "search_and_rescue": 1,
+      "technical_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "5-D-1",
+        "17-D-1",
+        "17-D-3",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "search_and_rescue_equipment": 1,
+      "technical_rescue_equipment": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 893,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "894",
+    "name": "Children trapped in sewer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "5-D-1",
+        "17-D-1",
+        "17-D-3",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 894,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "894/a",
+    "name": "Children trapped in sewer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "search_and_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "5-D-1",
+        "17-D-1",
+        "17-D-3",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "search_and_rescue_equipment": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 894,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
   }
 ]
