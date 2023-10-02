@@ -24103,5 +24103,74 @@
     "base_mission_id": 649,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "650",
+    "name": "Intoxication alimentaire dans un établissement pénitentiaire - Nombreuses victimes",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "kdow_orgl": 1, "police_cars": 6 },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 18,
+      "police_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 650,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "651",
+    "name": "Commotion cérébrale",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 60
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 651,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
