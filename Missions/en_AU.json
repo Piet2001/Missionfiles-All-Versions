@@ -21599,10 +21599,10 @@
   },
   {
     "id": "641",
-    "name": "Child Trapped in Car",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1200,
+    "name": "Aged Care Facility Smoke Inhalation",
+    "place": "Aged Care Home",
+    "place_array": ["Aged Care Home"],
+    "average_credits": 4000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -21610,25 +21610,28 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "mobile_air_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 2
+      "firetrucks": 1
     },
-    "chances": { "patient_transport": 40 },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 5,
+      "patient_critical_care": 80
+    },
     "additional": {
-      "possible_patient": 1,
+      "possible_patient": 6,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 4,
-      "police_stations": 4,
-      "fire_stations": 4
+      "rescue_stations": 1,
+      "fire_stations": 5
     },
     "overlay_index": null,
     "base_mission_id": 641,
