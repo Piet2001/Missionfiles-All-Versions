@@ -45296,5 +45296,50 @@
     "base_mission_id": 894,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "895",
+    "name": "Emergency brake on the train",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1C"],
+      "patient_allow_first_responder_chance": 40,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 895,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
