@@ -2593,8 +2593,73 @@
       "patient_specialization_captions": ["Neurologie"],
       "patient_specializations": "Neurologie"
     },
-    "prerequisites": { "main_building": 3, "rescue_stations": 5 },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
     "overlay_index": null,
+    "base_mission_id": 91,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "91-0",
+    "name": "Psychiatrisch beeld",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 1,
+      "police_stations": 2
+    },
+    "overlay_index": 0,
+    "base_mission_id": 91,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "91-1",
+    "name": "Psychiatrisch beeld",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2140,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "ovdp": 1, "police_cars": 5 },
+    "chances": { "nef": 10, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1
+    },
+    "overlay_index": 1,
     "base_mission_id": 91,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
