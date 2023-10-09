@@ -24172,5 +24172,58 @@
     "base_mission_id": 651,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "652",
+    "name": "Incendie dans un entrepôt de peinture",
+    "place": "Entrepôt",
+    "place_array": ["Entrepôt"],
+    "average_credits": 15500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "fire_support_count": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
