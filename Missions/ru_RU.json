@@ -15281,5 +15281,38 @@
     "base_mission_id": 473,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "474",
+    "name": "Ребенок застрял в дереве",
+    "place": "Парк",
+    "place_array": ["Парк"],
+    "average_credits": 340,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "chances": { "platform_trucks": 80, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Хирург общего профиля"],
+      "patient_specializations": "Хирург общего профиля"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
