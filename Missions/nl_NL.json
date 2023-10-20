@@ -40632,5 +40632,137 @@
     "base_mission_id": 1055,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1058",
+    "name": "Halloween decoratie in brand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-10-20T09:00:00Z",
+      "date_end": "2023-10-31T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1058,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1059",
+    "name": "Winkeloverval door geesten",
+    "place": "",
+    "place_array": [],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-10-20T09:00:00Z",
+      "date_end": "2023-10-31T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 1059,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1060",
+    "name": "Voedselvergiftiging door vergiftigd snoep",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1860,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2023-10-20T09:00:00Z",
+      "date_end": "2023-10-31T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 8,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1060,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1061",
+    "name": "Vermist persoon op begraafplaats",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 3 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2023-10-20T09:00:00Z",
+      "date_end": "2023-10-31T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1061,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
