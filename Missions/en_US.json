@@ -45432,5 +45432,39 @@
     "base_mission_id": 897,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "898",
+    "name": "Pediatric CPR",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2180,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["26-A-5", "26-B-1", "26-A-6"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiology"],
+      "patient_specializations": "Cardiology"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 898,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
