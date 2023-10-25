@@ -729,12 +729,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 30,
@@ -4492,12 +4489,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_fire_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-03-31T09:00:00Z",
@@ -6175,12 +6172,14 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": {
+      "oneof_police_patrol_or_police_swat": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "swat_personnel": 6,
-      "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 8 },
     "overlay_index": null,
@@ -6621,14 +6620,15 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
@@ -11131,12 +11131,13 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue": 2,
+      "firetrucks": 1,
+      "police_cars": 2
     },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -11159,12 +11160,13 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
+    "requirements": {
+      "oneof_fire_engine_or_fire_rescue": 2,
+      "firetrucks": 1,
+      "police_cars": 2
     },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -11486,10 +11488,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2023-03-17T10:00:00Z",
       "date_end": "2023-06-21T10:00:00Z"
@@ -12066,13 +12067,13 @@
       "platform_trucks": 1,
       "battalion_chief_vehicles": 4,
       "water_tankers": 2,
-      "firetrucks": 8
+      "oneof_fire_engine_or_fire_ladder": 8,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "followup_missions_ids": [135],
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 13 },
     "overlay_index": null,
@@ -12183,14 +12184,11 @@
       "mobile_command_vehicles": 1,
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
-      "firetrucks": 4
+      "oneof_fire_engine_or_fire_rescue_or_fire_ladder": 4,
+      "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 13 },
     "overlay_index": null,
     "base_mission_id": 412,
@@ -12213,14 +12211,14 @@
       "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 2
+      "oneof_fire_engine_or_fire_rescue": 2,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 3,
       "possible_patient_min": 1,
       "expansion_missions_ids": [414],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -12254,14 +12252,14 @@
       "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4
+      "oneof_fire_engine_or_fire_rescue": 4,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 5,
       "possible_patient_min": 1,
       "expansion_missions_ids": [415],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -12300,7 +12298,8 @@
       "kdow_orgl": 1,
       "ambulances": 2,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 6,
+      "oneof_fire_engine_or_fire_rescue": 6,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
@@ -12308,7 +12307,6 @@
       "possible_patient": 12,
       "possible_patient_min": 4,
       "expansion_missions_ids": [416],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -12348,14 +12346,14 @@
       "kdow_orgl": 1,
       "ambulances": 2,
       "heavy_rescue_vehicles": 3,
-      "firetrucks": 10,
+      "oneof_fire_engine_or_fire_rescue": 10,
+      "firetrucks": 1,
       "police_cars": 4
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 12,
       "possible_patient_min": 4,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -16553,10 +16551,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -16668,10 +16665,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_fire_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-07-20T09:00:00Z",
@@ -16923,7 +16919,8 @@
       "water_tankers": 3,
       "ambulances": 10,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 11,
+      "oneof_fire_engine_or_fire_ladder": 11,
+      "firetrucks": 1,
       "police_cars": 4,
       "water_rescue": 1
     },
@@ -16932,7 +16929,6 @@
       "possible_patient": 33,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -16971,7 +16967,8 @@
       "police_service_group_leader": 1,
       "ambulances": 10,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 11,
+      "oneof_fire_engine_or_fire_ladder": 11,
+      "firetrucks": 1,
       "police_cars": 4,
       "water_rescue": 1
     },
@@ -16980,7 +16977,6 @@
       "possible_patient": 33,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -17014,6 +17010,7 @@
       "platform_trucks": 1,
       "ambulances": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_fire_ladder": 1,
       "firetrucks": 1,
       "police_cars": 1
     },
@@ -17022,7 +17019,6 @@
       "possible_patient": 2,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "allow_dlk_instead_of_lf": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -18732,14 +18728,11 @@
       "arff": 2,
       "riv": 1,
       "water_needed": 5000,
+      "oneof_airport_fire_engine_or_fire_engine_or_airport_fire_engine_small": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 573,
@@ -18762,14 +18755,11 @@
       "arff": 1,
       "riv": 1,
       "water_needed": 4200,
+      "oneof_airport_fire_engine_or_fire_engine_or_airport_fire_engine_small": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 574,
@@ -18792,14 +18782,11 @@
       "arff": 1,
       "riv": 1,
       "water_needed": 3800,
+      "oneof_airport_fire_engine_or_fire_engine_or_airport_fire_engine_small": 1,
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 575,
@@ -18822,15 +18809,12 @@
       "arff": 2,
       "riv": 1,
       "water_needed": 16000,
-      "firetrucks": 2,
+      "oneof_airport_fire_engine_or_fire_engine_or_airport_fire_engine_small": 2,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
@@ -18861,15 +18845,12 @@
       "arff": 4,
       "riv": 2,
       "water_needed": 50000,
-      "firetrucks": 4,
+      "oneof_airport_fire_engine_or_fire_engine_or_airport_fire_engine_small": 4,
+      "firetrucks": 1,
       "police_cars": 4
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 8,
@@ -18897,14 +18878,14 @@
       "arff": 2,
       "rettungstreppe": 1,
       "water_needed": 20000,
-      "firetrucks": 2,
+      "oneof_airport_fire_engine_or_fire_engine": 2,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [611],
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -18936,11 +18917,7 @@
       "firetrucks": 1
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
-      "allow_riv_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 579,
@@ -19365,10 +19342,7 @@
     ],
     "requirements": { "arff": 2, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 592,
@@ -19489,14 +19463,12 @@
       "heavy_rescue_vehicles": 1,
       "arff": 1,
       "water_needed": 12000,
+      "oneof_airport_fire_engine_or_fire_engine": 1,
       "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -21363,5 +21335,341 @@
     "base_mission_id": 644,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "646",
+    "name": "Minor Refinery Fire",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 5
+    },
+    "chances": { "mobile_air_vehicles": 40 },
+    "additional": {
+      "expansion_missions_ids": [647],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "overlay_index": null,
+    "base_mission_id": 646,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "647",
+    "name": "Moderate Refinery Fire",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "foam_needed": 400,
+      "foam": 1,
+      "firetrucks": 10
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [648],
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 90,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_support_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 647,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "648",
+    "name": "Major Refinery Fire",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 12000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 4,
+      "foam_needed": 1500,
+      "foam": 2,
+      "firetrucks": 16,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 15,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 90,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 648,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "649",
+    "name": "Locomotive Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "foam_needed": 400,
+      "foam": 1,
+      "firetrucks": 6,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 649,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "650",
+    "name": "Car Yard Fire",
+    "place": "Landfill site",
+    "place_array": ["Landfill site"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 2,
+      "foam": 1,
+      "firetrucks": 10,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 650,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "651",
+    "name": "Fertilizer Factory Fire",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 3,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 4,
+      "foam_needed": 5000,
+      "foam": 4,
+      "firetrucks": 16,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 60
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 651,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "652",
+    "name": "Metal Refinery Fire Minor",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
+      "foam_needed": 200,
+      "foam": 1,
+      "firetrucks": 6
+    },
+    "chances": { "water_tankers": 40 },
+    "additional": {
+      "expansion_missions_ids": [653],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "653",
+    "name": "Metal Refinery Fire Major",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 2,
+      "foam_needed": 1500,
+      "foam": 2,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 653,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
   }
 ]
