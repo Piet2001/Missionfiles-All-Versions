@@ -5222,22 +5222,63 @@
       "patient_specialization_captions": ["Allgemeine Innere"],
       "patient_specializations": "Allgemeine Innere"
     },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 4,
-      "fire_stations": 20
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 20 },
     "overlay_index": null,
     "base_mission_id": 136,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
   {
-    "id": "137",
+    "id": "136/a",
     "name": "Großfeuer im Wald",
     "place": "Wald",
     "place_array": ["Wald"],
-    "average_credits": 10100,
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 50000,
+      "drone": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": { "main_building": 0, "drone": 1, "fire_stations": 20 },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136/b",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": 10400,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -5253,7 +5294,7 @@
       "helicopter_bucket": 1,
       "water_needed": 50000,
       "firetrucks": 1,
-      "police_cars": 3
+      "police_cars": 4
     },
     "chances": {
       "platform_trucks": 10,
@@ -5276,16 +5317,16 @@
       "fire_stations": 20
     },
     "overlay_index": null,
-    "base_mission_id": 137,
-    "additive_overlays": "",
+    "base_mission_id": 136,
+    "additive_overlays": "b",
     "mission_categories": ["fire"]
   },
   {
-    "id": "137/a",
+    "id": "136/c",
     "name": "Großfeuer im Wald",
     "place": "Wald",
     "place_array": ["Wald"],
-    "average_credits": 10500,
+    "average_credits": 10400,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -5302,7 +5343,7 @@
       "police_service_group_leader": 1,
       "water_needed": 50000,
       "firetrucks": 1,
-      "police_cars": 3
+      "police_cars": 1
     },
     "chances": {
       "platform_trucks": 10,
@@ -5326,8 +5367,212 @@
       "fire_stations": 20
     },
     "overlay_index": null,
-    "base_mission_id": 137,
-    "additive_overlays": "a",
+    "base_mission_id": 136,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136/ab",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 50000,
+      "drone": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "drone": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136/ac",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 50000,
+      "drone": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "drone": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136/bc",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 50000,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136/abc",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": 11200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 50000,
+      "drone": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "drone": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -6459,18 +6704,15 @@
       "thw_brmg_r": 1,
       "thw_gkw": 1,
       "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "police_cars": 2
+      "thw_mtwtz": 1
     },
     "chances": {},
     "additional": {
       "followup_missions_ids": [177, 464, 513, 162],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
-      "police_stations": 2,
       "thw": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
@@ -6498,14 +6740,12 @@
       "thw_brmg_r": 1,
       "thw_gkw": 1,
       "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "police_cars": 2
+      "thw_mtwtz": 1
     },
     "chances": {},
     "additional": {
       "followup_missions_ids": [177, 464, 513, 162],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
@@ -6538,6 +6778,277 @@
       "thw_gkw": 1,
       "thw_lkw": 1,
       "thw_mtwtz": 1,
+      "heavy_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "heavy_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/c",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1420,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "drone": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "c",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/d",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1420,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "d",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/ab",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "heavy_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 5,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "heavy_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/ac",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "drone": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 5,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "ac",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/ad",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "ad",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/bc",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "heavy_rescue": 1,
+      "drone": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "heavy_rescue": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "bc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/bd",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
       "heavy_rescue": 1,
       "police_cars": 2
     },
@@ -6558,15 +7069,97 @@
     },
     "overlay_index": null,
     "base_mission_id": 174,
-    "additive_overlays": "b",
+    "additive_overlays": "bd",
     "mission_categories": ["thw"]
   },
   {
-    "id": "174/ab",
+    "id": "174/cd",
     "name": "Erdrutsch",
     "place": "",
     "place_array": [],
     "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "cd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/abc",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2220,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "heavy_rescue": 1,
+      "drone": 1
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 5,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "heavy_rescue": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "abc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/abd",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2220,
     "generated_by": "",
     "icons": [
       "/images/fallingrocks_gruen.png",
@@ -6590,7 +7183,7 @@
     },
     "prerequisites": {
       "main_building": 9,
-      "police_stations": 5,
+      "police_stations": 2,
       "thw": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
@@ -6600,15 +7193,15 @@
     },
     "overlay_index": null,
     "base_mission_id": 174,
-    "additive_overlays": "ab",
+    "additive_overlays": "abd",
     "mission_categories": ["thw"]
   },
   {
-    "id": "175",
+    "id": "174/acd",
     "name": "Erdrutsch",
     "place": "",
     "place_array": [],
-    "average_credits": 900,
+    "average_credits": 2220,
     "generated_by": "",
     "icons": [
       "/images/fallingrocks_gruen.png",
@@ -6616,32 +7209,41 @@
       "/images/fallingrocks_rot.png"
     ],
     "requirements": {
+      "police_service_group_leader": 1,
       "thw_brmg_r": 1,
       "thw_gkw": 1,
       "thw_lkw": 1,
-      "thw_mtwtz": 1
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "police_cars": 2
     },
     "chances": {},
-    "additional": { "filter_id": "technical_aid_organization_missions" },
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
     "prerequisites": {
       "main_building": 9,
-      "max_police_stations": 1,
+      "police_stations": 2,
       "thw": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "drone": 1
     },
     "overlay_index": null,
-    "base_mission_id": 175,
-    "additive_overlays": "",
+    "base_mission_id": 174,
+    "additive_overlays": "acd",
     "mission_categories": ["thw"]
   },
   {
-    "id": "175/a",
+    "id": "174/bcd",
     "name": "Erdrutsch",
     "place": "",
     "place_array": [],
-    "average_credits": 1300,
+    "average_credits": 2220,
     "generated_by": "",
     "icons": [
       "/images/fallingrocks_gruen.png",
@@ -6653,22 +7255,73 @@
       "thw_gkw": 1,
       "thw_lkw": 1,
       "thw_mtwtz": 1,
-      "heavy_rescue": 1
+      "heavy_rescue": 1,
+      "drone": 1,
+      "police_cars": 2
     },
     "chances": {},
-    "additional": { "filter_id": "technical_aid_organization_missions" },
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
     "prerequisites": {
       "main_building": 9,
-      "max_police_stations": 1,
+      "police_stations": 2,
       "thw": 1,
       "thw_zugtrupp_count": 1,
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 1,
-      "heavy_rescue": 1
+      "heavy_rescue": 1,
+      "drone": 1
     },
     "overlay_index": null,
-    "base_mission_id": 175,
-    "additive_overlays": "a",
+    "base_mission_id": 174,
+    "additive_overlays": "bcd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "174/abcd",
+    "name": "Erdrutsch",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2620,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [177, 464, 513, 162],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "heavy_rescue": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "abcd",
     "mission_categories": ["thw"]
   },
   {
@@ -6866,6 +7519,110 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "177/c",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "c",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/d",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "d",
+    "mission_categories": ["thw"]
+  },
+  {
     "id": "177/ab",
     "name": "Eingestürztes Wohnhaus",
     "place": "",
@@ -6917,6 +7674,558 @@
     "overlay_index": null,
     "base_mission_id": 177,
     "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/ac",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "ac",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/ad",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "ad",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/bc",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "bc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/bd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "bd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/cd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "cd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/abc",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "abc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/abd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "abd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/acd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "acd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/bcd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "bcd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "177/abcd",
+    "name": "Eingestürztes Wohnhaus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 7,
+      "followup_missions_ids": [429, 539],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "abcd",
     "mission_categories": ["thw"]
   },
   {
@@ -8426,6 +9735,128 @@
     "overlay_index": null,
     "base_mission_id": 206,
     "additive_overlays": "a",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "206/b",
+    "name": "Feuer auf Bauernhof - Groß",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 10600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "firetrucks": 15,
+      "police_cars": 3
+    },
+    "chances": {
+      "fwk": 15,
+      "mobile_air_vehicles": 70,
+      "water_tankers": 90,
+      "nef": 50,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 2,
+      "average_min_fire_personnel": 105,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "206/ab",
+    "name": "Feuer auf Bauernhof - Groß",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "firetrucks": 15,
+      "police_cars": 3
+    },
+    "chances": {
+      "fwk": 15,
+      "mobile_air_vehicles": 70,
+      "water_tankers": 90,
+      "nef": 50,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 2,
+      "average_min_fire_personnel": 105,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": "ab",
     "mission_categories": ["thw"]
   },
   {
@@ -13300,6 +14731,90 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "286/b",
+    "name": "Eingestürzter Hasenbau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1420,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-03-31T09:00:00Z",
+      "date_end": "2023-04-10T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 286,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "286/ab",
+    "name": "Eingestürzter Hasenbau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "drone": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-03-31T09:00:00Z",
+      "date_end": "2023-04-10T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 5,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 3,
+      "drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 286,
+    "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
     "id": "287",
     "name": "Angefahrener Osterhase",
     "place": "",
@@ -15485,6 +17000,64 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "320/c",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "320/ab",
     "name": "Großfeuer im Krankenhaus",
     "place": "Krankenhaus",
@@ -15542,6 +17115,188 @@
     "overlay_index": null,
     "base_mission_id": 320,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "320/ac",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "320/bc",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "320/abc",
+    "name": "Großfeuer im Krankenhaus",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 11200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -17142,6 +18897,122 @@
     "overlay_index": null,
     "base_mission_id": 348,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "348/b",
+    "name": "Explosion in Biogasanlage",
+    "place": "Biogasanlage",
+    "place_array": ["Biogasanlage"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "gwoil": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 3
+    },
+    "chances": { "nef": 25, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 348,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "348/ab",
+    "name": "Explosion in Biogasanlage",
+    "place": "Biogasanlage",
+    "place_array": ["Biogasanlage"],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "gwoil": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 3
+    },
+    "chances": { "nef": 25, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 348,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -21240,6 +23111,69 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "424/c",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 12,
+      "police_cars": 5
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "424/ab",
     "name": "Großbrand Müllverbrennungsanlage",
     "place": "Müllverbrennungsanlage",
@@ -21302,6 +23236,203 @@
     "overlay_index": null,
     "base_mission_id": 424,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "424/ac",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 12,
+      "police_cars": 5
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "424/bc",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 12,
+      "police_cars": 5
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 5,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "424/abc",
+    "name": "Großbrand Müllverbrennungsanlage",
+    "place": "Müllverbrennungsanlage",
+    "place_array": ["Müllverbrennungsanlage"],
+    "average_credits": 9800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 12,
+      "police_cars": 5
+    },
+    "chances": {
+      "fwk": 10,
+      "water_tankers": 10,
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 424,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -21995,6 +24126,56 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "433/c",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 6400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {
+      "hazmat_vehicles": 10,
+      "gwmess": 30,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "433/ab",
     "name": "Großfeuer in Bank",
     "place": "Bank",
@@ -22044,6 +24225,164 @@
     "overlay_index": null,
     "base_mission_id": 433,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "433/ac",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {
+      "hazmat_vehicles": 10,
+      "gwmess": 30,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "433/bc",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {
+      "hazmat_vehicles": 10,
+      "gwmess": 30,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "433/abc",
+    "name": "Großfeuer in Bank",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {
+      "hazmat_vehicles": 10,
+      "gwmess": 30,
+      "nef": 50,
+      "patient_transport": 70,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -24051,6 +26390,69 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "462/c",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 10900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 18,
+      "police_cars": 6
+    },
+    "chances": {
+      "height_rescue_units": 10,
+      "nef": 30,
+      "patient_transport": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "462/ab",
     "name": "Großfeuer in Lagerhalle",
     "place": "Lagerhalle",
@@ -24113,6 +26515,203 @@
     "overlay_index": null,
     "base_mission_id": 462,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "462/ac",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 11300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 18,
+      "police_cars": 6
+    },
+    "chances": {
+      "height_rescue_units": 10,
+      "nef": 30,
+      "patient_transport": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "462/bc",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 11300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 18,
+      "police_cars": 6
+    },
+    "chances": {
+      "height_rescue_units": 10,
+      "nef": 30,
+      "patient_transport": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "462/abc",
+    "name": "Großfeuer in Lagerhalle",
+    "place": "Lagerhalle",
+    "place_array": ["Lagerhalle"],
+    "average_credits": 11700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "height_rescue_units": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "ventilation": 1,
+      "drone": 1,
+      "firetrucks": 18,
+      "police_cars": 6
+    },
+    "chances": {
+      "height_rescue_units": 10,
+      "nef": 30,
+      "patient_transport": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "ventilation": 3,
+      "drone": 1,
+      "fire_stations": 27
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -26253,6 +28852,110 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "488/b",
+    "name": "Massenanfall an Erkrankten - Stadion",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 14400,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 1,
+      "drone": 1,
+      "firetrucks": 16,
+      "police_cars": 14
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "mobile_air_vehicles": 25,
+      "gwmess": 50,
+      "nef": 20,
+      "patient_transport": 25,
+      "helicopter": 2
+    },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 120,
+      "filter_id": "ambulance_station_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 46,
+      "police_stations": 9,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 488,
+    "additive_overlays": "b",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "488/ab",
+    "name": "Massenanfall an Erkrankten - Stadion",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 15200,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 1,
+      "drone": 1,
+      "firetrucks": 16,
+      "police_cars": 14
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "mobile_air_vehicles": 25,
+      "gwmess": 50,
+      "nef": 20,
+      "patient_transport": 25,
+      "helicopter": 2
+    },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 120,
+      "filter_id": "ambulance_station_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 46,
+      "police_stations": 15,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 488,
+    "additive_overlays": "ab",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "491",
     "name": "Massenanfall an Erkrankten - Bahnhof (Regionalverkehr)",
     "place": "Bahnhof (Regionalverkehr)",
@@ -26836,6 +29539,92 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "499/b",
+    "name": "Massenkarambolage auf Autobahn",
+    "place": "Autobahnauf.- / abfahrt",
+    "place_array": ["Autobahnauf.- / abfahrt"],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "gwoil": 2,
+      "heavy_rescue_vehicles": 5,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": { "nef": 40, "patient_transport": 60, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 8,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "499/ab",
+    "name": "Massenkarambolage auf Autobahn",
+    "place": "Autobahnauf.- / abfahrt",
+    "place_array": ["Autobahnauf.- / abfahrt"],
+    "average_credits": 12200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "gwoil": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": { "nef": 40, "patient_transport": 60, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 15,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "500",
     "name": "Herzkreislaufprobleme",
     "place": "",
@@ -26862,238 +29651,6 @@
     "base_mission_id": 500,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "501",
-    "name": "Schwimmbaddach eingestürzt",
-    "place": "Schwimmbad",
-    "place_array": ["Schwimmbad"],
-    "average_credits": 8000,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
-      "fwk": 1,
-      "heavy_rescue_vehicles": 2,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 3,
-      "thw_lkw": 1,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "firetrucks": 6,
-      "police_cars": 4
-    },
-    "chances": {
-      "fwk": 80,
-      "nef": 40,
-      "patient_transport": 75,
-      "helicopter": 5
-    },
-    "additional": {
-      "possible_patient": 20,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 10,
-      "police_stations": 3,
-      "thw": 3,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 3,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 501,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "501/a",
-    "name": "Schwimmbaddach eingestürzt",
-    "place": "Schwimmbad",
-    "place_array": ["Schwimmbad"],
-    "average_credits": 8400,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
-      "fwk": 1,
-      "police_service_group_leader": 1,
-      "heavy_rescue_vehicles": 2,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 3,
-      "thw_lkw": 1,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "firetrucks": 6,
-      "police_cars": 4
-    },
-    "chances": {
-      "fwk": 80,
-      "nef": 40,
-      "patient_transport": 75,
-      "helicopter": 5
-    },
-    "additional": {
-      "possible_patient": 20,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 10,
-      "police_stations": 7,
-      "thw": 3,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 3,
-      "police_service_group_leader": 5,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 501,
-    "additive_overlays": "a",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "501/b",
-    "name": "Schwimmbaddach eingestürzt",
-    "place": "Schwimmbad",
-    "place_array": ["Schwimmbad"],
-    "average_credits": 8400,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
-      "fwk": 1,
-      "heavy_rescue_vehicles": 2,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 3,
-      "thw_lkw": 1,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "heavy_rescue": 1,
-      "firetrucks": 6,
-      "police_cars": 4
-    },
-    "chances": {
-      "fwk": 80,
-      "nef": 40,
-      "patient_transport": 75,
-      "helicopter": 5
-    },
-    "additional": {
-      "possible_patient": 20,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 10,
-      "police_stations": 3,
-      "thw": 3,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 3,
-      "heavy_rescue": 1,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 501,
-    "additive_overlays": "b",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "501/ab",
-    "name": "Schwimmbaddach eingestürzt",
-    "place": "Schwimmbad",
-    "place_array": ["Schwimmbad"],
-    "average_credits": 8800,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
-      "fwk": 1,
-      "police_service_group_leader": 1,
-      "heavy_rescue_vehicles": 2,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 3,
-      "thw_lkw": 1,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "heavy_rescue": 1,
-      "firetrucks": 6,
-      "police_cars": 4
-    },
-    "chances": {
-      "fwk": 80,
-      "nef": 40,
-      "patient_transport": 75,
-      "helicopter": 5
-    },
-    "additional": {
-      "possible_patient": 20,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 10,
-      "police_stations": 7,
-      "thw": 3,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 3,
-      "police_service_group_leader": 5,
-      "heavy_rescue": 1,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 501,
-    "additive_overlays": "ab",
-    "mission_categories": ["thw"]
   },
   {
     "id": "502",
@@ -27184,8 +29741,8 @@
   {
     "id": "503",
     "name": "Damm droht zu brechen",
-    "place": "Fluss",
-    "place_array": ["Fluss"],
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
     "average_credits": 12500,
     "generated_by": "",
     "icons": [
@@ -27234,8 +29791,8 @@
   {
     "id": "503/a",
     "name": "Damm droht zu brechen",
-    "place": "Fluss",
-    "place_array": ["Fluss"],
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
     "average_credits": 12900,
     "generated_by": "",
     "icons": [
@@ -27284,60 +29841,10 @@
     "mission_categories": ["thw"]
   },
   {
-    "id": "504",
+    "id": "503/b",
     "name": "Damm droht zu brechen",
-    "place": "See",
-    "place_array": ["See"],
-    "average_credits": 12500,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 3,
-      "police_helicopters": 1,
-      "heavy_rescue_vehicles": 2,
-      "thw_brmg_r": 1,
-      "thw_gkw": 2,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "water_damage_pump": 2,
-      "firetrucks": 4,
-      "police_cars": 3
-    },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [659],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "pump_water_amount": 100000
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "police_stations": 3,
-      "police_helicopter_stations": 1,
-      "thw": 2,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 2,
-      "fire_stations": 11
-    },
-    "overlay_index": null,
-    "base_mission_id": 504,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "504/a",
-    "name": "Damm droht zu brechen",
-    "place": "See",
-    "place_array": ["See"],
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
     "average_credits": 12900,
     "generated_by": "",
     "icons": [
@@ -27349,6 +29856,58 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "water_tankers": 3,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 2,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [659],
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "pump_water_amount": 100000
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 3,
+      "police_helicopter_stations": 1,
+      "thw": 2,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "503/ab",
+    "name": "Damm droht zu brechen",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 13300,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 3,
       "police_service_group_leader": 1,
       "police_helicopters": 1,
       "heavy_rescue_vehicles": 2,
@@ -27358,6 +29917,7 @@
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
       "water_damage_pump": 2,
+      "drone": 1,
       "firetrucks": 4,
       "police_cars": 3
     },
@@ -27378,11 +29938,12 @@
       "thw_fg_raeumen_count": 1,
       "thw_gkw_count": 2,
       "police_service_group_leader": 1,
+      "drone": 1,
       "fire_stations": 11
     },
     "overlay_index": null,
-    "base_mission_id": 504,
-    "additive_overlays": "a",
+    "base_mission_id": 503,
+    "additive_overlays": "ab",
     "mission_categories": ["thw"]
   },
   {
@@ -27493,6 +30054,120 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "505/b",
+    "name": "Hochwasserschadenslage",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 10900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "firetrucks": 28,
+      "police_cars": 8
+    },
+    "chances": { "nef": 50, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [244, 298, 273, 497, 253],
+      "filter_id": "water_watch_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "505/ab",
+    "name": "Hochwasserschadenslage",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 11700,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "firetrucks": 28,
+      "police_cars": 8
+    },
+    "chances": { "nef": 50, "patient_transport": 30, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [244, 298, 273, 497, 253],
+      "filter_id": "water_watch_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "ab",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -28963,8 +31638,8 @@
   {
     "id": "525",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
     "average_credits": 8500,
     "generated_by": "",
     "icons": [
@@ -29021,8 +31696,8 @@
   {
     "id": "525/a",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
     "average_credits": 8900,
     "generated_by": "",
     "icons": [
@@ -29081,8 +31756,8 @@
   {
     "id": "525/b",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
     "average_credits": 8900,
     "generated_by": "",
     "icons": [
@@ -29139,10 +31814,130 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "525/c",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "c",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/d",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "d",
+    "mission_categories": ["thw"]
+  },
+  {
     "id": "525/ab",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
     "average_credits": 9300,
     "generated_by": "",
     "icons": [
@@ -29201,11 +31996,11 @@
     "mission_categories": ["thw"]
   },
   {
-    "id": "526",
+    "id": "525/ac",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4500,
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9300,
     "generated_by": "",
     "icons": [
       "/images/constructioncrane_gruen.png",
@@ -29214,75 +32009,30 @@
     ],
     "requirements": {
       "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "thw": 2,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 526,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "526/a",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4900,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
       "police_service_group_leader": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 4,
-      "police_cars": 2
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
     },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
     "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
+      "possible_patient": 30,
+      "possible_patient_min": 8,
       "filter_id": "technical_aid_organization_missions",
       "allow_police_motorcycle_instead_of_fustw": true,
       "patient_specialization_ids": [4],
@@ -29291,27 +32041,28 @@
     },
     "prerequisites": {
       "main_building": 9,
-      "rescue_stations": 8,
+      "rescue_stations": 14,
       "police_stations": 7,
-      "thw": 2,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
       "police_service_group_leader": 5,
-      "fire_stations": 13
+      "drone": 1,
+      "fire_stations": 16
     },
     "overlay_index": null,
-    "base_mission_id": 526,
-    "additive_overlays": "a",
+    "base_mission_id": 525,
+    "additive_overlays": "ac",
     "mission_categories": ["thw"]
   },
   {
-    "id": "526/b",
+    "id": "525/ad",
     "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4900,
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9300,
     "generated_by": "",
     "icons": [
       "/images/constructioncrane_gruen.png",
@@ -29320,78 +32071,30 @@
     ],
     "requirements": {
       "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "heavy_rescue": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "thw": 2,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "heavy_rescue": 1,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 526,
-    "additive_overlays": "b",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "526/ab",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 5300,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
       "police_service_group_leader": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "heavy_rescue": 1,
-      "firetrucks": 4,
-      "police_cars": 2
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 3
     },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
     "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
+      "possible_patient": 30,
+      "possible_patient_min": 8,
       "filter_id": "technical_aid_organization_missions",
       "allow_police_motorcycle_instead_of_fustw": true,
       "patient_specialization_ids": [4],
@@ -29400,20 +32103,528 @@
     },
     "prerequisites": {
       "main_building": 9,
-      "rescue_stations": 8,
+      "rescue_stations": 14,
       "police_stations": 7,
-      "thw": 2,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
       "police_service_group_leader": 5,
-      "heavy_rescue": 1,
-      "fire_stations": 13
+      "fire_stations": 16
     },
     "overlay_index": null,
-    "base_mission_id": 526,
-    "additive_overlays": "ab",
+    "base_mission_id": 525,
+    "additive_overlays": "ad",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/bc",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9300,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "bc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/bd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9300,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "bd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/cd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9300,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "cd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/abc",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9700,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "abc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/abd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9700,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "abd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/acd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9700,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "acd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/bcd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 9700,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "bcd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "525/abcd",
+    "name": "Supermarkt eingestürzt",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)",
+    "place_array": ["Supermarkt (Klein)", "Supermarkt (Groß)"],
+    "average_credits": 10100,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_brmg_r": 2,
+      "thw_dle": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 60,
+      "nef": 60,
+      "patient_transport": 75,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 8,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 14,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 525,
+    "additive_overlays": "abcd",
     "mission_categories": ["thw"]
   },
   {
@@ -29502,112 +32713,6 @@
     "base_mission_id": 528,
     "additive_overlays": "",
     "mission_categories": ["water_rescue"]
-  },
-  {
-    "id": "530",
-    "name": "Eingestürztes Wohnhaus",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4900,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 1,
-      "thw_brmg_r": 2,
-      "thw_gkw": 2,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 3,
-      "police_cars": 2
-    },
-    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 7,
-      "followup_missions_ids": [429, 539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Allgemeine Innere"],
-      "patient_specializations": "Allgemeine Innere"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 4,
-      "police_stations": 2,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "fire_stations": 7
-    },
-    "overlay_index": null,
-    "base_mission_id": 530,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "530/a",
-    "name": "Eingestürztes Wohnhaus",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5300,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "police_service_group_leader": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 1,
-      "thw_brmg_r": 2,
-      "thw_gkw": 2,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 3,
-      "police_cars": 2
-    },
-    "chances": { "platform_trucks": 30, "fwk": 75, "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 7,
-      "followup_missions_ids": [429, 539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Allgemeine Innere"],
-      "patient_specializations": "Allgemeine Innere"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 4,
-      "police_stations": 7,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "police_service_group_leader": 5,
-      "fire_stations": 7
-    },
-    "overlay_index": null,
-    "base_mission_id": 530,
-    "additive_overlays": "a",
-    "mission_categories": ["thw"]
   },
   {
     "id": "531",
@@ -30305,7 +33410,6 @@
       "platform_trucks": 1,
       "battalion_chief_vehicles": 2,
       "fwk": 1,
-      "rescue_dog_units": 1,
       "heavy_rescue_vehicles": 2,
       "thw_brmg_r": 1,
       "thw_dle": 1,
@@ -30335,7 +33439,6 @@
       "rescue_stations": 10,
       "police_stations": 3,
       "thw": 3,
-      "rescue_dog_units": 1,
       "thw_bergung_count": 2,
       "thw_zugtrupp_count": 2,
       "thw_fg_raeumen_count": 1,
@@ -30364,6 +33467,358 @@
       "battalion_chief_vehicles": 2,
       "fwk": 1,
       "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "a",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/b",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "heavy_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/c",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "c",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/d",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "d",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/ab",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/ac",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "ac",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/ad",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
       "rescue_dog_units": 1,
       "heavy_rescue_vehicles": 2,
       "thw_brmg_r": 1,
@@ -30404,15 +33859,75 @@
     },
     "overlay_index": null,
     "base_mission_id": 535,
-    "additive_overlays": "a",
+    "additive_overlays": "ad",
     "mission_categories": ["thw"]
   },
   {
-    "id": "535/b",
+    "id": "535/bc",
     "name": "Schwimmbaddach eingestürzt",
     "place": "Schwimmbad",
     "place_array": ["Schwimmbad"],
-    "average_credits": 8700,
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "bc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/bd",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9100,
     "generated_by": "",
     "icons": [
       "/images/fallingrocks_gruen.png",
@@ -30464,15 +33979,137 @@
     },
     "overlay_index": null,
     "base_mission_id": 535,
-    "additive_overlays": "b",
+    "additive_overlays": "bd",
     "mission_categories": ["thw"]
   },
   {
-    "id": "535/ab",
+    "id": "535/cd",
     "name": "Schwimmbaddach eingestürzt",
     "place": "Schwimmbad",
     "place_array": ["Schwimmbad"],
     "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "cd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/abc",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "abc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/abd",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9500,
     "generated_by": "",
     "icons": [
       "/images/fallingrocks_gruen.png",
@@ -30526,7 +34163,195 @@
     },
     "overlay_index": null,
     "base_mission_id": 535,
-    "additive_overlays": "ab",
+    "additive_overlays": "abd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/acd",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "acd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/bcd",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "bcd",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "535/abcd",
+    "name": "Schwimmbaddach eingestürzt",
+    "place": "Schwimmbad",
+    "place_array": ["Schwimmbad"],
+    "average_credits": 9900,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_dle": 1,
+      "thw_gkw": 3,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 80,
+      "nef": 40,
+      "patient_transport": 75,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "thw": 3,
+      "rescue_dog_units": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "abcd",
     "mission_categories": ["thw"]
   },
   {
@@ -30808,6 +34633,59 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "539/c",
+    "name": "Verschüttete Personen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "rescue_dog_units": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "nef": 60, "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 6,
+      "police_stations": 1,
+      "thw": 2,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "drone": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "c",
+    "mission_categories": ["thw"]
+  },
+  {
     "id": "539/ab",
     "name": "Verschüttete Personen",
     "place": "",
@@ -30860,6 +34738,173 @@
     "overlay_index": null,
     "base_mission_id": 539,
     "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "539/ac",
+    "name": "Verschüttete Personen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "nef": 60, "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 6,
+      "police_stations": 7,
+      "thw": 2,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "ac",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "539/bc",
+    "name": "Verschüttete Personen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "rescue_dog_units": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "nef": 60, "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 6,
+      "police_stations": 1,
+      "thw": 2,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "bc",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "539/abc",
+    "name": "Verschüttete Personen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 2,
+      "thw_gkw": 2,
+      "thw_lkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "nef": 60, "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 6,
+      "police_stations": 7,
+      "thw": 2,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "abc",
     "mission_categories": ["thw"]
   },
   {
@@ -31050,6 +35095,69 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "540/c",
+    "name": "Einsturz Stadiontribüne",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 16400,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "fwk": 2,
+      "grukw": 9,
+      "height_rescue_units": 3,
+      "lebefkw": 3,
+      "rescue_dog_units": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_brmg_r": 4,
+      "thw_gkw": 4,
+      "thw_lkw": 4,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 3,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 5
+    },
+    "chances": { "nef": 50, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "followup_missions_ids": [539],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 4,
+      "thw_gkw_count": 4,
+      "riot_unit_count": 4,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "540/ab",
     "name": "Einsturz Stadiontribüne",
     "place": "Stadion",
@@ -31112,6 +35220,203 @@
     "overlay_index": null,
     "base_mission_id": 540,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "540/ac",
+    "name": "Einsturz Stadiontribüne",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 16800,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "fwk": 2,
+      "grukw": 9,
+      "height_rescue_units": 3,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_brmg_r": 4,
+      "thw_gkw": 4,
+      "thw_lkw": 4,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 3,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 5
+    },
+    "chances": { "nef": 50, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "followup_missions_ids": [539],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 4,
+      "thw_gkw_count": 4,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "540/bc",
+    "name": "Einsturz Stadiontribüne",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 16800,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "fwk": 2,
+      "grukw": 9,
+      "height_rescue_units": 3,
+      "lebefkw": 3,
+      "rescue_dog_units": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_brmg_r": 4,
+      "thw_gkw": 4,
+      "thw_lkw": 4,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 3,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 5
+    },
+    "chances": { "nef": 50, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "followup_missions_ids": [539],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 4,
+      "thw_gkw_count": 4,
+      "riot_unit_count": 4,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "540/abc",
+    "name": "Einsturz Stadiontribüne",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 17200,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "fwk": 2,
+      "grukw": 9,
+      "height_rescue_units": 3,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "rescue_dog_units": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_brmg_r": 4,
+      "thw_gkw": 4,
+      "thw_lkw": 4,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 3,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "firetrucks": 20,
+      "police_cars": 5
+    },
+    "chances": { "nef": 50, "patient_transport": 50, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "followup_missions_ids": [539],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "rescue_dog_units": 2,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 2,
+      "thw_fg_raeumen_count": 4,
+      "thw_gkw_count": 4,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 5,
+      "heavy_rescue": 1,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -31279,486 +35584,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 541,
-    "additive_overlays": "ab",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "542",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
-    "average_credits": 8500,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "fwk": 2,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 4,
-      "thw_brmg_r": 2,
-      "thw_dle": 2,
-      "thw_gkw": 2,
-      "thw_lkw": 2,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "firetrucks": 6,
-      "police_cars": 3
-    },
-    "chances": {
-      "mobile_command_vehicles": 60,
-      "nef": 60,
-      "patient_transport": 75,
-      "helicopter": 10
-    },
-    "additional": {
-      "possible_patient": 30,
-      "possible_patient_min": 8,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 14,
-      "police_stations": 4,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "fire_stations": 16
-    },
-    "overlay_index": null,
-    "base_mission_id": 542,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "542/a",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
-    "average_credits": 8900,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "fwk": 2,
-      "police_service_group_leader": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 4,
-      "thw_brmg_r": 2,
-      "thw_dle": 2,
-      "thw_gkw": 2,
-      "thw_lkw": 2,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "firetrucks": 6,
-      "police_cars": 3
-    },
-    "chances": {
-      "mobile_command_vehicles": 60,
-      "nef": 60,
-      "patient_transport": 75,
-      "helicopter": 10
-    },
-    "additional": {
-      "possible_patient": 30,
-      "possible_patient_min": 8,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 14,
-      "police_stations": 7,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "police_service_group_leader": 5,
-      "fire_stations": 16
-    },
-    "overlay_index": null,
-    "base_mission_id": 542,
-    "additive_overlays": "a",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "542/b",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
-    "average_credits": 8900,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "fwk": 2,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 4,
-      "thw_brmg_r": 2,
-      "thw_dle": 2,
-      "thw_gkw": 2,
-      "thw_lkw": 2,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "heavy_rescue": 1,
-      "firetrucks": 6,
-      "police_cars": 3
-    },
-    "chances": {
-      "mobile_command_vehicles": 60,
-      "nef": 60,
-      "patient_transport": 75,
-      "helicopter": 10
-    },
-    "additional": {
-      "possible_patient": 30,
-      "possible_patient_min": 8,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 14,
-      "police_stations": 4,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "heavy_rescue": 1,
-      "fire_stations": 16
-    },
-    "overlay_index": null,
-    "base_mission_id": 542,
-    "additive_overlays": "b",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "542/ab",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Groß)",
-    "place_array": ["Supermarkt (Groß)"],
-    "average_credits": 9300,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "fwk": 2,
-      "police_service_group_leader": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 4,
-      "thw_brmg_r": 2,
-      "thw_dle": 2,
-      "thw_gkw": 2,
-      "thw_lkw": 2,
-      "thw_mtwtz": 2,
-      "thw_mzkw": 2,
-      "heavy_rescue": 1,
-      "firetrucks": 6,
-      "police_cars": 3
-    },
-    "chances": {
-      "mobile_command_vehicles": 60,
-      "nef": 60,
-      "patient_transport": 75,
-      "helicopter": 10
-    },
-    "additional": {
-      "possible_patient": 30,
-      "possible_patient_min": 8,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 14,
-      "police_stations": 7,
-      "thw": 3,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 2,
-      "thw_zugtrupp_count": 2,
-      "thw_fg_raeumen_count": 2,
-      "thw_gkw_count": 2,
-      "police_service_group_leader": 5,
-      "heavy_rescue": 1,
-      "fire_stations": 16
-    },
-    "overlay_index": null,
-    "base_mission_id": 542,
-    "additive_overlays": "ab",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "543",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4500,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "thw": 2,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 543,
-    "additive_overlays": "",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "543/a",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4900,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "police_service_group_leader": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 7,
-      "thw": 2,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "police_service_group_leader": 5,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 543,
-    "additive_overlays": "a",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "543/b",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 4900,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "heavy_rescue": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "thw": 2,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "heavy_rescue": 1,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 543,
-    "additive_overlays": "b",
-    "mission_categories": ["thw"]
-  },
-  {
-    "id": "543/ab",
-    "name": "Supermarkt eingestürzt",
-    "place": "Supermarkt (Klein)",
-    "place_array": ["Supermarkt (Klein)"],
-    "average_credits": 5300,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
-      "fwk": 1,
-      "police_service_group_leader": 1,
-      "rescue_dog_units": 1,
-      "heavy_rescue_vehicles": 3,
-      "thw_brmg_r": 1,
-      "thw_dle": 1,
-      "thw_gkw": 1,
-      "thw_lkw": 1,
-      "thw_mtwtz": 1,
-      "thw_mzkw": 1,
-      "heavy_rescue": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": { "nef": 60, "patient_transport": 75, "helicopter": 10 },
-    "additional": {
-      "possible_patient": 15,
-      "possible_patient_min": 4,
-      "followup_missions_ids": [539],
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Unfallchirurgie"],
-      "patient_specializations": "Unfallchirurgie"
-    },
-    "prerequisites": {
-      "main_building": 9,
-      "rescue_stations": 8,
-      "police_stations": 7,
-      "thw": 2,
-      "rescue_dog_units": 1,
-      "thw_bergung_count": 1,
-      "thw_zugtrupp_count": 1,
-      "thw_fg_raeumen_count": 1,
-      "thw_gkw_count": 1,
-      "police_service_group_leader": 5,
-      "heavy_rescue": 1,
-      "fire_stations": 13
-    },
-    "overlay_index": null,
-    "base_mission_id": 543,
     "additive_overlays": "ab",
     "mission_categories": ["thw"]
   },
@@ -36540,6 +40365,116 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "619/b",
+    "name": "Havariertes Flussfahrtschiff",
+    "place": "Fluss",
+    "place_array": ["Fluss"],
+    "average_credits": 7400,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "boats": 4,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "gwoil": 1,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 7
+    },
+    "chances": { "nef": 30, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "wasserrettung": 4,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 619,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "619/ab",
+    "name": "Havariertes Flussfahrtschiff",
+    "place": "Fluss",
+    "place_array": ["Fluss"],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "boats": 4,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "gwoil": 1,
+      "diver_units": 2,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 10,
+      "police_cars": 7
+    },
+    "chances": { "nef": 30, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "wasserrettung": 4,
+      "rescue_stations": 12,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 619,
+    "additive_overlays": "ab",
+    "mission_categories": ["thw"]
+  },
+  {
     "id": "620",
     "name": "Säurebehälter beschädigt",
     "place": "Chemiepark",
@@ -39128,6 +43063,122 @@
     "overlay_index": null,
     "base_mission_id": 659,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "659/b",
+    "name": "Dammbruch",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 35900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "grukw": 9,
+      "water_tankers": 6,
+      "lebefkw": 3,
+      "police_helicopters": 1,
+      "pump": 4,
+      "heavy_rescue_vehicles": 4,
+      "thw_gkw": 5,
+      "thw_mtwtz": 5,
+      "thw_mzkw": 5,
+      "drone": 1,
+      "firetrucks": 25,
+      "police_cars": 8,
+      "min_pump_speed": 55000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "pump_water_amount": 500000,
+      "pump_mission_mode": "before_mission"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "thw_bergung_count": 5,
+      "thw_zugtrupp_count": 5,
+      "thw_gkw_count": 5,
+      "riot_unit_count": 4,
+      "water_damage_pump_count": 2,
+      "drone": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 659,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "659/ab",
+    "name": "Dammbruch",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 36700,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fukw": 1,
+      "grukw": 9,
+      "water_tankers": 6,
+      "lebefkw": 3,
+      "police_service_group_leader": 2,
+      "police_helicopters": 1,
+      "pump": 4,
+      "heavy_rescue_vehicles": 4,
+      "thw_gkw": 5,
+      "thw_mtwtz": 5,
+      "thw_mzkw": 5,
+      "drone": 1,
+      "firetrucks": 25,
+      "police_cars": 8,
+      "min_pump_speed": 55000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "pump_water_amount": 500000,
+      "pump_mission_mode": "before_mission"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 15,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 2,
+      "thw": 5,
+      "thw_bergung_count": 5,
+      "thw_zugtrupp_count": 5,
+      "thw_gkw_count": 5,
+      "riot_unit_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 659,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -42552,6 +46603,57 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "720/a",
+    "name": "Großfeuer im Moor",
+    "place": "Moor",
+    "place_array": ["Moor"],
+    "average_credits": 16400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 3,
+      "thw_gkw": 2,
+      "thw_lkw": 3,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 120000,
+      "drone": 1,
+      "firetrucks": 1,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 3,
+      "drone": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 720,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "721",
     "name": "Randalierender Fluggast",
     "place": "Flughafen (groß): Start-/Landebahn",
@@ -44451,6 +48553,118 @@
     "overlay_index": null,
     "base_mission_id": 773,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "773/b",
+    "name": "Großfeuer in Einkaufszentrum",
+    "place": "Einkaufszentrum",
+    "place_array": ["Einkaufszentrum"],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 20, "patient_transport": 80, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 75,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "drone": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 773,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "773/ab",
+    "name": "Großfeuer in Einkaufszentrum",
+    "place": "Einkaufszentrum",
+    "place_array": ["Einkaufszentrum"],
+    "average_credits": 13800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "drone": 1,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 20, "patient_transport": 80, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 75,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 1,
+      "drone": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 773,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
