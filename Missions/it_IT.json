@@ -3363,6 +3363,63 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "110/a",
+    "name": "Crollo palazzina",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 3,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 2,
+      "firetrucks": 4,
+      "police_cars": 1,
+      "water_rescue": 1
+    },
+    "chances": { "fwk": 80, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "patient_it_code_possible": ["SC01R", "SC01G"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 4,
+      "police_stations": 1,
+      "disaster_response_count": 2,
+      "search_and_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 110,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "111",
     "name": "Crollo parziale palazzina",
     "place": "",
@@ -3411,6 +3468,65 @@
     "overlay_index": null,
     "base_mission_id": 111,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "111/a",
+    "name": "Crollo parziale palazzina",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "fwk": 20,
+      "disaster_response_clearing": 60,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 111,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -3568,6 +3684,63 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "115/a",
+    "name": "Deragliamento treno (MEDIO)",
+    "place": "Stazione ferroviaria (traffico regionale e viaggi a lunga distanza)",
+    "place_array": [
+      "Stazione ferroviaria (traffico regionale e viaggi a lunga distanza)"
+    ],
+    "average_credits": 14350,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "rescue_dog_units": 1,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 35, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 20,
+      "average_min_fire_personnel": 40,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 14,
+      "police_stations": 4,
+      "search_and_rescue": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 115,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "116",
     "name": "Nave cisterna in fiamme",
     "place": "Porto mercantile",
@@ -3671,6 +3844,60 @@
     "overlay_index": null,
     "base_mission_id": 117,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "117/a",
+    "name": "Persona scomparsa nel bosco",
+    "place": "Bosco",
+    "place_array": ["Bosco"],
+    "average_credits": 6450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "rescue_dog_units": 2,
+      "firetrucks": 1,
+      "police_cars": 3,
+      "water_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 20,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "search_and_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 117,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -6010,6 +6237,66 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "177/a",
+    "name": "Terremoto (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2650,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 4,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 2,
+      "firetrucks": 3,
+      "police_cars": 2,
+      "water_rescue": 1
+    },
+    "chances": {
+      "disaster_response": 40,
+      "disaster_response_clearing_large": 40,
+      "patient_transport": 25
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "disaster_response_count": 2,
+      "search_and_rescue": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 177,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "178",
     "name": "Terremoto (GRANDE)",
     "place": "",
@@ -6059,6 +6346,67 @@
     "overlay_index": null,
     "base_mission_id": 178,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "178/a",
+    "name": "Terremoto (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "firetrucks": 3,
+      "police_cars": 5,
+      "water_rescue": 1
+    },
+    "chances": {
+      "disaster_response": 40,
+      "disaster_response_clearing_large": 40,
+      "patient_transport": 25
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 3,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 178,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -7404,6 +7752,66 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "215/a",
+    "name": "Crollo ponte",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 5850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "firetrucks": 5,
+      "police_cars": 5,
+      "water_rescue": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 215,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "216",
     "name": "Investimento pedone",
     "place": "",
@@ -7489,6 +7897,62 @@
     "overlay_index": null,
     "base_mission_id": 217,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "217/a",
+    "name": "Crollo galleria",
+    "place": "Galleria",
+    "place_array": ["Galleria"],
+    "average_credits": 9250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 5,
+      "patient_it_code_possible": ["SC01G", "SC01R", "SC01V", "SC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 217,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7609,6 +8073,52 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "220/a",
+    "name": "Frana",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3050,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 2,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": {
+      "battalion_chief_vehicles": 60,
+      "fwk": 40,
+      "disaster_response": 60,
+      "disaster_response_clearing_large": 60
+    },
+    "additional": {
+      "expansion_missions_ids": [221],
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 220,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "221",
     "name": "Persone sotto le macerie",
     "place": "",
@@ -7655,6 +8165,59 @@
     "overlay_index": null,
     "base_mission_id": 221,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "221/a",
+    "name": "Persone sotto le macerie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 221,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -7932,6 +8495,59 @@
     "overlay_index": null,
     "base_mission_id": 229,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "229/a",
+    "name": "Crollo fabbrica (GRANDE)",
+    "place": "Fabbrica",
+    "place_array": ["Fabbrica"],
+    "average_credits": 16150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 8,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "firetrucks": 14,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 6,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 229,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -11143,6 +11759,56 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "297/a",
+    "name": "Crollo fabbrica (PICCOLO)",
+    "place": "Fabbrica",
+    "place_array": ["Fabbrica"],
+    "average_credits": 6150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 297,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "298",
     "name": "Incendio centrale elettrica (PICCOLO)",
     "place": "Centrale elettrica",
@@ -11732,6 +12398,58 @@
     "overlay_index": null,
     "base_mission_id": 313,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "313/a",
+    "name": "Crollo parcheggio sotterraneo",
+    "place": "Parcheggio coperto",
+    "place_array": ["Parcheggio coperto"],
+    "average_credits": 5150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 2,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_at_end_of_mission": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 313,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -13892,6 +14610,56 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "376/a",
+    "name": "Crollo tribuna",
+    "place": "Campo sportivo",
+    "place_array": ["Campo sportivo"],
+    "average_credits": 3650,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 2,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "fwk": 30, "patient_transport": 65 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["YC01R", "YC01G", "YC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 376,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "377",
     "name": "Crollo tribuna stadio",
     "place": "Stadio",
@@ -13939,6 +14707,66 @@
     "overlay_index": null,
     "base_mission_id": 377,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "377/a",
+    "name": "Crollo tribuna stadio",
+    "place": "Stadio",
+    "place_array": ["Stadio"],
+    "average_credits": 6850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 3,
+      "disaster_response": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "firetrucks": 4,
+      "police_cars": 2,
+      "water_rescue": 1
+    },
+    "chances": {
+      "disaster_response": 60,
+      "disaster_response_clearing_large": 60,
+      "patient_transport": 65,
+      "helicopter": 2
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["YC01R", "YC01G", "YC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 9,
+      "police_stations": 3,
+      "disaster_response_count": 2,
+      "search_and_rescue": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 377,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -15886,6 +16714,61 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "433/a",
+    "name": "Esplosione Tubatura Gas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8350,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "disaster_response_clearing": 1,
+      "rescue_dog_units": 1,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": {
+      "disaster_response_clearing": 40,
+      "patient_transport": 40,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 20,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "disaster_response_count": 1,
+      "search_and_rescue": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 433,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "434",
     "name": "Scontro Tra Treni",
     "place": "Stazione ferroviaria (traffico regionale)\nStazione ferroviaria (traffico regionale e viaggi a lunga distanza)\nPassaggio a livello\nPassaggio a livello pedonale",
@@ -15936,6 +16819,61 @@
     "overlay_index": null,
     "base_mission_id": 434,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "434/a",
+    "name": "Scontro Tra Treni",
+    "place": "Stazione ferroviaria (traffico regionale)\nStazione ferroviaria (traffico regionale e viaggi a lunga distanza)\nPassaggio a livello\nPassaggio a livello pedonale",
+    "place_array": [
+      "Stazione ferroviaria (traffico regionale)",
+      "Stazione ferroviaria (traffico regionale e viaggi a lunga distanza)",
+      "Passaggio a livello",
+      "Passaggio a livello pedonale"
+    ],
+    "average_credits": 15350,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 8,
+      "rescue_dog_units": 2,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 10, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 180,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 10,
+      "search_and_rescue": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 434,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -19170,6 +20108,43 @@
     "overlay_index": null,
     "base_mission_id": 530,
     "additive_overlays": "",
+    "mission_categories": ["police", "traffic_police_specialization"]
+  },
+  {
+    "id": "530/a",
+    "name": "Piccolo Smottamento su Strada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 1,
+      "disaster_response_clearing": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "disaster_response_clearing": 30 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "traffic_police": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 530,
+    "additive_overlays": "a",
     "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
