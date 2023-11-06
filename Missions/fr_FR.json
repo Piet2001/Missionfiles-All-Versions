@@ -24576,5 +24576,59 @@
     "base_mission_id": 661,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "662",
+    "name": "Incendie dans une cimenterie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "firetrucks": 10,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 662,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
   }
 ]
