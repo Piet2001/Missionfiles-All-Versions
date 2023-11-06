@@ -45508,5 +45508,54 @@
     "base_mission_id": 900,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "901",
+    "name": "Truck Accident - Transport of Animals",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "29-B-1",
+        "29-D-3",
+        "29-D-6",
+        "29-D-7",
+        "29-D-8",
+        "29-D-9"
+      ],
+      "patient_allow_first_responder_chance": 15,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 901,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
