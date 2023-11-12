@@ -22458,5 +22458,48 @@
     "base_mission_id": 654,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "655",
+    "name": "Docked Cruise Ship Fire",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 8
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 90,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 655,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
