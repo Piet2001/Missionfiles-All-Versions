@@ -41990,5 +41990,144 @@
     "base_mission_id": 1061,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1062",
+    "name": "School shooting",
+    "place": "School",
+    "place_array": ["School"],
+    "average_credits": 1970,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "hondengeleider": 1, "ovdp": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1062,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1062-0",
+    "name": "School shooting",
+    "place": "School",
+    "place_array": ["School"],
+    "average_credits": 9130,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "at_c": 1,
+      "at_m": 1,
+      "at_o": 4,
+      "bike_police": 2,
+      "hondengeleider": 2,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "police_cars": 10
+    },
+    "chances": { "nef": 15, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "riot_police_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 10,
+      "police_stations": 13,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 4,
+      "at": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1062,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1062-1",
+    "name": "School shooting",
+    "place": "School",
+    "place_array": ["School"],
+    "average_credits": 12570,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "at_c": 1,
+      "at_m": 1,
+      "at_o": 4,
+      "bike_police": 2,
+      "elw3": 1,
+      "hondengeleider": 2,
+      "ovdp": 2,
+      "police_helicopters": 1,
+      "police_cars": 20
+    },
+    "chances": { "nef": 15, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 10,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "riot_police_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 13,
+      "police_stations": 23,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 4,
+      "at": 1,
+      "hondengeleider": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": 1,
+    "base_mission_id": 1062,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
