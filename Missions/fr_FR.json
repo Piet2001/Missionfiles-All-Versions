@@ -25437,5 +25437,58 @@
     "base_mission_id": 662,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "663",
+    "name": "Manifestation contre les méga-bassines",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 1,
+      "riot_police": 10,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "riot_police_trailer": 2,
+      "wasserwerfer": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "riot_police_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "bereitschaftspolizei": 4,
+      "water_cannon": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 663,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
