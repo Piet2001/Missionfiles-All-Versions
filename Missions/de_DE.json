@@ -2,18 +2,8 @@
   {
     "id": "0",
     "name": "Mülleimerbrand",
-    "place": "Krankenhaus\nBushaltestelle\nStraßenbahnhaltestelle\nBahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nChemiepark\nIndustrie-Allgemein\nAutomobilindustrie\nWerksgelände",
-    "place_array": [
-      "Krankenhaus",
-      "Bushaltestelle",
-      "Straßenbahnhaltestelle",
-      "Bahnhof (Regionalverkehr)",
-      "Bahnhof (Regional und Fernverkehr)",
-      "Chemiepark",
-      "Industrie-Allgemein",
-      "Automobilindustrie",
-      "Werksgelände"
-    ],
+    "place": "Bushaltestelle",
+    "place_array": ["Bushaltestelle"],
     "average_credits": 110,
     "generated_by": "",
     "icons": [
@@ -24,7 +14,7 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [2, 13, 24, 35, 140, 387, 402, 406, 409, 606],
+      "expansion_missions_ids": [24, 140],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -32,7 +22,7 @@
     "overlay_index": null,
     "base_mission_id": 0,
     "additive_overlays": "",
-    "mission_categories": ["factory_fire_brigade", "fire"]
+    "mission_categories": ["fire"]
   },
   {
     "id": "1",
@@ -1690,6 +1680,103 @@
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
     "overlay_index": null,
     "base_mission_id": 36,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "37",
+    "name": "Mülleimerbrand",
+    "place": "Straßenbahnhaltestelle",
+    "place_array": ["Straßenbahnhaltestelle"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 37,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "38",
+    "name": "Mülleimerbrand",
+    "place": "Bahnhof (Regionalverkehr)",
+    "place_array": ["Bahnhof (Regionalverkehr)"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 38,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "39",
+    "name": "Mülleimerbrand",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 39,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "40",
+    "name": "Mülleimerbrand",
+    "place": "Krankenhaus",
+    "place_array": ["Krankenhaus"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [35],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 40,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -23390,6 +23477,62 @@
     "mission_categories": ["factory_fire_brigade"]
   },
   {
+    "id": "403",
+    "name": "Mülleimerbrand",
+    "place": "Automobilindustrie",
+    "place_array": ["Automobilindustrie"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "factory_fire_brigade_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 403,
+    "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "404",
+    "name": "Mülleimerbrand",
+    "place": "Industrie-Allgemein\nWerksgelände",
+    "place_array": ["Industrie-Allgemein", "Werksgelände"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "factory_fire_brigade_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 404,
+    "additive_overlays": "",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
     "id": "407",
     "name": "Brennende Filteranlage",
     "place": "Industrie-Allgemein\nWerksgelände",
@@ -23520,6 +23663,34 @@
     "overlay_index": null,
     "base_mission_id": 409,
     "additive_overlays": "a",
+    "mission_categories": ["factory_fire_brigade"]
+  },
+  {
+    "id": "410",
+    "name": "Mülleimerbrand",
+    "place": "Chemiepark",
+    "place_array": ["Chemiepark"],
+    "average_credits": 110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "factory_fire_brigade_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": -2,
+      "werkfeuerwehr": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": "",
     "mission_categories": ["factory_fire_brigade"]
   },
   {
