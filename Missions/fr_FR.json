@@ -25490,5 +25490,60 @@
     "base_mission_id": 663,
     "additive_overlays": "",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "664",
+    "name": "Incendie dans le terminal de l'aéroport - Grand",
+    "place": "Terminal d’aéroport",
+    "place_array": ["Terminal d’aéroport"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "arff": 5,
+      "airport_equipment": 1,
+      "riv": 3,
+      "elw_airport": 3,
+      "firetrucks": 13,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 0, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 40,
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "vehicle_groups": ["airport_missions", "default"],
+      "optional_event_mission": false,
+      "allow_riv_instead_of_lf": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "airport": 3,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   }
 ]
