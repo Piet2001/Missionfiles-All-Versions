@@ -14088,8 +14088,8 @@
   {
     "id": "384",
     "name": "Monitoring vodního toku",
-    "place": "",
-    "place_array": [],
+    "place": "Rybník\nŘeka",
+    "place_array": ["Rybník", "Řeka"],
     "average_credits": 1000,
     "generated_by": "",
     "icons": [
@@ -20034,8 +20034,8 @@
   {
     "id": "544",
     "name": "Srážka dvou kamionů",
-    "place": "",
-    "place_array": [],
+    "place": "Dálniční sjezd\nDálnice",
+    "place_array": ["Dálniční sjezd", "Dálnice"],
     "average_credits": 6000,
     "generated_by": "",
     "icons": [
@@ -20303,7 +20303,7 @@
   },
   {
     "id": "551",
-    "name": "Nehoda nákladního vozidla - přeprava zvířat",
+    "name": "Nehoda vozidla pro přepravu zvířat",
     "place": "",
     "place_array": [],
     "average_credits": 3000,
@@ -20314,20 +20314,20 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
+      "crew_carrier": 2,
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 1,
-      "police_cars": 2
+      "traffic_car": 1,
+      "firetrucks": 2,
+      "police_cars": 4
     },
     "chances": { "patient_transport": 80 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_allow_first_responder_chance": 15,
       "optional_event_mission": false,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
       "patient_specializations": "Úrazová chirurgie"
