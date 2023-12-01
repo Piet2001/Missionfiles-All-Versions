@@ -2365,6 +2365,142 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "76",
+    "name": "Kradzież na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 76,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "77",
+    "name": "Płonący stragan bożonarodzeniowy",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 610,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1200,
+      "foam_needed": 400,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 77,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "78",
+    "name": "Pożar na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 310,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1600,
+      "foam_needed": 600,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 78,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "78/a",
+    "name": "Pożar na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 460,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1600,
+      "foam_needed": 1200,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 78,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
     "id": "79",
     "name": "Wypadek drogowy - lód",
     "place": "",
@@ -2393,6 +2529,89 @@
     "base_mission_id": 79,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "80",
+    "name": "Płonąca choinka",
+    "place": "",
+    "place_array": [],
+    "average_credits": 870,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "water_needed": 1200, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 80,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "81",
+    "name": "Płonący wieniec adwentowy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "water_needed": 800, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 81,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "82",
+    "name": "Bójka na jarmarku bożonarodzeniowym",
+    "place": "Jarmark Bożonarodzeniowy",
+    "place_array": ["Jarmark Bożonarodzeniowy"],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 82,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "83",
@@ -22066,6 +22285,110 @@
     "base_mission_id": 610,
     "additive_overlays": "",
     "mission_categories": ["search_and_rescue"]
+  },
+  {
+    "id": "611",
+    "name": "Dekoracja świąteczna zapaliła się",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 611,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "612",
+    "name": "Sanie Mikołaja blokują drogę",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 612,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "613",
+    "name": "Skradziona choinka",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 613,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "614",
+    "name": "Kradzież prezentów świątecznych w centrum handlowym",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-01T10:00:00Z",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 614,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "615",
