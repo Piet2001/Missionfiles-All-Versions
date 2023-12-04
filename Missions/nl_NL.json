@@ -18432,6 +18432,7 @@
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 4,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [1],
@@ -18478,6 +18479,7 @@
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 4,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [1],
@@ -18527,6 +18529,7 @@
     "additional": {
       "possible_patient": 8,
       "possible_patient_min": 6,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [1],
@@ -26111,6 +26114,7 @@
     "additional": {
       "possible_patient": 4,
       "expansion_missions_ids": [711],
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -26157,6 +26161,7 @@
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 4,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -28655,6 +28660,7 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1069],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
@@ -28707,6 +28713,7 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1069],
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
@@ -32015,6 +32022,7 @@
     "additional": {
       "possible_patient": 5,
       "possible_patient_min": 2,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -32070,6 +32078,7 @@
     "additional": {
       "possible_patient": 200,
       "possible_patient_min": 10,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4, 0, 1],
@@ -32131,6 +32140,7 @@
     "additional": {
       "possible_patient": 292,
       "possible_patient_min": 100,
+      "followup_missions_ids": [1069],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4, 0, 1],
@@ -41876,6 +41886,7 @@
     "chances": { "patient_transport": 15 },
     "additional": {
       "possible_patient": 45,
+      "followup_missions_ids": [1069],
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 8,
       "filter_id": "riot_police_missions",
@@ -43274,5 +43285,30 @@
     "base_mission_id": 1068,
     "additive_overlays": "",
     "mission_categories": ["police", "traffic_police_specialization"]
+  },
+  {
+    "id": "1069",
+    "name": "Kijkers op de vluchtstrook",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 1080,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": { "traffic_unit": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "technical_aid": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1069,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid"]
   }
 ]
