@@ -18308,5 +18308,68 @@
     "base_mission_id": 541,
     "additive_overlays": "",
     "mission_categories": ["airport"]
+  },
+  {
+    "id": "542",
+    "name": "Queda de grande aeronave em meio urbano",
+    "place": "",
+    "place_array": [],
+    "average_credits": 45000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 3,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 2,
+      "fwk": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 5,
+      "water_tankers": 8,
+      "pump": 1,
+      "ambulances": 15,
+      "heavy_rescue_vehicles": 5,
+      "k9": 2,
+      "riot_police": 2,
+      "swat_armored_vehicle": 2,
+      "bike_police": 2,
+      "riot_police_command": 1,
+      "police_motorcycle": 3,
+      "rettungstreppe": 2,
+      "flood_equipment": 2,
+      "firetrucks": 15,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 0, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 15,
+      "fire_support_count": 2,
+      "riot_police": 1,
+      "airport": 2,
+      "police_motorcycle": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 542,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "fire", "fire_support_specialization"]
   }
 ]
