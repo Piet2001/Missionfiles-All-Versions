@@ -24930,5 +24930,140 @@
     "base_mission_id": 701,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "702",
+    "name": "Pojazd uwięziony w wodzie powodziowej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1750,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "boats": 1, "flood_equipment": 1, "water_rescue": 2 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "water_watch_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "703",
+    "name": "Pożar w zakładzie produkcji samochodów",
+    "place": "Fabryka",
+    "place_array": ["Fabryka"],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 68000,
+      "foam_needed": 4000,
+      "firetrucks": 7,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 703,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "704",
+    "name": "Zawalenie się trybuny na stadionie",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 19000,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "fwk": 1,
+      "height_rescue_units": 2,
+      "heavy_rescue_vehicles": 4,
+      "search_and_rescue": 2,
+      "rescue_dog_units": 4,
+      "firetrucks": 10,
+      "police_cars": 8,
+      "personnel_educations": { "search_and_rescue": 18 }
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 12,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 12,
+      "personnel_educations": { "search_and_rescue": 36 },
+      "search_and_rescue": 2,
+      "height_rescue": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 704,
+    "additive_overlays": "",
+    "mission_categories": ["search_and_rescue", "height_rescue"]
   }
 ]
