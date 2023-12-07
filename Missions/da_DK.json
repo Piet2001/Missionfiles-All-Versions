@@ -314,13 +314,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -916,10 +917,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -2539,7 +2539,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 2 },
@@ -3666,12 +3665,12 @@
       "elw_police": 1,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "need_elw_police_only_if_present": true,
       "optional_event_mission": true,
@@ -6437,12 +6436,15 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "elw_police": 1, "police_cars": 1 },
+    "requirements": {
+      "elw_police": 1,
+      "oneof_police_patrol_or_swat": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "swat_personnel": 6,
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "need_elw_police_only_if_present": true,
       "optional_event_mission": false
     },
@@ -7001,14 +7003,15 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -7378,13 +7381,16 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "elw_police": 1, "police_cars": 6 },
+    "requirements": {
+      "elw_police": 1,
+      "oneof_police_patrol_or_swat": 6,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 1,
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
-      "allow_swat_instead_of_police": true,
       "need_elw_police_only_if_present": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [0],
@@ -9088,10 +9094,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-01-12T10:00:00Z",
@@ -11566,10 +11571,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2023-07-20T09:00:00Z",
@@ -11681,10 +11685,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2023-07-20T09:00:00Z",
@@ -12122,12 +12125,12 @@
       "arff": 1,
       "battalion_chief_vehicles": 1,
       "rettungstreppe": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
@@ -12155,13 +12158,13 @@
       "rettungstreppe": 1,
       "heavy_rescue_vehicles": 2,
       "water_needed": 4000,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -12200,13 +12203,13 @@
       "heavy_rescue_vehicles": 2,
       "water_needed": 4000,
       "foam_needed": 100,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -12375,11 +12378,14 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 2, "firetrucks": 1 },
+    "requirements": {
+      "arff": 2,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 1 },
@@ -13170,10 +13176,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
@@ -14001,10 +14006,13 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -14030,10 +14038,13 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -15491,10 +15502,9 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -15516,10 +15526,9 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -15541,10 +15550,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -19263,11 +19271,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "requirements": {
+      "platform_trucks": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "platform_trucks": 80, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
@@ -19488,7 +19499,6 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_allow_first_responder_chance": 15,
       "optional_event_mission": false,
@@ -19543,5 +19553,391 @@
     "base_mission_id": 547,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "548",
+    "name": "Lille jordskred på vej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "548/a",
+    "name": "Lille jordskred på vej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_equipment": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 548,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "549",
+    "name": "Kollaps af underjordisk parkeringshus",
+    "place": "Parkeringshus",
+    "place_array": ["Parkeringshus"],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "549/a",
+    "name": "Kollaps af underjordisk parkeringshus",
+    "place": "Parkeringshus",
+    "place_array": ["Parkeringshus"],
+    "average_credits": 5150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_equipment": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 549,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "550",
+    "name": "Fabrikkens sammenbrud",
+    "place": "Fabrik",
+    "place_array": ["Fabrik"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 550,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "550/a",
+    "name": "Fabrikkens sammenbrud",
+    "place": "Fabrik",
+    "place_array": ["Fabrik"],
+    "average_credits": 6150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_equipment": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 550,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "551",
+    "name": "Mennesker under murbrokkerne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 5,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "551/a",
+    "name": "Mennesker under murbrokkerne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response_equipment": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "disaster_response_count": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 551,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "552",
+    "name": "Evakuering efter oversvømmelse",
+    "place": "Flod",
+    "place_array": ["Flod"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 3,
+      "water_rescue": 6
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 8000,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "552/a",
+    "name": "Evakuering efter oversvømmelse",
+    "place": "Flod",
+    "place_array": ["Flod"],
+    "average_credits": 8450,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "flood_equipment": 1,
+      "police_cars": 3,
+      "water_rescue": 6
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 8000,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 2,
+      "police_stations": 3,
+      "water_damage_pump_count": 2,
+      "flood_equipment": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
   }
 ]
