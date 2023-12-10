@@ -22572,5 +22572,106 @@
     "base_mission_id": 657,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "658",
+    "name": "Waste Facility Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "foam_needed": 2000,
+      "foam": 2,
+      "firetrucks": 15,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 90,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 658,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support"]
+  },
+  {
+    "id": "659",
+    "name": "Christmas arch on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-11T10:00:00+11:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 659,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "660",
+    "name": "Theft of Christmas presents",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-11T10:00:00+11:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 660,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
