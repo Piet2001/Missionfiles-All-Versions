@@ -20754,5 +20754,114 @@
     "base_mission_id": 552,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "553",
+    "name": "Únos letadla",
+    "place": "Velké letiště (ranvej)",
+    "place_array": ["Velké letiště (ranvej)"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "detention_unit": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "k9": 3,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "riot_police": 6,
+      "riot_police_command": 1,
+      "riot_police_maintenance": 1,
+      "heavy_rescue_vehicles": 1,
+      "arff": 4,
+      "rettungstreppe": 2,
+      "police_cars": 30
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 5,
+      "max_possible_prisoners": 10,
+      "swat_personnel": 28,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 5,
+      "police_stations": 20,
+      "police_helicopter_stations": 1,
+      "bomb_disposal_count": 1,
+      "riot_police": 1,
+      "airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 553,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "554",
+    "name": "Hořící vánoční oblouk",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-11T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 554,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "555",
+    "name": "Krádež vánočních dárků",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-11T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 555,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
