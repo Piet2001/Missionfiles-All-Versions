@@ -1328,6 +1328,45 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "43",
+    "name": "Kettingbotsing",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10330,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "heavy_rescue_vehicles": 4,
+      "traffic_unit": 2,
+      "traffic_inspector": 1,
+      "firetrucks": 8,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 15,
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 43,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "44",
     "name": "Liftopsluiting",
     "place": "",
@@ -3727,6 +3766,39 @@
     "base_mission_id": 119,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "120",
+    "name": "Begeleiding wielrenners",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5610,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "ambulances": 2, "police_motorcycle": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "personnel_educations": { "police_motorcycle": 2 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 120,
+    "additive_overlays": "",
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "121",
@@ -10130,7 +10202,7 @@
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 3,
-      "expansion_missions_ids": [306, 1067],
+      "expansion_missions_ids": [306, 307],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -10177,7 +10249,7 @@
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 3,
-      "expansion_missions_ids": [306, 1067],
+      "expansion_missions_ids": [306, 307],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -10225,7 +10297,7 @@
     "additional": {
       "possible_patient": 8,
       "possible_patient_min": 5,
-      "expansion_missions_ids": [1067],
+      "expansion_missions_ids": [307],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -10273,7 +10345,7 @@
     "additional": {
       "possible_patient": 8,
       "possible_patient_min": 5,
-      "expansion_missions_ids": [1067],
+      "expansion_missions_ids": [307],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -10290,6 +10362,214 @@
     },
     "overlay_index": 0,
     "base_mission_id": 306,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "technical_aid",
+      "traffic_police_specialization"
+    ]
+  },
+  {
+    "id": "307",
+    "name": "Verkeersongeval met touringcar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7230,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_unit": 2,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 7,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "technical_aid": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 307,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "technical_aid",
+      "traffic_police_specialization"
+    ]
+  },
+  {
+    "id": "307-0",
+    "name": "Verkeersongeval met touringcar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_unit": 2,
+      "traffic_inspector": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 7,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "bereitschaftspolizei": 1,
+      "traffic_police": 1,
+      "technical_aid": 3,
+      "fire_stations": 14
+    },
+    "overlay_index": 0,
+    "base_mission_id": 307,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "technical_aid",
+      "traffic_police_specialization"
+    ]
+  },
+  {
+    "id": "307-1",
+    "name": "Verkeersongeval met touringcar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11970,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 3,
+      "traffic_unit": 2,
+      "firetrucks": 6,
+      "police_cars": 10
+    },
+    "chances": { "nef": 3, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4, 0],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Interne Geneeskunde"
+      ],
+      "patient_specializations": "Traumatologie, Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 33,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "technical_aid": 3,
+      "fire_stations": 17
+    },
+    "overlay_index": 1,
+    "base_mission_id": 307,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "technical_aid",
+      "traffic_police_specialization"
+    ]
+  },
+  {
+    "id": "307-2",
+    "name": "Verkeersongeval met touringcar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12770,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 3,
+      "traffic_unit": 2,
+      "traffic_inspector": 1,
+      "firetrucks": 6,
+      "police_cars": 10
+    },
+    "chances": { "nef": 3, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4, 0],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Interne Geneeskunde"
+      ],
+      "patient_specializations": "Traumatologie, Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 33,
+      "police_stations": 11,
+      "bereitschaftspolizei": 1,
+      "traffic_police": 1,
+      "technical_aid": 3,
+      "fire_stations": 17
+    },
+    "overlay_index": 2,
+    "base_mission_id": 307,
     "additive_overlays": "",
     "mission_categories": [
       "fire",
@@ -23904,6 +24184,37 @@
     "base_mission_id": 662,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "663",
+    "name": "Verkeerscontrole",
+    "place": "Verzorgingsplaats (Snelweg)",
+    "place_array": ["Verzorgingsplaats (Snelweg)"],
+    "average_credits": 6690,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_motorcycle": 6 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "personnel_educations": { "police_motorcycle": 6 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 663,
+    "additive_overlays": "",
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "664",
@@ -41869,317 +42180,6 @@
     "base_mission_id": 1064,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "1065",
-    "name": "Kettingbotsing",
-    "place": "",
-    "place_array": [],
-    "average_credits": 10330,
-    "generated_by": "",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "heavy_rescue_vehicles": 4,
-      "traffic_unit": 2,
-      "traffic_inspector": 1,
-      "firetrucks": 8,
-      "police_cars": 8
-    },
-    "chances": { "patient_transport": 75 },
-    "additional": {
-      "possible_patient": 25,
-      "possible_patient_min": 15,
-      "only_alliance_mission": true,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": { "main_building": 0 },
-    "overlay_index": null,
-    "base_mission_id": 1065,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "1066",
-    "name": "Begeleiding wielrenners",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5610,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "ambulances": 2, "police_motorcycle": 2 },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 uur",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_ktw_instead_of_rtw": true,
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "rescue_stations": 2,
-      "police_stations": 2,
-      "personnel_educations": { "police_motorcycle": 2 }
-    },
-    "overlay_index": null,
-    "base_mission_id": 1066,
-    "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
-  },
-  {
-    "id": "1067",
-    "name": "Verkeersongeval met touringcar",
-    "place": "",
-    "place_array": [],
-    "average_credits": 7230,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "ovdp": 1,
-      "heavy_rescue_vehicles": 1,
-      "traffic_unit": 2,
-      "firetrucks": 3,
-      "police_cars": 4
-    },
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 10,
-      "possible_patient_min": 7,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 5,
-      "bereitschaftspolizei": 1,
-      "technical_aid": 3,
-      "fire_stations": 14
-    },
-    "overlay_index": null,
-    "base_mission_id": 1067,
-    "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "technical_aid",
-      "traffic_police_specialization"
-    ]
-  },
-  {
-    "id": "1067-0",
-    "name": "Verkeersongeval met touringcar",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5200,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "ovdp": 1,
-      "heavy_rescue_vehicles": 1,
-      "traffic_unit": 2,
-      "traffic_inspector": 1,
-      "firetrucks": 3,
-      "police_cars": 4
-    },
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 10,
-      "possible_patient_min": 7,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 6,
-      "bereitschaftspolizei": 1,
-      "traffic_police": 1,
-      "technical_aid": 3,
-      "fire_stations": 14
-    },
-    "overlay_index": 0,
-    "base_mission_id": 1067,
-    "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "technical_aid",
-      "traffic_police_specialization"
-    ]
-  },
-  {
-    "id": "1067-1",
-    "name": "Verkeersongeval met touringcar",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11970,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 2,
-      "elw3": 1,
-      "ovdp": 1,
-      "heavy_rescue_vehicles": 3,
-      "traffic_unit": 2,
-      "firetrucks": 6,
-      "police_cars": 10
-    },
-    "chances": { "nef": 3, "patient_transport": 40 },
-    "additional": {
-      "possible_patient": 100,
-      "possible_patient_min": 50,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "patient_specialization_ids": [4, 0],
-      "patient_specialization_captions": [
-        "Traumatologie",
-        "Interne Geneeskunde"
-      ],
-      "patient_specializations": "Traumatologie, Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 33,
-      "police_stations": 10,
-      "bereitschaftspolizei": 1,
-      "technical_aid": 3,
-      "fire_stations": 17
-    },
-    "overlay_index": 1,
-    "base_mission_id": 1067,
-    "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "technical_aid",
-      "traffic_police_specialization"
-    ]
-  },
-  {
-    "id": "1067-2",
-    "name": "Verkeersongeval met touringcar",
-    "place": "",
-    "place_array": [],
-    "average_credits": 12770,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 2,
-      "elw3": 1,
-      "ovdp": 1,
-      "heavy_rescue_vehicles": 3,
-      "traffic_unit": 2,
-      "traffic_inspector": 1,
-      "firetrucks": 6,
-      "police_cars": 10
-    },
-    "chances": { "nef": 3, "patient_transport": 40 },
-    "additional": {
-      "possible_patient": 100,
-      "possible_patient_min": 50,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "patient_specialization_ids": [4, 0],
-      "patient_specialization_captions": [
-        "Traumatologie",
-        "Interne Geneeskunde"
-      ],
-      "patient_specializations": "Traumatologie, Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 33,
-      "police_stations": 11,
-      "bereitschaftspolizei": 1,
-      "traffic_police": 1,
-      "technical_aid": 3,
-      "fire_stations": 17
-    },
-    "overlay_index": 2,
-    "base_mission_id": 1067,
-    "additive_overlays": "",
-    "mission_categories": [
-      "fire",
-      "technical_aid",
-      "traffic_police_specialization"
-    ]
-  },
-  {
-    "id": "1068",
-    "name": "Verkeerscontrole",
-    "place": "Verzorgingsplaats (Snelweg)",
-    "place_array": ["Verzorgingsplaats (Snelweg)"],
-    "average_credits": 6690,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "police_motorcycle": 6 },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 uur",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 5,
-      "personnel_educations": { "police_motorcycle": 6 }
-    },
-    "overlay_index": null,
-    "base_mission_id": 1068,
-    "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "1069",
