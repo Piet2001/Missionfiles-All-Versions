@@ -357,14 +357,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_carrier": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -385,14 +385,15 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "fwk": 1, "firetrucks": 1 },
+    "requirements": {
+      "fwk": 1,
+      "oneof_fire_engine_or_rescue_or_carrier": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": {
@@ -776,13 +777,16 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "traffic_car": 1, "firetrucks": 1 },
+    "requirements": {
+      "traffic_car": 1,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 40, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -806,13 +810,17 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "fwk": 1, "traffic_car": 1, "firetrucks": 1 },
+    "requirements": {
+      "fwk": 1,
+      "traffic_car": 1,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 40, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -1765,12 +1773,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 9000, "firetrucks": 2 },
+    "requirements": {
+      "water_needed": 9000,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 2,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [210],
       "filter_id": "firehouse_missions",
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -1791,11 +1802,14 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -3340,12 +3354,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-03-31T09:00:00Z",
@@ -3783,12 +3797,13 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_carrier": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
@@ -4275,12 +4290,11 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_crew": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 75, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [8],
       "patient_specialization_captions": ["Kardiochirurgie"],
@@ -4304,12 +4318,11 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_crew": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 90 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
@@ -4547,10 +4560,13 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -5930,12 +5946,15 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "traffic_car": 1, "firetrucks": 1, "police_cars": 1 },
+    "requirements": {
+      "traffic_car": 1,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": {
@@ -5965,7 +5984,8 @@
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 2,
-      "firetrucks": 5,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 5,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 70 },
@@ -5973,7 +5993,6 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -6008,7 +6027,8 @@
       "road_rescue": 1,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 2,
-      "firetrucks": 5,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 5,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 30, "patient_critical_care": 70 },
@@ -6016,7 +6036,6 @@
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -6770,7 +6789,8 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "traffic_car": 1,
-      "firetrucks": 3,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 3,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {
@@ -6782,7 +6802,6 @@
       "possible_patient": 8,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -6815,7 +6834,8 @@
       "battalion_chief_vehicles": 1,
       "fwk": 1,
       "traffic_car": 1,
-      "firetrucks": 3,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 3,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": {
@@ -6827,7 +6847,6 @@
       "possible_patient": 8,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -7209,7 +7228,8 @@
     "requirements": {
       "heavy_rescue_vehicles": 1,
       "traffic_car": 1,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "patient_transport": 30 },
@@ -7217,7 +7237,6 @@
       "possible_patient": 5,
       "filter_id": "firehouse_missions",
       "need_traffic_car_only_if_present": true,
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": true,
       "date_start": "2023-01-06T10:00:00Z",
       "date_end": "2023-03-20T22:59:00Z",
@@ -7585,10 +7604,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-01-19T10:00:00Z",
@@ -8123,10 +8141,9 @@
       "/images/olfass_gelb.png",
       "/images/olfass_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -9836,7 +9853,7 @@
       "boats": 2,
       "battalion_chief_vehicles": 1,
       "police_helicopters": 1,
-      "firetrucks": 1,
+      "oneof_fire_engine_or_crew": 1,
       "police_cars": 6
     },
     "chances": {
@@ -9850,7 +9867,6 @@
       "average_min_fire_personnel": 9,
       "average_min_police_personnel": 12,
       "filter_id": "water_watch_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
@@ -9886,7 +9902,7 @@
       "boats": 2,
       "battalion_chief_vehicles": 1,
       "police_helicopters": 1,
-      "firetrucks": 1,
+      "oneof_fire_engine_or_crew": 1,
       "police_cars": 6
     },
     "chances": {
@@ -9900,7 +9916,6 @@
       "average_min_fire_personnel": 9,
       "average_min_police_personnel": 12,
       "filter_id": "water_watch_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
@@ -10710,10 +10725,9 @@
       "/images/elevator_gelb.png",
       "/images/elevator_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -10813,12 +10827,11 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
@@ -11575,10 +11588,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2021-06-11T09:00:00Z",
@@ -11690,10 +11702,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2021-06-11T09:00:00Z",
@@ -12561,6 +12572,7 @@
     ],
     "requirements": {
       "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_disaster_response_road_rescue": 1,
       "firetrucks": 1,
       "police_cars": 2
     },
@@ -12569,7 +12581,6 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "allow_road_rescue_instead_of_lf": true,
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
       "date_end": "2023-11-30T23:59:59Z",
@@ -12666,10 +12677,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
@@ -13420,11 +13430,10 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_crew": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -13665,11 +13674,10 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_crew": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
@@ -13690,12 +13698,15 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "min_pump_speed": 10000 },
+    "requirements": {
+      "oneof_fire_engine_or_crew": 1,
+      "firetrucks": 1,
+      "min_pump_speed": 10000
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "pump_water_amount": 20000,
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": {
@@ -13720,11 +13731,10 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_crew": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
@@ -15740,10 +15750,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -17291,12 +17300,12 @@
       "rettungstreppe": 2,
       "water_needed": 8000,
       "foam_needed": 400,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
@@ -17328,7 +17337,8 @@
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 4,
       "arff": 4,
-      "firetrucks": 10,
+      "oneof_fire_engine_or_airport_fire_engine": 10,
+      "firetrucks": 1,
       "police_cars": 8
     },
     "chances": {
@@ -17340,7 +17350,6 @@
       "possible_patient": 50,
       "possible_patient_min": 20,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -17383,14 +17392,14 @@
       "rettungstreppe": 2,
       "water_needed": 95000,
       "foam_needed": 3000,
-      "firetrucks": 12
+      "oneof_fire_engine_or_airport_fire_engine": 12,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -17424,11 +17433,14 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 2, "firetrucks": 1 },
+    "requirements": {
+      "arff": 2,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
@@ -17449,11 +17461,14 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 1, "firetrucks": 1 },
+    "requirements": {
+      "arff": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
@@ -17474,11 +17489,15 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1, "arff": 1, "firetrucks": 1 },
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "arff": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
@@ -17503,11 +17522,14 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 1, "firetrucks": 1 },
+    "requirements": {
+      "arff": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
@@ -17528,13 +17550,16 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "rettungstreppe": 1, "firetrucks": 1 },
+    "requirements": {
+      "rettungstreppe": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 90, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -17565,14 +17590,14 @@
       "mobile_air_vehicles": 2,
       "arff": 4,
       "water_needed": 110000,
-      "firetrucks": 15
+      "oneof_fire_engine_or_airport_fire_engine": 15,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 20,
       "possible_patient_min": 8,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
@@ -17609,12 +17634,12 @@
       "arff": 2,
       "water_needed": 70000,
       "foam_needed": 4800,
-      "firetrucks": 10
+      "oneof_fire_engine_or_airport_fire_engine": 10,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 8 },
@@ -19862,11 +19887,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "requirements": {
+      "platform_trucks": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "platform_trucks": 80, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
@@ -19933,12 +19961,12 @@
       "platform_trucks": 1,
       "fwk": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_crew": 1,
       "firetrucks": 1
     },
     "chances": { "fwk": 40 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_crew_carrier_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
@@ -20170,7 +20198,7 @@
   },
   {
     "id": "554",
-    "name": "Hořící vánoční oblouk",
+    "name": "Hořící vánoční věnec",
     "place": "",
     "place_array": [],
     "average_credits": 900,
@@ -20221,5 +20249,241 @@
     "base_mission_id": 555,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "561",
+    "name": "Požár ropné nádrže",
+    "place": "Velká chemická skladovací nádrž",
+    "place_array": ["Velká chemická skladovací nádrž"],
+    "average_credits": 50000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 20,
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 6,
+      "water_needed": 250000,
+      "foam_needed": 54000,
+      "gwoil": 6,
+      "hose": 1,
+      "hazmat_large": 1,
+      "firetrucks": 50,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 20,
+      "oil_clearing": 6,
+      "hose": 1,
+      "hazmat": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 561,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "562",
+    "name": "Náraz vozidla do stojanu na čerpací stanici",
+    "place": "Čerpací stanice",
+    "place_array": ["Čerpací stanice"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "traffic_car": 1,
+      "gwoil": 1,
+      "hazmat_large": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 8,
+      "oil_clearing": 1,
+      "hazmat": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 562,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "563",
+    "name": "Únik chloru na plaveckém bazéně",
+    "place": "Plovárna",
+    "place_array": ["Plovárna"],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/olfass_gruen.png",
+      "/images/olfass_gelb.png",
+      "/images/olfass_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 3,
+      "hazmat_large": 1,
+      "firetrucks": 5,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 15,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [5],
+      "patient_specialization_captions": ["Neurologie"],
+      "patient_specializations": "Neurologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "hazmat": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 563,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "564",
+    "name": "Požár v nepřístupném horském terénu",
+    "place": "Hora",
+    "place_array": ["Hora"],
+    "average_credits": 30000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 15,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "police_helicopters": 1,
+      "pump": 2,
+      "water_needed": 150000,
+      "hose": 2,
+      "firetrucks": 30,
+      "min_pump_speed": 6000
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 70000,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_helicopter_stations": 1,
+      "water_damage_pump_count": 1,
+      "hose": 2,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "565",
+    "name": "Požár datového centra",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "water_needed": 20000,
+      "carbon_dioxide": 3,
+      "firetrucks": 15,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 20,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Kardiochirurgie"],
+      "patient_specializations": "Kardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "carbon_dioxide": 3,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 565,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
