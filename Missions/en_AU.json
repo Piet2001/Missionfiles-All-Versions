@@ -21996,5 +21996,104 @@
     "base_mission_id": 660,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "661",
+    "name": "Urgent Medical Escort",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 6 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_allow_first_responder_chance": 90,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 661,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "662",
+    "name": "Santa Claus stuck in the chimney",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+11:00",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 662,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "663",
+    "name": "Falling Christmas decoration on public roads",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+11:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 663,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
