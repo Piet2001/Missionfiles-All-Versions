@@ -17844,5 +17844,94 @@
     "base_mission_id": 529,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "530",
+    "name": "Un perro se escapa del refugio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 850,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 530,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "531",
+    "name": "Papá Noel atascado en la chimenea",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 531,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "532",
+    "name": "Caída de un adorno navideño en la vía pública",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 532,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
