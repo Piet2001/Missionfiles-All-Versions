@@ -25751,5 +25751,70 @@
     "base_mission_id": 684,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "685",
+    "name": "Feu d’enseigne lumineuse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 685,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "686",
+    "name": "Bateau de pêche en détresse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 4,
+      "coastal_guard_boat": 1,
+      "coastal_helicopter": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 1,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 686,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
