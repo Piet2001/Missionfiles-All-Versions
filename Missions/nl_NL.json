@@ -42245,5 +42245,95 @@
     "base_mission_id": 1070,
     "additive_overlays": "",
     "mission_categories": ["forestry"]
+  },
+  {
+    "id": "1071",
+    "name": "Persoon weigert te vertrekken",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1071,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1072",
+    "name": "Kerstman vast in schoorsteen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1072,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1073",
+    "name": "Kerstdecoratie op de weg",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-12-18T10:00:00+01:00",
+      "date_end": "2023-12-26T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1073,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
