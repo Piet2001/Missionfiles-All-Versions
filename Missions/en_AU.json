@@ -22772,5 +22772,39 @@
     "base_mission_id": 663,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "664",
+    "name": "Compound Fracture",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 2, "firetrucks": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 40,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
