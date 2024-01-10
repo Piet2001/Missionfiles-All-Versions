@@ -24738,7 +24738,7 @@
     "requirements": {
       "heavy_rescue_vehicles": 1,
       "firetrucks": 1,
-      "police_cars": 2
+      "police_cars": 1
     },
     "chances": { "patient_transport": 40 },
     "additional": {
@@ -24751,6 +24751,7 @@
         "Medicina interna generale",
         "Medicina interna generale"
       ],
+      "max_municipal_police_replacing_police_cars": 1,
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
@@ -24874,7 +24875,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "patient_it_code_possible": ["ZC07G", "ZC07V"],
+      "patient_it_code_possible": ["KC07R", "KC07G"],
       "filter_id": "ambulance_station_missions",
       "possible_patient_specializations": [
         "Medicina interna generale",
@@ -24956,12 +24957,13 @@
       "fbi_bomb": 1,
       "battalion_chief_vehicles": 1,
       "firetrucks": 1,
-      "police_cars": 10
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
       "need_bomb_only_if_present": true,
+      "max_municipal_police_replacing_police_cars": 4,
       "optional_event_mission": false
     },
     "prerequisites": {
@@ -25025,9 +25027,9 @@
   },
   {
     "id": "645",
-    "name": "Scoperta di macchine sospette in un aereo",
-    "place": "",
-    "place_array": [],
+    "name": "Materiale Sospetto sull'Aereo",
+    "place": "Piccolo aeroporto (pista)\nGrande aeroporto (pista)",
+    "place_array": ["Piccolo aeroporto (pista)", "Grande aeroporto (pista)"],
     "average_credits": 5700,
     "generated_by": "",
     "icons": [
@@ -25039,10 +25041,9 @@
       "fbi_bomb": 1,
       "battalion_chief_vehicles": 1,
       "hazmat_vehicles": 1,
-      "water_tankers": 1,
       "arff": 1,
       "firetrucks": 2,
-      "police_cars": 13
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
@@ -25118,7 +25119,7 @@
   },
   {
     "id": "648",
-    "name": "Cane fugge dal rifugio",
+    "name": "Segnalato Cane Vagante",
     "place": "",
     "place_array": [],
     "average_credits": 850,
@@ -25132,6 +25133,7 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
@@ -25214,8 +25216,8 @@
   {
     "id": "651",
     "name": "Ferito in una scuola",
-    "place": "",
-    "place_array": [],
+    "place": "Scuola",
+    "place_array": ["Scuola"],
     "average_credits": 500,
     "generated_by": "",
     "icons": [
