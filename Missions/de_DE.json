@@ -47972,8 +47972,15 @@
   {
     "id": "551",
     "name": "Einbruch auf Betriebsgelände",
-    "place": "",
-    "place_array": [],
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie\nHolzverarbeitung\nTextilverarbeitung\nWerksgelände",
+    "place_array": [
+      "Chemiepark",
+      "Industrie-Allgemein",
+      "Automobilindustrie",
+      "Holzverarbeitung",
+      "Textilverarbeitung",
+      "Werksgelände"
+    ],
     "average_credits": 800,
     "generated_by": "",
     "icons": [
@@ -47999,8 +48006,15 @@
   {
     "id": "551/a",
     "name": "Einbruch auf Betriebsgelände",
-    "place": "",
-    "place_array": [],
+    "place": "Chemiepark\nIndustrie-Allgemein\nAutomobilindustrie\nHolzverarbeitung\nTextilverarbeitung\nWerksgelände",
+    "place_array": [
+      "Chemiepark",
+      "Industrie-Allgemein",
+      "Automobilindustrie",
+      "Holzverarbeitung",
+      "Textilverarbeitung",
+      "Werksgelände"
+    ],
     "average_credits": 1200,
     "generated_by": "",
     "icons": [
@@ -53752,7 +53766,7 @@
   },
   {
     "id": "632",
-    "name": "Einbruchalarm in Museum",
+    "name": "Einbruch in Museum",
     "place": "Museum",
     "place_array": ["Museum"],
     "average_credits": 2000,
@@ -53782,7 +53796,7 @@
   },
   {
     "id": "632/a",
-    "name": "Einbruchalarm in Museum",
+    "name": "Einbruch in Museum",
     "place": "Museum",
     "place_array": ["Museum"],
     "average_credits": 2400,
@@ -67059,5 +67073,92 @@
     "base_mission_id": 830,
     "additive_overlays": "ab",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "831",
+    "name": "Person in Eis eingebrochen",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1
+    },
+    "chances": { "heavy_rescue_vehicles": 30, "nef": 80, "helicopter": 20 },
+    "additional": {
+      "filter_id": "water_watch_missions",
+      "optional_event_mission": true,
+      "date_start": "2023-01-12T10:00:00Z",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 3,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 831,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "832",
+    "name": "Einbruchmeldeanlage (EMA) ausgelöst",
+    "place": "Supermarkt (Klein)\nSupermarkt (Groß)\nTankstelle\nSchule\nMuseum\nEinkaufszentrum\nAuto-Werkstatt\nLagerhalle\nDiskothek\nStadion\nBürokomplex\nSchwimmbad\nTheater\nBaumarkt\nBank\nChemiepark\nIndustrie-Allgemein\nAutomobilindustrie\nHolzverarbeitung\nMöbelhaus\nTextilverarbeitung\nWerksgelände",
+    "place_array": [
+      "Supermarkt (Klein)",
+      "Supermarkt (Groß)",
+      "Tankstelle",
+      "Schule",
+      "Museum",
+      "Einkaufszentrum",
+      "Auto-Werkstatt",
+      "Lagerhalle",
+      "Diskothek",
+      "Stadion",
+      "Bürokomplex",
+      "Schwimmbad",
+      "Theater",
+      "Baumarkt",
+      "Bank",
+      "Chemiepark",
+      "Industrie-Allgemein",
+      "Automobilindustrie",
+      "Holzverarbeitung",
+      "Möbelhaus",
+      "Textilverarbeitung",
+      "Werksgelände"
+    ],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [536, 537, 551, 632],
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 832,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
