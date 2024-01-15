@@ -227,55 +227,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "9",
-    "name": "Brandend hooi",
-    "place": "",
-    "place_array": [],
-    "average_credits": 250,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 9,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "10",
-    "name": "Brandende traktor",
-    "place": "",
-    "place_array": [],
-    "average_credits": 600,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [28],
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 10,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "11",
     "name": "Brandende bromfiets",
     "place": "",
@@ -986,31 +937,6 @@
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 32,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "33",
-    "name": "Brandende landbouwmachine",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1200,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "expansion_missions_ids": [127],
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 33,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -10091,6 +10017,123 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "302",
+    "name": "Brand in kantoorgebouw",
+    "place": "Kantoorgebouw",
+    "place_array": ["Kantoorgebouw"],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "chances": { "platform_trucks": 20 },
+    "additional": {
+      "expansion_missions_ids": [303, 304, 474, 475],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 302,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "303",
+    "name": "Brand in kantoorgebouw",
+    "place": "Kantoorgebouw",
+    "place_array": ["Kantoorgebouw"],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 2
+    },
+    "chances": { "platform_trucks": 80, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [304, 474, 475],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 303,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "304",
+    "name": "Brand in kantoorgebouw",
+    "place": "Kantoorgebouw",
+    "place_array": ["Kantoorgebouw"],
+    "average_credits": 4730,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "mobile_air_vehicles": 10,
+      "water_tankers": 10,
+      "nef": 1,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [475, 475],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 304,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "305",
     "name": "Verkeersongeval met touringcar",
     "place": "",
@@ -17205,6 +17248,104 @@
     },
     "overlay_index": null,
     "base_mission_id": 473,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "474",
+    "name": "Brand in kantoorgebouw",
+    "place": "Kantoorgebouw",
+    "place_array": ["Kantoorgebouw"],
+    "average_credits": 5240,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "mobile_air_vehicles": 40,
+      "water_tankers": 40,
+      "nef": 1,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 20,
+      "expansion_missions_ids": [475],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 21,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 474,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "475",
+    "name": "Brand in kantoorgebouw",
+    "place": "Kantoorgebouw",
+    "place_array": ["Kantoorgebouw"],
+    "average_credits": 6980,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "ovdp": 1,
+      "firetrucks": 4
+    },
+    "chances": { "nef": 1, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 35,
+      "expansion_missions_ids": [475],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 33,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 475,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -43261,5 +43402,36 @@
     "base_mission_id": 1073,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1074",
+    "name": "Persoon verbrand door warme chocolademelk",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-01-15T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1074,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
