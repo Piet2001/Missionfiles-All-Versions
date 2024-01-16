@@ -383,6 +383,31 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "15",
+    "name": "Feu en forêt (petit)",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 15,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "16",
     "name": "Feu de caravane",
     "place": "",
@@ -1644,7 +1669,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 6 },
     "overlay_index": null,
@@ -2303,7 +2329,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
