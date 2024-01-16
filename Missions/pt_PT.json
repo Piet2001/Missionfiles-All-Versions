@@ -1288,6 +1288,31 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "51",
+    "name": "Furto por Carteirista",
+    "place": "",
+    "place_array": [],
+    "average_credits": 140,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 51,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "52",
     "name": "Furto por Carteirista",
     "place": "Estação de Comboios (tráfego regional)",
@@ -1433,7 +1458,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 6 },
     "overlay_index": null,
@@ -1818,7 +1844,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
