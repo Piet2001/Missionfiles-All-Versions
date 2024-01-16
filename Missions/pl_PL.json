@@ -1495,7 +1495,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 6 },
     "overlay_index": null,
@@ -2058,7 +2059,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
@@ -2093,7 +2095,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "fire_support_count": 3 },
     "overlay_index": null,
@@ -2127,7 +2130,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "fire_aviation_count": 2 },
     "overlay_index": null,
@@ -2161,7 +2165,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "helicopter_bucket": 2 },
     "overlay_index": null,
@@ -2197,7 +2202,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2237,7 +2243,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2276,7 +2283,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -2317,7 +2325,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -12372,7 +12381,8 @@
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
       "allow_traffic_car_instead_of_fustw": true,
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
@@ -12410,7 +12420,8 @@
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
       "allow_traffic_car_instead_of_fustw": true,
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "fire_aviation_count": 4 },
     "overlay_index": null,
@@ -12448,7 +12459,8 @@
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
       "allow_traffic_car_instead_of_fustw": true,
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "helicopter_bucket": 6 },
     "overlay_index": null,
@@ -12487,7 +12499,8 @@
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
       "allow_traffic_car_instead_of_fustw": true,
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -21774,7 +21787,8 @@
       "personnel_educations": {
         "Ratownictwo poszukiwawczo - ratownicze": 40,
         "Szkolenie Personalne OPP": 82
-      }
+      },
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -24712,6 +24726,245 @@
     "base_mission_id": 679,
     "additive_overlays": "a",
     "mission_categories": ["energy_supply"]
+  },
+  {
+    "id": "689",
+    "name": "Blokada małej ulicy przez protestujących",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2550,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 689,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "690",
+    "name": "Blokada dużej ulicy przez protestujących",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "traffic_car": 1,
+      "police_cars": 5,
+      "personnel_educations": { "riot_police": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 18 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 9,
+      "riot_police": 1,
+      "traffic_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 690,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "691",
+    "name": "Mały protest pod budynkiem rządowym",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "personnel_educations": { "riot_police": 14 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 14 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 691,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "692",
+    "name": "Zabezpieczenie zgromadzenia",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "personnel_educations": { "riot_police": 14 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 14 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 692,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "693",
+    "name": "Zabezpieczenie zgromadzenia (średnie)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 8,
+      "personnel_educations": { "riot_police": 40 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 40 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 693,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "694",
+    "name": "Zabezpieczenie zgromadzenia (duże)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "riot_police_ambulance": 1,
+      "riot_police_equipment": 1,
+      "police_cars": 12,
+      "personnel_educations": { "riot_police": 58 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 58 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 694,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "695",
+    "name": "Mała grupa niebezpiecznych protestujących",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6450,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "riot_police_equipment": 1,
+      "police_cars": 6,
+      "personnel_educations": { "riot_police": 34 }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 6,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Szkolenie Personalne OPP": 34 },
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 695,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "696",
