@@ -848,6 +848,35 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "31",
+    "name": "Camino in fiamme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1310,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "water_needed": 2000,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 31,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "32",
     "name": "Mietitrice in fiamme",
     "place": "",
@@ -1639,7 +1668,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 6 },
     "overlay_index": null,
@@ -2241,7 +2271,8 @@
     "additional": {
       "only_alliance_mission": true,
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
@@ -2513,6 +2544,31 @@
     },
     "overlay_index": null,
     "base_mission_id": 82,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "83",
+    "name": "Tetto danneggiato",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "chances": { "platform_trucks": 50 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 83,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
