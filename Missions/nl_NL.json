@@ -72,30 +72,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "3",
-    "name": "Brandende motorfiets",
-    "place": "",
-    "place_array": [],
-    "average_credits": 340,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 3,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "4",
     "name": "Brandend gras",
     "place": "",
@@ -231,7 +207,7 @@
     "name": "Brandend hooi",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -241,9 +217,10 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [28, 126, 127, 326, 327, 709, 710, 711],
+      "followup_missions_ids": [10, 33],
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "unavailable_in_normal_missions": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -252,11 +229,11 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "11",
-    "name": "Brandende bromfiets",
+    "id": "10",
+    "name": "Brandende traktor",
     "place": "",
     "place_array": [],
-    "average_credits": 240,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -266,12 +243,13 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [28, 126, 127, 326, 327, 709, 710, 711],
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
-    "base_mission_id": 11,
+    "base_mission_id": 10,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -970,7 +948,7 @@
     "name": "Brandende landbouwmachine",
     "place": "",
     "place_array": [],
-    "average_credits": 1200,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -980,10 +958,9 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [127],
+      "expansion_missions_ids": [28, 126, 127, 326, 327, 709, 710, 711],
       "filter_id": "firehouse_missions",
-      "optional_event_mission": false,
-      "unavailable_in_normal_missions": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -43490,6 +43467,68 @@
     "prerequisites": { "main_building": 3, "rescue_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 1074,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1075",
+    "name": "Ongeval met sleeën",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-01-22T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1075,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1076",
+    "name": "Persoon gevallen op glad ijs",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-01-22T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1076,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
   }
