@@ -23013,5 +23013,48 @@
     "base_mission_id": 669,
     "additive_overlays": "",
     "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "670",
+    "name": "Roof Damage From Storm",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "pump": 1,
+      "light_supply": 1,
+      "energy_supply": 1,
+      "water_rescue": 3
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "filter_id": "water_watch_missions",
+      "patient_allow_first_responder_chance": 50,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "water_damage_pump_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   }
 ]
