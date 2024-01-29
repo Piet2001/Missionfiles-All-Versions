@@ -21393,5 +21393,78 @@
     "base_mission_id": 567,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "568",
+    "name": "Pád na ledovou plochu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-01-29T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 568,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "569",
+    "name": "Nahromadění v důsledku náledí",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2024-01-29T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 569,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
