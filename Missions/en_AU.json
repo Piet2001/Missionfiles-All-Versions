@@ -23056,5 +23056,40 @@
     "base_mission_id": 670,
     "additive_overlays": "",
     "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "671",
+    "name": "Child Finger Stuck in Drain",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "water_rescue": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 671,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   }
 ]
