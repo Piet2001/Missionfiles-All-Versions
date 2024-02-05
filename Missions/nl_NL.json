@@ -3081,44 +3081,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "100",
-    "name": "Ammoniakalarm in opslagloods",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4330,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "hazmat_vehicles": 1,
-      "gwmess": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 1
-    },
-    "chances": {
-      "mobile_command_vehicles": 20,
-      "elw3": 10,
-      "gwmess": 10,
-      "heavy_rescue_vehicles": 80
-    },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 14 },
-    "overlay_index": null,
-    "base_mission_id": 100,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "101",
     "name": "Koolmonoxide vrijgekomen",
     "place": "",
@@ -16748,6 +16710,56 @@
     "base_mission_id": 458,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "459",
+    "name": "Brandende vliegtuigtrekker",
+    "place": "Vliegveld (groot): Platform / Gate",
+    "place_array": ["Vliegveld (groot): Platform / Gate"],
+    "average_credits": 1290,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "arff": 1, "elw_airport": 1, "firetrucks": 1 },
+    "chances": { "elw_airport": 50 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 459,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "460",
+    "name": "Brandende vliegtuigtrekker",
+    "place": "Vliegveld (groot): Platform / Gate",
+    "place_array": ["Vliegveld (groot): Platform / Gate"],
+    "average_credits": 1840,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "arff": 2, "elw_airport": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_arff_instead_of_lf": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "",
+    "mission_categories": ["airport"]
   },
   {
     "id": "461",
@@ -43571,6 +43583,48 @@
     },
     "overlay_index": null,
     "base_mission_id": 1077,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1078",
+    "name": "Aanrijding door ijzel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2780,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2024-02-05T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1078,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   }
