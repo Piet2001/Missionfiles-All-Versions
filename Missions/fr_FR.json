@@ -27122,5 +27122,170 @@
     "base_mission_id": 699,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "700",
+    "name": "Explosion de four à arc sous vide",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "k9": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "firetrucks": 7,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 700,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "701",
+    "name": "Incendie d'un bateau de croisières à quai",
+    "place": "Quai de navire de croisière",
+    "place_array": ["Quai de navire de croisière"],
+    "average_credits": 20500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "water_rescue": 2
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 701,
+    "additive_overlays": "",
+    "mission_categories": [
+      "water_rescue_specialization",
+      "fire_support_specialization"
+    ]
+  },
+  {
+    "id": "702",
+    "name": "Carambolage dû au verglas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "patient_at_end_of_mission": true,
+      "date_start": "2024-02-05T10:00:00+01:00",
+      "date_end": "2024-03-03T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 702,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
