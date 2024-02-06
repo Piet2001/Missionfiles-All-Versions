@@ -18536,6 +18536,7 @@
       "/images/cat_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
       "gw_hoehenrettung_personal": 4,
       "heavy_rescue_vehicles": 1,
@@ -27287,5 +27288,312 @@
     "base_mission_id": 702,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "709",
+    "name": "Transfert d'un détenu à Haut risque",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "swat": 4, "swat_helicopter": 1, "police_cars": 10 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "swat_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "police_stations": 10,
+      "swat": 1,
+      "swat_airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "",
+    "mission_categories": ["swat"]
+  },
+  {
+    "id": "710",
+    "name": "Plan Piratmer (Détournement d'un navire)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3350,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "swat_helicopter": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "coastal_rescue_count": 2,
+      "swat_airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 710,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "711",
+    "name": "Plan Piratmer (Attaques de navire)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3350,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "swat_helicopter": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "coastal_rescue_count": 2,
+      "swat_airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 711,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "712",
+    "name": "Plan Piratome (Menace Nucléaire)",
+    "place": "Centrale électrique",
+    "place_array": ["Centrale électrique"],
+    "average_credits": 10100,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "swat": 3,
+      "swat_ladder": 3,
+      "swat_negotiation": 1,
+      "swat_helicopter": 1,
+      "firetrucks": 3,
+      "police_cars": 11
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "swat_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "swat": 2,
+      "swat_height": 2,
+      "swat_airport": 1,
+      "swat_negotiation": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 712,
+    "additive_overlays": "",
+    "mission_categories": ["swat"]
+  },
+  {
+    "id": "713",
+    "name": "Plan Piratome (Détournement d'un transport nucléaire)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10200,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "swat": 3,
+      "swat_ladder": 3,
+      "swat_negotiation": 1,
+      "swat_helicopter": 1,
+      "firetrucks": 3,
+      "police_cars": 11
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "swat_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "swat": 2,
+      "swat_height": 2,
+      "swat_airport": 1,
+      "swat_negotiation": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 713,
+    "additive_overlays": "",
+    "mission_categories": ["swat"]
+  },
+  {
+    "id": "714",
+    "name": "Plan Piratmer (Attaque sur une plate-forme pétrolière)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4900,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 3, "swat_helicopter": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "coastal_rescue_count": 3,
+      "swat_airport": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 714,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "715",
+    "name": "Plan Piratome (Attaque dans un dépôt de carburant)",
+    "place": "Raffinerie de pétrole",
+    "place_array": ["Raffinerie de pétrole"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "swat": 3,
+      "swat_ladder": 3,
+      "swat_negotiation": 1,
+      "swat_helicopter": 1,
+      "firetrucks": 3,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "swat_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "swat": 2,
+      "swat_height": 2,
+      "swat_airport": 1,
+      "swat_negotiation": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 715,
+    "additive_overlays": "",
+    "mission_categories": ["swat"]
   }
 ]
