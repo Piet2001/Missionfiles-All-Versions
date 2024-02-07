@@ -14441,490 +14441,6 @@
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
-    "id": "404",
-    "name": "Sensibilisation des écoliers au 112",
-    "place": "École",
-    "place_array": ["École"],
-    "average_credits": 2500,
-    "generated_by": "",
-    "icons": [
-      "/images/comment_gruen.png",
-      "/images/comment_gelb.png",
-      "/images/comment_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-11T10:00:00Z",
-      "date_end": "2023-02-12T10:00:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 404,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "405",
-    "name": "Sensibilisation des écoliers au 112",
-    "place": "École",
-    "place_array": ["École"],
-    "average_credits": 2500,
-    "generated_by": "",
-    "icons": [
-      "/images/comment_gruen.png",
-      "/images/comment_gelb.png",
-      "/images/comment_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-11T10:00:00Z",
-      "date_end": "2023-02-12T10:00:00Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 405,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "406",
-    "name": "Annonce des nouvelles fonctionnalités du 112",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4500,
-    "generated_by": "",
-    "icons": [
-      "/images/comment_gruen.png",
-      "/images/comment_gelb.png",
-      "/images/comment_rot.png"
-    ],
-    "requirements": { "ambulances": 1, "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "followup_missions_ids": [407],
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-11T10:00:00Z",
-      "date_end": "2023-02-12T10:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 406,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "407",
-    "name": "Célébration de la Journée européenne du 112",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4500,
-    "generated_by": "",
-    "icons": [
-      "/images/dancinghall_gruen.png",
-      "/images/dancinghall_gelb.png",
-      "/images/dancinghall_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "ambulances": 2,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 3
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-11T10:00:00Z",
-      "date_end": "2023-02-12T10:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 2,
-      "police_stations": 3,
-      "fire_stations": 6
-    },
-    "overlay_index": null,
-    "base_mission_id": 407,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "408",
-    "name": "Cérémonie nationale de remise du prix 112",
-    "place": "",
-    "place_array": [],
-    "average_credits": 7500,
-    "generated_by": "",
-    "icons": [
-      "/images/comment_gruen.png",
-      "/images/comment_gelb.png",
-      "/images/comment_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 3,
-      "mobile_air_vehicles": 1,
-      "hazmat_vehicles": 1,
-      "water_tankers": 1,
-      "ambulances": 2,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 6
-    },
-    "chances": {},
-    "additional": {
-      "followup_missions_ids": [407],
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-11T10:00:00Z",
-      "date_end": "2023-02-12T10:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 2,
-      "police_stations": 6,
-      "fire_stations": 11
-    },
-    "overlay_index": null,
-    "base_mission_id": 408,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "409",
-    "name": "Incendie sur un char",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2500,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1,
-      "firetrucks": 3,
-      "police_cars": 1
-    },
-    "chances": { "patient_transport": 25 },
-    "additional": {
-      "possible_patient": 2,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 1,
-      "police_stations": 2,
-      "fire_stations": 6
-    },
-    "overlay_index": null,
-    "base_mission_id": 409,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "410",
-    "name": "Mésaventures dans le cortège du carnaval",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
-    ],
-    "requirements": { "police_cars": 4 },
-    "chances": { "patient_transport": 50, "patient_critical_care": 25 },
-    "additional": {
-      "possible_patient": 6,
-      "max_possible_prisoners": 2,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 4,
-      "police_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 410,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "411",
-    "name": "Masque volé",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1000,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": { "patient_transport": 50, "patient_critical_care": 25 },
-    "additional": {
-      "possible_patient": 1,
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 1,
-      "police_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 411,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "412",
-    "name": "Trophée du bal masqué volé",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1750,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 5 },
-    "chances": { "patient_transport": 50, "patient_critical_care": 25 },
-    "additional": {
-      "possible_patient": 2,
-      "max_possible_prisoners": 3,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 2,
-      "police_stations": 5
-    },
-    "overlay_index": null,
-    "base_mission_id": 412,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "413",
-    "name": "Incendie au bal du carnaval",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 413,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "414",
-    "name": "Accident pendant le bal du carnaval",
-    "place": "",
-    "place_array": [],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 3,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne général"],
-      "patient_specializations": "Interne général"
-    },
-    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 414,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "415",
-    "name": "Sécurité du carnaval",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "1 heure",
-      "duration": 3600,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 6
-    },
-    "overlay_index": null,
-    "base_mission_id": 415,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "416",
-    "name": "Un criminel s'est caché au bal",
-    "place": "",
-    "place_array": [],
-    "average_credits": 200,
-    "generated_by": "",
-    "icons": [
-      "/images/zoom_gruen.png",
-      "/images/zoom_gelb.png",
-      "/images/zoom_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 416,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "417",
-    "name": "Costume de carnaval en feu",
-    "place": "",
-    "place_array": [],
-    "average_credits": 400,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 417,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "418",
-    "name": "Vol de costumes",
-    "place": "",
-    "place_array": [],
-    "average_credits": 200,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "min_possible_prisoners": 1,
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-02-17T10:00:00Z",
-      "date_end": "2023-02-22T23:00:00Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 418,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
     "id": "419",
     "name": "Surveillance de lieu de culte",
     "place": "Lieu de culte",
@@ -26544,6 +26060,7 @@
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions", "default"],
       "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [1],
@@ -27332,7 +26849,11 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 2, "swat_helicopter": 1 },
+    "requirements": {
+      "large_coastal_boat": 2,
+      "coastal_guard_boat": 2,
+      "swat_helicopter": 1
+    },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
@@ -27340,10 +26861,12 @@
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
       "optional_event_mission": false
     },
     "prerequisites": {
       "main_building": 23,
+      "water_rescue_2": 2,
       "coastal_rescue_count": 2,
       "swat_airport": 1
     },
@@ -27364,7 +26887,11 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 2, "swat_helicopter": 1 },
+    "requirements": {
+      "large_coastal_boat": 2,
+      "coastal_guard_boat": 2,
+      "swat_helicopter": 1
+    },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
@@ -27372,10 +26899,12 @@
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
       "optional_event_mission": false
     },
     "prerequisites": {
       "main_building": 23,
+      "water_rescue_2": 2,
       "coastal_rescue_count": 2,
       "swat_airport": 1
     },
@@ -27516,7 +27045,11 @@
       "/images/cruiseship_gelb.png",
       "/images/cruiseship_rot.png"
     ],
-    "requirements": { "large_coastal_boat": 3, "swat_helicopter": 1 },
+    "requirements": {
+      "large_coastal_boat": 3,
+      "coastal_guard_boat": 3,
+      "swat_helicopter": 1
+    },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
@@ -27524,10 +27057,12 @@
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions"],
       "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
       "optional_event_mission": false
     },
     "prerequisites": {
       "main_building": 23,
+      "water_rescue_2": 3,
       "coastal_rescue_count": 3,
       "swat_airport": 1
     },
