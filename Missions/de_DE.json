@@ -68660,5 +68660,82 @@
     "base_mission_id": 832,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "833",
+    "name": "Brennendes Herz",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-02T10:00:00Z",
+      "date_end": "2024-02-15T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 833,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "834",
+    "name": "Verkehrsunfall durch Verliebtheit",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-02T10:00:00Z",
+      "date_end": "2024-02-15T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 834,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
