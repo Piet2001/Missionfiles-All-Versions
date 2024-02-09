@@ -14441,6 +14441,170 @@
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
+    "id": "404",
+    "name": "Sensibilisation des écoliers au 112",
+    "place": "École",
+    "place_array": ["École"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-09T10:00:00Z",
+      "date_end": "2024-02-11T10:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 404,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "405",
+    "name": "Sensibilisation des écoliers au 112",
+    "place": "École",
+    "place_array": ["École"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-09T10:00:00Z",
+      "date_end": "2024-02-11T10:00:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 405,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "406",
+    "name": "Annonce des nouvelles fonctionnalités du 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [407],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-09T10:00:00Z",
+      "date_end": "2024-02-11T10:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 406,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "407",
+    "name": "Célébration de la Journée européenne du 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "ambulances": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-09T10:00:00Z",
+      "date_end": "2024-02-11T10:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 407,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "408",
+    "name": "Cérémonie nationale de remise du prix 112",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/comment_gruen.png",
+      "/images/comment_gelb.png",
+      "/images/comment_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "ambulances": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [407],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-02-09T10:00:00Z",
+      "date_end": "2024-02-11T10:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 408,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "409",
     "name": "Incendie sur un char",
     "place": "",
