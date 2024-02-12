@@ -48026,5 +48026,98 @@
     "base_mission_id": 929,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "930",
+    "name": "Traffic Fight",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1640,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [930],
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 930,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "931",
+    "name": "Traffic fight escalates",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3955,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["72-D-1"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 931,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "931/a",
+    "name": "Traffic fight escalates",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4255,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["72-D-1"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 931,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
   }
 ]
