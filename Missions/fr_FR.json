@@ -27478,6 +27478,81 @@
     "mission_categories": ["fire_support_specialization"]
   },
   {
+    "id": "707",
+    "name": "Chute dans un escape game",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "battalion_chief_vehicles": 1, "height_rescue_units": 1 },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 707,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "708",
+    "name": "Accident de chasse",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "elw3": 1, "thw_gkw": 1, "police_cars": 2 },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 35
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 708,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "709",
     "name": "Transfert d'un détenu à Haut risque",
     "place": "",
