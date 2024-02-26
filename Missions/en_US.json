@@ -48119,5 +48119,72 @@
     "base_mission_id": 931,
     "additive_overlays": "a",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "932",
+    "name": "Car Fire on Highway",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 932,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "932/a",
+    "name": "Car Fire on Highway",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 1530,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 932,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
   }
 ]
