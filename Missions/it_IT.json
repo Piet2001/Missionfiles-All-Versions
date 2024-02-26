@@ -25595,5 +25595,49 @@
     "base_mission_id": 658,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "659",
+    "name": "Incidente di caccia",
+    "place": "Bosco",
+    "place_array": ["Bosco"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 35
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC19R", "SC19G", "SC19V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 659,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
