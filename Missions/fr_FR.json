@@ -27914,5 +27914,50 @@
     "base_mission_id": 716,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "717",
+    "name": "Collision entre un windsurf et une nageuse",
+    "place": "Plage",
+    "place_array": ["Plage"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "coastal_rescue": 1,
+      "coastal_boat": 1,
+      "coastal_helicopter": 1
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 717,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
