@@ -25619,5 +25619,57 @@
     "base_mission_id": 659,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "660",
+    "name": "Incendio in un municipio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "pump": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "nef": 25, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC19R", "SC19G", "SC19V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 660,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
