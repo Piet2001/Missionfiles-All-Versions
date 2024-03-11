@@ -28880,5 +28880,89 @@
     "base_mission_id": 667,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "668",
+    "name": "Take away shop fire (Small)",
+    "place": "Take Away Shop",
+    "place_array": ["Take Away Shop"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [669],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 668,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "669",
+    "name": "Take away shop fire (Medium)",
+    "place": "Take Away Shop",
+    "place_array": ["Take Away Shop"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 4 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [670],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "670",
+    "name": "Take away shop fire (Large)",
+    "place": "Take Away Shop",
+    "place_array": ["Take Away Shop"],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "firetrucks": 6,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
