@@ -48228,5 +48228,114 @@
     "base_mission_id": 933,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "935",
+    "name": "Fire on a cruise ship at the dock",
+    "place": "Cruise ship dock",
+    "place_array": ["Cruise ship dock"],
+    "average_credits": 20500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "large_fire_boat": 2,
+      "large_rescue_boat": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 50, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [649],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-C-2",
+        "7-C-3",
+        "7-D-1",
+        "7-D-2",
+        "7-D-3",
+        "7-D-4"
+      ],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_boat_docks": 1,
+      "rescue_boat_docks": 1,
+      "fire_support_count": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 935,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization"]
+  },
+  {
+    "id": "940",
+    "name": "Leakage of chemicals in a laboratory (hospital)",
+    "place": "Hospital",
+    "place_array": ["Hospital"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "firetrucks": 5,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "8-D-2C",
+        "8-D-3C",
+        "8-D-4C",
+        "8-C-1C",
+        "8-B-1C"
+      ],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 940,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
