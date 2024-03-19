@@ -3121,353 +3121,6 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "100",
-    "name": "Påskeegg tyv",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 100,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "101",
-    "name": "Børste tjålet fra påskeverksted",
-    "place": "Skole",
-    "place_array": ["Skole"],
-    "average_credits": 150,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 101,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "102",
-    "name": "Kollapset kanin hull",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 102,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "103",
-    "name": "Påkjørt påskehare",
-    "place": "",
-    "place_array": [],
-    "average_credits": 300,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": { "patient_transport": 38 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traume"],
-      "patient_specializations": "Traume"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 3,
-      "police_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 103,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "104",
-    "name": "Brennende påskekurv",
-    "place": "",
-    "place_array": [],
-    "average_credits": 110,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 104,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "105",
-    "name": "Sjokolate tankvogn lekkasje",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5000,
-    "generated_by": "",
-    "icons": [
-      "/images/oil_gruen.png",
-      "/images/oil_gelb.png",
-      "/images/oil_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
-      "police_cars": 3
-    },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 105,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "106",
-    "name": "Brennende eggkoker",
-    "place": "",
-    "place_array": [],
-    "average_credits": 800,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 106,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "107",
-    "name": "Hare møte i Påskeegg byen",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": 7000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "ambulances": 4, "firetrucks": 2, "police_cars": 8 },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 timer",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 4,
-      "police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 107,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "108",
-    "name": "Veltet påskeegg lastebil",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2200,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2
-    },
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 2,
-      "possible_patient_min": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traume"],
-      "patient_specializations": "Traume"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 3,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 108,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "109",
-    "name": "Prioritert oppdrag: Påskeegg jakt",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1000,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 6 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 3 },
-    "overlay_index": null,
-    "base_mission_id": 109,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "110",
-    "name": "Påskehare på en kran",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2000,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 1
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 12
-    },
-    "overlay_index": null,
-    "base_mission_id": 110,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "111",
     "name": "Avsporet godstog",
     "place": "Planovergang",
@@ -12691,7 +12344,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Generell kirurgi"],
       "patient_specializations": "Generell kirurgi"
@@ -12726,7 +12379,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traume"],
       "patient_specializations": "Traume"
@@ -12762,7 +12415,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traume"],
       "patient_specializations": "Traume"
@@ -12793,7 +12446,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Generell kirurgi"],
       "patient_specializations": "Generell kirurgi"
@@ -12827,7 +12480,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -12855,7 +12508,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Generell medisin"],
       "patient_specializations": "Generell medisin"
@@ -12885,7 +12538,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traume"],
       "patient_specializations": "Traume"
@@ -12923,7 +12576,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traume"],
       "patient_specializations": "Traume"
@@ -12957,7 +12610,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -14924,133 +14577,6 @@
     "base_mission_id": 407,
     "additive_overlays": "",
     "mission_categories": ["fire"]
-  },
-  {
-    "id": "408",
-    "name": "Smeltet sjokoladekanin",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 408,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "409",
-    "name": "Lynnedslag i kaninhull",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1600,
-    "generated_by": "",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 2
-    },
-    "chances": { "platform_trucks": 70, "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Generell medisin"],
-      "patient_specializations": "Generell medisin"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 3,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 409,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "410",
-    "name": "Sjokoladekanin låst inne i bil",
-    "place": "",
-    "place_array": [],
-    "average_credits": 250,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 410,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "411",
-    "name": "Eggejakt under vann",
-    "place": "Innsjø",
-    "place_array": ["Innsjø"],
-    "average_credits": 1670,
-    "generated_by": "",
-    "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
-    ],
-    "requirements": { "boats": 2, "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "water_watch_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": -1,
-      "wasserrettung": 2,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 411,
-    "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
   },
   {
     "id": "412",
