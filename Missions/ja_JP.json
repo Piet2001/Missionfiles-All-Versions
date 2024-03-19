@@ -2557,353 +2557,6 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "85",
-    "name": "イースターエッグ泥棒",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 85,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "86",
-    "name": "工房から盗まれたブラシ",
-    "place": "学校",
-    "place_array": ["学校"],
-    "average_credits": 150,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 86,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "87",
-    "name": "崩れたウサギの巣穴",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 87,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "88",
-    "name": "事故ったイースターバニー",
-    "place": "",
-    "place_array": [],
-    "average_credits": 300,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": { "patient_transport": 38, "patient_critical_care": 10 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["災害外科"],
-      "patient_specializations": "災害外科"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 3,
-      "police_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 88,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "89",
-    "name": "燃えるイースターバスケット",
-    "place": "",
-    "place_array": [],
-    "average_credits": 110,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 89,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "90",
-    "name": "チョコレートタンカー流出",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5000,
-    "generated_by": "",
-    "icons": [
-      "/images/oil_gruen.png",
-      "/images/oil_gelb.png",
-      "/images/oil_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
-      "police_cars": 3
-    },
-    "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 90,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "91",
-    "name": "燃えるエッグボイラー",
-    "place": "",
-    "place_array": [],
-    "average_credits": 800,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 91,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "92",
-    "name": "イースターエッグタウンの野ウサギ会議",
-    "place": "スタジアム",
-    "place_array": ["スタジアム"],
-    "average_credits": 7000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "ambulances": 4, "firetrucks": 2, "police_cars": 8 },
-    "chances": {},
-    "additional": {
-      "duration_text": "2時間",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 4,
-      "police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 92,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "93",
-    "name": "横転したイースターエッグのトラック",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2200,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2
-    },
-    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
-    "additional": {
-      "possible_patient": 2,
-      "possible_patient_min": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["災害外科"],
-      "patient_specializations": "災害外科"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 3,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 93,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "94",
-    "name": "優先ミッション：イースターエッグハント",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1000,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 6 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 3 },
-    "overlay_index": null,
-    "base_mission_id": 94,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "95",
-    "name": "クレーンに乗ったイースターバニー",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2000,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 1
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 12
-    },
-    "overlay_index": null,
-    "base_mission_id": 95,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "96",
     "name": "貨物列車脱線",
     "place": "踏切",
@@ -9132,7 +8785,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["一般外科"],
       "patient_specializations": "一般外科"
@@ -9167,7 +8820,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["災害外科"],
       "patient_specializations": "災害外科"
@@ -9203,7 +8856,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["災害外科"],
       "patient_specializations": "災害外科"
@@ -9234,7 +8887,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["一般外科"],
       "patient_specializations": "一般外科"
@@ -9268,7 +8921,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -9296,7 +8949,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["一般内科"],
       "patient_specializations": "一般内科"
@@ -9326,7 +8979,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["災害外科"],
       "patient_specializations": "災害外科"
@@ -9364,7 +9017,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+09:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["災害外科"],
       "patient_specializations": "災害外科"
@@ -9398,7 +9051,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -11342,132 +10995,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 334,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "335",
-    "name": "溶けたチョコレートバニー",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 335,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "336",
-    "name": "ウサギの巣穴に落雷",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1600,
-    "generated_by": "",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 2
-    },
-    "chances": { "platform_trucks": 70, "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["一般内科"],
-      "patient_specializations": "一般内科"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 3,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 336,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "337",
-    "name": "車に閉じ込められたチョコレートバニー",
-    "place": "",
-    "place_array": [],
-    "average_credits": 250,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 337,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "338",
-    "name": "水中エッグハント",
-    "place": "湖",
-    "place_array": ["湖"],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
-    ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 338,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -15386,7 +14913,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+09:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["一般内科"],
       "patient_specializations": "一般内科"
@@ -15415,7 +14942,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -15443,7 +14970,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+09:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["一般内科"],
       "patient_specializations": "一般内科"
@@ -15477,7 +15004,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -15505,7 +15032,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+09:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["一般内科"],
       "patient_specializations": "一般内科"
@@ -15538,7 +15065,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -15716,7 +15243,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z"
+      "date_end": "2023-06-18T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -15744,7 +15271,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z",
+      "date_end": "2023-06-18T23:59:59+09:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["一般内科"],
       "patient_specializations": "一般内科"
@@ -15777,7 +15304,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z"
+      "date_end": "2023-06-18T23:59:59+09:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
