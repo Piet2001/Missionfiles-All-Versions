@@ -3195,353 +3195,6 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "94",
-    "name": "Krádež velikonočního vajíčka",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 94,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "95",
-    "name": "Krádež štětce z dílny",
-    "place": "Škola",
-    "place_array": ["Škola"],
-    "average_credits": 150,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 95,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "96",
-    "name": "Zavalení králičí díry",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1500,
-    "generated_by": "",
-    "icons": [
-      "/images/fallingrocks_gruen.png",
-      "/images/fallingrocks_gelb.png",
-      "/images/fallingrocks_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 96,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "97",
-    "name": "Napadení velikonočního zajíce",
-    "place": "",
-    "place_array": [],
-    "average_credits": 300,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": { "patient_transport": 38 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Úrazová chirurgie"],
-      "patient_specializations": "Úrazová chirurgie"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 3,
-      "police_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 97,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "98",
-    "name": "Požár velikonočního košíku",
-    "place": "",
-    "place_array": [],
-    "average_credits": 110,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 98,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "99",
-    "name": "Únik čokolády z nádrže",
-    "place": "",
-    "place_array": [],
-    "average_credits": 5000,
-    "generated_by": "",
-    "icons": [
-      "/images/oil_gruen.png",
-      "/images/oil_gelb.png",
-      "/images/oil_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "oneof_fire_engine_or_rescue": 4,
-      "firetrucks": 1,
-      "police_cars": 3
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 99,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "100",
-    "name": "Vaření vajec v kotli",
-    "place": "",
-    "place_array": [],
-    "average_credits": 800,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 100,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "101",
-    "name": "Setkání zajíců ve městě Velikonoční vajíčko",
-    "place": "Stadion",
-    "place_array": ["Stadion"],
-    "average_credits": 7000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": { "ambulances": 4, "firetrucks": 2, "police_cars": 8 },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 hodiny",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 4,
-      "police_stations": 7,
-      "fire_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 101,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "102",
-    "name": "Nehoda kamionu převážející velikonoční vejce",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2200,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2
-    },
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 2,
-      "possible_patient_min": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Úrazová chirurgie"],
-      "patient_specializations": "Úrazová chirurgie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "max_police_stations": 3,
-      "fire_stations": 8
-    },
-    "overlay_index": null,
-    "base_mission_id": 102,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "103",
-    "name": "Hon na velikonoční vejce",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1000,
-    "generated_by": "",
-    "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
-    ],
-    "requirements": { "police_cars": 6 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 6, "police_stations": 3 },
-    "overlay_index": null,
-    "base_mission_id": 103,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "104",
-    "name": "Velikonoční zajíc na jeřábu",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2000,
-    "generated_by": "",
-    "icons": [
-      "/images/constructioncrane_gruen.png",
-      "/images/constructioncrane_gelb.png",
-      "/images/constructioncrane_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 1
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 12
-    },
-    "overlay_index": null,
-    "base_mission_id": 104,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "105",
     "name": "Vykolejení vlaku",
     "place": "Železniční přejezd",
@@ -11817,7 +11470,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
       "patient_specializations": "Všeobecný internista"
@@ -11846,7 +11499,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -11874,7 +11527,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
       "patient_specializations": "Všeobecný internista"
@@ -11908,7 +11561,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -11936,7 +11589,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z",
+      "date_end": "2023-05-14T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
       "patient_specializations": "Všeobecný internista"
@@ -11969,7 +11622,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-05-12T09:00:00Z",
-      "date_end": "2023-05-14T23:59:59Z"
+      "date_end": "2023-05-14T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -13195,7 +12848,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Všeobecný chirurg"],
       "patient_specializations": "Všeobecný chirurg"
@@ -13231,7 +12884,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
       "patient_specializations": "Úrazová chirurgie"
@@ -13267,7 +12920,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
       "patient_specializations": "Úrazová chirurgie"
@@ -13298,7 +12951,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Všeobecný chirurg"],
       "patient_specializations": "Všeobecný chirurg"
@@ -13331,7 +12984,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -13359,7 +13012,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
       "patient_specializations": "Všeobecný internista"
@@ -13389,7 +13042,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
       "patient_specializations": "Úrazová chirurgie"
@@ -13427,7 +13080,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z",
+      "date_end": "2023-11-30T23:59:59+01:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Úrazová chirurgie"],
       "patient_specializations": "Úrazová chirurgie"
@@ -13461,7 +13114,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59Z"
+      "date_end": "2023-11-30T23:59:59+01:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -15849,133 +15502,6 @@
     "base_mission_id": 425,
     "additive_overlays": "",
     "mission_categories": ["fire"]
-  },
-  {
-    "id": "426",
-    "name": "Rozpuštěný čokoládový zajíček",
-    "place": "",
-    "place_array": [],
-    "average_credits": 100,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 426,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "427",
-    "name": "Úder blesku do zaječí nory",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1600,
-    "generated_by": "",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 2
-    },
-    "chances": { "platform_trucks": 70, "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Všeobecný internista"],
-      "patient_specializations": "Všeobecný internista"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 3,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 427,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "428",
-    "name": "Čokoládový zajíček zamčený v autě",
-    "place": "",
-    "place_array": [],
-    "average_credits": 250,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 428,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "429",
-    "name": "Lovení vajec pod vodou",
-    "place": "Rybník",
-    "place_array": ["Rybník"],
-    "average_credits": 1670,
-    "generated_by": "",
-    "icons": [
-      "/images/waterpark_gruen.png",
-      "/images/waterpark_gelb.png",
-      "/images/waterpark_rot.png"
-    ],
-    "requirements": { "diver_units": 2, "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "water_watch_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-31T09:00:00Z",
-      "date_end": "2023-04-10T23:59:59Z"
-    },
-    "prerequisites": {
-      "main_building": 15,
-      "wasserrettung": 2,
-      "police_stations": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 429,
-    "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
   },
   {
     "id": "430",
@@ -19818,7 +19344,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z"
+      "date_end": "2023-06-18T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -19846,7 +19372,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z",
+      "date_end": "2023-06-18T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Všeobecný internista"],
       "patient_specializations": "Všeobecný internista"
@@ -19879,7 +19405,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2023-06-16T09:00:00Z",
-      "date_end": "2023-06-18T23:59:59Z"
+      "date_end": "2023-06-18T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
