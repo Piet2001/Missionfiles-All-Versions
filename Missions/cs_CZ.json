@@ -21367,5 +21367,356 @@
     "base_mission_id": 579,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "591",
+    "name": "Vichřice v obci",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/tornado_gruen.png",
+      "/images/tornado_gelb.png",
+      "/images/tornado_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 10,
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 2,
+      "mobile_shelter": 1,
+      "energy_supply": 1,
+      "bracing": 2,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "energy_supply": 1,
+      "mobile_shelter": 1,
+      "bracing": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 591,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "592",
+    "name": "Silná bouře v obci",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 20,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "pump": 2,
+      "hose": 2,
+      "mobile_shelter": 1,
+      "firetrucks": 4,
+      "min_pump_speed": 3000
+    },
+    "chances": { "fwk": 30 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 300000,
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "hose": 2,
+      "mobile_shelter": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 592,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "593",
+    "name": "Požár v elektrárně",
+    "place": "Elektrárna",
+    "place_array": ["Elektrárna"],
+    "average_credits": 27600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "water_needed": 45000,
+      "foam_needed": 2700,
+      "carbon_dioxide": 5,
+      "mobile_shelter": 1,
+      "energy_supply": 4,
+      "firetrucks": 20,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 50,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "swat_personnel": 20,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Kardiochirurgie"],
+      "patient_specializations": "Kardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 10,
+      "energy_supply": 4,
+      "carbon_dioxide": 5,
+      "mobile_shelter": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 593,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "594",
+    "name": "Výpadek proudu v nemocnici",
+    "place": "Nemocnice",
+    "place_array": ["Nemocnice"],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 5,
+      "energy_supply": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "energy_supply": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "595",
+    "name": "Výpadek proudu v části města",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "energy_supply": 6,
+      "firetrucks": 6,
+      "police_cars": 10
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "energy_supply": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 595,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "596",
+    "name": "Náhradní zdroj z důvodu údržby transformátoru",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": { "energy_supply": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "energy_supply": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 596,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "597",
+    "name": "Hledání utonulé osoby v rybníce",
+    "place": "Rybník",
+    "place_array": ["Rybník"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 4,
+      "crew_carrier": 2,
+      "battalion_chief_vehicles": 1,
+      "diver_units": 2,
+      "k9": 1,
+      "police_helicopters": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 100,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Kardiochirurgie"],
+      "patient_specializations": "Kardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 597,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "598",
+    "name": "Výbuch plynu v ulici",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 10,
+      "water_needed": 15000,
+      "technical_rescue": 1,
+      "bracing": 2,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "fwk": 60,
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "technical_rescue": 1,
+      "bracing": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 598,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
