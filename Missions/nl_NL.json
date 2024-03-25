@@ -34224,7 +34224,7 @@
     "name": "Massa-beroerte tijdens het eten van fondue (groot)",
     "place": "",
     "place_array": [],
-    "average_credits": 4980,
+    "average_credits": 6480,
     "generated_by": "",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -34236,6 +34236,8 @@
       "mobile_air_vehicles": 1,
       "gwmess": 1,
       "heavy_rescue_vehicles": 1,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
       "firetrucks": 3,
       "police_cars": 6
     },
@@ -34260,6 +34262,7 @@
       "main_building": 3,
       "rescue_stations": 24,
       "police_stations": 5,
+      "mass_casualty_count": 1,
       "fire_stations": 10
     },
     "overlay_index": 0,
@@ -34272,7 +34275,7 @@
     "name": "Massa-beroerte tijdens het eten van fondue (enorm)",
     "place": "",
     "place_array": [],
-    "average_credits": 14070,
+    "average_credits": 16050,
     "generated_by": "",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -34288,6 +34291,8 @@
       "hazmat_vehicles": 1,
       "gwmess": 1,
       "heavy_rescue_vehicles": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 2,
       "firetrucks": 20,
       "police_cars": 14
     },
@@ -34313,6 +34318,7 @@
       "main_building": 3,
       "rescue_stations": 78,
       "police_stations": 16,
+      "mass_casualty_count": 2,
       "fire_stations": 28
     },
     "overlay_index": 1,
@@ -41779,6 +41785,66 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "1034",
+    "name": "Brand in nucleaire installatie",
+    "place": "Nucleaire installatie",
+    "place_array": ["Nucleaire installatie"],
+    "average_credits": 60000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "arff": 3,
+      "platform_trucks": 12,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 5,
+      "elw3": 3,
+      "mobile_air_vehicles": 5,
+      "hazmat_vehicles": 3,
+      "water_tankers": 15,
+      "gwmess": 10,
+      "ovdp": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 10,
+      "spokesman": 3,
+      "water_needed": 385000,
+      "foam_needed": 6500,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 40,
+      "police_cars": 25
+    },
+    "chances": { "nef": 2, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 100,
+      "followup_missions_ids": [879, 878],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 33,
+      "police_stations": 24,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 4,
+      "mass_casualty_count": 1,
+      "airport": 2,
+      "fire_stations": 120
+    },
+    "overlay_index": null,
+    "base_mission_id": 1034,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
     "id": "1035",
     "name": "Verward persoon dreigt van boord te springen",
     "place": "",
@@ -42388,6 +42454,320 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "1052",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1052-0",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1690,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1052-1",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7940,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "firetrucks": 4,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [878],
+      "fire_alarm_system_possible": false,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": 1,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1052-2",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18620,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "gwmess": 3,
+      "hondengeleider": 2,
+      "ovdp": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "firetrucks": 6,
+      "police_cars": 15
+    },
+    "chances": { "nef": 5, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [878, 877, 995],
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": false,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4, 1],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 19,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 2,
+      "hondengeleider": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": 2,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1052-3",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 26540,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 2,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 4,
+      "gwmess": 6,
+      "hondengeleider": 2,
+      "ovdp": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "foam_needed": 500,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 10,
+      "police_cars": 15
+    },
+    "chances": { "nef": 3, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [878, 877, 995],
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": false,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0, 4, 1],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 33,
+      "police_stations": 19,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 2,
+      "fire_support_count": 1,
+      "mass_casualty_count": 1,
+      "hondengeleider": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": 3,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1052-4",
+    "name": "Brand overheidsgebouw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 36110,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 4,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 2,
+      "gefkw": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 6,
+      "hondengeleider": 4,
+      "ovdp": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "foam_needed": 1000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 2,
+      "firetrucks": 20,
+      "police_cars": 25
+    },
+    "chances": {
+      "platform_trucks": 65,
+      "water_tankers": 60,
+      "nef": 2,
+      "patient_transport": 10
+    },
+    "additional": {
+      "possible_patient": 200,
+      "possible_patient_min": 50,
+      "min_possible_prisoners": 5,
+      "max_possible_prisoners": 15,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [878, 877, 995, 187],
+      "need_bike_police_only_if_present": true,
+      "fire_alarm_system_possible": false,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0, 4, 1],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 63,
+      "police_stations": 29,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 5,
+      "prisoner_transport_count": 1,
+      "fire_support_count": 2,
+      "mass_casualty_count": 2,
+      "hondengeleider": 1,
+      "fire_stations": 52
+    },
+    "overlay_index": 4,
+    "base_mission_id": 1052,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "1053",
     "name": "Zuurstofgebrek aan boord schip",
     "place": "",
@@ -42428,6 +42808,163 @@
     "base_mission_id": 1053,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1054",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993],
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
+  },
+  {
+    "id": "1054-0",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 6645,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "hazmat_vehicles": 1,
+      "hondengeleider": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "firetrucks": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
+  },
+  {
+    "id": "1054-1",
+    "name": "Explosief gevonden in winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 20280,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "at_c": 1,
+      "at_m": 1,
+      "at_o": 4,
+      "bike_police": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "gefkw": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "hondengeleider": 2,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 3,
+      "police_cars": 20
+    },
+    "chances": { "nef": 4, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 25,
+      "min_possible_prisoners": 3,
+      "max_possible_prisoners": 3,
+      "allow_rw_instead_of_lf": true,
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [993],
+      "need_bike_police_only_if_present": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4, 1],
+      "patient_specialization_captions": [
+        "Traumatologie",
+        "Algemene Heelkunde"
+      ],
+      "patient_specializations": "Traumatologie, Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 33,
+      "police_stations": 21,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 4,
+      "prisoner_transport_count": 1,
+      "mass_casualty_count": 1,
+      "at": 1,
+      "hondengeleider": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": 1,
+    "base_mission_id": 1054,
+    "additive_overlays": "",
+    "mission_categories": ["police", "riot_police"]
   },
   {
     "id": "1055",
