@@ -25841,5 +25841,62 @@
     "base_mission_id": 665,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "666",
+    "name": "Incendio su una nave da crociera al molo",
+    "place": "Molo navi da crociera",
+    "place_array": ["Molo navi da crociera"],
+    "average_credits": 20500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 1,
+      "coastal_boat": 1,
+      "large_coastal_boat": 2,
+      "pump": 2,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "nef": 25, "patient_transport": 50, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 10,
+      "patient_it_code_possible": ["SC19R", "SC19G", "SC19V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["default", "ocean_missions"],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "coastal_rescue_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 666,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
