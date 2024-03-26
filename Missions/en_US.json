@@ -70,7 +70,36 @@
     "overlay_index": null,
     "base_mission_id": 2,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "2/a",
+    "name": "Burning car",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [26, 16, 19],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "3",
@@ -95,7 +124,36 @@
     "overlay_index": null,
     "base_mission_id": 3,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "3/a",
+    "name": "Burning motorbike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [26],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 3,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "4",
@@ -436,7 +494,35 @@
     "overlay_index": null,
     "base_mission_id": 13,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "13/a",
+    "name": "Burning truck",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1280,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "14",
@@ -1719,7 +1805,49 @@
     "overlay_index": null,
     "base_mission_id": 47,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "47/a",
+    "name": "Dangerous goods truck accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "foam_needed": 75,
+      "firetrucks": 3,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "heavy_rescue_vehicles": 50, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-3"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 47,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "48",
@@ -1793,7 +1921,35 @@
     "overlay_index": null,
     "base_mission_id": 50,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "50/a",
+    "name": "Parked car accident",
+    "place": "Supermarket (small)",
+    "place_array": ["Supermarket (small)"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 50,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
   },
   {
     "id": "51",
@@ -1817,7 +1973,35 @@
     "overlay_index": null,
     "base_mission_id": 51,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "51/a",
+    "name": "Parked car accident",
+    "place": "Supermarket (big)",
+    "place_array": ["Supermarket (big)"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 51,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
   },
   {
     "id": "52",
@@ -2894,7 +3078,7 @@
     "overlay_index": null,
     "base_mission_id": 86,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "86/a",
@@ -2938,7 +3122,94 @@
     "overlay_index": null,
     "base_mission_id": 86,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "86/b",
+    "name": "MVA Rollover",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [25, 826],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2p"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "tow_trucks": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 86,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "86/ab",
+    "name": "MVA Rollover",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 4 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [25, 826],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2p"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Traffic Control": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "personnel_educations": { "traffic_control": 8 },
+      "tow_trucks": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 86,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "87",
@@ -4968,7 +5239,7 @@
     "overlay_index": null,
     "base_mission_id": 125,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "125/a",
@@ -5010,7 +5281,90 @@
     "overlay_index": null,
     "base_mission_id": 125,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "125/b",
+    "name": "Vehicle Accident - Entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 95 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "tow_trucks": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 125,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "125/ab",
+    "name": "Vehicle Accident - Entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 2,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 95 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "tow_trucks": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 125,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "126",
@@ -5285,6 +5639,7 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [496],
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 5, "police_stations": 6 },
@@ -5889,7 +6244,41 @@
     "overlay_index": null,
     "base_mission_id": 144,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "144/a",
+    "name": "Truck in House Wall",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 3 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 144,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "145",
@@ -5913,7 +6302,35 @@
     "overlay_index": null,
     "base_mission_id": 145,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "145/a",
+    "name": "Burning Garbage Truck",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 145,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "146",
@@ -6858,7 +7275,49 @@
     "overlay_index": null,
     "base_mission_id": 167,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "tow_trucks"]
+  },
+  {
+    "id": "167/a",
+    "name": "Car in river",
+    "place": "River",
+    "place_array": ["River"],
+    "average_credits": 1700,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["29-D-2S"],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 167,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue", "tow_trucks"]
   },
   {
     "id": "168",
@@ -6899,7 +7358,49 @@
     "overlay_index": null,
     "base_mission_id": 168,
     "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
+    "mission_categories": ["water_rescue", "tow_trucks"]
+  },
+  {
+    "id": "168/a",
+    "name": "Car in lake",
+    "place": "Lake",
+    "place_array": ["Lake"],
+    "average_credits": 1700,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["29-D-2S"],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 168,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue", "tow_trucks"]
   },
   {
     "id": "169",
@@ -9113,7 +9614,7 @@
     "overlay_index": null,
     "base_mission_id": 194,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "194/a",
@@ -9159,7 +9660,100 @@
     "overlay_index": null,
     "base_mission_id": 194,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "194/b",
+    "name": "Large MVA in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 9200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "tow_trucks": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 194,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "194/ab",
+    "name": "Large MVA in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3,
+      "personnel_educations": { "gw_gefahrgut": 4, "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "HazMat": 4, "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "tow_trucks": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 194,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "195",
@@ -9193,7 +9787,7 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "195/a",
@@ -9233,7 +9827,83 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "195/b",
+    "name": "Single vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 3 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [205],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "195/ab",
+    "name": "Single vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 1950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 3,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [205],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Traffic Control": 3 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "personnel_educations": { "traffic_control": 6 },
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "196",
@@ -9623,7 +10293,7 @@
     "overlay_index": null,
     "base_mission_id": 205,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "205/a",
@@ -9670,7 +10340,100 @@
     "overlay_index": null,
     "base_mission_id": 205,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "205/b",
+    "name": "Multiple vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 25,
+      "water_tankers": 40,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "tow_trucks": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "205/ab",
+    "name": "Multiple vehicle fire in tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 6100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": {
+      "mobile_air_vehicles": 25,
+      "water_tankers": 40,
+      "patient_transport": 60
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "personnel_educations": { "traffic_control": 12 },
+      "tow_trucks": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "206",
@@ -10142,7 +10905,7 @@
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "211/a",
@@ -10176,7 +10939,74 @@
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "211/b",
+    "name": "Multiple vehicles on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 5
+    },
+    "chances": { "water_tankers": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 211,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "211/ab",
+    "name": "Multiple vehicles on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 5,
+      "personnel_educations": { "traffic_control": 8 }
+    },
+    "chances": { "water_tankers": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Traffic Control": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "traffic_control": 16 },
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 211,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "212",
@@ -11187,7 +12017,88 @@
     "overlay_index": null,
     "base_mission_id": 231,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "231/a",
+    "name": "Hazardous materials truck fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "foam_needed": 200,
+      "firetrucks": 5,
+      "police_cars": 2,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "8-D-1B",
+        "8-D-2B",
+        "8-D-3B",
+        "8-D-4B",
+        "8-D-5B",
+        "8-C-1B",
+        "8-B-1B",
+        "8-D-1C",
+        "8-D-2C",
+        "8-D-3C",
+        "8-D-4C",
+        "8-D-5C",
+        "8-C-1C",
+        "8-B-1C",
+        "8-D-1R",
+        "8-D-2R",
+        "8-D-3R",
+        "8-D-4R",
+        "8-D-5R",
+        "8-C-1R",
+        "8-B-1R",
+        "8-D-1N",
+        "8-D-2N",
+        "8-D-3N",
+        "8-D-4N",
+        "8-D-5N",
+        "8-C-1N",
+        "8-B-1N",
+        "8-D-1G",
+        "8-D-2G",
+        "8-D-3G",
+        "8-D-4G",
+        "8-D-5G",
+        "8-C-1G",
+        "8-B-1G"
+      ],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 231,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "232",
@@ -11946,7 +12857,46 @@
     "overlay_index": null,
     "base_mission_id": 242,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "242/a",
+    "name": "Truck Rear-Ended with Entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1650,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 242,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "243",
@@ -13822,7 +14772,36 @@
     "overlay_index": null,
     "base_mission_id": 270,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "270/a",
+    "name": "Vehicle fire in parking garage",
+    "place": "Parking Garage",
+    "place_array": ["Parking Garage"],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [271],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 270,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "271",
@@ -16288,7 +17267,50 @@
     "overlay_index": null,
     "base_mission_id": 321,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "321/a",
+    "name": "Car vs tree",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [322],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "29-A-1",
+        "29-B-1",
+        "29-B-2",
+        "29-B-3",
+        "29-B-4",
+        "29-D-5"
+      ],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 321,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "322",
@@ -16327,7 +17349,47 @@
     "overlay_index": null,
     "base_mission_id": 322,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "322/a",
+    "name": "Car vs tree (entrapment)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "heavy_rescue_vehicles": 30, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 322,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "323",
@@ -16913,7 +17975,7 @@
     "overlay_index": null,
     "base_mission_id": 341,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "tow_trucks"]
   },
   {
     "id": "341/a",
@@ -16947,7 +18009,72 @@
     "overlay_index": null,
     "base_mission_id": 341,
     "additive_overlays": "a",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "341/b",
+    "name": "Vehicle Crash - Property Damage",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [144, 125, 158, 295],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 341,
+    "additive_overlays": "b",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "341/ab",
+    "name": "Vehicle Crash - Property Damage",
+    "place": "",
+    "place_array": [],
+    "average_credits": 850,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [144, 125, 158, 295],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "personnel_educations": { "Traffic Control": 3 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "personnel_educations": { "traffic_control": 6 },
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 341,
+    "additive_overlays": "ab",
+    "mission_categories": ["police", "tow_trucks"]
   },
   {
     "id": "342",
@@ -23573,7 +24700,7 @@
     "overlay_index": null,
     "base_mission_id": 425,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "425/a",
@@ -23614,7 +24741,88 @@
     "overlay_index": null,
     "base_mission_id": 425,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "425/b",
+    "name": "Construction vehicle accident",
+    "place": "Construction site",
+    "place_array": ["Construction site"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["77-D-1", "77-D-10"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 425,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "425/ab",
+    "name": "Construction vehicle accident",
+    "place": "Construction site",
+    "place_array": ["Construction site"],
+    "average_credits": 1550,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["77-D-1", "77-D-10"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "personnel_educations": { "traffic_control": 12 },
+      "tow_trucks": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 425,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "427",
@@ -23716,7 +24924,46 @@
     "overlay_index": null,
     "base_mission_id": 429,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "429/a",
+    "name": "Car vs Powerline",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "heavy_rescue_vehicles": 20, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-4"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 429,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "430",
@@ -29881,7 +31128,43 @@
     "overlay_index": null,
     "base_mission_id": 587,
     "additive_overlays": "",
-    "mission_categories": ["ambulance"]
+    "mission_categories": ["ambulance", "tow_trucks"]
+  },
+  {
+    "id": "587/a",
+    "name": "Car off bridge",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 4, "police_cars": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["14-B-1"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 587,
+    "additive_overlays": "a",
+    "mission_categories": ["ambulance", "tow_trucks"]
   },
   {
     "id": "588",
@@ -33682,329 +34965,6 @@
     ]
   },
   {
-    "id": "672",
-    "name": "Allergic reaction to bee sting",
-    "place": "",
-    "place_array": [],
-    "average_credits": 550,
-    "generated_by": "",
-    "icons": [
-      "/images/spring_gruen.png",
-      "/images/spring_gelb.png",
-      "/images/spring_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 50 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": [
-        "2-A-1",
-        "2-B-1",
-        "2-C-1",
-        "2-C-2",
-        "2-D-1",
-        "2-D-3",
-        "2-E-1"
-      ],
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [7],
-      "patient_specialization_captions": ["Cardiology"],
-      "patient_specializations": "Cardiology"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 672,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "673",
-    "name": "Allergic reaction to pollen",
-    "place": "",
-    "place_array": [],
-    "average_credits": 650,
-    "generated_by": "",
-    "icons": [
-      "/images/spring_gruen.png",
-      "/images/spring_gelb.png",
-      "/images/spring_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 10 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": ["2-A-1", "2-A-1", "2-A-1", "2-C-2"],
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [7],
-      "patient_specialization_captions": ["Cardiology"],
-      "patient_specializations": "Cardiology"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 673,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "674",
-    "name": "Fall from ladder during spring cleaning",
-    "place": "",
-    "place_array": [],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/spring_gruen.png",
-      "/images/spring_gelb.png",
-      "/images/spring_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 50 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": [
-        "17-A-1",
-        "17-A-2",
-        "17-B-1",
-        "17-B-2",
-        "17-B-3",
-        "17-D-1",
-        "17-D-2",
-        "17-D-3",
-        "17-D-4",
-        "17-D-5",
-        "17-D-6"
-      ],
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatology"],
-      "patient_specializations": "Traumatology"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 674,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "675",
-    "name": "Wild animal attack during spring picnic",
-    "place": "",
-    "place_array": [],
-    "average_credits": 600,
-    "generated_by": "",
-    "icons": [
-      "/images/spring_gruen.png",
-      "/images/spring_gelb.png",
-      "/images/spring_rot.png"
-    ],
-    "requirements": { "police_cars": 1 },
-    "chances": { "patient_transport": 60 },
-    "additional": {
-      "possible_patient": 3,
-      "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
-      "patient_us_code_possible": [
-        "3-B-1",
-        "3-B-2",
-        "3-B-3",
-        "3-D-1",
-        "3-D-2",
-        "3-D-3",
-        "3-D-4",
-        "3-D-5",
-        "3-D-6",
-        "3-D-8",
-        "3-D-9"
-      ],
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatology"],
-      "patient_specializations": "Traumatology"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "rescue_stations": 3,
-      "police_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 675,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "676",
-    "name": "Food poisoning from wild berries",
-    "place": "Park\nForest",
-    "place_array": ["Park", "Forest"],
-    "average_credits": 800,
-    "generated_by": "",
-    "icons": [
-      "/images/spring_gruen.png",
-      "/images/spring_gelb.png",
-      "/images/spring_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": [
-        "1-A-1",
-        "26-A-1",
-        "26-A-6",
-        "26-A-10",
-        "26-A-11"
-      ],
-      "patient_allow_first_responder_chance": 50,
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [1],
-      "patient_specialization_captions": ["General Surgeon"],
-      "patient_specializations": "General Surgeon"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 676,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "677",
-    "name": "Picnic basket on fire",
-    "place": "Park\nForest",
-    "place_array": ["Park", "Forest"],
-    "average_credits": 800,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "firetrucks": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z"
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 677,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "678",
-    "name": "Person is stealing baby cows",
-    "place": "Farm",
-    "place_array": ["Farm"],
-    "average_credits": 900,
-    "generated_by": "",
-    "icons": [
-      "/images/cat_gruen.png",
-      "/images/cat_gelb.png",
-      "/images/cat_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "subsequent_missions_ids": [679, 680],
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z"
-    },
-    "prerequisites": { "main_building": 5, "police_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 678,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "679",
-    "name": "Cow Thief on the run",
-    "place": "Forest",
-    "place_array": ["Forest"],
-    "average_credits": 900,
-    "generated_by": "",
-    "icons": [
-      "/images/climbing_gruen.png",
-      "/images/climbing_gelb.png",
-      "/images/climbing_rot.png"
-    ],
-    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "subsequent_mission_only": true,
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 10,
-      "police_helicopter_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 679,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "680",
-    "name": "Thief attacked by a cow",
-    "place": "Farm",
-    "place_array": ["Farm"],
-    "average_credits": 860,
-    "generated_by": "",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": { "ambulances": 1 },
-    "chances": { "patient_transport": 35 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": ["3-D-6", "3-D-9"],
-      "patient_allow_first_responder_chance": 60,
-      "subsequent_mission_only": true,
-      "optional_event_mission": true,
-      "date_start": "2023-03-17T10:00:00Z",
-      "date_end": "2023-06-21T10:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 680,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
     "id": "681",
     "name": "Drive by shooting",
     "place": "",
@@ -34689,7 +35649,50 @@
     "overlay_index": null,
     "base_mission_id": 693,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "693/a",
+    "name": "Fire Truck Accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 7,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "29-B-1",
+        "29-D-3",
+        "29-D-6",
+        "29-D-7",
+        "29-D-8",
+        "29-D-9"
+      ],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 693,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "694",
@@ -37390,7 +38393,7 @@
     "overlay_index": null,
     "base_mission_id": 745,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "745/a",
@@ -37435,7 +38438,96 @@
     "overlay_index": null,
     "base_mission_id": 745,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "745/b",
+    "name": "Multi Vehicle Pile-up",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [746],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "tow_trucks": 4,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "745/ab",
+    "name": "Multi Vehicle Pile-up",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 4650,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 3,
+      "personnel_educations": { "traffic_control": 3 }
+    },
+    "chances": { "patient_transport": 90, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [746],
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 3 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "personnel_educations": { "traffic_control": 6 },
+      "tow_trucks": 4,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "746",
@@ -37476,7 +38568,7 @@
     "overlay_index": null,
     "base_mission_id": 746,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "746/a",
@@ -37520,7 +38612,94 @@
     "overlay_index": null,
     "base_mission_id": 746,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "746/b",
+    "name": "Multi Vehicle Pile-up (Large)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 90, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "tow_trucks": 6,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "746/ab",
+    "name": "Multi Vehicle Pile-up (Large)",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 9150,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 4,
+      "personnel_educations": { "traffic_control": 7 }
+    },
+    "chances": { "patient_transport": 90, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 6,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1f"],
+      "patient_allow_first_responder_chance": 20,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 7 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "personnel_educations": { "traffic_control": 14 },
+      "tow_trucks": 6,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "747",
@@ -43002,7 +44181,7 @@
     "overlay_index": null,
     "base_mission_id": 826,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "826/a",
@@ -43046,7 +44225,94 @@
     "overlay_index": null,
     "base_mission_id": 826,
     "additive_overlays": "a",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "826/b",
+    "name": "MVA Rollover - Ejection",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 100, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2n"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "tow_trucks": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 826,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "tow_trucks"]
+  },
+  {
+    "id": "826/ab",
+    "name": "MVA Rollover - Ejection",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5200,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "personnel_educations": { "traffic_control": 8 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-2n"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "personnel_educations": { "traffic_control": 16 },
+      "tow_trucks": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 826,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "tow_trucks"]
   },
   {
     "id": "827",
@@ -48373,5 +49639,155 @@
     "base_mission_id": 941,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "942",
+    "name": "Vehicle Reposession",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [943],
+      "filter_id": "tow_trucks_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 942,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "943",
+    "name": "Vehicle Reposession Gone Wrong",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "subsequent_missions_ids": [59, 60],
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 2,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 943,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "944",
+    "name": "Disabled Car on Roadway",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 944,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "945",
+    "name": "Car Ran out of Gas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 945,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "946",
+    "name": "Abandoned Vehicle on Side of Roadway",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 946,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "947",
+    "name": "Flat Tire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 947,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
   }
 ]
