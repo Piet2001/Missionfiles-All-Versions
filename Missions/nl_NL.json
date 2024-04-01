@@ -7093,7 +7093,7 @@
     "name": "Plofkraak",
     "place": "Winkelcentrum",
     "place_array": ["Winkelcentrum"],
-    "average_credits": 620,
+    "average_credits": 1980,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
@@ -7103,13 +7103,55 @@
     "requirements": { "ovdp": 1, "police_cars": 5 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [218],
       "filter_id": "police_station_missions",
-      "optional_event_mission": false,
-      "unavailable_in_normal_missions": true
+      "optional_event_mission": false
     },
-    "prerequisites": { "main_building": 5, "police_stations": 5 },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "bereitschaftspolizei": 1
+    },
     "overlay_index": null,
     "base_mission_id": 217,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "218",
+    "name": "Plofkraak",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 3490,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "firetrucks": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [851],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 218,
     "additive_overlays": "",
     "mission_categories": ["police"]
   },
