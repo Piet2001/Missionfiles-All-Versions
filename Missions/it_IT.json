@@ -25586,5 +25586,52 @@
     "base_mission_id": 666,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "667",
+    "name": "Fuoriuscita di sostanze chimiche in un laboratorio (ospedale)",
+    "place": "Ospedale",
+    "place_array": ["Ospedale"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "firetrucks": 5,
+      "police_cars": 5
+    },
+    "chances": { "nef": 30, "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC19R", "SC19G", "SC19V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 667,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
