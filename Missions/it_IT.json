@@ -25506,7 +25506,7 @@
     "name": "Operazione di Soccorso dopo Terremoto",
     "place": "",
     "place_array": [],
-    "average_credits": 4500,
+    "average_credits": 1800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25514,10 +25514,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "elw3": 1,
-      "water_needed": 3600,
-      "disaster_response_equipment": 2,
-      "flood_equipment": 3,
+      "water_needed": 5000,
+      "disaster_response_equipment": 1,
       "mobile_shelter": 1
     },
     "chances": {},
@@ -25527,8 +25525,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
-      "water_damage_pump_count": 1,
       "disaster_response_count": 1,
       "technical_aid": 2
     },
@@ -25542,7 +25538,7 @@
     "name": "Operazione di Soccorso dopo Terremoto",
     "place": "",
     "place_array": [],
-    "average_credits": 6100,
+    "average_credits": 3000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25550,11 +25546,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "elw3": 1,
-      "water_needed": 3600,
+      "water_needed": 5000,
       "rescue_dog_units": 4,
-      "disaster_response_equipment": 2,
-      "flood_equipment": 3,
+      "disaster_response_equipment": 1,
       "mobile_shelter": 1,
       "bracing": 2
     },
@@ -25565,9 +25559,7 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
-      "water_damage_pump_count": 1,
-      "disaster_response_count": 2,
+      "disaster_response_count": 1,
       "search_and_rescue": 1,
       "technical_aid": 2,
       "fire_stations": 1
@@ -25582,19 +25574,14 @@
     "name": "Assistenza all'Evacuazione da Inondazioni",
     "place": "",
     "place_array": [],
-    "average_credits": 2200,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/river_gruen.png",
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": {
-      "brush_truck": 2,
-      "elw3": 1,
-      "disaster_response_equipment": 1,
-      "flood_equipment": 1
-    },
+    "requirements": { "disaster_response_equipment": 1, "flood_equipment": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -25602,7 +25589,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
       "water_damage_pump_count": 1,
       "disaster_response_count": 1,
       "technical_aid": 1
@@ -25624,11 +25610,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "brush_truck": 3,
-      "elw3": 1,
-      "disaster_response_equipment": 1
-    },
+    "requirements": { "brush_truck": 3, "elw3": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -25637,7 +25619,6 @@
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 1,
-      "disaster_response_count": 1,
       "technical_aid": 1
     },
     "overlay_index": null,
@@ -25650,19 +25631,14 @@
     "name": "Pulizia di Sversamento Chimico",
     "place": "",
     "place_array": [],
-    "average_credits": 2780,
+    "average_credits": 1080,
     "generated_by": "",
     "icons": [
       "/images/radiation_gruen.png",
       "/images/radiation_gelb.png",
       "/images/radiation_rot.png"
     ],
-    "requirements": {
-      "brush_truck": 2,
-      "hazmat_vehicles": 2,
-      "disaster_response_equipment": 1,
-      "firetrucks": 2
-    },
+    "requirements": { "hazmat_vehicles": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -25670,8 +25646,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
-      "disaster_response_count": 1,
       "technical_aid": 1,
       "fire_stations": 1
     },
@@ -25681,102 +25655,11 @@
     "mission_categories": ["fire", "technical_aid"]
   },
   {
-    "id": "681",
-    "name": "Ricerca di Persone Disperse",
-    "place": "",
-    "place_array": [],
-    "average_credits": 3300,
-    "generated_by": "",
-    "icons": [
-      "/images/zoom_gruen.png",
-      "/images/zoom_gelb.png",
-      "/images/zoom_rot.png"
-    ],
-    "requirements": {
-      "brush_truck": 1,
-      "water_tankers": 2,
-      "rescue_dog_units": 8
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "search_and_rescue": 1,
-      "technical_aid": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 681,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "technical_aid"]
-  },
-  {
-    "id": "682",
-    "name": "Dispiegamento di Assistenza Medica",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1600,
-    "generated_by": "",
-    "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
-    ],
-    "requirements": { "elw3": 1, "mobile_shelter": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "brush_extension": 1,
-      "disaster_response_count": 1,
-      "technical_aid": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 682,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "technical_aid"]
-  },
-  {
-    "id": "683",
-    "name": "Esercizio di Ricerca e Salvataggio",
-    "place": "",
-    "place_array": [],
-    "average_credits": 3880,
-    "generated_by": "",
-    "icons": [
-      "/images/zoom_gruen.png",
-      "/images/zoom_gelb.png",
-      "/images/zoom_rot.png"
-    ],
-    "requirements": { "rescue_dog_units": 8, "search_and_rescue": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "search_and_rescue": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 683,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "684",
     "name": "Tempesta di vento nel villaggio",
     "place": "",
     "place_array": [],
-    "average_credits": 8300,
+    "average_credits": 7100,
     "generated_by": "",
     "icons": [
       "/images/tornado_gruen.png",
@@ -25784,23 +25667,23 @@
       "/images/tornado_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 6,
+      "platform_trucks": 2,
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "fwk": 2,
+      "fwk": 1,
       "heavy_rescue_vehicles": 2,
-      "mobile_shelter": 1,
-      "bracing": 2,
-      "firetrucks": 4,
+      "bracing": 1,
+      "firetrucks": 6,
       "police_cars": 2
     },
-    "chances": { "patient_transport": 30 },
+    "chances": { "mobile_command_vehicles": 40, "patient_transport": 30 },
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 2,
-      "patient_it_code_possible": ["ZC20R", "ZC20G"],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
       "filter_id": "firehouse_missions",
       "possible_patient_specializations": [
+        "Medicina interna generale",
         "Medicina interna generale",
         "Medicina interna generale"
       ],
@@ -25811,42 +25694,13 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 5,
-      "police_stations": 3,
+      "rescue_stations": 10,
+      "police_stations": 6,
       "disaster_response_count": 2,
-      "fire_stations": 12
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 684,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "technical_aid"]
-  },
-  {
-    "id": "685",
-    "name": "Dispiegamento di Assistenza Medica",
-    "place": "",
-    "place_array": [],
-    "average_credits": 2800,
-    "generated_by": "",
-    "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
-    ],
-    "requirements": { "mobile_command_vehicles": 1, "mobile_shelter": 4 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "disaster_response_count": 2,
-      "technical_aid": 2,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 685,
     "additive_overlays": "",
     "mission_categories": ["fire", "technical_aid"]
   }
