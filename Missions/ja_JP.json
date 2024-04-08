@@ -17591,5 +17591,50 @@
     "base_mission_id": 515,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "516",
+    "name": "列車の非常ブレーキ",
+    "place": "駅（普通車両）\n駅（普通車両と長距離路線）\n踏切\n歩行者用踏切",
+    "place_array": [
+      "駅（普通車両）",
+      "駅（普通車両と長距離路線）",
+      "踏切",
+      "歩行者用踏切"
+    ],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 516,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
