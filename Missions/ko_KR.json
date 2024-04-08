@@ -17419,5 +17419,50 @@
     "base_mission_id": 514,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "515",
+    "name": "열차의 비상 브레이크",
+    "place": "기차역(지역 교통)\n기차역(지역 교통 및 장거리 여행역)\n철길 건널목\n철도 건널목",
+    "place_array": [
+      "기차역(지역 교통)",
+      "기차역(지역 교통 및 장거리 여행역)",
+      "철길 건널목",
+      "철도 건널목"
+    ],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 515,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
