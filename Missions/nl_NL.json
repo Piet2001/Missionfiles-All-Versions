@@ -15033,41 +15033,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "416",
-    "name": "Brand in transformatorhuisje",
-    "place": "Transformatorhuisje",
-    "place_array": ["Transformatorhuisje"],
-    "average_credits": 3000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 2
-    },
-    "chances": { "heavy_rescue_vehicles": 20 },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 14
-    },
-    "overlay_index": null,
-    "base_mission_id": 416,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "417",
     "name": "Verkeersongeval met lijnbus en voetganger",
     "place": "Bushalte",
@@ -15682,6 +15647,50 @@
     "base_mission_id": 430,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "431",
+    "name": "Persoon bekneld tussen containers",
+    "place": "Haventerrein",
+    "place_array": ["Haventerrein"],
+    "average_credits": 1920,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {
+      "heavy_rescue_vehicles": 60,
+      "nef": 50,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   },
   {
     "id": "432",
