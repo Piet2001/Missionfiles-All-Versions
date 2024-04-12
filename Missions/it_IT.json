@@ -25492,7 +25492,7 @@
     "name": "Incendio in un municipio",
     "place": "",
     "place_array": [],
-    "average_credits": 8850,
+    "average_credits": 8250,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25504,9 +25504,7 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
-      "pump": 1,
       "firetrucks": 4,
       "police_cars": 4
     },
@@ -25531,7 +25529,6 @@
       "main_building": 0,
       "rescue_stations": 5,
       "police_stations": 5,
-      "fire_support_count": 1,
       "fire_stations": 15
     },
     "overlay_index": null,
@@ -25579,45 +25576,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "662",
-    "name": "Mettere in sicurezza un festival",
-    "place": "",
-    "place_array": [],
-    "average_credits": 13500,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "k9": 2,
-      "ambulances": 8,
-      "wasserwerfer": 1,
-      "firetrucks": 4,
-      "police_cars": 5
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "1 ora 30 minuti",
-      "duration": 5400,
-      "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 6,
-      "rescue_stations": 8,
-      "police_stations": 5,
-      "fire_stations": 6
-    },
-    "overlay_index": null,
-    "base_mission_id": 662,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
     "id": "663",
     "name": "Dimostrazione di arrampicata",
     "place": "",
@@ -25658,8 +25616,10 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
+      "k9": 1,
       "ambulances": 2,
-      "wasserwerfer": 1,
+      "swat_armored_vehicle": 1,
+      "swat_suv": 2,
       "firetrucks": 1,
       "police_cars": 4
     },
@@ -25674,7 +25634,7 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 2,
-      "police_stations": 3,
+      "police_stations": 5,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -25714,7 +25674,7 @@
     "name": "Incendio su una nave da crociera al molo",
     "place": "Molo navi da crociera",
     "place_array": ["Molo navi da crociera"],
-    "average_credits": 20500,
+    "average_credits": 17500,
     "generated_by": "",
     "icons": [
       "/images/cruiseship_gruen.png",
@@ -25723,12 +25683,11 @@
     ],
     "requirements": {
       "platform_trucks": 2,
-      "battalion_chief_vehicles": 5,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "mobile_air_vehicles": 2,
+      "mobile_air_vehicles": 1,
       "hazmat_vehicles": 1,
-      "water_tankers": 3,
-      "heavy_rescue_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
       "coastal_boat": 1,
       "large_coastal_boat": 2,
       "pump": 2,
@@ -25771,7 +25730,7 @@
     "name": "Fuoriuscita di sostanze chimiche in un laboratorio (ospedale)",
     "place": "Ospedale",
     "place_array": ["Ospedale"],
-    "average_credits": 9000,
+    "average_credits": 7700,
     "generated_by": "",
     "icons": [
       "/images/radiation_gruen.png",
@@ -25779,10 +25738,10 @@
       "/images/radiation_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 3,
+      "battalion_chief_vehicles": 2,
       "mobile_air_vehicles": 1,
       "hazmat_vehicles": 2,
-      "firetrucks": 5,
+      "firetrucks": 2,
       "police_cars": 5
     },
     "chances": { "nef": 30, "patient_transport": 50, "helicopter": 10 },
@@ -25818,7 +25777,7 @@
     "name": "Esercitazione sugli incendi boschivi",
     "place": "Bosco",
     "place_array": ["Bosco"],
-    "average_credits": 24000,
+    "average_credits": 14000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25827,11 +25786,9 @@
     ],
     "requirements": {
       "brush_truck": 10,
-      "battalion_chief_vehicles": 8,
-      "mobile_command_vehicles": 2,
-      "water_tankers": 5,
-      "water_needed": 100000,
-      "firetrucks": 1,
+      "mobile_command_vehicles": 1,
+      "water_needed": 40000,
+      "firetrucks": 4,
       "police_cars": 2
     },
     "chances": {},
@@ -25917,35 +25874,6 @@
     "base_mission_id": 677,
     "additive_overlays": "a",
     "mission_categories": ["fire", "technical_aid"]
-  },
-  {
-    "id": "678",
-    "name": "Assistenza all'Evacuazione da Inondazioni",
-    "place": "",
-    "place_array": [],
-    "average_credits": 1200,
-    "generated_by": "",
-    "icons": [
-      "/images/river_gruen.png",
-      "/images/river_gelb.png",
-      "/images/river_rot.png"
-    ],
-    "requirements": { "disaster_response_equipment": 1, "flood_equipment": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "water_damage_pump_count": 1,
-      "disaster_response_count": 1,
-      "technical_aid": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 678,
-    "additive_overlays": "",
-    "mission_categories": ["technical_aid"]
   },
   {
     "id": "679",
