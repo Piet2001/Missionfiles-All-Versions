@@ -16248,6 +16248,57 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "442",
+    "name": "Brand in gevangenis",
+    "place": "Gevangenis",
+    "place_array": ["Gevangenis"],
+    "average_credits": 8040,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "gefkw": 2,
+      "hondengeleider": 2,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "firetrucks": 2,
+      "police_cars": 4
+    },
+    "chances": { "platform_trucks": 60, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "min_possible_prisoners": 10,
+      "max_possible_prisoners": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "optional_event_mission": false,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 4,
+      "prisoner_transport_count": 1,
+      "hondengeleider": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 442,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "443",
     "name": "Brand in hotel",
     "place": "Hotel",
@@ -43856,5 +43907,33 @@
     "base_mission_id": 1081,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1082",
+    "name": "Bloemen gestolen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-04-29T10:00:00+02:00",
+      "date_end": "2024-06-20T22:00:00Z"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 1082,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
