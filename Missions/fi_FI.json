@@ -9308,7 +9308,7 @@
       "filter_id": "ambulance_station_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
       "patient_specializations": "Yleislääkäri"
@@ -9337,7 +9337,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+03:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -9365,7 +9365,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
       "patient_specializations": "Yleislääkäri"
@@ -9399,7 +9399,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+03:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -9427,7 +9427,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
       "patient_specializations": "Yleislääkäri"
@@ -9460,7 +9460,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+03:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -20205,10 +20205,10 @@
   },
   {
     "id": "597",
-    "name": "431 Kirsikankukat tulessa",
+    "name": "421 Kirsikankukat tulessa",
     "place": "",
     "place_array": [],
-    "average_credits": 1000,
+    "average_credits": 700,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -20216,9 +20216,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 3
+      "water_tankers": 1,
+      "water_needed": 6000,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -20227,7 +20227,7 @@
       "date_start": "2024-04-22T10:00:00+03:00",
       "date_end": "2024-06-20T22:00:00Z"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 597,
     "additive_overlays": "",
@@ -20235,7 +20235,7 @@
   },
   {
     "id": "598",
-    "name": "431 Kukkapelto tulessa",
+    "name": "422 Kukkapelto tulessa",
     "place": "",
     "place_array": [],
     "average_credits": 2500,
@@ -20248,8 +20248,7 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 7
+      "firetrucks": 4
     },
     "chances": { "patient_transport": 40 },
     "additional": {
@@ -20266,7 +20265,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "fire_stations": 5
+      "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 598,
