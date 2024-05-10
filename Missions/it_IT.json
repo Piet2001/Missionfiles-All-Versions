@@ -14558,7 +14558,7 @@
       ],
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -14587,7 +14587,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -14621,7 +14621,7 @@
       ],
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -14655,7 +14655,7 @@
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -14689,7 +14689,7 @@
       ],
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z",
+      "date_end": "2024-05-12T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -14722,7 +14722,7 @@
       "filter_id": "police_station_missions",
       "optional_event_mission": true,
       "date_start": "2024-05-10T09:00:00Z",
-      "date_end": "2024-05-12T22:00:00Z"
+      "date_end": "2024-05-12T23:59:59+02:00"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -25690,7 +25690,6 @@
       "heavy_rescue_vehicles": 2,
       "coastal_boat": 1,
       "large_coastal_boat": 2,
-      "pump": 2,
       "firetrucks": 8,
       "police_cars": 6
     },
@@ -25716,7 +25715,6 @@
       "main_building": 0,
       "rescue_stations": 15,
       "police_stations": 10,
-      "fire_support_count": 2,
       "coastal_rescue_count": 1,
       "fire_stations": 20
     },
@@ -25898,19 +25896,14 @@
     "name": "Campo di fiori in fiamme",
     "place": "",
     "place_array": [],
-    "average_credits": 2500,
+    "average_credits": 750,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 7
-    },
+    "requirements": { "firetrucks": 2 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 2,
@@ -25931,7 +25924,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "fire_stations": 5
+      "fire_stations": 1
     },
     "overlay_index": null,
     "base_mission_id": 672,
@@ -25978,11 +25971,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "water_needed": 5000,
-      "disaster_response_equipment": 1,
-      "mobile_shelter": 1
-    },
+    "requirements": { "water_needed": 5000, "disaster_response_equipment": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -25991,7 +25980,8 @@
     "prerequisites": {
       "main_building": 0,
       "disaster_response_count": 1,
-      "technical_aid": 2
+      "technical_aid": 2,
+      "fire_stations": 1
     },
     "overlay_index": null,
     "base_mission_id": 680,
@@ -26014,8 +26004,7 @@
       "water_needed": 5000,
       "rescue_dog_units": 4,
       "disaster_response_equipment": 1,
-      "mobile_shelter": 1,
-      "bracing": 2
+      "mobile_shelter": 2
     },
     "chances": {},
     "additional": {
