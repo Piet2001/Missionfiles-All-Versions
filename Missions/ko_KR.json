@@ -17640,5 +17640,41 @@
     "base_mission_id": 520,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "521",
+    "name": "기념비 위에 갇힌 시위대",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "police_cars": 2 },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 6,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 521,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
