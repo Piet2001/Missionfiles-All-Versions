@@ -32677,6 +32677,83 @@
     "mission_categories": ["airport", "fire"]
   },
   {
+    "id": "854",
+    "name": "Ongeval waterscooter",
+    "place": "Strand\nStrandopgang\nDuinen",
+    "place_array": ["Strand", "Strandopgang", "Duinen"],
+    "average_credits": 1730,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "boats": 1, "water_rescue": 1 },
+    "chances": { "nef": 15, "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 16,
+      "water_rescue_2": 2,
+      "rescue_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 854,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
+    "id": "854-0",
+    "name": "Ongeval waterscooter",
+    "place": "Strand\nStrandopgang\nDuinen",
+    "place_array": ["Strand", "Strandopgang", "Duinen"],
+    "average_credits": 4980,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "coastal_boat": 1,
+      "coastal_guard_boat": 1,
+      "coastal_helicopter": 1,
+      "water_rescue": 2
+    },
+    "chances": { "nef": 15, "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 16,
+      "water_rescue_2": 3,
+      "rescue_stations": 10,
+      "coastal_rescue_count": 1,
+      "coastal_rescue_small_count": 1,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 854,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
+  },
+  {
     "id": "855",
     "name": "Observatie",
     "place": "",
