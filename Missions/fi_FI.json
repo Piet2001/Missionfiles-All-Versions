@@ -315,13 +315,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
@@ -788,10 +789,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -7882,12 +7882,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2024-03-22T10:00:00Z",
@@ -9728,10 +9728,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2021-06-11T09:00:00Z",
@@ -9845,10 +9844,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "date_start": "2021-06-11T09:00:00Z",
@@ -11298,10 +11296,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": true,
       "date_start": "2023-09-22T09:00:00Z",
@@ -11841,10 +11838,13 @@
       "/images/tramway_gelb.png",
       "/images/tramway_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -11890,11 +11890,10 @@
       "/images/bus_gelb.png",
       "/images/bus_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 10 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_allow_first_responder_chance": 95,
       "optional_event_mission": false,
@@ -12453,10 +12452,9 @@
       "/images/tramway_gelb.png",
       "/images/tramway_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -12509,10 +12507,9 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "subsequent_mission_only": true,
       "optional_event_mission": false
@@ -12535,10 +12532,9 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "subsequent_mission_only": true,
       "optional_event_mission": false
@@ -13700,11 +13696,10 @@
       "/images/gas_gelb.png",
       "/images/gas_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_ladder": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true,
       "optional_event_mission": false,
       "date_start": "2023-04-28T09:00:00Z",
       "date_end": "2023-05-01T23:59:59+03:00"
@@ -13773,16 +13768,11 @@
       "/images/constructioncrane_gelb.png",
       "/images/constructioncrane_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
-    "chances": {
-      "firetrucks": 40,
-      "patient_transport": 70,
-      "patient_critical_care": 3
-    },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
+    "chances": { "patient_transport": 70, "patient_critical_care": 3 },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 2,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [0],
@@ -13849,10 +13839,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -13945,10 +13934,9 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
     },
@@ -13970,11 +13958,14 @@
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 2 },
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 2,
+      "firetrucks": 1
+    },
     "chances": { "patient_transport": 25 },
     "additional": {
       "possible_patient": 2,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "allow_ktw_instead_of_rtw": true,
       "optional_event_mission": false,
@@ -16700,10 +16691,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "average_min_fire_personnel": 4,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false
@@ -17110,11 +17100,10 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_specialization_ids": [1],
@@ -17237,13 +17226,17 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "rettungstreppe": 1, "riv": 1, "firetrucks": 1 },
+    "requirements": {
+      "rettungstreppe": 1,
+      "riv": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions"],
-      "optional_event_mission": false,
-      "allow_riv_instead_of_lf": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1, "airport_2": 1 },
     "overlay_index": null,
@@ -17266,13 +17259,17 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": { "riv": 1, "elw_airport": 1, "firetrucks": 1 },
+    "requirements": {
+      "riv": 1,
+      "elw_airport": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions"],
-      "optional_event_mission": false,
-      "allow_riv_instead_of_lf": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
     "overlay_index": null,
@@ -17296,15 +17293,19 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 2, "riv": 1, "elw_airport": 1, "firetrucks": 1 },
+    "requirements": {
+      "arff": 2,
+      "riv": 1,
+      "elw_airport": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions"],
       "optional_event_mission": false,
-      "max_arff_replacing_riv": 1,
-      "allow_riv_instead_of_lf": true
+      "max_arff_replacing_riv": 1
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
     "overlay_index": null,
@@ -17332,7 +17333,8 @@
       "rettungstreppe": 1,
       "riv": 2,
       "elw_airport": 1,
-      "firetrucks": 10,
+      "oneof_fire_engine_or_airport_fire_engine_large": 10,
+      "firetrucks": 1,
       "police_cars": 8
     },
     "chances": {
@@ -17344,7 +17346,6 @@
       "possible_patient": 50,
       "possible_patient_min": 20,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions", "default"],
       "optional_event_mission": false,
       "max_arff_replacing_riv": 2,
@@ -17384,14 +17385,14 @@
       "arff": 4,
       "rettungstreppe": 1,
       "elw_airport": 1,
-      "firetrucks": 12
+      "oneof_fire_engine_or_airport_fire_engine_large": 12,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 5,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions", "default"],
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -17426,11 +17427,15 @@
       "/images/planecrash_gelb.png",
       "/images/planecrash_rot.png"
     ],
-    "requirements": { "arff": 1, "elw_airport": 1, "firetrucks": 1 },
+    "requirements": {
+      "arff": 1,
+      "elw_airport": 1,
+      "oneof_fire_engine_or_airport_fire_engine_large": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions"],
       "optional_event_mission": false
     },
@@ -17455,14 +17460,17 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "arff": 1, "riv": 1, "firetrucks": 1 },
+    "requirements": {
+      "arff": 1,
+      "riv": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions", "default"],
-      "optional_event_mission": false,
-      "allow_riv_instead_of_lf": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
     "overlay_index": null,
@@ -17519,14 +17527,14 @@
       "battalion_chief_vehicles": 4,
       "mobile_air_vehicles": 2,
       "arff": 4,
-      "firetrucks": 15
+      "oneof_fire_engine_or_airport_fire_engine_large": 15,
+      "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
     "additional": {
       "possible_patient": 20,
       "possible_patient_min": 8,
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions", "default"],
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
@@ -17562,12 +17570,12 @@
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
       "arff": 2,
-      "firetrucks": 10
+      "oneof_fire_engine_or_airport_fire_engine_large": 10,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions", "default"],
       "optional_event_mission": false
     },
@@ -17594,12 +17602,12 @@
       "rettungstreppe": 1,
       "riv": 2,
       "elw_airport": 2,
+      "oneof_fire_engine_or_airport_fire_engine_large": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "allow_arff_instead_of_lf": true,
       "vehicle_groups": ["airport_missions"],
       "optional_event_mission": false
     },
@@ -19126,11 +19134,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "requirements": {
+      "platform_trucks": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "platform_trucks": 80, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "optional_event_mission": false,
       "patient_at_end_of_mission": true,
