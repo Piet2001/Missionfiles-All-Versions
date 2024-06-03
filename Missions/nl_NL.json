@@ -594,6 +594,51 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "20",
+    "name": "Brand in kelder",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3210,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "mobile_air_vehicles": 50,
+      "water_tankers": 10,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 20,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "21",
     "name": "Schoorsteenbrand",
     "place": "",
@@ -725,7 +770,8 @@
       "optional_event_mission": false,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
+      "patient_specializations": "Traumatologie",
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 0,
@@ -7292,6 +7338,56 @@
     "base_mission_id": 222,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "223",
+    "name": "Brand in kelder",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [20],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 223,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "224",
+    "name": "Brand in kelder",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [223, 20],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 224,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   },
   {
     "id": "225",
