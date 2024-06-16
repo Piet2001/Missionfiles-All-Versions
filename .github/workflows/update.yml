@@ -700,3 +700,41 @@ jobs:
         commit_message: Update sk_SK
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}    
+
+  Python:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    needs: sk_SK
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+
+    - name: setup python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: install python packages
+      run: |
+        python -m pip install --upgrade pip
+
+    - name: update
+      run: |
+        git pull
+        python scripts/Complete.py
+
+                
+    - name: json-syntax-check
+      uses: limitusus/json-syntax-check@v1
+      with:
+        pattern: "\\.json$"
+        
+    - name: Prettify code & PUSH
+      uses: creyD/prettier_action@master
+      with:
+        prettier_options: --write **/*.{js,md,json}
+        commit_message: Update sk_SK
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
