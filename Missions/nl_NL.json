@@ -2291,7 +2291,8 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false
+      "optional_event_mission": false,
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -6528,6 +6529,99 @@
     "base_mission_id": 202,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "203",
+    "name": "Verkeersongeval met gevaarlijke stoffen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2240,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "hazmat_vehicles": 60,
+      "heavy_rescue_vehicles": 80,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [204],
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 203,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "204",
+    "name": "Verkeersongeval met gevaarlijke stoffen (middel)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5690,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "elw3": 50,
+      "gwmess": 50,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": false,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 204,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   },
   {
     "id": "205",
@@ -21104,31 +21198,6 @@
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 560,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "561",
-    "name": "Rijden onder invloed van lachgas",
-    "place": "Snelweg oprit / afrit",
-    "place_array": ["Snelweg oprit / afrit"],
-    "average_credits": 400,
-    "generated_by": "",
-    "icons": [
-      "/images/icy_road_gruen.png",
-      "/images/icy_road_gelb.png",
-      "/images/icy_road_rot.png"
-    ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 5, "police_stations": 2 },
-    "overlay_index": null,
-    "base_mission_id": 561,
     "additive_overlays": "",
     "mission_categories": ["police"]
   },
