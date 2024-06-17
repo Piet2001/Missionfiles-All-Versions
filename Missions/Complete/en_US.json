@@ -50132,6 +50132,53 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "960",
+    "name": "Collision between a windsurfer and a swimmer",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-D-3",
+        "14-D-4",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "vehicle_groups": ["ocean_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "optional_event_mission": false,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 960,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "962",
     "name": "Accident during making Father's Day gift",
     "place": "",
