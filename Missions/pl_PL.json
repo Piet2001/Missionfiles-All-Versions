@@ -7602,6 +7602,156 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "205",
+    "name": "Porażenie słoneczne",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "206",
+    "name": "Udar cieplny",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "207",
+    "name": "Kurcze cieplne",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 207,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "208",
+    "name": "Odwodniona osoba",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 208,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "209",
+    "name": "Pożar podczas grilla",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 1800, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 209,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "210",
     "name": "Napad na sklep w centrum handlowym",
     "place": "Centrum handlowe",
@@ -14855,6 +15005,92 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "407",
+    "name": "Zabezpieczenie akwenu",
+    "place": "Jezioro\nRzeka",
+    "place_array": ["Jezioro", "Rzeka"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "water_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 godzina",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "overlay_index": null,
+    "base_mission_id": 407,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "408",
+    "name": "Rozłożenie kurtyny wodnej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 408,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "409",
+    "name": "Nieprzytomna osoba na plaży",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 409,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "410",
     "name": "Pożar szeregowca",
     "place": "",
@@ -17644,6 +17880,37 @@
     "base_mission_id": 478,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "479",
+    "name": "Pogryzienie przez osy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 710,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 65, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   },
   {
     "id": "480",
@@ -21123,6 +21390,70 @@
     "base_mission_id": 574,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "575",
+    "name": "Dziecko uwięzione w nagrzanym samochodzie",
+    "place": "Parking",
+    "place_array": ["Parking"],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {
+      "patient_transport": 55,
+      "helicopter": 5,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 575,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "576",
+    "name": "Zwierzę uwięzione w nagrzanym samochodzie",
+    "place": "Parking",
+    "place_array": ["Parking"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 576,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "577",
@@ -27837,5 +28168,116 @@
     "base_mission_id": 747,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "748",
+    "name": "Piłkarz poślizgnął się pod prysznicem",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-06-26T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "749",
+    "name": "Panika na trybunach",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "k9": 2,
+      "riot_police_equipment": 1,
+      "police_cars": 2,
+      "personnel_educations": { "riot_police": 15 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-06-26T22:00:00Z",
+      "personnel_educations": { "Szkolenie Personalne OPP": 15 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 749,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "750",
+    "name": "Pożar na stadionie",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 4,
+      "firetrucks": 15,
+      "police_cars": 12
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "optional_event_mission": true,
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-06-26T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 750,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
