@@ -785,42 +785,6 @@
     "mission_categories": ["fire"]
   },
   {
-    "id": "26",
-    "name": "Brand in supermarkt",
-    "place": "Supermarkt",
-    "place_array": ["Supermarkt"],
-    "average_credits": 3510,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "water_tankers": 1,
-      "firetrucks": 3,
-      "police_cars": 1
-    },
-    "chances": { "mobile_command_vehicles": 50, "water_tankers": 20 },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 26,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
     "id": "27",
     "name": "Persoon aangereden",
     "place": "",
@@ -1018,40 +982,6 @@
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 33,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "34",
-    "name": "Brand in supermarkt",
-    "place": "Supermarkt",
-    "place_array": ["Supermarkt"],
-    "average_credits": 2100,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 2,
-      "police_cars": 1
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "optional_event_mission": false
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 4
-    },
-    "overlay_index": null,
-    "base_mission_id": 34,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
@@ -2279,7 +2209,7 @@
     "name": "Bestuurder onder invloed",
     "place": "",
     "place_array": [],
-    "average_credits": 300,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2289,10 +2219,10 @@
     "requirements": { "police_cars": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [25],
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "optional_event_mission": false,
-      "unavailable_in_normal_missions": true
+      "optional_event_mission": false
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -9569,31 +9499,6 @@
     "base_mission_id": 284,
     "additive_overlays": "",
     "mission_categories": ["police"]
-  },
-  {
-    "id": "285",
-    "name": "Brand in supermarkt",
-    "place": "Supermarkt",
-    "place_array": ["Supermarkt"],
-    "average_credits": 1400,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
-    "chances": { "platform_trucks": 10 },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "optional_event_mission": false
-    },
-    "prerequisites": { "main_building": 0, "fire_stations": 3 },
-    "overlay_index": null,
-    "base_mission_id": 285,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
   },
   {
     "id": "286",
@@ -21198,6 +21103,32 @@
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 560,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "561",
+    "name": "Rijden onder invloed van lachgas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [25],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "optional_event_mission": false
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 561,
     "additive_overlays": "",
     "mission_categories": ["police"]
   },
