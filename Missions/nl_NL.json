@@ -91,7 +91,7 @@
     "name": "Brandend gras",
     "place": "",
     "place_array": [],
-    "average_credits": 200,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -100,10 +100,7 @@
     ],
     "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "expansion_missions_ids": [140],
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 4,
@@ -708,7 +705,7 @@
     },
     "chances": { "heavy_rescue_vehicles": 10, "patient_transport": 40 },
     "additional": {
-      "possible_patient": 4,
+      "possible_patient": 5,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [4],
@@ -1379,6 +1376,35 @@
     "prerequisites": { "main_building": 3, "rescue_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 46,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "47",
+    "name": "Pijn op de borst",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [917],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiologie"],
+      "patient_specializations": "Cardiologie"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 47,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
   },
@@ -24018,7 +24044,7 @@
       "firetrucks": 2,
       "police_cars": 3
     },
-    "chances": { "nef": 40, "patient_transport": 100 },
+    "chances": { "nef": 10, "patient_transport": 100 },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 6,
@@ -24031,6 +24057,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 5,
+      "bereitschaftspolizei": 1,
       "fire_stations": 14
     },
     "overlay_index": null,
