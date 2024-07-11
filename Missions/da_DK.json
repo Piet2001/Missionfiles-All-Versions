@@ -2418,7 +2418,7 @@
   },
   {
     "id": "77",
-    "name": "Patientoverførsel",
+    "name": "Patient Transport",
     "place": "",
     "place_array": [],
     "average_credits": null,
@@ -2433,7 +2433,8 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions"
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true
     },
     "prerequisites": { "main_building": 2 },
     "overlay_index": null,
@@ -22004,5 +22005,30 @@
     "base_mission_id": 617,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "623",
+    "name": "Intensiv Transport",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions"
+    },
+    "prerequisites": { "main_building": 2 },
+    "overlay_index": null,
+    "base_mission_id": 623,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
