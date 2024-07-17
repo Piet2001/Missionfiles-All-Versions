@@ -28571,5 +28571,432 @@
     "base_mission_id": 763,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "766",
+    "name": "Violence intrafamiliale",
+    "place": "R\u00e9sidence Prot\u00e9g\u00e9e",
+    "place_array": ["R\u00e9sidence Prot\u00e9g\u00e9e"],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "police_cars": 1,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "",
+    "mission_categories": ["police", "criminal_investigation"]
+  },
+  {
+    "id": "766/a",
+    "name": "Violence intrafamiliale",
+    "place": "R\u00e9sidence Prot\u00e9g\u00e9e",
+    "place_array": ["R\u00e9sidence Prot\u00e9g\u00e9e"],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "police_investigation": 1,
+      "police_cars": 1,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "criminal_investigation"]
+  },
+  {
+    "id": "767",
+    "name": "Cambriolage, vol d'armes",
+    "place": "R\u00e9sidence Prot\u00e9g\u00e9e",
+    "place_array": ["R\u00e9sidence Prot\u00e9g\u00e9e"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_investigation": 1,
+      "police_cars": 2,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "768",
+    "name": "D\u00e9couverte d'un cadavre",
+    "place": "R\u00e9sidence Prot\u00e9g\u00e9e",
+    "place_array": ["R\u00e9sidence Prot\u00e9g\u00e9e"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_investigation": 1,
+      "police_cars": 2,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 768,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "769",
+    "name": "Braquage dans un centre commercial",
+    "place": "Centre commercial",
+    "place_array": ["Centre commercial"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "civil_patrol": 1,
+      "police_investigation": 1,
+      "firetrucks": 1,
+      "police_cars": 6,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "criminal_investigation_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 769,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "770",
+    "name": "Investigation d'un incendie criminel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2050,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_investigation": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 770,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "771",
+    "name": "Braquage dans un Bar/Tabac",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2850,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "civil_patrol": 1,
+      "police_investigation": 1,
+      "firetrucks": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 4,
+      "criminal_investigation_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 771,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "772",
+    "name": "Bagarre en bo\u00eete de nuit",
+    "place": "Discoth\u00e8que",
+    "place_array": ["Discoth\u00e8que"],
+    "average_credits": 1550,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 2,
+      "civil_patrol": 2,
+      "police_cars": 2,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 10,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 772,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "773",
+    "name": "Interpellations au domicile",
+    "place": "R\u00e9sidence Prot\u00e9g\u00e9e",
+    "place_array": ["R\u00e9sidence Prot\u00e9g\u00e9e"],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "civil_patrol": 1,
+      "police_cars": 1,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 773,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "774",
+    "name": "Perquisition au domicile d'un suspect",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 3,
+      "personnel_educations": { "police_law": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "OPJ": 1 }
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 774,
+    "additive_overlays": "",
+    "mission_categories": ["police", "criminal_investigation"]
+  },
+  {
+    "id": "775",
+    "name": "Interception d'une voiture roulant \u00e0 vive allure sur autoroute",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "rapid_patrol": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 775,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "776",
+    "name": "Interception d'une moto \u00e0 vive allure sur autoroute",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "rapid_patrol": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 776,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
   }
 ]
