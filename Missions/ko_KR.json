@@ -17358,5 +17358,224 @@
     "base_mission_id": 530,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "534",
+    "name": "관중석에서 갑작스러운 질병",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 534,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "535",
+    "name": "야외 행사에서의 열사병",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 535,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "536",
+    "name": "음식 판매점에서의 알레르기 반응",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 50,
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["일반 외과"],
+      "patient_specializations": "일반 외과"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 536,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "537",
+    "name": "스포츠 개막식에서 군중 통제가 필요함",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "riot_police": 6,
+      "detention_unit": 1,
+      "firetrucks": 4,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "1시간 30분",
+      "duration": 5400,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "riot_police": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 537,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "538",
+    "name": "스포츠 경기장 입구에서 발견된 수상한 소포",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 538,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "539",
+    "name": "스포츠 시설 엘리베이터에 갇힌 선수",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 539,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "540",
+    "name": "선수 셔틀버스가 관련된 교통사고",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 70, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-07-26T09:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["외상학과"],
+      "patient_specializations": "외상학과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 540,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
