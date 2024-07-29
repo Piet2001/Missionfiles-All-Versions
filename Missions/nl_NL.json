@@ -387,7 +387,7 @@
   },
   {
     "id": "15",
-    "name": "Bosbrand",
+    "name": "Bosbrand (Klein)",
     "place": "Bos",
     "place_array": ["Bos"],
     "average_credits": 1090,
@@ -6686,10 +6686,10 @@
   },
   {
     "id": "214",
-    "name": "Bosbrand",
+    "name": "Bosbrand (Middel)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 3950,
+    "average_credits": 1420,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -6697,19 +6697,20 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
       "water_needed": 23000,
-      "brush_truck": 1,
-      "firetrucks": 1
+      "brush_truck": 2
     },
-    "chances": {},
+    "chances": { "heavy_rescue_vehicles": 50 },
     "additional": {
       "expansion_missions_ids": [215, 216],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
-      "fire_stations": 8
+      "brush_extension": 2,
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 214,
@@ -6718,7 +6719,7 @@
   },
   {
     "id": "215",
-    "name": "Bosbrand",
+    "name": "Bosbrand (Groot)",
     "place": "Bos",
     "place_array": ["Bos"],
     "average_credits": 8732,
@@ -6745,7 +6746,7 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 4,
+      "brush_extension": 3,
       "personnel_educations": { "wildfire": 18 },
       "fire_stations": 13
     },
@@ -6756,7 +6757,7 @@
   },
   {
     "id": "216",
-    "name": "Bosbrand",
+    "name": "Bosbrand (Grip 1)",
     "place": "Bos",
     "place_array": ["Bos"],
     "average_credits": 11512,
@@ -6775,6 +6776,7 @@
       "wildfire_command": 1,
       "wildfire_equipment": 1,
       "fire_aviation": 1,
+      "police_cars": 2,
       "personnel_educations": { "wildfire": 18 }
     },
     "chances": { "mobile_command_vehicles": 50, "elw3": 10 },
@@ -6784,10 +6786,11 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "police_stations": 2,
       "brush_extension": 5,
       "fire_aviation_count": 1,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 15
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 216,
@@ -42920,5 +42923,75 @@
     "base_mission_id": 1093,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1094",
+    "name": "Wielrenner ongeluk tijdens wedstrijd",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1094,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1095",
+    "name": "Atleet gewond tijdens gymnastiekoefening",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1095,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
