@@ -19692,6 +19692,31 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "595",
+    "name": "Olycka med drive-in-teater",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2024-07-29T10:00:00+02:00",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 595,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "598",
     "name": "Pl\u00f6tslig sjukdom p\u00e5 \u00e5sk\u00e5darplats",
     "place": "",
@@ -19909,5 +19934,69 @@
     "base_mission_id": 604,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "605",
+    "name": "Cykelolycka under lopp",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 605,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "606",
+    "name": "Idrottare skadad under gymnastikrutin",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Inv\u00e4rtesmedicinare"],
+      "patient_specializations": "Inv\u00e4rtesmedicinare"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]

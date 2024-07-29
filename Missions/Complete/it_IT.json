@@ -25788,6 +25788,45 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "698",
+    "name": "Infortunio allo scivolo del parco acquatico",
+    "place": "Piscina",
+    "place_array": ["Piscina"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["PC01R", "PC01G", "PC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "date_start": "2024-07-29T10:00:00+02:00",
+      "date_end": "2024-08-23T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 698,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "702",
     "name": "Malore improvviso tra gli spettatori",
     "place": "",
@@ -26027,5 +26066,81 @@
     "base_mission_id": 708,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "709",
+    "name": "Incidente ciclistico durante la gara",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": { "patient_transport": 85, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "710",
+    "name": "Atleta ferito durante una routine di ginnastica",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "date_start": "2024-07-29T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 710,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
