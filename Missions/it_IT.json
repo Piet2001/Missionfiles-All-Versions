@@ -26142,5 +26142,39 @@
     "base_mission_id": 710,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "713",
+    "name": "Trasferimento Interospedaliero",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ]
+    },
+    "prerequisites": { "main_building": 2 },
+    "overlay_index": null,
+    "base_mission_id": 713,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
