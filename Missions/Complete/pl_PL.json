@@ -27408,6 +27408,39 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "756",
+    "name": "Po\u017car w opuszczonej pizzerii",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 756,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "758",
     "name": "Nag\u0142a choroba na trybunach",
     "place": "",
@@ -27690,5 +27723,72 @@
     "base_mission_id": 766,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "767",
+    "name": "Ratunek wodny wymagany podczas zawod\u00f3w \u017ceglarskich",
+    "place": "Jezioro\nRzeka",
+    "place_array": ["Jezioro", "Rzeka"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 1,
+      "diver_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "768",
+    "name": "Naruszenie bezpiecze\u0144stwa na basenie sportowym",
+    "place": "",
+    "place_array": [],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 768,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]

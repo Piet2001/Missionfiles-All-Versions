@@ -22149,6 +22149,39 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "618",
+    "name": "Brann i en forlatt pizzeria",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 618,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "620",
     "name": "Plutselig sykdom p\u00e5 tribunen",
     "place": "",
@@ -22431,5 +22464,67 @@
     "base_mission_id": 628,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "629",
+    "name": "Vannredning kreves ved sportsseilingsarrangement",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Kardiologi"],
+      "patient_specializations": "Kardiologi"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 629,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "630",
+    "name": "Sikkerhetsbrudd ved sv\u00f8mmebasseng",
+    "place": "",
+    "place_array": [],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 630,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]

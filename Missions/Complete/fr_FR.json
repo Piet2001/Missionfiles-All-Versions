@@ -28547,6 +28547,43 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "757",
+    "name": "Incendie dans une pizerria desaffect\u00e9e",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 6,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 757,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "761",
     "name": "Incendie au camp d'\u00e9t\u00e9",
     "place": "",
@@ -29427,5 +29464,74 @@
     "base_mission_id": 785,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "786",
+    "name": "Sauvetage en eau n\u00e9cessaire lors d'un \u00e9v\u00e9nement de voile sportive",
+    "place": "Lac\nRivi\u00e8re",
+    "place_array": ["Lac", "Rivi\u00e8re"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 786,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "787",
+    "name": "Violation de la s\u00e9curit\u00e9 \u00e0 la piscine sportive",
+    "place": "",
+    "place_array": [],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 787,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
