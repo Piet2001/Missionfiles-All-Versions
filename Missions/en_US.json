@@ -49451,6 +49451,39 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "970",
+    "name": "Fire in an abandoned pizzeria",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 970,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "972",
     "name": "Sudden illness in spectator stand",
     "place": "",
@@ -49769,6 +49802,82 @@
     "base_mission_id": 980,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "981",
+    "name": "Water Rescue Required at Sport Sailing Event",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "14-D-1",
+        "14-D-2",
+        "14-D-3",
+        "14-D-4",
+        "14-C-1",
+        "14-B-1",
+        "14-B-2",
+        "14-A-1"
+      ],
+      "date_start": "2024-08-05T10:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 981,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "982",
+    "name": "Angry fan at sports swimming pool",
+    "place": "",
+    "place_array": [],
+    "average_credits": 200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-08-05T10:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 982,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "983",
