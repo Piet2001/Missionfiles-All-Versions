@@ -3691,7 +3691,6 @@
     "additional": {
       "duration_text": "15 minuten",
       "duration": 900,
-      "average_min_fire_personnel": 1,
       "guard_mission": true,
       "filter_id": "firehouse_missions"
     },
@@ -13419,6 +13418,241 @@
     "base_mission_id": 389,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "390",
+    "name": "Brand bij afvalverwerker (Klein)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "chances": { "platform_trucks": 20 },
+    "additional": {
+      "expansion_missions_ids": [391, 392, 393, 394, 395],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 390,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "391",
+    "name": "Brand bij afvalverwerker (Middel)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 1940,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 2
+    },
+    "chances": { "platform_trucks": 50, "water_tankers": 20 },
+    "additional": {
+      "expansion_missions_ids": [392, 393, 394, 395],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
+    "overlay_index": null,
+    "base_mission_id": 391,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "392",
+    "name": "Brand bij afvalverwerker (Groot)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "elw3": 50,
+      "hazmat_vehicles": 60,
+      "water_tankers": 80,
+      "gwmess": 20
+    },
+    "additional": {
+      "expansion_missions_ids": [393, 394, 395],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 14 },
+    "overlay_index": null,
+    "base_mission_id": 392,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "393",
+    "name": "Brand bij afvalverwerker (Zeer Groot)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 7100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "elw3": 50,
+      "mobile_air_vehicles": 50,
+      "water_tankers": 80,
+      "gwmess": 60
+    },
+    "additional": {
+      "expansion_missions_ids": [394, 395],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 16 },
+    "overlay_index": null,
+    "base_mission_id": 393,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "394",
+    "name": "Brand bij afvalverwerker (Grip 1)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 9210,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 1,
+      "diver_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
+      "police_cars": 2
+    },
+    "chances": { "elw3": 50, "water_tankers": 80, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [395],
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 21
+    },
+    "overlay_index": null,
+    "base_mission_id": 394,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "fire"]
+  },
+  {
+    "id": "395",
+    "name": "Brand bij afvalverwerker (Grip 3)",
+    "place": "Afvalverwerker",
+    "place_array": ["Afvalverwerker"],
+    "average_credits": 12210,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 1,
+      "diver_units": 1,
+      "heavy_rescue_vehicles": 1,
+      "foam_needed": 1000,
+      "firetrucks": 12,
+      "police_cars": 2
+    },
+    "chances": { "elw3": 50, "water_tankers": 80, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 395,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "fire"]
   },
   {
     "id": "396",
@@ -42177,6 +42411,210 @@
     "base_mission_id": 1095,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1096",
+    "name": "Waterredding vereist bij zeilevenement",
+    "place": "Strand",
+    "place_array": ["Strand"],
+    "average_credits": 1230,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_at_end_of_mission": true,
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiologie"],
+      "patient_specializations": "Cardiologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1096,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "1097",
+    "name": "Boze toeschouwer bij sportzwembad",
+    "place": "Zwembad",
+    "place_array": ["Zwembad"],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-08-05T08:00:00Z",
+      "date_end": "2024-08-11T23:59:59Z"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1097,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1098",
+    "name": "Brand op zomerkamp",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3180,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 2400,
+      "firetrucks": 6,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 1098,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1099",
+    "name": "Storing in attractie pretpark",
+    "place": "Pretpark",
+    "place_array": ["Pretpark"],
+    "average_credits": 1420,
+    "generated_by": "",
+    "icons": [
+      "/images/themepark_gruen.png",
+      "/images/themepark_gelb.png",
+      "/images/themepark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 400,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1099,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1100",
+    "name": "Gevecht op markt",
+    "place": "Marktplein",
+    "place_array": ["Marktplein"],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1100,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1101",
+    "name": "Glijbaan ongeluk in Zwembad",
+    "place": "Zwembad",
+    "place_array": ["Zwembad"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1101,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1102",
+    "name": "Aanrijding drive-in Bioscoop",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1102,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "1103",
