@@ -2378,34 +2378,6 @@
     "mission_categories": ["fire", "technical_aid"]
   },
   {
-    "id": "83",
-    "name": "Val van hoogte (\u003E 5m)",
-    "place": "",
-    "place_array": [],
-    "average_credits": null,
-    "generated_by": "",
-    "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
-    ],
-    "requirements": {},
-    "chances": { "nef": 100, "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_specialization_ids": [1],
-      "patient_specialization_captions": ["Algemene Heelkunde"],
-      "patient_specializations": "Algemene Heelkunde"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 10 },
-    "overlay_index": null,
-    "base_mission_id": 83,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
-  },
-  {
     "id": "84",
     "name": "Ernstige brandwonden",
     "place": "",
@@ -3686,7 +3658,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1 },
     "chances": {},
     "additional": {
       "duration_text": "15 minuten",
@@ -6126,7 +6098,8 @@
       "filter_id": "police_station_missions",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
+      "patient_specializations": "Traumatologie",
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": {
       "main_building": 5,
@@ -16242,38 +16215,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 462,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "463",
-    "name": "Verdachte vaten aangetroffen",
-    "place": "Bos",
-    "place_array": ["Bos"],
-    "average_credits": 1600,
-    "generated_by": "",
-    "icons": [
-      "/images/bar_cocktail_gruen.png",
-      "/images/bar_cocktail_gelb.png",
-      "/images/bar_cocktail_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "hazmat_vehicles": 1,
-      "gwmess": 1,
-      "ovdp": 1,
-      "firetrucks": 1,
-      "police_cars": 4
-    },
-    "chances": { "gwmess": 20 },
-    "additional": { "filter_id": "police_station_missions" },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 5,
-      "fire_stations": 11
-    },
-    "overlay_index": null,
-    "base_mission_id": 463,
     "additive_overlays": "",
     "mission_categories": ["police"]
   },
@@ -31875,7 +31816,7 @@
   },
   {
     "id": "867",
-    "name": "Duinbrand Middel",
+    "name": "Duinbrand (Middel)",
     "place": "Duinen",
     "place_array": ["Duinen"],
     "average_credits": 2690,
@@ -31911,7 +31852,7 @@
   },
   {
     "id": "868",
-    "name": "Duinbrand Grip 1",
+    "name": "Duinbrand (Grip 1)",
     "place": "Duinen",
     "place_array": ["Duinen"],
     "average_credits": 20747,
@@ -32624,7 +32565,7 @@
   },
   {
     "id": "880",
-    "name": "Duinbrand Grip 2",
+    "name": "Duinbrand (Grip 2)",
     "place": "Duinen",
     "place_array": ["Duinen"],
     "average_credits": 40884,
@@ -32691,7 +32632,7 @@
   },
   {
     "id": "881",
-    "name": "Duinbrand Grip 3",
+    "name": "Duinbrand (Grip 3)",
     "place": "Duinen",
     "place_array": ["Duinen"],
     "average_credits": 44854,
@@ -32760,7 +32701,7 @@
   },
   {
     "id": "882",
-    "name": "Duinbrand Grip 4",
+    "name": "Duinbrand (Grip 4)",
     "place": "Duinen",
     "place_array": ["Duinen"],
     "average_credits": 51574,
