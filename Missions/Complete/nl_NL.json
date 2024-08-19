@@ -1946,24 +1946,28 @@
     "name": "Boom op auto",
     "place": "",
     "place_array": [],
-    "average_credits": 350,
+    "average_credits": 910,
     "generated_by": "",
     "icons": [
       "/images/sawmill_gruen.png",
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": {
-      "heavy_rescue_vehicles": 1,
-      "oneof_fire_engine_or_rescue": 1,
-      "firetrucks": 1
-    },
-    "chances": { "heavy_rescue_vehicles": 10 },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": { "heavy_rescue_vehicles": 10, "patient_transport": 100 },
     "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "unavailable_in_normal_missions": true
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 68,
     "additive_overlays": "",
@@ -2333,7 +2337,8 @@
     "additional": {
       "expansion_missions_ids": [568],
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "police_station_missions",
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -5567,22 +5572,32 @@
   {
     "id": "180",
     "name": "Bergen object uit water voor politie",
-    "place": "Meer",
-    "place_array": ["Meer"],
-    "average_credits": 1000,
+    "place": "",
+    "place_array": [],
+    "average_credits": 2140,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "diver_units": 1, "firetrucks": 1, "police_cars": 2 },
+    "requirements": {
+      "diver_units": 1,
+      "ovdp": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
     "chances": {},
-    "additional": { "filter_id": "water_watch_missions" },
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "water_watch_missions"
+    },
     "prerequisites": {
       "main_building": -1,
       "wasserrettung": 1,
-      "police_stations": 2,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
       "fire_stations": 1
     },
     "overlay_index": null,
@@ -10559,6 +10574,8 @@
     "requirements": { "police_cars": 2 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [317],
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions"
     },
@@ -10573,21 +10590,25 @@
     "name": "Bedreiging met vuurwapen",
     "place": "",
     "place_array": [],
-    "average_credits": 1010,
+    "average_credits": 1810,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
-    "chances": {},
+    "requirements": { "ovdp": 1, "police_cars": 4 },
+    "chances": { "ovdp": 50 },
     "additional": {
+      "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "unavailable_in_normal_missions": true
+      "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 5, "police_stations": 4 },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1
+    },
     "overlay_index": null,
     "base_mission_id": 317,
     "additive_overlays": "",
@@ -43110,7 +43131,11 @@
       "police_cars": 2
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
@@ -43145,6 +43170,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -43174,7 +43201,11 @@
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 1100,
@@ -43199,6 +43230,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interne Geneeskunde"],
       "patient_specializations": "Interne Geneeskunde"
@@ -43223,7 +43256,11 @@
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2024-06-21T09:00:00Z",
+      "date_end": "2024-08-23T23:59:59+02:00"
+    },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 1102,
