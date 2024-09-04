@@ -287,13 +287,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions",
-      "allow_dlk_instead_of_lf": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -564,12 +565,11 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 1,
       "expansion_missions_ids": [24, 2, 29],
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -706,12 +706,9 @@
       "/images/oil_gelb.png",
       "/images/oil_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
-    "additional": {
-      "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 30,
@@ -1787,13 +1784,13 @@
     ],
     "requirements": {
       "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 1,
       "firetrucks": 1,
       "police_cars": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 2,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Clinica Geral"],
@@ -2212,12 +2209,12 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 4,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1,
       "police_cars": 3
     },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2024-03-22T10:00:00Z",
       "date_end": "2024-04-02T23:59:59+01:00"
@@ -6705,10 +6702,9 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2024-01-25T10:00:00Z",
       "date_end": "2024-01-28T23:00:00Z"
@@ -8536,10 +8532,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2024-06-14T09:00:00Z",
       "date_end": "2024-07-14T22:00:00Z"
@@ -8647,10 +8642,9 @@
       "/images/soccer_gelb.png",
       "/images/soccer_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2024-06-14T09:00:00Z",
       "date_end": "2024-07-14T22:00:00Z"
@@ -10298,10 +10292,9 @@
       "/images/autumn_gelb.png",
       "/images/autumn_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "date_start": "2023-09-22T09:00:00Z",
       "date_end": "2023-11-30T23:59:59+00:00"
@@ -17511,11 +17504,14 @@
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
+    "requirements": {
+      "platform_trucks": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
     "chances": { "platform_trucks": 80, "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
-      "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [1],
@@ -19214,8 +19210,8 @@
   {
     "id": "584",
     "name": "Ferimento num escorrega de um parque aquático",
-    "place": "Piscina",
-    "place_array": ["Piscina"],
+    "place": "",
+    "place_array": [],
     "average_credits": null,
     "generated_by": "",
     "icons": [
