@@ -82311,5 +82311,69 @@
     "base_mission_id": 879,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "880",
+    "name": "Hautreaktion nach Kontakt mit giftiger Pflanze",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "nef": 15, "patient_transport": 100, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 880,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "881",
+    "name": "Hautreaktion nach Kontakt mit giftiger Pflanze",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": { "mountain_equipment": 1, "mountain_atv": 1 },
+    "chances": { "nef": 15, "patient_transport": 100, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 5,
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 881,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
