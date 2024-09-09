@@ -20603,5 +20603,37 @@
     "base_mission_id": 627,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "628",
+    "name": "Melontaonnettomuus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": { "main_building": 23, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 628,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
