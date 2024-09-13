@@ -63072,8 +63072,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Allgemeine Chirurgie"],
       "patient_specializations": "Allgemeine Chirurgie"
@@ -63107,8 +63107,8 @@
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
       "allow_police_motorcycle_instead_of_fustw": true,
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
       "patient_specializations": "Unfallchirurgie"
@@ -63142,8 +63142,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
       "patient_specializations": "Unfallchirurgie"
@@ -63173,8 +63173,8 @@
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
       "allow_police_motorcycle_instead_of_fustw": true,
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Allgemeine Chirurgie"],
       "patient_specializations": "Allgemeine Chirurgie"
@@ -63206,8 +63206,8 @@
     "additional": {
       "allow_rw_instead_of_lf": true,
       "filter_id": "firehouse_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00"
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -63233,8 +63233,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Allgemeine Innere"],
       "patient_specializations": "Allgemeine Innere"
@@ -63262,8 +63262,8 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
       "patient_specializations": "Unfallchirurgie"
@@ -63300,8 +63300,8 @@
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
       "allow_police_motorcycle_instead_of_fustw": true,
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00",
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
       "patient_specializations": "Unfallchirurgie"
@@ -63333,8 +63333,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2023-09-22T09:00:00Z",
-      "date_end": "2023-11-30T23:59:59+01:00"
+      "date_start": "2024-09-20T09:00:00Z",
+      "date_end": "2024-11-29T21:59:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -82375,5 +82375,32 @@
     "base_mission_id": 881,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "882",
+    "name": "Verkehrskontrolle Radverkehr",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 Stunde",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 882,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
