@@ -18211,5 +18211,58 @@
     "base_mission_id": 551,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "552",
+    "name": "空港の整備格納庫で火災",
+    "place": "市場",
+    "place_array": ["市場"],
+    "average_credits": 18150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "arff": 2,
+      "rettungstreppe": 2,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 6,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "airport", "fire_support_specialization"]
   }
 ]
