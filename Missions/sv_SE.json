@@ -20270,5 +20270,57 @@
     "base_mission_id": 611,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "612",
+    "name": "Brand i en underhållshangar på en flygplats",
+    "place": "Hangar",
+    "place_array": ["Hangar"],
+    "average_credits": 18150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "arff": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Invärtesmedicinare"],
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 612,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "airport", "fire_support_specialization"]
   }
 ]
