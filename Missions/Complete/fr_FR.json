@@ -29765,5 +29765,65 @@
     "base_mission_id": 790,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "791",
+    "name": "Incendie dans un hangar de maintenance dans un a\u00e9roport",
+    "place": "Hangar \u00e0 avions",
+    "place_array": ["Hangar \u00e0 avions"],
+    "average_credits": 18150,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "thw_gkw": 1,
+      "arff": 2,
+      "airport_equipment": 1,
+      "rettungstreppe": 2,
+      "riv": 2,
+      "elw_airport": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 8,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 791,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "airport", "fire_support_specialization"]
   }
 ]
