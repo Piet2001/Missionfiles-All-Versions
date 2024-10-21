@@ -13369,6 +13369,72 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "387",
+    "name": "Bouwvakker van hoogte gevallen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [388],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 10,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 387,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "388",
+    "name": "Bouwvakker van hoogte gevallen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1680,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1, "police_cars": 2 },
+    "chances": { "nef": 50, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 388,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "389",
     "name": "Bouwvakker bekneld onder bouwmateriaal",
     "place": "Bouwterrein",
