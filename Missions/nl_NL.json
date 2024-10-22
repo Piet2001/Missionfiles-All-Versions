@@ -646,10 +646,10 @@
   },
   {
     "id": "23",
-    "name": "Brand in cafetaria",
+    "name": "Brand in cafetaria (Klein)",
     "place": "",
     "place_array": [],
-    "average_credits": 1200,
+    "average_credits": 840,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -659,8 +659,8 @@
     "requirements": { "platform_trucks": 1, "firetrucks": 1 },
     "chances": { "platform_trucks": 10 },
     "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "expansion_missions_ids": [130, 131],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
@@ -3966,10 +3966,10 @@
   },
   {
     "id": "130",
-    "name": "Brand in cafetaria",
+    "name": "Brand in cafetaria (Middel)",
     "place": "",
     "place_array": [],
-    "average_credits": 1400,
+    "average_credits": 1520,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -3984,13 +3984,13 @@
     },
     "chances": { "platform_trucks": 50 },
     "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "expansion_missions_ids": [131],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
-      "fire_stations": 5
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 130,
@@ -3999,10 +3999,10 @@
   },
   {
     "id": "131",
-    "name": "Brand in cafetaria",
+    "name": "Brand in cafetaria (Groot)",
     "place": "",
     "place_array": [],
-    "average_credits": 1700,
+    "average_credits": 3150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4018,14 +4018,11 @@
       "police_cars": 1
     },
     "chances": { "mobile_command_vehicles": 50, "water_tankers": 10 },
-    "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
-    },
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
-      "fire_stations": 7
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 131,
@@ -12321,7 +12318,7 @@
   },
   {
     "id": "360",
-    "name": "Brand in bovenwoning",
+    "name": "Brand in bovenwoning (Klein)",
     "place": "",
     "place_array": [],
     "average_credits": 840,
@@ -12333,7 +12330,10 @@
     ],
     "requirements": { "platform_trucks": 1, "firetrucks": 1 },
     "chances": { "platform_trucks": 40 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [361],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 360,
@@ -12342,7 +12342,7 @@
   },
   {
     "id": "361",
-    "name": "Brand in bovenwoning",
+    "name": "Brand in bovenwoning (Middel)",
     "place": "",
     "place_array": [],
     "average_credits": 1520,
@@ -39416,39 +39416,6 @@
     "base_mission_id": 1007,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
-  },
-  {
-    "id": "1008",
-    "name": "Aanrijding snelweg, veroorzaker gevlucht",
-    "place": "Snelweg oprit / afrit\nVerzorgingsplaats (Snelweg)",
-    "place_array": ["Snelweg oprit / afrit", "Verzorgingsplaats (Snelweg)"],
-    "average_credits": 1510,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": { "traffic_unit": 1, "firetrucks": 1, "police_cars": 3 },
-    "chances": { "patient_transport": 55 },
-    "additional": {
-      "possible_patient": 1,
-      "filter_id": "police_station_missions",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "rescue_stations": 1,
-      "police_stations": 3,
-      "technical_aid": 1,
-      "fire_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 1008,
-    "additive_overlays": "",
-    "mission_categories": ["police", "technical_aid"]
   },
   {
     "id": "1009",
