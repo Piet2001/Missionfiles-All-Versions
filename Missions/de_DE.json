@@ -82526,5 +82526,408 @@
     "base_mission_id": 884,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "885",
+    "name": "Suche nach vermisster Person",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "coastal_helicopter": 1,
+      "oneof_coastal_rescue_boat_or_boat_large": 3
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 3,
+      "water_rescue_heliport_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 885,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "886",
+    "name": "Großangelegte Suche nach vermisster Besatzung",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "coastal_helicopter": 2,
+      "oneof_coastal_rescue_boat_or_boat_large": 5
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 6,
+      "coastal_rescue_count": 4,
+      "water_rescue_heliport_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 886,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "887",
+    "name": "Abschleppen eines manövrierunfähigen Kutters",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "oneof_coastal_rescue_boat_or_boat_large": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 26, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 887,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "888",
+    "name": "Rettung eines über Bord gegangenen Seglers",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": {
+      "coastal_helicopter": 1,
+      "oneof_coastal_rescue_boat_or_boat_large": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2,
+      "water_rescue_heliport_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 888,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "889",
+    "name": "Medizinische Erstversorgung eines erkrankten Fährpassagiers",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 5, 7],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Neurologie",
+        "Kardiologie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Neurologie, Kardiologie"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 889,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "890",
+    "name": "Freischleppen einer Segelyacht",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "coastal_boat_large": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 26, "coastal_rescue_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 890,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "891",
+    "name": "Rettung eines schwerverletzten Seglers",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "oneof_coastal_rescue_boat_or_boat_large": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1, 4, 6],
+      "patient_specialization_captions": [
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie",
+        "Neurochirurgie"
+      ],
+      "patient_specializations": "Allgemeine Chirurgie, Unfallchirurgie, Neurochirurgie"
+    },
+    "prerequisites": { "main_building": 26, "coastal_rescue_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 891,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "892",
+    "name": "Rettung eines beschädigten Segelbootes",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "oneof_coastal_rescue_boat_or_boat_large": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 892,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "893",
+    "name": "Befreiung der Fahrgäste einer aufgelaufenen Fähre",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "coastal_boat_large": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 26, "coastal_rescue_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 893,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "894",
+    "name": "Ausgebrannte Segelyacht",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8600,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": {
+      "coastal_helicopter": 2,
+      "oneof_coastal_rescue_boat_or_boat_large": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "coastal_rescue_count": 3,
+      "water_rescue_heliport_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 894,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "895",
+    "name": "Abschleppen eines defekten Wasserflugzeugs",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "oneof_coastal_rescue_boat_or_boat_large": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 26, "coastal_rescue_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 895,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
+  },
+  {
+    "id": "896",
+    "name": "Verletzte auf Segelboot",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3200,
+    "generated_by": "",
+    "icons": [
+      "/images/boat_gruen.png",
+      "/images/boat_gelb.png",
+      "/images/boat_rot.png"
+    ],
+    "requirements": { "oneof_coastal_rescue_boat_or_boat_large": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 896,
+    "additive_overlays": "",
+    "mission_categories": ["coastal"]
   }
 ]
