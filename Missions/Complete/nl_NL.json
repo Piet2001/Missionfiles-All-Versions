@@ -39535,17 +39535,23 @@
     "name": "Aanrijding snelweg, veroorzaker gevlucht",
     "place": "Snelweg oprit / afrit\nVerzorgingsplaats (Snelweg)",
     "place_array": ["Snelweg oprit / afrit", "Verzorgingsplaats (Snelweg)"],
-    "average_credits": 1510,
+    "average_credits": 2760,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "traffic_unit": 1, "firetrucks": 1, "police_cars": 3 },
+    "requirements": {
+      "police_helicopters": 1,
+      "traffic_unit": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
     "chances": { "patient_transport": 55 },
     "additional": {
       "possible_patient": 1,
+      "possible_patient_min": 1,
       "filter_id": "police_station_missions",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
@@ -39555,7 +39561,8 @@
       "main_building": 5,
       "rescue_stations": 1,
       "police_stations": 3,
-      "technical_aid": 1,
+      "police_helicopter_stations": 1,
+      "technical_aid": 2,
       "fire_stations": 1
     },
     "overlay_index": null,
@@ -39605,7 +39612,7 @@
     "overlay_index": null,
     "base_mission_id": 1009,
     "additive_overlays": "",
-    "mission_categories": ["fire", "technical_aid"]
+    "mission_categories": ["fire", "technical_aid", "urban"]
   },
   {
     "id": "1010",
