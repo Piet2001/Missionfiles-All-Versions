@@ -50676,5 +50676,113 @@
     "base_mission_id": 1000,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "1001",
+    "name": "Employee Slipped On Dropped Salmon",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "30-B-1",
+        "30-B-2",
+        "30-D-1",
+        "30-D-2",
+        "30-D-3"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1001,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1002",
+    "name": "Hand Pierced By Sharp Catfish Bone",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["27-B-2", "27-D-3"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1002,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "1003",
+    "name": "Burns Caused By Seafood Steamer Malfunction",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "7-A-1",
+        "7-A-3",
+        "7-C-2",
+        "7-C-3",
+        "7-D-1",
+        "7-D-2",
+        "7-D-3"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1003,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
