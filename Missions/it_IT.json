@@ -1218,6 +1218,65 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "41/a",
+    "name": "Incendio in officina meccanica",
+    "place": "Officina meccanica",
+    "place_array": ["Officina meccanica"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 25000,
+      "foam_needed": 500,
+      "fire_investigation": 1,
+      "oneof_police_patrol_or_municipal_police_crew": 2,
+      "firetrucks": 4
+    },
+    "chances": {
+      "platform_trucks": 40,
+      "battalion_chief_vehicles": 60,
+      "mobile_air_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 4,
+      "patient_it_code_possible": ["ZC03G", "ZC03R", "ZC01G"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "subsequent_missions_ids": [460],
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_investigation_count": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "42",
     "name": "Caduta accidentale",
     "place": "",
@@ -15444,6 +15503,7 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [729],
       "subsequent_mission_only": true
     },
     "prerequisites": {
@@ -15477,6 +15537,7 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [729],
       "subsequent_mission_only": true
     },
     "prerequisites": {
@@ -23974,6 +24035,44 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "643/a",
+    "name": "Scoperta di ordigni esplosivi in un veicolo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "battalion_chief_vehicles": 1,
+      "police_investigation": 1,
+      "criminal_investigation": 1,
+      "oneof_police_patrol_or_municipal_police_crew": 4,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "need_bomb_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 12,
+      "criminal_investigation_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 643,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "644",
     "name": "Incidente stradale - Trasporto di animali",
     "place": "",
@@ -24054,6 +24153,46 @@
     "overlay_index": null,
     "base_mission_id": 645,
     "additive_overlays": "",
+    "mission_categories": ["fire", "airport"]
+  },
+  {
+    "id": "645/a",
+    "name": "Materiale Sospetto sull'Aereo",
+    "place": "Piccolo aeroporto (pista)\nGrande aeroporto (pista)",
+    "place_array": ["Piccolo aeroporto (pista)", "Grande aeroporto (pista)"],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "arff": 1,
+      "police_investigation": 2,
+      "criminal_investigation": 1,
+      "firetrucks": 2,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "need_bomb_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 14,
+      "criminal_investigation_count": 2,
+      "airport": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "airport"]
   },
   {
@@ -27092,5 +27231,129 @@
     "base_mission_id": 729,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization"]
+  },
+  {
+    "id": "741",
+    "name": "Rinvenimento Cadavere",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "police_investigation": 2,
+      "criminal_investigation": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "criminal_investigation_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 741,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "742",
+    "name": "Valutazione del danno ambientale post-incendio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "game_warden": 2,
+      "fire_investigation": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "game_warden_count": 2,
+      "fire_investigation_count": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "743",
+    "name": "Ricerca Prove in Casa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_investigation": 2,
+      "criminal_investigation": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "criminal_investigation_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "744",
+    "name": "Sospetto incendio doloso",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "fire_investigation": 1,
+      "police_investigation": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1,
+      "fire_investigation_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 744,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
