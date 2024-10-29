@@ -3377,8 +3377,12 @@
   {
     "id": "105",
     "name": "Vykolejení vlaku",
-    "place": "Železniční přejezd",
-    "place_array": ["Železniční přejezd"],
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Železniční přejezd"
+    ],
     "average_credits": 10000,
     "generated_by": "",
     "icons": [
@@ -3411,13 +3415,21 @@
     "overlay_index": null,
     "base_mission_id": 105,
     "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
-    "id": "105-0",
+    "id": "105/a",
     "name": "Vykolejení vlaku",
-    "place": "Železniční přejezd",
-    "place_array": ["Železniční přejezd"],
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Železniční přejezd"
+    ],
     "average_credits": 10400,
     "generated_by": "",
     "icons": [
@@ -3449,16 +3461,24 @@
       "disaster_response_count": 1,
       "fire_stations": 15
     },
-    "overlay_index": 0,
+    "overlay_index": null,
     "base_mission_id": 105,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
-    "id": "106",
+    "id": "105/b",
     "name": "Vykolejení vlaku",
-    "place": "Železniční stanice (regionální doprava)",
-    "place_array": ["Železniční stanice (regionální doprava)"],
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Železniční přejezd"
+    ],
     "average_credits": 10000,
     "generated_by": "",
     "icons": [
@@ -3469,8 +3489,12 @@
     "requirements": {
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "firetrucks": 10,
+      "heavy_rescue_vehicles": 2,
+      "railway_fire_equipment": 1,
+      "railway_fire_investigation": 1,
+      "railway_fire_recovery": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 4,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 70 },
@@ -3486,18 +3510,27 @@
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 3,
+      "railway_fire": 2,
       "fire_stations": 15
     },
     "overlay_index": null,
-    "base_mission_id": 106,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "base_mission_id": 105,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
-    "id": "106-0",
+    "id": "105/ab",
     "name": "Vykolejení vlaku",
-    "place": "Železniční stanice (regionální doprava)",
-    "place_array": ["Železniční stanice (regionální doprava)"],
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Železniční přejezd"
+    ],
     "average_credits": 10400,
     "generated_by": "",
     "icons": [
@@ -3509,8 +3542,12 @@
       "battalion_chief_vehicles": 2,
       "fwk": 1,
       "hazmat_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "firetrucks": 10,
+      "heavy_rescue_vehicles": 2,
+      "railway_fire_equipment": 1,
+      "railway_fire_investigation": 1,
+      "railway_fire_recovery": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 4,
       "police_cars": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 70 },
@@ -3527,92 +3564,17 @@
       "rescue_stations": 3,
       "police_stations": 3,
       "disaster_response_count": 1,
-      "fire_stations": 15
-    },
-    "overlay_index": 0,
-    "base_mission_id": 106,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
-  },
-  {
-    "id": "107",
-    "name": "Vykolejení vlaku",
-    "place": "Železniční stanice (regionální a dálková doprava)",
-    "place_array": ["Železniční stanice (regionální a dálková doprava)"],
-    "average_credits": 10000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "hazmat_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "firetrucks": 10,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 100, "patient_critical_care": 70 },
-    "additional": {
-      "possible_patient": 4,
-      "possible_patient_min": 0,
-      "filter_id": "firehouse_missions",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Úrazová chirurgie"],
-      "patient_specializations": "Úrazová chirurgie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 3,
+      "railway_fire": 2,
       "fire_stations": 15
     },
     "overlay_index": null,
-    "base_mission_id": 107,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
-  },
-  {
-    "id": "107-0",
-    "name": "Vykolejení vlaku",
-    "place": "Železniční stanice (regionální a dálková doprava)",
-    "place_array": ["Železniční stanice (regionální a dálková doprava)"],
-    "average_credits": 10400,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 2,
-      "fwk": 1,
-      "hazmat_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "firetrucks": 10,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 100, "patient_critical_care": 70 },
-    "additional": {
-      "possible_patient": 4,
-      "possible_patient_min": 0,
-      "filter_id": "firehouse_missions",
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Úrazová chirurgie"],
-      "patient_specializations": "Úrazová chirurgie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 3,
-      "police_stations": 3,
-      "disaster_response_count": 1,
-      "fire_stations": 15
-    },
-    "overlay_index": 0,
-    "base_mission_id": 107,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "base_mission_id": 105,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
     "id": "108",
@@ -4912,8 +4874,12 @@
   {
     "id": "147",
     "name": "Požár vlakové soupravy",
-    "place": "Železniční přejezd",
-    "place_array": ["Železniční přejezd"],
+    "place": "Železniční stanice (regionální doprava)\nNákladové nádraží\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Nákladové nádraží",
+      "Železniční přejezd"
+    ],
     "average_credits": 3000,
     "generated_by": "",
     "icons": [
@@ -4936,14 +4902,18 @@
     "overlay_index": null,
     "base_mission_id": 147,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
-    "id": "149",
+    "id": "147/a",
     "name": "Požár vlakové soupravy",
-    "place": "Železniční stanice (regionální doprava)",
-    "place_array": ["Železniční stanice (regionální doprava)"],
-    "average_credits": 3000,
+    "place": "Železniční stanice (regionální doprava)\nNákladové nádraží\nŽelezniční přejezd",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Nákladové nádraží",
+      "Železniční přejezd"
+    ],
+    "average_credits": 3800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4952,45 +4922,27 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
+      "mobile_command_vehicles": 0,
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
+      "water_needed": 25000,
+      "foam_needed": 1300,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "oneof_fire_engine_or_railway_fire_engine_large": 1,
       "firetrucks": 4
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
-    "overlay_index": null,
-    "base_mission_id": 149,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
-  },
-  {
-    "id": "150",
-    "name": "Požár vlakové soupravy",
-    "place": "Nákladové nádraží",
-    "place_array": ["Nákladové nádraží"],
-    "average_credits": 3000,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "mobile_air_vehicles": 1,
-      "water_tankers": 1,
-      "firetrucks": 4
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 2,
+      "fire_stations": 13
     },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
     "overlay_index": null,
-    "base_mission_id": 150,
-    "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "base_mission_id": 147,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "151",
@@ -5884,7 +5836,41 @@
     "overlay_index": null,
     "base_mission_id": 174,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "railway_fire"]
+  },
+  {
+    "id": "174/a",
+    "name": "Nahlášena výbušnina na vlakovém nádraží",
+    "place": "Vlakové nádraží",
+    "place_array": ["Vlakové nádraží"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "battalion_chief_vehicles": 1,
+      "k9": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "bomb_disposal_count": 1,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 174,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "railway_fire"]
   },
   {
     "id": "175",
@@ -10855,7 +10841,52 @@
     "overlay_index": null,
     "base_mission_id": 300,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
+  },
+  {
+    "id": "300/a",
+    "name": "Velký požár železniční stanice",
+    "place": "Železniční stanice (regionální a dálková doprava)",
+    "place_array": ["Železniční stanice (regionální a dálková doprava)"],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 0,
+      "mobile_air_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 70000,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "oneof_fire_engine_or_railway_fire_engine_large": 1,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 6,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 300,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "301",
@@ -10923,7 +10954,55 @@
     "overlay_index": null,
     "base_mission_id": 302,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
+  },
+  {
+    "id": "302/a",
+    "name": "Střet osoby s vlakem",
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nKřížení železnic",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Křížení železnic"
+    ],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 0,
+      "two_way": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": {
+      "two_way": 50,
+      "patient_transport": 100,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "railway_fire": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 302,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "303",
@@ -13576,10 +13655,14 @@
     "overlay_index": null,
     "base_mission_id": 380,
     "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
-    "id": "380-0",
+    "id": "380/a",
     "name": "Náraz vlaku do spadlého stromu",
     "place": "Železnice",
     "place_array": ["Železnice"],
@@ -13612,10 +13695,114 @@
       "disaster_response_count": 1,
       "fire_stations": 6
     },
-    "overlay_index": 0,
+    "overlay_index": null,
     "base_mission_id": 380,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "380/b",
+    "name": "Náraz vlaku do spadlého stromu",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 0,
+      "railway_fire_equipment": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": {
+      "railway_fire_equipment": 50,
+      "patient_transport": 70,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "expansion_missions_ids": [105],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 380,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "380/ab",
+    "name": "Náraz vlaku do spadlého stromu",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 0,
+      "railway_fire_equipment": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": {
+      "railway_fire_equipment": 50,
+      "patient_transport": 70,
+      "helicopter": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "expansion_missions_ids": [105],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_count": 1,
+      "railway_fire": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 380,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
     "id": "381",
@@ -13958,14 +14145,18 @@
     "overlay_index": null,
     "base_mission_id": 388,
     "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
-    "id": "388-0",
+    "id": "388/a",
     "name": "Střet vlaku s vozidlem",
     "place": "Železniční přejezd",
     "place_array": ["Železniční přejezd"],
-    "average_credits": 6500,
+    "average_credits": 5300,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -14002,10 +14193,119 @@
       "disaster_response_count": 1,
       "fire_stations": 5
     },
-    "overlay_index": 0,
+    "overlay_index": null,
     "base_mission_id": 388,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "disaster_response_specialization"]
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "388/b",
+    "name": "Střet vlaku s vozidlem",
+    "place": "Železniční přejezd",
+    "place_array": ["Železniční přejezd"],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 0,
+      "heavy_rescue_vehicles": 0,
+      "traffic_car": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 30,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 388,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "388/ab",
+    "name": "Střet vlaku s vozidlem",
+    "place": "Železniční přejezd",
+    "place_array": ["Železniční přejezd"],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 0,
+      "fwk": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 0,
+      "traffic_car": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 30,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 388,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "disaster_response_specialization",
+      "railway_fire"
+    ]
   },
   {
     "id": "389",
@@ -16922,7 +17222,35 @@
     "overlay_index": null,
     "base_mission_id": 463,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
+  },
+  {
+    "id": "463/a",
+    "name": "Spadlý strom na železnici",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 463,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "464",
@@ -16974,7 +17302,36 @@
     "overlay_index": null,
     "base_mission_id": 465,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
+  },
+  {
+    "id": "465/a",
+    "name": "Požár trávy u železnice",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 20000,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "466",
@@ -17033,7 +17390,49 @@
     "overlay_index": null,
     "base_mission_id": 467,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "railway_fire"]
+  },
+  {
+    "id": "467/a",
+    "name": "Požár vlaku s hořlavými produkty",
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nKřížení železnic",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Křížení železnic"
+    ],
+    "average_credits": 4700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 0,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 0,
+      "water_needed": 30000,
+      "foam_needed": 1600,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "oneof_fire_engine_or_railway_fire_engine_large": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 467,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "railway_fire"]
   },
   {
     "id": "468",
@@ -23164,5 +23563,461 @@
     "base_mission_id": 640,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "652",
+    "name": "Požár vlaku v tunelu",
+    "place": "Železniční tunel",
+    "place_array": ["Železniční tunel"],
+    "average_credits": 23000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "k9": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "riot_police": 4,
+      "riot_police_command": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 100000,
+      "foam_needed": 6000,
+      "two_way": 1,
+      "railway_fire_investigation": 1,
+      "railway_fire_recovery": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 15,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 10,
+      "patient_critical_care": 70
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "riot_police": 1,
+      "railway_fire": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "653",
+    "name": "Sražená zvěř v kolejišti",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/cat_gruen.png",
+      "/images/cat_gelb.png",
+      "/images/cat_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_railway_fire_engine_or_disaster_response_road_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 653,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "654",
+    "name": "Porucha vlakové soupravy",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": { "railway_fire_investigation": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [655],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 654,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "655",
+    "name": "Evakuace cestujících z vlaku",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "two_way": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 655,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "656",
+    "name": "Vykolejení lokomotivy",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "railway_fire_equipment": 1,
+      "two_way": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "two_way": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 656,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "657",
+    "name": "Požár v železničním depu",
+    "place": "Zajezdnia kolejowa",
+    "place_array": ["Zajezdnia kolejowa"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 5,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 80000,
+      "foam_needed": 4500,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "oneof_fire_engine_or_railway_fire_engine_large": 1,
+      "firetrucks": 11,
+      "police_cars": 4
+    },
+    "chances": {
+      "hazmat_vehicles": 30,
+      "railway_fire_investigation": 10,
+      "patient_transport": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 657,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "658",
+    "name": "Únik chloru z železniční cisterny",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 8300,
+    "generated_by": "",
+    "icons": [
+      "/images/olfass_gruen.png",
+      "/images/olfass_gelb.png",
+      "/images/olfass_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 8000,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "mobile_air_vehicles": 20, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 10,
+      "railway_fire": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 658,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "659",
+    "name": "Zatopený podchod na nádraží",
+    "place": "Železniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)\nVlakové nádraží",
+    "place_array": [
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)",
+      "Vlakové nádraží"
+    ],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 2,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 1,
+      "min_pump_speed": 2000
+    },
+    "chances": { "crew_carrier": 50 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "water_damage_pump_count": 1,
+      "railway_fire": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 659,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "660",
+    "name": "Střet vysokorychlostního vlaku s kamionem",
+    "place": "Křížení železnic\nŽelezniční přejezd",
+    "place_array": ["Křížení železnic", "Železniční přejezd"],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "crew_carrier": 2,
+      "battalion_chief_vehicles": 3,
+      "fwk": 3,
+      "k9": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "riot_police": 4,
+      "riot_police_command": 1,
+      "road_rescue": 2,
+      "heavy_rescue_vehicles": 2,
+      "railway_fire_equipment": 1,
+      "railway_fire_investigation": 1,
+      "railway_fire_recovery": 2,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "riot_police": 1,
+      "railway_fire": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 660,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "661",
+    "name": "Požár odstaveného vagónu",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_needed": 25000,
+      "foam_needed": 1300,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "oneof_fire_engine_or_railway_fire_engine_large": 1,
+      "firetrucks": 4,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "railway_fire": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 661,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
+  },
+  {
+    "id": "662",
+    "name": "Osoba na vagonu zasažená el. proudem",
+    "place": "Železnice",
+    "place_array": ["Železnice"],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 100,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Kardiochirurgie"],
+      "patient_specializations": "Kardiochirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 662,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire"]
   }
 ]
