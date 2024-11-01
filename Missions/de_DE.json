@@ -82929,5 +82929,48 @@
     "base_mission_id": 896,
     "additive_overlays": "",
     "mission_categories": ["coastal"]
+  },
+  {
+    "id": "897",
+    "name": "Patientenübernahme von Ambulanzflug",
+    "place": "Flughafen (groß): Vorfeld / Standplätze\nFlughafen (klein): Flugzeug Standplatz",
+    "place_array": [
+      "Flughafen (groß): Vorfeld / Standplätze",
+      "Flughafen (klein): Flugzeug Standplatz"
+    ],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "nef": 60, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Gynäkologie",
+        "Urologie",
+        "Unfallchirurgie",
+        "Neurologie",
+        "Neurochirurgie",
+        "Kardiologie",
+        "Kardiochirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Gynäkologie, Urologie, Unfallchirurgie, Neurologie, Neurochirurgie, Kardiologie, Kardiochirurgie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 897,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
