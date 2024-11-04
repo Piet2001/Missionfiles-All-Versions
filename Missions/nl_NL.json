@@ -7659,6 +7659,47 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "241",
+    "name": "Zwemmer vermist (Klein)",
+    "place": "Meer",
+    "place_array": ["Meer"],
+    "average_credits": 1910,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "battalion_chief_vehicles": 1,
+      "diver_units": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "boats": 80, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [348, 349],
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 241,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "242",
     "name": "Verlaten kleding langs waterkant",
     "place": "Meer",
@@ -11781,6 +11822,103 @@
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
     "base_mission_id": 347,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "348",
+    "name": "Zwemmer vermist (Middel)",
+    "place": "Meer",
+    "place_array": ["Meer"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "boats": 80,
+      "platform_trucks": 10,
+      "heavy_rescue_vehicles": 10,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [349],
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 3,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 348,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "349",
+    "name": "Zwemmer vermist (Grip 1)",
+    "place": "Meer",
+    "place_array": ["Meer"],
+    "average_credits": 5350,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "coastal_helicopter": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "diver_units": 3,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "boats": 80,
+      "platform_trucks": 40,
+      "heavy_rescue_vehicles": 40,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 5,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "coastal_helicopter_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 349,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
