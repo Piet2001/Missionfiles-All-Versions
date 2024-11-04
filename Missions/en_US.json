@@ -50784,5 +50784,112 @@
     "base_mission_id": 1003,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1004",
+    "name": "Crushed Foot Caused By Produce Cart Tip Over",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "21-B-3",
+        "21-B-2",
+        "21-B-4",
+        "27-D-4",
+        "27-D-3"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1004,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1005",
+    "name": "Customer Severly Constipated In Supermarket Restroom",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["26-B-7"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1005,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1006",
+    "name": "Cashier Brawl in Break Room",
+    "place": "Supermarket (small)\nSupermarket (big)",
+    "place_array": ["Supermarket (small)", "Supermarket (big)"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "4-D-1",
+        "4-D-3",
+        "4-D-5",
+        "4-B-2",
+        "4-A-1",
+        "6-E-1",
+        "9-E-2"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 1,
+      "police_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1006,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
