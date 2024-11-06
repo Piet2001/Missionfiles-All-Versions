@@ -20887,19 +20887,19 @@
     "average_credits": 1500,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {
       "oneof_fire_engine_or_rescue_or_ladder": 1,
       "firetrucks": 1
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 75 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "filter_id": "firehouse_missions",
+      "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
       "patient_specializations": "Yleislääkäri"
@@ -20916,7 +20916,7 @@
   },
   {
     "id": "637",
-    "name": "443 Leipomouunin räjähdys supermarketissa",
+    "name": "442 Leipomouunin räjähdys supermarketissa",
     "place": "Valintamyymälä (pieni)\nValintamyymälä (iso)",
     "place_array": ["Valintamyymälä (pieni)", "Valintamyymälä (iso)"],
     "average_credits": 3000,
@@ -20926,7 +20926,12 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 2 },
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2
+    },
     "chances": { "patient_transport": 20 },
     "additional": {
       "possible_patient": 6,
@@ -20948,25 +20953,25 @@
   },
   {
     "id": "638",
-    "name": "744 Teurastaja loukkaantui vannesahakoneen toimintahäiriön vuoksi.",
+    "name": "744 Lihamyyjä loukkaantui lihanleikkauskoneen toimintahäiriön vuoksi.",
     "place": "Valintamyymälä (pieni)\nValintamyymälä (iso)",
     "place_array": ["Valintamyymälä (pieni)", "Valintamyymälä (iso)"],
     "average_credits": 1500,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {
       "oneof_fire_engine_or_rescue_or_ladder": 1,
       "firetrucks": 1
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "filter_id": "firehouse_missions",
+      "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
       "patient_specializations": "Yleislääkäri"
