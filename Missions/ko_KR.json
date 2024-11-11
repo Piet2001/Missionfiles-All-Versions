@@ -18298,5 +18298,96 @@
     "base_mission_id": 556,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "557",
+    "name": "떨어진 연어에 미끄러진 직원",
+    "place": "슈퍼마켓(소형)\n슈퍼마켓(대형)",
+    "place_array": ["슈퍼마켓(소형)", "슈퍼마켓(대형)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 557,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "558",
+    "name": "날카로운 메기 뼈에 손 찔림",
+    "place": "슈퍼마켓(소형)\n슈퍼마켓(대형)",
+    "place_array": ["슈퍼마켓(소형)", "슈퍼마켓(대형)"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 558,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "559",
+    "name": "해산물 찜기 오작동으로 인한 화상",
+    "place": "슈퍼마켓(소형)\n슈퍼마켓(대형)",
+    "place_array": ["슈퍼마켓(소형)", "슈퍼마켓(대형)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 559,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
