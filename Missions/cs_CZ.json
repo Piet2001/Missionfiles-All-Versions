@@ -23749,6 +23749,96 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "647",
+    "name": "Rozdrcená noha způsobená převrácením vozíku s produkty",
+    "place": "Supermarket (malý)\nSupermarket (velký)",
+    "place_array": ["Supermarket (malý)", "Supermarket (velký)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 647,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "648",
+    "name": "Zákazník s vážnou zácpou na toaletě v supermarketu",
+    "place": "Supermarket (malý)\nSupermarket (velký)",
+    "place_array": ["Supermarket (malý)", "Supermarket (velký)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 648,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "649",
+    "name": "Rvačka pokladních v odpočívárně",
+    "place": "Supermarket (malý)\nSupermarket (velký)",
+    "place_array": ["Supermarket (malý)", "Supermarket (velký)"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 649,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "652",
     "name": "Požár vlaku v tunelu",
     "place": "Železniční tunel",
