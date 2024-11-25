@@ -14913,10 +14913,10 @@
   },
   {
     "id": "425",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Klein)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 850,
+    "average_credits": 840,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -14926,10 +14926,10 @@
     "requirements": { "platform_trucks": 1, "firetrucks": 1 },
     "chances": { "platform_trucks": 20 },
     "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "expansion_missions_ids": [426, 427, 428, 429],
+      "filter_id": "firehouse_missions"
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 425,
     "additive_overlays": "",
@@ -14937,10 +14937,10 @@
   },
   {
     "id": "426",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Middel)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 1550,
+    "average_credits": 1350,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -14952,10 +14952,10 @@
       "battalion_chief_vehicles": 1,
       "firetrucks": 2
     },
-    "chances": { "platform_trucks": 80 },
+    "chances": {},
     "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "expansion_missions_ids": [427, 428, 429],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 6 },
     "overlay_index": null,
@@ -14965,10 +14965,10 @@
   },
   {
     "id": "427",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Groot)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 2500,
+    "average_credits": 3550,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -14990,13 +14990,13 @@
       "water_tankers": 40
     },
     "additional": {
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "expansion_missions_ids": [428, 429],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
-      "fire_stations": 12
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 427,
@@ -15005,10 +15005,10 @@
   },
   {
     "id": "428",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Grip 1)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 6540,
+    "average_credits": 9150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15024,23 +15024,38 @@
       "water_tankers": 1,
       "gwmess": 1,
       "heavy_rescue_vehicles": 1,
-      "spokesman": 1,
+      "water_needed": 8000,
       "firetrucks": 4,
       "police_cars": 2
     },
     "chances": {
       "mobile_air_vehicles": 80,
-      "gwmess": 20,
-      "heavy_rescue_vehicles": 20
+      "heavy_rescue_vehicles": 20,
+      "nef": 5,
+      "patient_transport": 50
     },
     "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [429],
       "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "subsequent_missions_ids": [877],
+      "patient_specialization_ids": [1, 8, 7, 0, 5, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Cardiochirurgie",
+        "Cardiologie",
+        "Interne Geneeskunde",
+        "Neurologie",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Cardiochirurgie, Cardiologie, Interne Geneeskunde, Neurologie, Traumatologie"
     },
     "prerequisites": {
       "main_building": 0,
+      "rescue_stations": 10,
       "police_stations": 2,
-      "fire_stations": 15
+      "fire_stations": 18
     },
     "overlay_index": null,
     "base_mission_id": 428,
@@ -15049,10 +15064,10 @@
   },
   {
     "id": "428-0",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Grip 1)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 8240,
+    "average_credits": 11050,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15069,25 +15084,39 @@
       "water_tankers": 1,
       "gwmess": 1,
       "heavy_rescue_vehicles": 1,
-      "spokesman": 1,
-      "foam_needed": 500,
+      "water_needed": 8000,
+      "foam_needed": 1500,
       "firetrucks": 4,
       "police_cars": 2
     },
     "chances": {
       "mobile_air_vehicles": 80,
-      "gwmess": 20,
-      "heavy_rescue_vehicles": 20
+      "heavy_rescue_vehicles": 20,
+      "nef": 5,
+      "patient_transport": 50
     },
     "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [429],
       "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true
+      "subsequent_missions_ids": [877],
+      "patient_specialization_ids": [1, 8, 7, 0, 5, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Cardiochirurgie",
+        "Cardiologie",
+        "Interne Geneeskunde",
+        "Neurologie",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Cardiochirurgie, Cardiologie, Interne Geneeskunde, Neurologie, Traumatologie"
     },
     "prerequisites": {
       "main_building": 0,
+      "rescue_stations": 10,
       "police_stations": 2,
-      "fire_support_count": 2,
-      "fire_stations": 15
+      "fire_stations": 18
     },
     "overlay_index": 0,
     "base_mission_id": 428,
@@ -15096,10 +15125,10 @@
   },
   {
     "id": "429",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Grip 2)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 9420,
+    "average_credits": 14250,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15115,25 +15144,44 @@
       "hazmat_vehicles": 1,
       "water_tankers": 2,
       "gwmess": 2,
+      "ovdp": 1,
       "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 10000,
       "firetrucks": 8,
-      "police_cars": 2
+      "police_cars": 4
     },
     "chances": {
+      "mobile_air_vehicles": 80,
       "hazmat_vehicles": 50,
-      "gwmess": 50,
-      "heavy_rescue_vehicles": 40
+      "ovdp": 50,
+      "heavy_rescue_vehicles": 60,
+      "nef": 5,
+      "patient_transport": 50
     },
     "additional": {
-      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [429],
       "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [877],
-      "fire_alarm_system_possible": true
+      "patient_specialization_ids": [1, 8, 7, 0, 5, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Cardiochirurgie",
+        "Cardiologie",
+        "Interne Geneeskunde",
+        "Neurologie",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Cardiochirurgie, Cardiologie, Interne Geneeskunde, Neurologie, Traumatologie"
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 2,
-      "fire_stations": 22
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 30
     },
     "overlay_index": null,
     "base_mission_id": 429,
@@ -15142,10 +15190,10 @@
   },
   {
     "id": "429-0",
-    "name": "Brand in bouwmarkt",
+    "name": "Brand in bouwmarkt (Grip 2)",
     "place": "Bouwmarkt",
     "place_array": ["Bouwmarkt"],
-    "average_credits": 11970,
+    "average_credits": 17150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15162,27 +15210,45 @@
       "hazmat_vehicles": 1,
       "water_tankers": 2,
       "gwmess": 2,
+      "ovdp": 1,
       "heavy_rescue_vehicles": 1,
-      "foam_needed": 750,
+      "spokesman": 1,
+      "water_needed": 10000,
+      "foam_needed": 2500,
       "firetrucks": 8,
-      "police_cars": 2
+      "police_cars": 4
     },
     "chances": {
+      "mobile_air_vehicles": 80,
       "hazmat_vehicles": 50,
-      "gwmess": 50,
-      "heavy_rescue_vehicles": 40
+      "ovdp": 50,
+      "heavy_rescue_vehicles": 60,
+      "nef": 5,
+      "patient_transport": 50
     },
     "additional": {
-      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "expansion_missions_ids": [429],
       "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [877],
-      "fire_alarm_system_possible": true
+      "patient_specialization_ids": [1, 8, 7, 0, 5, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Cardiochirurgie",
+        "Cardiologie",
+        "Interne Geneeskunde",
+        "Neurologie",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Cardiochirurgie, Cardiologie, Interne Geneeskunde, Neurologie, Traumatologie"
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 2,
-      "fire_support_count": 3,
-      "fire_stations": 22
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 30
     },
     "overlay_index": 0,
     "base_mission_id": 429,
