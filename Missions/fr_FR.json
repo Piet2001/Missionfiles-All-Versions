@@ -30064,5 +30064,98 @@
     "base_mission_id": 797,
     "additive_overlays": "",
     "mission_categories": ["swat"]
+  },
+  {
+    "id": "798",
+    "name": "Incendie dans un fast-food",
+    "place": "Restauration rapide",
+    "place_array": ["Restauration rapide"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 5,
+      "firetrucks": 3,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 798,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "799",
+    "name": "Feu dans un bâtiment d’expédition de marchandises",
+    "place": "Entrepôt",
+    "place_array": ["Entrepôt"],
+    "average_credits": 20900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 10,
+      "oneof_fire_engine_or_rescue": 8,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 799,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "fire_support_specialization"]
   }
 ]
