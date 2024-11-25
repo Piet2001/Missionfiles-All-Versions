@@ -28457,5 +28457,95 @@
     "base_mission_id": 785,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "786",
+    "name": "Zmiażdżona stopa w wyniku przewrócenia się wózka z produktami",
+    "place": "Supermarket (mały)\nSupermarket (duży)",
+    "place_array": ["Supermarket (mały)", "Supermarket (duży)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 786,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "787",
+    "name": "Klient z poważnymi zaparciami w toalecie supermarketu",
+    "place": "Supermarket (mały)\nSupermarket (duży)",
+    "place_array": ["Supermarket (mały)", "Supermarket (duży)"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 787,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "788",
+    "name": "Bójka kasjerów w pokoju socjalnym",
+    "place": "Supermarket (mały)\nSupermarket (duży)",
+    "place_array": ["Supermarket (mały)", "Supermarket (duży)"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 788,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
