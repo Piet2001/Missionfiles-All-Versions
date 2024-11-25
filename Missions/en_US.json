@@ -50597,11 +50597,11 @@
     "mission_categories": ["tow_trucks", "police"]
   },
   {
-    "id": "1008",
-    "name": "Fired Employee Spills Cleaning Chemicals",
-    "place": "Supermarket (small)\nSupermarket (big)",
-    "place_array": ["Supermarket (small)", "Supermarket (big)"],
-    "average_credits": 2500,
+    "id": "1009",
+    "name": "Fire in a lithium battery manufacturing factory",
+    "place": "Factory",
+    "place_array": ["Factory"],
+    "average_credits": 11500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -50609,44 +50609,31 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
       "hazmat_vehicles": 2,
-      "firetrucks": 3,
-      "police_cars": 4,
-      "personnel_educations": { "gw_gefahrgut": 8 }
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 50000,
+      "foam_needed": 10000,
+      "firetrucks": 12,
+      "police_cars": 6
     },
-    "chances": { "patient_transport": 20 },
-    "additional": {
-      "possible_patient": 10,
-      "possible_patient_min": 4,
-      "min_possible_prisoners": 1,
-      "max_possible_prisoners": 1,
-      "filter_id": "firehouse_missions",
-      "patient_us_code_possible": [
-        "6-C-1",
-        "6-D-1",
-        "6-D-2",
-        "6-E-1",
-        "8-C-1",
-        "8-D-1",
-        "8-D-2",
-        "8-D-4",
-        "8-D-5",
-        "8-D-6"
-      ],
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal",
-      "personnel_educations": { "HazMat": 8 }
-    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
-      "fire_stations": 1
+      "police_stations": 6,
+      "fire_support_count": 2,
+      "fire_stations": 20
     },
     "overlay_index": null,
-    "base_mission_id": 1008,
+    "base_mission_id": 1009,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "rural"]
+    "mission_categories": ["fire", "fire_support_specialization", "rural"]
   }
 ]
