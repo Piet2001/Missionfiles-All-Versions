@@ -51015,5 +51015,440 @@
     "base_mission_id": 1009,
     "additive_overlays": "",
     "mission_categories": ["fire", "fire_support_specialization", "rural"]
+  },
+  {
+    "id": "1011",
+    "name": "Missing Person near water",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "battalion_chief_vehicles": 1,
+      "police_helicopters": 1,
+      "firetrucks": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 100, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 9,
+      "average_min_police_personnel": 12,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "4-D-1",
+        "4-D-3",
+        "4-D-5",
+        "4-B-2",
+        "4-A-1",
+        "6-E-1",
+        "9-E-2"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1011,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1012",
+    "name": "Searching for a drowned person in a lake",
+    "place": "Lake",
+    "place_array": ["Lake"],
+    "average_credits": 8400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 4,
+      "battalion_chief_vehicles": 1,
+      "k9": 1,
+      "police_helicopters": 1,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": [
+        "4-D-1",
+        "4-D-3",
+        "4-D-5",
+        "4-B-2",
+        "4-A-1",
+        "6-E-1",
+        "9-E-2"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Cardiac Surgery"],
+      "patient_specializations": "Cardiac Surgery"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 1012,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1013",
+    "name": "Police Search",
+    "place": "Coast Line\nBeach",
+    "place_array": ["Coast Line", "Beach"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "boats": 2, "police_cars": 4 },
+    "chances": {},
+    "additional": { "filter_id": "water_watch_missions" },
+    "prerequisites": {
+      "main_building": -1,
+      "wasserrettung": 5,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1013,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1014",
+    "name": "Escaped Prisoner trapped in Swamp",
+    "place": "Swamp",
+    "place_array": ["Swamp"],
+    "average_credits": 9400,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "k9": 4,
+      "heavy_rescue_vehicles": 1,
+      "sheriff": 1,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 16,
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 2,
+      "police_stations": 10,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1014,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1014/a",
+    "name": "Escaped Prisoner trapped in Swamp",
+    "place": "Swamp",
+    "place_array": ["Swamp"],
+    "average_credits": 10650,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "k9": 4,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 1,
+      "sheriff": 1,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 16,
+      "filter_id": "water_watch_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 2,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1014,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1015",
+    "name": "Bridge collapse Traps Prisoner Transport in River",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 11800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fbi": 1,
+      "mobile_air_vehicles": 1,
+      "investigation": 1,
+      "k9": 4,
+      "heavy_rescue_vehicles": 2,
+      "sheriff": 1,
+      "swat_armored_vehicle": 1,
+      "firetrucks": 5,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "min_possible_prisoners": 8,
+      "max_possible_prisoners": 20,
+      "swat_personnel": 24,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["22-D-3X"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 2,
+      "rescue_stations": 10,
+      "police_stations": 13,
+      "federalpolice_stations": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 1015,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1015/a",
+    "name": "Bridge collapse Traps Prisoner Transport in River",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fbi": 1,
+      "mobile_air_vehicles": 1,
+      "investigation": 1,
+      "k9": 4,
+      "heavy_rescue_vehicles": 2,
+      "sheriff": 1,
+      "swat_armored_vehicle": 1,
+      "technical_rescue": 2,
+      "firetrucks": 5,
+      "police_cars": 10,
+      "personnel_educations": { "technical_rescue": 12 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "min_possible_prisoners": 8,
+      "max_possible_prisoners": 20,
+      "swat_personnel": 24,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["22-D-3X"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 12 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 2,
+      "rescue_stations": 10,
+      "police_stations": 13,
+      "federalpolice_stations": 1,
+      "personnel_educations": { "technical_rescue": 24 },
+      "technical_rescue_equipment": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 1015,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1016",
+    "name": "Fleeing Suspect jumps off Bridge",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "boats": 1, "k9": 2, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 1,
+      "police_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1016,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1017",
+    "name": "Suspect trapped in flooded Basement",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "water_tankers": 1,
+      "k9": 1,
+      "heavy_rescue_vehicles": 1,
+      "sheriff": 1,
+      "flood_equipment": 1,
+      "police_cars": 3,
+      "min_pump_speed": 1000
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 4,
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 20000
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 2,
+      "police_stations": 10,
+      "water_damage_pump_count": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1017,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "1018",
+    "name": "Hijacked Plane crash lands into Water",
+    "place": "Lake\nRiver",
+    "place_array": ["Lake", "River"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "boats": 4,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "k9": 2,
+      "heavy_rescue_vehicles": 1,
+      "sheriff": 1,
+      "swat_armored_vehicle": 2,
+      "foam_needed": 100,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": { "hazmat_vehicles": 50, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 6,
+      "swat_personnel": 8,
+      "filter_id": "water_watch_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "wasserrettung": 3,
+      "rescue_stations": 5,
+      "police_stations": 12,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1018,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   }
 ]
