@@ -511,8 +511,8 @@ jobs:
     - name: Update
       run: |
         git pull
-        curl -X GET https://www.dispetcher112.ru/einsaetze.json > Missions/ru_RU.json
-        curl -X GET https://www.dispetcher112.ru/alliance_event_types.json > Events/ru_RU.json
+        curl -X GET https://www.dispetcher-112.com/einsaetze.json > Missions/ru_RU.json
+        curl -X GET https://www.dispetcher-112.com/alliance_event_types.json > Events/ru_RU.json
                 
     - name: json-syntax-check
       uses: limitusus/json-syntax-check@v1
