@@ -1672,9 +1672,9 @@
     "average_credits": 3310,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -1698,6 +1698,47 @@
     "overlay_index": null,
     "base_mission_id": 36,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "36/a",
+    "name": "Brennender Güterwaggon",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 3710,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "railway_fire": 1,
+      "firetrucks": 4
+    },
+    "chances": {
+      "hazmat_dekon": 10,
+      "gwmess": 20,
+      "heavy_rescue_vehicles": 30
+    },
+    "additional": {
+      "expansion_missions_ids": [830],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": false
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 36,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -3115,9 +3156,9 @@
     "average_credits": 1800,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
@@ -3149,6 +3190,52 @@
     "overlay_index": null,
     "base_mission_id": 84,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "84/a",
+    "name": "Brennende Lok",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "mobile_air_vehicles": 30,
+      "heavy_rescue_vehicles": 50,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [830],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 84,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -18150,9 +18237,9 @@
     "average_credits": 6050,
     "generated_by": "",
     "icons": [
-      "/images/olfass_gruen.png",
-      "/images/olfass_gelb.png",
-      "/images/olfass_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -18191,9 +18278,9 @@
     "average_credits": 6450,
     "generated_by": "",
     "icons": [
-      "/images/olfass_gruen.png",
-      "/images/olfass_gelb.png",
-      "/images/olfass_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -18224,6 +18311,94 @@
     "overlay_index": null,
     "base_mission_id": 271,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "271/b",
+    "name": "Beschädigter Kesselwagen",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 6450,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "railway_fire": 1,
+      "firetrucks": 10,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "thw": 1,
+      "thw_gkw_count": 1,
+      "railway_fire": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "271/ab",
+    "name": "Beschädigter Kesselwagen",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 6850,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "railway_fire": 1,
+      "firetrucks": 10,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "railway_fire": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -19373,9 +19548,9 @@
     "average_credits": 1500,
     "generated_by": "",
     "icons": [
-      "/images/sawmill_gruen.png",
-      "/images/sawmill_gelb.png",
-      "/images/sawmill_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 1,
@@ -19389,6 +19564,37 @@
     "overlay_index": null,
     "base_mission_id": 280,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "280/a",
+    "name": "Baum auf Oberleitung",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 280,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -28837,9 +29043,9 @@
     "average_credits": 900,
     "generated_by": "",
     "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
@@ -28864,6 +29070,42 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "379/a",
+    "name": "PKW im Gleisbett",
+    "place": "Bahnhof (Regionalverkehr)",
+    "place_array": ["Bahnhof (Regionalverkehr)"],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "fwk": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 379,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "380",
     "name": "PKW im Gleisbett",
     "place": "Bahnhof (Regional und Fernverkehr)",
@@ -28871,9 +29113,9 @@
     "average_credits": 900,
     "generated_by": "",
     "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
@@ -28898,6 +29140,42 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "380/a",
+    "name": "PKW im Gleisbett",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "fwk": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 380,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "381",
     "name": "PKW im Gleisbett",
     "place": "Güterbahnhof",
@@ -28905,9 +29183,9 @@
     "average_credits": 900,
     "generated_by": "",
     "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
@@ -28932,6 +29210,42 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "381/a",
+    "name": "PKW im Gleisbett",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "fwk": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 381,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "382",
     "name": "PKW im Gleisbett",
     "place": "Bahnübergang",
@@ -28939,9 +29253,9 @@
     "average_credits": 900,
     "generated_by": "",
     "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
@@ -28964,6 +29278,43 @@
     "overlay_index": null,
     "base_mission_id": 382,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "382/a",
+    "name": "PKW im Gleisbett",
+    "place": "Bahnübergang",
+    "place_array": ["Bahnübergang"],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "fwk": 20 },
+    "additional": {
+      "expansion_missions_ids": [237],
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 382,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -57086,9 +57437,9 @@
     "average_credits": 13000,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 5,
@@ -57140,9 +57491,9 @@
     "average_credits": 13800,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 5,
@@ -57196,9 +57547,9 @@
     "average_credits": 15400,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 5,
@@ -57249,6 +57600,62 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "606/c",
+    "name": "Brennender Bahnhof",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 2,
+      "thw_gkw": 3,
+      "thw_lkw": 2,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "railway_fire": 2,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 8,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 3,
+      "railway_fire": 2,
+      "fire_stations": 32
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "606/ab",
     "name": "Brennender Bahnhof",
     "place": "Bahnhof (Regional und Fernverkehr)",
@@ -57256,9 +57663,9 @@
     "average_credits": 16200,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 5,
@@ -57308,6 +57715,190 @@
     "overlay_index": null,
     "base_mission_id": 606,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "606/ac",
+    "name": "Brennender Bahnhof",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 14200,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 2,
+      "thw_gkw": 3,
+      "thw_lkw": 2,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "railway_fire": 2,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 10,
+      "railway_fire": 2,
+      "fire_stations": 32
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "606/bc",
+    "name": "Brennender Bahnhof",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 15800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 2,
+      "thw_gkw": 3,
+      "thw_lkw": 2,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "railway_fire": 2,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 8,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 3,
+      "thw_command": 1,
+      "railway_fire": 2,
+      "fire_stations": 32
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "606/abc",
+    "name": "Brennender Bahnhof",
+    "place": "Bahnhof (Regional und Fernverkehr)",
+    "place_array": ["Bahnhof (Regional und Fernverkehr)"],
+    "average_credits": 16600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "water_tankers": 1,
+      "gwmess": 3,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 2,
+      "thw_gkw": 3,
+      "thw_lkw": 2,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "railway_fire": 2,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_fg_raeumen_count": 2,
+      "thw_gkw_count": 3,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "railway_fire": 2,
+      "fire_stations": 32
+    },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -57876,6 +58467,108 @@
     "overlay_index": null,
     "base_mission_id": 617,
     "additive_overlays": "a",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "617/b",
+    "name": "Güterzug entgleist",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "gwoil": 1,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 2,
+      "railway_fire": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "gwoil": 10, "nef": 15, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 2,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 617,
+    "additive_overlays": "b",
+    "mission_categories": ["thw"]
+  },
+  {
+    "id": "617/ab",
+    "name": "Güterzug entgleist",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "gwoil": 1,
+      "police_service_group_leader": 1,
+      "thw_gkw": 2,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 2,
+      "railway_fire": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "gwoil": 10, "nef": 15, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "technical_aid_organization_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_gkw_count": 2,
+      "police_service_group_leader": 5,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 617,
+    "additive_overlays": "ab",
     "mission_categories": ["thw"]
   },
   {
@@ -59772,6 +60465,134 @@
     "overlay_index": null,
     "base_mission_id": 639,
     "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "639/b",
+    "name": "Gefahrgutzug verunglückt",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 6400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "gwmess": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "railway_fire": 2,
+      "firetrucks": 10,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 60,
+      "patient_transport": 85,
+      "helicopter": 1
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "railway_fire": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 639,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "639/ab",
+    "name": "Gefahrgutzug verunglückt",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "gwmess": 2,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "railway_fire": 2,
+      "firetrucks": 10,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_command_vehicles": 50,
+      "fwk": 50,
+      "nef": 60,
+      "patient_transport": 85,
+      "helicopter": 1
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "allow_police_motorcycle_instead_of_fustw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "police_service_group_leader": 5,
+      "railway_fire": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 639,
+    "additive_overlays": "ab",
     "mission_categories": ["fire"]
   },
   {
@@ -71423,6 +72244,51 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "824/a",
+    "name": "Person zwischen Bahnsteig und Zug eingeklemmt",
+    "place": "Straßenbahnhaltestelle\nBahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)",
+    "place_array": [
+      "Straßenbahnhaltestelle",
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)"
+    ],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "nef": 80, "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 824,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "825",
     "name": "PKW brennt in Tunnel",
     "place": "Tunnel",
@@ -72748,9 +73614,9 @@
     "average_credits": 4000,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 1,
@@ -72792,9 +73658,9 @@
     "average_credits": 4400,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "platform_trucks": 1,
@@ -72831,6 +73697,100 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "829/b",
+    "name": "Brennender Regionalbahnhof",
+    "place": "Bahnhof (Regionalverkehr)",
+    "place_array": ["Bahnhof (Regionalverkehr)"],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 20,
+      "nef": 25,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 3,
+      "railway_fire": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 829,
+    "additive_overlays": "b",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "829/ab",
+    "name": "Brennender Regionalbahnhof",
+    "place": "Bahnhof (Regionalverkehr)",
+    "place_array": ["Bahnhof (Regionalverkehr)"],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 20,
+      "nef": 25,
+      "patient_transport": 40
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 3,
+      "police_service_group_leader": 5,
+      "railway_fire": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 829,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "830",
     "name": "Brennender Güterbahnhof",
     "place": "Güterbahnhof",
@@ -72838,9 +73798,9 @@
     "average_credits": 11500,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -72895,9 +73855,9 @@
     "average_credits": 11900,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -72954,9 +73914,9 @@
     "average_credits": 11900,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -73006,6 +73966,65 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "830/c",
+    "name": "Brennender Güterbahnhof",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 11900,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 2,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "railway_fire": 2,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "hazmat_dekon": 20, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 3,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "railway_fire": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 830,
+    "additive_overlays": "c",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "830/ab",
     "name": "Brennender Güterbahnhof",
     "place": "Güterbahnhof",
@@ -73013,9 +74032,9 @@
     "average_credits": 12300,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
     ],
     "requirements": {
       "hazmat_dekon": 1,
@@ -73064,6 +74083,191 @@
     "overlay_index": null,
     "base_mission_id": 830,
     "additive_overlays": "ab",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "830/ac",
+    "name": "Brennender Güterbahnhof",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 12300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 2,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "railway_fire": 2,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "hazmat_dekon": 20, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 3,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "railway_fire": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 830,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "830/bc",
+    "name": "Brennender Güterbahnhof",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 12300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 2,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "railway_fire": 2,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "hazmat_dekon": 20, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 3,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "railway_fire": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 830,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "830/abc",
+    "name": "Brennender Güterbahnhof",
+    "place": "Güterbahnhof",
+    "place_array": ["Güterbahnhof"],
+    "average_credits": 12700,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "hazmat_dekon": 1,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 3,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 2,
+      "thw_lkw": 1,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "drone": 1,
+      "railway_fire": 2,
+      "firetrucks": 20,
+      "police_cars": 6
+    },
+    "chances": { "hazmat_dekon": 20, "nef": 25, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "max_police_motorcycle_replacing_police_cars": 3,
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "railway_fire": 2,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 830,
+    "additive_overlays": "abc",
     "mission_categories": ["fire"]
   },
   {
@@ -84001,6 +85205,310 @@
     "overlay_index": null,
     "base_mission_id": 901,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "904",
+    "name": "Person unter Zug",
+    "place": "Bahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nGüterbahnhof\nBahnübergang",
+    "place_array": [
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)",
+      "Güterbahnhof",
+      "Bahnübergang"
+    ],
+    "average_credits": 410,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "railway_fire": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "nef": 90, "patient_transport": 100, "helicopter": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "railway_fire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 904,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "905",
+    "name": "Rangierunfall",
+    "place": "Bahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nGüterbahnhof",
+    "place_array": [
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)",
+      "Güterbahnhof"
+    ],
+    "average_credits": 950,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": { "railway_fire": 1, "police_cars": 2 },
+    "chances": { "nef": 60, "patient_transport": 70, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "railway_fire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 905,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "906",
+    "name": "Personensuche bei Schnellfahrstrecke",
+    "place": "Bahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nGüterbahnhof\nBahnübergang",
+    "place_array": [
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)",
+      "Güterbahnhof",
+      "Bahnübergang"
+    ],
+    "average_credits": 1855,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "railway_fire": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 906,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "907",
+    "name": "Eingleisen einer U-Bahn",
+    "place": "U-Bahn Station",
+    "place_array": ["U-Bahn Station"],
+    "average_credits": 410,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": { "railway_fire": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "railway_fire": 1 },
+    "overlay_index": null,
+    "base_mission_id": 907,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "908",
+    "name": "Verkehrsunfall mit Straßenbahn",
+    "place": "Straßenbahnhaltestelle",
+    "place_array": ["Straßenbahnhaltestelle"],
+    "average_credits": 1760,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": { "railway_fire": 1, "firetrucks": 2, "police_cars": 3 },
+    "chances": { "nef": 35, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "railway_fire": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 908,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "909",
+    "name": "Straßenbahn entgleist",
+    "place": "Straßenbahnhaltestelle",
+    "place_array": ["Straßenbahnhaltestelle"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "fwk": 1,
+      "railway_fire": 1,
+      "firetrucks": 2,
+      "police_cars": 4
+    },
+    "chances": { "nef": 25, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "railway_fire": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 909,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "910",
+    "name": "Personenzug entgleist",
+    "place": "Bahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nGüterbahnhof\nBahnübergang",
+    "place_array": [
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)",
+      "Güterbahnhof",
+      "Bahnübergang"
+    ],
+    "average_credits": 4220,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 2,
+      "railway_fire": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "nef": 80, "patient_transport": 10, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 3,
+      "railway_fire": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 910,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "910/a",
+    "name": "Personenzug entgleist",
+    "place": "Bahnhof (Regionalverkehr)\nBahnhof (Regional und Fernverkehr)\nGüterbahnhof\nBahnübergang",
+    "place_array": [
+      "Bahnhof (Regionalverkehr)",
+      "Bahnhof (Regional und Fernverkehr)",
+      "Güterbahnhof",
+      "Bahnübergang"
+    ],
+    "average_credits": 5370,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 2,
+      "railway_fire": 2,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "nef": 80, "patient_transport": 10, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 210,
+      "care_affected_people_max": 250,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 3,
+      "care_service": 2,
+      "railway_fire": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 910,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   }
 ]
