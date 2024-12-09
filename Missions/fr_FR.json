@@ -30193,5 +30193,52 @@
     "base_mission_id": 800,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "801",
+    "name": "Accident entre un bus et un tramway",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue": 6,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 4,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 801,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
   }
 ]
