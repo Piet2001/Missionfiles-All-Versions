@@ -21194,5 +21194,46 @@
     "base_mission_id": 645,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "646",
+    "name": "747 Potkut saanut työntekijä kaatoi siivouskemikaaleja",
+    "place": "Valintamyymälä (pieni)\nValintamyymälä (iso)",
+    "place_array": ["Valintamyymälä (pieni)", "Valintamyymälä (iso)"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "firetrucks": 3,
+      "police_cars": 4,
+      "personnel_educations": { "gw_gefahrgut": 8 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Kemikaalitorjunta": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 646,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
   }
 ]
