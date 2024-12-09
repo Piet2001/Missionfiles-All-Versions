@@ -20451,5 +20451,46 @@
     "base_mission_id": 619,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "620",
+    "name": "Empregado despedido derrama produtos químicos de limpeza",
+    "place": "Supermercado\nHipermercado",
+    "place_array": ["Supermercado", "Hipermercado"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "firetrucks": 3,
+      "police_cars": 4,
+      "personnel_educations": { "gw_gefahrgut": 8 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral",
+      "personnel_educations": { "Matérias Perigosas": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 620,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
   }
 ]
