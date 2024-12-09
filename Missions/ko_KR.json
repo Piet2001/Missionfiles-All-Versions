@@ -18504,5 +18504,44 @@
     "base_mission_id": 563,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "564",
+    "name": "해고된 직원이 청소용 화학 물질 유출",
+    "place": "슈퍼마켓(소형)\n슈퍼마켓(대형)",
+    "place_array": ["슈퍼마켓(소형)", "슈퍼마켓(대형)"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
