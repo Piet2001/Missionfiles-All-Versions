@@ -85512,5 +85512,117 @@
     "base_mission_id": 910,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "911",
+    "name": "Abgestürzter Weihnachtsschlitten",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3130,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "nef": 60, "patient_transport": 100, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-12-13T10:00:00Z",
+      "date_end": "2024-12-26T23:59:00+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 911,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "912",
+    "name": "Lebkuchenmann durch Biss verletzt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "nef": 30, "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2024-12-13T10:00:00Z",
+      "date_end": "2024-12-26T23:59:00+01:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 912,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "913",
+    "name": "Weihnachtsmann vermisst",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_helicopters": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2024-12-13T10:00:00Z",
+      "date_end": "2024-12-26T23:59:00+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "police_helicopter_stations": 1,
+      "riot_unit_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 913,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
