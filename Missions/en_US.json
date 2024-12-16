@@ -51017,6 +51017,39 @@
     "mission_categories": ["fire", "fire_support_specialization", "rural"]
   },
   {
+    "id": "1010",
+    "name": "Fire in an abandoned hospital",
+    "place": "Hospital",
+    "place_array": ["Hospital"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 1010,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "1011",
     "name": "Missing Person near water",
     "place": "Lake\nRiver",
@@ -51574,5 +51607,74 @@
     "base_mission_id": 1021,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "1022",
+    "name": "Elves Protesting",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-12-16T10:00:00Z",
+      "date_end": "2024-12-26T22:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 7,
+      "riot_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1022,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1022/a",
+    "name": "Elves Protesting",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3050,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 3,
+      "personnel_educations": { "riot_police": 4 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2024-12-16T10:00:00Z",
+      "date_end": "2024-12-26T22:59:00Z",
+      "personnel_educations": { "Riot Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 7,
+      "riot_police": 1,
+      "personnel_educations": { "riot_police": 5 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 1022,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
   }
 ]
