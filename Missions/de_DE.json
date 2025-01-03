@@ -70938,6 +70938,38 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "795",
+    "name": "Absicherung Eisbaden",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "boats": 1, "ambulances": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 Stunde",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 795,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "796",
     "name": "Brand in Garagenkomplex",
     "place": "",
@@ -81892,6 +81924,274 @@
     },
     "overlay_index": null,
     "base_mission_id": 860,
+    "additive_overlays": "a",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "861",
+    "name": "Personensuche nach Lawine",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4385,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_equipment": 2,
+      "mountain_command": 1,
+      "mountain_snow": 2,
+      "lift": 2
+    },
+    "chances": { "nef": 80, "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_ambulance_personnel": 40,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0, 1, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": { "main_building": 25, "mountain_rescue": 1, "lift": 2 },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "861/a",
+    "name": "Personensuche nach Lawine",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4750,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "rescue_dog_units": 1,
+      "mountain_equipment": 2,
+      "mountain_command": 1,
+      "mountain_snow": 2,
+      "lift": 2
+    },
+    "chances": { "nef": 80, "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_ambulance_personnel": 40,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0, 1, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_dog_units": 1,
+      "mountain_rescue": 1,
+      "lift": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "a",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "861/b",
+    "name": "Personensuche nach Lawine",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4785,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "drone": 1,
+      "mountain_equipment": 2,
+      "mountain_command": 1,
+      "mountain_snow": 2,
+      "lift": 2
+    },
+    "chances": { "nef": 80, "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_ambulance_personnel": 40,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0, 1, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "drone": 1,
+      "mountain_rescue": 1,
+      "lift": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "b",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "861/ab",
+    "name": "Personensuche nach Lawine",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5150,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "rescue_dog_units": 1,
+      "drone": 1,
+      "mountain_equipment": 2,
+      "mountain_command": 1,
+      "mountain_snow": 2,
+      "lift": 2
+    },
+    "chances": { "nef": 80, "patient_transport": 100, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_ambulance_personnel": 40,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0, 1, 4],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_dog_units": 1,
+      "drone": 1,
+      "mountain_rescue": 1,
+      "lift": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 861,
+    "additive_overlays": "ab",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "862",
+    "name": "Unterkühlung",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain": 1 },
+    "chances": { "nef": 40, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": { "main_building": 25, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 862,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "862/a",
+    "name": "Unterkühlung (Windenrettung)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1450,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain_equipment": 1, "lift": 1, "mountain": 1 },
+    "chances": {
+      "mountain_equipment": 50,
+      "nef": 40,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2025-01-03T10:00:00Z",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": { "main_building": 25, "mountain_rescue": 1, "lift": 1 },
+    "overlay_index": null,
+    "base_mission_id": 862,
     "additive_overlays": "a",
     "mission_categories": ["mountain"]
   },
