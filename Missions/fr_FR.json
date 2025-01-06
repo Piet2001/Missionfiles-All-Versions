@@ -30281,5 +30281,119 @@
     "base_mission_id": 802,
     "additive_overlays": "",
     "mission_categories": ["airport", "fire", "urban"]
+  },
+  {
+    "id": "803",
+    "name": "Incendie dans une usine de fabrication de batteries lithium",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 22500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 2,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 13,
+      "oneof_fire_engine_or_rescue": 10,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 6,
+      "fire_support_count": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 803,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "rural"
+    ]
+  },
+  {
+    "id": "804",
+    "name": "Convoi d'un chef d'état attaqué",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19500,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "riot_police": 5,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_trailer": 1,
+      "swat": 3,
+      "civil_patrol": 3,
+      "oneof_fire_engine_or_rescue_or_ladder": 1,
+      "firetrucks": 5,
+      "police_cars": 10,
+      "personnel_educations": { "police_law": 2 }
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 16,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "swat_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "OPJ": 2 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 8,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "criminal_investigation_count": 2,
+      "water_cannon": 1,
+      "personnel_educations": { "police_law": 2 },
+      "swat": 2,
+      "swat_height": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 804,
+    "additive_overlays": "",
+    "mission_categories": ["swat"]
   }
 ]
