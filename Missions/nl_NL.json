@@ -40200,6 +40200,30 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "1024",
+    "name": "Auto met pech op vluchtstrook",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 1080,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_unit": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true
+    },
+    "prerequisites": { "main_building": 0, "technical_aid": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1024,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid"]
+  },
+  {
     "id": "1025",
     "name": "Magneetvisser vindt vuurwapen",
     "place": "",
@@ -43532,5 +43556,44 @@
     "base_mission_id": 1108,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1109",
+    "name": "Ongeval met sneeuwploeg",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-01-13T10:00:00+01:00",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1109,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
