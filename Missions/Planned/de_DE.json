@@ -11,15 +11,14 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "firetrucks": 3, "police_cars": 1 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 1, "firetrucks": 3 },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "average_min_fire_personnel": 25,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -560,14 +559,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 2 },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -587,14 +585,17 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_motorcycle": 2, "police_cars": 4 },
+    "requirements": {
+      "police_motorcycle": 2,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "police_cars": 2
+    },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": {
       "main_building": 6,
@@ -618,7 +619,7 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "ambulances": 2, "police_cars": 2 },
+    "requirements": { "ambulances": 2, "oneof_police_patrol_or_motorcycle": 2 },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
@@ -626,7 +627,6 @@
       "guard_mission": true,
       "filter_id": "rapid_deployment_group_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -654,7 +654,8 @@
     "requirements": {
       "police_motorcycle": 2,
       "ambulances": 2,
-      "police_cars": 4
+      "oneof_police_patrol_or_motorcycle": 2,
+      "police_cars": 2
     },
     "chances": {},
     "additional": {
@@ -663,7 +664,6 @@
       "guard_mission": true,
       "filter_id": "rapid_deployment_group_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -718,16 +718,15 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -755,16 +754,15 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "police_service_group_leader": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -793,16 +791,15 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "energy_supply": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -830,8 +827,8 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
@@ -839,7 +836,6 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 100
     },
@@ -871,16 +867,15 @@
       "mobile_command_vehicles": 1,
       "police_service_group_leader": 1,
       "energy_supply": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -910,8 +905,8 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "police_service_group_leader": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
@@ -919,7 +914,6 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 100
     },
@@ -951,8 +945,8 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "energy_supply": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
@@ -960,7 +954,6 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 100
     },
@@ -993,8 +986,8 @@
       "mobile_command_vehicles": 1,
       "police_service_group_leader": 1,
       "energy_supply": 1,
-      "firetrucks": 10,
-      "police_cars": 5
+      "oneof_police_patrol_or_motorcycle": 5,
+      "firetrucks": 10
     },
     "chances": {},
     "additional": {
@@ -1002,7 +995,6 @@
       "duration": 7200,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "care_affected_people_min": 25,
       "care_affected_people_max": 100
     },
@@ -1031,14 +1023,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 2 },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
@@ -1063,8 +1054,8 @@
       "grukw": 9,
       "lebefkw": 3,
       "ambulances": 4,
-      "firetrucks": 2,
-      "police_cars": 4
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
@@ -1073,7 +1064,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1107,8 +1097,8 @@
       "lebefkw": 3,
       "police_service_group_leader": 1,
       "ambulances": 4,
-      "firetrucks": 2,
-      "police_cars": 4
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
@@ -1117,7 +1107,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1152,8 +1141,9 @@
       "lebefkw": 3,
       "police_motorcycle": 4,
       "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8
+      "police_cars": 4
     },
     "chances": {},
     "additional": {
@@ -1162,7 +1152,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1197,8 +1186,8 @@
       "lebefkw": 3,
       "ambulances": 4,
       "energy_supply": 1,
-      "firetrucks": 2,
-      "police_cars": 4
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
@@ -1207,7 +1196,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1242,8 +1230,8 @@
       "lebefkw": 3,
       "ambulances": 4,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1253,7 +1241,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1290,8 +1277,9 @@
       "police_motorcycle": 4,
       "police_service_group_leader": 1,
       "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8
+      "police_cars": 4
     },
     "chances": {},
     "additional": {
@@ -1300,7 +1288,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1337,8 +1324,8 @@
       "police_service_group_leader": 1,
       "ambulances": 4,
       "energy_supply": 1,
-      "firetrucks": 2,
-      "police_cars": 4
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
@@ -1347,7 +1334,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1384,8 +1370,8 @@
       "police_service_group_leader": 1,
       "ambulances": 4,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1395,7 +1381,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1433,8 +1418,9 @@
       "police_motorcycle": 4,
       "ambulances": 4,
       "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8
+      "police_cars": 4
     },
     "chances": {},
     "additional": {
@@ -1443,7 +1429,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1480,8 +1465,9 @@
       "police_motorcycle": 4,
       "ambulances": 4,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8,
+      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1491,7 +1477,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1529,8 +1514,8 @@
       "ambulances": 4,
       "energy_supply": 1,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1540,7 +1525,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1579,8 +1563,9 @@
       "police_service_group_leader": 1,
       "ambulances": 4,
       "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8
+      "police_cars": 4
     },
     "chances": {},
     "additional": {
@@ -1589,7 +1574,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -1628,8 +1612,9 @@
       "police_service_group_leader": 1,
       "ambulances": 4,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8,
+      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1639,7 +1624,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1679,8 +1663,8 @@
       "ambulances": 4,
       "energy_supply": 1,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1690,7 +1674,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1730,8 +1713,9 @@
       "ambulances": 4,
       "energy_supply": 1,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8,
+      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1741,7 +1725,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1782,8 +1765,9 @@
       "ambulances": 4,
       "energy_supply": 1,
       "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
       "firetrucks": 2,
-      "police_cars": 8,
+      "police_cars": 4,
       "personnel_educations": { "police_horse": 6 }
     },
     "chances": {},
@@ -1793,7 +1777,6 @@
       "guard_mission": true,
       "filter_id": "riot_police_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "personnel_educations": { "Reiterstaffel": 6 }
     },
@@ -1826,14 +1809,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 4 },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 4 },
     "overlay_index": null,
@@ -3615,14 +3597,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 4 },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 4 },
     "overlay_index": null,
@@ -3741,16 +3722,15 @@
       "thw_gkw": 1,
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
-      "firetrucks": 2,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
@@ -3791,16 +3771,15 @@
       "thw_gkw": 1,
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
-      "firetrucks": 2,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
@@ -3842,16 +3821,15 @@
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
       "energy_supply": 1,
-      "firetrucks": 2,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
@@ -3894,16 +3872,15 @@
       "thw_mtwtz": 1,
       "thw_mzkw": 1,
       "energy_supply": 1,
-      "firetrucks": 2,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3,
+      "firetrucks": 2
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "technical_aid_organization_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "technical_aid_organization_missions"
     },
     "prerequisites": {
       "main_building": 9,
@@ -4110,14 +4087,17 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "grukw": 3, "lebefkw": 1, "police_cars": 3 },
+    "requirements": {
+      "grukw": 3,
+      "lebefkw": 1,
+      "oneof_police_patrol_or_motorcycle": 3
+    },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "riot_police_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "riot_police_missions"
     },
     "prerequisites": {
       "main_building": 11,
@@ -4146,15 +4126,14 @@
       "grukw": 3,
       "lebefkw": 1,
       "police_service_group_leader": 1,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "riot_police_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "riot_police_missions"
     },
     "prerequisites": {
       "main_building": 11,
@@ -4184,15 +4163,14 @@
       "grukw": 3,
       "lebefkw": 1,
       "energy_supply": 1,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "riot_police_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "riot_police_missions"
     },
     "prerequisites": {
       "main_building": 11,
@@ -4223,15 +4201,14 @@
       "lebefkw": 1,
       "police_service_group_leader": 1,
       "energy_supply": 1,
-      "police_cars": 3
+      "oneof_police_patrol_or_motorcycle": 3
     },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "riot_police_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "riot_police_missions"
     },
     "prerequisites": {
       "main_building": 11,
@@ -4289,7 +4266,7 @@
       "gw_san": 1,
       "ambulances": 4,
       "seg_elw": 1,
-      "police_cars": 2
+      "oneof_police_patrol_or_motorcycle": 2
     },
     "chances": {},
     "additional": {
@@ -4298,7 +4275,6 @@
       "guard_mission": true,
       "filter_id": "rapid_deployment_group_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "date_start": "2024-06-21T09:00:00Z",
       "date_end": "2024-09-02T23:59:59+02:00"
@@ -4326,7 +4302,7 @@
       "police_service_group_leader": 1,
       "ambulances": 4,
       "seg_elw": 1,
-      "police_cars": 2
+      "oneof_police_patrol_or_motorcycle": 2
     },
     "chances": {},
     "additional": {
@@ -4335,7 +4311,6 @@
       "guard_mission": true,
       "filter_id": "rapid_deployment_group_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true,
       "date_start": "2024-06-21T09:00:00Z",
       "date_end": "2024-09-02T23:59:59+02:00"
@@ -4391,14 +4366,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "mek": 4 },
+    "requirements": { "mek": 4, "oneof_police_patrol_or_motorcycle": 1 },
     "chances": {},
     "additional": {
       "duration_text": "2 Stunden",
       "duration": 7200,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "mek": 1 },
     "overlay_index": null,
@@ -4648,7 +4622,11 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "ambulances": 1, "firetrucks": 2, "police_cars": 2 },
+    "requirements": {
+      "ambulances": 1,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "firetrucks": 2
+    },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde 30 Minuten",
@@ -4657,7 +4635,6 @@
       "guard_mission": true,
       "filter_id": "firehouse_missions",
       "allow_ktw_instead_of_rtw": true,
-      "allow_police_motorcycle_instead_of_fustw": true,
       "allow_ktw_b_instead_of_rtw": true
     },
     "prerequisites": {
@@ -4683,14 +4660,13 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "oneof_police_patrol_or_motorcycle": 1 },
     "chances": {},
     "additional": {
       "duration_text": "1 Stunde",
       "duration": 3600,
       "guard_mission": true,
-      "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
@@ -4746,8 +4722,8 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
+      "oneof_police_patrol_or_motorcycle": 2,
+      "firetrucks": 4
     },
     "chances": {},
     "additional": {
@@ -4755,7 +4731,6 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "date_start": "2024-02-08T10:00:00Z",
       "date_end": "2024-02-13T23:00:00Z"
     },
@@ -4815,8 +4790,8 @@
       "battalion_chief_vehicles": 1,
       "ambulances": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 1
+      "oneof_police_patrol_or_motorcycle": 1,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
@@ -4824,7 +4799,6 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "date_start": "2024-07-11T09:00:00Z",
       "date_end": "2024-07-14T23:59:59Z"
     },
@@ -4855,6 +4829,7 @@
       "platform_trucks": 2,
       "ambulances": 2,
       "heavy_rescue_vehicles": 2,
+      "oneof_police_patrol_or_motorcycle": 1,
       "firetrucks": 3
     },
     "chances": {},
@@ -4863,7 +4838,6 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "allow_police_motorcycle_instead_of_fustw": true,
       "date_start": "2024-07-11T09:00:00Z",
       "date_end": "2024-07-14T23:59:59Z"
     },

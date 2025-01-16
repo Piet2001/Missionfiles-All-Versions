@@ -109,7 +109,10 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "oneof_fire_engine_or_rescue": 3, "police_cars": 2 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 3,
+      "oneof_police_patrol_or_municipal_police": 2
+    },
     "chances": { "patient_transport": 20 },
     "additional": {
       "duration_text": "25 minut",
@@ -117,7 +120,6 @@
       "possible_patient": 1,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
       "patient_specializations": "Interna"
