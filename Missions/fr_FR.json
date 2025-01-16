@@ -18844,9 +18844,9 @@
       "arff": 2,
       "airport_equipment": 1,
       "rettungstreppe": 1,
-      "riv": 1,
       "elw_airport": 1,
       "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "oneof_airport_fire_engine_or_engine_large": 1,
       "firetrucks": 1,
       "personnel_educations": { "arff": 15 }
     },
@@ -18854,7 +18854,6 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions"],
-      "max_arff_replacing_riv": 1,
       "personnel_educations": { "SSLIA": 15 }
     },
     "prerequisites": {
@@ -18956,16 +18955,15 @@
       "/images/planecrash_rot.png"
     ],
     "requirements": {
-      "riv": 1,
       "elw_airport": 1,
       "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "oneof_airport_fire_engine_or_engine_large": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "vehicle_groups": ["airport_missions"],
-      "max_arff_replacing_riv": 1
+      "vehicle_groups": ["airport_missions"]
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
     "overlay_index": null,
@@ -19061,9 +19059,9 @@
       "mobile_air_vehicles": 2,
       "arff": 4,
       "airport_equipment": 1,
-      "riv": 2,
       "elw_airport": 2,
       "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "oneof_airport_fire_engine_or_engine_large": 2,
       "firetrucks": 1
     },
     "chances": { "patient_transport": 50, "patient_critical_care": 30 },
@@ -19072,7 +19070,6 @@
       "possible_patient_min": 8,
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions", "default"],
-      "max_arff_replacing_riv": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -19105,16 +19102,15 @@
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
       "arff": 2,
-      "riv": 1,
       "elw_airport": 2,
       "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 9,
+      "oneof_airport_fire_engine_or_engine_large": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "vehicle_groups": ["airport_missions", "default"],
-      "max_arff_replacing_riv": 1
+      "vehicle_groups": ["airport_missions", "default"]
     },
     "prerequisites": { "main_building": 0, "airport": 3, "fire_stations": 8 },
     "overlay_index": null,
@@ -21730,11 +21726,10 @@
       "mobile_command_vehicles": 2,
       "foam": 2,
       "water_tankers": 2,
-      "arff": 1,
       "airport_equipment": 1,
-      "riv": 1,
       "elw_airport": 2,
       "oneof_fire_engine_or_airport_fire_engine_large": 10,
+      "oneof_airport_fire_engine_or_engine_large": 1,
       "firetrucks": 1,
       "police_cars": 4
     },
@@ -21748,7 +21743,6 @@
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions", "default"],
-      "max_arff_replacing_riv": 2,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Chirurgien général"],
