@@ -16655,16 +16655,15 @@
     ],
     "requirements": {
       "arff": 2,
-      "riv": 1,
       "elw_airport": 1,
       "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "oneof_airport_fire_engine_or_engine_large": 1,
       "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "vehicle_groups": ["airport_missions"],
-      "max_arff_replacing_riv": 1
+      "vehicle_groups": ["airport_missions"]
     },
     "prerequisites": { "main_building": 0, "airport": 1 },
     "overlay_index": null,
@@ -16690,9 +16689,9 @@
       "heavy_rescue_vehicles": 2,
       "arff": 4,
       "rettungstreppe": 1,
-      "riv": 2,
       "elw_airport": 1,
       "oneof_fire_engine_or_airport_fire_engine_large": 10,
+      "oneof_airport_fire_engine_or_engine_large": 2,
       "firetrucks": 1,
       "police_cars": 8
     },
@@ -16706,7 +16705,6 @@
       "possible_patient_min": 20,
       "filter_id": "firehouse_missions",
       "vehicle_groups": ["airport_missions", "default"],
-      "max_arff_replacing_riv": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia"
