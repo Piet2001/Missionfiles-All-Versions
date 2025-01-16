@@ -742,12 +742,13 @@
       "hazmat_vehicles": 2,
       "heavy_rescue_vehicles": 2,
       "water_needed": 2000,
-      "oneof_police_patrol_or_traffic_control": 3,
-      "firetrucks": 4
+      "firetrucks": 4,
+      "police_cars": 3
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
@@ -1240,12 +1241,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 50,
@@ -1264,12 +1265,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 51,
@@ -1288,12 +1289,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 52,
@@ -1312,12 +1313,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 53,
@@ -1579,12 +1580,12 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 62,
@@ -2237,12 +2238,14 @@
       "/images/bus_gelb.png",
       "/images/bus_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 2,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
       "patient_specializations": "Interna"
@@ -5326,13 +5329,12 @@
     "requirements": {
       "battalion_chief_vehicles": 2,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 4,
-      "police_cars": 2
+      "oneof_police_patrol_or_municipal_police": 2,
+      "firetrucks": 4
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 2,
       "date_start": "2024-03-22T10:00:00Z",
       "date_end": "2024-04-02T23:59:59+02:00"
     },
@@ -5418,13 +5420,12 @@
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "oneof_fire_engine_or_rescue": 4,
-      "firetrucks": 1,
-      "police_cars": 3
+      "oneof_police_patrol_or_municipal_police": 3,
+      "firetrucks": 1
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 3,
       "date_start": "2024-03-22T10:00:00Z",
       "date_end": "2024-04-02T23:59:59+02:00"
     },
@@ -9649,12 +9650,12 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 272,
@@ -9677,13 +9678,14 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 3,
-      "oneof_police_patrol_or_traffic_control": 4,
-      "firetrucks": 4
+      "firetrucks": 4,
+      "police_cars": 4
     },
     "chances": { "patient_transport": 70, "helicopter": 80 },
     "additional": {
       "possible_patient": 4,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -10488,12 +10490,12 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 2
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 2,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 2 },
     "overlay_index": null,
     "base_mission_id": 298,
@@ -11213,12 +11215,12 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 324,
@@ -11475,11 +11477,13 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1,
       "date_start": "2024-02-02T10:00:00Z",
       "date_end": "2024-02-15T22:59:00Z"
     },
@@ -12616,7 +12620,10 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "oneof_fire_engine_or_rescue": 3, "police_cars": 2 },
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 3,
+      "oneof_police_patrol_or_municipal_police": 2
+    },
     "chances": { "patient_transport": 20 },
     "additional": {
       "duration_text": "25 minut",
@@ -12624,7 +12631,6 @@
       "possible_patient": 1,
       "guard_mission": true,
       "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
       "patient_specializations": "Interna"
@@ -12787,9 +12793,8 @@
       "ambulances": 8,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 1,
-      "oneof_police_patrol_or_traffic_control": 14,
       "firetrucks": 6,
-      "police_cars": 1
+      "police_cars": 14
     },
     "chances": {
       "patient_transport": 40,
@@ -12805,6 +12810,7 @@
       "average_min_police_personnel": 32,
       "filter_id": "police_station_missions",
       "allow_ktw_instead_of_rtw": true,
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -13888,8 +13894,8 @@
       "battalion_chief_vehicles": 4,
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 5,
-      "oneof_police_patrol_or_traffic_control": 4,
-      "firetrucks": 12
+      "firetrucks": 12,
+      "police_cars": 4
     },
     "chances": {
       "patient_transport": 60,
@@ -13900,6 +13906,7 @@
       "possible_patient": 8,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -13934,8 +13941,8 @@
       "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 5,
       "traffic_car": 2,
-      "oneof_police_patrol_or_traffic_control": 4,
-      "firetrucks": 12
+      "firetrucks": 12,
+      "police_cars": 4
     },
     "chances": {
       "patient_transport": 60,
@@ -13946,6 +13953,7 @@
       "possible_patient": 8,
       "possible_patient_min": 2,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -14044,12 +14052,14 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 2 },
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 2,
+      "police_cars": 1
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 2
+      "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 10 },
     "overlay_index": null,
@@ -15119,12 +15129,13 @@
       "mobile_command_vehicles": 1,
       "water_tankers": 2,
       "water_needed": 180000,
-      "oneof_police_patrol_or_traffic_control": 2,
-      "firetrucks": 30
+      "firetrucks": 30,
+      "police_cars": 2
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
@@ -15155,12 +15166,13 @@
       "water_tankers": 2,
       "water_needed": 180000,
       "fire_aviation": 1,
-      "oneof_police_patrol_or_traffic_control": 2,
-      "firetrucks": 30
+      "firetrucks": 30,
+      "police_cars": 2
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": {
@@ -15369,8 +15381,8 @@
       "heavy_rescue_vehicles": 2,
       "water_needed": 1500,
       "oneof_fire_engine_or_rescue": 5,
-      "oneof_police_patrol_or_traffic_control": 4,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 4
     },
     "chances": {
       "fwk": 60,
@@ -15383,6 +15395,7 @@
       "possible_patient_min": 2,
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -15419,8 +15432,8 @@
       "traffic_car": 3,
       "water_needed": 1500,
       "oneof_fire_engine_or_rescue": 5,
-      "oneof_police_patrol_or_traffic_control": 4,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 4
     },
     "chances": {
       "fwk": 60,
@@ -15434,6 +15447,7 @@
       "possible_patient_min": 2,
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -16299,8 +16313,8 @@
       "hazmat_vehicles": 2,
       "heavy_rescue_vehicles": 3,
       "oneof_fire_engine_or_rescue": 6,
-      "oneof_police_patrol_or_traffic_control": 3,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 3
     },
     "chances": {
       "patient_transport": 90,
@@ -16310,6 +16324,7 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -16345,8 +16360,8 @@
       "heavy_rescue_vehicles": 3,
       "traffic_car": 2,
       "oneof_fire_engine_or_rescue": 6,
-      "oneof_police_patrol_or_traffic_control": 3,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 3
     },
     "chances": {
       "patient_transport": 90,
@@ -16356,6 +16371,7 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Interna"],
@@ -20688,12 +20704,12 @@
       "/images/bar_cocktail_gelb.png",
       "/images/bar_cocktail_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
-    "chances": {},
-    "additional": {
-      "filter_id": "police_station_missions",
-      "max_municipal_police_replacing_police_cars": 1
+    "requirements": {
+      "oneof_police_patrol_or_municipal_police": 1,
+      "police_cars": 1
     },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 579,
@@ -22573,14 +22589,13 @@
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "search_and_rescue": 1,
+      "oneof_police_patrol_or_municipal_police": 1,
       "firetrucks": 2,
-      "police_cars": 1,
       "personnel_educations": { "search_and_rescue": 5 }
     },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "max_municipal_police_replacing_police_cars": 1,
       "personnel_educations": { "Ratownictwo poszukiwawczo - ratownicze": 5 }
     },
     "prerequisites": {
@@ -25014,14 +25029,12 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": {
-      "oneof_police_patrol_or_traffic_control": 2,
-      "police_cars": 1
-    },
+    "requirements": { "police_cars": 2 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 2,
       "filter_id": "police_station_missions",
+      "allow_traffic_car_instead_of_fustw": true,
       "max_municipal_police_replacing_police_cars": 1,
       "unavailable_in_normal_missions": true
     },
