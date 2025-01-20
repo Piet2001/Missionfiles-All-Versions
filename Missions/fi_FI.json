@@ -21368,5 +21368,80 @@
     "base_mission_id": 651,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "652",
+    "name": "203 Henkilöauton törmäys aura-autoon",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-01-20T10:00:00+02:00",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "653",
+    "name": "480 Ihmisen pelastaminen jäältä.",
+    "place": "Järvi\nJoki",
+    "place_array": ["Järvi", "Joki"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [651],
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-01-20T10:00:00+02:00",
+      "date_end": "2025-03-03T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 653,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural"]
   }
 ]
