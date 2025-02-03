@@ -30494,6 +30494,63 @@
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
+    "id": "808",
+    "name": "Tremblements de terre - Échelle de Richter 9",
+    "place": "",
+    "place_array": [],
+    "average_credits": 81500,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 4,
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 1,
+      "height_rescue_units": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 6,
+      "thw_gkw": 8,
+      "disaster_response_command": 1,
+      "heavy_rescue": 5,
+      "rescue_dogs": 4,
+      "firetrucks": 45,
+      "police_cars": 12,
+      "personnel_educations": { "disaster_response": 20 }
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 50,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "USAR": 20 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 50,
+      "police_stations": 15,
+      "personnel_educations": { "disaster_response": 42 },
+      "technical_aid": 2,
+      "heavy_rescue": 2,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 808,
+    "additive_overlays": "",
+    "mission_categories": ["disaster_response"]
+  },
+  {
     "id": "813",
     "name": "Un pique-nique aux chandelles déclenche un incendie",
     "place": "",
@@ -30548,5 +30605,30 @@
     "base_mission_id": 814,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "815",
+    "name": "Une personne coincée sous un ours en peluche géant",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-02-03T10:00:00+01:00",
+      "date_end": "2025-02-14T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 815,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
   }
 ]
