@@ -30167,6 +30167,31 @@
     "mission_categories": ["fire", "water_damage_and_flood"]
   },
   {
+    "id": "742",
+    "name": "Unconfirmed Intruder Alarm",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "744",
     "name": "Candle Light Picnic Starts Wildfire",
     "place": "",
@@ -30221,5 +30246,30 @@
     "base_mission_id": 745,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "746",
+    "name": "Person trapped under giant teddy bear",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-02-03T10:00:00+00:00",
+      "date_end": "2025-02-14T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
   }
 ]
