@@ -52426,5 +52426,61 @@
     "base_mission_id": 1042,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1043",
+    "name": "Person trapped under giant teddy bear",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-02-03T10:00:00Z",
+      "date_end": "2025-02-14T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 1043,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
+  },
+  {
+    "id": "1044",
+    "name": "Cupid Strikes at the heart",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["27-B-2", "27-D-3"],
+      "date_start": "2025-02-03T10:00:00Z",
+      "date_end": "2025-02-14T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1044,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
