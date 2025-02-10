@@ -28218,5 +28218,45 @@
     "base_mission_id": 752,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "753",
+    "name": "Uno scherzo provoca un attacco di cuore",
+    "place": "",
+    "place_array": [],
+    "average_credits": 650,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiologia"],
+      "patient_specializations": "Cardiologia"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 753,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
