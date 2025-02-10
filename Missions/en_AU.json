@@ -24968,5 +24968,454 @@
     "base_mission_id": 746,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural", "urban"]
+  },
+  {
+    "id": "747",
+    "name": "Tanker ship on fire",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "large_coastal_boat": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "heavy_rescue_vehicles": 2,
+      "fire_boat": 3,
+      "firetrucks": 8,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_boat_docks": 2,
+      "coastal_rescue_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 747,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "747/a",
+    "name": "Tanker ship on fire",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 15500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "large_coastal_boat": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "heavy_rescue_vehicles": 2,
+      "foam": 1,
+      "fire_boat": 3,
+      "firetrucks": 8,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_boat_docks": 2,
+      "fire_support_count": 1,
+      "coastal_rescue_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 747,
+    "additive_overlays": "a",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "748",
+    "name": "Container ship fire",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "fire_boat": 4 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 6,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "rescue_stations": 3,
+      "fire_boat_docks": 2,
+      "coastal_rescue_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "749",
+    "name": "Dock Crane Fire",
+    "place": "Cargo port",
+    "place_array": ["Cargo port"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fire_boat": 1,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 3,
+      "fire_boat_docks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 749,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "water_rescue"]
+  },
+  {
+    "id": "750",
+    "name": "Boat leaking fuel",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "fire_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "fire_boat_docks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 750,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "751",
+    "name": "Oil rig fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "fire_boat": 2 },
+    "chances": { "patient_transport": 100, "helicopter": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "rescue_stations": 6,
+      "fire_boat_docks": 2,
+      "coastal_rescue_count": 3,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 751,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "752",
+    "name": "Suspicious boat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "police_boat": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_missions_ids": [753, 756],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 752,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "753",
+    "name": "Illegal immigration by water",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "police_boat": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "coastal_rescue_count": 1,
+      "police_boat_dock": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 753,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "754",
+    "name": "Fighting on a yacht",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "police_boat": 2 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 754,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "755",
+    "name": "Boat crash",
+    "place": "Lake\nRiver\nCargo port\nMarina\nCarpentry Workshop",
+    "place_array": [
+      "Lake",
+      "River",
+      "Cargo port",
+      "Marina",
+      "Carpentry Workshop"
+    ],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "police_boat": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "handoff_possible_via_building_types": [27],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 755,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "756",
+    "name": "Drug smuggling by water",
+    "place": "Lake\nRiver\nCargo port\nMarina\nCarpentry Workshop",
+    "place_array": [
+      "Lake",
+      "River",
+      "Cargo port",
+      "Marina",
+      "Carpentry Workshop"
+    ],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "k9": 1, "police_boat": 2 },
+    "chances": { "k9": 50 },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "vehicle_groups": ["default", "ocean_missions"]
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 4,
+      "police_boat_dock": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 756,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "757",
+    "name": "Scare Prank Triggers Heart Attack",
+    "place": "",
+    "place_array": [],
+    "average_credits": 650,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Cardiology"],
+      "patient_specializations": "Cardiology"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 757,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
