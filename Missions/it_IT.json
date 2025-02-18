@@ -4339,14 +4339,38 @@
     "name": "Blitz attività commerciale illegale",
     "place": "",
     "place_array": [],
-    "average_credits": 1500,
+    "average_credits": 1100,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "commerce_police": 2, "police_cars": 4 },
+    "requirements": { "commerce_police": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "commerce_police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 129,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "129/a",
+    "name": "Blitz attività commerciale illegale",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "commerce_police": 2, "police_investigation": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 4,
@@ -4354,12 +4378,12 @@
     },
     "prerequisites": {
       "main_building": 6,
-      "police_stations": 4,
-      "commerce_police_stations": 2
+      "commerce_police_stations": 2,
+      "police_investigation": 1
     },
     "overlay_index": null,
     "base_mission_id": 129,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -4544,6 +4568,34 @@
     "overlay_index": null,
     "base_mission_id": 134,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "134/a",
+    "name": "Raid residenziale della polizia",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1050,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "police_investigation": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 134,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -5138,18 +5190,14 @@
     "name": "Evasione",
     "place": "",
     "place_array": [],
-    "average_credits": 4000,
+    "average_credits": 3400,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": {
-      "police_helicopters": 1,
-      "swat_suv": 2,
-      "police_cars": 4
-    },
+    "requirements": { "police_helicopters": 1, "police_cars": 4 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -5163,6 +5211,39 @@
     "overlay_index": null,
     "base_mission_id": 151,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "151/a",
+    "name": "Evasione",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_investigation": 2,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 151,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -5219,19 +5300,48 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "153/a",
+    "name": "Mandato di arresto",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [154],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "police_investigation": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 153,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "154",
     "name": "Sparatoria in corso",
     "place": "",
     "place_array": [],
-    "average_credits": 1600,
+    "average_credits": 1300,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "swat_suv": 2, "police_cars": 4 },
-    "chances": { "patient_transport": 30 },
+    "requirements": { "swat_suv": 1, "police_cars": 4 },
+    "chances": { "swat_suv": 20, "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
       "possible_patient_min": 0,
@@ -5252,6 +5362,50 @@
     "overlay_index": null,
     "base_mission_id": 154,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "154/a",
+    "name": "Sparatoria in corso",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 4
+    },
+    "chances": { "swat_suv": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["SC01R", "SC01G"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 154,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -5284,14 +5438,14 @@
     "name": "Piccola protesta violenta",
     "place": "",
     "place_array": [],
-    "average_credits": 2200,
+    "average_credits": 2000,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "k9": 1, "swat_suv": 1, "police_cars": 4 },
+    "requirements": { "k9": 1, "police_cars": 4 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 3,
@@ -5321,23 +5475,60 @@
     "mission_categories": ["police"]
   },
   {
-    "id": "157",
-    "name": "Media protesta violenta",
+    "id": "156/a",
+    "name": "Piccola protesta violenta",
     "place": "",
     "place_array": [],
-    "average_credits": 3000,
+    "average_credits": 2600,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": {
-      "k9": 1,
-      "swat_armored_vehicle": 2,
-      "swat_suv": 2,
-      "police_cars": 6
+    "requirements": { "k9": 1, "police_investigation": 2, "police_cars": 4 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "expansion_missions_ids": [157],
+      "max_possible_prisoners": 2,
+      "patient_it_code_possible": ["SC01V", "SC01G"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
     },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 8,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 156,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "157",
+    "name": "Media protesta violenta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "k9": 1, "swat_armored_vehicle": 2, "police_cars": 6 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
@@ -5364,6 +5555,53 @@
     "overlay_index": null,
     "base_mission_id": 157,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "157/a",
+    "name": "Media protesta violenta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "swat_armored_vehicle": 2,
+      "police_investigation": 2,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [266],
+      "max_possible_prisoners": 4,
+      "patient_it_code_possible": ["SC01V", "SC01G"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 157,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -5396,14 +5634,14 @@
     "name": "Rapina al benzinaio",
     "place": "Stazione di servizio",
     "place_array": ["Stazione di servizio"],
-    "average_credits": 1250,
+    "average_credits": 950,
     "generated_by": "",
     "icons": [
       "/images/gas_gruen.png",
       "/images/gas_gelb.png",
       "/images/gas_rot.png"
     ],
-    "requirements": { "swat_suv": 1, "police_cars": 3 },
+    "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
@@ -5413,6 +5651,34 @@
     "overlay_index": null,
     "base_mission_id": 159,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "159/a",
+    "name": "Rapina al benzinaio",
+    "place": "Stazione di servizio",
+    "place_array": ["Stazione di servizio"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_investigation": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 159,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9239,17 +9505,38 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 2 },
+    "requirements": { "k9": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 248,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "248/a",
+    "name": "Perquisizione domestica",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "k9": 1, "police_investigation": 1, "police_cars": 2 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
       "main_building": 6,
       "police_stations": 6,
-      "commerce_police_stations": 1
+      "police_investigation": 1
     },
     "overlay_index": null,
     "base_mission_id": 248,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9307,14 +9594,38 @@
     "name": "Sgombero area abusiva (PICCOLO)",
     "place": "",
     "place_array": [],
-    "average_credits": 1100,
+    "average_credits": 1800,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 6 },
+    "requirements": { "police_cars": 6 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 3
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 251,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "251/a",
+    "name": "Sgombero area abusiva (PICCOLO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2100,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 6 },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -9323,11 +9634,11 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 6,
-      "commerce_police_stations": 1
+      "police_investigation": 1
     },
     "overlay_index": null,
     "base_mission_id": 251,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9335,14 +9646,38 @@
     "name": "Sgombero area abusiva (MEDIO)",
     "place": "",
     "place_array": [],
-    "average_credits": 1800,
+    "average_credits": 2400,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "k9": 1, "police_cars": 4 },
+    "requirements": { "k9": 1, "police_cars": 6 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 8 },
+    "overlay_index": null,
+    "base_mission_id": 252,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "252/a",
+    "name": "Sgombero area abusiva (MEDIO)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "k9": 1, "police_investigation": 2, "police_cars": 6 },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -9351,11 +9686,11 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 8,
-      "commerce_police_stations": 2
+      "police_investigation": 2
     },
     "overlay_index": null,
     "base_mission_id": 252,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9363,7 +9698,7 @@
     "name": "Sgombero area abusiva (GRANDE)",
     "place": "",
     "place_array": [],
-    "average_credits": 3500,
+    "average_credits": 5800,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
@@ -9371,12 +9706,48 @@
       "/images/shooting_rot.png"
     ],
     "requirements": {
-      "commerce_police": 2,
-      "k9": 1,
+      "k9": 2,
       "police_helicopters": 1,
       "ambulances": 2,
-      "swat_armored_vehicle": 2,
-      "police_cars": 6
+      "swat_armored_vehicle": 4,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 253,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "253/a",
+    "name": "Sgombero area abusiva (GRANDE)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "k9": 2,
+      "police_helicopters": 1,
+      "ambulances": 2,
+      "swat_armored_vehicle": 4,
+      "police_investigation": 4,
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
@@ -9389,11 +9760,11 @@
       "rescue_stations": 1,
       "police_stations": 10,
       "police_helicopter_stations": 1,
-      "commerce_police_stations": 2
+      "police_investigation": 3
     },
     "overlay_index": null,
     "base_mission_id": 253,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9693,15 +10064,15 @@
     "name": "Rapina in banca",
     "place": "Banca",
     "place_array": ["Banca"],
-    "average_credits": 4800,
+    "average_credits": 4200,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "k9": 1, "swat_suv": 2, "police_cars": 8 },
-    "chances": { "patient_transport": 90 },
+    "requirements": { "swat_suv": 1, "police_cars": 8 },
+    "chances": { "swat_suv": 40, "patient_transport": 90 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
@@ -9723,6 +10094,48 @@
     "overlay_index": null,
     "base_mission_id": 264,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "264/a",
+    "name": "Rapina in banca",
+    "place": "Banca",
+    "place_array": ["Banca"],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 8
+    },
+    "chances": { "swat_suv": 40, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["PC01R", "PC01G"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 6,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 264,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -9751,7 +10164,7 @@
     "name": "Grande protesta violenta",
     "place": "",
     "place_array": [],
-    "average_credits": 3900,
+    "average_credits": 4500,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
@@ -9759,11 +10172,10 @@
       "/images/baseball_rot.png"
     ],
     "requirements": {
-      "k9": 2,
+      "k9": 1,
       "police_helicopters": 1,
-      "swat_armored_vehicle": 3,
-      "swat_suv": 2,
-      "police_cars": 6
+      "swat_armored_vehicle": 4,
+      "police_cars": 10
     },
     "chances": { "patient_transport": 20 },
     "additional": {
@@ -9790,6 +10202,53 @@
     "overlay_index": null,
     "base_mission_id": 266,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "266/a",
+    "name": "Grande protesta violenta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5700,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_helicopters": 1,
+      "swat_armored_vehicle": 4,
+      "police_investigation": 4,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 4,
+      "max_possible_prisoners": 4,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ]
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "police_investigation": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 266,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -14336,7 +14795,7 @@
     "name": "Cattura Latitante",
     "place": "",
     "place_array": [],
-    "average_credits": 5200,
+    "average_credits": 5000,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
@@ -14346,10 +14805,10 @@
     "requirements": {
       "k9": 1,
       "police_helicopters": 1,
-      "swat_suv": 2,
+      "swat_suv": 1,
       "police_cars": 6
     },
-    "chances": { "patient_transport": 60 },
+    "chances": { "swat_suv": 40, "patient_transport": 60 },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 1,
@@ -14375,6 +14834,54 @@
     "overlay_index": null,
     "base_mission_id": 371,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "371/a",
+    "name": "Cattura Latitante",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 6
+    },
+    "chances": { "swat_suv": 40, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "patient_it_code_possible": ["KC01R", "KC01G", "KC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ]
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 371,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -16548,7 +17055,7 @@
     "name": "Maxi Rissa",
     "place": "",
     "place_array": [],
-    "average_credits": 8000,
+    "average_credits": 7400,
     "generated_by": "",
     "icons": [
       "/images/baseball_gruen.png",
@@ -16559,7 +17066,6 @@
       "k9": 2,
       "police_helicopters": 1,
       "swat_armored_vehicle": 2,
-      "swat_suv": 2,
       "police_cars": 12
     },
     "chances": { "patient_transport": 40, "helicopter": 10 },
@@ -17676,7 +18182,7 @@
     "name": "Fabbrica illegale di armi",
     "place": "",
     "place_array": [],
-    "average_credits": 5000,
+    "average_credits": 5300,
     "generated_by": "",
     "icons": [
       "/images/blast_gruen.png",
@@ -17685,13 +18191,48 @@
     ],
     "requirements": {
       "fbi_bomb": 1,
-      "commerce_police": 2,
       "k9": 1,
       "police_helicopters": 1,
-      "swat_suv": 2,
-      "police_cars": 4
+      "swat_suv": 1,
+      "police_cars": 8
     },
-    "chances": {},
+    "chances": { "swat_suv": 40 },
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 462,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "462/a",
+    "name": "Fabbrica illegale di armi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5900,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "k9": 1,
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 8
+    },
+    "chances": { "swat_suv": 40 },
     "additional": {
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 5,
@@ -17701,11 +18242,11 @@
       "main_building": 6,
       "police_stations": 8,
       "police_helicopter_stations": 1,
-      "commerce_police_stations": 2
+      "police_investigation": 2
     },
     "overlay_index": null,
     "base_mission_id": 462,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -18929,7 +19470,7 @@
     "name": "Assalto al Portavalori",
     "place": "",
     "place_array": [],
-    "average_credits": 8000,
+    "average_credits": 7000,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
@@ -18937,12 +19478,58 @@
       "/images/shooting_rot.png"
     ],
     "requirements": {
-      "commerce_police": 2,
       "police_helicopters": 1,
-      "swat_suv": 2,
+      "swat_suv": 1,
       "police_cars": 8
     },
-    "chances": { "patient_transport": 30 },
+    "chances": { "swat_suv": 20, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 6,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 498,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "498/a",
+    "name": "Assalto al Portavalori",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7600,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 8
+    },
+    "chances": { "swat_suv": 20, "patient_transport": 30 },
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 1,
@@ -18965,11 +19552,11 @@
       "rescue_stations": 6,
       "police_stations": 10,
       "police_helicopter_stations": 1,
-      "commerce_police_stations": 1
+      "police_investigation": 2
     },
     "overlay_index": null,
     "base_mission_id": 498,
-    "additive_overlays": "",
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -19254,8 +19841,8 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "k9": 1, "swat_suv": 2, "police_cars": 2 },
-    "chances": {},
+    "requirements": { "k9": 1, "swat_suv": 1, "police_cars": 4 },
+    "chances": { "swat_suv": 40 },
     "additional": {
       "expansion_missions_ids": [154],
       "filter_id": "police_station_missions"
@@ -19264,6 +19851,41 @@
     "overlay_index": null,
     "base_mission_id": 508,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "508/a",
+    "name": "Perquisizione ad Alto Rischio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 4
+    },
+    "chances": { "swat_suv": 40 },
+    "additional": {
+      "expansion_missions_ids": [154],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 508,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -19553,7 +20175,7 @@
     "name": "Scontri dopo la Partita di Calcio",
     "place": "Stadio",
     "place_array": ["Stadio"],
-    "average_credits": 12000,
+    "average_credits": 11400,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -19566,7 +20188,6 @@
       "police_helicopters": 1,
       "heavy_rescue_vehicles": 2,
       "swat_armored_vehicle": 4,
-      "swat_suv": 2,
       "wasserwerfer": 1,
       "water_needed": 10000,
       "foam_needed": 500,
@@ -19604,11 +20225,67 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "520/a",
+    "name": "Scontri dopo la Partita di Calcio",
+    "place": "Stadio",
+    "place_array": ["Stadio"],
+    "average_credits": 12600,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "k9": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "swat_armored_vehicle": 4,
+      "wasserwerfer": 1,
+      "water_needed": 10000,
+      "foam_needed": 500,
+      "police_investigation": 4,
+      "firetrucks": 4,
+      "police_cars": 14
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 20,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ]
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 14,
+      "police_stations": 12,
+      "police_helicopter_stations": 1,
+      "water_cannon": 1,
+      "police_investigation": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 520,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "521",
     "name": "Dispersione Corteo Non Autorizzato",
     "place": "",
     "place_array": [],
-    "average_credits": 6500,
+    "average_credits": 6000,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -19619,7 +20296,6 @@
       "k9": 2,
       "police_helicopters": 1,
       "swat_armored_vehicle": 2,
-      "swat_suv": 2,
       "wasserwerfer": 1,
       "police_cars": 10
     },
@@ -19650,6 +20326,56 @@
     "overlay_index": null,
     "base_mission_id": 521,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "521/a",
+    "name": "Dispersione Corteo Non Autorizzato",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 2,
+      "police_helicopters": 1,
+      "swat_armored_vehicle": 2,
+      "wasserwerfer": 1,
+      "police_investigation": 2,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 6,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 10,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ]
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 14,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "water_cannon": 1,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 521,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -20458,7 +21184,7 @@
     "name": "Operazione Anti-Riciclaggio",
     "place": "",
     "place_array": [],
-    "average_credits": 3200,
+    "average_credits": 3000,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -20469,10 +21195,10 @@
       "commerce_police": 4,
       "k9": 1,
       "police_helicopters": 1,
-      "swat_suv": 2,
+      "swat_suv": 1,
       "police_cars": 8
     },
-    "chances": {},
+    "chances": { "swat_suv": 20 },
     "additional": {
       "min_possible_prisoners": 4,
       "max_possible_prisoners": 8,
@@ -20487,6 +21213,44 @@
     "overlay_index": null,
     "base_mission_id": 544,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "544/a",
+    "name": "Operazione Anti-Riciclaggio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "commerce_police": 4,
+      "k9": 1,
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_investigation": 2,
+      "police_cars": 8
+    },
+    "chances": { "swat_suv": 20 },
+    "additional": {
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "commerce_police_stations": 4,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 544,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -20522,6 +21286,47 @@
     "overlay_index": null,
     "base_mission_id": 545,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "545/a",
+    "name": "Arresto Contrabbandiere",
+    "place": "Stazione ferroviaria (traffico regionale)\nStazione ferroviaria (traffico regionale e viaggi a lunga distanza)\nTerminal aeroporto\nPorto mercantile\nMolo navi da crociera\nPorticciolo",
+    "place_array": [
+      "Stazione ferroviaria (traffico regionale)",
+      "Stazione ferroviaria (traffico regionale e viaggi a lunga distanza)",
+      "Terminal aeroporto",
+      "Porto mercantile",
+      "Molo navi da crociera",
+      "Porticciolo"
+    ],
+    "average_credits": 2100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "commerce_police": 2,
+      "k9": 1,
+      "police_investigation": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "commerce_police_stations": 2,
+      "police_investigation": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -23209,7 +24014,7 @@
     "name": "Manifestazione contro la costruzione di un progetto autostradale",
     "place": "Uscita autostradale",
     "place_array": ["Uscita autostradale"],
-    "average_credits": 10500,
+    "average_credits": 10000,
     "generated_by": "",
     "icons": [
       "/images/glasses_gruen.png",
@@ -23218,7 +24023,6 @@
     ],
     "requirements": {
       "swat_armored_vehicle": 4,
-      "swat_suv": 2,
       "wasserwerfer": 1,
       "police_cars": 12
     },
@@ -23252,6 +24056,57 @@
     "overlay_index": null,
     "base_mission_id": 620,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "620/a",
+    "name": "Manifestazione contro la costruzione di un progetto autostradale",
+    "place": "Uscita autostradale",
+    "place_array": ["Uscita autostradale"],
+    "average_credits": 10600,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "swat_armored_vehicle": 4,
+      "wasserwerfer": 1,
+      "police_investigation": 2,
+      "police_cars": 12
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 10,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 14,
+      "water_cannon": 1,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 620,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -23812,6 +24667,56 @@
     "overlay_index": null,
     "base_mission_id": 636,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "636/a",
+    "name": "Occupazione Pacifica della Scuola",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "swat_armored_vehicle": 2,
+      "police_investigation": 2,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 0,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 10,
+      "patient_it_code_possible": ["QC01R", "QC01G", "QC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 10,
+      "police_investigation": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 636,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -24836,7 +25741,7 @@
     "name": "Messa in sicurezza di un evento sportivo",
     "place": "",
     "place_array": [],
-    "average_credits": 8500,
+    "average_credits": 10500,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -24845,29 +25750,70 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "k9": 1,
+      "k9": 2,
       "ambulances": 2,
-      "swat_armored_vehicle": 1,
-      "swat_suv": 2,
+      "swat_armored_vehicle": 4,
+      "swat_suv": 1,
       "firetrucks": 1,
-      "police_cars": 4
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
-      "duration_text": "1 ora",
-      "duration": 3600,
+      "duration_text": "4 ore",
+      "duration": 14400,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 2,
-      "police_stations": 5,
+      "police_stations": 7,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 664,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "664/a",
+    "name": "Messa in sicurezza di un evento sportivo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11700,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "k9": 2,
+      "ambulances": 2,
+      "swat_armored_vehicle": 4,
+      "swat_suv": 1,
+      "police_investigation": 4,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "4 ore",
+      "duration": 14400,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 7,
+      "police_investigation": 3,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -27829,8 +28775,8 @@
     "prerequisites": {
       "main_building": 6,
       "police_stations": 5,
-      "criminal_investigation_count": 1,
       "fire_investigation_count": 1,
+      "police_investigation": 1,
       "fire_stations": 3
     },
     "overlay_index": null,
