@@ -28849,5 +28849,45 @@
     "base_mission_id": 753,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "754",
+    "name": "Sostanze illegali trovate nel cibo del buffet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 6,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 6,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 6,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 754,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
