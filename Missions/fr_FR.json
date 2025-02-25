@@ -30401,5 +30401,370 @@
     "base_mission_id": 815,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural", "urban"]
+  },
+  {
+    "id": "816",
+    "name": "Accidents de ski",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain_height_rescue": 1, "mountain_snow": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": { "main_building": 30, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "817",
+    "name": "Randonneurs bloqués au sommet d'une montagne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2750,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_rescue_helicopter": 1,
+      "mountain_helicopter_rescue_lift": 1,
+      "mountain_height_rescue": 1,
+      "mountain_snow": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 30,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_lift": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "818",
+    "name": "Petite avalanche",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_quad": 2,
+      "mountain_rescue_helicopter": 1,
+      "mountain_helicopter_rescue_lift": 1,
+      "mountain_rescue_drone": 1,
+      "mountain_height_rescue": 1,
+      "mountain_snow": 1,
+      "mountain_rescue_dogs": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 30,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_quad": 1,
+      "mountain_rescue_lift": 1,
+      "mountain_rescue_drone": 1,
+      "mountain_rescue_dogs": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "819",
+    "name": "Chute de serac",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_quad": 3,
+      "mountain_rescue_helicopter": 1,
+      "mountain_helicopter_rescue_lift": 1,
+      "mountain_rescue_drone": 1,
+      "mountain_height_rescue": 3,
+      "mountain_snow": 3,
+      "mountain_rescue_dogs": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 30,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_quad": 2,
+      "mountain_rescue_lift": 1,
+      "mountain_rescue_drone": 1,
+      "mountain_rescue_dogs": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 819,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "820",
+    "name": "Randonneur en détresse à cause de mauvaises conditions météorologiques",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain_height_rescue": 1, "mountain_snow": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": { "main_building": -1, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 820,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "821",
+    "name": "Avalanche de gravité moyenne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_quad": 3,
+      "mountain_rescue_helicopter": 2,
+      "mountain_helicopter_rescue_lift": 2,
+      "mountain_rescue_drone": 2,
+      "mountain_height_rescue": 3,
+      "mountain_snow": 2,
+      "mountain_rescue_dogs": 4
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 5,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "mountain_rescue": 2,
+      "mountain_rescue_heliport": 2,
+      "mountain_rescue_quad": 2,
+      "mountain_rescue_lift": 2,
+      "mountain_rescue_drone": 1,
+      "mountain_rescue_dogs": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 821,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "822",
+    "name": "Feu de forêt en haute montagne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1000,
+      "mountain_rescue_helicopter": 2,
+      "mountain_helicopter_rescue_lift": 1,
+      "mountain_helicopter_bucket": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "helicopter_bucket": 1,
+      "mountain_rescue_heliport": 2,
+      "mountain_rescue_lift": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 822,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "823",
+    "name": "Incident pendant une chasse (Terrains escarpés ou instables)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_police_helicopter": 1,
+      "mountain_rescue_helicopter": 1,
+      "mountain_helicopter_rescue_lift": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "mountain_rescue_heliport": 2,
+      "mountain_rescue_lift": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 823,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "824",
+    "name": "Le chien de secours s'est échappé et s'est égaré",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain_rescue_drone": 2, "mountain_rescue_dogs": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_drone": 1,
+      "mountain_rescue_dogs": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 824,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
