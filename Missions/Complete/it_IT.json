@@ -29244,5 +29244,51 @@
     "base_mission_id": 754,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "755",
+    "name": "Avvelenamento da monossido di carbonio in una scuola",
+    "place": "Scuola",
+    "place_array": ["Scuola"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 755,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
