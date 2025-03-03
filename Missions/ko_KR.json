@@ -18385,5 +18385,49 @@
     "base_mission_id": 575,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "576",
+    "name": "학교에서의 일산화탄소 중독",
+    "place": "학교",
+    "place_array": ["학교"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 576,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
