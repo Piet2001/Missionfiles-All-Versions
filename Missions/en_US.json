@@ -52542,5 +52542,40 @@
     "base_mission_id": 1045,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1046",
+    "name": "Illegal substances found in Buffet Food",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 6,
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 6,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["27-B-2", "27-D-3"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 6,
+      "police_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1046,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
