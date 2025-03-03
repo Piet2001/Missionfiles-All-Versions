@@ -30632,6 +30632,120 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "811",
+    "name": "Violent affrontement entre supporters au péage",
+    "place": "Péage",
+    "place_array": ["Péage"],
+    "average_credits": 21500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 2,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "riot_police": 20,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "riot_police_trailer": 2,
+      "wasserwerfer": 1,
+      "firetrucks": 2,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "expansion_missions_ids": [812],
+      "min_possible_prisoners": 6,
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 5,
+      "police_stations": 6,
+      "bereitschaftspolizei": 2,
+      "water_cannon": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 811,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "812",
+    "name": "Violent incendie déclenché à la suite d'affrontements entre supporters au niveau du péage",
+    "place": "",
+    "place_array": [],
+    "average_credits": 30500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "water_needed": 57500,
+      "oneof_fire_engine_or_rescue_or_ladder": 11,
+      "oneof_fire_engine_or_rescue": 9,
+      "oneof_fire_engine_or_ladder": 10,
+      "firetrucks": 8,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "average_min_fire_personnel": 57,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 812,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
     "id": "813",
     "name": "Un pique-nique aux chandelles déclenche un incendie",
     "place": "",
