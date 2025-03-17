@@ -52397,5 +52397,46 @@
     "base_mission_id": 1046,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1047",
+    "name": "Carbon monoxide poisoning in a school",
+    "place": "School",
+    "place_array": ["School"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["27-B-2", "27-D-3"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 1047,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
   }
 ]
