@@ -24719,5 +24719,43 @@
     "base_mission_id": 674,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "675",
+    "name": "Aktivace systému eCall",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "firetrucks": 2, "police_cars": 2 },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 20,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 675,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
