@@ -67,7 +67,41 @@
     "overlay_index": null,
     "base_mission_id": 2,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "2/a",
+    "name": "Płonący samochód",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1800,
+      "foam_needed": 150,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27, 16, 19],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "3",
@@ -91,7 +125,37 @@
     "overlay_index": null,
     "base_mission_id": 3,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "3/a",
+    "name": "Płonący motocykl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 1000, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 3,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "4",
@@ -362,7 +426,36 @@
     "overlay_index": null,
     "base_mission_id": 13,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "13/a",
+    "name": "Płonąca ciężarówka",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1280,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 5800, "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks_large": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "14",
@@ -428,7 +521,36 @@
     "overlay_index": null,
     "base_mission_id": 16,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "16/a",
+    "name": "Pożar przyczepy kempingowej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 3300, "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 16,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "17",
@@ -637,7 +759,37 @@
     "overlay_index": null,
     "base_mission_id": 25,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "25/a",
+    "name": "Kolizja drogowa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [24, 2, 29],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 25,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "26",
@@ -1056,7 +1208,12 @@
     "overlay_index": null,
     "base_mission_id": 41,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "41/a",
@@ -1102,7 +1259,118 @@
     "overlay_index": null,
     "base_mission_id": 41,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "41/b",
+    "name": "Pożar warsztatu samochodowego",
+    "place": "Warsztat samochodowy",
+    "place_array": ["Warsztat samochodowy"],
+    "average_credits": 6300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 65000,
+      "foam_needed": 4000,
+      "firetrucks": 8,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "41/ab",
+    "name": "Pożar warsztatu samochodowego",
+    "place": "Warsztat samochodowy",
+    "place_array": ["Warsztat samochodowy"],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 65000,
+      "foam_needed": 4000,
+      "firetrucks": 8,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "tow_trucks": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 41,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "42",
@@ -1352,6 +1620,43 @@
     "overlay_index": null,
     "base_mission_id": 54,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "54/a",
+    "name": "Incydent z zaparkowanym pojazdem",
+    "place": "Supermarket (mały)\nSupermarket (duży)\nCentrum handlowe\nParking",
+    "place_array": [
+      "Supermarket (mały)",
+      "Supermarket (duży)",
+      "Centrum handlowe",
+      "Parking"
+    ],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_traffic_control": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 54,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -1655,7 +1960,12 @@
     "overlay_index": null,
     "base_mission_id": 64,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "64/a",
@@ -1699,7 +2009,109 @@
     "overlay_index": null,
     "base_mission_id": 64,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "64/b",
+    "name": "Wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "64/ab",
+    "name": "Wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1810,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 2
+    },
+    "chances": {
+      "road_rescue": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 15
+    },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 1,
+      "traffic_police": 3,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "67",
@@ -1883,7 +2295,12 @@
     "overlay_index": null,
     "base_mission_id": 73,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "73/a",
@@ -1922,7 +2339,103 @@
     "overlay_index": null,
     "base_mission_id": 73,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "73/b",
+    "name": "Poważny wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 4000,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "73/ab",
+    "name": "Poważny wypadek z udziałem autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3740,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 3,
+      "water_needed": 4000,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "traffic_police": 4,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "74",
@@ -2700,7 +3213,12 @@
     "overlay_index": null,
     "base_mission_id": 87,
     "additive_overlays": "",
-    "mission_categories": ["fire", "rural", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "rural",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "87/a",
@@ -2737,7 +3255,100 @@
     "overlay_index": null,
     "base_mission_id": 87,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "rural", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "rural",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "87/b",
+    "name": "Wypadek traktora",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_needed": 2400,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 87,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "rural",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "87/ab",
+    "name": "Wypadek traktora",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 2205,
+    "generated_by": "",
+    "icons": [
+      "/images/tractor_gruen.png",
+      "/images/tractor_gelb.png",
+      "/images/tractor_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "traffic_car": 1,
+      "water_needed": 2400,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "traffic_police": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 87,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "rural",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "88",
@@ -3199,7 +3810,12 @@
     "overlay_index": null,
     "base_mission_id": 103,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "103/a",
@@ -3237,7 +3853,102 @@
     "overlay_index": null,
     "base_mission_id": 103,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "103/b",
+    "name": "Wypadek motocyklowy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_needed": 1700,
+      "oneof_fire_engine_or_rescue": 3,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 35 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 103,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "103/ab",
+    "name": "Wypadek motocyklowy",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2805,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "traffic_car": 1,
+      "water_needed": 1700,
+      "oneof_fire_engine_or_rescue": 3,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 35 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 103,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "104",
@@ -3279,7 +3990,12 @@
     "overlay_index": null,
     "base_mission_id": 104,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "104/a",
@@ -3323,7 +4039,114 @@
     "overlay_index": null,
     "base_mission_id": 104,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "104/b",
+    "name": "Wypadek dwóch samochodów - Zderzenie boczne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 2500,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 35
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 104,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "104/ab",
+    "name": "Wypadek dwóch samochodów - Zderzenie boczne",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4305,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 1,
+      "water_needed": 2500,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 35
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 104,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "105",
@@ -3451,7 +4274,12 @@
     "overlay_index": null,
     "base_mission_id": 106,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "106/a",
@@ -3495,7 +4323,114 @@
     "overlay_index": null,
     "base_mission_id": 106,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "106/b",
+    "name": "Wypadek dwóch samochodów - Zderzenie czołowe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 2500,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 70,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 106,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "106/ab",
+    "name": "Wypadek dwóch samochodów - Zderzenie czołowe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4510,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "water_needed": 2500,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 70,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "traffic_police": 2,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 106,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "107",
@@ -3537,7 +4472,12 @@
     "overlay_index": null,
     "base_mission_id": 107,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "107/a",
@@ -3583,7 +4523,116 @@
     "overlay_index": null,
     "base_mission_id": 107,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "107/b",
+    "name": "Wypadek na przejeździe kolejowym",
+    "place": "Przejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": ["Przejazd kolejowy", "Przejazd kolejowo-drogowy"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 3800,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 50,
+      "patient_critical_care": 60
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 107,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "107/ab",
+    "name": "Wypadek na przejeździe kolejowym",
+    "place": "Przejazd kolejowy\nPrzejazd kolejowo-drogowy",
+    "place_array": ["Przejazd kolejowy", "Przejazd kolejowo-drogowy"],
+    "average_credits": 4670,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "water_needed": 3800,
+      "oneof_fire_engine_or_rescue": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "road_rescue": 80,
+      "patient_transport": 50,
+      "helicopter": 50,
+      "patient_critical_care": 60
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg ogólny"],
+      "patient_specializations": "Chirurg ogólny"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "traffic_police": 3,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 107,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "108",
@@ -6502,7 +7551,12 @@
     "overlay_index": null,
     "base_mission_id": 189,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "189/a",
@@ -6545,7 +7599,117 @@
     "overlay_index": null,
     "base_mission_id": 189,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "189/b",
+    "name": "Zderzenie wozu strażackiego z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 189,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "189/ab",
+    "name": "Zderzenie wozu strażackiego z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4040,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 3,
+      "firetrucks": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "traffic_police": 4,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 189,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "190",
@@ -6586,7 +7750,12 @@
     "overlay_index": null,
     "base_mission_id": 190,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "190/a",
@@ -6630,7 +7799,113 @@
     "overlay_index": null,
     "base_mission_id": 190,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "190/b",
+    "name": "Zderzenie radiowozu z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 3000,
+      "firetrucks": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 190,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "190/ab",
+    "name": "Zderzenie radiowozu z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4245,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 4,
+      "water_needed": 3000,
+      "firetrucks": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 65,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 190,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "191",
@@ -6670,7 +7945,12 @@
     "overlay_index": null,
     "base_mission_id": 191,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "191/a",
@@ -6714,7 +7994,112 @@
     "overlay_index": null,
     "base_mission_id": 191,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "191/b",
+    "name": "Zderzenie karetki z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 20,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "tow_trucks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 191,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "191/ab",
+    "name": "Zderzenie karetki z samochodem osobowym",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3640,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 2,
+      "firetrucks": 4
+    },
+    "chances": {
+      "road_rescue": 40,
+      "patient_transport": 75,
+      "helicopter": 20,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "traffic_police": 3,
+      "tow_trucks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 191,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "192",
@@ -6875,7 +8260,11 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
+    "mission_categories": [
+      "police",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "195/a",
@@ -6925,7 +8314,118 @@
     "overlay_index": null,
     "base_mission_id": 195,
     "additive_overlays": "a",
-    "mission_categories": ["police", "traffic_police_specialization"]
+    "mission_categories": [
+      "police",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "195/b",
+    "name": "Wypadek więziennego autobusu",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "k9": 3,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 5,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 9,
+      "police_helicopter_stations": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "police",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "195/ab",
+    "name": "Wypadek więziennego autobusu",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 5110,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "k9": 3,
+      "police_helicopters": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 4,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 3,
+      "police_cars": 1
+    },
+    "chances": {
+      "road_rescue": 90,
+      "patient_transport": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 3,
+      "max_possible_prisoners": 5,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 2,
+      "police_stations": 9,
+      "police_helicopter_stations": 1,
+      "traffic_police": 4,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 195,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "police",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "196",
@@ -8762,7 +10262,12 @@
     "overlay_index": null,
     "base_mission_id": 241,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "241/a",
@@ -8802,7 +10307,105 @@
     "overlay_index": null,
     "base_mission_id": 241,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "241/b",
+    "name": "Karambol w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 4000,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 70, "helicopter": 80 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "tow_trucks": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 241,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "241/ab",
+    "name": "Karambol w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 4610,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 4,
+      "traffic_car": 2,
+      "water_needed": 4000,
+      "firetrucks": 4
+    },
+    "chances": { "road_rescue": 30, "patient_transport": 70, "helicopter": 80 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "traffic_police": 3,
+      "tow_trucks": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 241,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "242",
@@ -9595,7 +11198,12 @@
     "overlay_index": null,
     "base_mission_id": 271,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "271/a",
@@ -9636,7 +11244,114 @@
     "overlay_index": null,
     "base_mission_id": 271,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "271/b",
+    "name": "Wypadek drogowy z udziałem samochodu ciężarowego",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
+    },
+    "chances": {
+      "patient_transport": 65,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "271/ab",
+    "name": "Wypadek drogowy z udziałem samochodu ciężarowego",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3705,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 1,
+      "firetrucks": 3
+    },
+    "chances": {
+      "patient_transport": 65,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "272",
@@ -9699,7 +11414,51 @@
     "overlay_index": null,
     "base_mission_id": 273,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "rural"]
+    "mission_categories": ["fire", "urban", "rural", "tow_trucks"]
+  },
+  {
+    "id": "273/a",
+    "name": "Wypadek samochodowy z udziałem ciężarówki w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 70, "helicopter": 80 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 273,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "rural", "tow_trucks"]
   },
   {
     "id": "274",
@@ -10572,7 +12331,41 @@
     "overlay_index": null,
     "base_mission_id": 300,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "300/a",
+    "name": "Drzewo powalone na samochód",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1150,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": { "battalion_chief_vehicles": 20 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 300,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "301",
@@ -13476,7 +15269,12 @@
     "overlay_index": null,
     "base_mission_id": 378,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "378/a",
@@ -13519,7 +15317,110 @@
     "overlay_index": null,
     "base_mission_id": 378,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "378/b",
+    "name": "Wypadek podczas pościgu policyjnego",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "oneof_police_patrol_or_traffic_control": 4,
+      "firetrucks": 3
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 3,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 378,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "378/ab",
+    "name": "Wypadek podczas pościgu policyjnego",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6240,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "oneof_police_patrol_or_traffic_control": 4,
+      "firetrucks": 3
+    },
+    "chances": {
+      "road_rescue": 70,
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 3,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "traffic_police": 3,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 378,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "379",
@@ -15410,7 +17311,12 @@
     "overlay_index": null,
     "base_mission_id": 435,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "435/a",
@@ -15463,7 +17369,130 @@
     "overlay_index": null,
     "base_mission_id": 435,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "435/b",
+    "name": "Poważny wypadek na autostradzie",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 13200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 1500,
+      "oneof_fire_engine_or_rescue": 5,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 60,
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 75
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 7,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "tow_trucks": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "435/ab",
+    "name": "Poważny wypadek na autostradzie",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 14090,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 3,
+      "water_needed": 1500,
+      "oneof_fire_engine_or_rescue": 5,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {
+      "fwk": 60,
+      "road_rescue": 85,
+      "patient_transport": 80,
+      "helicopter": 50,
+      "patient_critical_care": 75
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 7,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "traffic_police": 3,
+      "tow_trucks": 2,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 435,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "436",
@@ -15771,7 +17800,48 @@
     "overlay_index": null,
     "base_mission_id": 444,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "444/a",
+    "name": "Płonący samochód elektryczny",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2050,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "foam": 1, "foam_needed": 800, "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [664],
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 444,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "445",
@@ -16339,7 +18409,12 @@
     "overlay_index": null,
     "base_mission_id": 460,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "460/a",
@@ -16387,7 +18462,126 @@
     "overlay_index": null,
     "base_mission_id": 460,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "460/b",
+    "name": "Wypadek z udziałem cysterny przewożącej niebezpieczną substancję",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "oneof_fire_engine_or_rescue": 6,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 60,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "tow_trucks": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "460/ab",
+    "name": "Wypadek z udziałem cysterny przewożącej niebezpieczną substancję",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12010,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "traffic_car": 2,
+      "oneof_fire_engine_or_rescue": 6,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 60,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "allow_traffic_car_instead_of_fustw": true,
+      "max_municipal_police_replacing_police_cars": 1,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "traffic_police": 2,
+      "tow_trucks": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 460,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "461",
@@ -16598,7 +18792,12 @@
     "overlay_index": null,
     "base_mission_id": 465,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "465/a",
@@ -16641,7 +18840,112 @@
     "overlay_index": null,
     "base_mission_id": 465,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "465/b",
+    "name": "Wypadek tramwaju z samochodem osobowym",
+    "place": "Przystanek tramwajowy",
+    "place_array": ["Przystanek tramwajowy"],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "oneof_fire_engine_or_rescue": 6,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "tow_trucks": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "465/ab",
+    "name": "Wypadek tramwaju z samochodem osobowym",
+    "place": "Przystanek tramwajowy",
+    "place_array": ["Przystanek tramwajowy"],
+    "average_credits": 9110,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "traffic_car": 2,
+      "oneof_fire_engine_or_rescue": 6,
+      "firetrucks": 1
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "traffic_police": 2,
+      "tow_trucks": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "466",
@@ -17459,7 +19763,44 @@
     "overlay_index": null,
     "base_mission_id": 486,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "486/a",
+    "name": "Pożar lawety przewożącej samochody",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 3950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_needed": 9000,
+      "foam_needed": 800,
+      "firetrucks": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 486,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "487",
@@ -17680,7 +20021,12 @@
     "overlay_index": null,
     "base_mission_id": 491,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "491/a",
@@ -17720,7 +20066,106 @@
     "overlay_index": null,
     "base_mission_id": 491,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "491/b",
+    "name": "Wypadek - samochód wjechał w barierki",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 3,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 491,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "491/ab",
+    "name": "Wypadek - samochód wjechał w barierki",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 4610,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 1,
+      "oneof_fire_engine_or_rescue": 3,
+      "oneof_police_patrol_or_traffic_control": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 491,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "492",
@@ -18041,7 +20486,12 @@
     "overlay_index": null,
     "base_mission_id": 499,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "499/a",
@@ -18089,7 +20539,120 @@
     "overlay_index": null,
     "base_mission_id": 499,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "traffic_police_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "499/b",
+    "name": "Dachowanie autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 3,
+      "oneof_police_patrol_or_traffic_control": 3,
+      "firetrucks": 8
+    },
+    "chances": {
+      "fwk": 25,
+      "patient_transport": 30,
+      "helicopter": 5,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 18,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "tow_trucks_large": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "499/ab",
+    "name": "Dachowanie autobusu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9755,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fwk": 1,
+      "road_rescue": 1,
+      "heavy_rescue_vehicles": 3,
+      "traffic_car": 2,
+      "oneof_police_patrol_or_traffic_control": 3,
+      "firetrucks": 8
+    },
+    "chances": {
+      "fwk": 25,
+      "road_rescue": 45,
+      "patient_transport": 30,
+      "helicopter": 5,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 18,
+      "possible_patient_min": 6,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "traffic_police": 3,
+      "tow_trucks_large": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 499,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "traffic_police_specialization",
+      "tow_trucks"
+    ]
   },
   {
     "id": "500",
@@ -25352,7 +27915,51 @@
     "overlay_index": null,
     "base_mission_id": 698,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "tow_trucks"]
+  },
+  {
+    "id": "698/a",
+    "name": "Wypadek ciężarówki transportującej zwierzęta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 15,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 698,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "tow_trucks"]
   },
   {
     "id": "699",
@@ -29035,5 +31642,291 @@
     "base_mission_id": 804,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "808",
+    "name": "Odholowanie pojazdu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [668],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 808,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "809",
+    "name": "Wypadek podczas holowania pojazdu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "police_stations": 1,
+      "tow_trucks": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 809,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "810",
+    "name": "Unieruchomiony samochód na drodze",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 810,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "811",
+    "name": "Samochód bez paliwa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 811,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "812",
+    "name": "Porzucony pojazd na poboczu drogi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 812,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "813",
+    "name": "Wóz strażacki w rowie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks_large": 1 },
+    "overlay_index": null,
+    "base_mission_id": 813,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "814",
+    "name": "Wóz strażacki uderzył w bramę garażową",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks_large": 2 },
+    "overlay_index": null,
+    "base_mission_id": 814,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "815",
+    "name": "Spalony wydech pojazdu",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 815,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "816",
+    "name": "Samochód nie może odpalić",
+    "place": "",
+    "place_array": [],
+    "average_credits": 775,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "817",
+    "name": "Pracownik pomocy drogowej uderzony przez samochód",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "ambulances": 1, "firetrucks": 2, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "tow_trucks": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "818",
+    "name": "Przebita opona",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 25, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
   }
 ]
