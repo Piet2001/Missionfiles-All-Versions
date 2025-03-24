@@ -44500,5 +44500,49 @@
     "base_mission_id": 1136,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1137",
+    "name": "Man over boord",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5780,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 3,
+      "coastal_guard_boat": 2,
+      "coastal_helicopter": 1
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [19],
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": [
+        "Interne Geneeskunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Interne Geneeskunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 2,
+      "coastal_rescue_small_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1137,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean", "water_rescue_2"]
   }
 ]
