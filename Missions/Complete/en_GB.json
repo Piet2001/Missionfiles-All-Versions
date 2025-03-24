@@ -31581,39 +31581,33 @@
   },
   {
     "id": "750",
-    "name": "Belay Failure Whilst Abseiling",
-    "place": "Ravine\nCliff",
-    "place_array": ["Ravine", "Cliff"],
-    "average_credits": 4000,
+    "name": "Aerial Ladder Platform Training",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
     "generated_by": "",
     "icons": [
-      "/images/snowy_gruen.png",
-      "/images/snowy_gelb.png",
-      "/images/snowy_rot.png"
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
     ],
-    "requirements": { "oneof_mountain_atv_or_search_and_rescue_atv": 2 },
-    "chances": { "patient_transport": 80, "patient_critical_care": 50 },
+    "requirements": { "platform_trucks": 1 },
+    "chances": {},
     "additional": {
-      "possible_patient": 2,
-      "patient_uk_code_possible": ["C-1", "C-2"],
-      "filter_id": "mountain_missions",
-      "vehicle_groups": ["mountain_missions"],
-      "uses_custom_spawn_area": true,
-      "handoff_possible_via_building_types": [33],
-      "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatology"],
-      "patient_specializations": "Traumatology"
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
-      "main_building": 33,
+      "main_building": 0,
       "rescue_stations": 1,
-      "mountain_rescue": 2
+      "fire_stations": 3
     },
     "overlay_index": null,
     "base_mission_id": 750,
     "additive_overlays": "",
-    "mission_categories": ["mountain"]
+    "mission_categories": ["fire", "urban"]
   },
   {
     "id": "750/a",
