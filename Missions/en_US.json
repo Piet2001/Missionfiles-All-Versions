@@ -34472,8 +34472,8 @@
         "2-D-3",
         "2-E-1"
       ],
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [7],
       "patient_specialization_captions": ["Cardiology"],
       "patient_specializations": "Cardiology"
@@ -34503,8 +34503,8 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_us_code_possible": ["2-A-1", "2-A-1", "2-A-1", "2-C-2"],
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [7],
       "patient_specialization_captions": ["Cardiology"],
       "patient_specializations": "Cardiology"
@@ -34546,8 +34546,8 @@
         "17-D-5",
         "17-D-6"
       ],
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
@@ -34589,8 +34589,8 @@
         "3-D-8",
         "3-D-9"
       ],
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
@@ -34631,8 +34631,8 @@
         "26-A-11"
       ],
       "patient_allow_first_responder_chance": 50,
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["General Surgeon"],
       "patient_specializations": "General Surgeon"
@@ -34659,8 +34659,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -34686,78 +34686,14 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [679, 680],
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 678,
     "additive_overlays": "",
     "mission_categories": ["police"]
-  },
-  {
-    "id": "679",
-    "name": "Cow Thief on the run",
-    "place": "Forest",
-    "place_array": ["Forest"],
-    "average_credits": 900,
-    "generated_by": "",
-    "icons": [
-      "/images/climbing_gruen.png",
-      "/images/climbing_gelb.png",
-      "/images/climbing_rot.png"
-    ],
-    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "subsequent_mission_only": true,
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 10,
-      "police_helicopter_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 679,
-    "additive_overlays": "",
-    "mission_categories": ["police"]
-  },
-  {
-    "id": "680",
-    "name": "Thief attacked by a cow",
-    "place": "Farm",
-    "place_array": ["Farm"],
-    "average_credits": 860,
-    "generated_by": "",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": { "ambulances": 1 },
-    "chances": { "patient_transport": 35 },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": ["3-D-6", "3-D-9"],
-      "patient_allow_first_responder_chance": 60,
-      "subsequent_mission_only": true,
-      "date_start": "2024-04-05T09:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["General Internal"],
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
-    "overlay_index": null,
-    "base_mission_id": 680,
-    "additive_overlays": "",
-    "mission_categories": ["ambulance"]
   },
   {
     "id": "681",
@@ -49384,8 +49320,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-04-22T10:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
@@ -49417,8 +49353,8 @@
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-A-3"],
-      "date_start": "2024-04-29T10:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -49451,8 +49387,8 @@
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2024-05-06T10:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
     },
     "prerequisites": { "main_building": 5, "police_stations": 4 },
     "overlay_index": null,
@@ -49476,8 +49412,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-05-06T10:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z"
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
     },
     "prerequisites": { "main_building": 0 },
     "overlay_index": null,
@@ -49516,8 +49452,8 @@
         "17-D-5",
         "17-D-6"
       ],
-      "date_start": "2024-05-13T10:00:00Z",
-      "date_end": "2024-06-20T22:00:00Z",
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
@@ -53367,7 +53303,7 @@
       "fwk": 4,
       "firetrucks": 10,
       "police_cars": 8,
-      "personnel_educations": { "technical_rescue": 12 }
+      "personnel_educations": { "technical_rescue": 18 }
     },
     "chances": { "patient_transport": 20 },
     "additional": {
@@ -53400,14 +53336,14 @@
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology",
-      "personnel_educations": { "Technical Rescuer": 12 }
+      "personnel_educations": { "Technical Rescuer": 18 }
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
       "police_stations": 2,
       "disaster_response_count": 3,
-      "personnel_educations": { "technical_rescue": 24 },
+      "personnel_educations": { "technical_rescue": 36 },
       "technical_rescue_equipment": 4,
       "tow_trucks": 8,
       "tow_trucks_large": 4,
