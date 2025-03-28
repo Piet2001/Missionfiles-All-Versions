@@ -14978,6 +14978,69 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "438",
+    "name": "Voleur de vaches en fuite",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 438,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "439",
+    "name": "Voleur attaqué par une vache",
+    "place": "Ferme",
+    "place_array": ["Ferme"],
+    "average_credits": 860,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 60,
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 439,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "440",
     "name": "Risque infectieux",
     "place": "",
