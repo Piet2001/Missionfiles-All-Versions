@@ -19299,6 +19299,76 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "494",
+    "name": "Ladro di bovini in fuga",
+    "place": "Bosco",
+    "place_array": ["Bosco"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 494,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "495",
+    "name": "Ladro attaccato da un bovino",
+    "place": "Azienda agricola",
+    "place_array": ["Azienda agricola"],
+    "average_credits": 860,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01R", "ZC01G"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_allow_first_responder_chance": 60,
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 495,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "496",
     "name": "Incidente con Ambulanza",
     "place": "",
