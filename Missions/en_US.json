@@ -34696,6 +34696,70 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "679",
+    "name": "Cow Thief on the run",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 10,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 679,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "680",
+    "name": "Thief attacked by a cow",
+    "place": "Farm",
+    "place_array": ["Farm"],
+    "average_credits": 860,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["3-D-6", "3-D-9"],
+      "patient_allow_first_responder_chance": 60,
+      "subsequent_mission_only": true,
+      "date_start": "2025-03-28T10:00:00Z",
+      "date_end": "2025-06-20T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 680,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "681",
     "name": "Drive by shooting",
     "place": "",
