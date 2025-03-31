@@ -31290,5 +31290,47 @@
     "base_mission_id": 826,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "fire_support_specialization"]
+  },
+  {
+    "id": "827",
+    "name": "Evacuation de squat",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 1,
+      "k9": 4,
+      "police_helicopters": 1,
+      "riot_police": 10,
+      "riot_police_command": 1,
+      "police_cars": 15
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 3,
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 6,
+      "police_stations": 20,
+      "bereitschaftspolizei": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 827,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
