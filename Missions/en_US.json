@@ -53460,5 +53460,102 @@
     "base_mission_id": 1055,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1056",
+    "name": "Fire in chocolate egg factory",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13755,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 4,
+      "firetrucks": 16,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 75, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["7-C-1F"],
+      "date_start": "2025-04-14T09:00:00Z",
+      "date_end": "2025-04-22T23:59:59-04:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 8,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 1056,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1057",
+    "name": "Unannounced Easter bunny strike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "k9": 2,
+      "police_helicopters": 1,
+      "detention_unit": 1,
+      "riot_police": 6,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 5,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1",
+        "30-B-2",
+        "30-A-1"
+      ],
+      "date_start": "2025-04-14T09:00:00Z",
+      "date_end": "2025-04-22T23:59:59-04:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "detention_unit_count": 1,
+      "riot_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1057,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
