@@ -31185,5 +31185,138 @@
     "base_mission_id": 760,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "761",
+    "name": "Dis-Masted Yacht Offshore",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "coastal_helicopter": 1, "coastal_guard_boat": 1 },
+    "chances": { "patient_transport": 75, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 761,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "764",
+    "name": "Fire in chocolate egg factory",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13755,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 4,
+      "firetrucks": 16,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 20,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-04-14T09:00:00Z",
+      "date_end": "2025-04-22T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 8,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 764,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "765",
+    "name": "Unannounced Easter bunny strike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_cars": 10,
+      "personnel_educations": {
+        "level_2_public_order": 6,
+        "police_sergeant": 1
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 5,
+      "min_possible_prisoners": 5,
+      "max_possible_prisoners": 10,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "date_start": "2025-04-14T09:00:00Z",
+      "date_end": "2025-04-22T23:59:59+01:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 6,
+        "Police Sergeant": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "riot_police": 2,
+      "personnel_educations": {
+        "level_2_public_order": 12,
+        "police_sergeant": 2
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 765,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
