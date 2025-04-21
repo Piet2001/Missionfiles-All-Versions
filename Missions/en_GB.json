@@ -31222,6 +31222,40 @@
     "mission_categories": ["coastal_rescue_ocean"]
   },
   {
+    "id": "762",
+    "name": "Palliative Care Visit",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "oneof_paramedic_or_paramedic_advanced": 1 },
+    "chances": { "patient_transport": 5, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-3", "C-4"],
+      "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "general_practitioner": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 762,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "764",
     "name": "Fire in chocolate egg factory",
     "place": "",
