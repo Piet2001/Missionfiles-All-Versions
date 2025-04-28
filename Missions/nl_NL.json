@@ -7151,6 +7151,60 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "227",
+    "name": "Assistentie treinconducteur",
+    "place": "Station\nCentraal Station",
+    "place_array": ["Station", "Centraal Station"],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [228],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "228",
+    "name": "Assistentie treinconducteur",
+    "place": "Station\nCentraal Station",
+    "place_array": ["Station", "Centraal Station"],
+    "average_credits": 2310,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "hondengeleider": 1, "ovdp": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "hondengeleider": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 228,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "229",
     "name": "Brand in tankstation",
     "place": "Tankstation",
