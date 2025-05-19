@@ -53557,5 +53557,41 @@
     "base_mission_id": 1060,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1061",
+    "name": "Person suffers diabetic shock",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "13-D-1",
+        "13-C-1",
+        "13-C-2",
+        "13-C-3",
+        "13-A-1"
+      ],
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1061,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
