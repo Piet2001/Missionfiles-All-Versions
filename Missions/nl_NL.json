@@ -44719,5 +44719,56 @@
     "base_mission_id": 1142,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1143",
+    "name": "Ambulance betrokken bij ongeluk",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5950,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_inspector": 1,
+      "police_cars": 4
+    },
+    "chances": { "nef": 20, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne Geneeskunde"],
+      "patient_specializations": "Interne Geneeskunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "traffic_police": 1,
+      "tow_trucks": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1143,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
