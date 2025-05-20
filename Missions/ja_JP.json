@@ -66,6 +66,36 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "2/a",
+    "name": "車両火災",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27, 16, 19],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "3",
     "name": "モーターバイク火災",
     "place": "",
@@ -87,6 +117,36 @@
     "overlay_index": null,
     "base_mission_id": 3,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "3/a",
+    "name": "モーターバイク火災",
+    "place": "",
+    "place_array": [],
+    "average_credits": 640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 3,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -325,6 +385,35 @@
     "overlay_index": null,
     "base_mission_id": 13,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "13/a",
+    "name": "トラック火災",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1280,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks_large": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -613,6 +702,40 @@
     "overlay_index": null,
     "base_mission_id": 25,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "25/a",
+    "name": "路面事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [24, 2, 29],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 25,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -1723,6 +1846,40 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "64/a",
+    "name": "バスを巻き込む事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "65",
     "name": "台所火災",
     "place": "",
@@ -2034,6 +2191,47 @@
     "overlay_index": null,
     "base_mission_id": 73,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "73/a",
+    "name": "バスを巻き込む大事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -3067,6 +3265,41 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "105/a",
+    "name": "動物との衝突事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 105,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "106",
     "name": "水道管破裂",
     "place": "",
@@ -3723,6 +3956,45 @@
     "overlay_index": null,
     "base_mission_id": 126,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "126/a",
+    "name": "トンネル内での1車両火災",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_needed": 7500,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 60, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [168, 169],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 126,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -5332,6 +5604,98 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "168/b",
+    "name": "トンネル内での大規模車両事故",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 168,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "168/ab",
+    "name": "トンネル内での大規模車両事故",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 7700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 21000,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "tow_trucks": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 168,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "169",
     "name": "トンネル内での多重車両火災",
     "place": "トンネル",
@@ -5419,6 +5783,102 @@
     "overlay_index": null,
     "base_mission_id": 169,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "169/b",
+    "name": "トンネル内での多重車両火災",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 40,
+      "patient_transport": 60,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "tow_trucks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 169,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "169/ab",
+    "name": "トンネル内での多重車両火災",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 21000,
+      "firetrucks": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 40,
+      "patient_transport": 60,
+      "patient_critical_care": 5
+    },
+    "additional": {
+      "possible_patient": 8,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "fire_support_count": 2,
+      "tow_trucks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 169,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -6586,6 +7046,45 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "205/a",
+    "name": "郵送車両が転落",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 205,
+    "additive_overlays": "a",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "206",
     "name": "違法なネットワーク通信",
     "place": "",
@@ -7272,6 +7771,45 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "226/a",
+    "name": "工事車両事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 226,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "227",
     "name": "滑走路に異物デブリ",
     "place": "小型空港（滑走路）",
@@ -7613,6 +8151,40 @@
     "overlay_index": null,
     "base_mission_id": 238,
     "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "238/a",
+    "name": "モトクロス事故",
+    "place": "ダートレーストラック",
+    "place_array": ["ダートレーストラック"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 238,
+    "additive_overlays": "a",
     "mission_categories": ["ambulance"]
   },
   {
@@ -9301,6 +9873,46 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "285/a",
+    "name": "コウノトリトラック横転",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3050,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 285,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "286",
     "name": "虫垂炎疑い",
     "place": "",
@@ -9870,6 +10482,45 @@
     "overlay_index": null,
     "base_mission_id": 300,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "300/a",
+    "name": "オートバイ同士の衝突",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 300,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -10832,6 +11483,46 @@
     "overlay_index": null,
     "base_mission_id": 332,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "332/a",
+    "name": "多重自動車事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 7,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 332,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -14376,6 +15067,46 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "443/a",
+    "name": "車両がダムに衝突する",
+    "place": "ダム",
+    "place_array": ["ダム"],
+    "average_credits": 7580,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "tow_trucks": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 443,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "444",
     "name": "スーパーマーケットでの暴行事件",
     "place": "スーパーマーケット（小型）",
@@ -16040,6 +16771,50 @@
     "overlay_index": null,
     "base_mission_id": 490,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "490/a",
+    "name": "トラック事故-動物の輸送",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 15,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 490,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -19590,5 +20365,235 @@
     "base_mission_id": 593,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "599",
+    "name": "自動車のリポセッション",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [594],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 599,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "600",
+    "name": "車両の返却が失敗しました",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 1,
+      "tow_trucks": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 600,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "601",
+    "name": "路上での車のトラブル",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 601,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "602",
+    "name": "車のガス欠",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 602,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "603",
+    "name": "道路脇の放置車両",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 603,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "604",
+    "name": "溝の中の消防車",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 2 },
+    "overlay_index": null,
+    "base_mission_id": 604,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "605",
+    "name": "排気管脱落",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 605,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "606",
+    "name": "車が動かない",
+    "place": "",
+    "place_array": [],
+    "average_credits": 775,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 606,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "607",
+    "name": "パンクしたタイヤ",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 607,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
   }
 ]
