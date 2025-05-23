@@ -29561,6 +29561,180 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "741",
+    "name": "Osoba poślizgnęła się na roztopionej czekoladzie",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 741,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "742",
+    "name": "Płonący bukiet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 500, "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "743",
+    "name": "Pożar świeczki w sypialni",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 2500, "firetrucks": 1 },
+    "chances": { "patient_transport": 70 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "744",
+    "name": "Płonące ciasto w piekarniku",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 500, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [288],
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 744,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "745",
+    "name": "Płonąca kuchnia",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 3000, "firetrucks": 2 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "746",
+    "name": "Kradzież czekolady",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2025-05-23T09:00:00Z",
+      "date_end": "2025-05-25T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "747",
     "name": "Kibice z fajerwerkami na trybunie",
     "place": "Stadion",
