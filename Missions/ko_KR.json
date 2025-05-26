@@ -19302,5 +19302,40 @@
     "base_mission_id": 588,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "589",
+    "name": "바다에 불타는 보트",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "large_coastal_boat": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["일반 내과"],
+      "patient_specializations": "일반 내과"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 589,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
