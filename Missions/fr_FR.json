@@ -31686,5 +31686,53 @@
     "base_mission_id": 835,
     "additive_overlays": "",
     "mission_categories": ["disaster_response"]
+  },
+  {
+    "id": "836",
+    "name": "Feu de dépôt de bus GPL",
+    "place": "",
+    "place_array": [],
+    "average_credits": 66000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 3,
+      "foam": 5,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 5,
+      "water_tankers": 10,
+      "hose": 5,
+      "heavy_rescue_vehicles": 10,
+      "thw_gkw": 5,
+      "firetrucks": 40,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 10,
+      "fire_support_count": 10,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 836,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization"]
   }
 ]
