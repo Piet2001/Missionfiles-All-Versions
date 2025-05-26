@@ -23009,5 +23009,40 @@
     "base_mission_id": 662,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "663",
+    "name": "Båt brinner på havet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "coastal_boat": 2, "large_coastal_boat": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [24],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Invärtesmedicinare"],
+      "patient_specializations": "Invärtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 663,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
