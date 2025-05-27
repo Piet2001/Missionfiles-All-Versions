@@ -53743,5 +53743,227 @@
     "base_mission_id": 1062,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1065",
+    "name": "Search for Suspect in Woods",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 3100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "atv_carrier": 1,
+      "police_drone": 1,
+      "police_cars": 4
+    },
+    "chances": { "atv_carrier": 50 },
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "police_drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1065,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1066",
+    "name": "Search for Multiple Suspects in Woods",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 3,
+      "atv_carrier": 2,
+      "police_drone": 2,
+      "police_cars": 10
+    },
+    "chances": { "atv_carrier": 50 },
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 10,
+      "police_drone": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1066,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1067",
+    "name": "Search for Armed Suspect in Woods",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "atv_carrier": 1,
+      "police_drone": 1,
+      "police_cars": 5
+    },
+    "chances": { "atv_carrier": 75, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "swat_personnel": 6,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4",
+        "27-D-5"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "police_drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1067,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1068",
+    "name": "Search for Multiple Armed Suspects in Woods",
+    "place": "Forest",
+    "place_array": ["Forest"],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "k9": 3,
+      "atv_carrier": 3,
+      "police_drone": 2,
+      "police_cars": 14
+    },
+    "chances": { "atv_carrier": 75, "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 16,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4",
+        "27-D-5"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 5,
+      "police_stations": 13,
+      "police_drone": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1068,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1069",
+    "name": "Search for Hidden Drug Lab",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6400,
+    "generated_by": "",
+    "icons": [
+      "/images/cannabis_gruen.png",
+      "/images/cannabis_gelb.png",
+      "/images/cannabis_rot.png"
+    ],
+    "requirements": {
+      "dea_clan_lab": 1,
+      "dea_unit": 1,
+      "fbi": 4,
+      "k9": 2,
+      "sheriff": 1,
+      "police_drone": 1,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "swat_personnel": 12,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": [
+        "27-B-2",
+        "27-B-3",
+        "27-D-1",
+        "27-D-2",
+        "27-D-3",
+        "27-D-4",
+        "27-D-5"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 4,
+      "police_stations": 9,
+      "federalpolice_stations": 1,
+      "dea_count": 1,
+      "police_drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1069,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
