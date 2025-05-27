@@ -66,6 +66,36 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "2/a",
+    "name": "Incêndio num carro",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27, 16, 19],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "3",
     "name": "Incêndio numa mota",
     "place": "",
@@ -324,6 +354,35 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "13/a",
+    "name": "Incêndio num camião",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1280,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks_large": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "14",
     "name": "Pequeno incêndio agrícola",
     "place": "",
@@ -579,6 +638,40 @@
     "overlay_index": null,
     "base_mission_id": 25,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "25/a",
+    "name": "Acidente de viação",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [24, 2, 29],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 25,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -1131,6 +1224,35 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "46/a",
+    "name": "Acidente com carro estacionado",
+    "place": "",
+    "place_array": [],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 46,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "48",
     "name": "Roubo de metais",
     "place": "Estação de Mercadorias",
@@ -1286,6 +1408,35 @@
     "overlay_index": null,
     "base_mission_id": 54,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "54/a",
+    "name": "Acidente com carro estacionado",
+    "place": "Centro Comercial",
+    "place_array": ["Centro Comercial"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 54,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -1525,6 +1676,40 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "64/a",
+    "name": "Acidente com autocarro envolvido",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "69",
     "name": "Derrame de Combustível",
     "place": "",
@@ -1702,6 +1887,46 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "73/a",
+    "name": "Acidente Grave envolvendo um autocarro",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 80, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Cirurgia Geral"],
+      "patient_specializations": "Cirurgia Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "74",
     "name": "Incêndio de grandes dimensões",
     "place": "",
@@ -1768,6 +1993,47 @@
     "overlay_index": null,
     "base_mission_id": 75,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "75/a",
+    "name": "Acidente envolvendo várias viaturas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 75,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -3019,6 +3285,41 @@
     "overlay_index": null,
     "base_mission_id": 112,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "112/a",
+    "name": "Acidente com reboque de animal",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 112,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -5750,6 +6051,47 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "193/a",
+    "name": "Acidente multi-vitimas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 7,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 193,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "194",
     "name": "Choque frontal entre veículos pesados",
     "place": "",
@@ -5785,6 +6127,47 @@
     "overlay_index": null,
     "base_mission_id": 194,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "194/a",
+    "name": "Choque frontal entre veículos pesados",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 2,
+      "possible_crashed_car_large_max": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 194,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -11096,6 +11479,45 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "355/a",
+    "name": "Colisão entre motociclos",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 355,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "356",
     "name": "Car Jacking",
     "place": "",
@@ -12235,6 +12657,47 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "389/a",
+    "name": "Acidente com camião de recolha de R.S.U.",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 4,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "tow_trucks_large": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 389,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "390",
     "name": "Explosão num centro comercial",
     "place": "Centro Comercial",
@@ -13031,6 +13494,47 @@
     "overlay_index": null,
     "base_mission_id": 410,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "410/a",
+    "name": "Despiste de veículo ligeiro com vitimas encarceradas",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3550,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 5,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "tow_trucks": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 410,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -14381,6 +14885,51 @@
     "overlay_index": null,
     "base_mission_id": 453,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "453/a",
+    "name": "Carro Submerso",
+    "place": "Lago\nRio",
+    "place_array": ["Lago", "Rio"],
+    "average_credits": 1700,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 453,
+    "additive_overlays": "a",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -16503,6 +17052,51 @@
     "overlay_index": null,
     "base_mission_id": 508,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "508/a",
+    "name": "Queda de veículo numa barragem",
+    "place": "Barragem",
+    "place_array": ["Barragem"],
+    "average_credits": 7580,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fwk": 2,
+      "diver_units": 1,
+      "boats": 1,
+      "water_needed": 4800,
+      "firetrucks": 5,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 85, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "tow_trucks": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 508,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -20453,6 +21047,37 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "619/a",
+    "name": "Grupo de vagabundos corta pneus de carro em parque de estacionamento",
+    "place": "Supermercado\nHipermercado",
+    "place_array": ["Supermercado", "Hipermercado"],
+    "average_credits": 8300,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "k9": 2, "police_cars": 12 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 619,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "620",
     "name": "Empregado despedido derrama produtos químicos de limpeza",
     "place": "Supermercado\nHipermercado",
@@ -21278,5 +21903,235 @@
     "base_mission_id": 645,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "650",
+    "name": "Reposesión del vehículo",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [651],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 650,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "651",
+    "name": "Reposesión de vehículo que sale mal",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 1,
+      "tow_trucks": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 651,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "652",
+    "name": "Problemas del coche en la carretera",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "653",
+    "name": "El coche se queda sin gasolina",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 653,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "654",
+    "name": "Vehículo abandonado a un lado de la carretera",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 654,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "655",
+    "name": "Camión de bomberos en una zanja",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 2 },
+    "overlay_index": null,
+    "base_mission_id": 655,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "656",
+    "name": "Escape caído",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 656,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "657",
+    "name": "El vehículo no puede arrancar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 775,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 657,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "658",
+    "name": "Rueda pinchada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 27, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 658,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
   }
 ]
