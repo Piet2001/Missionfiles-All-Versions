@@ -29893,5 +29893,38 @@
     "base_mission_id": 768,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "769",
+    "name": "Motocicletta che va troppo veloce",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 769,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
