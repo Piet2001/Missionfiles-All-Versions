@@ -29926,5 +29926,480 @@
     "base_mission_id": 769,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "773",
+    "name": "Escursionista con distorsione alla caviglia",
+    "place": "Bosco\nSentiero escursionistico",
+    "place_array": ["Bosco", "Sentiero escursionistico"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "personnel_educations": { "mountain_rescue": 4 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01V", "ZC01G"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 4 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 1,
+      "personnel_educations": { "mountain_rescue": 8 },
+      "mountain_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 773,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "774",
+    "name": "Escursionista caduto in un burrone",
+    "place": "Bosco\nSentiero escursionistico",
+    "place_array": ["Bosco", "Sentiero escursionistico"],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "police_cars": 1,
+      "personnel_educations": { "mountain_rescue": 12 }
+    },
+    "chances": { "patient_transport": 50, "helicopter": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 12 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "personnel_educations": { "mountain_rescue": 24 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 774,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "775",
+    "name": "Arrampicatore colpito da una roccia in falesia",
+    "place": "Falesia",
+    "place_array": ["Falesia"],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "personnel_educations": { "mountain_rescue": 8 }
+    },
+    "chances": { "patient_transport": 80, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 8 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_rescue": 16 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 775,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "776",
+    "name": "Speleologo scivolato in grotta",
+    "place": "Grotta",
+    "place_array": ["Grotta"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "mountain_command": 1,
+      "personnel_educations": { "mountain_cave_rescue": 8 }
+    },
+    "chances": {
+      "mountain_command": 20,
+      "patient_transport": 30,
+      "helicopter": 80
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Speleologico": 8 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_cave_rescue": 16 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 776,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "777",
+    "name": "Speleologo intrappolato dopo un crollo",
+    "place": "Grotta",
+    "place_array": ["Grotta"],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "mountain_command": 1,
+      "personnel_educations": { "mountain_cave_rescue": 12 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Speleologico": 12 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_cave_rescue": 24 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 777,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "778",
+    "name": "Escursionista con Attacco di Panico in Grotta",
+    "place": "Grotta",
+    "place_array": ["Grotta"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": { "personnel_educations": { "mountain_cave_rescue": 8 } },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC19G"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": ["Medicina interna generale"],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale",
+      "personnel_educations": { "Tecnico di Soccorso Speleologico": 8 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_cave_rescue": 16 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "779",
+    "name": "Escursionista Disperso nel Bosco",
+    "place": "Bosco",
+    "place_array": ["Bosco"],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "rescue_dog_units": 2,
+      "mountain_command": 1,
+      "mountain_rescue_drone": 1,
+      "police_cars": 2,
+      "personnel_educations": { "mountain_rescue": 12 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["ZC20V", "ZC20G", "ZC20R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 12 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "police_stations": 4,
+      "personnel_educations": { "mountain_rescue": 24 },
+      "mountain_rescue": 2,
+      "mountain_drone": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "780",
+    "name": "Biker Caduto nel Bosco",
+    "place": "Bosco\nSentiero escursionistico",
+    "place_array": ["Bosco", "Sentiero escursionistico"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "personnel_educations": { "mountain_rescue": 4 }
+    },
+    "chances": { "patient_transport": 90, "helicopter": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 4 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_rescue": 8 },
+      "mountain_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "781",
+    "name": "Arrampicatore Precipitato in Falesia",
+    "place": "Falesia",
+    "place_array": ["Falesia"],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "personnel_educations": { "mountain_rescue": 8 }
+    },
+    "chances": { "patient_transport": 30, "helicopter": 80 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 8 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_rescue": 16 },
+      "mountain_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 781,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "782",
+    "name": "Fungaiolo Caduto nel Bosco",
+    "place": "Bosco\nSentiero escursionistico",
+    "place_array": ["Bosco", "Sentiero escursionistico"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 1,
+      "personnel_educations": { "mountain_rescue": 4 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01V", "ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Soccorso Alpino": 4 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 1,
+      "personnel_educations": { "mountain_rescue": 8 },
+      "mountain_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 782,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
