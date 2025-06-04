@@ -8912,6 +8912,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [917],
       "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [7],
       "patient_specialization_captions": ["Cardiologie"],
@@ -35011,7 +35012,7 @@
       "/images/ambulance_rot.png"
     ],
     "requirements": { "ambulances": 2, "firetrucks": 1, "police_cars": 2 },
-    "chances": { "patient_transport": 85 },
+    "chances": { "firetrucks": 30, "patient_transport": 85 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -35045,7 +35046,7 @@
       "/images/ambulance_rot.png"
     ],
     "requirements": { "ambulances": 2, "firetrucks": 2, "police_cars": 3 },
-    "chances": { "nef": 100, "patient_transport": 100 },
+    "chances": { "firetrucks": 30, "nef": 100, "patient_transport": 100 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -44565,7 +44566,7 @@
     "name": "Grap veroorzaakt hartaanval",
     "place": "",
     "place_array": [],
-    "average_credits": 650,
+    "average_credits": 1180,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -44580,6 +44581,7 @@
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [7],
       "patient_specialization_captions": ["Cardiologie"],
       "patient_specializations": "Cardiologie"
