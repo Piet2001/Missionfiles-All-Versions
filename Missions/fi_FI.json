@@ -369,7 +369,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 14800, "firetrucks": 1 },
+    "requirements": { "water_needed": 5800, "firetrucks": 2 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [331],
@@ -22428,7 +22428,9 @@
     "additional": {
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": ["ocean_missions"],
-      "uses_custom_spawn_area": true
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true
     },
     "prerequisites": { "main_building": 23, "coastal_rescue_count": 1 },
     "overlay_index": null,
