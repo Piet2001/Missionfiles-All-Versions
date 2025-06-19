@@ -70,6 +70,37 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "2/a",
+    "name": "Burning car",
+    "place": "",
+    "place_array": [],
+    "average_credits": 670,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27, 16, 19],
+      "followup_missions_ids": [3, 7],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 2,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "3",
     "name": "Burning motorbike",
     "place": "",
@@ -92,6 +123,37 @@
     "overlay_index": null,
     "base_mission_id": 3,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "3/a",
+    "name": "Burning motorbike",
+    "place": "",
+    "place_array": [],
+    "average_credits": 640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [27],
+      "followup_missions_ids": [2, 7],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 3,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -304,6 +366,35 @@
     "overlay_index": null,
     "base_mission_id": 13,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "13/a",
+    "name": "Burning truck",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1280,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks_large": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 13,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -595,6 +686,42 @@
     "overlay_index": null,
     "base_mission_id": 25,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "25/a",
+    "name": "Road accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [24, 2],
+      "followup_missions_ids": [25, 29],
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 25,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -1701,6 +1828,35 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "46/a",
+    "name": "Parked car accident",
+    "place": "Supermarket (small)",
+    "place_array": ["Supermarket (small)"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 46,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "47",
     "name": "Parked car accident",
     "place": "Supermarket (big)",
@@ -1719,6 +1875,35 @@
     "overlay_index": null,
     "base_mission_id": 47,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "47/a",
+    "name": "Parked car accident",
+    "place": "Supermarket (big)",
+    "place_array": ["Supermarket (big)"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 47,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -1874,6 +2059,35 @@
     "overlay_index": null,
     "base_mission_id": 54,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "54/a",
+    "name": "Parked car accident",
+    "place": "Mall",
+    "place_array": ["Mall"],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 54,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -2119,6 +2333,45 @@
     "overlay_index": null,
     "base_mission_id": 64,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "64/a",
+    "name": "Accident Involving a Bus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "tow_trucks_large": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 64,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "urban",
@@ -2450,6 +2703,103 @@
     "overlay_index": null,
     "base_mission_id": 73,
     "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "73/b",
+    "name": "Serious Accident Involving a Bus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "73/ab",
+    "name": "Serious Accident Involving a Bus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 12,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "hazard_response_ems": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 73,
+    "additive_overlays": "ab",
     "mission_categories": [
       "fire",
       "urban",
@@ -3542,6 +3892,43 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "106/a",
+    "name": "Hit and Run",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "police_cars": 4 },
+    "chances": { "traffic_car": 25, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "max_possible_prisoners": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 106,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "107",
     "name": "Row of garages on fire",
     "place": "",
@@ -4339,6 +4726,49 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "128/a",
+    "name": "RTC Entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1550,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "kdow_orgl": 1,
+      "traffic_car": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "kdow_orgl": 25, "traffic_car": 50, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 128,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "129",
     "name": "Multi vehicle RTC",
     "place": "",
@@ -4376,6 +4806,49 @@
     "overlay_index": null,
     "base_mission_id": 129,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "129/a",
+    "name": "Multi vehicle RTC",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "kdow_orgl": 1,
+      "traffic_car": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "kdow_orgl": 50, "traffic_car": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 129,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -4418,6 +4891,51 @@
     "overlay_index": null,
     "base_mission_id": 130,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "130/a",
+    "name": "Multi vehicle RTC entrapment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4600,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "kdow_orgl": 50, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 4,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 1,
+      "tow_trucks": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 130,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -9721,6 +10239,41 @@
     "mission_categories": ["ambulance"]
   },
   {
+    "id": "266/a",
+    "name": "Motorcross Accident",
+    "place": "Dirt Race Track",
+    "place_array": ["Dirt Race Track"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-1"],
+      "filter_id": "ambulance_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 266,
+    "additive_overlays": "a",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "267",
     "name": "Flooding on carriageway",
     "place": "",
@@ -9781,6 +10334,46 @@
     "overlay_index": null,
     "base_mission_id": 268,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "268/a",
+    "name": "HGV Rollover Down Embankment",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 70, "patient_critical_care": 65 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 2,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 268,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -12488,6 +13081,49 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "322/a",
+    "name": "Dangerous goods truck accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 1,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "tow_trucks_large": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 322,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "323",
     "name": "Chlorine leak",
     "place": "Swimming bath",
@@ -13692,6 +14328,35 @@
     "overlay_index": null,
     "base_mission_id": 332,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "332/a",
+    "name": "Two vehicle RTC (No Injuries)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 332,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -15829,6 +16494,53 @@
       "fire_stations": 13
     },
     "overlay_index": 2,
+    "base_mission_id": 371,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "371-3",
+    "name": "Multiple vehicle RTC - Major Incident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "tow_trucks": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": 3,
     "base_mission_id": 371,
     "additive_overlays": "",
     "mission_categories": [
@@ -20384,6 +21096,40 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "466/a",
+    "name": "Caravan roll over RTC",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "tow_trucks_large": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 466,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "467",
     "name": "Caravan roll over RTC (Fast Road)",
     "place": "Highway exit\nMajor Road Standby Point",
@@ -20414,6 +21160,42 @@
     "overlay_index": null,
     "base_mission_id": 467,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "467/a",
+    "name": "Caravan roll over RTC (Fast Road)",
+    "place": "Highway exit\nMajor Road Standby Point",
+    "place_array": ["Highway exit", "Major Road Standby Point"],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "traffic_car": 2,
+      "oneof_fire_engine_or_rescue": 2,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "need_traffic_car_only_if_present": true,
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 8,
+      "tow_trucks_large": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 467,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -31546,5 +32328,317 @@
     "base_mission_id": 770,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "776",
+    "name": "Car into telegraph pole",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "police_cars": 2 },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "expansion_missions_ids": [777],
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "tow_trucks": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 776,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "777",
+    "name": "RTC Car into telegraph pole (entrapment)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 70, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "max_possible_prisoners": 1,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "rescue_stations": 1,
+      "police_stations": 5,
+      "tow_trucks": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 777,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "778",
+    "name": "Uninsured Heavy Goods Vehicle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 2,
+      "tow_trucks_large": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "779",
+    "name": "Stolen Car Located",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "780",
+    "name": "Stolen Moped Located",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "781",
+    "name": "Stolen Van Located",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 781,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "782",
+    "name": "Non-Injury RTC with Police Car (Recovery Required)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_car": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 3,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 782,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "783",
+    "name": "S.59 Vehicle Seizure for Anti-Social Use",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 34,
+      "police_stations": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 783,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "police"]
+  },
+  {
+    "id": "784",
+    "name": "Abandoned Car Obstructing Road",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [779],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 34, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 784,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "785",
+    "name": "Broken Down Car Obstructing Road",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {},
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [779],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": { "main_building": 34, "tow_trucks": 1 },
+    "overlay_index": null,
+    "base_mission_id": 785,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks"]
   }
 ]
