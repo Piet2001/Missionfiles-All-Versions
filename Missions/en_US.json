@@ -54010,5 +54010,45 @@
     "base_mission_id": 1069,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1070",
+    "name": "Crane fell over on construction site",
+    "place": "Construction site",
+    "place_array": ["Construction site"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["15-D-8"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1070,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
