@@ -31298,8 +31298,8 @@
   {
     "id": "828",
     "name": "Bombe de la Seconde Guerre mondiale retrouvée avec un risque d'explosion",
-    "place": "",
-    "place_array": [],
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
     "average_credits": 61950,
     "generated_by": "",
     "icons": [
@@ -31324,8 +31324,11 @@
       "disaster_response_command": 1,
       "decontamination_measurement": 2,
       "decontamination_personnel": 2,
+      "fbi_bomb": 2,
+      "bomb_drone": 2,
       "firetrucks": 30,
-      "police_cars": 8
+      "police_cars": 8,
+      "personnel_educations": { "disaster_response": 9 }
     },
     "chances": {
       "patient_transport": 80,
@@ -31339,14 +31342,17 @@
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "USAR": 9 }
     },
     "prerequisites": {
       "main_building": 27,
       "rescue_stations": 15,
       "police_stations": 10,
       "police_helicopter_stations": 1,
+      "bomb_disposal_count": 2,
       "fire_support_count": 4,
+      "personnel_educations": { "disaster_response": 18 },
       "technical_aid": 2,
       "decontamination": 2,
       "fire_stations": 30
@@ -31354,7 +31360,7 @@
     "overlay_index": null,
     "base_mission_id": 828,
     "additive_overlays": "",
-    "mission_categories": ["decontamination"]
+    "mission_categories": ["bomb_disposal"]
   },
   {
     "id": "829",
