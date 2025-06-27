@@ -61131,6 +61131,110 @@
     "mission_categories": ["thw"]
   },
   {
+    "id": "546",
+    "name": "Hitzschlagvorsorge bei Stau",
+    "place": "Autobahnauf.- / abfahrt",
+    "place_array": ["Autobahnauf.- / abfahrt"],
+    "average_credits": 20800,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "gw_san": 1,
+      "ambulances": 4,
+      "seg_elw": 1,
+      "oneof_police_patrol_or_motorcycle": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "4 Stunden",
+      "duration": 14400,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "date_start": "2025-06-27T09:00:00Z",
+      "date_end": "2025-08-22T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 12, "police_stations": 2, "seg": 2 },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "",
+    "mission_categories": ["seg"]
+  },
+  {
+    "id": "546/a",
+    "name": "Hitzschlagvorsorge bei Stau",
+    "place": "Autobahnauf.- / abfahrt",
+    "place_array": ["Autobahnauf.- / abfahrt"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "gw_san": 1,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "seg_elw": 1,
+      "oneof_police_patrol_or_motorcycle": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "4 Stunden",
+      "duration": 14400,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "date_start": "2025-06-27T09:00:00Z",
+      "date_end": "2025-08-22T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "police_stations": 2,
+      "seg": 2,
+      "police_service_group_leader": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 546,
+    "additive_overlays": "a",
+    "mission_categories": ["seg"]
+  },
+  {
+    "id": "547",
+    "name": "Badestellenüberwachung",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "boats": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "date_start": "2025-06-27T09:00:00Z",
+      "date_end": "2025-08-22T23:59:59+02:00"
+    },
+    "prerequisites": { "main_building": 15, "wasserrettung": 1 },
+    "overlay_index": null,
+    "base_mission_id": 547,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "548",
     "name": "Grillbrand",
     "place": "",
@@ -69160,6 +69264,40 @@
     "base_mission_id": 645,
     "additive_overlays": "a",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "646",
+    "name": "Absicherung Schwimmwettbewerb",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "boats": 1, "ambulances": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "date_start": "2025-06-27T09:00:00Z",
+      "date_end": "2025-08-22T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 646,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
   },
   {
     "id": "647",
