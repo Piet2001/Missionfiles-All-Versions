@@ -26050,5 +26050,215 @@
     "base_mission_id": 776,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "777",
+    "name": "Industrial fire (small)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_needed": 10000,
+      "foam_needed": 4600,
+      "pump": 1,
+      "foam": 1,
+      "firetrucks": 4
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "expansion_missions_ids": [778],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 777,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "778",
+    "name": "Industrial fire (medium)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_needed": 12500,
+      "foam_needed": 5000,
+      "pump": 2,
+      "foam": 1,
+      "firetrucks": 5
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "expansion_missions_ids": [779],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "779",
+    "name": "Industrial fire (large)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_needed": 20000,
+      "foam_needed": 9600,
+      "pump": 3,
+      "foam": 2,
+      "firetrucks": 8
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "780",
+    "name": "Fire in tanker truck",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 2,
+      "foam": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "781",
+    "name": "Chemical fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 781,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
   }
 ]
