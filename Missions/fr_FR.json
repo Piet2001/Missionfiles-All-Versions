@@ -31941,5 +31941,85 @@
     "base_mission_id": 840,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue"]
+  },
+  {
+    "id": "841",
+    "name": "Tempête de feu",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 99000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 60,
+      "mobile_command_vehicles": 10,
+      "elw3": 25,
+      "foam": 10,
+      "mobile_air_vehicles": 10,
+      "hose": 10,
+      "kdow_orgl": 5,
+      "police_helicopters": 1,
+      "pump": 10,
+      "fire_aviation": 10,
+      "fire_aviation_2": 6,
+      "fire_aviation_3": 8,
+      "disaster_response_command": 8,
+      "wildfire_support": 15,
+      "firetrucks": 30,
+      "police_cars": 30
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 2,
+      "followup_missions_ids": [578],
+      "filter_id": "technical_aid_missions",
+      "subsequent_missions_ids": [581, 726],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "brush_extension": 10,
+      "fire_aviation_count": 20,
+      "fire_support_count": 15,
+      "technical_aid": 20,
+      "fire_aviation_2": 10,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 841,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "842",
+    "name": "Rodéo urbain",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 842,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
