@@ -19444,5 +19444,44 @@
     "base_mission_id": 593,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "594",
+    "name": "산업 지역에서 발생한 대형 화재",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": { "hazmat_vehicles": 35, "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["외상학과"],
+      "patient_specializations": "외상학과"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
