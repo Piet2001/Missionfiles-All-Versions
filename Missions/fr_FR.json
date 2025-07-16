@@ -760,6 +760,39 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "29/a",
+    "name": "Déversement de citerne inconnue",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 2,
+      "breathing_protection_container": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "container": 5,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 29,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "30",
     "name": "Fuite de gaz",
     "place": "",
@@ -1702,6 +1735,85 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "60/b",
+    "name": "Feu d'ERP - Salle de sport",
+    "place": "École",
+    "place_array": ["École"],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "hose_container": 1,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "container": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 60,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "60/ab",
+    "name": "Feu d'ERP - Salle de sport",
+    "place": "École",
+    "place_array": ["École"],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "hose_container": 1,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_support_count": 1,
+      "container": 3,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 60,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "61",
     "name": "Crash d'aéronef",
     "place": "Petit aéroport (piste)",
@@ -2024,6 +2136,39 @@
     "overlay_index": null,
     "base_mission_id": 69,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "69/a",
+    "name": "Déversement de citerne inconnue",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "breathing_protection_container": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "container": 5,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 69,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -3583,7 +3728,7 @@
   },
   {
     "id": "120",
-    "name": "Feu de parking souterrain",
+    "name": "Feu de parking dans un immeuble",
     "place": "Parking couvert",
     "place_array": ["Parking couvert"],
     "average_credits": 3200,
@@ -3616,6 +3761,47 @@
     "overlay_index": null,
     "base_mission_id": 120,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "120/a",
+    "name": "Feu de parking dans un immeuble",
+    "place": "Parking couvert",
+    "place_array": ["Parking couvert"],
+    "average_credits": 4700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_needed": 6000,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 2
+    },
+    "chances": { "mobile_air_vehicles": 30, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "container": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 120,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -6510,6 +6696,111 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "200/b",
+    "name": "Feu de multiples VL dans tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 20000,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 5,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 90,
+      "water_tankers": 40,
+      "patient_transport": 70,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "container": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 200,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "200/ab",
+    "name": "Feu de multiples VL dans tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 20000,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 5,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 90,
+      "water_tankers": 40,
+      "patient_transport": 70,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "container": 4,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 200,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "201",
     "name": "Feu d'ERP - Restaurant",
     "place": "Restauration rapide",
@@ -6841,7 +7132,7 @@
     "name": "Feu de centre de recyclage",
     "place": "Centre de recyclage",
     "place_array": ["Centre de recyclage"],
-    "average_credits": 11720,
+    "average_credits": 12020,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -6859,6 +7150,7 @@
       "pump": 3,
       "heavy_rescue_vehicles": 1,
       "water_needed": 16000,
+      "lance_nozzle": 1,
       "firetrucks": 4,
       "police_cars": 3
     },
@@ -6880,6 +7172,115 @@
     "overlay_index": null,
     "base_mission_id": 206,
     "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "rural",
+      "urban"
+    ]
+  },
+  {
+    "id": "206/b",
+    "name": "Feu de centre de recyclage",
+    "place": "Centre de recyclage",
+    "place_array": ["Centre de recyclage"],
+    "average_credits": 11720,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 16000,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "rural",
+      "urban"
+    ]
+  },
+  {
+    "id": "206/ab",
+    "name": "Feu de centre de recyclage",
+    "place": "Centre de recyclage",
+    "place_array": ["Centre de recyclage"],
+    "average_credits": 14020,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 3,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 16000,
+      "lance_nozzle": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 206,
+    "additive_overlays": "ab",
     "mission_categories": [
       "fire",
       "fire_support_specialization",
@@ -7045,7 +7446,7 @@
     "name": "Feu d'industrie étendu",
     "place": "Usine",
     "place_array": ["Usine"],
-    "average_credits": 11440,
+    "average_credits": 11740,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -7061,6 +7462,7 @@
       "hose": 3,
       "pump": 2,
       "heavy_rescue_vehicles": 1,
+      "lance_nozzle": 1,
       "firetrucks": 6,
       "police_cars": 6
     },
@@ -7082,6 +7484,99 @@
     "overlay_index": null,
     "base_mission_id": 209,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "209/b",
+    "name": "Feu d'industrie étendu",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 10640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 7,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "container": 4,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 209,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "209/ab",
+    "name": "Feu d'industrie étendu",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 13240,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hose": 3,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "lance_nozzle": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 7,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "fire_support_count": 3,
+      "container": 4,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 209,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -7133,7 +7628,7 @@
     "name": "Feu d'industrie SEVESO",
     "place": "Usine",
     "place_array": ["Usine"],
-    "average_credits": 31650,
+    "average_credits": 31950,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -7152,6 +7647,7 @@
       "pump": 3,
       "heavy_rescue_vehicles": 1,
       "thw_gkw": 1,
+      "lance_nozzle": 1,
       "firetrucks": 7,
       "police_cars": 8
     },
@@ -7174,6 +7670,111 @@
     "overlay_index": null,
     "base_mission_id": 210,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "210/b",
+    "name": "Feu d'industrie SEVESO",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 30850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 7,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "container": 5,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 210,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "210/ab",
+    "name": "Feu d'industrie SEVESO",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 34450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 4,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 7,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 90, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 210,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -8232,6 +8833,104 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "242/b",
+    "name": "Feu d'ERP - Centre commercial",
+    "place": "Centre commercial",
+    "place_array": ["Centre commercial"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose_container": 1,
+      "firetrucks": 6,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 70,
+      "water_tankers": 20,
+      "patient_transport": 60,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 1,
+      "container": 3,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 242,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "242/ab",
+    "name": "Feu d'ERP - Centre commercial",
+    "place": "Centre commercial",
+    "place_array": ["Centre commercial"],
+    "average_credits": 9200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 3,
+      "hose_container": 1,
+      "firetrucks": 6,
+      "police_cars": 2
+    },
+    "chances": {
+      "mobile_air_vehicles": 70,
+      "water_tankers": 20,
+      "patient_transport": 60,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 1,
+      "fire_support_count": 3,
+      "container": 3,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 242,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "243",
     "name": "Accident survenu pendant la préparation du gâteau d’anniversaire",
     "place": "",
@@ -8992,6 +9691,91 @@
     "overlay_index": null,
     "base_mission_id": 263,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "263/b",
+    "name": "Feu de forêt - Majeur",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 20500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 20,
+      "mobile_command_vehicles": 2,
+      "elw3": 8,
+      "water_tankers": 8,
+      "water_needed": 150000,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 7
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [264, 265, 266],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [578, 581],
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "container": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 263,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "263/ab",
+    "name": "Feu de forêt - Majeur",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 27400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 40,
+      "mobile_command_vehicles": 2,
+      "elw3": 8,
+      "foam": 8,
+      "water_tankers": 8,
+      "fire_aviation": 4,
+      "fire_aviation_2": 2,
+      "water_needed": 150000,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 14
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [264, 265, 266],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [578, 581],
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_aviation_count": 6,
+      "fire_support_count": 3,
+      "container": 1,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 263,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "rural"]
   },
   {
@@ -10805,6 +11589,106 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "319/b",
+    "name": "Feu de gare (Gros)",
+    "place": "Gare ferroviaire (trajets régionaux)",
+    "place_array": ["Gare ferroviaire (trajets régionaux)"],
+    "average_credits": 15200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 50000,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 13,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 6,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 319,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "319/ab",
+    "name": "Feu de gare (Gros)",
+    "place": "Gare ferroviaire (trajets régionaux)",
+    "place_array": ["Gare ferroviaire (trajets régionaux)"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "hose": 4,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 50000,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 13,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 15,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 319,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "320",
     "name": "Accident d'engin de chantier",
     "place": "",
@@ -12222,6 +13106,47 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "359/a",
+    "name": "Une raffinerie de pétrole en feu",
+    "place": "Raffinerie de pétrole",
+    "place_array": ["Raffinerie de pétrole"],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "hazmat_vehicles": 2,
+      "hose": 2,
+      "pump": 2,
+      "water_needed": 35000,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 359,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "360",
     "name": "Incendie d’un stockage de papier",
     "place": "Entrepôt",
@@ -13027,7 +13952,7 @@
     "name": "Incendie d'entrepôt de stockage de pneus",
     "place": "Hangar",
     "place_array": ["Hangar"],
-    "average_credits": 14500,
+    "average_credits": 14800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -13045,6 +13970,7 @@
       "hose": 2,
       "pump": 2,
       "thw_gkw": 1,
+      "lance_nozzle": 1,
       "firetrucks": 6,
       "police_cars": 3
     },
@@ -13067,6 +13993,107 @@
     "overlay_index": null,
     "base_mission_id": 385,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "385/b",
+    "name": "Incendie d'entrepôt de stockage de pneus",
+    "place": "Hangar",
+    "place_array": ["Hangar"],
+    "average_credits": 14500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 385,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "385/ab",
+    "name": "Incendie d'entrepôt de stockage de pneus",
+    "place": "Hangar",
+    "place_array": ["Hangar"],
+    "average_credits": 16800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "hose": 2,
+      "pump": 2,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 385,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -14721,6 +15748,59 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "429/a",
+    "name": "Procédure Violences Urbaines (Majeure)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 2,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "police_helicopters": 1,
+      "riot_police": 15,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "riot_police_trailer": 2,
+      "wasserwerfer": 1,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 15
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [430],
+      "max_possible_prisoners": 7,
+      "filter_id": "riot_police_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 5,
+      "police_stations": 20,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 3,
+      "water_cannon": 1,
+      "container": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 429,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "430",
     "name": "Procédure Violences Urbaines (Exceptionnelle)",
     "place": "",
@@ -14768,6 +15848,58 @@
     "overlay_index": null,
     "base_mission_id": 430,
     "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "430/a",
+    "name": "Procédure Violences Urbaines (Exceptionnelle)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 25500,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "police_helicopters": 1,
+      "riot_police": 21,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "riot_police_trailer": 4,
+      "wasserwerfer": 2,
+      "fire_command_container": 1,
+      "firetrucks": 5,
+      "police_cars": 20
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 5,
+      "max_possible_prisoners": 10,
+      "filter_id": "riot_police_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 6,
+      "police_stations": 25,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 5,
+      "water_cannon": 2,
+      "container": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 430,
+    "additive_overlays": "a",
     "mission_categories": ["riot_police"]
   },
   {
@@ -16602,7 +17734,7 @@
     "name": "Incendie dans un entrepôt de carburant avec risque d'explosion",
     "place": "",
     "place_array": [],
-    "average_credits": 20500,
+    "average_credits": 20800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -16619,6 +17751,7 @@
       "water_tankers": 5,
       "pump": 1,
       "heavy_rescue_vehicles": 2,
+      "lance_nozzle": 1,
       "firetrucks": 14,
       "police_cars": 10
     },
@@ -16641,6 +17774,106 @@
     "overlay_index": null,
     "base_mission_id": 480,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "480/b",
+    "name": "Incendie dans un entrepôt de carburant avec risque d'explosion",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "heavy_rescue_vehicles": 2,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 14,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "container": 4,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "480/ab",
+    "name": "Incendie dans un entrepôt de carburant avec risque d'explosion",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "pump": 1,
+      "heavy_rescue_vehicles": 2,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 14,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 65, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "container": 4,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 480,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -17612,6 +18845,57 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "503/a",
+    "name": "Feu usine de textile",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "pump": 2,
+      "thw_gkw": 2,
+      "oneof_fire_engine_or_rescue": 8,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "504",
     "name": "Incendie dans un centre d'accueil et d'hébergement",
     "place": "",
@@ -17655,6 +18939,54 @@
     "overlay_index": null,
     "base_mission_id": 504,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "504/a",
+    "name": "Incendie dans un centre d'accueil et d'hébergement",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "oneof_fire_engine_or_rescue": 10,
+      "hose_container": 1,
+      "firetrucks": 1,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "container": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -17976,6 +19308,69 @@
     "overlay_index": null,
     "base_mission_id": 514,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "514/a",
+    "name": "Incendie dans centrale nucléaire",
+    "place": "Centrale électrique",
+    "place_array": ["Centrale électrique"],
+    "average_credits": 37800,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 2,
+      "oneof_fire_engine_or_rescue": 10,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [582],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 1,
+      "container": 6,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 514,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -18357,6 +19752,61 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "524/a",
+    "name": "Feu de cathédrale",
+    "place": "Lieu de culte",
+    "place_array": ["Lieu de culte"],
+    "average_credits": 21500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "gw_hoehenrettung_personal": 10,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "height_rescue_personnel": 10,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 50,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 524,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "525",
     "name": "Évacuation de Zone À Défendre",
     "place": "",
@@ -18519,6 +19969,60 @@
     "overlay_index": null,
     "base_mission_id": 528,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "528/a",
+    "name": "Explosion de dépôt de munitions",
+    "place": "Hangar",
+    "place_array": ["Hangar"],
+    "average_credits": 25000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 1,
+      "police_helicopters": 1,
+      "pump": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 15,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 100, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 528,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -18723,6 +20227,54 @@
     "overlay_index": null,
     "base_mission_id": 534,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "534/a",
+    "name": "Incendie d'un grand hôtel",
+    "place": "Hôtel",
+    "place_array": ["Hôtel"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "hose_container": 1,
+      "firetrucks": 10,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "fire_support_count": 2,
+      "container": 3,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 534,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -19086,6 +20638,52 @@
     "mission_categories": ["airport"]
   },
   {
+    "id": "544/a",
+    "name": "Incendie dans le terminal de l'aéroport",
+    "place": "Terminal d’aéroport",
+    "place_array": ["Terminal d’aéroport"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 2,
+      "arff": 4,
+      "airport_equipment": 1,
+      "elw_airport": 2,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "oneof_airport_fire_engine_or_engine_large": 2,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "airport": 3,
+      "container": 3,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 544,
+    "additive_overlays": "a",
+    "mission_categories": ["airport"]
+  },
+  {
     "id": "545",
     "name": "Incendie de hangar",
     "place": "Hangar à avions",
@@ -19423,6 +21021,64 @@
     "mission_categories": ["airport", "fire_support_specialization"]
   },
   {
+    "id": "552/a",
+    "name": "Collision d'avions commerciaux - avec incursion sur piste",
+    "place": "Grand aéroport (piste)",
+    "place_array": ["Grand aéroport (piste)"],
+    "average_credits": 52300,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 20,
+      "battalion_chief_vehicles": 15,
+      "mobile_command_vehicles": 4,
+      "foam": 1,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 4,
+      "k9": 3,
+      "heavy_rescue_vehicles": 20,
+      "arff": 8,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 75,
+      "police_cars": 20,
+      "personnel_educations": { "gw_gefahrgut": 16 }
+    },
+    "chances": { "patient_transport": 15, "helicopter": 20 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 150,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 40,
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "Véhicules risques chimiques": 16 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "personnel_educations": { "gw_gefahrgut": 32 },
+      "airport": 3,
+      "container": 6,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "a",
+    "mission_categories": ["airport", "fire_support_specialization"]
+  },
+  {
     "id": "553",
     "name": "Surveillance d'une grève",
     "place": "",
@@ -19592,6 +21248,68 @@
     "overlay_index": null,
     "base_mission_id": 556,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "rural"]
+  },
+  {
+    "id": "556/a",
+    "name": "Explosion d'un silo",
+    "place": "Silo",
+    "place_array": ["Silo"],
+    "average_credits": 20500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "gw_hoehenrettung_personal": 5,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "k9": 2,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 2,
+      "ambulances": 15,
+      "heavy_rescue_vehicles": 3,
+      "water_needed": 90000,
+      "fire_command_container": 1,
+      "firetrucks": 9,
+      "police_cars": 7
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 8,
+      "height_rescue_personnel": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 9,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 2,
+      "container": 1,
+      "fire_stations": 26
+    },
+    "overlay_index": null,
+    "base_mission_id": 556,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "rural"]
   },
   {
@@ -19782,6 +21500,63 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "560/a",
+    "name": "Feu de bibliothèque (Majeur)",
+    "place": "Bibliothèque",
+    "place_array": ["Bibliothèque"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "pump": 3,
+      "ambulances": 16,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 10,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 30,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 16,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 560,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "561",
     "name": "Feu de dépôt de bus",
     "place": "",
@@ -19810,6 +21585,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [836],
       "filter_id": "firehouse_missions",
       "subsequent_missions_ids": [100, 99, 276],
       "patient_at_end_of_mission": true,
@@ -19827,6 +21603,57 @@
     "overlay_index": null,
     "base_mission_id": 561,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "561/a",
+    "name": "Feu de dépôt de bus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "foam_container": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [836],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [100, 99, 276],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "container": 4,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 561,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -20866,6 +22693,75 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "582/a",
+    "name": "Explosion d'une centrale nucléaire",
+    "place": "Centrale électrique",
+    "place_array": ["Centrale électrique"],
+    "average_credits": 49800,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 4,
+      "platform_trucks": 12,
+      "battalion_chief_vehicles": 9,
+      "mobile_command_vehicles": 2,
+      "foam": 10,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 8,
+      "water_tankers": 5,
+      "hose": 6,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 6,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 2,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 35,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 14 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "Véhicules risques chimiques": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 25,
+      "police_helicopter_stations": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "gw_gefahrgut": 14 },
+      "container": 6,
+      "fire_stations": 60
+    },
+    "overlay_index": null,
+    "base_mission_id": 582,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "583",
     "name": "Manifestation contre la construction d'un projet autoroutier",
     "place": "",
@@ -21215,6 +23111,68 @@
     "mission_categories": ["fire", "fire_support_specialization", "rural"]
   },
   {
+    "id": "590/a",
+    "name": "Incendie dans un bâtiment de stockage d'engrais solides",
+    "place": "",
+    "place_array": [],
+    "average_credits": 30300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 4,
+      "water_tankers": 1,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 3,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 13,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 590,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "rural"]
+  },
+  {
     "id": "591",
     "name": "Feu de véhicule électrique",
     "place": "",
@@ -21391,6 +23349,61 @@
     "overlay_index": null,
     "base_mission_id": 594,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "594/a",
+    "name": "Explosion dans un parc aquarium",
+    "place": "Aquarium",
+    "place_array": ["Aquarium"],
+    "average_credits": 24500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "k9": 2,
+      "pump": 2,
+      "thw_gkw": 2,
+      "fire_command_container": 1,
+      "firetrucks": 10,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 30,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [595],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "fire_support_count": 2,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 594,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -21603,6 +23616,65 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "599/a",
+    "name": "Feu dans une usine de fabrication automobile",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 3,
+      "water_tankers": 1,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 7,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [600],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "container": 4,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 599,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "600",
     "name": "Explosion dans une usine de fabrication automobile",
     "place": "Usine",
@@ -21654,6 +23726,65 @@
     "overlay_index": null,
     "base_mission_id": 600,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "600/a",
+    "name": "Explosion dans une usine de fabrication automobile",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 21500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 2,
+      "foam": 4,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 5,
+      "water_tankers": 2,
+      "hose": 4,
+      "kdow_orgl": 1,
+      "pump": 4,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 8,
+      "fire_support_count": 4,
+      "container": 4,
+      "fire_stations": 21
+    },
+    "overlay_index": null,
+    "base_mission_id": 600,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -22095,6 +24226,64 @@
     "mission_categories": ["disaster_response"]
   },
   {
+    "id": "609/a",
+    "name": "Effondrement de tribune dans un stade",
+    "place": "Stade",
+    "place_array": ["Stade"],
+    "average_credits": 31500,
+    "generated_by": "",
+    "icons": [
+      "/images/stadium_gruen.png",
+      "/images/stadium_gelb.png",
+      "/images/stadium_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "gw_hoehenrettung_personal": 5,
+      "height_rescue_units": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_gkw": 3,
+      "disaster_response_command": 2,
+      "heavy_rescue": 2,
+      "rescue_dogs": 4,
+      "ambulance_command_container": 1,
+      "firetrucks": 10,
+      "police_cars": 8,
+      "personnel_educations": { "disaster_response": 9 }
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 20,
+      "height_rescue_personnel": 5,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "USAR": 9 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 15,
+      "police_stations": 12,
+      "personnel_educations": { "disaster_response": 18 },
+      "technical_aid": 3,
+      "heavy_rescue": 1,
+      "container": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 609,
+    "additive_overlays": "a",
+    "mission_categories": ["disaster_response"]
+  },
+  {
     "id": "610",
     "name": "Effondrement d'un centre commercial",
     "place": "Centre commercial",
@@ -22519,6 +24708,52 @@
     "overlay_index": null,
     "base_mission_id": 617,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "617/a",
+    "name": "Méga feu de forêt",
+    "place": "Forêt",
+    "place_array": ["Forêt"],
+    "average_credits": 30500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 25,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 2,
+      "water_tankers": 5,
+      "fire_aviation": 4,
+      "fire_aviation_2": 2,
+      "fire_aviation_3": 2,
+      "disaster_response_command": 1,
+      "wildfire_support": 1,
+      "fire_command_container": 1,
+      "firetrucks": 10,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_missions",
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 2,
+      "brush_extension": 1,
+      "fire_aviation_count": 6,
+      "technical_aid": 1,
+      "fire_aviation_2": 2,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 617,
+    "additive_overlays": "a",
     "mission_categories": ["forestry"]
   },
   {
@@ -23845,6 +26080,64 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "645/a",
+    "name": "Émeute étudiante",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 19000,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "riot_police_trailer": 1,
+      "wasserwerfer": 1,
+      "fire_command_container": 1,
+      "oneof_police_patrol_or_riot_police_crew": 28,
+      "firetrucks": 3,
+      "police_cars": 15
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 12,
+      "filter_id": "riot_police_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 6,
+      "police_stations": 25,
+      "police_helicopter_stations": 2,
+      "bereitschaftspolizei": 5,
+      "container": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "a",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "646",
     "name": "Accident de Véhicule seule (inaccessible)",
     "place": "",
@@ -24030,6 +26323,62 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "649/a",
+    "name": "Incendie dans un centre de stockage de bouteilles de gaz",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 2,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 9,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 649,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "650",
     "name": "Intoxication alimentaire dans un établissement pénitentiaire - Nombreuses victimes",
     "place": "Prison",
@@ -24149,6 +26498,63 @@
     "overlay_index": null,
     "base_mission_id": 652,
     "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "652/a",
+    "name": "Incendie dans un entrepôt de peinture",
+    "place": "Entrepôt",
+    "place_array": ["Entrepôt"],
+    "average_credits": 17000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "hose": 2,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 7,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 652,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -24544,6 +26950,64 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "662/a",
+    "name": "Incendie dans une cimenterie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 10,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 662,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "663",
     "name": "Manifestation contre les méga-bassines",
     "place": "Centre-ville",
@@ -24646,6 +27110,63 @@
     "overlay_index": null,
     "base_mission_id": 664,
     "additive_overlays": "",
+    "mission_categories": ["airport"]
+  },
+  {
+    "id": "664/a",
+    "name": "Incendie dans le terminal de l'aéroport - Grand",
+    "place": "Terminal d’aéroport",
+    "place_array": ["Terminal d’aéroport"],
+    "average_credits": 25500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "arff": 5,
+      "airport_equipment": 1,
+      "riv": 3,
+      "elw_airport": 3,
+      "fire_command_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 13,
+      "firetrucks": 1,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 0, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 40,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "airport": 3,
+      "container": 5,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "a",
     "mission_categories": ["airport"]
   },
   {
@@ -24790,6 +27311,62 @@
     "mission_categories": ["swat"]
   },
   {
+    "id": "667/a",
+    "name": "Prises d’otages dans une banque",
+    "place": "Banque",
+    "place_array": ["Banque"],
+    "average_credits": 15500,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "swat": 1,
+      "swat_ladder": 1,
+      "swat_negotiation": 1,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 12
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "swat_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 8,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "swat": 1,
+      "swat_height": 1,
+      "swat_negotiation": 1,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 667,
+    "additive_overlays": "a",
+    "mission_categories": ["swat"]
+  },
+  {
     "id": "668",
     "name": "Prises d'otages dans un train",
     "place": "Gare ferroviaire (trajets régionaux)",
@@ -24898,6 +27475,62 @@
     "mission_categories": ["swat"]
   },
   {
+    "id": "669/a",
+    "name": "Prises d'otages dans un centre commercial",
+    "place": "Centre commercial",
+    "place_array": ["Centre commercial"],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "swat": 2,
+      "swat_ladder": 2,
+      "swat_negotiation": 1,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 12
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "swat_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "swat": 1,
+      "swat_height": 1,
+      "swat_negotiation": 1,
+      "container": 10,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "a",
+    "mission_categories": ["swat"]
+  },
+  {
     "id": "670",
     "name": "Un forcené retranché dans un domicile",
     "place": "",
@@ -25002,6 +27635,65 @@
     "mission_categories": ["swat"]
   },
   {
+    "id": "671/a",
+    "name": "Prise d'otages à bord d'un avion",
+    "place": "Grand aéroport (piste)",
+    "place_array": ["Grand aéroport (piste)"],
+    "average_credits": 19650,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "arff": 3,
+      "swat": 3,
+      "swat_ladder": 2,
+      "swat_negotiation": 1,
+      "fire_command_container": 1,
+      "firetrucks": 1,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 7,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 5,
+      "filter_id": "swat_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 15,
+      "police_stations": 12,
+      "police_helicopter_stations": 1,
+      "airport": 2,
+      "swat": 2,
+      "swat_height": 1,
+      "swat_negotiation": 1,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 671,
+    "additive_overlays": "a",
+    "mission_categories": ["swat"]
+  },
+  {
     "id": "672",
     "name": "Prises d'otages dans une prison de haute sécurité",
     "place": "Prison",
@@ -25053,6 +27745,62 @@
     "overlay_index": null,
     "base_mission_id": 672,
     "additive_overlays": "",
+    "mission_categories": ["swat"]
+  },
+  {
+    "id": "672/a",
+    "name": "Prises d'otages dans une prison de haute sécurité",
+    "place": "Prison",
+    "place_array": ["Prison"],
+    "average_credits": 22000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "swat": 3,
+      "swat_ladder": 3,
+      "swat_negotiation": 1,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 12
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "swat_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "swat": 2,
+      "swat_height": 2,
+      "swat_negotiation": 1,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 672,
+    "additive_overlays": "a",
     "mission_categories": ["swat"]
   },
   {
@@ -25110,6 +27858,65 @@
     "overlay_index": null,
     "base_mission_id": 673,
     "additive_overlays": "",
+    "mission_categories": ["swat"]
+  },
+  {
+    "id": "673/a",
+    "name": "Prises d’otages dans une centrale nucléaire",
+    "place": "Centrale électrique",
+    "place_array": ["Centrale électrique"],
+    "average_credits": 23400,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "swat": 3,
+      "swat_ladder": 3,
+      "swat_negotiation": 1,
+      "fire_command_container": 1,
+      "firetrucks": 3,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "swat_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "swat": 1,
+      "swat_height": 2,
+      "swat_negotiation": 2,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 673,
+    "additive_overlays": "a",
     "mission_categories": ["swat"]
   },
   {
@@ -26001,6 +28808,67 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "694/a",
+    "name": "Explosion sur une unité H2O2 (eau oxygénée)",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 33650,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "elw3": 2,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "pump": 3,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 8,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 694,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "695",
     "name": "Accident de luge",
     "place": "",
@@ -26235,6 +29103,66 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "700/a",
+    "name": "Explosion de four à arc sous vide",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 19000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "k9": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 7,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 700,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "701",
     "name": "Incendie d'un bateau de croisières à quai",
     "place": "Quai de navire de croisière",
@@ -26289,6 +29217,75 @@
     "overlay_index": null,
     "base_mission_id": 701,
     "additive_overlays": "",
+    "mission_categories": [
+      "water_rescue_specialization",
+      "fire_support_specialization",
+      "fire",
+      "rural",
+      "urban"
+    ]
+  },
+  {
+    "id": "701/a",
+    "name": "Incendie d'un bateau de croisières à quai",
+    "place": "Quai de navire de croisière",
+    "place_array": ["Quai de navire de croisière"],
+    "average_credits": 22800,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "boats": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "water_rescue": 2
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 35,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "container": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 701,
+    "additive_overlays": "a",
     "mission_categories": [
       "water_rescue_specialization",
       "fire_support_specialization",
@@ -28037,6 +31034,76 @@
     "mission_categories": ["disaster_response"]
   },
   {
+    "id": "742/a",
+    "name": "Fusion du cœur d'un réacteur nucléaire",
+    "place": "Centrale électrique",
+    "place_array": ["Centrale électrique"],
+    "average_credits": 56800,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 3,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 4,
+      "water_tankers": 1,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 3,
+      "heavy_rescue_vehicles": 6,
+      "thw_gkw": 2,
+      "disaster_response_command": 1,
+      "decontamination_measurement": 1,
+      "decontamination_personnel": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "lance_nozzle": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 28,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 4,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 1,
+      "technical_aid": 2,
+      "decontamination": 1,
+      "container": 6,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "a",
+    "mission_categories": ["disaster_response"]
+  },
+  {
     "id": "743",
     "name": "Fuite de pipeline",
     "place": "Pipeline",
@@ -28163,6 +31230,52 @@
     "overlay_index": null,
     "base_mission_id": 745,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "745/a",
+    "name": "Effondrement d'un stade",
+    "place": "Stade",
+    "place_array": ["Stade"],
+    "average_credits": 46000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 4,
+      "k9": 4,
+      "heavy_rescue_vehicles": 20,
+      "fire_command_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 40,
+      "police_cars": 15
+    },
+    "chances": { "patient_transport": 30, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 75,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 10,
+      "container": 6,
+      "fire_stations": 50
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -28585,6 +31698,56 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "758/a",
+    "name": "Incendie d’une usine spécialisée dans la transformation de déchets élastomères recyclés",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 17300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 7,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 758,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "759",
     "name": "Dégagement de vapeur chimique dans une usine",
     "place": "Usine",
@@ -28625,6 +31788,51 @@
     "overlay_index": null,
     "base_mission_id": 759,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "759/a",
+    "name": "Dégagement de vapeur chimique dans une usine",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 4400,
+    "generated_by": "",
+    "icons": [
+      "/images/gas_gruen.png",
+      "/images/gas_gelb.png",
+      "/images/gas_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "hazmat_container": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 25,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "container": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 759,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -29704,6 +32912,67 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "789/a",
+    "name": "Explosion suivie d'un incendie sur un puits de pétrole",
+    "place": "Raffinerie de pétrole",
+    "place_array": ["Raffinerie de pétrole"],
+    "average_credits": 22000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 3,
+      "kdow_orgl": 1,
+      "pump": 3,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 75,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 789,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "790",
     "name": "Destruction d'un nid de guêpes dans un environnement sensible",
     "place": "École",
@@ -29782,6 +33051,77 @@
     "overlay_index": null,
     "base_mission_id": 791,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "airport",
+      "fire_support_specialization",
+      "urban"
+    ]
+  },
+  {
+    "id": "791/a",
+    "name": "Incendie dans un hangar de maintenance dans un aéroport",
+    "place": "Hangar à avions",
+    "place_array": ["Hangar à avions"],
+    "average_credits": 20650,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "thw_gkw": 1,
+      "arff": 2,
+      "airport_equipment": 1,
+      "rettungstreppe": 2,
+      "riv": 2,
+      "elw_airport": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 8,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 15,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "airport": 2,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 791,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "airport",
@@ -29885,6 +33225,70 @@
     "overlay_index": null,
     "base_mission_id": 793,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+  },
+  {
+    "id": "793/a",
+    "name": "Explosion dans un atelier d’encartouchage d’une dynamiterie",
+    "place": "Atelier",
+    "place_array": ["Atelier"],
+    "average_credits": 41000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 3,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 2,
+      "oneof_fire_engine_or_rescue_or_ladder": 19,
+      "oneof_fire_engine_or_rescue": 17,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 18,
+      "police_cars": 7
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 7,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 793,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban", "fire_support_specialization"]
   },
   {
@@ -30156,6 +33560,52 @@
     "mission_categories": ["fire", "urban", "fire_support_specialization"]
   },
   {
+    "id": "799/a",
+    "name": "Feu dans un bâtiment d’expédition de marchandises",
+    "place": "Entrepôt",
+    "place_array": ["Entrepôt"],
+    "average_credits": 21400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 10,
+      "oneof_fire_engine_or_rescue": 8,
+      "hose_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "container": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 799,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+  },
+  {
     "id": "800",
     "name": "Plaie par Arme Blanche",
     "place": "",
@@ -30322,6 +33772,62 @@
     "overlay_index": null,
     "base_mission_id": 803,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "rural"
+    ]
+  },
+  {
+    "id": "803/a",
+    "name": "Incendie dans une usine de fabrication de batteries lithium",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 24800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 2,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 13,
+      "oneof_fire_engine_or_rescue": 10,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "container": 4,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 803,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire",
       "fire_support_specialization",
@@ -30551,6 +34057,65 @@
     "overlay_index": null,
     "base_mission_id": 808,
     "additive_overlays": "",
+    "mission_categories": ["disaster_response"]
+  },
+  {
+    "id": "808/a",
+    "name": "Tremblements de terre - Échelle de Richter 9",
+    "place": "",
+    "place_array": [],
+    "average_credits": 82000,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 4,
+      "platform_trucks": 10,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 1,
+      "height_rescue_units": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 6,
+      "thw_gkw": 8,
+      "disaster_response_command": 1,
+      "heavy_rescue": 5,
+      "rescue_dogs": 4,
+      "ambulance_command_container": 1,
+      "firetrucks": 45,
+      "police_cars": 12,
+      "personnel_educations": { "disaster_response": 40 }
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 50,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "USAR": 40 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 50,
+      "police_stations": 15,
+      "personnel_educations": { "disaster_response": 60 },
+      "technical_aid": 10,
+      "heavy_rescue": 6,
+      "container": 6,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 808,
+    "additive_overlays": "a",
     "mission_categories": ["disaster_response"]
   },
   {
@@ -31392,6 +34957,75 @@
     "mission_categories": ["bomb_disposal"]
   },
   {
+    "id": "828/a",
+    "name": "Bombe de la Seconde Guerre mondiale retrouvée avec un risque d'explosion",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 62450,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 3,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "foam": 4,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 3,
+      "hose": 4,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 4,
+      "heavy_rescue_vehicles": 4,
+      "thw_gkw": 3,
+      "disaster_response_command": 1,
+      "decontamination_measurement": 2,
+      "decontamination_personnel": 2,
+      "fbi_bomb": 2,
+      "bomb_drone": 2,
+      "ambulance_command_container": 1,
+      "firetrucks": 30,
+      "police_cars": 8,
+      "personnel_educations": { "disaster_response": 9 }
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 10,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "USAR": 9 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "bomb_disposal_count": 2,
+      "fire_support_count": 4,
+      "personnel_educations": { "disaster_response": 18 },
+      "technical_aid": 2,
+      "decontamination": 2,
+      "container": 6,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 828,
+    "additive_overlays": "a",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
     "id": "829",
     "name": "Incendie d'un mobil-home",
     "place": "",
@@ -31648,6 +35282,60 @@
     "mission_categories": ["fire_support_specialization"]
   },
   {
+    "id": "834/a",
+    "name": "Feu de bus GPL",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 3,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 4,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 9,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "fire_support_count": 3,
+      "container": 5,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 834,
+    "additive_overlays": "a",
+    "mission_categories": ["fire_support_specialization"]
+  },
+  {
     "id": "835",
     "name": "Effondrement de parking (petit)",
     "place": "Parking couvert",
@@ -31739,6 +35427,56 @@
     "overlay_index": null,
     "base_mission_id": 836,
     "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization"]
+  },
+  {
+    "id": "836/a",
+    "name": "Feu de dépôt de bus GPL",
+    "place": "",
+    "place_array": [],
+    "average_credits": 66500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 6,
+      "battalion_chief_vehicles": 10,
+      "mobile_command_vehicles": 3,
+      "foam": 5,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 5,
+      "water_tankers": 10,
+      "hose": 5,
+      "heavy_rescue_vehicles": 10,
+      "thw_gkw": 5,
+      "foam_container": 1,
+      "firetrucks": 40,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 10,
+      "fire_support_count": 10,
+      "container": 4,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 836,
+    "additive_overlays": "a",
     "mission_categories": ["fire_support_specialization"]
   },
   {
@@ -32022,5 +35760,488 @@
     "base_mission_id": 842,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "849",
+    "name": "Incendie majeur dans un musée",
+    "place": "Musée",
+    "place_array": ["Musée"],
+    "average_credits": 12800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 8,
+      "police_cars": 5
+    },
+    "chances": {
+      "patient_transport": 80,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 8,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 849,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
+    "id": "851",
+    "name": "Incendie dans une usine de fabrication de magnésium",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 851,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
+    "id": "852",
+    "name": "Incendie et explosion dans un entrepôt de propane",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 20000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 18,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 14,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "container": 5,
+      "fire_stations": 28
+    },
+    "overlay_index": null,
+    "base_mission_id": 852,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
+    "id": "853",
+    "name": "Incendie dans une usine de fabrication de panneau photovoltaïque",
+    "place": "Usine",
+    "place_array": ["Usine"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 1,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_gkw": 1,
+      "lance_nozzle": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 10,
+      "police_cars": 6
+    },
+    "chances": {
+      "patient_transport": 85,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgien général"],
+      "patient_specializations": "Chirurgien général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 6,
+      "fire_support_count": 2,
+      "container": 4,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 853,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
+    "id": "858",
+    "name": "Incendie électrique dans un data center",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "breathing_protection_container": 1,
+      "firetrucks": 7,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 5,
+      "fire_support_count": 1,
+      "container": 5,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 858,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "863",
+    "name": "Effondrement d’une maison (R+2)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "gw_hoehenrettung_personal": 5,
+      "height_rescue_units": 2,
+      "k9": 1,
+      "heavy_rescue_vehicles": 2,
+      "heavy_rescue": 1,
+      "firetrucks": 4,
+      "police_cars": 3
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "height_rescue_personnel": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "heavy_rescue": 1,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 863,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "864",
+    "name": "Feu de parking souterrain public (Grand)",
+    "place": "Parking couvert",
+    "place_array": ["Parking couvert"],
+    "average_credits": 21400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "foam": 4,
+      "mobile_air_vehicles": 3,
+      "water_tankers": 4,
+      "hose": 4,
+      "kdow_orgl": 8,
+      "pump": 2,
+      "heavy_rescue_vehicles": 4,
+      "fire_command_container": 1,
+      "foam_container": 1,
+      "firetrucks": 18,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 35, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 15,
+      "followup_missions_ids": [860],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 12,
+      "fire_support_count": 7,
+      "container": 4,
+      "fire_stations": 35
+    },
+    "overlay_index": null,
+    "base_mission_id": 864,
+    "additive_overlays": "",
+    "mission_categories": ["fire_support_specialization", "urban"]
+  },
+  {
+    "id": "865",
+    "name": "Incendie dans une usine de production de voitures électriques",
+    "place": "",
+    "place_array": [],
+    "average_credits": 28200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "foam": 4,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 6,
+      "hose": 4,
+      "pump": 4,
+      "heavy_rescue_vehicles": 4,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "firetrucks": 30,
+      "police_cars": 12
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 10,
+      "patient_critical_care": 70
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 10,
+      "fire_support_count": 6,
+      "container": 4,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 865,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "868",
+    "name": "Explosion dans un Tunnel de Métro",
+    "place": "Station de métro",
+    "place_array": ["Station de métro"],
+    "average_credits": 18300,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "height_rescue_units": 2,
+      "hose": 1,
+      "k9": 2,
+      "pump": 1,
+      "heavy_rescue_vehicles": 4,
+      "thw_gkw": 1,
+      "fire_command_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 20,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 10,
+      "fire_support_count": 1,
+      "container": 6,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 868,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
   }
 ]
