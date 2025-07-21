@@ -2092,7 +2092,7 @@
   },
   {
     "id": "55",
-    "name": "Fight in Progress",
+    "name": "Brawl",
     "place": "",
     "place_array": [],
     "average_credits": 700,
@@ -2122,7 +2122,7 @@
   },
   {
     "id": "56",
-    "name": "Aggressive Person",
+    "name": "Rioter",
     "place": "",
     "place_array": [],
     "average_credits": 500,
@@ -21800,7 +21800,7 @@
   },
   {
     "id": "483",
-    "name": "Scalded by hot liquid",
+    "name": "Scolded by hot liquid",
     "place": "",
     "place_array": [],
     "average_credits": 500,
@@ -24701,7 +24701,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_rescue": 2 },
+    "requirements": { "coastal_rescue": 2, "water_rescue": 1 },
     "chances": { "patient_transport": 60, "patient_critical_care": 40 },
     "additional": {
       "possible_patient": 1,
@@ -24734,7 +24734,11 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_rescue": 2, "coastal_jetski": 1 },
+    "requirements": {
+      "coastal_rescue": 2,
+      "coastal_jetski": 1,
+      "water_rescue": 1
+    },
     "chances": { "patient_transport": 60, "patient_critical_care": 40 },
     "additional": {
       "possible_patient": 1,
@@ -24768,7 +24772,7 @@
       "/images/waterpark_gelb.png",
       "/images/waterpark_rot.png"
     ],
-    "requirements": { "coastal_rescue": 1 },
+    "requirements": { "coastal_rescue": 1, "water_rescue": 1 },
     "chances": { "patient_transport": 60, "patient_critical_care": 40 },
     "additional": {
       "possible_patient": 1,
@@ -27520,9 +27524,12 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "police_cars": 4 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 643,
@@ -28907,7 +28914,7 @@
     "requirements": {
       "platform_trucks": 5,
       "battalion_chief_vehicles": 5,
-      "mobile_command_vehicles": 1,
+      "mobile_command_vehicles": 2,
       "mobile_air_vehicles": 4,
       "water_tankers": 3,
       "k9": 4,
@@ -29599,7 +29606,7 @@
   },
   {
     "id": "703",
-    "name": "Fire in Derelict Shop",
+    "name": "Fire in an abandoned pizzeria",
     "place": "",
     "place_array": [],
     "average_credits": 7000,
@@ -30628,21 +30635,21 @@
   },
   {
     "id": "732",
-    "name": "Multiple Persons Slashing Car Tyres",
+    "name": "Group Of Vagrants Slash Car Tires In Supermarket Parking Lot",
     "place": "Supermarket (small)\nSupermarket (big)",
     "place_array": ["Supermarket (small)", "Supermarket (big)"],
-    "average_credits": 5000,
+    "average_credits": 8000,
     "generated_by": "",
     "icons": [
       "/images/cuffs_gruen.png",
       "/images/cuffs_gelb.png",
       "/images/cuffs_rot.png"
     ],
-    "requirements": { "police_cars": 3 },
+    "requirements": { "k9": 2, "police_cars": 12 },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
-      "max_possible_prisoners": 3,
+      "max_possible_prisoners": 10,
       "filter_id": "police_station_missions"
     },
     "prerequisites": { "main_building": 6, "police_stations": 6 },
@@ -32373,7 +32380,7 @@
   },
   {
     "id": "773",
-    "name": "Delirium",
+    "name": "Delerium",
     "place": "",
     "place_array": [],
     "average_credits": 800,
@@ -32403,6 +32410,46 @@
     "base_mission_id": 773,
     "additive_overlays": "",
     "mission_categories": ["general_practitioner_transfer"]
+  },
+  {
+    "id": "774",
+    "name": "Crane fell over on construction site",
+    "place": "Construction site",
+    "place_array": ["Construction site"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 774,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   },
   {
     "id": "776",
@@ -32633,41 +32680,6 @@
     "overlay_index": null,
     "base_mission_id": 782,
     "additive_overlays": "",
-    "mission_categories": ["tow_trucks", "police"]
-  },
-  {
-    "id": "782/a",
-    "name": "Non-Injury RTC with Police Car (Recovery Required)",
-    "place": "",
-    "place_array": [],
-    "average_credits": 4800,
-    "generated_by": "",
-    "icons": [
-      "/images/caraccident_gruen.png",
-      "/images/caraccident_gelb.png",
-      "/images/caraccident_rot.png"
-    ],
-    "requirements": {
-      "traffic_car": 1,
-      "police_cars": 2,
-      "personnel_educations": { "police_sergeant": 1 }
-    },
-    "chances": {},
-    "additional": {
-      "filter_id": "tow_trucks_missions",
-      "possible_crashed_car_min": 1,
-      "possible_crashed_car_max": 1,
-      "personnel_educations": { "Police Sergeant": 1 }
-    },
-    "prerequisites": {
-      "main_building": 34,
-      "police_stations": 3,
-      "personnel_educations": { "police_sergeant": 3 },
-      "tow_trucks": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 782,
-    "additive_overlays": "a",
     "mission_categories": ["tow_trucks", "police"]
   },
   {
