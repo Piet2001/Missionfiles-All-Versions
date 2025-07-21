@@ -3495,7 +3495,7 @@
     "name": "Insolação",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -3525,7 +3525,7 @@
     "name": "Golpe de calor",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -3555,7 +3555,7 @@
     "name": "Cãibra por calor",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -3585,7 +3585,7 @@
     "name": "Pessoa desidratada",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -9727,7 +9727,7 @@
     "name": "Carrinho de gelados contaminado",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -19822,7 +19822,7 @@
     "name": "Ferimento num escorrega de um parque aquático",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -22283,6 +22283,45 @@
     },
     "overlay_index": null,
     "base_mission_id": 659,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "660",
+    "name": "Guindaste tombado no canteiro de obras",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 660,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   }
