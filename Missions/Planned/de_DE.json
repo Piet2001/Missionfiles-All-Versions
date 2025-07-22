@@ -31,6 +31,43 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "223/a",
+    "name": "Brandsicherheitswache bei Volksfest",
+    "place": "Festplatz",
+    "place_array": ["Festplatz"],
+    "average_credits": 7520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_motorcycle": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "average_min_fire_personnel": 25,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 223,
+    "additive_overlays": "a",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "224",
     "name": "Brandsicherheitswachdienst im Theater",
     "place": "Theater",
@@ -133,6 +170,88 @@
     "overlay_index": null,
     "base_mission_id": 225,
     "additive_overlays": "a",
+    "mission_categories": ["seg_medical_service"]
+  },
+  {
+    "id": "225/b",
+    "name": "Dorf/Stadtfest",
+    "place": "Festplatz",
+    "place_array": ["Festplatz"],
+    "average_credits": 46080,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "gw_san": 1,
+      "ambulances": 3,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "8 Stunden",
+      "duration": 28800,
+      "average_min_fire_personnel": 18,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 225,
+    "additive_overlays": "b",
+    "mission_categories": ["seg_medical_service"]
+  },
+  {
+    "id": "225/ab",
+    "name": "Dorf/Stadtfest",
+    "place": "Festplatz",
+    "place_array": ["Festplatz"],
+    "average_credits": 52480,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "gw_san": 1,
+      "ambulances": 3,
+      "energy_supply": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "8 Stunden",
+      "duration": 28800,
+      "average_min_fire_personnel": 18,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 3,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 225,
+    "additive_overlays": "ab",
     "mission_categories": ["seg_medical_service"]
   },
   {
@@ -394,6 +513,53 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "227/e",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "ambulances": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "e",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "227/ab",
     "name": "Angemeldete Demonstration",
     "place": "",
@@ -540,6 +706,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "227/ae",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "ae",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "227/bc",
     "name": "Angemeldete Demonstration",
     "place": "",
@@ -638,6 +853,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "227/be",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "ambulances": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_motorcycle": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "be",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "227/cd",
     "name": "Angemeldete Demonstration",
     "place": "",
@@ -685,6 +949,106 @@
     "overlay_index": null,
     "base_mission_id": 227,
     "additive_overlays": "cd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/ce",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "ambulances": 1,
+      "police_horse": 3,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_horse": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "ce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/de",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "ambulances": 1,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "de",
     "mission_categories": ["riot_police"]
   },
   {
@@ -790,6 +1154,57 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "227/abe",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "abe",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "227/acd",
     "name": "Angemeldete Demonstration",
     "place": "",
@@ -839,6 +1254,110 @@
     "overlay_index": null,
     "base_mission_id": 227,
     "additive_overlays": "acd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/ace",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_horse": 3,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_horse": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "ace",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/ade",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "ade",
     "mission_categories": ["riot_police"]
   },
   {
@@ -894,6 +1413,163 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "227/bce",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "ambulances": 1,
+      "police_horse": 3,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_horse": 1,
+      "police_motorcycle": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "bce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/bde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 16320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "ambulances": 1,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_motorcycle": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "bde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/cde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "ambulances": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_horse": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "cde",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "227/abcd",
     "name": "Angemeldete Demonstration",
     "place": "",
@@ -945,6 +1621,281 @@
     "overlay_index": null,
     "base_mission_id": 227,
     "additive_overlays": "abcd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/abce",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_horse": 3,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_horse": 1,
+      "police_motorcycle": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "abce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/abde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 17920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "abde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/acde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 20920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 3,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 2,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_horse": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "acde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/bcde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 21720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "ambulances": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_horse": 1,
+      "police_motorcycle": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "bcde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "227/abcde",
+    "name": "Angemeldete Demonstration",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 6,
+      "lebefkw": 2,
+      "police_motorcycle": 2,
+      "police_service_group_leader": 1,
+      "ambulances": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "police_cars": 5,
+      "personnel_educations": { "police_horse": 3 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "followup_missions_ids": [44, 74, 106],
+      "average_min_police_personnel": 50,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 1,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 3 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 1,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "riot_unit_count": 3,
+      "police_service_group_leader": 5,
+      "police_horse": 1,
+      "police_motorcycle": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 227,
+    "additive_overlays": "abcde",
     "mission_categories": ["riot_police"]
   },
   {
@@ -1073,6 +2024,86 @@
     "overlay_index": null,
     "base_mission_id": 229,
     "additive_overlays": "a",
+    "mission_categories": ["seg_medical_service"]
+  },
+  {
+    "id": "229/b",
+    "name": "Absicherung Radrennen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 2,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 229,
+    "additive_overlays": "b",
+    "mission_categories": ["seg_medical_service"]
+  },
+  {
+    "id": "229/ab",
+    "name": "Absicherung Radrennen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "police_motorcycle": 2,
+      "ambulances": 2,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "police_motorcycle": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 229,
+    "additive_overlays": "ab",
     "mission_categories": ["seg_medical_service"]
   },
   {
@@ -1286,6 +2317,45 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "234/e",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9490,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "e",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "234/ab",
     "name": "Entsch\u00e4rfung von Weltkriegsbombe",
     "place": "",
@@ -1404,6 +2474,47 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "234/ae",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11090,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "ae",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "234/bc",
     "name": "Entsch\u00e4rfung von Weltkriegsbombe",
     "place": "",
@@ -1483,6 +2594,47 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "234/be",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11090,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "energy_supply": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "be",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "234/cd",
     "name": "Entsch\u00e4rfung von Weltkriegsbombe",
     "place": "",
@@ -1520,6 +2672,89 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "cd",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/ce",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9800,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "care_service": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "ce",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/de",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11090,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "de",
     "mission_categories": ["fire"]
   },
   {
@@ -1606,6 +2841,49 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "234/abe",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12690,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "energy_supply": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "abe",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "234/acd",
     "name": "Entsch\u00e4rfung von Weltkriegsbombe",
     "place": "",
@@ -1645,6 +2923,93 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "acd",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/ace",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "care_service": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "ace",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/ade",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12690,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "ade",
     "mission_categories": ["fire"]
   },
   {
@@ -1690,6 +3055,137 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "234/bce",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "energy_supply": 5,
+      "care_service": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "bce",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/bde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 12690,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "energy_supply": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "bde",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/cde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "care_service": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "cde",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "234/abcd",
     "name": "Entsch\u00e4rfung von Weltkriegsbombe",
     "place": "",
@@ -1731,6 +3227,237 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "abcd",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/abce",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "energy_supply": 5,
+      "care_service": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "abce",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/abde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14290,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "energy_supply": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "abde",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/acde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "care_service": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "acde",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/bcde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 13000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "energy_supply": 5,
+      "care_service": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "bcde",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "234/abcde",
+    "name": "Entsch\u00e4rfung von Weltkriegsbombe",
+    "place": "",
+    "place_array": [],
+    "average_credits": 14600,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "police_service_group_leader": 1,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "firetrucks": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "energy_supply": 5,
+      "care_service": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 234,
+    "additive_overlays": "abcde",
     "mission_categories": ["fire"]
   },
   {
@@ -2024,6 +3751,51 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/f",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 21120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "f",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/ab",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2210,6 +3982,53 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/af",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 22720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "af",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/bc",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2350,6 +4169,53 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/bf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 25920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/cd",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2444,6 +4310,53 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/cf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 22720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "cf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/de",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2489,6 +4402,102 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "de",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/df",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 31920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "df",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/ef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 22720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "ef",
     "mission_categories": ["riot_police"]
   },
   {
@@ -2638,6 +4647,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/abf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 27520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/acd",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2736,6 +4794,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/acf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 24320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "acf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/ade",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2783,6 +4890,106 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "ade",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/adf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 33520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "adf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/aef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 24320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "aef",
     "mission_categories": ["riot_police"]
   },
   {
@@ -2884,6 +5091,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/bcf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 27520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bcf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/bde",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2934,6 +5190,106 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/bdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 36720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/bef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 27520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bef",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/cde",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -2981,6 +5337,157 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "cde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/cdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 33520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "cdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/cef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 24320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "cef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/def",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 33520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "def",
     "mission_categories": ["riot_police"]
   },
   {
@@ -3086,6 +5593,57 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/abcf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 29120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abcf",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/abde",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -3135,6 +5693,110 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "abde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 38320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 29120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abef",
     "mission_categories": ["riot_police"]
   },
   {
@@ -3190,6 +5852,163 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "275/acdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 35120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "acdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/acef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 25920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "acef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/adef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 35120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "adef",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "275/bcde",
     "name": "Absicherung Rockkonzert",
     "place": "Stadion",
@@ -3239,6 +6058,216 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "bcde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/bcdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 38320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bcdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/bcef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 29120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bcef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/bdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 38320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bdef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/cdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 35120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "cdef",
     "mission_categories": ["riot_police"]
   },
   {
@@ -3293,6 +6322,336 @@
     "overlay_index": null,
     "base_mission_id": 275,
     "additive_overlays": "abcde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abcdf",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 39920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abcdf",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abcef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 30720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abcef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 39920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abdef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/acdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 36720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "acdef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/bcdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 39920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "bcdef",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "275/abcdef",
+    "name": "Absicherung Rockkonzert",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 41520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 3,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 1,
+      "ambulances": 4,
+      "energy_supply": 1,
+      "police_horse": 6,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "personnel_educations": { "police_horse": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "personnel_educations": { "Reiterstaffel": 6 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 5,
+      "police_service_group_leader": 5,
+      "police_horse": 2,
+      "police_motorcycle": 2,
+      "energy_supply": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 275,
+    "additive_overlays": "abcdef",
     "mission_categories": ["riot_police"]
   },
   {
@@ -6244,6 +9603,55 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "306/e",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 34320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "e",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "306/ab",
     "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
     "place": "Stadion",
@@ -6396,6 +9804,57 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "306/ae",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 37520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "ae",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "306/bc",
     "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
     "place": "Stadion",
@@ -6498,6 +9957,57 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "306/be",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 39120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "be",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "306/cd",
     "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
     "place": "Stadion",
@@ -6547,6 +10057,110 @@
     "overlay_index": null,
     "base_mission_id": 306,
     "additive_overlays": "cd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/ce",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 50520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "ce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/de",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 35920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "de",
     "mission_categories": ["riot_police"]
   },
   {
@@ -6656,6 +10270,59 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "306/abe",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 42320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "abe",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "306/acd",
     "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
     "place": "Stadion",
@@ -6707,6 +10374,114 @@
     "overlay_index": null,
     "base_mission_id": 306,
     "additive_overlays": "acd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/ace",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 53720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "ace",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/ade",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 39120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "ade",
     "mission_categories": ["riot_police"]
   },
   {
@@ -6764,6 +10539,169 @@
     "mission_categories": ["riot_police"]
   },
   {
+    "id": "306/bce",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 55320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "bce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/bde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 40720,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "bde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/cde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 52120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "cde",
+    "mission_categories": ["riot_police"]
+  },
+  {
     "id": "306/abcd",
     "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
     "place": "Stadion",
@@ -6817,6 +10755,291 @@
     "overlay_index": null,
     "base_mission_id": 306,
     "additive_overlays": "abcd",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/abce",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 58520,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_motorcycle": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "abce",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/abde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 43920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "abde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/acde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 55320,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 12,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 4,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "acde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/bcde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 56920,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 7,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "bcde",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "306/abcde",
+    "name": "Absicherung Rockkonzert - Gefahrenpotenzial",
+    "place": "Stadion",
+    "place_array": ["Stadion"],
+    "average_credits": 60120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "grukw": 9,
+      "lebefkw": 4,
+      "police_motorcycle": 4,
+      "police_service_group_leader": 2,
+      "ambulances": 4,
+      "wasserwerfer": 2,
+      "police_horse": 9,
+      "police_speaker": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 16,
+      "personnel_educations": { "police_horse": 9 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "max_civil_patrol_replacing_police_cars": 3,
+      "allow_ktw_b_instead_of_rtw": true,
+      "max_police_motorcycle_replacing_police_cars": 8,
+      "personnel_educations": { "Reiterstaffel": 9 }
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "rescue_stations": 4,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "riot_unit_count": 4,
+      "police_service_group_leader": 10,
+      "water_cannon": 1,
+      "police_horse": 3,
+      "police_motorcycle": 2,
+      "police_speaker": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 306,
+    "additive_overlays": "abcde",
     "mission_categories": ["riot_police"]
   },
   {
@@ -7951,6 +12174,47 @@
     "mission_categories": ["seg"]
   },
   {
+    "id": "560/a",
+    "name": "Absicherung Motocrossrennen",
+    "place": "Motorsportanlage",
+    "place_array": ["Motorsportanlage"],
+    "average_credits": 20640,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "gw_san": 1,
+      "ambulances": 4,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "4 Stunden",
+      "duration": 14400,
+      "average_min_fire_personnel": 10,
+      "guard_mission": true,
+      "filter_id": "rapid_deployment_group_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 12,
+      "rescue_stations": 3,
+      "seg": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 560,
+    "additive_overlays": "a",
+    "mission_categories": ["seg"]
+  },
+  {
     "id": "563",
     "name": "Absicherung Staatsbesuch",
     "place": "",
@@ -8449,6 +12713,46 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "646/a",
+    "name": "Absicherung Schwimmwettbewerb",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 5120,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "ambulances": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "water_watch_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true,
+      "date_start": "2025-06-27T09:00:00Z",
+      "date_end": "2025-08-22T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "disaster_response_technology": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 646,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "716",
     "name": "Sicherheitswache bei Prunksitzung",
     "place": "",
@@ -8511,6 +12815,43 @@
     "overlay_index": null,
     "base_mission_id": 739,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "739/a",
+    "name": "Absicherung Osterfeuer",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 1880,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 Stunde",
+      "duration": 3600,
+      "average_min_fire_personnel": 9,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-06-10T09:00:00Z",
+      "date_end": "2025-07-15T23:59:59+02:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_technology": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 739,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -9082,6 +13423,50 @@
     "overlay_index": null,
     "base_mission_id": 879,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "879/a",
+    "name": "Absicherung Flugshow",
+    "place": "Flughafen (klein): Start-/Landebahn",
+    "place_array": ["Flughafen (klein): Start-/Landebahn"],
+    "average_credits": 12680,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "gw_san": 1,
+      "ambulances": 5,
+      "water_needed": 12000,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 Stunden",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "allow_ktw_b_instead_of_rtw": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "seg": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 879,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   },
   {
@@ -10204,6 +14589,42 @@
     "overlay_index": null,
     "base_mission_id": 926,
     "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "926/a",
+    "name": "Brandsicherheitswache Rockfestival",
+    "place": "Festplatz",
+    "place_array": ["Festplatz"],
+    "average_credits": 18800,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "5 Stunden",
+      "duration": 18000,
+      "average_min_fire_personnel": 30,
+      "guard_mission": true,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "disaster_response_technology": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 926,
+    "additive_overlays": "a",
     "mission_categories": ["fire"]
   }
 ]
