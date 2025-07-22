@@ -45300,5 +45300,417 @@
     "base_mission_id": 1159,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1161",
+    "name": "Verdachte situatie luchthaven",
+    "place": "Vliegveld (groot): Platform / Gate\nVliegveld (groot): Terminal\nVliegveld (klein): Hangaar",
+    "place_array": [
+      "Vliegveld (groot): Platform / Gate",
+      "Vliegveld (groot): Terminal",
+      "Vliegveld (klein): Hangaar"
+    ],
+    "average_credits": 970,
+    "generated_by": "",
+    "icons": [
+      "/images/baseball_gruen.png",
+      "/images/baseball_gelb.png",
+      "/images/baseball_rot.png"
+    ],
+    "requirements": { "military_police": 2, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [1161, 1162],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "military_police": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1161,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1162",
+    "name": "Verdacht pakket luchthaven",
+    "place": "Vliegveld (groot): Platform / Gate\nVliegveld (groot): Terminal\nVliegveld (klein): Hangaar",
+    "place_array": [
+      "Vliegveld (groot): Platform / Gate",
+      "Vliegveld (groot): Terminal",
+      "Vliegveld (klein): Hangaar"
+    ],
+    "average_credits": 2840,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "military_police": 3,
+      "bomb_disposal": 1,
+      "bomb_disposal_dogs": 1,
+      "bomb_disposal_patrol": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [1162],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 15,
+      "bomb_disposal_count": 1,
+      "military_police": 2,
+      "bomb_disposal_patrol": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1162,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1163",
+    "name": "Explosie luchthaven",
+    "place": "Vliegveld (groot): Platform / Gate\nVliegveld (groot): Terminal\nVliegveld (klein): Hangaar",
+    "place_array": [
+      "Vliegveld (groot): Platform / Gate",
+      "Vliegveld (groot): Terminal",
+      "Vliegveld (klein): Hangaar"
+    ],
+    "average_credits": 19810,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "arff": 3,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "military_police": 4,
+      "bomb_disposal": 2,
+      "bomb_disposal_dogs": 1,
+      "bomb_disposal_robot": 1,
+      "bomb_disposal_patrol": 1,
+      "firetrucks": 10,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 35,
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 13,
+      "police_stations": 15,
+      "bereitschaftspolizei": 1,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 2,
+      "airport": 2,
+      "military_police": 2,
+      "bomb_disposal_patrol": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 1163,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1164",
+    "name": "Bom uit WOII gevonden",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7600,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "military_police": 2,
+      "bomb_disposal": 1,
+      "bomb_disposal_patrol": 1,
+      "firetrucks": 3,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 15,
+      "bereitschaftspolizei": 1,
+      "bomb_disposal_count": 1,
+      "military_police": 1,
+      "bomb_disposal_patrol": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 1164,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1165",
+    "name": "Verdacht pakket bij voordeur",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3980,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "ovdp": 2,
+      "bomb_disposal": 1,
+      "bomb_disposal_robot": 1,
+      "bomb_disposal_patrol": 1,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 2,
+      "police_stations": 15,
+      "bereitschaftspolizei": 1,
+      "bomb_disposal_count": 1,
+      "military_police": 1,
+      "bomb_disposal_patrol": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1165,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1166",
+    "name": "Diepzeemijn aangetroffen",
+    "place": "Strand\nStrandopgang\nDuinen",
+    "place_array": ["Strand", "Strandopgang", "Duinen"],
+    "average_credits": 4810,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "coastal_guard_boat": 1,
+      "ovdp": 1,
+      "bomb_disposal": 1,
+      "bomb_disposal_diver": 1,
+      "bomb_disposal_boat": 1,
+      "bomb_disposal_robot": 1,
+      "bomb_disposal_patrol": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 19,
+      "rescue_stations": 2,
+      "police_stations": 15,
+      "bereitschaftspolizei": 1,
+      "bomb_disposal_count": 1,
+      "coastal_rescue_count": 1,
+      "military_police": 2,
+      "bomb_disposal_diver": 1,
+      "bomb_disposal_patrol": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1166,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "1167",
+    "name": "Vermoeden van opslag grote partij illegaal vuurwerk",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8380,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "at_c": 1,
+      "at_m": 1,
+      "at_o": 4,
+      "bike_police": 2,
+      "battalion_chief_vehicles": 1,
+      "gefkw": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "bomb_disposal": 1,
+      "bomb_disposal_dogs": 2,
+      "bomb_disposal_robot": 1,
+      "bomb_disposal_patrol": 2,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": { "bike_police": 90 },
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 15,
+      "bereitschaftspolizei": 2,
+      "bomb_disposal_count": 1,
+      "prisoner_transport_count": 1,
+      "at": 1,
+      "military_police": 1,
+      "bomb_disposal_patrol": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1167,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1168",
+    "name": "Explosie in woonwijk",
+    "place": "Stadscentrum",
+    "place_array": ["Stadscentrum"],
+    "average_credits": 19810,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "arff": 3,
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "military_police": 4,
+      "bomb_disposal": 2,
+      "bomb_disposal_dogs": 1,
+      "bomb_disposal_robot": 1,
+      "bomb_disposal_patrol": 1,
+      "firetrucks": 10,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 235,
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 13,
+      "police_stations": 15,
+      "bereitschaftspolizei": 1,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 2,
+      "airport": 2,
+      "military_police": 2,
+      "bomb_disposal_patrol": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 1168,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "1169",
+    "name": "Mogelijk explosief gevonden bij magneetvissen",
+    "place": "Sloot",
+    "place_array": ["Sloot"],
+    "average_credits": 1645,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 1,
+      "bomb_disposal_patrol": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 15,
+      "bomb_disposal_patrol": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1169,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
   }
 ]
