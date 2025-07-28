@@ -54162,5 +54162,47 @@
     "base_mission_id": 1073,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1074",
+    "name": "Person trapped by the rising tide",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "patient_us_code_possible": [
+        "73-D-5",
+        "73-D-2",
+        "73-D-1",
+        "73-B-2",
+        "73-B-1"
+      ],
+      "vehicle_groups": ["ocean_missions", "default"],
+      "handoff_possible_via_building_types": [23],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 2,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1074,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
