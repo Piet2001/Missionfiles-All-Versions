@@ -448,15 +448,20 @@
       "/images/clock_gelb.png",
       "/images/clock_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 1 },
+    "requirements": { "personnel_educations": { "mountain_height_rescue": 2 } },
     "chances": {},
     "additional": {
       "duration_text": "30 minut",
       "duration": 1800,
       "guard_mission": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Horolezec horolezec": 2 }
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 6 },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "mountain_height_rescue": 4 },
+      "fire_stations": 6
+    },
     "overlay_index": null,
     "base_mission_id": 577,
     "additive_overlays": "",
