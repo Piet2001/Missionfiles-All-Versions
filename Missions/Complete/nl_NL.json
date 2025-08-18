@@ -31060,7 +31060,7 @@
     "name": "Voertuigbrand in tunnel",
     "place": "Tunnel",
     "place_array": ["Tunnel"],
-    "average_credits": 1770,
+    "average_credits": 2170,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -31076,11 +31076,14 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [843],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
+      "tow_trucks": 2,
       "fire_stations": 7
     },
     "overlay_index": null,
@@ -31093,7 +31096,7 @@
     "name": "Voertuigbrand in tunnel",
     "place": "Tunnel",
     "place_array": ["Tunnel"],
-    "average_credits": 2620,
+    "average_credits": 3020,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -31111,12 +31114,15 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [843],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
       "fire_support_count": 1,
+      "tow_trucks": 2,
       "fire_stations": 7
     },
     "overlay_index": 0,
@@ -31129,7 +31135,7 @@
     "name": "Voertuigbrand in tunnel",
     "place": "Tunnel",
     "place_array": ["Tunnel"],
-    "average_credits": 4060,
+    "average_credits": 4760,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -31148,6 +31154,9 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2,
+      "possible_crashed_car_large_max": 1,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -31157,6 +31166,8 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
+      "tow_trucks": 2,
+      "tow_trucks_large": 1,
       "fire_stations": 11
     },
     "overlay_index": null,
@@ -31169,7 +31180,7 @@
     "name": "Voertuigbrand in tunnel",
     "place": "Tunnel",
     "place_array": ["Tunnel"],
-    "average_credits": 4910,
+    "average_credits": 5660,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -31182,7 +31193,7 @@
       "hazmat_vehicles": 1,
       "water_tankers": 1,
       "ovdp": 1,
-      "foam_needed": 250,
+      "foam_needed": 500,
       "firetrucks": 2,
       "police_cars": 3
     },
@@ -31190,6 +31201,9 @@
     "additional": {
       "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2,
+      "possible_crashed_car_large_max": 1,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologie"],
       "patient_specializations": "Traumatologie"
@@ -31200,6 +31214,8 @@
       "police_stations": 5,
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
+      "tow_trucks": 2,
+      "tow_trucks_large": 1,
       "fire_stations": 11
     },
     "overlay_index": 0,
@@ -42013,7 +42029,7 @@
     "name": "Autobrand op snelweg",
     "place": "Snelweg oprit / afrit\nTunnel",
     "place_array": ["Snelweg oprit / afrit", "Tunnel"],
-    "average_credits": 2520,
+    "average_credits": 1800,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -42023,16 +42039,19 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
-      "traffic_unit": 1,
       "firetrucks": 1,
-      "police_cars": 2
+      "police_cars": 1
     },
     "chances": { "water_tankers": 60 },
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 2,
-      "technical_aid": 2,
+      "police_stations": 1,
+      "tow_trucks": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
