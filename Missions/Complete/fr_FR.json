@@ -5684,7 +5684,7 @@
     "name": "Insolation",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -5714,7 +5714,7 @@
     "name": "Coup de chaleur",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -5744,7 +5744,7 @@
     "name": "Crampe de chaleur",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -5774,7 +5774,7 @@
     "name": "Personne d\u00e9shydrat\u00e9e",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -12798,7 +12798,7 @@
     "name": "Pot de glace contamin\u00e9",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -18762,6 +18762,49 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "500/a",
+    "name": "D\u00e9tection positive d'un \u00e9l\u00e9ment radioactif \u00e0 la d\u00e9chetterie",
+    "place": "D\u00e9charge",
+    "place_array": ["D\u00e9charge"],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "kdow_orgl": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "container": 8,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 500,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "501",
     "name": "Amerrissage petit avion",
     "place": "",
@@ -19418,6 +19461,128 @@
     "overlay_index": null,
     "base_mission_id": 514,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "514/b",
+    "name": "Incendie dans centrale nucl\u00e9aire",
+    "place": "Centrale \u00e9lectrique",
+    "place_array": ["Centrale \u00e9lectrique"],
+    "average_credits": 35500,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 2,
+      "oneof_fire_engine_or_rescue": 10,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [582],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 3,
+      "container": 8,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 514,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "514/ab",
+    "name": "Incendie dans centrale nucl\u00e9aire",
+    "place": "Centrale \u00e9lectrique",
+    "place_array": ["Centrale \u00e9lectrique"],
+    "average_credits": 38300,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "hose": 2,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 2,
+      "oneof_fire_engine_or_rescue": 10,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "breathing_protection_container": 1,
+      "ambulance_command_container": 1,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 50,
+      "patient_critical_care": 50
+    },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 6,
+      "expansion_missions_ids": [582],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne g\u00e9n\u00e9ral"],
+      "patient_specializations": "Interne g\u00e9n\u00e9ral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "police_helicopter_stations": 1,
+      "fire_support_count": 1,
+      "container": 8,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 514,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -22833,6 +22998,139 @@
     "overlay_index": null,
     "base_mission_id": 582,
     "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "582/b",
+    "name": "Explosion d'une centrale nucl\u00e9aire",
+    "place": "Centrale \u00e9lectrique",
+    "place_array": ["Centrale \u00e9lectrique"],
+    "average_credits": 47000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 4,
+      "platform_trucks": 12,
+      "battalion_chief_vehicles": 9,
+      "mobile_command_vehicles": 2,
+      "foam": 10,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 8,
+      "water_tankers": 5,
+      "hose": 6,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 6,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 2,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 35,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 14 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "V\u00e9hicules risques chimiques": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 25,
+      "police_helicopter_stations": 2,
+      "fire_support_count": 10,
+      "personnel_educations": { "gw_gefahrgut": 14 },
+      "container": 8,
+      "fire_stations": 60
+    },
+    "overlay_index": null,
+    "base_mission_id": 582,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "582/ab",
+    "name": "Explosion d'une centrale nucl\u00e9aire",
+    "place": "Centrale \u00e9lectrique",
+    "place_array": ["Centrale \u00e9lectrique"],
+    "average_credits": 50300,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 4,
+      "platform_trucks": 12,
+      "battalion_chief_vehicles": 9,
+      "mobile_command_vehicles": 2,
+      "foam": 10,
+      "mobile_air_vehicles": 4,
+      "hazmat_vehicles": 8,
+      "water_tankers": 5,
+      "hose": 6,
+      "kdow_orgl": 1,
+      "police_helicopters": 1,
+      "pump": 6,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 2,
+      "lance_nozzle": 1,
+      "fire_command_container": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "foam_container": 1,
+      "breathing_protection_container": 1,
+      "ambulance_command_container": 1,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 35,
+      "police_cars": 8,
+      "personnel_educations": { "gw_gefahrgut": 14 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 50,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "V\u00e9hicules risques chimiques": 14 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 25,
+      "police_helicopter_stations": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "gw_gefahrgut": 14 },
+      "container": 8,
+      "fire_stations": 60
+    },
+    "overlay_index": null,
+    "base_mission_id": 582,
+    "additive_overlays": "ab",
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
@@ -32041,7 +32339,7 @@
     "name": "Blessure sur un toboggan de parc aquatique",
     "place": "Piscine",
     "place_array": ["Piscine"],
-    "average_credits": 250,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -35944,8 +36242,8 @@
     "additional": {
       "possible_patient": 10,
       "possible_patient_min": 3,
-      "average_min_fire_personnel": 70,
-      "average_min_police_personnel": 9,
+      "average_min_fire_personnel": 9,
+      "average_min_police_personnel": 70,
       "filter_id": "firehouse_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -35982,7 +36280,7 @@
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [827]
     },
-    "prerequisites": { "main_building": 6, "police_stations": 4 },
+    "prerequisites": { "main_building": 6, "rescue_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 845,
     "additive_overlays": "",
@@ -36066,7 +36364,7 @@
     "name": "D\u00e9mant\u00e8lement d'un r\u00e9seau de trafiquants d'arts",
     "place": "",
     "place_array": [],
-    "average_credits": 15000,
+    "average_credits": 16000,
     "generated_by": "",
     "icons": [
       "/images/cuffs_gruen.png",
@@ -36366,6 +36664,88 @@
     "base_mission_id": 858,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "859",
+    "name": "D\u00e9versement de f\u00fbt de produits radioactifs suite \u00e0 accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4250,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "hazmat_container": 1,
+      "breathing_protection_container": 1,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "container": 8,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 859,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "862",
+    "name": "D\u00e9versement de f\u00fbt de produits radioactifs suite \u00e0 accident",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5850,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "decontamination_personnel_container": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 20,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "container": 8,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 862,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
   },
   {
     "id": "863",
