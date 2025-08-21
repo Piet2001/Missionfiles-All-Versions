@@ -54265,5 +54265,233 @@
     "base_mission_id": 1076,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1078",
+    "name": "Collision between two buses",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "light_supply": 1,
+      "energy_supply": 1,
+      "fwk": 1,
+      "firetrucks": 10,
+      "police_cars": 8,
+      "personnel_educations": { "traffic_control": 12 }
+    },
+    "chances": { "fwk": 25, "patient_transport": 50, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Traffic Control": 12 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "disaster_response_count": 1,
+      "personnel_educations": { "traffic_control": 24 },
+      "fire_crane_equipment": 1,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 1078,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1079",
+    "name": "Mass influx of sick people - train station",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "light_supply": 1,
+      "energy_supply": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": { "mobile_air_vehicles": 10, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "1-A-1",
+        "26-A-1",
+        "26-A-6",
+        "26-A-10",
+        "26-A-11"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "disaster_response_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 1079,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1080",
+    "name": "Lightning strike at event",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "light_supply": 1,
+      "energy_supply": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 70, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["15-D-8"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 1080,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1081",
+    "name": "Tram derailed",
+    "place": "Tram stop",
+    "place_array": ["Tram stop"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": { "fwk": 1, "firetrucks": 3, "police_cars": 4 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["29-D-1C"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "fire_crane_equipment": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1081,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1082",
+    "name": "Bridge collapse (major)",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 20115,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "boats": 5,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 5,
+      "light_supply": 5,
+      "energy_supply": 4,
+      "technical_rescue": 2,
+      "fwk": 2,
+      "firetrucks": 18,
+      "police_cars": 8,
+      "personnel_educations": { "technical_rescue": 12 }
+    },
+    "chances": { "patient_transport": 95, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["22-D-3X"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Technical Rescuer": 12 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 4,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "disaster_response_count": 4,
+      "personnel_educations": { "technical_rescue": 24 },
+      "technical_rescue_equipment": 1,
+      "fire_crane_equipment": 2,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 1082,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
