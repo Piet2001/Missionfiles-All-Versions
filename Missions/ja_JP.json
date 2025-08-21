@@ -20898,5 +20898,216 @@
     "base_mission_id": 612,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "618",
+    "name": "2台のバスの衝突事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 10,
+      "police_cars": 12
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 5,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 618,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "619",
+    "name": "患者急増 - 駅",
+    "place": "駅（普通車両）",
+    "place_array": ["駅（普通車両）"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "patient_transport": 25,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 619,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "620",
+    "name": "イベント中の落雷",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 5,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 620,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "621",
+    "name": "路面電車が脱線した",
+    "place": "電車停留所",
+    "place_array": ["電車停留所"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["一般外科"],
+      "patient_specializations": "一般外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 621,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "622",
+    "name": "橋の崩壊（大規模）",
+    "place": "橋",
+    "place_array": ["橋"],
+    "average_credits": 17000,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 18,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 95,
+      "helicopter": 25,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 622,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
