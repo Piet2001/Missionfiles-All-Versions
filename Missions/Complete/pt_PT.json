@@ -22419,5 +22419,265 @@
     "base_mission_id": 663,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "669",
+    "name": "Colis\u00e3o entre dois autocarros",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 10,
+      "police_cars": 12
+    },
+    "chances": {
+      "fwk": 25,
+      "patient_transport": 50,
+      "helicopter": 5,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "670",
+    "name": "Grande aflu\u00eancia de doentes - Esta\u00e7\u00e3o ferrovi\u00e1ria",
+    "place": "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)",
+    "place_array": ["Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "patient_transport": 25,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "671",
+    "name": "Queda de raio em evento",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 5,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 671,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "672",
+    "name": "Bonde descarrilou",
+    "place": "Paragem de El\u00e9trico",
+    "place_array": ["Paragem de El\u00e9trico"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Cirurgia Geral"],
+      "patient_specializations": "Cirurgia Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 672,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "673",
+    "name": "Colapso de ponte (grande)",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 20115,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 3,
+      "heavy_rescue_vehicles": 6,
+      "diver_units": 5,
+      "boats": 5,
+      "firetrucks": 18,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 95,
+      "helicopter": 25,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 8,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 673,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "674",
+    "name": "Inc\u00eandio em pr\u00e9dio comercial",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22380,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 4,
+      "foam_needed": 10000,
+      "firetrucks": 15,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 5, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 200,
+      "possible_patient_min": 100,
+      "only_alliance_mission": true,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Cirurgia Geral"],
+      "patient_specializations": "Cirurgia Geral",
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 674,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]

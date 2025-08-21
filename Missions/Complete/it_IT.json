@@ -20757,7 +20757,7 @@
       "firetrucks": 1,
       "police_cars": 2
     },
-    "chances": { "disaster_response_clearing": 30 },
+    "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
       "max_municipal_police_replacing_police_cars": 1
@@ -30677,6 +30677,362 @@
     },
     "overlay_index": null,
     "base_mission_id": 787,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "789",
+    "name": "Scontro tra due autobus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 4,
+      "traffic_car": 3,
+      "disaster_response_equipment": 1,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": {
+      "fwk": 25,
+      "nef": 40,
+      "patient_transport": 50,
+      "helicopter": 5
+    },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "patient_it_code_possible": ["SC01G", "SC01R", "SC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "disaster_response_count": 1,
+      "traffic_police": 3,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 789,
+    "additive_overlays": "",
+    "mission_categories": ["police", "traffic_police_specialization"]
+  },
+  {
+    "id": "790",
+    "name": "Calca di massa al festival",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 6
+    },
+    "chances": { "nef": 30, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 140,
+      "possible_patient_min": 20,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 790,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "791",
+    "name": "Marchio nell'edificio degli uffici",
+    "place": "",
+    "place_array": [],
+    "average_credits": 22380,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 4,
+      "foam_needed": 10000,
+      "disaster_response_equipment": 1,
+      "firetrucks": 15,
+      "police_cars": 10
+    },
+    "chances": { "nef": 5, "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 200,
+      "possible_patient_min": 100,
+      "only_alliance_mission": true,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale",
+      "unavailable_in_normal_missions": true
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 791,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "792",
+    "name": "Afflusso massiccio di malati - Stazione ferroviaria (trasporto regionale)",
+    "place": "Stazione ferroviaria (traffico regionale)",
+    "place_array": ["Stazione ferroviaria (traffico regionale)"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "disaster_response_equipment": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "nef": 20,
+      "patient_transport": 25
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "ambulance_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "disaster_response_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 792,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "793",
+    "name": "Fulmine sul luogo dell'evento",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "disaster_response_equipment": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "nef": 30, "patient_transport": 70, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "patient_it_code_possible": ["SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "disaster_response_count": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 793,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "794",
+    "name": "Tram deragliato",
+    "place": "Fermata del tram",
+    "place_array": ["Fermata del tram"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": { "fwk": 1, "firetrucks": 3, "police_cars": 4 },
+    "chances": { "nef": 25, "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 794,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "795",
+    "name": "Crollo ponte (grande)",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 20115,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "boats": 5,
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "diver_units": 5,
+      "heavy_rescue_vehicles": 5,
+      "disaster_response": 2,
+      "disaster_response_clearing": 1,
+      "disaster_response_clearing_large": 1,
+      "rescue_dog_units": 4,
+      "disaster_response_equipment": 1,
+      "firetrucks": 18,
+      "police_cars": 8,
+      "water_rescue": 4
+    },
+    "chances": { "nef": 80, "patient_transport": 95, "helicopter": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 8,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "disaster_response_count": 4,
+      "search_and_rescue": 1,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 795,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   }
