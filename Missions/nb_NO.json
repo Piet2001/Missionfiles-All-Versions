@@ -27399,5 +27399,261 @@
     "base_mission_id": 702,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "708",
+    "name": "Kollisjon mellom to busser",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 6,
+      "traffic_car": 3,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 5,
+      "patient_critical_care": 40
+    },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traume"],
+      "patient_specializations": "Traume"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 708,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "709",
+    "name": "Massiv trengsel på festival",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 140,
+      "possible_patient_min": 20,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "710",
+    "name": "Massepågang av syke personer – jernbanestasjon",
+    "place": "Togstasjon (regional)",
+    "place_array": ["Togstasjon (regional)"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "patient_transport": 25,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 710,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "711",
+    "name": "Lynnedslag under arrangementet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 70,
+      "helicopter": 5,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 711,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "712",
+    "name": "Trikk sporet av",
+    "place": "Trikkestopp",
+    "place_array": ["Trikkestopp"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Generell kirurgi"],
+      "patient_specializations": "Generell kirurgi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 712,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "713",
+    "name": "Brukkollaps (stor)",
+    "place": "Bro",
+    "place_array": ["Bro"],
+    "average_credits": 20115,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "boats": 5,
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "diver_units": 5,
+      "heavy_rescue_vehicles": 6,
+      "search_and_rescue": 4,
+      "technical_aid_dogs": 10,
+      "firetrucks": 18,
+      "police_cars": 8
+    },
+    "chances": {
+      "patient_transport": 95,
+      "helicopter": 25,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traume"],
+      "patient_specializations": "Traume"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 8,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "search_and_rescue": 3,
+      "technical_aid_dogs": 2,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 713,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
