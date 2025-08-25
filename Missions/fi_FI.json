@@ -1046,6 +1046,7 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "expansion_missions_ids": [500],
+      "followup_missions_ids": [551],
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
       "patient_allow_first_responder_chance": 50,
@@ -4865,9 +4866,9 @@
     "average_credits": 1000,
     "generated_by": "",
     "icons": [
-      "/images/shooting_gruen.png",
-      "/images/shooting_gelb.png",
-      "/images/shooting_rot.png"
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
     ],
     "requirements": { "k9": 1, "police_cars": 6 },
     "chances": { "patient_transport": 100, "patient_critical_care": 60 },
@@ -9763,9 +9764,9 @@
     "average_credits": 750,
     "generated_by": "",
     "icons": [
-      "/images/baseball_gruen.png",
-      "/images/baseball_gelb.png",
-      "/images/baseball_rot.png"
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
     ],
     "requirements": { "k9": 1, "police_cars": 2 },
     "chances": {
@@ -12037,6 +12038,34 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "381/a",
+    "name": "402 Jälkivahingontorjunta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": {
+      "damage_control": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true
+    },
+    "prerequisites": { "main_building": 0, "water_damage_pump_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 381,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "382",
     "name": "403 Jälkivahingontorjunta",
     "place": "",
@@ -12058,6 +12087,34 @@
     "overlay_index": null,
     "base_mission_id": 382,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "382/a",
+    "name": "403 Jälkivahingontorjunta",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/sawmill_gruen.png",
+      "/images/sawmill_gelb.png",
+      "/images/sawmill_rot.png"
+    ],
+    "requirements": {
+      "damage_control": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true
+    },
+    "prerequisites": { "main_building": 0, "water_damage_pump_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 382,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -14824,9 +14881,9 @@
     "average_credits": 1200,
     "generated_by": "",
     "icons": [
-      "/images/shooting_gruen.png",
-      "/images/shooting_gelb.png",
-      "/images/shooting_rot.png"
+      "/images/stabbing_gruen.png",
+      "/images/stabbing_gelb.png",
+      "/images/stabbing_rot.png"
     ],
     "requirements": { "police_cars": 2 },
     "chances": {},
@@ -14904,9 +14961,9 @@
     "average_credits": 300,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "kdow_orgl": 1, "ambulances": 1 },
     "chances": {
@@ -14937,9 +14994,9 @@
     "average_credits": 600,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "kdow_orgl": 1, "ambulances": 1 },
     "chances": {
@@ -16336,6 +16393,8 @@
       "battalion_chief_vehicles": 2,
       "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "water_needed": 35000,
+      "foam_needed": 3000,
       "firetrucks": 6
     },
     "chances": { "patient_transport": 50, "helicopter": 25 },
@@ -16366,9 +16425,9 @@
     "average_credits": 500,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "ambulances": 1 },
     "chances": { "patient_transport": 100, "patient_critical_care": 100 },
@@ -17302,8 +17361,7 @@
       "water_tankers": 2,
       "hose": 1,
       "pump": 1,
-      "ambulances": 1,
-      "water_needed": 25000,
+      "water_needed": 35000,
       "foam_needed": 300,
       "firetrucks": 5,
       "police_cars": 3
@@ -17494,7 +17552,6 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "ambulances": 1,
       "heavy_rescue_vehicles": 1,
       "police_cars": 1
@@ -18425,9 +18482,9 @@
     "average_credits": null,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {},
     "chances": { "patient_transport": 100 },
@@ -18521,9 +18578,9 @@
     "average_credits": 200,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "ambulances": 1 },
     "chances": { "patient_transport": 50 },
@@ -18553,9 +18610,9 @@
     "average_credits": 500,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "kdow_orgl": 1 },
     "chances": {
@@ -18585,9 +18642,9 @@
     "average_credits": 250,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "ambulances": 1 },
     "chances": { "patient_transport": 90 },
@@ -18785,9 +18842,9 @@
     "average_credits": 500,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {},
     "chances": { "patient_transport": 100 },
@@ -19093,9 +19150,9 @@
     "average_credits": 580,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "firetrucks": 1 },
     "chances": { "patient_transport": 85 },
@@ -21115,7 +21172,7 @@
   },
   {
     "id": "645",
-    "name": "032 Kassalla tappelu taukohuoneessa",
+    "name": "033 Kassahenkilökunnan tappelu taukohuoneessa",
     "place": "Valintamyymälä (pieni)\nValintamyymälä (iso)",
     "place_array": ["Valintamyymälä (pieni)", "Valintamyymälä (iso)"],
     "average_credits": 1800,
@@ -21615,9 +21672,9 @@
     "average_credits": 1200,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {},
     "chances": {
@@ -21847,7 +21904,7 @@
   },
   {
     "id": "666",
-    "name": "511 Auto veden alla",
+    "name": "203 Auto veden alla",
     "place": "Järvi",
     "place_array": ["Järvi"],
     "average_credits": 1400,
@@ -21859,6 +21916,7 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
       "diver_units": 1,
       "boats": 1,
       "firetrucks": 3,
@@ -21887,7 +21945,7 @@
   },
   {
     "id": "666/a",
-    "name": "511 Auto veden alla",
+    "name": "203 Auto veden alla",
     "place": "Järvi",
     "place_array": ["Järvi"],
     "average_credits": 1560,
@@ -21899,6 +21957,7 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
       "diver_units": 1,
       "boats": 1,
       "firetrucks": 3,
@@ -21929,40 +21988,11 @@
     "mission_categories": ["water_rescue"]
   },
   {
-    "id": "667",
-    "name": "411 Pieni vene fira",
-    "place": "Venesatama",
-    "place_array": ["Venesatama"],
-    "average_credits": 1250,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "boats": 1,
-      "firetrucks": 3
-    },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": {
-      "main_building": 0,
-      "wasserrettung": 1,
-      "fire_stations": 6
-    },
-    "overlay_index": null,
-    "base_mission_id": 667,
-    "additive_overlays": "",
-    "mission_categories": ["water_rescue"]
-  },
-  {
-    "id": "668",
-    "name": "413 Hukkuminen",
+    "id": "666/b",
+    "name": "203 Auto veden alla",
     "place": "Järvi",
     "place_array": ["Järvi"],
-    "average_credits": 1250,
+    "average_credits": 1560,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -21972,36 +22002,41 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
       "boats": 1,
-      "firetrucks": 1
+      "firetrucks": 3,
+      "police_cars": 2,
+      "personnel_educations": { "gw_taucher": 2 }
     },
-    "chances": { "patient_transport": 80 },
+    "chances": { "patient_transport": 90 },
     "additional": {
-      "possible_patient": 2,
-      "possible_patient_min": 1,
+      "possible_patient": 1,
       "filter_id": "water_watch_missions",
       "patient_at_end_of_mission": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologia"],
-      "patient_specializations": "Traumatologia"
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pelastussukeltaja": 2 }
     },
     "prerequisites": {
       "main_building": 0,
-      "wasserrettung": 1,
+      "wasserrettung": 2,
       "rescue_stations": 1,
-      "fire_stations": 9
+      "police_stations": 2,
+      "personnel_educations": { "gw_taucher": 4 },
+      "fire_stations": 4
     },
     "overlay_index": null,
-    "base_mission_id": 668,
-    "additive_overlays": "",
+    "base_mission_id": 666,
+    "additive_overlays": "b",
     "mission_categories": ["water_rescue"]
   },
   {
-    "id": "669",
-    "name": "511 Uppoava vene",
-    "place": "Joki",
-    "place_array": ["Joki"],
-    "average_credits": 1500,
+    "id": "666/ab",
+    "name": "203 Auto veden alla",
+    "place": "Järvi",
+    "place_array": ["Järvi"],
+    "average_credits": 1720,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -22010,14 +22045,298 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "boats": 2,
-      "firetrucks": 2
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 3,
+      "police_cars": 2,
+      "personnel_educations": { "gw_wasserrettung": 4, "gw_taucher": 2 }
     },
-    "chances": { "patient_transport": 40 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pintapelastaja": 4, "Pelastussukeltaja": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 8, "gw_taucher": 4 },
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 666,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "667",
+    "name": "411 Pieni venepalo",
+    "place": "Venesatama",
+    "place_array": ["Venesatama"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_tankers": 1, "boats": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 667,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "668",
+    "name": "483 Ihmisen pelastaminen vedestä",
+    "place": "Järvi\nJoki\nVenesatama\nLaituri\nRanta",
+    "place_array": ["Järvi", "Joki", "Venesatama", "Laituri", "Ranta"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "platform_trucks": 15,
+      "patient_transport": 100,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 668,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "668/a",
+    "name": "483 Ihmisen pelastaminen vedestä",
+    "place": "Järvi\nJoki\nVenesatama\nLaituri\nRanta",
+    "place_array": ["Järvi", "Joki", "Venesatama", "Laituri", "Ranta"],
+    "average_credits": 2660,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 2,
+      "police_cars": 2,
+      "personnel_educations": { "gw_wasserrettung": 4 }
+    },
+    "chances": {
+      "platform_trucks": 15,
+      "patient_transport": 100,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pintapelastaja": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 8 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 668,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "668/b",
+    "name": "483 Ihmisen pelastaminen vedestä",
+    "place": "Järvi\nJoki\nVenesatama\nLaituri\nRanta",
+    "place_array": ["Järvi", "Joki", "Venesatama", "Laituri", "Ranta"],
+    "average_credits": 2660,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 2,
+      "police_cars": 2,
+      "personnel_educations": { "gw_taucher": 2 }
+    },
+    "chances": {
+      "platform_trucks": 15,
+      "patient_transport": 100,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pelastussukeltaja": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "personnel_educations": { "gw_taucher": 4 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 668,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "668/ab",
+    "name": "483 Ihmisen pelastaminen vedestä",
+    "place": "Järvi\nJoki\nVenesatama\nLaituri\nRanta",
+    "place_array": ["Järvi", "Joki", "Venesatama", "Laituri", "Ranta"],
+    "average_credits": 2820,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "kdow_orgl": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 2,
+      "police_cars": 2,
+      "personnel_educations": { "gw_wasserrettung": 4, "gw_taucher": 2 }
+    },
+    "chances": {
+      "platform_trucks": 15,
+      "patient_transport": 100,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pintapelastaja": 4, "Pelastussukeltaja": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 8, "gw_taucher": 4 },
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 668,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "669",
+    "name": "222 Vesiliikenneonnettomuus: keskisuuri",
+    "place": "Järvi\nJoki",
+    "place_array": ["Järvi", "Joki"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 25,
+      "patient_critical_care": 25
+    },
     "additional": {
       "possible_patient": 6,
-      "filter_id": "firehouse_missions",
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
@@ -22027,6 +22346,7 @@
       "main_building": 0,
       "wasserrettung": 2,
       "rescue_stations": 3,
+      "police_stations": 1,
       "fire_stations": 8
     },
     "overlay_index": null,
@@ -22035,8 +22355,152 @@
     "mission_categories": ["water_rescue"]
   },
   {
+    "id": "669/a",
+    "name": "222 Vesiliikenneonnettomuus: keskisuuri",
+    "place": "Järvi\nJoki",
+    "place_array": ["Järvi", "Joki"],
+    "average_credits": 2160,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "firetrucks": 2,
+      "police_cars": 1,
+      "personnel_educations": { "gw_wasserrettung": 4 }
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 25,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pintapelastaja": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "personnel_educations": { "gw_wasserrettung": 12 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "669/b",
+    "name": "222 Vesiliikenneonnettomuus: keskisuuri",
+    "place": "Järvi\nJoki",
+    "place_array": ["Järvi", "Joki"],
+    "average_credits": 2160,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "firetrucks": 2,
+      "police_cars": 1,
+      "personnel_educations": { "gw_taucher": 2 }
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 25,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pelastussukeltaja": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "personnel_educations": { "gw_taucher": 6 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "669/ab",
+    "name": "222 Vesiliikenneonnettomuus: keskisuuri",
+    "place": "Järvi\nJoki",
+    "place_array": ["Järvi", "Joki"],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "boats": 2,
+      "firetrucks": 2,
+      "police_cars": 1,
+      "personnel_educations": { "gw_wasserrettung": 4, "gw_taucher": 2 }
+    },
+    "chances": {
+      "patient_transport": 40,
+      "helicopter": 25,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Yleislääkäri"],
+      "patient_specializations": "Yleislääkäri",
+      "personnel_educations": { "Pintapelastaja": 4, "Pelastussukeltaja": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "personnel_educations": { "gw_wasserrettung": 12, "gw_taucher": 6 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 669,
+    "additive_overlays": "ab",
+    "mission_categories": ["water_rescue"]
+  },
+  {
     "id": "670",
-    "name": "511 Bussi joessa",
+    "name": "204 Bussi suistunut jokeen",
     "place": "Joki",
     "place_array": ["Joki"],
     "average_credits": 4000,
@@ -22047,16 +22511,25 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
       "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
       "boats": 1,
       "firetrucks": 4,
-      "police_cars": 2
+      "police_cars": 4
     },
-    "chances": { "patient_transport": 60 },
+    "chances": {
+      "platform_trucks": 30,
+      "patient_transport": 60,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
     "additional": {
-      "possible_patient": 20,
-      "possible_patient_min": 1,
+      "possible_patient": 30,
+      "possible_patient_min": 5,
       "filter_id": "water_watch_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
@@ -22065,14 +22538,173 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "wasserrettung": 1,
+      "wasserrettung": 2,
       "rescue_stations": 6,
-      "police_stations": 1,
-      "fire_stations": 6
+      "police_stations": 2,
+      "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 670,
     "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "670/a",
+    "name": "204 Bussi suistunut jokeen",
+    "place": "Joki",
+    "place_array": ["Joki"],
+    "average_credits": 4160,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 4,
+      "police_cars": 4,
+      "personnel_educations": { "gw_wasserrettung": 6 }
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "patient_transport": 60,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Pintapelastaja": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 12 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "a",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "670/b",
+    "name": "204 Bussi suistunut jokeen",
+    "place": "Joki",
+    "place_array": ["Joki"],
+    "average_credits": 4160,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 4,
+      "police_cars": 4,
+      "personnel_educations": { "gw_taucher": 3 }
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "patient_transport": 60,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Pelastussukeltaja": 3 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "personnel_educations": { "gw_taucher": 6 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "b",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "670/ab",
+    "name": "204 Bussi suistunut jokeen",
+    "place": "Joki",
+    "place_array": ["Joki"],
+    "average_credits": 4320,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 1,
+      "boats": 1,
+      "firetrucks": 4,
+      "police_cars": 4,
+      "personnel_educations": { "gw_wasserrettung": 6, "gw_taucher": 3 }
+    },
+    "chances": {
+      "platform_trucks": 30,
+      "patient_transport": 60,
+      "helicopter": 90,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 5,
+      "filter_id": "water_watch_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Pintapelastaja": 6, "Pelastussukeltaja": 3 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "rescue_stations": 6,
+      "police_stations": 2,
+      "personnel_educations": { "gw_wasserrettung": 12, "gw_taucher": 6 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "ab",
     "mission_categories": ["water_rescue"]
   },
   {
@@ -22253,9 +22885,9 @@
     "average_credits": 1800,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": { "firetrucks": 1, "police_cars": 1 },
     "chances": {
@@ -22400,9 +23032,9 @@
     "average_credits": 500,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {},
     "chances": { "patient_transport": 70 },
@@ -22495,9 +23127,9 @@
     "average_credits": 250,
     "generated_by": "",
     "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
     ],
     "requirements": {},
     "chances": { "patient_transport": 80 },
@@ -22679,8 +23311,8 @@
   {
     "id": "688",
     "name": "Laiton rajanylitys",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 850,
     "generated_by": "",
     "icons": [
@@ -22692,7 +23324,7 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "water_rescue_2_missions"
     },
     "prerequisites": {
       "main_building": 26,
@@ -22706,9 +23338,9 @@
   },
   {
     "id": "689",
-    "name": "Jääpelastus rajajoella",
-    "place": "",
-    "place_array": [],
+    "name": "Kiinniotto jäätyneeltä rajajoelta",
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 1600,
     "generated_by": "",
     "icons": [
@@ -22718,7 +23350,7 @@
     ],
     "requirements": { "border": 1, "border_snow": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": { "filter_id": "water_rescue_2_missions" },
     "prerequisites": { "main_building": 26, "water_rescue_2": 1 },
     "overlay_index": null,
     "base_mission_id": 689,
@@ -22728,8 +23360,8 @@
   {
     "id": "690",
     "name": "Massiivinen laiton rajanylitys",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 2300,
     "generated_by": "",
     "icons": [
@@ -22737,11 +23369,14 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "oneof_police_patrol_or_border_patrol": 6 },
+    "requirements": {
+      "border_dogs": 1,
+      "oneof_police_patrol_or_border_patrol": 5
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 6,
-      "filter_id": "police_station_missions"
+      "filter_id": "water_rescue_2_missions"
     },
     "prerequisites": {
       "main_building": 26,
@@ -22756,8 +23391,8 @@
   {
     "id": "691",
     "name": "Epäilyttävä henkilö rajalla",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 700,
     "generated_by": "",
     "icons": [
@@ -22769,9 +23404,9 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "water_rescue_2_missions"
     },
-    "prerequisites": { "main_building": 26, "water_rescue_2": 1 },
+    "prerequisites": { "main_building": 26, "water_rescue_2": 2 },
     "overlay_index": null,
     "base_mission_id": 691,
     "additive_overlays": "",
@@ -22780,8 +23415,8 @@
   {
     "id": "692",
     "name": "Kadonneet retkeilijät rajan lähellä",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 900,
     "generated_by": "",
     "icons": [
@@ -22791,7 +23426,7 @@
     ],
     "requirements": { "border": 1, "border_atv": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": { "filter_id": "water_rescue_2_missions" },
     "prerequisites": { "main_building": 26, "water_rescue_2": 1 },
     "overlay_index": null,
     "base_mission_id": 692,
@@ -22801,8 +23436,8 @@
   {
     "id": "693",
     "name": "Salakuljettajan ajoneuvo pysäytetty",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 1750,
     "generated_by": "",
     "icons": [
@@ -22814,7 +23449,7 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 4,
-      "filter_id": "police_station_missions"
+      "filter_id": "water_rescue_2_missions"
     },
     "prerequisites": {
       "main_building": 26,
@@ -22829,8 +23464,8 @@
   {
     "id": "694",
     "name": "Epäilyttävä drone lentää rajalla sijaitsevan laitoksen lähellä",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 800,
     "generated_by": "",
     "icons": [
@@ -22840,7 +23475,7 @@
     ],
     "requirements": { "border": 1 },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": { "filter_id": "water_rescue_2_missions" },
     "prerequisites": { "main_building": 26, "water_rescue_2": 1 },
     "overlay_index": null,
     "base_mission_id": 694,
@@ -22849,23 +23484,27 @@
   },
   {
     "id": "695",
-    "name": "pako veneellä",
-    "place": "",
-    "place_array": [],
-    "average_credits": 900,
+    "name": "Lentokentällä passiepäselvyyksiä",
+    "place": "Lentokenttäterminaali",
+    "place_array": ["Lentokenttäterminaali"],
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/river_gruen.png",
       "/images/river_gelb.png",
       "/images/river_rot.png"
     ],
-    "requirements": { "border": 1 },
+    "requirements": { "oneof_police_patrol_or_border_patrol": 1 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "water_rescue_2_missions"
     },
-    "prerequisites": { "main_building": 26, "water_rescue_2": 1 },
+    "prerequisites": {
+      "main_building": 26,
+      "water_rescue_2": 1,
+      "police_stations": 1
+    },
     "overlay_index": null,
     "base_mission_id": 695,
     "additive_overlays": "",
@@ -22874,8 +23513,8 @@
   {
     "id": "696",
     "name": "Metsäpalo rajanylityspaikan lähellä",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 3400,
     "generated_by": "",
     "icons": [
@@ -22884,8 +23523,11 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "oneof_police_patrol_or_border_patrol": 2,
-      "firetrucks": 6,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "border": 1,
+      "oneof_fire_engine_or_rescue": 3,
+      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": {},
@@ -22894,7 +23536,7 @@
       "main_building": 0,
       "water_rescue_2": 2,
       "police_stations": 1,
-      "fire_stations": 3
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 696,
@@ -22904,8 +23546,8 @@
   {
     "id": "697",
     "name": "Jäätyminen uhkaa kadonnutta henkilöä rajalla sijaitsevassa metsässä",
-    "place": "",
-    "place_array": [],
+    "place": "Valtioraja",
+    "place_array": ["Valtioraja"],
     "average_credits": 1200,
     "generated_by": "",
     "icons": [
@@ -22913,12 +23555,13 @@
       "/images/snowy_gelb.png",
       "/images/snowy_rot.png"
     ],
-    "requirements": { "border": 1 },
+    "requirements": { "border": 1, "border_snow": 1 },
     "chances": { "patient_transport": 75, "patient_critical_care": 50 },
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "filter_id": "police_station_missions",
+      "followup_missions_ids": [324, 40, 377, 650, 651],
+      "filter_id": "water_rescue_2_missions",
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Yleislääkäri"],
