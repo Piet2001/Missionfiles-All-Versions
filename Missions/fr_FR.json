@@ -36923,5 +36923,60 @@
     "base_mission_id": 870,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "871",
+    "name": "Feu de station-service",
+    "place": "Station-service",
+    "place_array": ["Station-service"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "hose": 2,
+      "pump": 2,
+      "heavy_rescue_vehicles": 3,
+      "thw_gkw": 1,
+      "water_needed": 50000,
+      "hazmat_container": 1,
+      "foam_container": 1,
+      "firetrucks": 8,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "average_min_fire_personnel": 64,
+      "average_min_police_personnel": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 6,
+      "fire_support_count": 5,
+      "container": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 871,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "fire_support_specialization"]
   }
 ]
