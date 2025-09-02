@@ -33398,6 +33398,266 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "791",
+    "name": "Collision between two buses",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11800,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 6,
+      "traffic_car": 3,
+      "firetrucks": 10,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 40 },
+    "additional": {
+      "possible_patient": 110,
+      "possible_patient_min": 15,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_large_min": 2,
+      "possible_crashed_car_large_max": 2,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "tow_trucks_large": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 791,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police",
+      "mass_casualty_ambulance_specialization",
+      "tow_trucks"
+    ]
+  },
+  {
+    "id": "792",
+    "name": "Mass influx of sick people - railway station",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "patient_transport": 25,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 792,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "793",
+    "name": "Lightning strike at event",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 70, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "followup_missions_ids": [18, 14, 7],
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 3,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 793,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "rural",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "794",
+    "name": "Tram derailed",
+    "place": "Tram stop",
+    "place_array": ["Tram stop"],
+    "average_credits": 2440,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 25,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 794,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "795",
+    "name": "Bridge collapse (major)",
+    "place": "Bridge",
+    "place_array": ["Bridge"],
+    "average_credits": 20115,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 6,
+      "firetrucks": 18,
+      "police_cars": 12
+    },
+    "chances": { "patient_transport": 95, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 795,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
     "id": "750",
     "name": "Aerial Ladder Platform Training",
     "place": "",
