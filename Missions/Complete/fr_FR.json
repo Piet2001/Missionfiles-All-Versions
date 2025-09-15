@@ -37057,5 +37057,82 @@
     "base_mission_id": 871,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "fire_support_specialization"]
+  },
+  {
+    "id": "872",
+    "name": "Avalanche majeure",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_quad": 6,
+      "mountain_rescue_helicopter": 3,
+      "mountain_helicopter_rescue_lift": 3,
+      "mountain_rescue_drone": 4,
+      "mountain_height_rescue": 7,
+      "mountain_snow": 4,
+      "mountain_rescue_dogs": 6
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 6,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [30],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 30,
+      "mountain_rescue": 4,
+      "mountain_rescue_heliport": 3,
+      "mountain_rescue_quad": 4,
+      "mountain_rescue_lift": 1,
+      "mountain_rescue_drone": 2,
+      "mountain_rescue_dogs": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 872,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "873",
+    "name": "Canular t\u00e9l\u00e9phonique",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 873,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
