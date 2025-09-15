@@ -55520,6 +55520,98 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "1084",
+    "name": "Chain Collision in the tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 1084,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1084-0",
+    "name": "Chain Collision in the tunnel",
+    "place": "Tunnel",
+    "place_array": ["Tunnel"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "fwk": 1,
+      "firetrucks": 6,
+      "police_cars": 3,
+      "personnel_educations": { "traffic_control": 6 }
+    },
+    "chances": { "fwk": 90, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "patient_us_code_possible": ["29-D-1a"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Traffic Control": 6 }
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "disaster_response_count": 1,
+      "personnel_educations": { "traffic_control": 12 },
+      "fire_stations": 13
+    },
+    "overlay_index": 0,
+    "base_mission_id": 1084,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "1008",
     "name": "Fired Employee Spills Cleaning Chemicals",
     "place": "Supermarket (small)\nSupermarket (big)",
