@@ -37051,5 +37051,55 @@
     "base_mission_id": 873,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "874",
+    "name": "Chute de passagers d’un bateau",
+    "place": "Plage",
+    "place_array": ["Plage"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "battalion_chief_vehicles": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 2,
+      "large_coastal_boat": 2,
+      "police_cars": 4,
+      "water_rescue": 3
+    },
+    "chances": {
+      "patient_transport": 15,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 5,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "wasserrettung": 3,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "coastal_rescue_count": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 874,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
