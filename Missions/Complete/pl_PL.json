@@ -33091,5 +33091,48 @@
     "base_mission_id": 849,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "850",
+    "name": "Karambol w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "oneof_police_patrol_or_traffic_control": 2,
+      "firetrucks": 6,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 850,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
