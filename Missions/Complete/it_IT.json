@@ -31191,5 +31191,53 @@
     "base_mission_id": 798,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "799",
+    "name": "Tamponamento a catena in galleria",
+    "place": "Galleria",
+    "place_array": ["Galleria"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "fwk": 80, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 799,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
