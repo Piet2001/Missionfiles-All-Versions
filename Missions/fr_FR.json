@@ -37172,5 +37172,102 @@
     "base_mission_id": 875,
     "additive_overlays": "",
     "mission_categories": ["disaster_response", "mountain"]
+  },
+  {
+    "id": "876",
+    "name": "Découverte de plusieurs colis piégés dans un hôpital",
+    "place": "",
+    "place_array": [],
+    "average_credits": 52900,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 3,
+      "thw_gkw": 3,
+      "disaster_response_command": 1,
+      "fbi_bomb": 4,
+      "bomb_drone": 4,
+      "fire_command_container": 1,
+      "ambulance_command_container": 1,
+      "firetrucks": 30,
+      "police_cars": 18,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 20,
+      "average_min_fire_personnel": 100,
+      "average_min_police_personnel": 36,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": { "Véhicules risques chimiques": 4 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 20,
+      "police_stations": 20,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 1,
+      "technical_aid": 25,
+      "container": 6,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 876,
+    "additive_overlays": "",
+    "mission_categories": ["disaster_response"]
+  },
+  {
+    "id": "877",
+    "name": "Enquête suite à un sabotage de train",
+    "place": "Gare ferroviaire (trajets régionaux et grandes lignes)",
+    "place_array": ["Gare ferroviaire (trajets régionaux et grandes lignes)"],
+    "average_credits": 6200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "police_investigation": 4,
+      "firetrucks": 2,
+      "police_cars": 10
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 15,
+      "criminal_investigation_count": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 877,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
