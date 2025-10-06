@@ -26052,5 +26052,94 @@
     "base_mission_id": 708,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "709",
+    "name": "Osoba zaklíněná mezi nástupištěm a vlakem",
+    "place": "Tramvajová zastávka\nŽelezniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)",
+    "place_array": [
+      "Tramvajová zastávka",
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)"
+    ],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "709/a",
+    "name": "Osoba zaklíněná mezi nástupištěm a vlakem",
+    "place": "Tramvajová zastávka\nŽelezniční stanice (regionální doprava)\nŽelezniční stanice (regionální a dálková doprava)",
+    "place_array": [
+      "Tramvajová zastávka",
+      "Železniční stanice (regionální doprava)",
+      "Železniční stanice (regionální a dálková doprava)"
+    ],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire_investigation": 1,
+      "oneof_fire_engine_or_railway_fire_engine_or_engine_large": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 709,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
   }
 ]
