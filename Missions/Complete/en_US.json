@@ -2199,8 +2199,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -2224,8 +2224,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -2255,8 +2255,8 @@
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["7-C-3F", "7-A-1F"],
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z",
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00",
       "patient_specialization_ids": [5],
       "patient_specialization_captions": ["Neurology"],
       "patient_specializations": "Neurology"
@@ -2289,8 +2289,8 @@
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
       "patient_us_code_possible": ["17-D-1"],
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z",
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
@@ -2306,7 +2306,7 @@
     "name": "Zombie bite",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/ghost_gruen.png",
@@ -2320,8 +2320,8 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "patient_us_code_possible": ["3-B-2"],
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z",
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00",
       "patient_specialization_ids": [5],
       "patient_specialization_captions": ["Neurology"],
       "patient_specializations": "Neurology"
@@ -2348,8 +2348,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
@@ -2373,8 +2373,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -2398,8 +2398,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 5, "police_stations": 2 },
     "overlay_index": null,
@@ -2423,8 +2423,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-10-18T09:00:00Z",
-      "date_end": "2024-10-31T23:00:00Z"
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00"
     },
     "prerequisites": { "main_building": 5, "police_stations": 1 },
     "overlay_index": null,
@@ -55727,6 +55727,83 @@
     "base_mission_id": 1087,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1088",
+    "name": "Haunted Hayride Emergency",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "k9": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": ["32-B-1"],
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1088,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "1089",
+    "name": "Multiple Inflatable Ghosts on Fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 8,
+      "personnel_educations": { "gw_gefahrgut": 4 }
+    },
+    "chances": { "mobile_air_vehicles": 50, "water_tankers": 40 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59-04:00",
+      "personnel_educations": { "HazMat": 4 }
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 10 },
+    "overlay_index": null,
+    "base_mission_id": 1089,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   },
   {
     "id": "1008",
