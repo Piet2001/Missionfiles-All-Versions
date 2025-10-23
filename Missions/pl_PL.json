@@ -33421,6 +33421,91 @@
   },
   {
     "id": "859",
+    "name": "Zderzenie łańcucha w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 859,
+    "additive_overlays": "",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "859/a",
+    "name": "Zderzenie łańcucha w tunelu",
+    "place": "Tunel",
+    "place_array": ["Tunel"],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 859,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "860",
     "name": "Awaria na strasznej przejażdżce sianem",
     "place": "",
     "place_array": [],
@@ -33456,12 +33541,12 @@
       "fire_stations": 6
     },
     "overlay_index": null,
-    "base_mission_id": 859,
+    "base_mission_id": 860,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
   {
-    "id": "860",
+    "id": "861",
     "name": "Wielu dmuchanych duchów w ogniu",
     "place": "",
     "place_array": [],
@@ -33491,12 +33576,12 @@
     },
     "prerequisites": { "main_building": 0, "fire_stations": 10 },
     "overlay_index": null,
-    "base_mission_id": 860,
+    "base_mission_id": 861,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   },
   {
-    "id": "861",
+    "id": "862",
     "name": "Zombie impreza taneczna",
     "place": "",
     "place_array": [],
@@ -33533,7 +33618,7 @@
       "riot_police": 2
     },
     "overlay_index": null,
-    "base_mission_id": 861,
+    "base_mission_id": 862,
     "additive_overlays": "",
     "mission_categories": ["police"]
   }
