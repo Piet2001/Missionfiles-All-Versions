@@ -10845,6 +10845,64 @@
     "mission_categories": ["water_rescue", "fire_support_specialization"]
   },
   {
+    "id": "321",
+    "name": "Brandende wegberm",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "traffic_unit": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [322],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "technical_aid": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 321,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "322",
+    "name": "Brandende wegberm",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 2350,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "traffic_unit": 1,
+      "firetrucks": 2
+    },
+    "chances": { "water_tankers": 50 },
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "technical_aid": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 322,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
     "id": "323",
     "name": "Verkeersongeval met motorfiets",
     "place": "",
