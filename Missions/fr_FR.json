@@ -44022,5 +44022,117 @@
     "base_mission_id": 880,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural", "urban"]
+  },
+  {
+    "id": "881",
+    "name": "Pluie torrentielle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 57100,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 7,
+      "gw_hoehenrettung_personal": 10,
+      "k9": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 7,
+      "thw_gkw": 5,
+      "flood_equipment": 2,
+      "disaster_response_command": 1,
+      "heavy_rescue": 5,
+      "rescue_dogs": 4,
+      "firetrucks": 21,
+      "police_cars": 20,
+      "personnel_educations": { "disaster_response": 15 },
+      "min_pump_speed": 1000
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 15,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 20,
+      "height_rescue_personnel": 10,
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 480000,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général",
+      "personnel_educations": { "USAR": 15 }
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 18,
+      "police_stations": 17,
+      "rescue_helicopter_stations": 1,
+      "personnel_educations": { "disaster_response": 30 },
+      "flood_equipment": 4,
+      "heavy_rescue": 10,
+      "fire_stations": 28
+    },
+    "overlay_index": null,
+    "base_mission_id": 881,
+    "additive_overlays": "",
+    "mission_categories": ["disaster_response"]
+  },
+  {
+    "id": "882",
+    "name": "Incendie d'un train de travaux",
+    "place": "",
+    "place_array": [],
+    "average_credits": 19800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 2,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 2,
+      "pump": 2,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 3,
+      "thw_gkw": 1,
+      "hazmat_container": 1,
+      "hose_container": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 106,
+      "average_min_police_personnel": 16,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "fire_support_count": 2,
+      "container": 4,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 882,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
   }
 ]
