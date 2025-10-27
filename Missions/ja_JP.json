@@ -21281,6 +21281,91 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "624",
+    "name": "トンネル内での連鎖衝突",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 624,
+    "additive_overlays": "",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "624/a",
+    "name": "トンネル内での連鎖衝突",
+    "place": "トンネル",
+    "place_array": ["トンネル"],
+    "average_credits": 7300,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 3,
+      "firetrucks": 6,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 14,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "tow_trucks": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 624,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
     "id": "625",
     "name": "幽霊屋敷の干し草トラック緊急事態",
     "place": "",
