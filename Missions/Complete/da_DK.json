@@ -27000,5 +27000,53 @@
     "base_mission_id": 715,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "716",
+    "name": "Helikopterstyrt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "arff": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 8,
+      "police_cars": 5
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["airport_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "airport": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 716,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "urban"]
   }
 ]
