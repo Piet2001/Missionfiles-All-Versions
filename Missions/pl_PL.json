@@ -33572,5 +33572,56 @@
     "base_mission_id": 862,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "863",
+    "name": "Niszczycielska katastrofa wulkaniczna",
+    "place": "",
+    "place_array": [],
+    "average_credits": 30000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "height_rescue_units": 8,
+      "water_tankers": 1,
+      "hose": 2,
+      "heavy_rescue_vehicles": 5,
+      "mountain_height_rescue": 8,
+      "mountain_snow": 2,
+      "mountain_rescue_dogs": 4,
+      "mountain_atv": 4,
+      "firetrucks": 10,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 10,
+      "fire_support_count": 1,
+      "mountain_rescue": 10,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 863,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
