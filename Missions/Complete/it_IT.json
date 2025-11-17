@@ -31788,5 +31788,51 @@
     "base_mission_id": 810,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "811",
+    "name": "Incendio in campo di grano",
+    "place": "Azienda agricola",
+    "place_array": ["Azienda agricola"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [757, 758, 622],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 811,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]

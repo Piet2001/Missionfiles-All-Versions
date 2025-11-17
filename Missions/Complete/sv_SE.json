@@ -24012,5 +24012,47 @@
     "base_mission_id": 690,
     "additive_overlays": "",
     "mission_categories": ["forestry"]
+  },
+  {
+    "id": "691",
+    "name": "Masskrasch p\u00e5 v\u00e4gen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 8,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 10,
+      "possible_crashed_car_max": 25,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 3,
+      "police_stations": 5,
+      "tow_trucks": 10,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 691,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
   }
 ]
