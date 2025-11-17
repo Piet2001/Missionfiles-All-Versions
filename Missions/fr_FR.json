@@ -44172,5 +44172,58 @@
     "base_mission_id": 883,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "884",
+    "name": "Accident majeur sur autoroute brumeuse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 18500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 2,
+      "police_investigation": 1,
+      "road_rescue": 1,
+      "gwoil": 1,
+      "firetrucks": 4,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 60,
+      "helicopter": 10,
+      "patient_critical_care": 70
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 8,
+      "criminal_investigation_count": 1,
+      "container": 9,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
   }
 ]
