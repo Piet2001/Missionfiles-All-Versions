@@ -21594,5 +21594,177 @@
     "base_mission_id": 630,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "631",
+    "name": "スキー事故",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": { "mountain_height_rescue": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"]
+    },
+    "prerequisites": { "main_building": 28, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 631,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "632",
+    "name": "山頂に取り残された登山者たち",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "search_and_rescue_helicopter": 2,
+      "mountain_height_rescue": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["一般内科"],
+      "patient_specializations": "一般内科"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 632,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "633",
+    "name": "小さな雪崩",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "search_and_rescue_helicopter": 2,
+      "mountain_height_rescue": 3
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 2,
+      "mountain_rescue_heliport": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 633,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "634",
+    "name": "迷子の子供",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "mountain_height_rescue": 2, "mountain_rescue_drone": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"]
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 2,
+      "mountain_rescue_drone": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 634,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "635",
+    "name": "中規模の雪崩",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "search_and_rescue_helicopter": 3,
+      "mountain_height_rescue": 3,
+      "mountain_rescue_drone": 3
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 3,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["災害外科"],
+      "patient_specializations": "災害外科"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 2,
+      "mountain_rescue_heliport": 3,
+      "mountain_rescue_drone": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 635,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
