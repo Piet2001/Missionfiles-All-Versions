@@ -23163,5 +23163,327 @@
     "base_mission_id": 682,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "683",
+    "name": "Acidentes de esqui",
+    "place": "Trilha de montanha",
+    "place_array": ["Trilha de montanha"],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": { "mountain_atv": 1, "mountain_snow": 1 },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 28, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 683,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "684",
+    "name": "Caminhantes presos no topo da montanha",
+    "place": "Trilha de montanha",
+    "place_array": ["Trilha de montanha"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 2,
+      "mountain_command": 1,
+      "mountain_snow": 1
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": { "main_building": 28, "mountain_rescue": 2 },
+    "overlay_index": null,
+    "base_mission_id": 684,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "685",
+    "name": "Pequena avalanche",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 1,
+      "mountain_snow": 1,
+      "mountain_rescue_helicopter": 1,
+      "mountain_helicopter_rescue_lift": 1
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 1,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_lift": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 685,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "686",
+    "name": "Queda de um serac",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 4,
+      "mountain_command": 2,
+      "mountain_snow": 1,
+      "mountain_height_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 3,
+      "mountain_height_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 686,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "687",
+    "name": "Caminhante em perigo devido ao mau tempo",
+    "place": "Trilha de montanha",
+    "place_array": ["Trilha de montanha"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 1,
+      "mountain_snow": 1,
+      "mountain_height_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": -1,
+      "mountain_rescue": 1,
+      "mountain_height_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 687,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "688",
+    "name": "Avalanche moderada",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 8,
+      "mountain_snow": 2,
+      "mountain_rescue_helicopter": 2,
+      "mountain_height_rescue": 2,
+      "mountain_helicopter_rescue_lift": 2
+    },
+    "chances": {
+      "patient_transport": 100,
+      "helicopter": 10,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 4,
+      "mountain_height_rescue": 2,
+      "mountain_rescue_heliport": 1,
+      "mountain_rescue_lift": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 688,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "689",
+    "name": "Acidentes em cavernas",
+    "place": "Caverna",
+    "place_array": ["Caverna"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 1,
+      "mountain_cave_command": 2,
+      "mountain_height_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 1,
+      "mountain_height_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 689,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "690",
+    "name": "Adolescentes perdidos em cavernas",
+    "place": "Caverna",
+    "place_array": ["Caverna"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "mountain_atv": 1,
+      "mountain_command": 1,
+      "mountain_cave_command": 2,
+      "mountain_height_rescue": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [28],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "mountain_rescue": 2,
+      "mountain_height_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 690,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
