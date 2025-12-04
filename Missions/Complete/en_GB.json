@@ -1957,9 +1957,15 @@
   {
     "id": "50",
     "name": "Fare dodger",
-    "place": "Bus stop",
-    "place_array": ["Bus stop"],
-    "average_credits": 120,
+    "place": "Bus stop\nTram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nGoods station",
+    "place_array": [
+      "Bus stop",
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Goods station"
+    ],
+    "average_credits": 520,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
@@ -1973,7 +1979,44 @@
     "overlay_index": null,
     "base_mission_id": 50,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "railway_police"]
+  },
+  {
+    "id": "50/a",
+    "name": "Fare dodger",
+    "place": "Bus stop\nTram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nGoods station",
+    "place_array": [
+      "Bus stop",
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Goods station"
+    ],
+    "average_credits": 620,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "railway_police": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Railway Police Officer": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 50,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "railway_police"]
   },
   {
     "id": "51",
@@ -4170,8 +4213,16 @@
   {
     "id": "109",
     "name": "Trespasser on railway line",
-    "place": "Train station (regional traffic)",
-    "place_array": ["Train station (regional traffic)"],
+    "place": "Tram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nGoods station\nRailroad Crossing\nRail Crossing\nSubway station",
+    "place_array": [
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Goods station",
+      "Railroad Crossing",
+      "Rail Crossing",
+      "Subway station"
+    ],
     "average_credits": 1000,
     "generated_by": "",
     "icons": [
@@ -4190,7 +4241,48 @@
     "overlay_index": null,
     "base_mission_id": 109,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "railway_police"]
+  },
+  {
+    "id": "109/a",
+    "name": "Trespasser on railway line",
+    "place": "Tram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nGoods station\nRailroad Crossing\nRail Crossing\nSubway station",
+    "place_array": [
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Goods station",
+      "Railroad Crossing",
+      "Rail Crossing",
+      "Subway station"
+    ],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 2,
+      "personnel_educations": { "railway_police": 4 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Railway Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 109,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "railway_police"]
   },
   {
     "id": "110",
@@ -5101,7 +5193,12 @@
     "overlay_index": null,
     "base_mission_id": 134,
     "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "railway_fire"
+    ]
   },
   {
     "id": "134/a",
@@ -5113,7 +5210,7 @@
       "Train station (regional traffic)",
       "Goods station"
     ],
-    "average_credits": 2000,
+    "average_credits": 2400,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -5138,7 +5235,110 @@
     "overlay_index": null,
     "base_mission_id": 134,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "134/b",
+    "name": "Goods Train Fire",
+    "place": "Rail Crossing\nRailroad Crossing\nTrain station (regional traffic)\nGoods station",
+    "place_array": [
+      "Rail Crossing",
+      "Railroad Crossing",
+      "Train station (regional traffic)",
+      "Goods station"
+    ],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "two_way": 1,
+      "railway_police": 1,
+      "firetrucks": 4,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "railway_police": 4 },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 134,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "134/ab",
+    "name": "Goods Train Fire",
+    "place": "Rail Crossing\nRailroad Crossing\nTrain station (regional traffic)\nGoods station",
+    "place_array": [
+      "Rail Crossing",
+      "Railroad Crossing",
+      "Train station (regional traffic)",
+      "Goods station"
+    ],
+    "average_credits": 3400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "two_way": 1,
+      "railway_police": 1,
+      "firetrucks": 4,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_support_count": 1,
+      "personnel_educations": { "railway_police": 4 },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 134,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "fire_support_specialization",
+      "urban",
+      "railway_fire"
+    ]
   },
   {
     "id": "138",
@@ -8319,7 +8519,7 @@
     "overlay_index": null,
     "base_mission_id": 211,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "212",
@@ -11222,7 +11422,7 @@
     "overlay_index": null,
     "base_mission_id": 287,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "288",
@@ -11250,7 +11450,44 @@
     "overlay_index": null,
     "base_mission_id": 288,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "288/a",
+    "name": "Train station fire (Medium)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 4100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 4,
+      "personnel_educations": { "railway_police": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [294],
+      "average_min_fire_personnel": 17,
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 1 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "personnel_educations": { "railway_police": 2 },
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 288,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "289",
@@ -11350,7 +11587,56 @@
     "overlay_index": null,
     "base_mission_id": 291,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "291/a",
+    "name": "Person under train",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nSubway station",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Subway station"
+    ],
+    "average_credits": 7800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "heavy_rescue_vehicles": 2,
+      "railway_police": 1,
+      "firetrucks": 4,
+      "police_cars": 5,
+      "personnel_educations": { "railway_police": 4 }
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "average_min_fire_personnel": 28,
+      "patient_uk_code_possible": ["C-1"],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4, 14],
+      "patient_specialization_captions": ["Traumatology", "Critical Care"],
+      "patient_specializations": "Traumatology, Critical Care",
+      "personnel_educations": { "Railway Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 5,
+      "personnel_educations": { "railway_police": 8 },
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 291,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "292",
@@ -11474,7 +11760,51 @@
     "overlay_index": null,
     "base_mission_id": 294,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "294/a",
+    "name": "Train station fire (Large)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 2,
+      "personnel_educations": { "railway_police": 4 }
+    },
+    "chances": { "water_tankers": 10 },
+    "additional": {
+      "expansion_missions_ids": [295],
+      "average_min_fire_personnel": 42,
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "personnel_educations": { "railway_police": 8 },
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 294,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "295",
@@ -11500,10 +11830,18 @@
       "firetrucks": 12,
       "police_cars": 4
     },
-    "chances": { "water_tankers": 30 },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
     "additional": {
       "average_min_fire_personnel": 63,
-      "filter_id": "firehouse_missions"
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
     },
     "prerequisites": {
       "main_building": 0,
@@ -11513,10 +11851,112 @@
     "overlay_index": null,
     "base_mission_id": 295,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "295/a",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "hazard_response_ems": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/b",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 16200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/c",
     "name": "Train station fire (Major)",
     "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
     "place_array": [
@@ -11534,27 +11974,701 @@
       "platform_trucks": 1,
       "battalion_chief_vehicles": 8,
       "mobile_command_vehicles": 1,
-      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
       "firetrucks": 12,
       "police_cars": 4
     },
-    "chances": { "water_tankers": 30 },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
     "additional": {
       "average_min_fire_personnel": 63,
-      "filter_id": "firehouse_missions"
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
-      "hazard_response_ems": 1,
+      "mass_casualty_count": 1,
       "fire_stations": 20
     },
     "overlay_index": null,
     "base_mission_id": 295,
-    "additive_overlays": "a",
-    "mission_categories": ["fire", "urban"]
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/d",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 16600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "kdow_orgl": 4,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "d",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/ab",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 18700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "hazard_response_ems": 2,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/ac",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/ad",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 19100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 4,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "hazard_response_ems": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "ad",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/bc",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 16700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/bd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 17800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "kdow_orgl": 4,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "bd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/cd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 17100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "kdow_orgl": 4,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "cd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/abc",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 19200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/abd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 20300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 4,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "hazard_response_ems": 2,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "abd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/acd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 19600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 4,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "acd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/bcd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 18300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "kdow_orgl": 4,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "bcd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "295/abcd",
+    "name": "Train station fire (Major)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 20800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 4,
+      "railway_police": 1,
+      "firetrucks": 12,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "water_tankers": 30,
+      "patient_transport": 50,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "average_min_fire_personnel": 63,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 4,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 295,
+    "additive_overlays": "abcd",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "296",
@@ -13700,7 +14814,7 @@
     "overlay_index": null,
     "base_mission_id": 324,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "324/a",
@@ -13747,7 +14861,110 @@
     "overlay_index": null,
     "base_mission_id": 324,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "324/b",
+    "name": "Freight Train Derailment",
+    "place": "Railroad Crossing\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Railroad Crossing",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "two_way": 1,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 6 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 6,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Railway Police Officer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "personnel_educations": { "railway_police": 12 },
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 324,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "324/ab",
+    "name": "Freight Train Derailment",
+    "place": "Railroad Crossing\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Railroad Crossing",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 12400,
+    "generated_by": "",
+    "icons": [
+      "/images/bus_gruen.png",
+      "/images/bus_gelb.png",
+      "/images/bus_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "heavy_rescue_vehicles": 2,
+      "two_way": 1,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 6 }
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 6,
+      "patient_uk_code_possible": ["C-1", "C-2"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Railway Police Officer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "hazard_response_ems": 1,
+      "personnel_educations": { "railway_police": 12 },
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 324,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "325",
@@ -17045,7 +18262,458 @@
     "mission_categories": [
       "fire",
       "urban",
-      "mass_casualty_ambulance_specialization"
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/a",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 14800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "mass_casualty_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/b",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 16500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/c",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 16900,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "two_way": 2,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 10,
+        "police_sergeant": 3,
+        "police_inspector": 1
+      }
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 10,
+        "Police Sergeant": 3,
+        "Police Inspector": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "personnel_educations": {
+        "railway_police": 20,
+        "police_sergeant": 6,
+        "police_inspector": 2
+      },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "c",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/ab",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 17300,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 4,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/ac",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 17700,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 4,
+      "two_way": 2,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 10,
+        "police_sergeant": 3,
+        "police_inspector": 1
+      }
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 10,
+        "Police Sergeant": 3,
+        "Police Inspector": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "mass_casualty_count": 1,
+      "personnel_educations": {
+        "railway_police": 20,
+        "police_sergeant": 6,
+        "police_inspector": 2
+      },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "ac",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/bc",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 19400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "heavy_rescue_vehicles": 4,
+      "two_way": 2,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 10,
+        "police_sergeant": 3,
+        "police_inspector": 1
+      }
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 10,
+        "Police Sergeant": 3,
+        "Police Inspector": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "railway_police": 20,
+        "police_sergeant": 6,
+        "police_inspector": 2
+      },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "bc",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "372/abc",
+    "name": "Passenger Train Derailment",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 20200,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 4,
+      "two_way": 2,
+      "railway_police": 1,
+      "firetrucks": 8,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 10,
+        "police_sergeant": 3,
+        "police_inspector": 1
+      }
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 30,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 10,
+        "Police Sergeant": 3,
+        "Police Inspector": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 6,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "railway_police": 20,
+        "police_sergeant": 6,
+        "police_inspector": 2
+      },
+      "railway_fire": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 372,
+    "additive_overlays": "abc",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
     ]
   },
   {
@@ -21500,7 +23168,7 @@
       "Train station (regional traffic)",
       "Train station (regional traffic and long-distance travel)"
     ],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/tramway_gruen.png",
@@ -21514,7 +23182,43 @@
     "overlay_index": null,
     "base_mission_id": 465,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "railway_police"]
+  },
+  {
+    "id": "465/a",
+    "name": "Fight on Train",
+    "place": "Tram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_cars": 4,
+      "personnel_educations": { "railway_police": 4 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Railway Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "railway_police"]
   },
   {
     "id": "466",
@@ -22081,7 +23785,7 @@
       "firetrucks": 6,
       "police_cars": 2
     },
-    "chances": { "hazmat_vehicles": 30, "water_tankers": 30 },
+    "chances": { "hazmat_vehicles": 30 },
     "additional": {
       "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
       "followup_missions_ids": [211, 212, 213, 214],
@@ -22095,7 +23799,12 @@
     "overlay_index": null,
     "base_mission_id": 479,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "railway_fire"
+    ]
   },
   {
     "id": "479/a",
@@ -22122,7 +23831,7 @@
       "firetrucks": 6,
       "police_cars": 2
     },
-    "chances": { "hazmat_vehicles": 30, "water_tankers": 30 },
+    "chances": { "hazmat_vehicles": 30 },
     "additional": {
       "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
       "followup_missions_ids": [211, 212, 213, 214],
@@ -22137,7 +23846,114 @@
     "overlay_index": null,
     "base_mission_id": 479,
     "additive_overlays": "a",
-    "mission_categories": ["fire", "urban", "fire_support_specialization"]
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "479/b",
+    "name": "Locomotive train fire",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 8700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "two_way": 1,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "chances": { "hazmat_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
+      "followup_missions_ids": [211, 212, 213, 214],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "personnel_educations": { "railway_police": 4 },
+      "railway_fire": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "479/ab",
+    "name": "Locomotive train fire",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nRailroad Crossing\nRail Crossing",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Railroad Crossing",
+      "Rail Crossing"
+    ],
+    "average_credits": 9100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "foam": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "two_way": 1,
+      "firetrucks": 6,
+      "police_cars": 2,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "chances": { "hazmat_vehicles": 30 },
+    "additional": {
+      "expansion_missions_ids": [134, 135, 136, 137, 295, 297],
+      "followup_missions_ids": [211, 212, 213, 214],
+      "filter_id": "firehouse_missions",
+      "personnel_educations": { "Railway Police Officer": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_support_count": 1,
+      "personnel_educations": { "railway_police": 4 },
+      "railway_fire": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 479,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire",
+      "urban",
+      "fire_support_specialization",
+      "railway_fire"
+    ]
   },
   {
     "id": "480",
@@ -23770,7 +25586,47 @@
     "overlay_index": null,
     "base_mission_id": 520,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "railway_police"]
+  },
+  {
+    "id": "520/a",
+    "name": "Community Engagement (Police)",
+    "place": "School\nMall\nStadium\nFestival\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "School",
+      "Mall",
+      "Stadium",
+      "Festival",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 1,
+      "personnel_educations": { "railway_police": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 hour",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Railway Police Officer": 1 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 520,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "railway_police"]
   },
   {
     "id": "521",
@@ -26664,6 +28520,58 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "605/a",
+    "name": "Risk fan escort",
+    "place": "Stadium\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nBar",
+    "place_array": [
+      "Stadium",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Bar"
+    ],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 5,
+      "personnel_educations": {
+        "level_2_public_order": 24,
+        "police_sergeant": 3,
+        "police_inspector": 1,
+        "railway_police": 10
+      }
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 24,
+        "Police Sergeant": 3,
+        "Police Inspector": 1,
+        "Railway Police Officer": 10
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "personnel_educations": {
+        "level_2_public_order": 30,
+        "police_sergeant": 5,
+        "police_inspector": 2,
+        "railway_police": 20
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 605,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "606",
     "name": "Person stuck in bath",
     "place": "",
@@ -27360,6 +29268,47 @@
     "overlay_index": null,
     "base_mission_id": 623,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "623/a",
+    "name": "Travelling Fan Serial",
+    "place": "Train station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "personnel_educations": { "level_2_public_order": 6, "railway_police": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "1 hour 30 minutes",
+      "duration": 5400,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 6,
+        "Railway Police Officer": 2
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "personnel_educations": {
+        "level_2_public_order": 12,
+        "railway_police": 4
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 623,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -33526,7 +35475,66 @@
     "additive_overlays": "",
     "mission_categories": [
       "ambulance",
-      "mass_casualty_ambulance_specialization"
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
+    ]
+  },
+  {
+    "id": "792/a",
+    "name": "Mass influx of sick people - railway station",
+    "place": "Train station (regional traffic)",
+    "place_array": ["Train station (regional traffic)"],
+    "average_credits": 8100,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "mobile_air_vehicles": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "heavy_rescue_vehicles": 3,
+      "railway_police": 2,
+      "firetrucks": 4,
+      "police_cars": 6,
+      "personnel_educations": { "railway_police": 8 }
+    },
+    "chances": {
+      "mobile_air_vehicles": 10,
+      "patient_transport": 25,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Railway Police Officer": 8 }
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 1,
+      "personnel_educations": { "railway_police": 16 },
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 792,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "ambulance",
+      "mass_casualty_ambulance_specialization",
+      "railway_fire"
     ]
   },
   {
@@ -33849,7 +35857,55 @@
     "overlay_index": null,
     "base_mission_id": 798,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "railway_fire"]
+  },
+  {
+    "id": "798/a",
+    "name": "Person trapped between platform and train",
+    "place": "Tram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_police": 1,
+      "firetrucks": 2,
+      "police_cars": 1,
+      "personnel_educations": { "railway_police": 4 }
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": { "Railway Police Officer": 4 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "personnel_educations": { "railway_police": 8 },
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 798,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "railway_fire"]
   },
   {
     "id": "799",
@@ -34143,6 +36199,364 @@
     "base_mission_id": 805,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "806",
+    "name": "Passenger Train Fire in Tunnel",
+    "place": "Railway tunnel",
+    "place_array": ["Railway tunnel"],
+    "average_credits": 16660,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "ems_mobile_command": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 4,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 2,
+      "two_way": 2,
+      "railway_police": 1,
+      "firetrucks": 6,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 4,
+        "railway_police_command": 1,
+        "police_sergeant": 1
+      }
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 1 },
+    "additional": {
+      "possible_patient": 150,
+      "possible_patient_min": 25,
+      "patient_uk_code_possible": ["C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0, 12],
+      "patient_specialization_captions": ["General Internal", "Burns"],
+      "patient_specializations": "General Internal, Burns",
+      "personnel_educations": {
+        "Railway Police Officer": 4,
+        "Mobile Operations Manager": 1,
+        "Police Sergeant": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 18,
+      "police_stations": 10,
+      "fire_support_count": 2,
+      "mass_casualty_count": 1,
+      "hazard_response_ems": 2,
+      "personnel_educations": {
+        "railway_police": 12,
+        "railway_police_command": 4,
+        "police_sergeant": 4
+      },
+      "railway_fire": 2,
+      "fire_stations": 20
+    },
+    "overlay_index": null,
+    "base_mission_id": 806,
+    "additive_overlays": "",
+    "mission_categories": [
+      "railway_police",
+      "railway_fire",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "807",
+    "name": "Evacuation of Stranded Passenger Train",
+    "place": "Railroad Crossing\nRail Crossing",
+    "place_array": ["Railroad Crossing", "Rail Crossing"],
+    "average_credits": 13600,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "search_and_rescue": 5,
+      "search_and_rescue_command": 1,
+      "two_way": 1,
+      "railway_police": 1,
+      "firetrucks": 4,
+      "police_cars": 6,
+      "personnel_educations": {
+        "railway_police": 4,
+        "railway_police_command": 1,
+        "police_sergeant": 1
+      }
+    },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 5,
+      "patient_uk_code_possible": ["C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Railway Police Officer": 4,
+        "Mobile Operations Manager": 1,
+        "Police Sergeant": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 12,
+      "police_stations": 9,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "railway_police": 12,
+        "railway_police_command": 4,
+        "police_sergeant": 4
+      },
+      "technical_aid": 2,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 807,
+    "additive_overlays": "",
+    "mission_categories": ["railway_police", "railway_fire"]
+  },
+  {
+    "id": "808",
+    "name": "Passenger Train Caught in Landslide (Major Incident)",
+    "place": "Railroad Crossing\nRail Crossing",
+    "place_array": ["Railroad Crossing", "Rail Crossing"],
+    "average_credits": 26800,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "emergency_welfare": 2,
+      "ems_mobile_command": 2,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hazard_response_primary": 4,
+      "hazard_response_secondary": 4,
+      "k9": 2,
+      "kdow_orgl": 6,
+      "mass_casualty_equipment": 1,
+      "heavy_rescue_vehicles": 4,
+      "search_and_rescue": 5,
+      "search_and_rescue_command": 1,
+      "rescue_dogs": 1,
+      "two_way": 2,
+      "railway_police": 2,
+      "oneof_police_drone_or_helicopter": 1,
+      "firetrucks": 10,
+      "police_cars": 10,
+      "personnel_educations": {
+        "railway_police": 8,
+        "railway_police_command": 2,
+        "police_sergeant": 2,
+        "police_inspector": 1,
+        "search_and_rescue": 1
+      }
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 200,
+      "possible_patient_min": 50,
+      "patient_uk_code_possible": ["C-1", "C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 8,
+        "Mobile Operations Manager": 2,
+        "Police Sergeant": 2,
+        "Police Inspector": 1,
+        "Search Advisor": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 35,
+      "police_stations": 15,
+      "police_helicopter_stations": 1,
+      "mass_casualty_count": 2,
+      "hazard_response_ems": 4,
+      "personnel_educations": {
+        "railway_police": 16,
+        "railway_police_command": 8,
+        "police_sergeant": 8,
+        "police_inspector": 4,
+        "search_and_rescue": 4
+      },
+      "technical_aid": 2,
+      "railway_fire": 2,
+      "fire_stations": 22
+    },
+    "overlay_index": null,
+    "base_mission_id": 808,
+    "additive_overlays": "",
+    "mission_categories": [
+      "railway_police",
+      "railway_fire",
+      "mass_casualty_ambulance_specialization"
+    ]
+  },
+  {
+    "id": "809",
+    "name": "Flooded Railway Station (Persons Trapped)",
+    "place": "Train station (regional traffic)\nTrain station (regional traffic and long-distance travel)",
+    "place_array": [
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)"
+    ],
+    "average_credits": 10100,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "emergency_welfare": 1,
+      "hazard_response_primary": 2,
+      "hazard_response_secondary": 2,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "flood_equipment": 2,
+      "railway_police": 1,
+      "firetrucks": 3,
+      "police_cars": 4,
+      "personnel_educations": {
+        "railway_police": 2,
+        "railway_police_command": 1
+      },
+      "min_pump_speed": 1500
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 1 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "patient_uk_code_possible": ["C-2", "C-3", "C-4"],
+      "filter_id": "firehouse_missions",
+      "pump_water_amount": 90000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": {
+        "Railway Police Officer": 2,
+        "Mobile Operations Manager": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 4,
+      "water_damage_pump_count": 1,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "railway_police": 6,
+        "railway_police_command": 3
+      },
+      "flood_equipment": 2,
+      "fire_stations": 9
+    },
+    "overlay_index": null,
+    "base_mission_id": 809,
+    "additive_overlays": "",
+    "mission_categories": ["railway_police", "railway_fire"]
+  },
+  {
+    "id": "810",
+    "name": "Goods Train Collided with HGV",
+    "place": "Railroad Crossing\nRail Crossing",
+    "place_array": ["Railroad Crossing", "Rail Crossing"],
+    "average_credits": 24800,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "hazmat_vehicles": 1,
+      "hazard_response_primary": 1,
+      "hazard_response_secondary": 1,
+      "kdow_orgl": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_car": 2,
+      "railway_police": 1,
+      "oneof_police_drone_or_helicopter": 1,
+      "firetrucks": 2,
+      "police_cars": 4,
+      "personnel_educations": {
+        "railway_police": 4,
+        "railway_police_command": 1
+      }
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-1"],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Railway Police Officer": 4,
+        "Mobile Operations Manager": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "hazard_response_ems": 1,
+      "personnel_educations": {
+        "railway_police": 12,
+        "railway_police_command": 3
+      },
+      "tow_trucks_large": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 810,
+    "additive_overlays": "",
+    "mission_categories": ["railway_police", "railway_fire", "tow_trucks"]
   },
   {
     "id": "750",
