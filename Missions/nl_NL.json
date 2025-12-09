@@ -362,10 +362,10 @@
   },
   {
     "id": "14",
-    "name": "Heidebrand",
+    "name": "Heidebrand (Middel)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 4460,
+    "average_credits": 5500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -374,6 +374,7 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
       "water_needed": 23000,
       "brush_truck": 2
     },
@@ -382,7 +383,7 @@
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 2,
-      "fire_stations": 10
+      "fire_stations": 19
     },
     "overlay_index": null,
     "base_mission_id": 14,
@@ -3935,7 +3936,7 @@
   },
   {
     "id": "128",
-    "name": "Heidebrand",
+    "name": "Heidebrand (Klein)",
     "place": "Bos",
     "place_array": ["Bos"],
     "average_credits": 1090,
@@ -3960,10 +3961,10 @@
   },
   {
     "id": "129",
-    "name": "Heidebrand",
+    "name": "Heidebrand (Groot)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 5230,
+    "average_credits": 9210,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -3972,15 +3973,22 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "water_needed": 27000,
-      "brush_truck": 3
+      "water_tankers": 2,
+      "spokesman": 1,
+      "water_needed": 35000,
+      "brush_truck": 4,
+      "police_cars": 2
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "expansion_missions_ids": [355, 356],
+      "filter_id": "firehouse_missions"
+    },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 3,
-      "fire_stations": 11
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_stations": 31
     },
     "overlay_index": null,
     "base_mission_id": 129,
@@ -4245,7 +4253,7 @@
   },
   {
     "id": "139",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Klein)",
     "place": "",
     "place_array": [],
     "average_credits": 1090,
@@ -4273,10 +4281,10 @@
   },
   {
     "id": "140",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Middel)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 4290,
+    "average_credits": 4800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4285,8 +4293,9 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "water_needed": 23000,
-      "brush_truck": 1
+      "water_tankers": 1,
+      "water_needed": 17500,
+      "brush_truck": 2
     },
     "chances": {},
     "additional": {
@@ -4295,8 +4304,8 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 1,
-      "fire_stations": 10
+      "brush_extension": 2,
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 140,
@@ -4305,10 +4314,10 @@
   },
   {
     "id": "141",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Groot)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 5930,
+    "average_credits": 6770,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4317,19 +4326,19 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
+      "water_tankers": 1,
       "water_needed": 27000,
-      "brush_truck": 2
+      "brush_truck": 3
     },
-    "chances": { "mobile_command_vehicles": 50 },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [142, 143, 144, 308, 309, 357],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 2,
-      "fire_stations": 13
+      "brush_extension": 3,
+      "fire_stations": 22
     },
     "overlay_index": null,
     "base_mission_id": 141,
@@ -4338,10 +4347,10 @@
   },
   {
     "id": "142",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Zeer Groot)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 9360,
+    "average_credits": 12020,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4349,21 +4358,24 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_needed": 46000,
-      "brush_truck": 3
+      "water_tankers": 2,
+      "spokesman": 1,
+      "water_needed": 38000,
+      "brush_truck": 4,
+      "police_cars": 2
     },
-    "chances": { "heavy_rescue_vehicles": 50 },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [143, 144, 308, 309, 357],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 3,
-      "fire_stations": 19
+      "police_stations": 2,
+      "brush_extension": 4,
+      "fire_stations": 36
     },
     "overlay_index": null,
     "base_mission_id": 142,
@@ -4372,10 +4384,10 @@
   },
   {
     "id": "143",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Grip 1)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 16242,
+    "average_credits": 21252,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4387,18 +4399,18 @@
       "mobile_command_vehicles": 1,
       "elw3": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "ovdp": 1,
       "heavy_rescue_vehicles": 1,
-      "water_needed": 62000,
-      "brush_truck": 3,
+      "spokesman": 1,
+      "water_needed": 54000,
+      "brush_truck": 6,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
+      "police_cars": 4,
       "personnel_educations": { "wildfire": 18 }
     },
-    "chances": {
-      "elw3": 50,
-      "mobile_air_vehicles": 20,
-      "heavy_rescue_vehicles": 50
-    },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [144, 308, 309, 357],
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
@@ -4408,9 +4420,11 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 6,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 27
+      "fire_stations": 51
     },
     "overlay_index": null,
     "base_mission_id": 143,
@@ -4418,11 +4432,11 @@
     "mission_categories": ["forestry"]
   },
   {
-    "id": "144",
-    "name": "Natuurbrand",
+    "id": "143/a",
+    "name": "Natuurbrand (Grip 1)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 22512,
+    "average_credits": 27315,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -4430,18 +4444,75 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "elw3": 1,
       "mobile_air_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
-      "water_needed": 93000,
-      "brush_truck": 3,
+      "water_tankers": 2,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 54000,
+      "brush_truck": 6,
+      "care_service_command": 1,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
+      "police_cars": 4,
       "personnel_educations": { "wildfire": 18 }
     },
-    "chances": { "mobile_air_vehicles": 50, "heavy_rescue_vehicles": 50 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [144, 308, 309, 357],
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 6,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 51
+    },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "144",
+    "name": "Natuurbrand (Grip 2)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 24642,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 3,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 68000,
+      "brush_truck": 6,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "police_cars": 4,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [308, 309, 357],
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
@@ -4451,13 +4522,68 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 5,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 6,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 40
+      "fire_stations": 61
     },
     "overlay_index": null,
     "base_mission_id": 144,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "144/a",
+    "name": "Natuurbrand (Grip 2)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 31552,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 3,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 68000,
+      "brush_truck": 6,
+      "care_service_command": 1,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "police_cars": 4,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [308, 309, 357],
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 6,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 61
+    },
+    "overlay_index": null,
+    "base_mission_id": 144,
+    "additive_overlays": "a",
     "mission_categories": ["forestry"]
   },
   {
@@ -10520,10 +10646,10 @@
   },
   {
     "id": "308",
-    "name": "Natuurbrand",
+    "name": "Natuurbrand (Grip 3)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 29492,
+    "average_credits": 35822,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10531,20 +10657,25 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "elw3": 1,
       "mobile_air_vehicles": 1,
-      "heavy_rescue_vehicles": 3,
-      "water_needed": 124000,
-      "brush_truck": 4,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 107000,
+      "brush_truck": 8,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
       "fire_aviation": 1,
-      "police_cars": 3,
+      "firetrucks": 1,
+      "police_cars": 6,
       "personnel_educations": { "wildfire": 18 }
     },
-    "chances": { "mobile_air_vehicles": 80 },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [309, 357],
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
@@ -10554,11 +10685,12 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 3,
-      "brush_extension": 5,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
       "fire_aviation_count": 1,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 52
+      "fire_stations": 91
     },
     "overlay_index": null,
     "base_mission_id": 308,
@@ -10566,11 +10698,11 @@
     "mission_categories": ["forestry"]
   },
   {
-    "id": "309",
-    "name": "Natuurbrand",
+    "id": "308/a",
+    "name": "Natuurbrand (Grip 3)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 42372,
+    "average_credits": 45527,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -10578,18 +10710,79 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 6,
-      "mobile_command_vehicles": 3,
-      "elw3": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
       "mobile_air_vehicles": 1,
-      "heavy_rescue_vehicles": 4,
-      "water_needed": 186000,
-      "brush_truck": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 107000,
+      "brush_truck": 8,
+      "care_service_command": 1,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
       "fire_aviation": 1,
       "firetrucks": 1,
-      "police_cars": 5,
+      "police_cars": 6,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [309, 357],
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 91
+    },
+    "overlay_index": null,
+    "base_mission_id": 308,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "309",
+    "name": "Natuurbrand (Grip 4)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 50642,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 167000,
+      "brush_truck": 8,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "fire_aviation": 1,
+      "firetrucks": 1,
+      "police_cars": 6,
       "personnel_educations": { "wildfire": 18 }
     },
     "chances": {},
@@ -10602,15 +10795,73 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 4,
-      "brush_extension": 7,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
       "fire_aviation_count": 1,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 77
+      "fire_stations": 133
     },
     "overlay_index": null,
     "base_mission_id": 309,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "309/a",
+    "name": "Natuurbrand (Grip 4)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 64052,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 167000,
+      "brush_truck": 8,
+      "care_service_command": 1,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "fire_aviation": 1,
+      "firetrucks": 1,
+      "police_cars": 6,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [357],
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 133
+    },
+    "overlay_index": null,
+    "base_mission_id": 309,
+    "additive_overlays": "a",
     "mission_categories": ["forestry"]
   },
   {
@@ -12486,50 +12737,10 @@
   },
   {
     "id": "355",
-    "name": "Heidebrand",
+    "name": "Heidebrand (Grip 1)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 12332,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 1,
-      "water_needed": 46000,
-      "brush_truck": 4,
-      "wildfire_command": 1,
-      "wildfire_equipment": 1,
-      "personnel_educations": { "wildfire": 18 }
-    },
-    "chances": { "mobile_command_vehicles": 50, "heavy_rescue_vehicles": 20 },
-    "additional": {
-      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [877],
-      "personnel_educations": { "Handcrew": 18 }
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "brush_extension": 5,
-      "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 19
-    },
-    "overlay_index": null,
-    "base_mission_id": 355,
-    "additive_overlays": "",
-    "mission_categories": ["forestry"]
-  },
-  {
-    "id": "356",
-    "name": "Heidebrand",
-    "place": "Bos",
-    "place_array": ["Bos"],
-    "average_credits": 22492,
+    "average_credits": 26592,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -12541,20 +12752,19 @@
       "mobile_command_vehicles": 1,
       "elw3": 1,
       "mobile_air_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 1,
+      "ovdp": 1,
       "heavy_rescue_vehicles": 1,
-      "water_needed": 92000,
+      "spokesman": 1,
+      "water_needed": 70000,
       "brush_truck": 8,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
-      "fire_aviation": 1,
+      "police_cars": 4,
       "personnel_educations": { "wildfire": 18 }
     },
-    "chances": {
-      "mobile_command_vehicles": 80,
-      "elw3": 80,
-      "mobile_air_vehicles": 20,
-      "heavy_rescue_vehicles": 80
-    },
+    "chances": {},
     "additional": {
       "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
       "filter_id": "firehouse_missions",
@@ -12563,22 +12773,23 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 9,
-      "fire_aviation_count": 1,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 36
+      "fire_stations": 66
     },
     "overlay_index": null,
-    "base_mission_id": 356,
+    "base_mission_id": 355,
     "additive_overlays": "",
     "mission_categories": ["forestry"]
   },
   {
-    "id": "357",
-    "name": "Natuurbrand",
+    "id": "355/a",
+    "name": "Heidebrand (Grip 1)",
     "place": "Bos",
     "place_array": ["Bos"],
-    "average_credits": 58102,
+    "average_credits": 33990,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -12586,13 +12797,176 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 8,
-      "mobile_command_vehicles": 3,
-      "elw3": 2,
-      "mobile_air_vehicles": 2,
-      "heavy_rescue_vehicles": 4,
-      "water_needed": 278000,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 70000,
       "brush_truck": 8,
+      "care_service_command": 1,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "police_cars": 4,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 66
+    },
+    "overlay_index": null,
+    "base_mission_id": 355,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "356",
+    "name": "Heidebrand (Grip 2)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 31702,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 2,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 85000,
+      "brush_truck": 8,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "fire_aviation": 1,
+      "police_cars": 4,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "wildfire": 18 },
+      "fire_stations": 78
+    },
+    "overlay_index": null,
+    "base_mission_id": 356,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "356/a",
+    "name": "Heidebrand (Grip 2)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 40377,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 2,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "spokesman": 1,
+      "water_needed": 85000,
+      "brush_truck": 8,
+      "care_service_command": 1,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "fire_aviation": 1,
+      "police_cars": 4,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 8,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 78
+    },
+    "overlay_index": null,
+    "base_mission_id": 356,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "357",
+    "name": "Natuurbrand (Grip 5)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 66132,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 8,
+      "gwmess": 3,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "water_needed": 230000,
+      "brush_truck": 10,
       "wildfire_command": 1,
       "wildfire_equipment": 1,
       "fire_aviation": 1,
@@ -12609,15 +12983,72 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 7,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
       "brush_extension": 9,
       "fire_aviation_count": 1,
       "personnel_educations": { "wildfire": 18 },
-      "fire_stations": 108
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 357,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "357/a",
+    "name": "Natuurbrand (Grip 5)",
+    "place": "Bos",
+    "place_array": ["Bos"],
+    "average_credits": 83415,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 8,
+      "gwmess": 3,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "water_needed": 230000,
+      "brush_truck": 10,
+      "care_service_command": 1,
+      "wildfire_command": 1,
+      "wildfire_equipment": 1,
+      "fire_aviation": 1,
+      "firetrucks": 1,
+      "police_cars": 8,
+      "personnel_educations": { "wildfire": 18 }
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [877],
+      "care_includes_staff_members": true,
+      "personnel_educations": { "Handcrew": 18 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "brush_extension": 9,
+      "fire_aviation_count": 1,
+      "personnel_educations": { "wildfire": 18 },
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 178
+    },
+    "overlay_index": null,
+    "base_mission_id": 357,
+    "additive_overlays": "a",
     "mission_categories": ["forestry"]
   },
   {
