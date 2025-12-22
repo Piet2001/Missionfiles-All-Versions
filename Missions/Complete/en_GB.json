@@ -36661,6 +36661,92 @@
     "mission_categories": ["fire", "urban", "rural"]
   },
   {
+    "id": "813",
+    "name": "Pedestrian Struck By Reindeer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1600,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-12-22T10:00:00+00:00",
+      "date_end": "2025-12-26T23:59:59+00:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 813,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "814",
+    "name": "Elves Protesting",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/xmas_gruen.png",
+      "/images/xmas_gelb.png",
+      "/images/xmas_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_swat": 6,
+      "police_cars": 3,
+      "personnel_educations": {
+        "level_2_public_order": 8,
+        "police_sergeant": 1
+      }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "date_start": "2025-12-22T10:00:00+00:00",
+      "date_end": "2025-12-26T23:59:59+00:00",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 8,
+        "Police Sergeant": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "riot_police": 1,
+      "personnel_educations": {
+        "level_2_public_order": 16,
+        "police_sergeant": 2
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 814,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "750",
     "name": "Aerial Ladder Platform Training",
     "place": "",
