@@ -54588,5 +54588,88 @@
     "base_mission_id": 1099,
     "additive_overlays": "a",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1100",
+    "name": "Gingerbread man injured by bite",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 75 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["3-B-2"],
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2025-12-22T10:00:00Z",
+      "date_end": "2025-12-26T23:59:59-05:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1100,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1101",
+    "name": "Fire in Christmas bakery",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2245,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-D-4",
+        "7-D-5",
+        "7-A-1",
+        "7-A-2",
+        "7-C-3",
+        "9-E-1",
+        "9-E-2",
+        "8-D-2"
+      ],
+      "date_start": "2025-12-22T10:00:00Z",
+      "date_end": "2025-12-26T23:59:59-05:00",
+      "patient_specialization_ids": [0, 4],
+      "patient_specialization_captions": ["General Internal", "Traumatology"],
+      "patient_specializations": "General Internal, Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1101,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
