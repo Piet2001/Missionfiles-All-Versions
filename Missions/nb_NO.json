@@ -29168,5 +29168,48 @@
     "base_mission_id": 733,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "734",
+    "name": "Festivalen blir oversvømmet",
+    "place": "Tivoli",
+    "place_array": ["Tivoli"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "pump": 4,
+      "heavy_rescue_vehicles": 4,
+      "oneof_fire_engine_or_rescue": 2,
+      "firetrucks": 6,
+      "police_cars": 3,
+      "min_pump_speed": 5000
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 60,
+      "pump_water_amount": 50000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Generell medisin"],
+      "patient_specializations": "Generell medisin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_support_count": 2,
+      "fire_stations": 8
+    },
+    "overlay_index": null,
+    "base_mission_id": 734,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
