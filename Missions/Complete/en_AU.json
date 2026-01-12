@@ -825,7 +825,7 @@
     "name": "Fire in Hospital",
     "place": "Hospital",
     "place_array": ["Hospital"],
-    "average_credits": 6100,
+    "average_credits": 5800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -837,7 +837,6 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 2,
       "firetrucks": 10
     },
@@ -2508,15 +2507,18 @@
     "name": "Damaged Roof",
     "place": "",
     "place_array": [],
-    "average_credits": 450,
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/constructioncrane_gruen.png",
       "/images/constructioncrane_gelb.png",
       "/images/constructioncrane_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1 },
-    "chances": { "platform_trucks": 50 },
+    "requirements": {
+      "oneof_fire_engine_or_disaster_response_crew": 2,
+      "firetrucks": 1
+    },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
@@ -3779,14 +3781,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 3,
+      "brush_truck": 6,
       "battalion_chief_vehicles": 2,
       "water_tankers": 3,
-      "firetrucks": 9
+      "firetrucks": 6
     },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 13 },
+    "prerequisites": {
+      "main_building": 0,
+      "brush_extension": 3,
+      "fire_stations": 10
+    },
     "overlay_index": null,
     "base_mission_id": 135,
     "additive_overlays": "",
@@ -9217,7 +9223,7 @@
     "name": "Medium Bushfire",
     "place": "Park\nHill\nField\nHeathland\nMoorland",
     "place_array": ["Park", "Hill", "Field", "Heathland", "Moorland"],
-    "average_credits": 4000,
+    "average_credits": 5200,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -9225,7 +9231,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 4,
+      "brush_truck": 8,
       "battalion_chief_vehicles": 1,
       "water_tankers": 2,
       "water_needed": 12000
@@ -9239,8 +9245,8 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 2,
-      "fire_stations": 8
+      "brush_extension": 4,
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 323,
@@ -9252,7 +9258,7 @@
     "name": "Large Bushfire",
     "place": "Park\nHill\nField\nHeathland\nMoorland",
     "place_array": ["Park", "Hill", "Field", "Heathland", "Moorland"],
-    "average_credits": 6500,
+    "average_credits": 8300,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -9260,9 +9266,9 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 6,
+      "brush_truck": 12,
       "battalion_chief_vehicles": 2,
-      "water_tankers": 4,
+      "water_tankers": 2,
       "water_needed": 16000
     },
     "chances": {},
@@ -9274,8 +9280,8 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "brush_extension": 3,
-      "fire_stations": 10
+      "brush_extension": 6,
+      "fire_stations": 8
     },
     "overlay_index": null,
     "base_mission_id": 324,
@@ -9287,7 +9293,7 @@
     "name": "Major Bushfire",
     "place": "Park\nHill\nField\nHeathland\nMoorland",
     "place_array": ["Park", "Hill", "Field", "Heathland", "Moorland"],
-    "average_credits": 10000,
+    "average_credits": 13000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -9295,10 +9301,10 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 8,
+      "brush_truck": 18,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "water_tankers": 8,
+      "water_tankers": 4,
       "water_needed": 30000,
       "police_cars": 2
     },
@@ -9311,8 +9317,8 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
-      "brush_extension": 4,
-      "fire_stations": 14
+      "brush_extension": 9,
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 325,
@@ -12023,7 +12029,7 @@
     "name": "Hayshed Fire",
     "place": "Farm",
     "place_array": ["Farm"],
-    "average_credits": 9000,
+    "average_credits": 8700,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -12031,7 +12037,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 1,
       "battalion_chief_vehicles": 4,
       "water_tankers": 2,
       "oneof_fire_engine_or_ladder": 8,
@@ -12853,18 +12858,14 @@
     "name": "Difficult Patient Access",
     "place": "",
     "place_array": [],
-    "average_credits": 1450,
+    "average_credits": 1150,
     "generated_by": "",
     "icons": [
       "/images/ambulance_gruen.png",
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": {
-      "ambulances": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 1
-    },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
     "chances": { "patient_transport": 100, "patient_critical_care": 45 },
     "additional": {
       "possible_patient": 1,
@@ -18495,7 +18496,7 @@
     "name": "Major Field Fire",
     "place": "",
     "place_array": [],
-    "average_credits": 16000,
+    "average_credits": 15500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -18505,16 +18506,15 @@
     "requirements": {
       "brush_truck": 12,
       "battalion_chief_vehicles": 4,
-      "mobile_air_vehicles": 2,
       "water_tankers": 4,
       "firetrucks": 6
     },
-    "chances": { "mobile_air_vehicles": 60 },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 4,
-      "fire_stations": 16
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 568,
@@ -18572,7 +18572,7 @@
     "name": "Catastrophic Bushfire",
     "place": "Park\nHill\nField\nHeathland\nMoorland",
     "place_array": ["Park", "Hill", "Field", "Heathland", "Moorland"],
-    "average_credits": 37500,
+    "average_credits": 36000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -18584,7 +18584,7 @@
       "battalion_chief_vehicles": 20,
       "mobile_command_vehicles": 2,
       "fire_aviation": 5,
-      "water_tankers": 15,
+      "water_tankers": 10,
       "police_service_group_leader": 1,
       "water_needed": 180000,
       "police_cars": 10
@@ -18610,7 +18610,7 @@
     "name": "Catastrophic Bushfire Cleanup",
     "place": "",
     "place_array": [],
-    "average_credits": 16500,
+    "average_credits": 15500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -18621,7 +18621,7 @@
       "brush_truck": 20,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
-      "water_tankers": 8
+      "water_tankers": 5
     },
     "chances": {},
     "additional": {
@@ -22007,7 +22007,7 @@
     "name": "Crop Fire (Small)",
     "place": "Farm\nField",
     "place_array": ["Farm", "Field"],
-    "average_credits": 5000,
+    "average_credits": 4700,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -22015,7 +22015,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 4,
+      "brush_truck": 3,
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
@@ -22044,7 +22044,7 @@
     "name": "Crop Fire (Medium)",
     "place": "Farm\nField",
     "place_array": ["Farm", "Field"],
-    "average_credits": 10000,
+    "average_credits": 9700,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -22055,7 +22055,7 @@
       "brush_truck": 6,
       "battalion_chief_vehicles": 2,
       "fire_aviation": 1,
-      "water_tankers": 2,
+      "water_tankers": 1,
       "water_needed": 30000,
       "firetrucks": 1,
       "police_cars": 2
@@ -22082,7 +22082,7 @@
     "name": "Crop Fire (Large)",
     "place": "Farm\nField",
     "place_array": ["Farm", "Field"],
-    "average_credits": 15000,
+    "average_credits": 16500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -22090,7 +22090,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 10,
+      "brush_truck": 15,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "fire_aviation": 2,
@@ -22107,7 +22107,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 2,
-      "brush_extension": 4,
+      "brush_extension": 7,
       "fire_aviation_count": 1,
       "fire_stations": 13
     },
@@ -22121,7 +22121,7 @@
     "name": "Crop Fire (Major)",
     "place": "Farm\nField",
     "place_array": ["Farm", "Field"],
-    "average_credits": 20000,
+    "average_credits": 23000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -22129,7 +22129,7 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "brush_truck": 10,
+      "brush_truck": 20,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 2,
       "fire_aviation": 3,
@@ -22144,7 +22144,7 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
-      "brush_extension": 6,
+      "brush_extension": 10,
       "fire_aviation_count": 2,
       "police_service_group_leader": 1,
       "fire_stations": 13
@@ -25696,7 +25696,7 @@
     "name": "Fire in a shopping center",
     "place": "Mall",
     "place_array": ["Mall"],
-    "average_credits": 11500,
+    "average_credits": 11200,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25711,7 +25711,6 @@
       "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
       "water_needed": 44000,
-      "pump": 1,
       "foam": 1,
       "firetrucks": 6,
       "police_cars": 3
@@ -27033,7 +27032,7 @@
     "name": "Powerline sparks fire on farmland",
     "place": "Farm",
     "place_array": ["Farm"],
-    "average_credits": 6000,
+    "average_credits": 6500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -27041,9 +27040,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "brush_truck": 5,
       "battalion_chief_vehicles": 1,
-      "mobile_air_vehicles": 1,
-      "heavy_rescue_vehicles": 2,
       "firetrucks": 3
     },
     "chances": { "patient_transport": 30 },
@@ -27059,7 +27057,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 2,
+      "brush_extension": 3,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -27273,11 +27271,7 @@
       "/images/cat_gelb.png",
       "/images/cat_rot.png"
     ],
-    "requirements": {
-      "platform_trucks": 1,
-      "heavy_rescue_vehicles": 1,
-      "firetrucks": 1
-    },
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 4 },
