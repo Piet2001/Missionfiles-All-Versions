@@ -32096,5 +32096,143 @@
     "base_mission_id": 817,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "818",
+    "name": "Arrampicatore colpito da una roccia in montagna",
+    "place": "Via di arrampicata alpina",
+    "place_array": ["Via di arrampicata alpina"],
+    "average_credits": 725,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "heli_tech": 1,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 80, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "heli_tech": 2 },
+      "mountain_rescue": 1,
+      "heli_tech": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "819",
+    "name": "Escursionista con distorsione alla caviglia in montagna",
+    "place": "Sentiero di montagna",
+    "place_array": ["Sentiero di montagna"],
+    "average_credits": 725,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "heli_tech": 1,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "patient_it_code_possible": ["ZC01V", "ZC01G"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 1,
+      "personnel_educations": { "heli_tech": 2 },
+      "mountain_rescue": 1,
+      "heli_tech": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 819,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "820",
+    "name": "Evacuazione da una funivia a causa di un avaria",
+    "place": "Pista da sci",
+    "place_array": ["Pista da sci"],
+    "average_credits": 1075,
+    "generated_by": "",
+    "icons": [
+      "/images/skiing_gruen.png",
+      "/images/skiing_gelb.png",
+      "/images/skiing_rot.png"
+    ],
+    "requirements": {
+      "mountain_command": 1,
+      "heli_tech": 1,
+      "personnel_educations": { "mountain_command": 2, "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 30, "helicopter": 80 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01V", "ZC01G"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": {
+        "Tecnico di Ricerca": 2,
+        "Tecnico di Elisoccorso": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 4,
+      "personnel_educations": { "mountain_command": 4, "heli_tech": 2 },
+      "mountain_rescue": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 820,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
