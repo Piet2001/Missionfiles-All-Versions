@@ -3551,7 +3551,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": { "heavy_rescue_vehicles": 2, "water_rescue": 1 },
+    "requirements": { "heavy_rescue_vehicles": 1, "water_rescue": 1 },
     "chances": { "patient_transport": 100, "helicopter": 75 },
     "additional": {
       "possible_patient": 1,
@@ -3571,8 +3571,8 @@
     "prerequisites": {
       "main_building": 2,
       "wasserrettung": 1,
-      "rescue_stations": 6,
-      "fire_stations": 1
+      "rescue_stations": 4,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 113,
@@ -3783,10 +3783,10 @@
     ],
     "requirements": {
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 3,
+      "heavy_rescue_vehicles": 2,
       "firetrucks": 1,
-      "police_cars": 3,
-      "water_rescue": 1
+      "police_cars": 2,
+      "water_rescue": 2
     },
     "chances": { "patient_transport": 100, "helicopter": 20 },
     "additional": {
@@ -3835,11 +3835,13 @@
     ],
     "requirements": {
       "mobile_command_vehicles": 1,
-      "heavy_rescue_vehicles": 3,
+      "game_warden": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
       "rescue_dog_units": 2,
       "firetrucks": 1,
-      "police_cars": 3,
-      "water_rescue": 1
+      "police_cars": 2,
+      "water_rescue": 2
     },
     "chances": { "patient_transport": 100, "helicopter": 20 },
     "additional": {
@@ -3867,6 +3869,8 @@
       "wasserrettung": 1,
       "rescue_stations": 2,
       "police_stations": 2,
+      "police_helicopter_stations": 1,
+      "game_warden_count": 2,
       "search_and_rescue": 1,
       "fire_stations": 6
     },
@@ -4017,6 +4021,7 @@
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 2,
+      "expansion_missions_ids": [111],
       "patient_it_code_possible": ["LC01G", "LC01R"],
       "filter_id": "firehouse_missions",
       "possible_patient_specializations": [
@@ -4102,7 +4107,7 @@
       "mobile_command_vehicles": 1,
       "mobile_air_vehicles": 1,
       "heavy_rescue_vehicles": 3,
-      "water_needed": 25000,
+      "water_needed": 40000,
       "firetrucks": 8,
       "police_cars": 6
     },
@@ -4130,7 +4135,7 @@
       "main_building": 2,
       "rescue_stations": 40,
       "police_stations": 4,
-      "fire_stations": 5
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 123,
@@ -4150,16 +4155,13 @@
       "/images/climbing_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 1,
+      "game_warden": 2,
       "heavy_rescue_vehicles": 2,
       "firetrucks": 1,
-      "water_rescue": 1
+      "police_cars": 2,
+      "water_rescue": 2
     },
-    "chances": {
-      "platform_trucks": 30,
-      "patient_transport": 85,
-      "helicopter": 10
-    },
+    "chances": { "patient_transport": 85, "helicopter": 60 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -4182,6 +4184,7 @@
       "main_building": 0,
       "wasserrettung": 1,
       "rescue_stations": 1,
+      "game_warden_count": 2,
       "fire_stations": 2
     },
     "overlay_index": null,
@@ -4322,13 +4325,14 @@
     "requirements": {
       "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
+      "fwk": 1,
       "heavy_rescue_vehicles": 1,
       "water_needed": 8000,
       "firetrucks": 3
     },
-    "chances": { "battalion_chief_vehicles": 10 },
+    "chances": { "battalion_chief_vehicles": 10, "fwk": 20 },
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 5 },
+    "prerequisites": { "main_building": 0, "fire_stations": 8 },
     "overlay_index": null,
     "base_mission_id": 128,
     "additive_overlays": "",
@@ -4447,13 +4451,14 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
+      "boats": 1,
       "fwk": 1,
       "heavy_rescue_vehicles": 2,
       "oneof_police_patrol_or_municipal_police": 2,
       "firetrucks": 1,
       "water_rescue": 1
     },
-    "chances": { "fwk": 50, "patient_transport": 90 },
+    "chances": { "fwk": 60, "patient_transport": 90 },
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 1,
@@ -4558,7 +4563,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 4 },
+    "requirements": { "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
@@ -4582,7 +4587,7 @@
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_investigation": 1, "police_cars": 4 },
+    "requirements": { "police_investigation": 1, "police_cars": 3 },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 3,
@@ -4998,7 +5003,7 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 2,
+      "firetrucks": 1,
       "police_cars": 2
     },
     "chances": { "battalion_chief_vehicles": 10, "patient_transport": 100 },
@@ -5066,12 +5071,12 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "hazmat_vehicles": 1,
+      "hazmat_vehicles": 2,
       "water_tankers": 1,
-      "heavy_rescue_vehicles": 4,
+      "heavy_rescue_vehicles": 2,
       "water_needed": 38000,
-      "firetrucks": 5,
-      "police_cars": 4
+      "firetrucks": 4,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 20, "helicopter": 5 },
     "additional": {
@@ -5120,13 +5125,13 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "hazmat_vehicles": 1,
+      "hazmat_vehicles": 2,
       "water_tankers": 1,
-      "heavy_rescue_vehicles": 4,
+      "heavy_rescue_vehicles": 2,
       "water_needed": 38000,
       "foam_needed": 5000,
-      "firetrucks": 5,
-      "police_cars": 4
+      "firetrucks": 4,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 20, "helicopter": 5 },
     "additional": {
@@ -5198,7 +5203,11 @@
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 4 },
+    "requirements": {
+      "police_helicopters": 1,
+      "swat_suv": 1,
+      "police_cars": 4
+    },
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
@@ -5228,6 +5237,7 @@
     ],
     "requirements": {
       "police_helicopters": 1,
+      "swat_suv": 1,
       "police_investigation": 2,
       "police_cars": 4
     },
@@ -5427,7 +5437,10 @@
       "police_cars": 1
     },
     "chances": {},
-    "additional": { "filter_id": "police_station_missions" },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": { "main_building": 6, "police_stations": 6 },
     "overlay_index": null,
     "base_mission_id": 155,
@@ -5529,7 +5542,12 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "k9": 1, "swat_armored_vehicle": 2, "police_cars": 6 },
+    "requirements": {
+      "k9": 1,
+      "swat_armored_vehicle": 2,
+      "swat_suv": 1,
+      "police_cars": 6
+    },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 5,
@@ -5573,6 +5591,7 @@
     "requirements": {
       "k9": 1,
       "swat_armored_vehicle": 2,
+      "swat_suv": 1,
       "police_investigation": 2,
       "police_cars": 6
     },
@@ -6136,9 +6155,14 @@
     "requirements": {
       "platform_trucks": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 1
     },
-    "chances": { "patient_transport": 100, "helicopter": 15 },
+    "chances": {
+      "platform_trucks": 50,
+      "patient_transport": 100,
+      "helicopter": 15
+    },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -6150,6 +6174,7 @@
         "Medicina interna generale",
         "Traumatologia"
       ],
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -6157,8 +6182,10 @@
     },
     "prerequisites": {
       "main_building": 0,
+      "wasserrettung": 1,
       "rescue_stations": 4,
-      "fire_stations": 2
+      "police_stations": 2,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 170,
@@ -6182,8 +6209,8 @@
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
       "heavy_rescue_vehicles": 4,
-      "water_needed": 17000,
-      "firetrucks": 6,
+      "water_needed": 22000,
+      "firetrucks": 4,
       "police_cars": 4
     },
     "chances": { "patient_transport": 20, "helicopter": 4 },
@@ -6201,6 +6228,7 @@
       ],
       "allow_ktw_instead_of_rtw": true,
       "subsequent_missions_ids": [460],
+      "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia"
@@ -6379,12 +6407,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
+      "platform_trucks": 1,
       "heavy_rescue_vehicles": 2,
       "oneof_police_patrol_or_municipal_police": 1,
       "firetrucks": 2,
       "water_rescue": 1
     },
-    "chances": { "patient_transport": 20 },
+    "chances": { "platform_trucks": 50, "patient_transport": 20 },
     "additional": {
       "possible_patient": 5,
       "possible_patient_min": 1,
@@ -7827,13 +7856,14 @@
     ],
     "requirements": {
       "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "mobile_air_vehicles": 1,
       "water_tankers": 1,
-      "heavy_rescue_vehicles": 3,
+      "heavy_rescue_vehicles": 4,
       "water_needed": 75000,
-      "firetrucks": 5,
-      "police_cars": 4
+      "firetrucks": 10,
+      "police_cars": 6
     },
     "chances": { "patient_transport": 20 },
     "additional": {
@@ -7850,16 +7880,16 @@
       ],
       "allow_ktw_instead_of_rtw": true,
       "subsequent_missions_ids": [460],
-      "max_municipal_police_replacing_police_cars": 2,
+      "max_municipal_police_replacing_police_cars": 4,
       "patient_specialization_ids": [1],
       "patient_specialization_captions": ["Chirurgia generale"],
       "patient_specializations": "Chirurgia generale"
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 10,
-      "police_stations": 4,
-      "fire_stations": 12
+      "rescue_stations": 4,
+      "police_stations": 8,
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 212,
@@ -8057,7 +8087,7 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": {},
+    "requirements": { "police_cars": 1 },
     "chances": { "patient_transport": 85 },
     "additional": {
       "possible_patient": 1,
@@ -8076,7 +8106,11 @@
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia"
     },
-    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
     "overlay_index": null,
     "base_mission_id": 216,
     "additive_overlays": "",
@@ -8499,8 +8533,7 @@
     ],
     "requirements": {
       "heavy_rescue_vehicles": 1,
-      "oneof_police_patrol_or_municipal_police": 1,
-      "firetrucks": 1
+      "oneof_police_patrol_or_municipal_police": 1
     },
     "chances": {},
     "additional": {
@@ -8619,15 +8652,15 @@
     "name": "Cacciatore ferito da un cinghiale",
     "place": "Bosco",
     "place_array": ["Bosco"],
-    "average_credits": 550,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/ambulance_gruen.png",
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": {},
-    "chances": { "patient_transport": 85 },
+    "requirements": { "game_warden": 1, "water_rescue": 1 },
+    "chances": { "patient_transport": 85, "helicopter": 20 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -8642,7 +8675,13 @@
         "Traumatologia"
       ]
     },
-    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "prerequisites": {
+      "main_building": 2,
+      "wasserrettung": 1,
+      "rescue_stations": 4,
+      "game_warden_count": 1,
+      "fire_stations": 4
+    },
     "overlay_index": null,
     "base_mission_id": 227,
     "additive_overlays": "",
@@ -9141,7 +9180,7 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "traffic_car": 2, "police_cars": 2 },
+    "requirements": { "traffic_car": 2, "police_cars": 1 },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25, 73, 106, 109],
@@ -9162,7 +9201,7 @@
     "name": "Controlli doganali",
     "place": "Porto mercantile",
     "place_array": ["Porto mercantile"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -9172,8 +9211,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -9192,7 +9231,7 @@
     "name": "Controlli doganali",
     "place": "Molo navi da crociera",
     "place_array": ["Molo navi da crociera"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -9202,8 +9241,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -9222,7 +9261,7 @@
     "name": "Controlli doganali",
     "place": "Terminal aeroporto",
     "place_array": ["Terminal aeroporto"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -9232,8 +9271,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -9284,7 +9323,12 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "fbi_bomb": 1, "ambulances": 1, "police_cars": 3 },
+    "requirements": {
+      "fbi_bomb": 1,
+      "ambulances": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -9293,7 +9337,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 4
+      "police_stations": 4,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 240,
@@ -9314,7 +9359,12 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "fbi_bomb": 1, "ambulances": 1, "police_cars": 3 },
+    "requirements": {
+      "fbi_bomb": 1,
+      "ambulances": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -9323,7 +9373,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 4
+      "police_stations": 4,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 241,
@@ -9342,7 +9393,12 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "fbi_bomb": 1, "ambulances": 1, "police_cars": 3 },
+    "requirements": {
+      "fbi_bomb": 1,
+      "ambulances": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
@@ -9351,7 +9407,8 @@
     "prerequisites": {
       "main_building": 6,
       "rescue_stations": 1,
-      "police_stations": 4
+      "police_stations": 4,
+      "fire_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 242,
@@ -9370,7 +9427,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 1 },
+    "requirements": { "commerce_police": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -9395,7 +9452,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 1 },
+    "requirements": { "commerce_police": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -9420,7 +9477,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 2, "k9": 1, "police_cars": 1 },
+    "requirements": { "commerce_police": 2, "k9": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -9463,7 +9520,7 @@
     "name": "Disinnesco ordigno bellico",
     "place": "",
     "place_array": [],
-    "average_credits": 2800,
+    "average_credits": 4800,
     "generated_by": "",
     "icons": [
       "/images/shooting_gruen.png",
@@ -9475,13 +9532,16 @@
       "ambulances": 1,
       "heavy_rescue_vehicles": 1,
       "firetrucks": 1,
-      "police_cars": 3
+      "police_cars": 8
     },
     "chances": {},
     "additional": {
+      "duration_text": "4 ore",
+      "duration": 14400,
+      "guard_mission": true,
       "filter_id": "police_station_missions",
       "need_bomb_only_if_present": true,
-      "max_municipal_police_replacing_police_cars": 2
+      "max_municipal_police_replacing_police_cars": 4
     },
     "prerequisites": {
       "main_building": 6,
@@ -9542,7 +9602,7 @@
   },
   {
     "id": "249",
-    "name": "Controllo mezzi pesanti",
+    "name": "Controllo Mezzi Pesanti in Porto",
     "place": "Porto mercantile",
     "place_array": ["Porto mercantile"],
     "average_credits": 1100,
@@ -9552,7 +9612,7 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 2 },
+    "requirements": { "commerce_police": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
@@ -9567,7 +9627,7 @@
   },
   {
     "id": "250",
-    "name": "Controllo mezzi pesanti",
+    "name": "Controllo Mezzi Pesanti al Casello",
     "place": "Uscita autostradale",
     "place_array": ["Uscita autostradale"],
     "average_credits": 1100,
@@ -9577,13 +9637,13 @@
       "/images/shooting_gelb.png",
       "/images/shooting_rot.png"
     ],
-    "requirements": { "commerce_police": 1, "police_cars": 2 },
+    "requirements": { "traffic_car": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
       "main_building": 6,
       "police_stations": 6,
-      "commerce_police_stations": 1
+      "traffic_police": 1
     },
     "overlay_index": null,
     "base_mission_id": 250,
