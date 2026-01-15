@@ -3823,21 +3823,51 @@
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 4,
+      "police_stations": 5,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1
     },
     "overlay_index": null,
     "base_mission_id": 124,
     "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "124/a",
+    "name": "Achtervolging personenauto",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3010,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "ovdp": 1, "police_helicopters": 1, "police_cars": 4 },
+    "chances": { "ovdp": 50 },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 124,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
   },
   {
     "id": "124-0",
     "name": "Achtervolging personenauto",
     "place": "",
     "place_array": [],
-    "average_credits": 3560,
+    "average_credits": 4610,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -3854,7 +3884,7 @@
     "additional": { "filter_id": "police_station_missions" },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 6,
+      "police_stations": 7,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "traffic_police": 2
@@ -3862,7 +3892,43 @@
     "overlay_index": 0,
     "base_mission_id": 124,
     "additive_overlays": "",
-    "mission_categories": ["police", "traffic_police_specialization"]
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "124-0/a",
+    "name": "Achtervolging personenauto",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4810,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "ovdp": 1,
+      "police_helicopters": 1,
+      "traffic_patrol": 3,
+      "police_cars": 4
+    },
+    "chances": { "ovdp": 50 },
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "traffic_police": 2,
+      "tow_trucks": 1
+    },
+    "overlay_index": 0,
+    "base_mission_id": 124,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
   },
   {
     "id": "125",
