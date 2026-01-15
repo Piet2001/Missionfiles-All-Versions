@@ -124,7 +124,7 @@
     "name": "Controlli doganali",
     "place": "Porto mercantile",
     "place_array": ["Porto mercantile"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -134,8 +134,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -154,7 +154,7 @@
     "name": "Controlli doganali",
     "place": "Molo navi da crociera",
     "place_array": ["Molo navi da crociera"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -164,8 +164,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -184,7 +184,7 @@
     "name": "Controlli doganali",
     "place": "Terminal aeroporto",
     "place_array": ["Terminal aeroporto"],
-    "average_credits": 850,
+    "average_credits": 1200,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -194,8 +194,8 @@
     "requirements": { "commerce_police": 1, "k9": 1 },
     "chances": {},
     "additional": {
-      "duration_text": "15 minuti",
-      "duration": 900,
+      "duration_text": "1 ora",
+      "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions"
     },
@@ -206,6 +206,45 @@
     },
     "overlay_index": null,
     "base_mission_id": 238,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "247",
+    "name": "Disinnesco ordigno bellico",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "fbi_bomb": 1,
+      "ambulances": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "4 ore",
+      "duration": 14400,
+      "guard_mission": true,
+      "filter_id": "police_station_missions",
+      "need_bomb_only_if_present": true,
+      "max_municipal_police_replacing_police_cars": 4
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 6,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 247,
     "additive_overlays": "",
     "mission_categories": ["police"]
   },
