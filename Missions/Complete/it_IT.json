@@ -32461,5 +32461,141 @@
     "base_mission_id": 823,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "824",
+    "name": "Scuolabus si scontrano a causa del ghiaccio nero",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_allow_first_responder_chance": 40,
+      "date_start": "2026-01-19T10:00:00+01:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 824,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "825",
+    "name": "Arrampicatore Appeso in Cordata dopo Caduta",
+    "place": "Via di arrampicata alpina",
+    "place_array": ["Via di arrampicata alpina"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "heli_tech": 1,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 80, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "heli_tech": 2 },
+      "mountain_rescue": 1,
+      "heli_tech": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 825,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "826",
+    "name": "Arrampicatore Ferito durante una Scalata in Montagna",
+    "place": "Via di arrampicata alpina",
+    "place_array": ["Via di arrampicata alpina"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "heli_tech": 1,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 80, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 3,
+      "personnel_educations": { "heli_tech": 2 },
+      "mountain_rescue": 1,
+      "heli_tech": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 826,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
