@@ -48270,5 +48270,93 @@
     "base_mission_id": 1188,
     "additive_overlays": "",
     "mission_categories": ["bomb_disposal", "police"]
+  },
+  {
+    "id": "1189",
+    "name": "Aanhanger losgeschoten",
+    "place": "Snelweg oprit / afrit\nTankstation\nTunnel",
+    "place_array": ["Snelweg oprit / afrit", "Tankstation", "Tunnel"],
+    "average_credits": 3450,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "traffic_unit": 2,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "followup_missions_ids": [1190],
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 3,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "rescue_stations": 1,
+      "police_stations": 3,
+      "technical_aid": 3,
+      "tow_trucks": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1189,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "1190",
+    "name": "Vrachtwagen rijdt tegen losgeschoten aanhanger",
+    "place": "Snelweg oprit / afrit\nTankstation\nTunnel",
+    "place_array": ["Snelweg oprit / afrit", "Tankstation", "Tunnel"],
+    "average_credits": 7000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_unit": 2,
+      "firetrucks": 3,
+      "police_cars": 8
+    },
+    "chances": { "heavy_rescue_vehicles": 75, "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 3,
+      "possible_crashed_car_large_max": 1,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "rescue_stations": 8,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "technical_aid": 3,
+      "tow_trucks": 2,
+      "tow_trucks_large": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1190,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
   }
 ]
