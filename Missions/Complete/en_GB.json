@@ -36813,6 +36813,95 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "817",
+    "name": "Train stuck in snowstorm",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-01-26T10:00:00+00:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "817/a",
+    "name": "Train stuck in snowstorm",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6700,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "two_way": 1,
+      "firetrucks": 1,
+      "police_cars": 2,
+      "personnel_educations": { "railway_police": 2 }
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-01-26T10:00:00+00:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal",
+      "personnel_educations": { "Railway Police Officer": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "personnel_educations": { "railway_police": 4 },
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
     "id": "750",
     "name": "Aerial Ladder Platform Training",
     "place": "",
