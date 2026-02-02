@@ -36204,5 +36204,93 @@
     "base_mission_id": 817,
     "additive_overlays": "a",
     "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "818",
+    "name": "Poisoned chocolates",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/bar_cocktail_gruen.png",
+      "/images/bar_cocktail_gelb.png",
+      "/images/bar_cocktail_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "date_start": "2026-02-02T10:00:00+00:00",
+      "date_end": "2026-02-15T23:59:59+00:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "819",
+    "name": "Forgotten anniversary",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_swat": 2,
+      "police_cars": 1,
+      "personnel_educations": {
+        "level_2_public_order": 4,
+        "police_sergeant": 1
+      }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "max_possible_prisoners": 1,
+      "patient_uk_code_possible": ["C-2", "C-3"],
+      "filter_id": "police_station_missions",
+      "date_start": "2026-02-02T10:00:00+00:00",
+      "date_end": "2026-02-15T23:59:59+00:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology",
+      "personnel_educations": {
+        "Level 2 Public Order Officer": 4,
+        "Police Sergeant": 1
+      }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "riot_police": 1,
+      "personnel_educations": {
+        "level_2_public_order": 8,
+        "police_sergeant": 2
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 819,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
