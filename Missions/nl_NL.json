@@ -28740,10 +28740,10 @@
   },
   {
     "id": "750",
-    "name": "Mensen vermist op dansvloer",
+    "name": "Mensen vermist op de dansvloer",
     "place": "",
     "place_array": [],
-    "average_credits": 7500,
+    "average_credits": 5430,
     "generated_by": "",
     "icons": [
       "/images/clock_gruen.png",
@@ -28755,25 +28755,33 @@
       "battalion_chief_vehicles": 1,
       "hondengeleider": 2,
       "ovdp": 1,
-      "firetrucks": 1,
-      "police_cars": 3
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 4,
+      "police_cars": 4
     },
-    "chances": { "platform_trucks": 20 },
+    "chances": { "patient_transport": 10 },
     "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 3,
       "filter_id": "police_station_missions",
       "date_start": "2026-02-05T10:00:00Z",
-      "date_end": "2026-02-08T23:59:59Z"
+      "date_end": "2026-02-08T23:59:59Z",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
     },
     "prerequisites": {
       "main_building": 5,
-      "rescue_stations": 1,
-      "police_stations": 2,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "bereitschaftspolizei": 2,
+      "hondengeleider": 1,
       "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 750,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "riot_police"]
   },
   {
     "id": "751",
