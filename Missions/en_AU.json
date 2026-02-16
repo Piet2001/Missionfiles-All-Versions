@@ -27447,32 +27447,36 @@
   },
   {
     "id": "815",
-    "name": "Illegal bonfire in park",
-    "place": "Park",
-    "place_array": ["Park"],
-    "average_credits": 600,
+    "name": "Fire in icecream store",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1, "police_cars": 1 },
-    "chances": {},
+    "requirements": { "battalion_chief_vehicles": 1, "firetrucks": 3 },
+    "chances": { "patient_transport": 50 },
     "additional": {
-      "max_possible_prisoners": 1,
+      "possible_patient": 2,
       "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
       "date_start": "2026-02-16T10:00:00+11:00",
-      "date_end": "2026-03-06T22:59:00Z"
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
     },
     "prerequisites": {
-      "main_building": 6,
-      "police_stations": 1,
-      "fire_stations": 1
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 815,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["fire", "urban"]
   }
 ]
