@@ -34049,6 +34049,44 @@
     "mission_categories": ["fire", "rural"]
   },
   {
+    "id": "873",
+    "name": "Linia energetyczna powoduje po\u017car na polu uprawnym",
+    "place": "Gospodarstwo rolne",
+    "place_array": ["Gospodarstwo rolne"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 3
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 873,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
     "id": "874",
     "name": "Zatrute czekoladki",
     "place": "",
@@ -34124,5 +34162,39 @@
     "base_mission_id": 875,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "876",
+    "name": "P\u0142ug \u015bnie\u017cny przewr\u00f3cony na drodze lokalnej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-02-16T10:00:00+01:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 876,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural"]
   }
 ]
