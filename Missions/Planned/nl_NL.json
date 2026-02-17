@@ -584,6 +584,37 @@
     "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
+    "id": "663/a",
+    "name": "Verkeerscontrole",
+    "place": "Verzorgingsplaats (Snelweg)",
+    "place_array": ["Verzorgingsplaats (Snelweg)"],
+    "average_credits": 7490,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "police_motorcycle": 6, "drone_police": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "personnel_educations": { "police_motorcycle": 6 },
+      "drone_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 663,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "traffic_police_specialization"]
+  },
+  {
     "id": "669",
     "name": "Toezicht Park",
     "place": "Park",
@@ -633,6 +664,36 @@
     "overlay_index": null,
     "base_mission_id": 670,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "670/a",
+    "name": "Toezicht Winkelcentrum",
+    "place": "Winkelcentrum",
+    "place_array": ["Winkelcentrum"],
+    "average_credits": 3010,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "bike_police": 1, "drone_police": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "een uur",
+      "duration": 3600,
+      "guard_mission": true,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 1,
+      "drone_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 670,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -846,6 +907,38 @@
     "overlay_index": null,
     "base_mission_id": 855,
     "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "855/a",
+    "name": "Observatie",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6590,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "at_o": 2, "drone_police": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 1,
+      "bereitschaftspolizei": 1,
+      "at": 1,
+      "drone_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 855,
+    "additive_overlays": "a",
     "mission_categories": ["riot_police"]
   },
   {
@@ -1175,6 +1268,46 @@
     "overlay_index": null,
     "base_mission_id": 961,
     "additive_overlays": "",
+    "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "961/a",
+    "name": "Toezicht Horeca",
+    "place": "Caf\u00e9/Club",
+    "place_array": ["Caf\u00e9/Club"],
+    "average_credits": 9545,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "bike_police": 1,
+      "hondengeleider": 1,
+      "police_horse": 4,
+      "drone_police": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "2 uur",
+      "duration": 7200,
+      "guard_mission": true,
+      "filter_id": "riot_police_missions",
+      "need_bike_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 1,
+      "bereitschaftspolizei": 2,
+      "police_horse": 1,
+      "hondengeleider": 1,
+      "drone_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 961,
+    "additive_overlays": "a",
     "mission_categories": ["riot_police"]
   },
   {
