@@ -27478,5 +27478,63 @@
     "base_mission_id": 815,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "816",
+    "name": "Dog running around on the highway",
+    "place": "Highway exit",
+    "place_array": ["Highway exit"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "817",
+    "name": "Driver hit by loose truck wheel",
+    "place": "Highway exit\nCarpentry Workshop",
+    "place_array": ["Highway exit", "Carpentry Workshop"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
