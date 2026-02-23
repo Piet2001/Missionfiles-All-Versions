@@ -34196,5 +34196,63 @@
     "base_mission_id": 876,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "877",
+    "name": "Pies biega po autostradzie",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 877,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "878",
+    "name": "Kierowca uderzony oderwanym ko\u0142em ci\u0119\u017car\u00f3wki",
+    "place": "Zjazd z autostrady\nCentrum Miasta",
+    "place_array": ["Zjazd z autostrady", "Centrum Miasta"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 878,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]

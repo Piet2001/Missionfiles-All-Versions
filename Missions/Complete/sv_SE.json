@@ -24808,5 +24808,63 @@
     "base_mission_id": 709,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "710",
+    "name": "Hund springer p\u00e5 motorv\u00e4g",
+    "place": "Avfart",
+    "place_array": ["Avfart"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 710,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "711",
+    "name": "F\u00f6rare tr\u00e4ffad av l\u00f6st lastbilshjul",
+    "place": "Avfart\nTunnel",
+    "place_array": ["Avfart", "Tunnel"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Inv\u00e4rtesmedicinare"],
+      "patient_specializations": "Inv\u00e4rtesmedicinare"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 711,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
