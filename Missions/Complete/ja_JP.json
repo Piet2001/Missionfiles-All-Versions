@@ -22293,5 +22293,66 @@
     "base_mission_id": 646,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural"]
+  },
+  {
+    "id": "647",
+    "name": "\u72ac\u304c\u9ad8\u901f\u9053\u8def\u3092\u8d70\u884c\u4e2d",
+    "place": "\u9ad8\u901f\u30a4\u30f3\u30bf\u30fc",
+    "place_array": ["\u9ad8\u901f\u30a4\u30f3\u30bf\u30fc"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 647,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "648",
+    "name": "\u904b\u8ee2\u624b\u304c\u30c8\u30e9\u30c3\u30af\u306e\u5916\u308c\u305f\u8eca\u8f2a\u306b\u885d\u7a81",
+    "place": "\u9ad8\u901f\u30a4\u30f3\u30bf\u30fc\n\u4fe1\u53f7\u3067\u6a2a\u65ad",
+    "place_array": [
+      "\u9ad8\u901f\u30a4\u30f3\u30bf\u30fc",
+      "\u4fe1\u53f7\u3067\u6a2a\u65ad"
+    ],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["\u4e00\u822c\u5185\u79d1"],
+      "patient_specializations": "\u4e00\u822c\u5185\u79d1"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 648,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
