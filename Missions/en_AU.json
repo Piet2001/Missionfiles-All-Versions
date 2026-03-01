@@ -27536,5 +27536,50 @@
     "base_mission_id": 817,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "818",
+    "name": "Fire in furniture shop",
+    "place": "Mall\nStorehouse",
+    "place_array": ["Mall", "Storehouse"],
+    "average_credits": 12270,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "water_needed": 50000,
+      "foam_needed": 2800,
+      "foam": 1,
+      "firetrucks": 4,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "fire_stations": 23
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "fire_support_specialization"]
   }
 ]
