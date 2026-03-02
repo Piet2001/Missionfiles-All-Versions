@@ -23909,5 +23909,37 @@
     "base_mission_id": 702,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "703",
+    "name": "Um carro atravessa a parede de um supermercado",
+    "place": "Supermercado\nHipermercado\nCentro da Cidade",
+    "place_array": ["Supermercado", "Hipermercado", "Centro da Cidade"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 703,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
