@@ -45277,5 +45277,268 @@
     "base_mission_id": 905,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "906",
+    "name": "Feu de motrice électrique en pleine voie",
+    "place": "Voie ferroviaire",
+    "place_array": ["Voie ferroviaire"],
+    "average_credits": 17550,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "mobile_command_vehicles": 1,
+      "elw3": 2,
+      "foam": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "carbon_dioxide": 1,
+      "carbon_dioxide_container": 1,
+      "carbon_dioxide_trailer": 1,
+      "railway_fire_engine": 2,
+      "railway_fire_engine_large": 2,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_support_count": 1,
+      "railway_fire": 1,
+      "container": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 906,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "907",
+    "name": "Rupture de catenaire sur un passage a niveau",
+    "place": "Passage à niveau",
+    "place_array": ["Passage à niveau"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "ambulances": 1,
+      "railway_fire_engine_large": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 907,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "908",
+    "name": "Collision entre deux locomotives de manœuvre",
+    "place": "Gare ferroviaire (trajets régionaux et grandes lignes)",
+    "place_array": ["Gare ferroviaire (trajets régionaux et grandes lignes)"],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "railway_fire_engine": 1,
+      "railway_fire_engine_large": 2,
+      "railway_recovery_large": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [913]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 908,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "909",
+    "name": "Déraillement d'un train de travaux (Infra)",
+    "place": "Gare ferroviaire (trajets régionaux et grandes lignes)",
+    "place_array": ["Gare ferroviaire (trajets régionaux et grandes lignes)"],
+    "average_credits": 19800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire_engine": 1,
+      "railway_fire_engine_large": 2,
+      "railway_recovery": 1,
+      "railway_recovery_large": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [913]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "railway_fire": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 909,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "910",
+    "name": "Incendie d’un wagon de transport de voitures sur quai de métro",
+    "place": "Station de métro",
+    "place_array": ["Station de métro"],
+    "average_credits": 24500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "pump": 1,
+      "ambulances": 1,
+      "thw_gkw": 1,
+      "railway_fire_engine": 3,
+      "railway_fire_engine_large": 3,
+      "railway_fire_platform_container": 1,
+      "railway_fire_equipment_container": 1,
+      "railway_fan": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 6,
+      "fire_support_count": 1,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 910,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "911",
+    "name": "Incendie de transformateur de sous-station électrique",
+    "place": "Station de métro",
+    "place_array": ["Station de métro"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "railway_fire_engine_large": 1,
+      "railway_fire_platform_container": 1,
+      "railway_fire_equipment_container": 1,
+      "railway_fan": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 911,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "912",
+    "name": "Feu de talus en bordure de voie ferrée",
+    "place": "Voie ferroviaire",
+    "place_array": ["Voie ferroviaire"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 2,
+      "elw3": 1,
+      "railway_fire_engine_large": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 912,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
   }
 ]
