@@ -27602,5 +27602,39 @@
     "base_mission_id": 731,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "732",
+    "name": "Bil påkører menneskemængde",
+    "place": "Julemarked\nMarkedsplads",
+    "place_array": ["Julemarked", "Markedsplads"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "elw_police": 1, "police_cars": 5 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "need_elw_police_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 5,
+      "police_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 732,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
