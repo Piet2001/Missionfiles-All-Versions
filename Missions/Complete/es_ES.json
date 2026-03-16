@@ -24489,5 +24489,38 @@
     "base_mission_id": 693,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "694",
+    "name": "Un coche arrolla a una multitud",
+    "place": "Feria",
+    "place_array": ["Feria"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 5 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna general"],
+      "patient_specializations": "Medicina interna general"
+    },
+    "prerequisites": {
+      "main_building": "Building::BUILDING_TYPE_POLIZEIWACHE",
+      "rescue_stations": 5,
+      "police_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 694,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
