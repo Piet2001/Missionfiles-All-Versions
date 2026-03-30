@@ -56753,5 +56753,67 @@
     "base_mission_id": 1126,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "1127",
+    "name": "Fire at control tower",
+    "place": "Small Airport (Runway)\nLarge Airport (Runway)\nAirport Terminal",
+    "place_array": [
+      "Small Airport (Runway)",
+      "Large Airport (Runway)",
+      "Airport Terminal"
+    ],
+    "average_credits": 21500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "arff": 4,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "firetrucks": 8,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 80, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-C-1",
+        "7-C-2",
+        "7-C-4",
+        "7-D-2",
+        "7-D-5",
+        "8-B-1G",
+        "8-C-1G",
+        "8-D-1G",
+        "8-D-2G",
+        "8-D-6G"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "fire_support_count": 2,
+      "airport": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 1127,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "urban"]
   }
 ]
