@@ -34448,5 +34448,170 @@
     "base_mission_id": 883,
     "additive_overlays": "",
     "mission_categories": ["airport", "urban"]
+  },
+  {
+    "id": "884",
+    "name": "Przewr\u00f3cona ci\u0119\u017car\u00f3wka z naczep\u0105",
+    "place": "Zjazd z autostrady",
+    "place_array": ["Zjazd z autostrady"],
+    "average_credits": 1250,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "hazmat_vehicles": 1, "firetrucks": 4, "police_cars": 2 },
+    "chances": { "hazmat_vehicles": 25, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "885",
+    "name": "Masowe zdarzenie medyczne na dworcu kolejowym",
+    "place": "Dworzec kolejowy (ruch podmiejski)",
+    "place_array": ["Dworzec kolejowy (ruch podmiejski)"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "energy_supply": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": { "mobile_air_vehicles": 10, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "energy_supply": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 885,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "886",
+    "name": "Przew\u00f3z pacjenta z samolotu",
+    "place": "Ma\u0142y port lotniczy (pas startowy)\nDu\u017cy port lotniczy (pas startowy)",
+    "place_array": [
+      "Ma\u0142y port lotniczy (pas startowy)",
+      "Du\u017cy port lotniczy (pas startowy)"
+    ],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 886,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "887",
+    "name": "Uraz spowodowany turbulencjami podczas lotu",
+    "place": "Ma\u0142y port lotniczy (pas startowy)\nDu\u017cy port lotniczy (pas startowy)",
+    "place_array": [
+      "Ma\u0142y port lotniczy (pas startowy)",
+      "Du\u017cy port lotniczy (pas startowy)"
+    ],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 887,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "888",
+    "name": "Wypadek podczas nurkowania",
+    "place": "Jezioro\nMarina",
+    "place_array": ["Jezioro", "Marina"],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 888,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
