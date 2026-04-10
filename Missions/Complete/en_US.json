@@ -57762,7 +57762,7 @@
     "name": "Skiing accidents",
     "place": "Hiking Trail",
     "place_array": ["Hiking Trail"],
-    "average_credits": 1075,
+    "average_credits": 4000,
     "generated_by": "",
     "icons": [
       "/images/hiking_gruen.png",
@@ -57771,6 +57771,7 @@
     ],
     "requirements": {
       "mountain_height_rescue": 1,
+      "mountain_rescue_dogs": 1,
       "mountain_snow": 1,
       "mountain_lift": 1
     },
@@ -57780,7 +57781,7 @@
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
-      "handoff_possible_via_building_types": [28],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
@@ -57797,7 +57798,7 @@
     "name": "Hikers stranded on mountaintop",
     "place": "Mountain Trail\nHiking Trail",
     "place_array": ["Mountain Trail", "Hiking Trail"],
-    "average_credits": 1775,
+    "average_credits": 3600,
     "generated_by": "",
     "icons": [
       "/images/hiking_gruen.png",
@@ -57806,7 +57807,7 @@
     ],
     "requirements": {
       "mountain_height_rescue": 2,
-      "mountain_snow": 2,
+      "mountain_rescue_dogs": 1,
       "mountain_lift": 1,
       "mountain_lift_2": 1
     },
@@ -57816,13 +57817,13 @@
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
-      "handoff_possible_via_building_types": [28],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 1 },
+    "prerequisites": { "main_building": 28, "mountain_rescue": 2 },
     "overlay_index": null,
     "base_mission_id": 1119,
     "additive_overlays": "",
@@ -57833,7 +57834,7 @@
     "name": "Small avalanche",
     "place": "",
     "place_array": [],
-    "average_credits": 3000,
+    "average_credits": 5600,
     "generated_by": "",
     "icons": [
       "/images/snowy_gruen.png",
@@ -57855,13 +57856,16 @@
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
       "uses_custom_spawn_area": true,
-      "handoff_possible_via_building_types": [28],
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 2 },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 1,
+      "mountain_rescue": 2
+    },
     "overlay_index": null,
     "base_mission_id": 1120,
     "additive_overlays": "",
@@ -57872,7 +57876,7 @@
     "name": "Fall of serac",
     "place": "",
     "place_array": [],
-    "average_credits": 3600,
+    "average_credits": 7500,
     "generated_by": "",
     "icons": [
       "/images/snowy_gruen.png",
@@ -57880,26 +57884,30 @@
       "/images/snowy_rot.png"
     ],
     "requirements": {
-      "mountain_atv": 3,
-      "mountain_height_rescue": 3,
-      "mountain_snow": 3,
+      "mountain_atv": 1,
+      "mountain_height_rescue": 4,
+      "mountain_rescue_dogs": 2,
+      "mountain_snow": 1,
       "mountain_lift": 1,
       "mountain_lift_2": 1
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 25, "patient_critical_care": 0 },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
       "uses_custom_spawn_area": true,
-      "handoff_possible_via_building_types": [28],
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 3 },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "mountain_rescue": 3
+    },
     "overlay_index": null,
     "base_mission_id": 1121,
     "additive_overlays": "",
@@ -57910,7 +57918,7 @@
     "name": "Hiker in distress due to bad weather conditions",
     "place": "Hiking Trail",
     "place_array": ["Hiking Trail"],
-    "average_credits": 1075,
+    "average_credits": 1450,
     "generated_by": "",
     "icons": [
       "/images/hiking_gruen.png",
@@ -57918,17 +57926,17 @@
       "/images/hiking_rot.png"
     ],
     "requirements": {
-      "mountain_atv": 1,
       "mountain_height_rescue": 1,
+      "mountain_rescue_dogs": 1,
       "mountain_lift": 1
     },
-    "chances": { "patient_transport": 100 },
+    "chances": { "patient_transport": 50 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
-      "handoff_possible_via_building_types": [28],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
@@ -57945,7 +57953,7 @@
     "name": "Forest fire in high mountains",
     "place": "Forest",
     "place_array": ["Forest"],
-    "average_credits": 2000,
+    "average_credits": 3600,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -57961,7 +57969,8 @@
     "chances": {},
     "additional": {
       "filter_id": "mountain_missions",
-      "vehicle_groups": ["default", "mountain_missions"]
+      "vehicle_groups": ["default", "mountain_missions"],
+      "uses_custom_spawn_area": true
     },
     "prerequisites": {
       "main_building": -1,
@@ -57979,24 +57988,36 @@
     "name": "Mountainbiker hit a tree on a snow road",
     "place": "Mountain Trail",
     "place_array": ["Mountain Trail"],
-    "average_credits": 1000,
+    "average_credits": 1400,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "mountain_snow": 1, "mountain_lift": 1 },
+    "requirements": {
+      "mountain_height_rescue": 1,
+      "mountain_snow": 1,
+      "mountain_lift": 1,
+      "police_cars": 1
+    },
     "chances": { "patient_transport": 35 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 1 },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "mountain_rescue": 2
+    },
     "overlay_index": null,
     "base_mission_id": 1124,
     "additive_overlays": "",
@@ -58007,7 +58028,7 @@
     "name": "Moderate gravity avalanche",
     "place": "Mountain Trail",
     "place_array": ["Mountain Trail"],
-    "average_credits": 7500,
+    "average_credits": 14000,
     "generated_by": "",
     "icons": [
       "/images/snowy_gruen.png",
@@ -58015,12 +58036,12 @@
       "/images/snowy_rot.png"
     ],
     "requirements": {
-      "mountain_atv": 3,
-      "mountain_height_rescue": 5,
+      "mountain_atv": 2,
+      "mountain_height_rescue": 6,
       "mountain_rescue_dogs": 2,
-      "mountain_snow": 3,
+      "mountain_snow": 2,
       "mountain_lift": 2,
-      "mountain_lift_2": 3
+      "mountain_lift_2": 2
     },
     "chances": { "patient_transport": 100, "patient_critical_care": 25 },
     "additional": {
@@ -58028,13 +58049,17 @@
       "possible_patient_min": 5,
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
-      "handoff_possible_via_building_types": [28],
+      "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 3 },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "mountain_rescue": 3
+    },
     "overlay_index": null,
     "base_mission_id": 1125,
     "additive_overlays": "",
@@ -58045,7 +58070,7 @@
     "name": "Climbing accidents",
     "place": "Climbinb Route",
     "place_array": ["Climbinb Route"],
-    "average_credits": 1500,
+    "average_credits": 2850,
     "generated_by": "",
     "icons": [
       "/images/climbing_gruen.png",
@@ -58053,8 +58078,7 @@
       "/images/climbing_rot.png"
     ],
     "requirements": {
-      "mountain_atv": 1,
-      "mountain_height_rescue": 1,
+      "mountain_height_rescue": 2,
       "mountain_snow": 1,
       "mountain_lift_2": 1
     },
@@ -58065,13 +58089,12 @@
       "filter_id": "mountain_missions",
       "vehicle_groups": ["mountain_missions"],
       "uses_custom_spawn_area": true,
-      "handoff_possible_via_building_types": [28],
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
       "patient_specializations": "Traumatology"
     },
-    "prerequisites": { "main_building": 28, "mountain_rescue": 1 },
+    "prerequisites": { "main_building": 28, "mountain_rescue": 3 },
     "overlay_index": null,
     "base_mission_id": 1126,
     "additive_overlays": "",
