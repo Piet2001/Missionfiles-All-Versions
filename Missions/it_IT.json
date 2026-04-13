@@ -33046,5 +33046,48 @@
     "base_mission_id": 837,
     "additive_overlays": "",
     "mission_categories": ["airport"]
+  },
+  {
+    "id": "838",
+    "name": "Batteria dell’auto elettrica in fiamme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1750,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "oneof_fire_engine_or_rescue_or_ladder": 2
+    },
+    "chances": { "patient_transport": 85 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "expansion_missions_ids": [466],
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 838,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
