@@ -4278,6 +4278,34 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "99/a",
+    "name": "Ransagning af hus",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1050,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "bomb_disposal_equipment": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 99,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "100",
     "name": "Påskeægs tyv",
     "place": "",
@@ -5589,6 +5617,40 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "129/a",
+    "name": "Ransagning efter efterlyst",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "bomb_disposal_crew": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [130],
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "police_helicopter_stations": 1,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 129,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "130",
     "name": "Politibetjent såret",
     "place": "",
@@ -5635,6 +5697,31 @@
     "overlay_index": null,
     "base_mission_id": 131,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "131/a",
+    "name": "Ransagning af bil",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "k9": 1, "bomb_disposal_crew": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 6,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 131,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -6173,6 +6260,35 @@
     "overlay_index": null,
     "base_mission_id": 145,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "145/a",
+    "name": "Ulovlig våbenbesiddelse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2800,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "bomb_disposal_equipment": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 145,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -11390,6 +11506,31 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "285/a",
+    "name": "Mistænkelig pakke",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "k9": 1, "bomb_disposal_equipment": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 285,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "286",
     "name": "Røveri hos guldsmed",
     "place": "Indkøbscenter",
@@ -12606,6 +12747,106 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "320/b",
+    "name": "Atomkraftværk Hændelse",
+    "place": "Atomkraftværk",
+    "place_array": ["Atomkraftværk"],
+    "average_credits": 30600,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "hose": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 65000,
+      "bomb_disposal_command": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 80,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "bomb_disposal_count": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "320/ab",
+    "name": "Atomkraftværk Hændelse",
+    "place": "Atomkraftværk",
+    "place_array": ["Atomkraftværk"],
+    "average_credits": 30600,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 8,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 4,
+      "water_tankers": 2,
+      "hose": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 65000,
+      "foam_needed": 100,
+      "bomb_disposal_command": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 25,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 10, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 80,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 40,
+      "police_stations": 10,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 1,
+      "fire_stations": 40
+    },
+    "overlay_index": null,
+    "base_mission_id": 320,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "321",
     "name": "Passenger Tog kørt af skinnerne",
     "place": "Togstation (lokal trafik)\nTogstation (lokal og national /international trafik)\nJernbaneovergang",
@@ -12733,6 +12974,53 @@
     "overlay_index": null,
     "base_mission_id": 323,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "323/a",
+    "name": "CBRNE Hændelse i offentligheden",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10300,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 6,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 1,
+      "bomb_disposal_crew": 1,
+      "firetrucks": 4,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 20,
+      "helicopter": 10,
+      "patient_critical_care": 75
+    },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 4,
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 1,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 20,
+      "police_stations": 15,
+      "bomb_disposal_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 323,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -13973,6 +14261,45 @@
     "overlay_index": null,
     "base_mission_id": 357,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "357/a",
+    "name": "Eksplosion ved hæveautomat",
+    "place": "Bank",
+    "place_array": ["Bank"],
+    "average_credits": 5300,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2400,
+      "bomb_disposal_crew": 1,
+      "firetrucks": 2,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 4,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Kardiologi"],
+      "patient_specializations": "Kardiologi"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 8,
+      "bomb_disposal_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 357,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -16592,6 +16919,34 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "431/a",
+    "name": "Ransagning af virksomhed",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1350,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "bomb_disposal_crew": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "bomb_disposal_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 431,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "432",
     "name": "Hændelse i mine",
     "place": "",
@@ -16945,6 +17300,54 @@
     "overlay_index": null,
     "base_mission_id": 441,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "441/a",
+    "name": "Eksplosion i Restaurant",
+    "place": "Restaurant",
+    "place_array": ["Restaurant"],
+    "average_credits": 5800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 32400,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 5,
+      "police_cars": 2
+    },
+    "chances": {
+      "water_tankers": 20,
+      "patient_transport": 50,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 441,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -17415,6 +17818,48 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "454/a",
+    "name": "Ulykke med biologiske produkter",
+    "place": "",
+    "place_array": [],
+    "average_credits": 8800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "ambulances": 5,
+      "bomb_disposal_crew": 1,
+      "firetrucks": 8,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 0 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 454,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "455",
     "name": "Brand i tom bygning",
     "place": "",
@@ -17812,6 +18257,78 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "465/b",
+    "name": "Brand i et tog med brandfarlige produkter",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 32000,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "465/ab",
+    "name": "Brand i et tog med brandfarlige produkter",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "pump": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 48000,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 1,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 465,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "466",
     "name": "Rengøring af spor",
     "place": "",
@@ -17883,45 +18400,6 @@
     "requirements": {
       "platform_trucks": 2,
       "battalion_chief_vehicles": 1,
-      "hazmat_vehicles": 2,
-      "water_tankers": 2,
-      "firetrucks": 5,
-      "police_cars": 3
-    },
-    "chances": { "patient_transport": 25, "patient_critical_care": 10 },
-    "additional": {
-      "possible_patient": 25,
-      "filter_id": "firehouse_missions",
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Specialister i intern medicin"],
-      "patient_specializations": "Specialister i intern medicin"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 6,
-      "police_stations": 5,
-      "fire_stations": 14
-    },
-    "overlay_index": null,
-    "base_mission_id": 468,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "fire_support_specialization", "urban"]
-  },
-  {
-    "id": "468/a",
-    "name": "Eksplosion af gasflaske",
-    "place": "",
-    "place_array": [],
-    "average_credits": 10200,
-    "generated_by": "",
-    "icons": [
-      "/images/blast_gruen.png",
-      "/images/blast_gelb.png",
-      "/images/blast_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
       "foam": 1,
       "hazmat_vehicles": 2,
       "water_tankers": 2,
@@ -17940,6 +18418,49 @@
       "main_building": 0,
       "rescue_stations": 6,
       "police_stations": 5,
+      "fire_support_count": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 468,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
+    "id": "468/a",
+    "name": "Eksplosion af gasflaske",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10400,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 1,
+      "foam": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 2,
+      "bomb_disposal_crew": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 25, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "bomb_disposal_count": 1,
       "fire_support_count": 1,
       "fire_stations": 14
     },
@@ -20250,6 +20771,60 @@
     "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
+    "id": "528/a",
+    "name": "Eksplosion i akvarie",
+    "place": "Akvarium",
+    "place_array": ["Akvarium"],
+    "average_credits": 24600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "k9": 2,
+      "pump": 2,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 10,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 0,
+      "helicopter": 30,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [529],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 5,
+      "bomb_disposal_count": 1,
+      "fire_support_count": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 528,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
+  },
+  {
     "id": "529",
     "name": "Lækage fra akvarie",
     "place": "Akvarium",
@@ -20886,6 +21461,43 @@
     "overlay_index": null,
     "base_mission_id": 545,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "545/a",
+    "name": "Fund af eksplosiv enhed i bil",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4800,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "elw_police": 1,
+      "water_tankers": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 2,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "need_elw_police_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 12,
+      "bomb_disposal_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 545,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -22057,6 +22669,55 @@
     "overlay_index": null,
     "base_mission_id": 573,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "573/a",
+    "name": "Lækage af kemikalier i et laboratorium (hospital)",
+    "place": "Hospital",
+    "place_array": ["Hospital"],
+    "average_credits": 9600,
+    "generated_by": "",
+    "icons": [
+      "/images/radiation_gruen.png",
+      "/images/radiation_gelb.png",
+      "/images/radiation_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "kdow_orgl": 1,
+      "bomb_disposal_crew": 2,
+      "firetrucks": 5,
+      "police_cars": 5
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 30
+    },
+    "additional": {
+      "possible_patient": 7,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 6,
+      "bomb_disposal_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 573,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -24666,6 +25327,43 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "645/a",
+    "name": "Eksplosion i bageriovn i supermarked",
+    "place": "Supermarked (lille)\nSupermarked (stort)",
+    "place_array": ["Supermarked (lille)", "Supermarked (stort)"],
+    "average_credits": 3300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "bomb_disposal_count": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "646",
     "name": "Slagter skadet af fejl på båndsavsmaskine",
     "place": "Supermarked (lille)\nSupermarked (stort)",
@@ -26160,6 +26858,36 @@
     "overlay_index": null,
     "base_mission_id": 693,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "693/a",
+    "name": "Trailer stående på motorvej",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "bomb_disposal_equipment": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "bomb_disposal_count": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 693,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
@@ -27762,5 +28490,300 @@
     "base_mission_id": 736,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "737",
+    "name": "Gammel ammunition fundet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bomb_disposal_command": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 1,
+      "bomb_disposal_count": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 737,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "738",
+    "name": "Gammel ammunition fundet i sø",
+    "place": "Sø",
+    "place_array": ["Sø"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bomb_disposal_command": 1,
+      "bomb_disposal_diver_crew": 1,
+      "bomb_disposal_diver_equipment": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "bomb_disposal_diver": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 738,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "739",
+    "name": "Gammel ammunition fundet i havn",
+    "place": "Havneområde",
+    "place_array": ["Havneområde"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "bomb_disposal_command": 1,
+      "bomb_disposal_diver_crew": 1,
+      "bomb_disposal_diver_equipment": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 2,
+      "bomb_disposal_count": 1,
+      "bomb_disposal_diver": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 739,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "740",
+    "name": "Gammel ammunition fundet på loft",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 6,
+      "police_stations": 3,
+      "bomb_disposal_count": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 740,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "741",
+    "name": "Gammel ammunition fundet i kælder",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "bomb_disposal_count": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 741,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "742",
+    "name": "Gammel ammunition fundet i kælder",
+    "place": "Genbrugscenter",
+    "place_array": ["Genbrugscenter"],
+    "average_credits": 5500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "bomb_drone": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "police_stations": 1,
+      "bomb_disposal_count": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "743",
+    "name": "Mistænkelig genstand fundet på havn",
+    "place": "Havneområde",
+    "place_array": ["Havneområde"],
+    "average_credits": 6600,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "bomb_disposal_diver_crew": 1,
+      "bomb_disposal_diver_equipment": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "bomb_disposal_count": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "744",
+    "name": "Mistænkelig genstand fundet i station",
+    "place": "Togstation (lokal trafik)\nTogstation (lokal og national /international trafik)\nGodsstation\nMetrostation",
+    "place_array": [
+      "Togstation (lokal trafik)",
+      "Togstation (lokal og national /international trafik)",
+      "Godsstation",
+      "Metrostation"
+    ],
+    "average_credits": 7250,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "ambulances": 1,
+      "bomb_disposal_command": 1,
+      "bomb_disposal_crew": 1,
+      "bomb_disposal_equipment": 1,
+      "bomb_drone": 1,
+      "firetrucks": 2,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 2,
+      "police_stations": 4,
+      "bomb_disposal_count": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 744,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "745",
+    "name": "Destruktion af ulovligt fyrværkeri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2350,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": { "bomb_disposal_crew": 1, "bomb_disposal_equipment": 1 },
+    "chances": {},
+    "additional": { "filter_id": "bomb_disposal_missions" },
+    "prerequisites": { "main_building": 27, "bomb_disposal_count": 1 },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
   }
 ]
