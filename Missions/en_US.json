@@ -57266,5 +57266,54 @@
     "base_mission_id": 1128,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1129",
+    "name": "Person trapped under vehicle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {
+      "heavy_rescue_vehicles": 60,
+      "patient_transport": 100,
+      "helicopter": 90
+    },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "30-D-1",
+        "30-D-2",
+        "30-D-3",
+        "30-B-1",
+        "30-B-2",
+        "30-A-1"
+      ],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatology"],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 1129,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
   }
 ]
