@@ -1,10 +1,10 @@
 [
   {
     "id": "0",
-    "name": "Brandende afvalbak",
+    "name": "Brandende afvalbak bij bushalte",
     "place": "Bushalte",
     "place_array": ["Bushalte"],
-    "average_credits": 110,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -25,7 +25,7 @@
     "name": "Brandende container",
     "place": "",
     "place_array": [],
-    "average_credits": 170,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -381,8 +381,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [129, 355, 356],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -427,7 +426,7 @@
     "name": "Brand in woonwagen",
     "place": "",
     "place_array": [],
-    "average_credits": 1350,
+    "average_credits": 1520,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -437,9 +436,10 @@
     "requirements": {
       "platform_trucks": 1,
       "battalion_chief_vehicles": 1,
-      "firetrucks": 2
+      "firetrucks": 2,
+      "police_cars": 1
     },
-    "chances": { "platform_trucks": 80, "patient_transport": 30 },
+    "chances": { "platform_trucks": 80, "patient_transport": 50 },
     "additional": {
       "possible_patient": 1,
       "filter_id": "firehouse_missions",
@@ -450,6 +450,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
+      "police_stations": 1,
       "fire_stations": 6
     },
     "overlay_index": null,
@@ -1034,10 +1035,10 @@
   },
   {
     "id": "35",
-    "name": "Brand in ziekenhuis",
+    "name": "Brand in ziekenhuis (Middel)",
     "place": "Ziekenhuis",
     "place_array": ["Ziekenhuis"],
-    "average_credits": 2510,
+    "average_credits": 4090,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1049,17 +1050,24 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "elw3": 1,
-      "firetrucks": 2
+      "water_tankers": 1,
+      "firetrucks": 2,
+      "police_cars": 2
     },
-    "chances": { "mobile_command_vehicles": 10, "elw3": 10 },
+    "chances": {
+      "mobile_command_vehicles": 10,
+      "elw3": 10,
+      "water_tankers": 20
+    },
     "additional": {
+      "expansion_missions_ids": [157, 1202, 1203],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
     "prerequisites": {
       "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 8
+      "police_stations": 2,
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 35,
@@ -1096,10 +1104,10 @@
   },
   {
     "id": "37",
-    "name": "Brandende afvalbak",
-    "place": "Ziekenhuis\nTramhalte\nStation\nCentraal Station",
-    "place_array": ["Ziekenhuis", "Tramhalte", "Station", "Centraal Station"],
-    "average_credits": 110,
+    "name": "Brandende afvalbak bij tramhalte",
+    "place": "Tramhalte",
+    "place_array": ["Tramhalte"],
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1141,10 +1149,10 @@
   },
   {
     "id": "39",
-    "name": "Brandende afvalbak",
+    "name": "Brandende afvalbak bij centraal station",
     "place": "Centraal Station",
     "place_array": ["Centraal Station"],
-    "average_credits": 110,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1154,8 +1162,8 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "filter_id": "firehouse_missions",
-      "unavailable_in_normal_missions": true
+      "expansion_missions_ids": [956],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -1165,10 +1173,10 @@
   },
   {
     "id": "40",
-    "name": "Brandende afvalbak",
+    "name": "Brandende afvalbak bij ziekenhuis",
     "place": "Ziekenhuis",
     "place_array": ["Ziekenhuis"],
-    "average_credits": 110,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -1178,8 +1186,8 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
-      "filter_id": "firehouse_missions",
-      "unavailable_in_normal_missions": true
+      "expansion_missions_ids": [158],
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
@@ -4226,8 +4234,7 @@
     "chances": { "water_tankers": 10 },
     "additional": {
       "expansion_missions_ids": [14, 129, 355, 356],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -4548,8 +4555,7 @@
     "chances": { "water_tankers": 10 },
     "additional": {
       "expansion_missions_ids": [140, 141, 142, 143, 144, 308, 309, 357],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -4582,8 +4588,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [141, 142, 143, 144, 308, 309, 357],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -4616,8 +4621,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [142, 143, 144, 308, 309, 357],
-      "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "firehouse_missions"
     },
     "prerequisites": {
       "main_building": 0,
@@ -5435,10 +5439,10 @@
   },
   {
     "id": "157",
-    "name": "Brand in ziekenhuis",
+    "name": "Brand in ziekenhuis (Groot)",
     "place": "Ziekenhuis",
     "place_array": ["Ziekenhuis"],
-    "average_credits": 4070,
+    "average_credits": 8600,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -5447,19 +5451,25 @@
     ],
     "requirements": {
       "platform_trucks": 2,
-      "battalion_chief_vehicles": 1,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "elw3": 1,
       "mobile_air_vehicles": 1,
-      "firetrucks": 3
+      "water_tankers": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "firetrucks": 5,
+      "police_cars": 4
     },
     "chances": {
       "elw3": 90,
       "mobile_air_vehicles": 50,
-      "patient_transport": 100
+      "patient_transport": 80
     },
     "additional": {
-      "possible_patient": 2,
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "expansion_missions_ids": [1202, 1203],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true,
       "patient_specialization_ids": [4],
@@ -5468,8 +5478,10 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 2,
-      "fire_stations": 14
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 17
     },
     "overlay_index": null,
     "base_mission_id": 157,
@@ -5477,119 +5489,11 @@
     "mission_categories": ["fire", "urban"]
   },
   {
-    "id": "157-0",
-    "name": "Brand in ziekenhuis",
-    "place": "Ziekenhuis",
-    "place_array": ["Ziekenhuis"],
-    "average_credits": 12240,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 3,
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "water_tankers": 4,
-      "gwmess": 2,
-      "ovdp": 1,
-      "spokesman": 1,
-      "firetrucks": 6,
-      "police_cars": 4
-    },
-    "chances": {
-      "elw3": 100,
-      "mobile_air_vehicles": 100,
-      "patient_transport": 50
-    },
-    "additional": {
-      "possible_patient": 30,
-      "possible_patient_min": 10,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 11,
-      "police_stations": 5,
-      "bereitschaftspolizei": 1,
-      "fire_stations": 24
-    },
-    "overlay_index": 0,
-    "base_mission_id": 157,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
-  },
-  {
-    "id": "157-1",
-    "name": "Brand in ziekenhuis",
-    "place": "Ziekenhuis",
-    "place_array": ["Ziekenhuis"],
-    "average_credits": 21230,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 6,
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 1,
-      "water_tankers": 6,
-      "gwmess": 4,
-      "ovdp": 1,
-      "heavy_rescue_vehicles": 2,
-      "spokesman": 1,
-      "mass_casualty": 1,
-      "mass_casualty_advanced": 1,
-      "firetrucks": 15,
-      "police_cars": 10
-    },
-    "chances": {
-      "elw3": 100,
-      "mobile_air_vehicles": 100,
-      "patient_transport": 20
-    },
-    "additional": {
-      "possible_patient": 100,
-      "possible_patient_min": 50,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [4],
-      "patient_specialization_captions": ["Traumatologie"],
-      "patient_specializations": "Traumatologie"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 32,
-      "police_stations": 10,
-      "bereitschaftspolizei": 1,
-      "mass_casualty_count": 1,
-      "fire_stations": 43
-    },
-    "overlay_index": 1,
-    "base_mission_id": 157,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
-  },
-  {
     "id": "158",
-    "name": "Brand in ziekenhuis",
+    "name": "Brand in ziekenhuis (Klein)",
     "place": "Ziekenhuis",
     "place_array": ["Ziekenhuis"],
-    "average_credits": 350,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -5599,6 +5503,7 @@
     "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [35, 157, 1202, 1203],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
@@ -10613,6 +10518,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "expansion_missions_ids": [917],
       "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [5],
       "patient_specialization_captions": ["Neurologie"],
@@ -32363,6 +32269,9 @@
     },
     "chances": {},
     "additional": {
+      "duration_text": "10 minuten",
+      "duration": 600,
+      "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2026-02-05T10:00:00Z",
       "date_end": "2026-02-08T23:59:59Z"
@@ -37977,8 +37886,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [867, 868, 880, 881, 882],
-      "filter_id": "water_watch_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "water_watch_missions"
     },
     "prerequisites": {
       "main_building": 16,
@@ -38014,8 +37922,7 @@
     "chances": {},
     "additional": {
       "expansion_missions_ids": [868, 880, 881, 882],
-      "filter_id": "water_watch_missions",
-      "subsequent_missions_ids": [1191]
+      "filter_id": "water_watch_missions"
     },
     "prerequisites": {
       "main_building": 16,
@@ -45029,7 +44936,7 @@
   },
   {
     "id": "956",
-    "name": "Brand in station",
+    "name": "Brand in station (Klein)",
     "place": "Centraal Station\nStation",
     "place_array": ["Centraal Station", "Station"],
     "average_credits": 500,
@@ -45039,173 +44946,15 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 4000, "firetrucks": 1 },
+    "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [1204, 1205, 1206, 1207],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
-    "base_mission_id": 956,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
-  },
-  {
-    "id": "956-0",
-    "name": "Brand in station",
-    "place": "Centraal Station\nStation",
-    "place_array": ["Centraal Station", "Station"],
-    "average_credits": 2540,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "water_needed": 8000,
-      "firetrucks": 1,
-      "police_cars": 2
-    },
-    "chances": { "patient_transport": 100 },
-    "additional": {
-      "possible_patient": 5,
-      "filter_id": "firehouse_missions",
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [1],
-      "patient_specialization_captions": ["Algemene Heelkunde"],
-      "patient_specializations": "Algemene Heelkunde"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 8,
-      "police_stations": 2,
-      "fire_stations": 6
-    },
-    "overlay_index": 0,
-    "base_mission_id": 956,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
-  },
-  {
-    "id": "956-1",
-    "name": "Brand in station",
-    "place": "Centraal Station\nStation",
-    "place_array": ["Centraal Station", "Station"],
-    "average_credits": 13220,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "bike_police": 2,
-      "platform_trucks": 2,
-      "battalion_chief_vehicles": 2,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "mobile_air_vehicles": 1,
-      "hazmat_vehicles": 1,
-      "gwmess": 3,
-      "ovdp": 2,
-      "spokesman": 1,
-      "water_needed": 39000,
-      "firetrucks": 1,
-      "police_cars": 8
-    },
-    "chances": { "nef": 15, "patient_transport": 90 },
-    "additional": {
-      "possible_patient": 30,
-      "filter_id": "firehouse_missions",
-      "need_bike_police_only_if_present": true,
-      "fire_alarm_system_possible": true,
-      "patient_specialization_ids": [0],
-      "patient_specialization_captions": ["Interne Geneeskunde"],
-      "patient_specializations": "Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 12,
-      "police_stations": 13,
-      "fire_stations": 20
-    },
-    "overlay_index": 1,
-    "base_mission_id": 956,
-    "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
-  },
-  {
-    "id": "956-2",
-    "name": "Brand in station",
-    "place": "Centraal Station\nStation",
-    "place_array": ["Centraal Station", "Station"],
-    "average_credits": 51550,
-    "generated_by": "",
-    "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
-    ],
-    "requirements": {
-      "bike_police": 2,
-      "detention_unit": 1,
-      "platform_trucks": 3,
-      "battalion_chief_vehicles": 4,
-      "mobile_command_vehicles": 2,
-      "elw3": 1,
-      "gefkw": 1,
-      "grukw": 6,
-      "mobile_air_vehicles": 2,
-      "hazmat_vehicles": 2,
-      "gwmess": 6,
-      "hondengeleider": 2,
-      "lebefkw": 1,
-      "ovdp": 2,
-      "police_helicopters": 1,
-      "heavy_rescue_vehicles": 3,
-      "spokesman": 1,
-      "water_needed": 150000,
-      "mass_casualty": 1,
-      "mass_casualty_advanced": 1,
-      "firetrucks": 1,
-      "police_cars": 20
-    },
-    "chances": { "nef": 5, "patient_transport": 30 },
-    "additional": {
-      "possible_patient": 100,
-      "possible_patient_min": 50,
-      "followup_missions_ids": [48, 99, 225, 240, 768, 878, 878, 879, 879],
-      "min_possible_prisoners": 10,
-      "max_possible_prisoners": 30,
-      "filter_id": "riot_police_missions",
-      "subsequent_missions_ids": [877],
-      "need_bike_police_only_if_present": true,
-      "fire_alarm_system_possible": false,
-      "patient_specialization_ids": [4, 0],
-      "patient_specialization_captions": [
-        "Traumatologie",
-        "Interne Geneeskunde"
-      ],
-      "patient_specializations": "Traumatologie, Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 11,
-      "rescue_stations": 33,
-      "police_stations": 23,
-      "police_helicopter_stations": 1,
-      "bereitschaftspolizei": 5,
-      "riot_unit_count": 2,
-      "detention_unit_count": 1,
-      "prisoner_transport_count": 1,
-      "mass_casualty_count": 1,
-      "hondengeleider": 1,
-      "fire_stations": 71
-    },
-    "overlay_index": 2,
     "base_mission_id": 956,
     "additive_overlays": "",
     "mission_categories": ["fire", "urban"]
@@ -47025,6 +46774,49 @@
     "base_mission_id": 993,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "994",
+    "name": "Helikopter crash",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5760,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "arff": 2,
+      "battalion_chief_vehicles": 1,
+      "elw_airport": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 4
+    },
+    "chances": { "nef": 25, "patient_transport": 72 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 4,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "airport": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 994,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "fire"]
   },
   {
     "id": "995",
@@ -50286,7 +50078,7 @@
     "name": "Autobrand op snelweg",
     "place": "Snelweg oprit / afrit\nTunnel",
     "place_array": ["Snelweg oprit / afrit", "Tunnel"],
-    "average_credits": 1800,
+    "average_credits": 2550,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -50296,6 +50088,7 @@
     "requirements": {
       "battalion_chief_vehicles": 1,
       "water_tankers": 1,
+      "traffic_unit": 1,
       "firetrucks": 1,
       "police_cars": 1
     },
@@ -50308,13 +50101,14 @@
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
+      "technical_aid": 2,
       "tow_trucks": 1,
       "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 1057,
     "additive_overlays": "",
-    "mission_categories": ["fire", "technical_aid", "urban"]
+    "mission_categories": ["fire", "technical_aid"]
   },
   {
     "id": "1058",
@@ -52306,7 +52100,6 @@
     "requirements": {},
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [1110],
       "filter_id": "tow_trucks_missions",
       "possible_crashed_car_min": 1,
       "possible_crashed_car_max": 1
@@ -52490,7 +52283,7 @@
     "name": "Dubbele trailer defect op snelweg",
     "place": "",
     "place_array": [],
-    "average_credits": 1300,
+    "average_credits": 2640,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -52501,14 +52294,14 @@
     "chances": {},
     "additional": {
       "filter_id": "tow_trucks_missions",
-      "possible_crashed_car_large_min": 2,
-      "possible_crashed_car_large_max": 2
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
     },
     "prerequisites": {
       "main_building": 24,
       "police_stations": 3,
       "technical_aid": 1,
-      "tow_trucks_large": 2
+      "tow_trucks_large": 1
     },
     "overlay_index": null,
     "base_mission_id": 1120,
@@ -54039,7 +53832,7 @@
     "name": "Bom uit WOII gevonden",
     "place": "",
     "place_array": [],
-    "average_credits": 7600,
+    "average_credits": 4920,
     "generated_by": "",
     "icons": [
       "/images/blast_gruen.png",
@@ -54047,7 +53840,7 @@
       "/images/blast_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 4,
+      "battalion_chief_vehicles": 1,
       "ovdp": 1,
       "heavy_rescue_vehicles": 1,
       "spokesman": 1,
@@ -55745,5 +55538,1835 @@
     "base_mission_id": 1200,
     "additive_overlays": "",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1202",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 12580,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 26
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/a",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 18225,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 26
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/b",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 13380,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "drone_fire": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/c",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 13380,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/ab",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 19225,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "drone_fire": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/ac",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 19225,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/bc",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 14180,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "drone_fire": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1202/abc",
+    "name": "Brand in ziekenhuis (Grip 1)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 20225,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "gwmess": 2,
+      "ovdp": 1,
+      "spokesman": 1,
+      "drone_fire": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 30,
+      "possible_patient_min": 10,
+      "expansion_missions_ids": [1203],
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1202,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 20050,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "fire_stations": 37
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/a",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 27562,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 37
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/b",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 20850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/c",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 20850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/ab",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 28562,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/ac",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 28562,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/bc",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 21650,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1203/abc",
+    "name": "Brand in ziekenhuis (Grip 2)",
+    "place": "Ziekenhuis",
+    "place_array": ["Ziekenhuis"],
+    "average_credits": 29562,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "spokesman": 1,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 10
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 30,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 10,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1203,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1204",
+    "name": "Brand in station (Middel)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 2540,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 45 },
+    "additional": {
+      "possible_patient": 5,
+      "expansion_missions_ids": [1205, 1206, 1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1204,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1205",
+    "name": "Brand in station (Groot)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 15360,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "gwmess": 1,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 30000,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 30,
+      "expansion_missions_ids": [1206, 1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 5,
+      "bereitschaftspolizei": 1,
+      "fire_stations": 36
+    },
+    "overlay_index": null,
+    "base_mission_id": 1205,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 27600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 1,
+      "fire_stations": 65
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/a",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 37000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 65
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/b",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 28400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/c",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 28400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/ab",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 38000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/ac",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 38000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/bc",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 29200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1206/abc",
+    "name": "Brand in station (Grip 1)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 39000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 3,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 60000,
+      "mass_casualty": 1,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 60,
+      "possible_patient_min": 30,
+      "expansion_missions_ids": [1207],
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 25,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 1,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1206,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 41960,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "fire_stations": 104
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/a",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 54950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 104
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/b",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 42760,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "b",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/c",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 42760,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "c",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/ab",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 55950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "ab",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/ac",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 55950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "ac",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/bc",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 43560,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "bc",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "1207/abc",
+    "name": "Brand in station (Grip 2)",
+    "place": "Centraal Station\nStation",
+    "place_array": ["Centraal Station", "Station"],
+    "average_credits": 56950,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 6,
+      "mobile_command_vehicles": 3,
+      "elw3": 1,
+      "foam": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 5,
+      "gwmess": 4,
+      "ovdp": 1,
+      "spokesman": 1,
+      "water_needed": 100000,
+      "mass_casualty": 2,
+      "mass_casualty_advanced": 1,
+      "drone_fire": 1,
+      "firetrucks": 12,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 60,
+      "filter_id": "firehouse_missions",
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 34,
+      "police_stations": 9,
+      "bereitschaftspolizei": 1,
+      "fire_support_count": 1,
+      "mass_casualty_count": 2,
+      "care_service": 1,
+      "clean_service": 1,
+      "drone_fire": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1207,
+    "additive_overlays": "abc",
+    "mission_categories": ["fire", "urban"]
   }
 ]
