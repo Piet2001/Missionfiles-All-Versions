@@ -28871,5 +28871,54 @@
     "base_mission_id": 747,
     "additive_overlays": "",
     "mission_categories": ["bomb_disposal"]
+  },
+  {
+    "id": "748",
+    "name": "Gruppe ramt af lyn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/lightningStrike_gruen.png",
+      "/images/lightningStrike_gelb.png",
+      "/images/lightningStrike_rot.png"
+    ],
+    "requirements": {
+      "arff": 1,
+      "coastal_helicopter": 1,
+      "kdow_orgl": 1,
+      "oneof_fire_engine_or_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "coastal_helicopter": 20,
+      "kdow_orgl": 20,
+      "firetrucks": 20,
+      "patient_transport": 90,
+      "helicopter": 50,
+      "patient_critical_care": 90
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "ambulance_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "vehicle_groups": ["default", "ocean_missions"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologi"],
+      "patient_specializations": "Traumatologi"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 10,
+      "coastal_helicopter_count": 1,
+      "airport": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
