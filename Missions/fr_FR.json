@@ -45875,5 +45875,131 @@
     "base_mission_id": 920,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "921",
+    "name": "Accident par chute de hauteur (R+3)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1750,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "battalion_chief_vehicles": 1 },
+    "chances": { "patient_transport": 100, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 15,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 921,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "922",
+    "name": "Accident par chute de hauteur (R+4)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2150,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "oneof_fire_engine_or_rescue": 1
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 15,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 922,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "923",
+    "name": "Découverte de colis piégés à bord d’un paquebot amarré à quai",
+    "place": "Quai de navire de croisière",
+    "place_array": ["Quai de navire de croisière"],
+    "average_credits": 61500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "mobile_command_vehicles": 1,
+      "elw3": 9,
+      "foam": 3,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "pump": 1,
+      "heavy_rescue_vehicles": 7,
+      "thw_gkw": 3,
+      "disaster_response_command": 1,
+      "fbi_bomb": 4,
+      "bomb_drone": 4,
+      "firetrucks": 30,
+      "police_cars": 18
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 10,
+      "patient_critical_care": 10
+    },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 7,
+      "filter_id": "technical_aid_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interne général"],
+      "patient_specializations": "Interne général"
+    },
+    "prerequisites": {
+      "main_building": 27,
+      "rescue_stations": 18,
+      "police_stations": 12,
+      "fire_support_count": 2,
+      "technical_aid": 4,
+      "fire_stations": 30
+    },
+    "overlay_index": null,
+    "base_mission_id": 923,
+    "additive_overlays": "",
+    "mission_categories": ["bomb_disposal"]
   }
 ]
