@@ -23220,6 +23220,198 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "500",
+    "name": "Kettingbotsing",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2090,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "tow_trucks": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 500,
+    "additive_overlays": "",
+    "mission_categories": ["urban", "fire"]
+  },
+  {
+    "id": "501",
+    "name": "Kettingbotsing",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1750,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "heavy_rescue_vehicles": 40, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 2,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Algemene Heelkunde"],
+      "patient_specializations": "Algemene Heelkunde"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "tow_trucks": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 501,
+    "additive_overlays": "",
+    "mission_categories": ["urban", "fire"]
+  },
+  {
+    "id": "502",
+    "name": "Kettingbotsing",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "traffic_unit": 1,
+      "traffic_patrol": 1,
+      "firetrucks": 3,
+      "police_cars": 3
+    },
+    "chances": { "nef": 15, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 4,
+      "followup_missions_ids": [1069],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 2,
+      "possible_crashed_car_max": 6,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 3,
+      "traffic_police": 1,
+      "technical_aid": 2,
+      "tow_trucks": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 502,
+    "additive_overlays": "",
+    "mission_categories": [
+      "urban",
+      "fire",
+      "traffic_police_specialization",
+      "technical_aid"
+    ]
+  },
+  {
+    "id": "503",
+    "name": "Kettingbotsing",
+    "place": "Snelweg oprit / afrit",
+    "place_array": ["Snelweg oprit / afrit"],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ovdp": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_unit": 2,
+      "traffic_patrol": 1,
+      "traffic_inspector": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": { "nef": 45, "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 4,
+      "followup_missions_ids": [1069],
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_min": 3,
+      "possible_crashed_car_max": 8,
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 7,
+      "bereitschaftspolizei": 1,
+      "traffic_police": 2,
+      "technical_aid": 3,
+      "tow_trucks": 5,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 503,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "traffic_police_specialization",
+      "urban",
+      "technical_aid"
+    ]
+  },
+  {
     "id": "504",
     "name": "Brand in fabriekshal",
     "place": "Industrieterrein",
@@ -73701,6 +73893,42 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "1057",
+    "name": "Autobrand op snelweg",
+    "place": "Snelweg oprit / afrit\nTunnel",
+    "place_array": ["Snelweg oprit / afrit", "Tunnel"],
+    "average_credits": 2550,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "traffic_unit": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "water_tankers": 60 },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "technical_aid": 2,
+      "tow_trucks": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 1057,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "technical_aid"]
+  },
+  {
     "id": "1058",
     "name": "Halloween decoratie in brand",
     "place": "",
@@ -75865,6 +76093,36 @@
     },
     "overlay_index": null,
     "base_mission_id": 1119,
+    "additive_overlays": "",
+    "mission_categories": ["tow_trucks", "tow_trucks_only"]
+  },
+  {
+    "id": "1120",
+    "name": "LZV met pech op snelweg",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2640,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "traffic_unit": 2, "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "tow_trucks_missions",
+      "possible_crashed_car_large_min": 1,
+      "possible_crashed_car_large_max": 1
+    },
+    "prerequisites": {
+      "main_building": 24,
+      "police_stations": 3,
+      "technical_aid": 3,
+      "tow_trucks_large": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1120,
     "additive_overlays": "",
     "mission_categories": ["tow_trucks", "tow_trucks_only"]
   },
