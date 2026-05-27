@@ -29325,5 +29325,123 @@
     "base_mission_id": 777,
     "additive_overlays": "",
     "mission_categories": ["mountain"]
+  },
+  {
+    "id": "778",
+    "name": "Davov\u00e1 tla\u010denice na festivalu",
+    "place": "Z\u00e1bavn\u00ed park",
+    "place_array": ["Z\u00e1bavn\u00ed park"],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "ems_mobile_command": 1,
+      "firetrucks": 7,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 50, "helicopter": 10 },
+    "additional": {
+      "possible_patient": 100,
+      "possible_patient_min": 35,
+      "max_possible_prisoners": 25,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 20,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["V\u0161eobecn\u00fd internista"],
+      "patient_specializations": "V\u0161eobecn\u00fd internista"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 50,
+      "police_stations": 15,
+      "mass_casualty_count": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "779",
+    "name": "Hromadn\u00fd p\u0159\u00edjem nemocn\u00fdch osob",
+    "place": "Stanice metra",
+    "place_array": ["Stanice metra"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "mass_casualty_equipment": 1,
+      "firetrucks": 4,
+      "police_cars": 6
+    },
+    "chances": { "mobile_air_vehicles": 10, "patient_transport": 25 },
+    "additional": {
+      "possible_patient": 70,
+      "possible_patient_min": 35,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["V\u0161eobecn\u00fd internista"],
+      "patient_specializations": "V\u0161eobecn\u00fd internista"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 15,
+      "police_stations": 5,
+      "mass_casualty_count": 1,
+      "disaster_response_count": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "780",
+    "name": "Panika na diskot\u00e9ce",
+    "place": "Diskot\u00e9ka",
+    "place_array": ["Diskot\u00e9ka"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": { "ems_mobile_command": 1, "police_cars": 9 },
+    "chances": { "patient_transport": 40, "helicopter": 2 },
+    "additional": {
+      "possible_patient": 12,
+      "possible_patient_min": 10,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["V\u0161eobecn\u00fd chirurg"],
+      "patient_specializations": "V\u0161eobecn\u00fd chirurg"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 10,
+      "police_stations": 9,
+      "mass_casualty_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
