@@ -296,13 +296,14 @@
     "additional": {
       "expansion_missions_ids": [69],
       "allow_rw_instead_of_lf": true,
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "unavailable_in_normal_missions": true
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 12,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "rural"]
   },
   {
     "id": "13",
@@ -2108,21 +2109,24 @@
     "name": "Boom op fietspad",
     "place": "",
     "place_array": [],
-    "average_credits": 310,
+    "average_credits": 500,
     "generated_by": "",
     "icons": [
       "/images/sawmill_gruen.png",
       "/images/sawmill_gelb.png",
       "/images/sawmill_rot.png"
     ],
-    "requirements": { "oneof_fire_engine_or_rescue": 1, "firetrucks": 1 },
+    "requirements": { "firetrucks": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "unavailable_in_normal_missions": true
+    },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 66,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "rural"]
   },
   {
     "id": "67",
@@ -7135,8 +7139,8 @@
   {
     "id": "186",
     "name": "Parkeergarage onder water",
-    "place": "",
-    "place_array": [],
+    "place": "Parkeergarage",
+    "place_array": ["Parkeergarage"],
     "average_credits": 2590,
     "generated_by": "",
     "icons": [
@@ -7152,9 +7156,10 @@
     "chances": { "water_tankers": 40 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "pump_water_amount": 10000
+      "pump_water_amount": 10000,
+      "unavailable_in_normal_missions": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 186,
     "additive_overlays": "",
@@ -7165,7 +7170,7 @@
     "name": "Kelder onder water",
     "place": "",
     "place_array": [],
-    "average_credits": 2240,
+    "average_credits": 2440,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -7180,13 +7185,14 @@
     "chances": { "water_tankers": 20 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "pump_water_amount": 9000
+      "pump_water_amount": 9000,
+      "unavailable_in_normal_missions": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 187,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "rural"]
   },
   {
     "id": "188",
@@ -7239,7 +7245,7 @@
     "name": "Straat onder water",
     "place": "",
     "place_array": [],
-    "average_credits": 1660,
+    "average_credits": 2250,
     "generated_by": "",
     "icons": [
       "/images/waterpark_gruen.png",
@@ -7247,16 +7253,18 @@
       "/images/waterpark_rot.png"
     ],
     "requirements": {
+      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
       "firetrucks": 1,
       "min_pump_speed": 100
     },
-    "chances": { "heavy_rescue_vehicles": 10 },
+    "chances": { "water_tankers": 20, "heavy_rescue_vehicles": 10 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "pump_water_amount": 5000
+      "pump_water_amount": 5000,
+      "unavailable_in_normal_missions": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 190,
     "additive_overlays": "",
@@ -7303,13 +7311,14 @@
     "chances": { "water_tankers": 20 },
     "additional": {
       "filter_id": "firehouse_missions",
-      "pump_water_amount": 3000
+      "pump_water_amount": 3000,
+      "unavailable_in_normal_missions": true
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "prerequisites": { "main_building": 0, "fire_stations": 7 },
     "overlay_index": null,
     "base_mission_id": 192,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "urban", "rural"]
   },
   {
     "id": "193",
@@ -33670,10 +33679,10 @@
   },
   {
     "id": "761",
-    "name": "Lekkage gevaarlijke stoffen (Klein)",
+    "name": "Lekkage gevaarlijke stoffen",
     "place": "Tankstation",
     "place_array": ["Tankstation"],
-    "average_credits": 2570,
+    "average_credits": 1920,
     "generated_by": "",
     "icons": [
       "/images/gas_gruen.png",
@@ -33682,7 +33691,6 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "hazmat_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "firetrucks": 1,
       "police_cars": 1
@@ -33701,12 +33709,12 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 1,
-      "fire_stations": 11
+      "fire_stations": 6
     },
     "overlay_index": null,
     "base_mission_id": 761,
     "additive_overlays": "",
-    "mission_categories": ["fire", "urban"]
+    "mission_categories": ["fire", "fire_support_specialization", "urban"]
   },
   {
     "id": "761-0",
@@ -81438,7 +81446,7 @@
       "bereitschaftspolizei": 1,
       "mass_casualty_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 66
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81492,7 +81500,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "mass_casualty_count": 1,
-      "fire_stations": 1
+      "fire_stations": 66
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81549,7 +81557,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 66
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81606,7 +81614,7 @@
       "mass_casualty_count": 1,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 66
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81662,7 +81670,7 @@
       "fire_support_count": 1,
       "mass_casualty_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 67
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81721,7 +81729,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 67
     },
     "overlay_index": null,
     "base_mission_id": 1206,
@@ -81879,7 +81887,7 @@
       "bereitschaftspolizei": 1,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 105
     },
     "overlay_index": null,
     "base_mission_id": 1207,
@@ -81932,7 +81940,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 105
     },
     "overlay_index": null,
     "base_mission_id": 1207,
@@ -81988,7 +81996,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 105
     },
     "overlay_index": null,
     "base_mission_id": 1207,
@@ -82044,7 +82052,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 105
     },
     "overlay_index": null,
     "base_mission_id": 1207,
@@ -82099,7 +82107,7 @@
       "fire_support_count": 1,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 106
     },
     "overlay_index": null,
     "base_mission_id": 1207,
@@ -82157,7 +82165,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 106
     },
     "overlay_index": null,
     "base_mission_id": 1207,
