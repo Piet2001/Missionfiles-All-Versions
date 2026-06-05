@@ -314,7 +314,7 @@
     "name": "Albero su strada",
     "place": "",
     "place_array": [],
-    "average_credits": 310,
+    "average_credits": 650,
     "generated_by": "",
     "icons": [
       "/images/sawmill_gruen.png",
@@ -323,14 +323,20 @@
     ],
     "requirements": {
       "oneof_fire_engine_or_rescue_or_ladder": 1,
-      "firetrucks": 1
+      "firetrucks": 1,
+      "police_cars": 1
     },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [25],
-      "filter_id": "firehouse_missions"
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
     },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
     "overlay_index": null,
     "base_mission_id": 12,
     "additive_overlays": "",
@@ -650,7 +656,7 @@
       "oneof_police_patrol_or_municipal_police": 1,
       "firetrucks": 1
     },
-    "chances": { "patient_transport": 40 },
+    "chances": { "firetrucks": 10, "patient_transport": 40 },
     "additional": {
       "possible_patient": 4,
       "expansion_missions_ids": [24, 2, 29],
@@ -1664,7 +1670,7 @@
     "overlay_index": null,
     "base_mission_id": 55,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "municipal_police"]
   },
   {
     "id": "56",
@@ -2553,7 +2559,7 @@
     "name": "Collisione multipla",
     "place": "",
     "place_array": [],
-    "average_credits": 800,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -2561,12 +2567,26 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "heavy_rescue_vehicles": 1,
       "oneof_police_patrol_or_municipal_police": 1,
       "firetrucks": 1
     },
-    "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["SC01V", "SC02G"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Cardiologia",
+        "Chirurgia cardiaca"
+      ],
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
@@ -4500,8 +4520,8 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_tankers": 1, "firetrucks": 2 },
-    "chances": { "water_tankers": 20 },
+    "requirements": { "water_needed": 10800, "firetrucks": 2 },
+    "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
     "prerequisites": { "main_building": 0, "fire_stations": 2 },
     "overlay_index": null,
@@ -6593,6 +6613,7 @@
         "Traumatologia"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "subsequent_missions_ids": [680],
       "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -6655,6 +6676,7 @@
         "Traumatologia"
       ],
       "allow_ktw_instead_of_rtw": true,
+      "subsequent_missions_ids": [680],
       "max_municipal_police_replacing_police_cars": 2,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
@@ -8102,6 +8124,7 @@
         "Medicina interna generale",
         "Traumatologia"
       ],
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatologia"],
       "patient_specializations": "Traumatologia"
@@ -11205,7 +11228,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "firetrucks": 2,
       "police_cars": 4
@@ -11250,7 +11272,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "amphibious_rescue": 1,
       "firetrucks": 2,
@@ -11298,7 +11319,6 @@
     ],
     "requirements": {
       "boats": 2,
-      "battalion_chief_vehicles": 1,
       "diver_units": 1,
       "heavy_rescue_vehicles": 4,
       "firetrucks": 2,
@@ -11346,7 +11366,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "pump": 2,
       "firetrucks": 2,
@@ -11396,7 +11415,6 @@
     ],
     "requirements": {
       "boats": 2,
-      "battalion_chief_vehicles": 1,
       "diver_units": 1,
       "heavy_rescue_vehicles": 4,
       "amphibious_rescue": 1,
@@ -11446,7 +11464,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 4,
       "pump": 2,
       "amphibious_rescue": 1,
@@ -11498,7 +11515,6 @@
     ],
     "requirements": {
       "boats": 2,
-      "battalion_chief_vehicles": 1,
       "diver_units": 1,
       "heavy_rescue_vehicles": 4,
       "pump": 2,
@@ -11551,7 +11567,6 @@
     ],
     "requirements": {
       "boats": 2,
-      "battalion_chief_vehicles": 1,
       "diver_units": 1,
       "heavy_rescue_vehicles": 4,
       "pump": 2,
@@ -14843,7 +14858,8 @@
     "chances": {},
     "additional": {
       "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions"
+      "filter_id": "police_station_missions",
+      "max_municipal_police_replacing_police_cars": 1
     },
     "prerequisites": { "main_building": 6, "police_stations": 1 },
     "overlay_index": null,
@@ -15643,7 +15659,8 @@
     "additional": {
       "expansion_missions_ids": [391],
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [401]
+      "subsequent_missions_ids": [401],
+      "max_municipal_police_replacing_police_cars": 2
     },
     "prerequisites": {
       "main_building": 0,
@@ -15670,19 +15687,18 @@
     ],
     "requirements": {
       "brush_truck": 4,
-      "battalion_chief_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 2,
       "water_needed": 15000,
       "firetrucks": 4,
       "police_cars": 3
     },
-    "chances": { "battalion_chief_vehicles": 40 },
+    "chances": {},
     "additional": {
       "expansion_missions_ids": [392],
       "followup_missions_ids": [390, 394],
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [402]
+      "subsequent_missions_ids": [402],
+      "max_municipal_police_replacing_police_cars": 3
     },
     "prerequisites": {
       "main_building": 0,
@@ -15709,24 +15725,25 @@
     ],
     "requirements": {
       "brush_truck": 6,
-      "mobile_command_vehicles": 1,
       "elw3": 1,
-      "water_tankers": 1,
+      "fire_aviation": 2,
       "heavy_rescue_vehicles": 4,
-      "water_needed": 25000,
-      "police_cars": 4
+      "water_needed": 25700,
+      "police_cars": 6
     },
     "chances": {},
     "additional": {
       "expansion_missions_ids": [393],
       "followup_missions_ids": [390, 391, 394, 395],
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [403]
+      "subsequent_missions_ids": [403],
+      "max_municipal_police_replacing_police_cars": 4
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
       "brush_extension": 2,
+      "fire_aviation_count": 2,
       "fire_stations": 11
     },
     "overlay_index": null,
@@ -15750,20 +15767,22 @@
       "brush_truck": 8,
       "mobile_command_vehicles": 1,
       "elw3": 2,
-      "water_tankers": 1,
-      "water_needed": 45000,
+      "fire_aviation": 3,
+      "water_needed": 45700,
       "police_cars": 6
     },
     "chances": {},
     "additional": {
       "followup_missions_ids": [394, 395, 396, 390, 391, 392],
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [404]
+      "subsequent_missions_ids": [404],
+      "max_municipal_police_replacing_police_cars": 4
     },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 4,
       "brush_extension": 4,
+      "fire_aviation_count": 3,
       "fire_stations": 14
     },
     "overlay_index": null,
@@ -15835,7 +15854,7 @@
     "name": "Incendio Foresta (GRANDE)",
     "place": "Bosco",
     "place_array": ["Bosco"],
-    "average_credits": 8000,
+    "average_credits": 8350,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15844,9 +15863,8 @@
     ],
     "requirements": {
       "brush_truck": 6,
-      "mobile_command_vehicles": 1,
       "elw3": 1,
-      "water_tankers": 1,
+      "fire_aviation": 1,
       "water_needed": 38000
     },
     "chances": {},
@@ -15859,6 +15877,7 @@
     "prerequisites": {
       "main_building": 0,
       "brush_extension": 5,
+      "fire_aviation_count": 1,
       "fire_stations": 12
     },
     "overlay_index": null,
@@ -15871,7 +15890,7 @@
     "name": "Incendio Foresta (GRANDISSIMO)",
     "place": "Bosco",
     "place_array": ["Bosco"],
-    "average_credits": 11000,
+    "average_credits": 10650,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -15883,7 +15902,6 @@
       "mobile_command_vehicles": 1,
       "elw3": 1,
       "fire_aviation": 2,
-      "water_tankers": 1,
       "water_needed": 25000,
       "police_cars": 4
     },
@@ -15891,7 +15909,8 @@
     "additional": {
       "followup_missions_ids": [394, 395, 396, 390, 391, 392],
       "filter_id": "firehouse_missions",
-      "subsequent_missions_ids": [404]
+      "subsequent_missions_ids": [404],
+      "max_municipal_police_replacing_police_cars": 2
     },
     "prerequisites": {
       "main_building": 0,
@@ -16103,19 +16122,14 @@
     "name": "Bonifica Incendio Boschivo (GRANDISSIMO)",
     "place": "",
     "place_array": [],
-    "average_credits": 9500,
+    "average_credits": 9150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "brush_truck": 8,
-      "mobile_command_vehicles": 1,
-      "elw3": 1,
-      "firetrucks": 4
-    },
+    "requirements": { "brush_truck": 8, "elw3": 1, "firetrucks": 4 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -16531,7 +16545,7 @@
     "name": "Pirata della Strada",
     "place": "",
     "place_array": [],
-    "average_credits": 1950,
+    "average_credits": 1250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -16539,9 +16553,7 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {
-      "heavy_rescue_vehicles": 1,
       "oneof_police_patrol_or_municipal_police": 2,
-      "firetrucks": 1,
       "police_cars": 1
     },
     "chances": { "patient_transport": 80, "helicopter": 10 },
@@ -18464,7 +18476,7 @@
       "Gariga",
       "Campo"
     ],
-    "average_credits": 10000,
+    "average_credits": 8250,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -18473,23 +18485,14 @@
     ],
     "requirements": {
       "brush_truck": 6,
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
       "elw3": 1,
       "fire_aviation": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 4,
       "water_needed": 30000,
       "firetrucks": 4,
-      "police_cars": 2,
-      "water_rescue": 2
+      "police_cars": 2
     },
-    "chances": {
-      "battalion_chief_vehicles": 80,
-      "mobile_command_vehicles": 50,
-      "water_tankers": 80,
-      "patient_transport": 10
-    },
+    "chances": { "patient_transport": 10 },
     "additional": {
       "possible_patient": 20,
       "possible_patient_min": 2,
@@ -19478,8 +19481,8 @@
   {
     "id": "497",
     "name": "Atterraggio Ultraleggero in Autostrada",
-    "place": "",
-    "place_array": [],
+    "place": "Mercatino di Natale",
+    "place_array": ["Mercatino di Natale"],
     "average_credits": 6600,
     "generated_by": "",
     "icons": [
@@ -20767,7 +20770,7 @@
     "name": "Piccolo Smottamento su Strada",
     "place": "",
     "place_array": [],
-    "average_credits": 1600,
+    "average_credits": 1250,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -20775,7 +20778,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 1,
       "firetrucks": 1,
@@ -20802,7 +20804,7 @@
     "name": "Piccolo Smottamento su Strada",
     "place": "",
     "place_array": [],
-    "average_credits": 1950,
+    "average_credits": 1600,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -20810,7 +20812,6 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "traffic_car": 1,
       "disaster_response_clearing": 1,
@@ -21954,7 +21955,10 @@
       "police_cars": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
     "prerequisites": {
       "main_building": 0,
       "police_stations": 1,
@@ -24505,7 +24509,8 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 3900,
       "firetrucks": 3,
       "police_cars": 1
     },
@@ -25067,7 +25072,7 @@
     "name": "Incidente stradale - Trasporto di animali",
     "place": "",
     "place_array": [],
-    "average_credits": 3000,
+    "average_credits": 2300,
     "generated_by": "",
     "icons": [
       "/images/caraccident_gruen.png",
@@ -25075,9 +25080,9 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
       "oneof_fire_engine_or_rescue": 3,
-      "firetrucks": 1,
+      "firetrucks": 2,
       "police_cars": 2
     },
     "chances": { "patient_transport": 80 },
@@ -25554,6 +25559,7 @@
         "Medicina interna generale",
         "Medicina interna generale"
       ],
+      "max_municipal_police_replacing_police_cars": 1,
       "patient_at_end_of_mission": true,
       "date_start": "2026-01-02T10:00:00Z",
       "date_end": "2026-03-06T22:59:00Z",
@@ -26096,7 +26102,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 1 },
+    "requirements": { "water_needed": 1400, "firetrucks": 1 },
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
@@ -26121,7 +26127,7 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "firetrucks": 2 },
+    "requirements": { "water_needed": 5400, "firetrucks": 2 },
     "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 2,
@@ -26153,14 +26159,14 @@
     "name": "Fiori rubati",
     "place": "",
     "place_array": [],
-    "average_credits": 1200,
+    "average_credits": 400,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
       "/images/theft_gelb.png",
       "/images/theft_rot.png"
     ],
-    "requirements": { "police_cars": 5 },
+    "requirements": { "police_cars": 2 },
     "chances": {},
     "additional": {
       "min_possible_prisoners": 1,
@@ -26426,7 +26432,10 @@
     ],
     "requirements": { "water_needed": 5000, "disaster_response_equipment": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true
+    },
     "prerequisites": {
       "main_building": 0,
       "disaster_response_count": 1,
@@ -26460,7 +26469,10 @@
       "search_and_rescue_equipment": 1
     },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true
+    },
     "prerequisites": {
       "main_building": 0,
       "disaster_response_count": 1,
@@ -28035,7 +28047,7 @@
     "name": "Incendio boschivo con abitazioni coinvolte (MEDIO)",
     "place": "Cascina\nAzienda agricola",
     "place_array": ["Cascina", "Azienda agricola"],
-    "average_credits": 3500,
+    "average_credits": 3150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -28045,7 +28057,6 @@
     "requirements": {
       "brush_truck": 4,
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "water_needed": 7500,
       "police_cars": 3
@@ -28088,7 +28099,7 @@
     "name": "Incendio boschivo con abitazioni coinvolte (GRANDE)",
     "place": "Cascina\nAzienda agricola",
     "place_array": ["Cascina", "Azienda agricola"],
-    "average_credits": 10000,
+    "average_credits": 9700,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -28098,8 +28109,6 @@
     "requirements": {
       "brush_truck": 6,
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "water_needed": 18000,
       "police_cars": 4
@@ -28142,7 +28151,7 @@
     "name": "Incendio boschivo con abitazioni coinvolte (GRANDISSIMO)",
     "place": "Cascina\nAzienda agricola",
     "place_array": ["Cascina", "Azienda agricola"],
-    "average_credits": 14000,
+    "average_credits": 13000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -28152,12 +28161,10 @@
     "requirements": {
       "brush_truck": 8,
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "elw3": 1,
       "fire_aviation": 1,
       "mobile_air_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 4,
       "water_needed": 35000,
       "police_cars": 6
@@ -28608,21 +28615,21 @@
     "name": "Gruppo di vagabondi squarcia le gomme di un'auto nel parcheggio",
     "place": "Supermercato (piccolo)\nSupermercato (grande)",
     "place_array": ["Supermercato (piccolo)", "Supermercato (grande)"],
-    "average_credits": 8000,
+    "average_credits": 4500,
     "generated_by": "",
     "icons": [
       "/images/cuffs_gruen.png",
       "/images/cuffs_gelb.png",
       "/images/cuffs_rot.png"
     ],
-    "requirements": { "k9": 2, "police_cars": 12 },
+    "requirements": { "police_cars": 4 },
     "chances": {},
     "additional": {
-      "min_possible_prisoners": 1,
-      "max_possible_prisoners": 10,
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 4,
       "filter_id": "police_station_missions"
     },
-    "prerequisites": { "main_building": 6, "police_stations": 6 },
+    "prerequisites": { "main_building": 6, "police_stations": 4 },
     "overlay_index": null,
     "base_mission_id": 739,
     "additive_overlays": "",
@@ -28860,6 +28867,7 @@
     "requirements": {
       "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "disaster_response_equipment": 1,
       "firetrucks": 4
@@ -28882,8 +28890,9 @@
       "main_building": 0,
       "rescue_stations": 3,
       "disaster_response_count": 1,
+      "search_and_rescue": 2,
       "technical_aid": 2,
-      "fire_stations": 5
+      "fire_stations": 11
     },
     "overlay_index": null,
     "base_mission_id": 745,
@@ -28905,6 +28914,7 @@
     "requirements": {
       "platform_trucks": 2,
       "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
       "heavy_rescue_vehicles": 2,
       "rescue_dog_units": 2,
       "disaster_response_equipment": 1,
@@ -28943,7 +28953,7 @@
     "name": "Tetto del negozio crollato",
     "place": "",
     "place_array": [],
-    "average_credits": 3200,
+    "average_credits": 2850,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -28952,7 +28962,7 @@
     ],
     "requirements": {
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "disaster_response_equipment": 1,
       "firetrucks": 1
@@ -28988,7 +28998,7 @@
     "name": "Tetto del negozio crollato",
     "place": "",
     "place_array": [],
-    "average_credits": 3800,
+    "average_credits": 3450,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -28997,7 +29007,7 @@
     ],
     "requirements": {
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 2,
+      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "rescue_dog_units": 2,
       "disaster_response_equipment": 1,
@@ -29357,7 +29367,7 @@
     "name": "Incendio di un ristorante",
     "place": "Tavola calda",
     "place_array": ["Tavola calda"],
-    "average_credits": 5000,
+    "average_credits": 4300,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -29366,9 +29376,7 @@
     ],
     "requirements": {
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
       "firetrucks": 4,
       "police_cars": 2
@@ -29376,7 +29384,6 @@
     "chances": {
       "platform_trucks": 50,
       "mobile_air_vehicles": 20,
-      "water_tankers": 20,
       "patient_transport": 60
     },
     "additional": {
@@ -29408,7 +29415,7 @@
     "name": "Incendio di un ristorante",
     "place": "Tavola calda",
     "place_array": ["Tavola calda"],
-    "average_credits": 5500,
+    "average_credits": 4800,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -29417,9 +29424,7 @@
     ],
     "requirements": {
       "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
       "mobile_air_vehicles": 1,
-      "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
       "fire_investigation": 1,
       "firetrucks": 4,
@@ -29428,7 +29433,6 @@
     "chances": {
       "platform_trucks": 50,
       "mobile_air_vehicles": 20,
-      "water_tankers": 20,
       "patient_transport": 60
     },
     "additional": {
@@ -29473,7 +29477,8 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
-      "firetrucks": 8
+      "water_needed": 50000,
+      "firetrucks": 6
     },
     "chances": {},
     "additional": {
@@ -29503,8 +29508,9 @@
       "battalion_chief_vehicles": 1,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
+      "water_needed": 50000,
       "fire_investigation": 1,
-      "firetrucks": 8
+      "firetrucks": 6
     },
     "chances": {},
     "additional": {
@@ -29523,7 +29529,7 @@
   },
   {
     "id": "758",
-    "name": "Incendio in azienda (grande)",
+    "name": "Incendio in azienda agricola (GRANDE)",
     "place": "Azienda agricola",
     "place_array": ["Azienda agricola"],
     "average_credits": 11000,
@@ -29538,6 +29544,7 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
+      "water_needed": 70000,
       "firetrucks": 10
     },
     "chances": {},
@@ -29550,7 +29557,7 @@
   },
   {
     "id": "758/a",
-    "name": "Incendio in azienda (grande)",
+    "name": "Incendio in azienda agricola (GRANDE)",
     "place": "Azienda agricola",
     "place_array": ["Azienda agricola"],
     "average_credits": 11500,
@@ -29565,6 +29572,7 @@
       "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
       "water_tankers": 1,
+      "water_needed": 70000,
       "fire_investigation": 1,
       "firetrucks": 10
     },
@@ -29627,19 +29635,14 @@
     "name": "Incendio in una casa mobile",
     "place": "",
     "place_array": [],
-    "average_credits": 2500,
+    "average_credits": 2150,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "water_needed": 6000,
-      "firetrucks": 2,
-      "police_cars": 1
-    },
+    "requirements": { "water_needed": 6000, "firetrucks": 2, "police_cars": 1 },
     "chances": {},
     "additional": {
       "average_min_fire_personnel": 9,
@@ -29722,27 +29725,24 @@
       "/images/ambulance_gelb.png",
       "/images/ambulance_rot.png"
     ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 1,
-      "police_cars": 1
-    },
-    "chances": { "patient_transport": 100, "helicopter": 30 },
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": { "firetrucks": 10, "patient_transport": 100, "helicopter": 30 },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "average_min_fire_personnel": 5,
       "average_min_police_personnel": 2,
-      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "patient_it_code_possible": ["SC01R", "SC02R"],
       "filter_id": "ambulance_station_missions",
       "possible_patient_specializations": [
         "Medicina interna generale",
-        "Medicina interna generale",
-        "Medicina interna generale"
+        "Traumatologia",
+        "Cardiologia",
+        "Chirurgia cardiaca"
       ],
-      "patient_specialization_ids": [7],
-      "patient_specialization_captions": ["Cardiologia"],
-      "patient_specializations": "Cardiologia"
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [1, 7],
+      "patient_specialization_captions": ["Chirurgia generale", "Cardiologia"],
+      "patient_specializations": "Chirurgia generale, Cardiologia"
     },
     "prerequisites": {
       "main_building": 2,
@@ -29760,7 +29760,7 @@
     "name": "Incendio in una fabbrica di uova di cioccolato",
     "place": "",
     "place_array": [],
-    "average_credits": 13755,
+    "average_credits": 10000,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -29768,12 +29768,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 4,
-      "battalion_chief_vehicles": 4,
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
       "mobile_command_vehicles": 1,
-      "mobile_air_vehicles": 2,
+      "mobile_air_vehicles": 1,
       "water_tankers": 1,
-      "firetrucks": 16,
+      "water_needed": 50000,
+      "firetrucks": 10,
       "police_cars": 8
     },
     "chances": { "patient_transport": 75, "helicopter": 5 },
@@ -30030,17 +30031,21 @@
     "name": "Rimorchio fermo sull’autostrada",
     "place": "",
     "place_array": [],
-    "average_credits": 250,
+    "average_credits": 900,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
       "/images/zoom_gelb.png",
       "/images/zoom_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "traffic_car": 2, "police_cars": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "traffic_police": 2
+    },
     "overlay_index": null,
     "base_mission_id": 771,
     "additive_overlays": "",
@@ -30827,7 +30832,7 @@
     "name": "Scontro tra due autobus",
     "place": "",
     "place_array": [],
-    "average_credits": 10300,
+    "average_credits": 7000,
     "generated_by": "",
     "icons": [
       "/images/bus_gruen.png",
@@ -30835,13 +30840,10 @@
       "/images/bus_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 3,
-      "mobile_command_vehicles": 1,
       "fwk": 1,
-      "heavy_rescue_vehicles": 4,
-      "traffic_car": 3,
-      "disaster_response_equipment": 1,
-      "firetrucks": 10,
+      "heavy_rescue_vehicles": 3,
+      "traffic_car": 5,
+      "firetrucks": 5,
       "police_cars": 8
     },
     "chances": {
@@ -30872,8 +30874,8 @@
       "rescue_stations": 10,
       "police_stations": 4,
       "disaster_response_count": 1,
-      "traffic_police": 3,
-      "fire_stations": 16
+      "traffic_police": 5,
+      "fire_stations": 10
     },
     "overlay_index": null,
     "base_mission_id": 789,
@@ -30980,7 +30982,7 @@
     "name": "Afflusso massiccio di malati - Stazione ferroviaria (trasporto regionale)",
     "place": "Stazione ferroviaria (traffico regionale)",
     "place_array": ["Stazione ferroviaria (traffico regionale)"],
-    "average_credits": 5000,
+    "average_credits": 4300,
     "generated_by": "",
     "icons": [
       "/images/dancinghall_gruen.png",
@@ -30989,17 +30991,12 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 1,
-      "mobile_air_vehicles": 1,
       "heavy_rescue_vehicles": 2,
-      "disaster_response_equipment": 1,
-      "firetrucks": 4,
+      "mobile_shelter": 2,
+      "firetrucks": 2,
       "police_cars": 6
     },
-    "chances": {
-      "mobile_air_vehicles": 10,
-      "nef": 20,
-      "patient_transport": 25
-    },
+    "chances": { "nef": 20, "patient_transport": 25 },
     "additional": {
       "possible_patient": 70,
       "possible_patient_min": 35,
@@ -31010,6 +31007,7 @@
         "Medicina interna generale",
         "Medicina interna generale"
       ],
+      "max_municipal_police_replacing_police_cars": 6,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Medicina interna generale"],
       "patient_specializations": "Medicina interna generale"
@@ -31200,7 +31198,7 @@
     "overlay_index": null,
     "base_mission_id": 796,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "municipal_police", "coastal_rescue"]
   },
   {
     "id": "797",
@@ -31820,7 +31818,7 @@
     "name": "Esecuzione di un mandato di arresto Interpol/Europol",
     "place": "",
     "place_array": [],
-    "average_credits": 7500,
+    "average_credits": 7150,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -31828,9 +31826,9 @@
       "/images/zoom_rot.png"
     ],
     "requirements": {
-      "k9": 3,
+      "k9": 2,
       "police_helicopters": 1,
-      "swat_armored_vehicle": 2,
+      "swat_suv": 2,
       "police_cars": 10
     },
     "chances": {},
@@ -32786,14 +32784,18 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": { "police_cars": 1 },
+    "requirements": { "traffic_car": 1, "police_cars": 1 },
     "chances": {},
     "additional": { "filter_id": "police_station_missions" },
-    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "traffic_police": 1
+    },
     "overlay_index": null,
     "base_mission_id": 831,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "832",
@@ -32836,7 +32838,7 @@
     "overlay_index": null,
     "base_mission_id": 832,
     "additive_overlays": "",
-    "mission_categories": ["police"]
+    "mission_categories": ["police", "traffic_police_specialization"]
   },
   {
     "id": "833",
