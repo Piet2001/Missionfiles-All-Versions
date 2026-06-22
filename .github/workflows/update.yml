@@ -5,6 +5,9 @@ on:
   schedule:
     - cron:  '*/30 * * * *'
 
+permissions:
+  contents: write
+
 jobs:
   en_AU:
     runs-on: ubuntu-latest
@@ -12,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -26,13 +29,20 @@ jobs:
       with:
         pattern: "\\.json$"
 
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update en_AU
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   pt_BR:
     runs-on: ubuntu-latest
@@ -41,7 +51,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -55,13 +65,20 @@ jobs:
       with:
         pattern: "\\.json$"
     
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update pt_BR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   cs_CZ:
     runs-on: ubuntu-latest
@@ -70,7 +87,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -84,13 +101,20 @@ jobs:
       with:
         pattern: "\\.json$"
 
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update cs_CZ
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   de_DE:
     runs-on: ubuntu-latest
@@ -99,7 +123,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -113,13 +137,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update de_DE
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   da_DK:
     runs-on: ubuntu-latest
@@ -128,7 +159,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -142,13 +173,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update da_DK
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   es_ES:
     runs-on: ubuntu-latest
@@ -157,7 +195,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -171,13 +209,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update es_ES
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   fi_FI:
     runs-on: ubuntu-latest
@@ -186,7 +231,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -200,13 +245,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update fi_FI
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   fr_FR:
     runs-on: ubuntu-latest
@@ -215,7 +267,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -229,13 +281,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update fr_FR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   it_IT:
     runs-on: ubuntu-latest
@@ -244,7 +303,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -258,13 +317,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update it_IT
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   ja_JP:
     runs-on: ubuntu-latest
@@ -273,7 +339,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -287,13 +353,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update ja_JP
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   ko_KR:
     runs-on: ubuntu-latest
@@ -302,7 +375,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -316,13 +389,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update ko_KR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   es_MX:
     runs-on: ubuntu-latest
@@ -331,7 +411,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -345,13 +425,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update es_MX
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   nl_NL:
     runs-on: ubuntu-latest
@@ -360,7 +447,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -374,13 +461,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update nl_NL
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   nb_NO:
     runs-on: ubuntu-latest
@@ -389,7 +483,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -403,13 +497,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update nb_NO
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   pl_PL:
     runs-on: ubuntu-latest
@@ -418,7 +519,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -432,13 +533,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update pl_PL
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   pt_PT:
     runs-on: ubuntu-latest
@@ -447,7 +555,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -461,13 +569,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update pt_PT
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   ro_RO:
     runs-on: ubuntu-latest
@@ -476,7 +591,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -490,13 +605,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update ro_RO
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   ru_RU:
     runs-on: ubuntu-latest
@@ -505,7 +627,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -519,13 +641,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update ru_RU
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   sv_SE:
     runs-on: ubuntu-latest
@@ -534,7 +663,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -548,13 +677,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update sv_SE
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   tr_TR:
     runs-on: ubuntu-latest
@@ -563,7 +699,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -577,13 +713,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update tr_TR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   uk_UA:
     runs-on: ubuntu-latest
@@ -592,7 +735,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -606,13 +749,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update uk_UA
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   en_GB:
     runs-on: ubuntu-latest
@@ -621,7 +771,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -635,13 +785,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update en_GB
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   en_US:
     runs-on: ubuntu-latest
@@ -650,7 +807,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: Update
@@ -664,13 +821,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master 
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update en_US
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   sk_SK:
     runs-on: ubuntu-latest
@@ -679,7 +843,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: update
@@ -693,13 +857,20 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update sk_SK
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}    
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
 
   Python:
     runs-on: ubuntu-latest
@@ -708,7 +879,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
 
     - name: setup python
@@ -726,7 +897,6 @@ jobs:
         python Scripts/Complete.py
         python Scripts/Planned.py
         python Scripts/Alliance.py
-        python Scripts/Generate_files_md.py
 
                 
     - name: json-syntax-check
@@ -734,10 +904,23 @@ jobs:
       with:
         pattern: "\\.json$"
         
-    - name: Prettify code & PUSH
-      uses: creyD/prettier_action@master
-      with:
-        prettier_options: --write **/*.{js,md,json}
-        commit_message: Update from scripts
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}  
+    - name: Prettify code
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: generate files.md
+      run: python Scripts/Generate_files_md.py
+
+    - name: Prettify code after generate
+      run: npx prettier --write "**/*.{js,md,json}"
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add -A
+          git commit -m "Automated data update ${{ github.job }}"
+          git push
+        else
+          echo "No changes to commit"
+        fi
