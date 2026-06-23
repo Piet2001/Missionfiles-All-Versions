@@ -5318,6 +5318,7 @@
       "platform_trucks": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_mountain_atv_or_search_and_rescue_atv": 1,
       "firetrucks": 1
     },
     "chances": {
@@ -5338,6 +5339,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 1,
+      "mountain_rescue": 2,
       "fire_stations": 4
     },
     "overlay_index": null,
@@ -5363,6 +5365,7 @@
       "hazard_response_secondary": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 1,
+      "oneof_mountain_atv_or_search_and_rescue_atv": 1,
       "firetrucks": 1
     },
     "chances": {
@@ -5384,6 +5387,7 @@
       "main_building": 0,
       "rescue_stations": 1,
       "hazard_response_ems": 1,
+      "mountain_rescue": 2,
       "fire_stations": 4
     },
     "overlay_index": null,
@@ -37651,12 +37655,9 @@
     ],
     "requirements": {
       "battalion_chief_vehicles": 2,
-      "hazmat_vehicles": 1,
       "water_tankers": 1,
       "heavy_rescue_vehicles": 1,
-      "firetrucks": 5,
-      "police_cars": 2,
-      "personnel_educations": { "gw_gefahrgut": 4 }
+      "firetrucks": 5
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -37667,13 +37668,11 @@
       "patient_allow_first_responder_chance": 30,
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Traumatology"],
-      "patient_specializations": "Traumatology",
-      "personnel_educations": { "HazMat Unit": 4 }
+      "patient_specializations": "Traumatology"
     },
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 1,
       "fire_stations": 5
     },
     "overlay_index": null,
@@ -37684,8 +37683,8 @@
   {
     "id": "857",
     "name": "Washing machine on fire",
-    "place": "",
-    "place_array": [],
+    "place": "Launderette",
+    "place_array": ["Launderette"],
     "average_credits": 1010,
     "generated_by": "",
     "icons": [
@@ -37693,14 +37692,10 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1, "police_cars": 1 },
+    "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 3
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 857,
     "additive_overlays": "",
@@ -37709,8 +37704,8 @@
   {
     "id": "858",
     "name": "Dryer on fire",
-    "place": "",
-    "place_array": [],
+    "place": "Launderette",
+    "place_array": ["Launderette"],
     "average_credits": 1010,
     "generated_by": "",
     "icons": [
@@ -37718,14 +37713,10 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "platform_trucks": 1, "firetrucks": 1, "police_cars": 1 },
+    "requirements": { "firetrucks": 1 },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 1,
-      "fire_stations": 3
-    },
+    "prerequisites": { "main_building": 0, "fire_stations": 3 },
     "overlay_index": null,
     "base_mission_id": 858,
     "additive_overlays": "",
