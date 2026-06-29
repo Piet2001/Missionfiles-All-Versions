@@ -25097,6 +25097,56 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "711",
+    "name": "Accidente en autopista",
+    "place": "Salida de autopista",
+    "place_array": ["Salida de autopista"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 711,
+    "additive_overlays": "",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "711/a",
+    "name": "Accidente en autopista",
+    "place": "Salida de autopista",
+    "place_array": ["Salida de autopista"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 711,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
     "id": "713",
     "name": "Jugador desaparecido",
     "place": "",
