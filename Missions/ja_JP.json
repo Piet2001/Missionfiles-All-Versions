@@ -22885,6 +22885,56 @@
     "mission_categories": ["fire", "fire_support_specialization"]
   },
   {
+    "id": "667",
+    "name": "高速道路の事故",
+    "place": "高速インター",
+    "place_array": ["高速インター"],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 667,
+    "additive_overlays": "",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
+    "id": "667/a",
+    "name": "高速道路の事故",
+    "place": "高速インター",
+    "place_array": ["高速インター"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 667,
+    "additive_overlays": "a",
+    "mission_categories": ["police", "tow_trucks"]
+  },
+  {
     "id": "669",
     "name": "行方不明の選手",
     "place": "",
