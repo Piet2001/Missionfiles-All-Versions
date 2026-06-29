@@ -83839,5 +83839,51 @@
     "base_mission_id": 1219,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "1220",
+    "name": "Persoon geraakt door schroef van boot",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1740,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "diver_units": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "nef": 100, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [1, 4],
+      "patient_specialization_captions": [
+        "Algemene Heelkunde",
+        "Traumatologie"
+      ],
+      "patient_specializations": "Algemene Heelkunde, Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "wasserrettung": 2,
+      "water_rescue_2": 2,
+      "rescue_stations": 10,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1220,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance",
+      "water_rescue",
+      "water_rescue_specialization"
+    ]
   }
 ]
