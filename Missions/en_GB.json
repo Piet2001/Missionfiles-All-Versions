@@ -947,7 +947,7 @@
     "name": "Fire in Hospital - Major Incident",
     "place": "Hospital",
     "place_array": ["Hospital"],
-    "average_credits": 10000,
+    "average_credits": 10750,
     "generated_by": "",
     "icons": [
       "/images/fire_gruen.png",
@@ -962,7 +962,8 @@
       "water_tankers": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10
+      "firetrucks": 10,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -978,6 +979,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
+      "police_stations": 5,
       "fire_stations": 13
     },
     "overlay_index": null,
@@ -1014,7 +1016,8 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10
+      "firetrucks": 10,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -1030,6 +1033,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
+      "police_stations": 5,
       "mass_casualty_count": 1,
       "hazard_response_ems": 1,
       "fire_stations": 13
@@ -1067,7 +1071,8 @@
       "hazard_response_secondary": 2,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10
+      "firetrucks": 10,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -1083,6 +1088,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
+      "police_stations": 5,
       "hazard_response_ems": 1,
       "fire_stations": 13
     },
@@ -1117,7 +1123,8 @@
       "water_tankers": 1,
       "kdow_orgl": 1,
       "heavy_rescue_vehicles": 2,
-      "firetrucks": 10
+      "firetrucks": 10,
+      "police_cars": 3
     },
     "chances": { "patient_transport": 50 },
     "additional": {
@@ -1133,6 +1140,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 6,
+      "police_stations": 5,
       "mass_casualty_count": 1,
       "fire_stations": 13
     },
@@ -6680,7 +6688,7 @@
   },
   {
     "id": "176",
-    "name": "Unauthorized possession of weapons",
+    "name": "Possession of illegal weapons",
     "place": "",
     "place_array": [],
     "average_credits": 2500,
@@ -7836,7 +7844,7 @@
   },
   {
     "id": "199",
-    "name": "Person matching the description of a suspect in a crime",
+    "name": "Possible sighting of wanted person",
     "place": "",
     "place_array": [],
     "average_credits": 240,
@@ -7861,7 +7869,7 @@
   },
   {
     "id": "200",
-    "name": "Person matching the description of a suspect in a violent crime",
+    "name": "Possible sighting of wanted person with a violence markers",
     "place": "",
     "place_array": [],
     "average_credits": 600,
@@ -7886,7 +7894,7 @@
   },
   {
     "id": "201",
-    "name": "Person matching the description of a suspect in a violent crime (Firearms Marker)",
+    "name": "Possible sighting of wanted person with a firearms markers",
     "place": "",
     "place_array": [],
     "average_credits": 1200,
@@ -9119,7 +9127,7 @@
   },
   {
     "id": "237",
-    "name": "Speed radar",
+    "name": "Speed Detection",
     "place": "",
     "place_array": [],
     "average_credits": 2000,
@@ -17385,10 +17393,11 @@
       "/images/baseball_gelb.png",
       "/images/baseball_rot.png"
     ],
-    "requirements": { "k9": 1, "police_cars": 10 },
+    "requirements": { "k9": 1, "police_cars": 1 },
     "chances": { "patient_transport": 10, "patient_critical_care": 5 },
     "additional": {
       "possible_patient": 6,
+      "average_min_police_personnel": 10,
       "patient_uk_code_possible": ["C-3", "C-2"],
       "filter_id": "police_station_missions",
       "patient_specialization_ids": [0],
@@ -20855,7 +20864,7 @@
   },
   {
     "id": "424",
-    "name": "Car jacking",
+    "name": "Robbery of Motor Vehicle",
     "place": "",
     "place_array": [],
     "average_credits": 5000,
@@ -20882,7 +20891,7 @@
   },
   {
     "id": "425",
-    "name": "Car jacking [Firearm pulled]",
+    "name": "Armed Robbery of Motor Vehicle",
     "place": "",
     "place_array": [],
     "average_credits": 7000,
@@ -21099,7 +21108,7 @@
   },
   {
     "id": "432",
-    "name": "Person is stealing baby cows",
+    "name": "Person stealing calves",
     "place": "Farm",
     "place_array": ["Farm"],
     "average_credits": 900,
@@ -27643,6 +27652,39 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "601/a",
+    "name": "Demonstration against the construction of a motorway project",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10800,
+    "generated_by": "",
+    "icons": [
+      "/images/glasses_gruen.png",
+      "/images/glasses_gelb.png",
+      "/images/glasses_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4,
+      "personnel_educations": { "level_2_public_order": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "personnel_educations": { "Level 2 Public Order Officer": 6 }
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "personnel_educations": { "level_2_public_order": 10 }
+    },
+    "overlay_index": null,
+    "base_mission_id": 601,
+    "additive_overlays": "a",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "602",
     "name": "Motorcycle Hits Pedestrian",
     "place": "",
@@ -28923,7 +28965,7 @@
     "name": "High Risk Missing Person",
     "place": "",
     "place_array": [],
-    "average_credits": 15000,
+    "average_credits": 15275,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -28934,7 +28976,7 @@
       "search_and_rescue": 1,
       "search_and_rescue_command": 1,
       "oneof_police_drone_or_helicopter": 1,
-      "police_cars": 2,
+      "police_cars": 3,
       "water_rescue": 2,
       "personnel_educations": {
         "search_and_rescue": 1,
@@ -28974,7 +29016,7 @@
     "name": "Very High Risk Missing Person",
     "place": "",
     "place_array": [],
-    "average_credits": 18000,
+    "average_credits": 18750,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -28985,7 +29027,7 @@
       "search_and_rescue": 1,
       "search_and_rescue_command": 1,
       "oneof_police_drone_or_helicopter": 1,
-      "police_cars": 2,
+      "police_cars": 5,
       "water_rescue": 2,
       "personnel_educations": {
         "search_and_rescue": 1,
@@ -32485,7 +32527,7 @@
   },
   {
     "id": "738",
-    "name": "Lawyer caught padding cases",
+    "name": "Solicitor fraudulently charging customers",
     "place": "",
     "place_array": [],
     "average_credits": 900,
@@ -34674,7 +34716,7 @@
   },
   {
     "id": "790",
-    "name": "Unlawful residence report",
+    "name": "Unlawful Occupation Report (Squatting)",
     "place": "",
     "place_array": [],
     "average_credits": 850,
@@ -36335,8 +36377,8 @@
   {
     "id": "821",
     "name": "Dog running around on motorway",
-    "place": "Highway exit",
-    "place_array": ["Highway exit"],
+    "place": "Highway exit\nMajor Road Standby Point\nMotorway",
+    "place_array": ["Highway exit", "Major Road Standby Point", "Motorway"],
     "average_credits": 1000,
     "generated_by": "",
     "icons": [
@@ -37751,5 +37793,26 @@
     "base_mission_id": 859,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "860",
+    "name": "Dog loose on road",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 860,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
