@@ -35172,5 +35172,288 @@
     "base_mission_id": 906,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "911",
+    "name": "Pożar lokomotywy elektrycznej na szlaku",
+    "place": "Tor kolejowy",
+    "place_array": ["Tor kolejowy"],
+    "average_credits": 17550,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "railway_fire_engine": 2,
+      "railway_fire_engine_large": 2,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_support_count": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 911,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "912",
+    "name": "Zerwanie sieci trakcyjnej na przejeździe kolejowo-drogowym",
+    "place": "Przejazd kolejowy",
+    "place_array": ["Przejazd kolejowy"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "ambulances": 1,
+      "railway_fire_engine_large": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 912,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "913",
+    "name": "Zderzenie dwóch lokomotyw manewrowych",
+    "place": "Dworzec kolejowy (ruch podmiejski i dalekobieżny)",
+    "place_array": ["Dworzec kolejowy (ruch podmiejski i dalekobieżny)"],
+    "average_credits": 8900,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "railway_fire_engine": 1,
+      "railway_fire_engine_large": 2,
+      "railway_recovery_large": 1,
+      "firetrucks": 3,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [918]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 4,
+      "railway_fire": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 913,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "914",
+    "name": "Wykolejenie pociągu roboczego (infrastruktura)",
+    "place": "Dworzec kolejowy (ruch podmiejski i dalekobieżny)",
+    "place_array": ["Dworzec kolejowy (ruch podmiejski i dalekobieżny)"],
+    "average_credits": 19800,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "railway_fire_engine": 1,
+      "railway_fire_engine_large": 2,
+      "railway_recovery": 1,
+      "railway_recovery_large": 1,
+      "firetrucks": 4,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [918]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "railway_fire": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 914,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "915",
+    "name": "Pożar wagonu do przewozu samochodów na peronie metra",
+    "place": "Stacja metra",
+    "place_array": ["Stacja metra"],
+    "average_credits": 24500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "foam": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "hose": 1,
+      "ambulances": 1,
+      "railway_fire_engine": 3,
+      "railway_fire_engine_large": 3,
+      "railway_fire_platform_container": 1,
+      "railway_fire_equipment_container": 1,
+      "railway_fan": 1,
+      "firetrucks": 8,
+      "police_cars": 6
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 6,
+      "railway_fire": 2,
+      "fire_stations": 19
+    },
+    "overlay_index": null,
+    "base_mission_id": 915,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "916",
+    "name": "Pożar transformatora w podstacji elektrycznej",
+    "place": "Stacja metra",
+    "place_array": ["Stacja metra"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "railway_fire_engine_large": 1,
+      "railway_fire_platform_container": 1,
+      "railway_fire_equipment_container": 1,
+      "railway_fan": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 916,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "917",
+    "name": "Pożar skarpy przy torach kolejowych",
+    "place": "Tor kolejowy",
+    "place_array": ["Tor kolejowy"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "railway_fire_engine_large": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "railway_fire": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 917,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
+  },
+  {
+    "id": "918",
+    "name": "Ewakuacja medyczna – pożar kolejowy",
+    "place": "Tor kolejowy",
+    "place_array": ["Tor kolejowy"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 80 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "subsequent_mission_only": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": { "main_building": 0 },
+    "overlay_index": null,
+    "base_mission_id": 918,
+    "additive_overlays": "",
+    "mission_categories": ["railway_fire", "railway_fire_specialization"]
   }
 ]
