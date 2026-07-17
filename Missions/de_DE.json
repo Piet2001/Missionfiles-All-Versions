@@ -189430,5 +189430,42 @@
     "base_mission_id": 1011,
     "additive_overlays": "ab",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1012",
+    "name": "Einbruch auf Flughafengelände",
+    "place": "Flughafen (klein): Start-/Landebahn\nFlughafen (klein): Gebäude\nFlughafen (klein): Flugzeug Standplatz\nFlughafen (groß): Start-/Landebahn\nFlughafen (groß): Terminal\nFlughafen (groß): Vorfeld / Standplätze\nFlughafen (groß): Parkhaus",
+    "place_array": [
+      "Flughafen (klein): Start-/Landebahn",
+      "Flughafen (klein): Gebäude",
+      "Flughafen (klein): Flugzeug Standplatz",
+      "Flughafen (groß): Start-/Landebahn",
+      "Flughafen (groß): Terminal",
+      "Flughafen (groß): Vorfeld / Standplätze",
+      "Flughafen (groß): Parkhaus"
+    ],
+    "average_credits": 1190,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "oneof_police_patrol_or_civil_patrol_or_motorcycle": 3,
+      "police_cars": 1
+    },
+    "chances": { "k9": 45 },
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions",
+      "need_k9_only_if_guard_dogs_present": true
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 1012,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
