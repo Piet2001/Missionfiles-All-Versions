@@ -37839,5 +37839,43 @@
     "base_mission_id": 861,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "862",
+    "name": "ANPR Activation - High Risk Missing Person",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "traffic_car": 2,
+      "oneof_police_drone_or_helicopter": 1,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-3"],
+      "filter_id": "police_station_missions",
+      "need_traffic_car_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 7,
+      "police_helicopter_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 862,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
