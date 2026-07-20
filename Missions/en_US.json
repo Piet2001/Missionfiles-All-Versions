@@ -58480,5 +58480,61 @@
     "base_mission_id": 1157,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1158",
+    "name": "Glass shards in the eye",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["27-D-4"],
+      "allow_ktw_instead_of_rtw": true,
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 3 },
+    "overlay_index": null,
+    "base_mission_id": 1158,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1159",
+    "name": "Lotto millionaire robbed",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 1159,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
