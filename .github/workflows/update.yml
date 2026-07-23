@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+  queue: max
+  
 jobs:
   en_AU:
     runs-on: ubuntu-latest
