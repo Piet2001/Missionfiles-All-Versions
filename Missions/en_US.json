@@ -58536,5 +58536,75 @@
     "base_mission_id": 1159,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1160",
+    "name": "Burglary in Auction House",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "k9": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": { "main_building": 5, "police_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 1160,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1161",
+    "name": "Person falls into a silo and gets stuck",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "ambulances": 2,
+      "oneof_fire_engine_or_rescue": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "20-B-1",
+        "17-B-1",
+        "17-B-3",
+        "17-D-2",
+        "17-D-4"
+      ],
+      "allow_ktw_instead_of_rtw": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 2,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1161,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
   }
 ]
