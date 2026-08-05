@@ -49745,6 +49745,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1024],
       "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [4],
       "patient_specialization_captions": ["Unfallchirurgie"],
@@ -77399,7 +77400,7 @@
     },
     "chances": { "mobile_command_vehicles": 15 },
     "additional": {
-      "expansion_missions_ids": [205, 206],
+      "expansion_missions_ids": [205, 206, 1026],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -77436,7 +77437,7 @@
     },
     "chances": { "mobile_command_vehicles": 15 },
     "additional": {
-      "expansion_missions_ids": [205, 206],
+      "expansion_missions_ids": [205, 206, 1026],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -114156,6 +114157,7 @@
     "additional": {
       "possible_patient": 3,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1024],
       "filter_id": "police_station_missions",
       "date_start": "2026-03-13T10:00:00Z",
       "date_end": "2026-06-19T22:00:00Z",
@@ -115367,6 +115369,7 @@
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 1,
+      "followup_missions_ids": [1025],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
       "date_end": "2026-08-21T09:00:00Z",
@@ -189467,5 +189470,705 @@
     "base_mission_id": 1012,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1013",
+    "name": "Kleintier in Not",
+    "place": "",
+    "place_array": [],
+    "average_credits": 420,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "animal_rescue": 1 },
+    "chances": { "platform_trucks": 20 },
+    "additional": {
+      "average_min_fire_personnel": 3,
+      "filter_id": "animal_rescue_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "animal_rescue": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1013,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1014",
+    "name": "Tier auf Eisfläche gefangen",
+    "place": "See",
+    "place_array": ["See"],
+    "average_credits": 490,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": { "animal_rescue": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "animal_rescue_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "animal_rescue": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1014,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1015",
+    "name": "Giftiges Kleintier entflohen",
+    "place": "Zoo",
+    "place_array": ["Zoo"],
+    "average_credits": 840,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_rescue": 1,
+      "animal_rescue": 1,
+      "police_cars": 1
+    },
+    "chances": { "police_cars": 50, "nef": 60, "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "average_min_fire_personnel": 9,
+      "filter_id": "animal_rescue_missions",
+      "allow_without_poi": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Allgemeine Innere"],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "animal_rescue": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1015,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1016",
+    "name": "Pferd in Jauchegrube",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 1290,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 1,
+      "animal_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": { "platform_trucks": 70, "fwk": 5 },
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "animal_rescue": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1016,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1017",
+    "name": "Hundeangriff",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1090,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_motorcycle": 2,
+      "animal_rescue": 1
+    },
+    "chances": { "nef": 25, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "animal_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1017,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1018",
+    "name": "Wildunfall",
+    "place": "",
+    "place_array": [],
+    "average_credits": 490,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_motorcycle": 1,
+      "animal_rescue": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "animal_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1018,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1019",
+    "name": "Reitunfall mit Pkw",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1490,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": { "animal_rescue": 1, "police_cars": 1 },
+    "chances": { "nef": 50, "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "animal_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1019,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1020",
+    "name": "Feuer im Zoo",
+    "place": "Zoo",
+    "place_array": ["Zoo"],
+    "average_credits": 4565,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "animal_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 50,
+      "nef": 15,
+      "patient_transport": 45
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 0,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "animal_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1020,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1020/a",
+    "name": "Feuer im Zoo",
+    "place": "Zoo",
+    "place_array": ["Zoo"],
+    "average_credits": 4965,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "animal_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 50,
+      "nef": 15,
+      "patient_transport": 45
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 0,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "police_service_group_leader": 5,
+      "animal_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1020,
+    "additive_overlays": "a",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1020/b",
+    "name": "Feuer im Zoo",
+    "place": "Zoo",
+    "place_array": ["Zoo"],
+    "average_credits": 4965,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "drone": 1,
+      "animal_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 50,
+      "nef": 15,
+      "patient_transport": 45
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 0,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "drone": 1,
+      "animal_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1020,
+    "additive_overlays": "b",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1020/ab",
+    "name": "Feuer im Zoo",
+    "place": "Zoo",
+    "place_array": ["Zoo"],
+    "average_credits": 5365,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 1,
+      "drone": 1,
+      "animal_rescue": 1,
+      "firetrucks": 6,
+      "police_cars": 4
+    },
+    "chances": {
+      "mobile_air_vehicles": 50,
+      "water_tankers": 50,
+      "nef": 15,
+      "patient_transport": 45
+    },
+    "additional": {
+      "possible_patient": 9,
+      "possible_patient_min": 0,
+      "filter_id": "animal_rescue_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Allgemeine Chirurgie"],
+      "patient_specializations": "Allgemeine Chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 4,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "animal_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1020,
+    "additive_overlays": "ab",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1021",
+    "name": "Gewässerverschmutzung durch Öl",
+    "place": "See\nFluss",
+    "place_array": ["See", "Fluss"],
+    "average_credits": 1890,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "boats": 1,
+      "battalion_chief_vehicles": 1,
+      "gwoil": 1,
+      "oneof_police_patrol_or_civil_patrol_or_motorcycle": 1,
+      "animal_rescue": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [528],
+      "filter_id": "animal_rescue_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "police_stations": 1,
+      "animal_rescue": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1021,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1022",
+    "name": "Tiere auf der Fahrbahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 790,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_motorcycle": 2,
+      "animal_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [
+        25, 27, 120, 121, 122, 123, 124, 125, 126, 127, 128
+      ],
+      "filter_id": "animal_rescue_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "animal_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1022,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1023",
+    "name": "Pferd auf Feldmark entlaufen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1845,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "police_horse": 2,
+      "animal_rescue": 1,
+      "police_cars": 2,
+      "personnel_educations": { "police_horse": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 9,
+      "filter_id": "animal_rescue_missions",
+      "personnel_educations": { "Reiterstaffel": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "police_horse": 1,
+      "animal_rescue": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1023,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1023/a",
+    "name": "Pferd auf Feldmark entlaufen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2745,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "police_horse": 2,
+      "animal_rescue": 1,
+      "police_cars": 2,
+      "personnel_educations": { "police_horse": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 9,
+      "filter_id": "animal_rescue_missions",
+      "personnel_educations": { "Reiterstaffel": 2 }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "police_helicopter_stations": 1,
+      "police_horse": 1,
+      "animal_rescue": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1023,
+    "additive_overlays": "a",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1024",
+    "name": "Wildtier einfangen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2030,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "animal_rescue": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "animal_rescue": 1,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 1024,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1025",
+    "name": "Wespennest umsiedeln",
+    "place": "",
+    "place_array": [],
+    "average_credits": 855,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "animal_rescue": 1,
+      "firetrucks": 1
+    },
+    "chances": { "platform_trucks": 30 },
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "animal_rescue": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1025,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1026",
+    "name": "Brennender Stall - Tierrettung",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 3790,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "animal_rescue": 1,
+      "firetrucks": 6
+    },
+    "chances": { "mobile_command_vehicles": 15 },
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "animal_rescue": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 1026,
+    "additive_overlays": "",
+    "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1026/a",
+    "name": "Brennender Stall - Tierrettung",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 4190,
+    "generated_by": "",
+    "icons": [
+      "/images/animal_rescue_gruen.png",
+      "/images/animal_rescue_gelb.png",
+      "/images/animal_rescue_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "police_service_group_leader": 1,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "animal_rescue": 1,
+      "firetrucks": 6
+    },
+    "chances": { "mobile_command_vehicles": 15 },
+    "additional": { "filter_id": "animal_rescue_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "animal_rescue": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 1026,
+    "additive_overlays": "a",
+    "mission_categories": ["animal_rescue"]
   }
 ]
