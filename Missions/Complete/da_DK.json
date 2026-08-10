@@ -29592,5 +29592,60 @@
     "base_mission_id": 767,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "768",
+    "name": "Kolonihavehus i brand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "mobile_command_vehicles": 1,
+      "elw_police": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "hose": 1,
+      "kdow_orgl": 1,
+      "ambulances": 2,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 3000,
+      "energy_supply": 3,
+      "light_supply": 3,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 1 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "need_elw_police_only_if_present": true,
+      "date_start": "2026-08-10T10:00:00+02:00",
+      "date_end": "2026-08-21T09:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 3,
+      "fire_support_count": 1,
+      "energy_supply": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 768,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
