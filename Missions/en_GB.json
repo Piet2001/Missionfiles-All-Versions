@@ -37924,6 +37924,7 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 0,
+      "followup_missions_ids": [868],
       "patient_uk_code_possible": ["C-2"],
       "filter_id": "police_station_missions",
       "patient_allow_first_responder_chance": 30,
@@ -37940,5 +37941,52 @@
     "base_mission_id": 864,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "868",
+    "name": "Lost Child at Beach - Coastguard Search",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 3850,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "coastal_rescue": 2,
+      "police_cars": 2,
+      "personnel_educations": {
+        "search_and_rescue": 1,
+        "search_and_rescue_command": 2
+      }
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "patient_uk_code_possible": ["C-2"],
+      "filter_id": "coastal_rescue_missions",
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [9],
+      "patient_specialization_captions": ["Large Hospital"],
+      "patient_specializations": "Large Hospital",
+      "personnel_educations": { "Search Advisor": 1, "SAR Commander": 2 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_rescue_2": 1,
+      "rescue_stations": 2,
+      "police_stations": 3,
+      "personnel_educations": {
+        "search_and_rescue": 2,
+        "search_and_rescue_command": 4
+      }
+    },
+    "overlay_index": null,
+    "base_mission_id": 868,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue_2"]
   }
 ]
