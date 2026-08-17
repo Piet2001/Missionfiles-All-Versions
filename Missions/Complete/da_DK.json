@@ -29647,5 +29647,42 @@
     "base_mission_id": 768,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "769",
+    "name": "Kollega i knibe",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "detention_unit": 1, "police_cars": 10 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "min_possible_prisoners": 6,
+      "max_possible_prisoners": 12,
+      "filter_id": "police_station_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "need_elw_police_only_if_present": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Specialister i intern medicin"],
+      "patient_specializations": "Specialister i intern medicin"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 4,
+      "police_stations": 8,
+      "detention_unit_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 769,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
