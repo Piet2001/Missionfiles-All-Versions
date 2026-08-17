@@ -37943,6 +37943,39 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "865",
+    "name": "Worsening Dementia",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "oneof_paramedic_or_paramedic_advanced": 1 },
+    "chances": { "patient_transport": 30, "patient_critical_care": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_uk_code_possible": ["C-4"],
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 3,
+      "general_practitioner": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 865,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
     "id": "868",
     "name": "Lost Child at Beach - Coastguard Search",
     "place": "Beach",
