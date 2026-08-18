@@ -21678,6 +21678,54 @@
     "mission_categories": ["coastal_rescue_ocean"]
   },
   {
+    "id": "552/a",
+    "name": "Ultraleggero Precipitato in Mare",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3800,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 2,
+      "coastal_guard_boat": 1,
+      "coastal_helicopter": 1,
+      "fire_boat": 2
+    },
+    "chances": { "patient_transport": 60, "helicopter": 40 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 4,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 3,
+      "coastal_helicopter_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 552,
+    "additive_overlays": "a",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "553",
     "name": "Soccorso in Acque Profonde",
     "place": "",
@@ -29953,6 +30001,52 @@
     "mission_categories": ["coastal_rescue_ocean"]
   },
   {
+    "id": "768/a",
+    "name": "Barca in fiamme nell’oceano",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 2,
+      "large_coastal_boat": 2,
+      "fire_boat": 2
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 768,
+    "additive_overlays": "a",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "769",
     "name": "Motocicletta che va troppo veloce",
     "place": "",
@@ -33583,7 +33677,7 @@
       "/images/dancinghall_gelb.png",
       "/images/dancinghall_rot.png"
     ],
-    "requirements": { "coastal_command": 2 },
+    "requirements": { "oneof_streifenwagen_or_coastal_command": 2 },
     "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
