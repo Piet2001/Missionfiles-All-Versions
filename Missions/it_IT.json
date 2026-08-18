@@ -34026,5 +34026,1128 @@
     "base_mission_id": 862,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "865",
+    "name": "Bagnante in difficoltà",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "rescueboat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [15],
+      "patient_specialization_captions": ["Malattie infettive"],
+      "patient_specializations": "Malattie infettive"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 6,
+      "coastal_rescue_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 865,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "866",
+    "name": "Incendio piccola imbarcazione",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "fire_boat": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["ocean_missions"]
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 866,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "867",
+    "name": "Incendio piccola imbarcazione",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_dinghy_fire": 1,
+      "coastal_jetski_fire": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["ocean_missions"]
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 867,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "868",
+    "name": "Incendio piccola imbarcazione",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_dinghy_fire": 2,
+      "coastal_jetski_fire": 1,
+      "rescueboat": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 3,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 868,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "869",
+    "name": "Incendio barca a vela",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 1,
+      "fire_boat": 1,
+      "firetrucks": 1
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 6,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC20R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 6,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 869,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "870",
+    "name": "Incendio yacht",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 1100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 1,
+      "fire_boat": 1
+    },
+    "chances": { "patient_transport": 10, "helicopter": 5 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 1,
+      "coastal_rescue_count": 6,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 870,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "871",
+    "name": "Incendio nave cargo",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1,
+      "heli_tech": 1,
+      "fire_boat_large": 2,
+      "fire_boat": 4,
+      "police_boat": 2,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 8,
+      "fire_boat_docks": 3,
+      "personnel_educations": { "heli_tech": 2 },
+      "coastal_rescue_count": 4,
+      "police_boat_dock": 2,
+      "heli_tech": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 871,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "872",
+    "name": "Incendio nave da crociera",
+    "place": "Molo navi da crociera\nPorticciolo",
+    "place_array": ["Molo navi da crociera", "Porticciolo"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1,
+      "heli_tech": 1,
+      "fire_boat_large": 1,
+      "fire_boat": 4,
+      "police_boat": 2,
+      "personnel_educations": { "heli_tech": 1 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 80,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale",
+      "personnel_educations": { "Tecnico di Elisoccorso": 1 }
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 12,
+      "fire_boat_docks": 3,
+      "personnel_educations": { "heli_tech": 2 },
+      "coastal_rescue_count": 8,
+      "police_boat_dock": 8,
+      "heli_tech": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 872,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "873",
+    "name": "Incendio nave",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "large_coastal_boat": 2, "fire_boat": 3 },
+    "chances": { "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 3,
+      "coastal_rescue_count": 2,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 873,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "873/a",
+    "name": "Incendio nave",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "large_coastal_boat": 2,
+      "coastal_helicopter": 1,
+      "fire_boat": 3
+    },
+    "chances": { "patient_transport": 100, "helicopter": 15 },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 3,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 873,
+    "additive_overlays": "a",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "874",
+    "name": "Incendio petroliera",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 6,
+      "fire_boat_large": 3,
+      "police_boat_large": 1,
+      "rescueboat": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 3,
+      "coastal_rescue_count": 8,
+      "police_boat_dock": 8,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 874,
+    "additive_overlays": "",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "874/a",
+    "name": "Incendio petroliera",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "coastal_boat": 1,
+      "large_coastal_boat": 6,
+      "coastal_helicopter": 1,
+      "fire_boat_large": 3,
+      "police_boat_large": 1,
+      "rescueboat": 2
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "handoff_possible_via_building_types": [26],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 32,
+      "rescue_stations": 6,
+      "fire_boat_docks": 3,
+      "coastal_rescue_count": 8,
+      "coastal_helicopter_count": 1,
+      "police_boat_dock": 8,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 874,
+    "additive_overlays": "a",
+    "mission_categories": ["fire_ocean"]
+  },
+  {
+    "id": "875",
+    "name": "Controllo doganale sotto costa",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "coastal_jetski_police": 1,
+      "personnel_educations": { "law_enforcement_marine": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 1 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 1,
+      "personnel_educations": { "law_enforcement_marine": 2 },
+      "coastal_rescue_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 875,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "876",
+    "name": "Intercettazione motoscafo",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_dinghy_police": 2,
+      "coastal_jetski_police": 2,
+      "personnel_educations": { "law_enforcement_marine": 6 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 6 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 1,
+      "personnel_educations": { "law_enforcement_marine": 12 },
+      "police_boat_dock": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 876,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "877",
+    "name": "Rissa a bordo di uno yact",
+    "place": "Lago\nFiume\nPorticciolo",
+    "place_array": ["Lago", "Fiume", "Porticciolo"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_boat": 2,
+      "rescueboat": 1,
+      "personnel_educations": { "law_enforcement_marine": 6 }
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 2,
+      "patient_it_code_possible": ["ZC01R", "ZC01G", "ZC01V"],
+      "filter_id": "police_station_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurgia generale"],
+      "patient_specializations": "Chirurgia generale",
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 6 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 2,
+      "personnel_educations": { "law_enforcement_marine": 12 },
+      "police_boat_dock": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 877,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "878",
+    "name": "Contrasto al narcotraffico",
+    "place": "Lago\nFiume\nPorticciolo",
+    "place_array": ["Lago", "Fiume", "Porticciolo"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_boat_large": 1,
+      "police_boat": 2,
+      "personnel_educations": { "law_enforcement_marine": 12 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 10,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 12 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 8,
+      "personnel_educations": { "law_enforcement_marine": 24 },
+      "police_boat_dock": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 878,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "879",
+    "name": "Controllo doganale piccola imbarcazione",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_dinghy_police": 1,
+      "personnel_educations": { "law_enforcement_marine": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 2 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 5,
+      "personnel_educations": { "law_enforcement_marine": 4 },
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 879,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "880",
+    "name": "Contrasto all'immigrazione clandestina",
+    "place": "Porticciolo",
+    "place_array": ["Porticciolo"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_boat_large": 1,
+      "police_boat": 3,
+      "personnel_educations": { "law_enforcement_marine": 12 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 12 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 6,
+      "personnel_educations": { "law_enforcement_marine": 24 },
+      "police_boat_dock": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 880,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "881",
+    "name": "Controllo fiscale piccola imbarcazione",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_dinghy_police": 1,
+      "personnel_educations": { "law_enforcement_marine": 2 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 2 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 3,
+      "personnel_educations": { "law_enforcement_marine": 4 },
+      "coastal_rescue_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 881,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "882",
+    "name": "Controllo fiscale sotto costa",
+    "place": "Lago\nFiume",
+    "place_array": ["Lago", "Fiume"],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "coastal_jetski_police": 1,
+      "personnel_educations": { "law_enforcement_marine": 1 }
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 1 }
+    },
+    "prerequisites": {
+      "main_building": 33,
+      "police_stations": 3,
+      "personnel_educations": { "law_enforcement_marine": 2 },
+      "coastal_rescue_count": 1,
+      "police_boat_dock": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 882,
+    "additive_overlays": "",
+    "mission_categories": ["police_ocean"]
+  },
+  {
+    "id": "883",
+    "name": "Accoltellamento",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 850,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01R", "SC01G", "ZC01R", "SC01V"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["default"]
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 883,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
+  },
+  {
+    "id": "884",
+    "name": "Scippo",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "coastal_rescue_missions"
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 884,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
+  },
+  {
+    "id": "885",
+    "name": "Cellulare Rubato",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 1,
+      "filter_id": "coastal_rescue_missions"
+    },
+    "prerequisites": { "main_building": 26, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 885,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
+  },
+  {
+    "id": "886",
+    "name": "Erba che brucia",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 2000, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [888],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 886,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid", "beach_specialization"]
+  },
+  {
+    "id": "887",
+    "name": "Foglie che bruciano",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 210,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 2000, "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [888],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 887,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid", "beach_specialization"]
+  },
+  {
+    "id": "888",
+    "name": "Piccolo campo in fiamme",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 5000, "firetrucks": 2 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 888,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid", "beach_specialization"]
+  },
+  {
+    "id": "889",
+    "name": "Arbusti in Fiamme",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 700,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "water_needed": 800, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 889,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid", "beach_specialization"]
+  },
+  {
+    "id": "890",
+    "name": "Infarto",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["KC02R", "PC02R", "LC02R"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Cardiologia",
+        "Chirurgia cardiaca",
+        "Cardiologia",
+        "Chirurgia cardiaca",
+        "Cardiologia",
+        "Chirurgia cardiaca"
+      ],
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Chirurgia cardiaca"],
+      "patient_specializations": "Chirurgia cardiaca"
+    },
+    "prerequisites": { "main_building": 26, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 890,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
+  },
+  {
+    "id": "891",
+    "name": "Intossicazione da alcol",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC07G", "SC07V", "SC07R"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 26, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 891,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
+  },
+  {
+    "id": "892",
+    "name": "Trauma Distorsivo",
+    "place": "Spiaggia",
+    "place_array": ["Spiaggia"],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["SC01G", "SC01V"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": { "main_building": 26, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 892,
+    "additive_overlays": "",
+    "mission_categories": ["beach_specialization"]
   }
 ]
