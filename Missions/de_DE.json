@@ -195328,5 +195328,44 @@
     "base_mission_id": 1030,
     "additive_overlays": "a",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "1031",
+    "name": "Person in Müllwagen eingeklemmt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1755,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "nef": 100, "patient_transport": 100, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 1031,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
