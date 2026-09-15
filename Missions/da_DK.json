@@ -29809,5 +29809,205 @@
     "base_mission_id": 773,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "777",
+    "name": "Fuldbyrdelse af ransagningskendelse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 2 },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [486],
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 777,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "778",
+    "name": "Indbrud i museum",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 1,
+      "oneof_police_patrol_or_motorcycle": 5,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 778,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "779",
+    "name": "Indbrud i villa",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "civil_patrolcar": 1,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "police_cars": 1
+    },
+    "chances": { "k9": 20 },
+    "additional": {
+      "expansion_missions_ids": [634, 635],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 779,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "780",
+    "name": "Indbrud i villa - gerningsmand til stede",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1300,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "civil_patrolcar": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_cars": 1
+    },
+    "chances": { "civil_patrolcar": 70 },
+    "additional": {
+      "expansion_missions_ids": [635],
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 780,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "781",
+    "name": "Indbrud i villa - gerningsmand flygtet",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_helicopters": 1,
+      "civil_patrolcar": 1,
+      "oneof_police_patrol_or_motorcycle": 6,
+      "police_cars": 1
+    },
+    "chances": { "k9": 50, "civil_patrolcar": 70 },
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 781,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
+  },
+  {
+    "id": "782",
+    "name": "Bortførelse",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/shooting_gruen.png",
+      "/images/shooting_gelb.png",
+      "/images/shooting_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "ambulances": 1,
+      "civil_patrolcar": 2,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 10,
+      "police_helicopter_stations": 1,
+      "criminal_investigation_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 782,
+    "additive_overlays": "",
+    "mission_categories": ["criminal_investigation"]
   }
 ]
