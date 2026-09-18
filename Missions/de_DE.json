@@ -163158,6 +163158,151 @@
     "mission_categories": ["fire"]
   },
   {
+    "id": "948",
+    "name": "Schwerer Erntediebstahl",
+    "place": "Bauernhof",
+    "place_array": ["Bauernhof"],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "oneof_police_patrol_or_civil_patrol": 2,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 0,
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 948,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "949",
+    "name": "Pilzsucher im Wald verunglückt",
+    "place": "Wald",
+    "place_array": ["Wald"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "nef": 20,
+      "patient_other_treatment": 80,
+      "patient_transport": 80
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
+      "patient_specialization_ids": [0, 1],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 949,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "950",
+    "name": "Pilzsucher im Bergwald verunglückt",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "mountain": 1 },
+    "chances": { "nef": 30, "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
+      "patient_specialization_ids": [0, 1],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie"
+    },
+    "prerequisites": { "main_building": 25, "mountain_rescue": 1 },
+    "overlay_index": null,
+    "base_mission_id": 950,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "950/a",
+    "name": "Pilzsucher im Bergwald verunglückt (Windenrettung)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1450,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "mountain_equipment": 1, "lift": 1, "mountain": 1 },
+    "chances": {
+      "mountain_equipment": 50,
+      "nef": 30,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mountain_missions",
+      "vehicle_groups": ["mountain_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [25],
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59+01:00",
+      "patient_specialization_ids": [0, 1],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie"
+    },
+    "prerequisites": { "main_building": 25, "mountain_rescue": 1, "lift": 1 },
+    "overlay_index": null,
+    "base_mission_id": 950,
+    "additive_overlays": "a",
+    "mission_categories": ["mountain"]
+  },
+  {
     "id": "951",
     "name": "Waffenfund",
     "place": "",
