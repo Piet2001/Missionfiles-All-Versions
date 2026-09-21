@@ -35244,5 +35244,49 @@
     "base_mission_id": 893,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "894",
+    "name": "Ricerca sub scomparso",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": { "personnel_educations": { "law_enforcement_marine": 9 } },
+    "chances": { "patient_transport": 65 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC03R", "ZC03G", "ZC03V"],
+      "filter_id": "coastal_rescue_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [26],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale",
+      "personnel_educations": { "Ufficiale di Polizia Marittima": 9 }
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "rescue_stations": 2,
+      "personnel_educations": { "law_enforcement_marine": 15 },
+      "coastal_rescue_count": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 894,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
