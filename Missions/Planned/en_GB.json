@@ -1065,6 +1065,59 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "875",
+    "name": "Ship with engine failure",
+    "place": "",
+    "place_array": [],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "coastal_guard_boat": 2 },
+    "chances": {},
+    "additional": {
+      "duration_text": "20 minutes",
+      "duration": 1200,
+      "guard_mission": true,
+      "filter_id": "coastal_rescue_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": { "main_building": 27, "coastal_rescue_count": 2 },
+    "overlay_index": null,
+    "base_mission_id": 875,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "878",
+    "name": "Beach patrol",
+    "place": "Beach",
+    "place_array": ["Beach"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": { "oneof_lifeguard_quad_or_atv": 1 },
+    "chances": {},
+    "additional": {
+      "duration_text": "30 minutes",
+      "duration": 1800,
+      "guard_mission": true,
+      "filter_id": "coastal_rescue_missions"
+    },
+    "prerequisites": { "main_building": 37, "lifeguard_station": 1 },
+    "overlay_index": null,
+    "base_mission_id": 878,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
     "id": "750",
     "name": "Aerial Ladder Platform Training",
     "place": "",
