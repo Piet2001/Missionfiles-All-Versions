@@ -127,7 +127,7 @@
     "overlay_index": null,
     "base_mission_id": 4,
     "additive_overlays": "",
-    "mission_categories": ["technical_aid"]
+    "mission_categories": ["fire", "technical_aid"]
   },
   {
     "id": "5",
@@ -217,7 +217,7 @@
     "overlay_index": null,
     "base_mission_id": 7,
     "additive_overlays": "",
-    "mission_categories": ["technical_aid"]
+    "mission_categories": ["fire", "technical_aid"]
   },
   {
     "id": "8",
@@ -279,10 +279,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 2500, "firetrucks": 1 },
+    "requirements": { "water_needed": 2500, "firetrucks": 1, "police_cars": 1 },
     "chances": {},
-    "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "additional": {
+      "expansion_missions_ids": [19],
+      "filter_id": "firehouse_missions",
+      "max_municipal_police_replacing_police_cars": 1
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
     "overlay_index": null,
     "base_mission_id": 10,
     "additive_overlays": "",
@@ -391,7 +399,7 @@
     "overlay_index": null,
     "base_mission_id": 14,
     "additive_overlays": "",
-    "mission_categories": ["technical_aid"]
+    "mission_categories": ["fire", "technical_aid"]
   },
   {
     "id": "16",
@@ -462,7 +470,7 @@
     "overlay_index": null,
     "base_mission_id": 18,
     "additive_overlays": "",
-    "mission_categories": ["technical_aid"]
+    "mission_categories": ["fire", "technical_aid"]
   },
   {
     "id": "19",
