@@ -35186,7 +35186,11 @@
       "/images/medicalstore_rot.png"
     ],
     "requirements": {},
-    "chances": { "patient_transport": 50, "patient_critical_care": 50 },
+    "chances": {
+      "kdow_orgl": 50,
+      "patient_transport": 50,
+      "patient_critical_care": 50
+    },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
@@ -35800,5 +35804,350 @@
     "base_mission_id": 926,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "927",
+    "name": "Wypadek lotniczy – kod A",
+    "place": "Mały port lotniczy (pas startowy)",
+    "place_array": ["Mały port lotniczy (pas startowy)"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "oneof_fire_engine_or_airport_fire_engine": 3,
+      "oneof_fire_command_or_airport_fire_command": 3,
+      "oneof_airport_fire_engine_or_engine_large": 1,
+      "airport_rescue": 1,
+      "kdow_orgl": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 8,
+      "airport": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 927,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "928",
+    "name": "Wypadek lotniczy – kod C",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "hazmat_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 4,
+      "oneof_fire_engine_or_airport_fire_engine_large": 7,
+      "oneof_fire_command_or_airport_fire_command": 6,
+      "oneof_fire_command_advanced_or_airport_fire_command": 1,
+      "arff": 1,
+      "airport_equipment": 2,
+      "airport_command": 1,
+      "elw_airport": 1,
+      "airport_rescue": 2,
+      "kdow_orgl": 5,
+      "firetrucks": 1,
+      "police_cars": 8
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 175,
+      "possible_patient_min": 75,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 11,
+      "police_stations": 10,
+      "airport": 2,
+      "airport_2": 1,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 928,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "929",
+    "name": "Wypadek lotniczy – kod F",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 24000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "hazmat_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 2,
+      "traffic_car": 6,
+      "oneof_fire_engine_or_airport_fire_engine_large": 10,
+      "oneof_fire_command_or_airport_fire_command": 6,
+      "oneof_fire_command_advanced_or_airport_fire_command": 1,
+      "oneof_fire_ladder_or_rescue_stairs": 1,
+      "arff": 5,
+      "airport_equipment": 4,
+      "airport_command": 2,
+      "elw_airport": 1,
+      "airport_rescue": 1,
+      "kdow_orgl": 5,
+      "firetrucks": 1,
+      "police_cars": 12
+    },
+    "chances": { "patient_transport": 15, "patient_critical_care": 80 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 150,
+      "filter_id": "firehouse_missions",
+      "allow_ktw_instead_of_rtw": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Interna"],
+      "patient_specializations": "Interna"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 10,
+      "airport": 3,
+      "airport_2": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 929,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "930",
+    "name": "Wypadek lotniczy – kod D",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 16000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "hazmat_vehicles": 2,
+      "water_tankers": 4,
+      "traffic_car": 2,
+      "oneof_fire_engine_or_airport_fire_engine_large": 5,
+      "arff": 5,
+      "airport_equipment": 4,
+      "airport_command": 2,
+      "elw_airport": 1,
+      "kdow_orgl": 2,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 10,
+      "airport": 3,
+      "airport_2": 2,
+      "fire_stations": 11
+    },
+    "overlay_index": null,
+    "base_mission_id": 930,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "931",
+    "name": "Przegrzane hamulce – kod D",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 18000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "hazmat_vehicles": 2,
+      "water_tankers": 6,
+      "traffic_car": 2,
+      "oneof_fire_engine_or_airport_fire_engine_large": 7,
+      "oneof_fire_command_or_airport_fire_command": 1,
+      "arff": 5,
+      "airport_equipment": 4,
+      "airport_command": 2,
+      "elw_airport": 1,
+      "airport_rescue": 1,
+      "kdow_orgl": 2,
+      "firetrucks": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 10,
+      "airport": 3,
+      "airport_2": 2,
+      "fire_stations": 13
+    },
+    "overlay_index": null,
+    "base_mission_id": 931,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "932",
+    "name": "Wyciek paliwa z samolotu – kod A",
+    "place": "Mały port lotniczy (pas startowy)",
+    "place_array": ["Mały port lotniczy (pas startowy)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/oil_gruen.png",
+      "/images/oil_gelb.png",
+      "/images/oil_rot.png"
+    ],
+    "requirements": {
+      "oneof_fire_engine_or_airport_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "airport": 1, "fire_stations": 6 },
+    "overlay_index": null,
+    "base_mission_id": 932,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "933",
+    "name": "Zderzenie z ptakiem – kod A",
+    "place": "Mały port lotniczy (pas startowy)",
+    "place_array": ["Mały port lotniczy (pas startowy)"],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 2,
+      "oneof_fire_engine_or_airport_fire_engine": 2,
+      "oneof_airport_fire_engine_or_engine_large": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "airport": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 933,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "934",
+    "name": "Zderzenie z ptakiem – kod B",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/planecrash_gruen.png",
+      "/images/planecrash_gelb.png",
+      "/images/planecrash_rot.png"
+    ],
+    "requirements": {
+      "water_tankers": 3,
+      "oneof_fire_engine_or_airport_fire_engine": 4,
+      "oneof_airport_fire_engine_or_engine_large": 2,
+      "kdow_orgl": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "airport": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 934,
+    "additive_overlays": "",
+    "mission_categories": ["airport", "airport_specialization"]
+  },
+  {
+    "id": "935",
+    "name": "Kontrola drogi startowej",
+    "place": "Duży port lotniczy (pas startowy)",
+    "place_array": ["Duży port lotniczy (pas startowy)"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "airport_equipment": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": { "main_building": 6, "police_stations": 4, "airport": 1 },
+    "overlay_index": null,
+    "base_mission_id": 935,
+    "additive_overlays": "",
+    "mission_categories": [
+      "airport",
+      "airport_police",
+      "airport_police_specialization"
+    ]
   }
 ]
