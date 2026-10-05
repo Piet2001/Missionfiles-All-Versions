@@ -58774,7 +58774,6 @@
       "filter_id": "ambulance_station_missions",
       "patient_us_code_possible": ["26-A-5", "26-B-1", "26-A-6"],
       "allow_ktw_instead_of_rtw": true,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -58817,7 +58816,6 @@
         "17-A-3G"
       ],
       "allow_ktw_instead_of_rtw": true,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["General Internal"],
       "patient_specializations": "General Internal"
@@ -58872,5 +58870,55 @@
     "base_mission_id": 1169,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "1170",
+    "name": "Burn injury caused by welding work",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": ["26-A-1"],
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
+    },
+    "prerequisites": { "main_building": 3, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 1170,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1171",
+    "name": "Person trapped under construction work",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 1171,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
   }
 ]
