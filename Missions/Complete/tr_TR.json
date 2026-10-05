@@ -2834,7 +2834,7 @@
     "name": "G\u00fcne\u015f \u00e7arpmas\u0131",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -2847,8 +2847,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2020-06-26T10:00:00+03:00",
-      "date_end": "2020-10-01T00:00:00+03:00",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Genel Dahiliye"],
       "patient_specializations": "Genel Dahiliye"
@@ -2864,7 +2864,7 @@
     "name": "S\u0131cak \u00e7arpmas\u0131",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -2877,8 +2877,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2020-06-26T10:00:00+03:00",
-      "date_end": "2020-10-01T00:00:00+03:00",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Genel Dahiliye"],
       "patient_specializations": "Genel Dahiliye"
@@ -2891,10 +2891,10 @@
   },
   {
     "id": "108",
-    "name": "Is\u0131 kramp\u0131",
+    "name": "S\u0131cakl\u0131k kramplar\u0131",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -2907,8 +2907,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2020-06-26T10:00:00+03:00",
-      "date_end": "2020-10-01T00:00:00+03:00",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Genel Dahiliye"],
       "patient_specializations": "Genel Dahiliye"
@@ -2924,7 +2924,7 @@
     "name": "Susuz kalm\u0131\u015f ki\u015fi",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 250,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -2937,8 +2937,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2020-06-26T10:00:00+03:00",
-      "date_end": "2020-10-01T00:00:00+03:00",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
       "patient_specialization_ids": [0],
       "patient_specialization_captions": ["Genel Dahiliye"],
       "patient_specializations": "Genel Dahiliye"
@@ -2965,12 +2965,1316 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2020-06-26T10:00:00+03:00",
-      "date_end": "2020-10-01T00:00:00+03:00"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00"
     },
     "prerequisites": { "main_building": 0, "fire_stations": 1 },
     "overlay_index": null,
     "base_mission_id": 110,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "111",
+    "name": "Kontamine olmu\u015f dondurma arabas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 2,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 111,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "112",
+    "name": "Parkta izinsiz ate\u015f yak\u0131lmas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 112,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "113",
+    "name": "Yaz kamp\u0131nda yang\u0131n",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 113,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "114",
+    "name": "Lunapark arac\u0131nda ar\u0131za",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "platform_trucks": 1, "firetrucks": 1, "police_cars": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 5,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 114,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "115",
+    "name": "\u00c7ift\u00e7i pazar\u0131nda kavga",
+    "place": "",
+    "place_array": [],
+    "average_credits": 750,
+    "generated_by": "",
+    "icons": [
+      "/images/cuffs_gruen.png",
+      "/images/cuffs_gelb.png",
+      "/images/cuffs_rot.png"
+    ],
+    "requirements": { "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 115,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "116",
+    "name": "Su park\u0131ndaki kayd\u0131rakta yaralanma",
+    "place": "",
+    "place_array": [],
+    "average_credits": 250,
+    "generated_by": "",
+    "icons": [
+      "/images/dancinghall_gruen.png",
+      "/images/dancinghall_gelb.png",
+      "/images/dancinghall_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 116,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "117",
+    "name": "A\u00e7\u0131k hava sinemas\u0131nda kaza",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "police_cars": 3 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 5 },
+    "overlay_index": null,
+    "base_mission_id": 117,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "118",
+    "name": "Buzlanma nedeniyle trafik kazas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 5,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 118,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "119",
+    "name": "Buzda kayan ki\u015fi",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Genel Cerrah"],
+      "patient_specializations": "Genel Cerrah"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 119,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "120",
+    "name": "Buzda kayma",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 1 },
+    "chances": { "patient_transport": 15 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 120,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "121",
+    "name": "Kamp ate\u015fi kul\u00fcbeyi yak\u0131yor",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Genel Cerrah"],
+      "patient_specializations": "Genel Cerrah"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 121,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "122",
+    "name": "Donmu\u015f g\u00f6lde kavga",
+    "place": "",
+    "place_array": [],
+    "average_credits": 650,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 122,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "123",
+    "name": "Buz patencisinin d\u00fc\u015fmesi",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 123,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "124",
+    "name": "\u0130nsanlara ve evlere kartopu atan \u00e7ocuklar",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 6, "police_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 124,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "125",
+    "name": "S\u0131cak \u00e7ikolata nedeniyle yanan ki\u015fi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 125,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "126",
+    "name": "K\u0131zak kazas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 126,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "127",
+    "name": "Kamyon buzlanma nedeniyle devrildi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 127,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "128",
+    "name": "Buzlu zeminde d\u00fc\u015fme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 128,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "129",
+    "name": "Buzlanma nedeniyle zincirleme kaza",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2700,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 3,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 129,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "130",
+    "name": "Kar k\u00fcreme arac\u0131 kazas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1200,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 130,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "131",
+    "name": "Buzda bal\u0131k tutarken kurtarma",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/snowy_gruen.png",
+      "/images/snowy_gelb.png",
+      "/images/snowy_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 131,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "132",
+    "name": "Donmu\u015f borunun patlamas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-01-02T10:00:00Z",
+      "date_end": "2026-03-06T22:59:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 132,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "133",
+    "name": "Okul otob\u00fcsleri buzlanma nedeniyle \u00e7arp\u0131\u015ft\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "police_station_missions",
+      "date_start": "2026-01-19T10:00:00+03:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 4,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 133,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "134",
+    "name": "Tren kar f\u0131rt\u0131nas\u0131nda mahsur kald\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/icy_road_gruen.png",
+      "/images/icy_road_gelb.png",
+      "/images/icy_road_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-01-26T10:00:00+03:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 134,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "135",
+    "name": "Kar k\u00fcreme arac\u0131 k\u00f6y yolunda devrildi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/caraccident_gruen.png",
+      "/images/caraccident_gelb.png",
+      "/images/caraccident_rot.png"
+    ],
+    "requirements": { "firetrucks": 2, "police_cars": 2 },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-02-16T10:00:00+03:00",
+      "date_end": "2026-03-06T22:59:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 135,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "136",
+    "name": "Ar\u0131 sokmas\u0131na kar\u015f\u0131 alerjik reaksiyon",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Kardiyoloji"],
+      "patient_specializations": "Kardiyoloji"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "137",
+    "name": "Polene kar\u015f\u0131 alerjik reaksiyon",
+    "place": "",
+    "place_array": [],
+    "average_credits": 650,
+    "generated_by": "",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["Kardiyoloji"],
+      "patient_specializations": "Kardiyoloji"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 137,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "138",
+    "name": "Bahar temizli\u011fi s\u0131ras\u0131nda merdivenden d\u00fc\u015fme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 138,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "139",
+    "name": "Bahar pikni\u011finde vah\u015fi hayvan sald\u0131r\u0131s\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 3,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 139,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "140",
+    "name": "Yabani meyvelerden zehirlenme",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/spring_gruen.png",
+      "/images/spring_gelb.png",
+      "/images/spring_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Genel Cerrah"],
+      "patient_specializations": "Genel Cerrah"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 140,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "141",
+    "name": "Yanan piknik sepeti",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 141,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "142",
+    "name": "\u0130nek taraf\u0131ndan sald\u0131r\u0131ya u\u011frayan h\u0131rs\u0131z",
+    "place": "",
+    "place_array": [],
+    "average_credits": 860,
+    "generated_by": "",
+    "icons": [
+      "/images/ambulance_gruen.png",
+      "/images/ambulance_gelb.png",
+      "/images/ambulance_rot.png"
+    ],
+    "requirements": { "ambulances": 1 },
+    "chances": { "patient_transport": 35 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 142,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "143",
+    "name": "Islak yapraklarda biri kayd\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 45 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Genel Cerrah"],
+      "patient_specializations": "Genel Cerrah"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 143,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "144",
+    "name": "D\u00f6k\u00fclen yapraklar\u0131n neden oldu\u011fu trafik kazas\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 3,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 144,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "145",
+    "name": "Biri yaprak y\u0131\u011f\u0131n\u0131n\u0131n i\u00e7ine d\u00fc\u015ft\u00fc",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 145,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "146",
+    "name": "Kontrolden \u00e7\u0131kan yaprak s\u00fcp\u00fcrgesi",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "police_cars": 1 },
+    "chances": { "patient_transport": 10 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "police_station_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Genel Cerrah"],
+      "patient_specializations": "Genel Cerrah"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "rescue_stations": 1,
+      "police_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 146,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "147",
+    "name": "Yapraklarla t\u0131kanm\u0131\u015f ya\u011fmur suyu gideri",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 1 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 147,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "148",
+    "name": "So\u011fuk suda y\u00fczd\u00fckten sonra hipotermi",
+    "place": "G\u00f6l\nNehir",
+    "place_array": ["G\u00f6l", "Nehir"],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Genel Dahiliye"],
+      "patient_specializations": "Genel Dahiliye"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 148,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "149",
+    "name": "Sisli yolda kaza",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 2 },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 149,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "150",
+    "name": "Geyik ge\u00e7i\u015fi s\u0131ras\u0131nda kaza",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 1
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Travmatoloji"],
+      "patient_specializations": "Travmatoloji"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 2,
+      "police_stations": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 150,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "151",
+    "name": "Yanan yaprak y\u0131\u011f\u0131n\u0131",
+    "place": "",
+    "place_array": [],
+    "average_credits": 320,
+    "generated_by": "",
+    "icons": [
+      "/images/autumn_gruen.png",
+      "/images/autumn_gelb.png",
+      "/images/autumn_rot.png"
+    ],
+    "requirements": { "firetrucks": 2 },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2023-09-19T09:00:00Z",
+      "date_end": "2023-11-28T23:59:59+03:00"
+    },
+    "prerequisites": { "main_building": 0, "fire_stations": 2 },
+    "overlay_index": null,
+    "base_mission_id": 151,
     "additive_overlays": "",
     "mission_categories": ["fire"]
   }
