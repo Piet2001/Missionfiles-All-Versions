@@ -36245,5 +36245,54 @@
       "airport_police",
       "airport_police_specialization"
     ]
+  },
+  {
+    "id": "936",
+    "name": "Oparzenie spowodowane pracami spawalniczymi",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Chirurg og\u00f3lny"],
+      "patient_specializations": "Chirurg og\u00f3lny"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 936,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "937",
+    "name": "Osoba uwi\u0119ziona pod konstrukcj\u0105 budowlan\u0105",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 937,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
   }
 ]

@@ -26079,5 +26079,54 @@
     "base_mission_id": 765,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "766",
+    "name": "754 Hitsausty\u00f6st\u00e4 aiheutunut palovamma",
+    "place": "",
+    "place_array": [],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 60 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["Yleiskirurgi"],
+      "patient_specializations": "Yleiskirurgi"
+    },
+    "prerequisites": { "main_building": 2, "rescue_stations": 1 },
+    "overlay_index": null,
+    "base_mission_id": 766,
+    "additive_overlays": "",
+    "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "767",
+    "name": "486 Rakennust\u00f6iden alle j\u00e4\u00e4nyt henkil\u00f6",
+    "place": "",
+    "place_array": [],
+    "average_credits": 500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": { "heavy_rescue_vehicles": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": { "main_building": 0, "fire_stations": 4 },
+    "overlay_index": null,
+    "base_mission_id": 767,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "rural", "urban"]
   }
 ]
