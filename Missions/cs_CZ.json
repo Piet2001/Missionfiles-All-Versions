@@ -34149,5 +34149,70 @@
     "base_mission_id": 805,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "806",
+    "name": "Provedení příkazu k domovní prohlídce",
+    "place": "",
+    "place_array": [],
+    "average_credits": 800,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 1,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 806,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "807",
+    "name": "Nalezená drogová laboratoř",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "detention_unit": 1,
+      "battalion_chief_vehicles": 1,
+      "hazmat_vehicles": 1,
+      "riot_police": 2,
+      "riot_police_command": 1,
+      "riot_police_equipment": 1,
+      "riot_police_maintenance": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 8,
+      "criminal_investigation_count": 1,
+      "riot_police": 1,
+      "fire_stations": 11,
+      "riot_police_command": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 807,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   }
 ]
