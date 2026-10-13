@@ -892,6 +892,45 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "34/a",
+    "name": "Inc\u00eandio no hospital",
+    "place": "Hospital",
+    "place_array": ["Hospital"],
+    "average_credits": 6500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
+      "energy_supply": 1,
+      "firetrucks": 10
+    },
+    "chances": { "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "fire_alarm_system_possible": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "fire_stations": 10,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 34,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "35",
     "name": "Indiv\u00edduo alcoolizado",
     "place": "",
@@ -2694,6 +2733,47 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "96/a",
+    "name": "Descarrilamento de Comboio de Carga",
+    "place": "Passagem de N\u00edvel",
+    "place_array": ["Passagem de N\u00edvel"],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "dlk_crane": 1,
+      "firetrucks": 10,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_stations": 15,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 96,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "97",
     "name": "Descarrilamento de Comboio de Carga",
     "place": "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)",
@@ -2967,6 +3047,51 @@
     "overlay_index": null,
     "base_mission_id": 102,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "102/a",
+    "name": "Colapso de edif\u00edcio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "heavy_rescue_vehicles": 3,
+      "dlk_crane": 1,
+      "firetrucks": 4,
+      "police_cars": 2
+    },
+    "chances": {
+      "patient_transport": 50,
+      "helicopter": 20,
+      "patient_critical_care": 20
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 8,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 4,
+      "police_stations": 1,
+      "fire_stations": 7,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 102,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -3857,6 +3982,46 @@
     "mission_categories": ["fire", "rural"]
   },
   {
+    "id": "128/a",
+    "name": "Derrocada da Mina",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "energy_supply": 1,
+      "firetrucks": 10,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 5,
+      "fire_stations": 10,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 128,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "rural"]
+  },
+  {
     "id": "129",
     "name": "Assalto a Carrinha de Transporte de Valores",
     "place": "",
@@ -4686,6 +4851,47 @@
     "overlay_index": null,
     "base_mission_id": 152,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "152/a",
+    "name": "Colis\u00e3o Ferrovi\u00e1ria",
+    "place": "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)",
+    "place_array": ["Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "hazmat_vehicles": 2,
+      "heavy_rescue_vehicles": 4,
+      "dlk_crane": 1,
+      "firetrucks": 12,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 40, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 50,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 6,
+      "police_stations": 4,
+      "fire_stations": 12,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 152,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -6025,6 +6231,47 @@
     "overlay_index": null,
     "base_mission_id": 192,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "192/a",
+    "name": "Queda de arquibancada do est\u00e1dio",
+    "place": "Est\u00e1dio",
+    "place_array": ["Est\u00e1dio"],
+    "average_credits": 8500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 4,
+      "dlk_crane": 1,
+      "firetrucks": 9,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 3,
+      "fire_stations": 14,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 192,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -8321,6 +8568,47 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "266/a",
+    "name": "Colapso de Viaduto",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "fwk": 2,
+      "heavy_rescue_vehicles": 3,
+      "dlk_crane": 1,
+      "firetrucks": 5,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 20 },
+    "additional": {
+      "possible_patient": 25,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "fire_stations": 12,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 266,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "267",
     "name": "Inc\u00eandio Numa Escola",
     "place": "Escola",
@@ -8442,6 +8730,53 @@
     "mission_categories": ["fire", "urban", "rural"]
   },
   {
+    "id": "269/a",
+    "name": "Sismo de Grande Magnitude",
+    "place": "",
+    "place_array": [],
+    "average_credits": 23500,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "fwk": 2,
+      "mobile_air_vehicles": 1,
+      "hazmat_vehicles": 5,
+      "water_tankers": 5,
+      "heavy_rescue_vehicles": 5,
+      "k9": 2,
+      "dlk_crane": 1,
+      "energy_supply": 2,
+      "firetrucks": 15,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 20, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 50,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 15,
+      "police_stations": 8,
+      "fire_stations": 20,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 269,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
     "id": "270",
     "name": "Crise Hipertensiva",
     "place": "",
@@ -8511,6 +8846,52 @@
     "overlay_index": null,
     "base_mission_id": 271,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "271/a",
+    "name": "Descarrilamento de Comboio de Passageiros",
+    "place": "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)\nEsta\u00e7\u00e3o de Comboios (tr\u00e1fego regional e viagem de longa dist\u00e2ncia)\nPassagem de N\u00edvel",
+    "place_array": [
+      "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)",
+      "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional e viagem de longa dist\u00e2ncia)",
+      "Passagem de N\u00edvel"
+    ],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "fwk": 1,
+      "heavy_rescue_vehicles": 4,
+      "dlk_crane": 1,
+      "firetrucks": 11,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 25,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 8,
+      "police_stations": 5,
+      "fire_stations": 15,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 271,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -9339,6 +9720,46 @@
     "mission_categories": ["forestry"]
   },
   {
+    "id": "294/a",
+    "name": "Inc\u00eandio de Grandes Dimens\u00f5es em Mato",
+    "place": "Parque\nColina\nCampo\nTerreno Baldio\nPantano",
+    "place_array": ["Parque", "Colina", "Campo", "Terreno Baldio", "Pantano"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "elw3": 1,
+      "fire_aviation": 3,
+      "water_tankers": 8,
+      "water_needed": 60000,
+      "dozer": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [295, 296, 297, 291, 292, 293],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [305]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 294,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
     "id": "295",
     "name": "Pequeno Inc\u00eandio Florestal",
     "place": "Floresta",
@@ -9484,6 +9905,47 @@
     "overlay_index": null,
     "base_mission_id": 298,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "298/a",
+    "name": "Inc\u00eandio Florestal de Grandes Dimens\u00f5es",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 10,
+      "battalion_chief_vehicles": 7,
+      "mobile_command_vehicles": 2,
+      "elw3": 1,
+      "fire_aviation": 3,
+      "water_tankers": 4,
+      "water_needed": 65000,
+      "dozer": 1,
+      "police_cars": 4
+    },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [295, 296, 297, 291, 292, 293],
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [305]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "brush_extension": 1,
+      "fire_aviation_count": 1,
+      "fire_stations": 18
+    },
+    "overlay_index": null,
+    "base_mission_id": 298,
+    "additive_overlays": "a",
     "mission_categories": ["forestry"]
   },
   {
@@ -10956,6 +11418,48 @@
     "overlay_index": null,
     "base_mission_id": 339,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "339/a",
+    "name": "Descarrilamento do metro",
+    "place": "Esta\u00e7\u00e3o de Metro",
+    "place_array": ["Esta\u00e7\u00e3o de Metro"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/tramway_gruen.png",
+      "/images/tramway_gelb.png",
+      "/images/tramway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "energy_supply": 1,
+      "firetrucks": 12,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 75, "patient_critical_care": 10 },
+    "additional": {
+      "possible_patient": 50,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "fire_stations": 14,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 339,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -16936,6 +17440,51 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "504/a",
+    "name": "Colapso de ponte",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 11050,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "foam": 1,
+      "fwk": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 2,
+      "heavy_rescue_vehicles": 5,
+      "dlk_crane": 1,
+      "firetrucks": 9,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 50, "patient_critical_care": 25 },
+    "additional": {
+      "possible_patient": 50,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 9,
+      "police_stations": 8,
+      "fire_support_count": 1,
+      "fire_stations": 15,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 504,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "505",
     "name": "Asma aguda",
     "place": "",
@@ -19097,6 +19646,40 @@
     "mission_categories": ["fire", "forestry", "rural"]
   },
   {
+    "id": "564/a",
+    "name": "Exerc\u00edcio de inc\u00eandio florestal",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 24500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 10,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "water_tankers": 5,
+      "water_needed": 100000,
+      "dozer": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 1,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 564,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "forestry", "rural"]
+  },
+  {
     "id": "565",
     "name": "Trav\u00e3o de emerg\u00eancia no comboio",
     "place": "Esta\u00e7\u00e3o de Comboios (tr\u00e1fego regional)\nEsta\u00e7\u00e3o de Comboios (tr\u00e1fego regional e viagem de longa dist\u00e2ncia)\nPassagem de N\u00edvel\nCruzamento Ferrovi\u00e1rio",
@@ -19434,6 +20017,52 @@
     "overlay_index": null,
     "base_mission_id": 573,
     "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "573/a",
+    "name": "Colapso de est\u00e1dio desportivo",
+    "place": "Est\u00e1dio",
+    "place_array": ["Est\u00e1dio"],
+    "average_credits": 45500,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 4,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 10,
+      "k9": 4,
+      "dlk_crane": 1,
+      "firetrucks": 25,
+      "police_cars": 15
+    },
+    "chances": { "patient_transport": 30, "helicopter": 50 },
+    "additional": {
+      "possible_patient": 250,
+      "possible_patient_min": 75,
+      "filter_id": "firehouse_missions",
+      "patient_allow_first_responder_chance": 10,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 30,
+      "police_stations": 10,
+      "fire_stations": 50,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 573,
+    "additive_overlays": "a",
     "mission_categories": ["fire", "urban"]
   },
   {
@@ -22778,6 +23407,56 @@
     "mission_categories": ["fire", "urban"]
   },
   {
+    "id": "673/a",
+    "name": "Colapso de ponte (grande)",
+    "place": "Ponte",
+    "place_array": ["Ponte"],
+    "average_credits": 20615,
+    "generated_by": "",
+    "icons": [
+      "/images/bridge_gruen.png",
+      "/images/bridge_gelb.png",
+      "/images/bridge_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 5,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "fwk": 3,
+      "heavy_rescue_vehicles": 6,
+      "diver_units": 5,
+      "boats": 5,
+      "dlk_crane": 1,
+      "firetrucks": 18,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 95,
+      "helicopter": 25,
+      "patient_critical_care": 80
+    },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 20,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 8,
+      "rescue_stations": 20,
+      "police_stations": 5,
+      "fire_stations": 30,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 673,
+    "additive_overlays": "a",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
     "id": "674",
     "name": "Inc\u00eandio em pr\u00e9dio comercial",
     "place": "",
@@ -23090,6 +23769,123 @@
     "overlay_index": null,
     "base_mission_id": 680,
     "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "680/a",
+    "name": "Inc\u00eandio florestal com v\u00e1rias pequenas aldeias a arder",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 19600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 25,
+      "mobile_command_vehicles": 4,
+      "fire_aviation": 6,
+      "water_tankers": 5,
+      "energy_supply": 2,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "brush_extension": 5,
+      "fire_aviation_count": 6,
+      "fire_stations": 25,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 680,
+    "additive_overlays": "a",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "680/b",
+    "name": "Inc\u00eandio florestal com v\u00e1rias pequenas aldeias a arder",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 19100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 25,
+      "mobile_command_vehicles": 4,
+      "fire_aviation": 6,
+      "water_tankers": 5,
+      "dozer": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "brush_extension": 1,
+      "fire_aviation_count": 6,
+      "fire_stations": 25
+    },
+    "overlay_index": null,
+    "base_mission_id": 680,
+    "additive_overlays": "b",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "680/ab",
+    "name": "Inc\u00eandio florestal com v\u00e1rias pequenas aldeias a arder",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 20100,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 25,
+      "mobile_command_vehicles": 4,
+      "fire_aviation": 6,
+      "water_tankers": 5,
+      "energy_supply": 2,
+      "dozer": 1,
+      "firetrucks": 10,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "vehicle_groups": ["fire_aviation", "default"]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "brush_extension": 1,
+      "fire_aviation_count": 6,
+      "fire_stations": 25,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 680,
+    "additive_overlays": "ab",
     "mission_categories": ["forestry"]
   },
   {
@@ -25128,5 +25924,468 @@
     "base_mission_id": 739,
     "additive_overlays": "",
     "mission_categories": ["fire", "rural", "urban"]
+  },
+  {
+    "id": "742",
+    "name": "Falha de energia no hospital",
+    "place": "Hospital",
+    "place_array": ["Hospital"],
+    "average_credits": 4200,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "ambulances": 5,
+      "energy_supply": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "fire_stations": 10,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 742,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "743",
+    "name": "* Falha de energia numa parte da cidade",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11500,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "heavy_rescue_vehicles": 4,
+      "energy_supply": 6,
+      "firetrucks": 6,
+      "police_cars": 10
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 20,
+      "fire_special_rescue": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "744",
+    "name": "Fornecimento de energia tempor\u00e1rio devido \u00e0 manuten\u00e7\u00e3o do transformador",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/elevator_gruen.png",
+      "/images/elevator_gelb.png",
+      "/images/elevator_rot.png"
+    ],
+    "requirements": { "energy_supply": 1, "firetrucks": 1 },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 5,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 744,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban", "rural"]
+  },
+  {
+    "id": "745",
+    "name": "Inc\u00eandio em Junta de Freguesia",
+    "place": "Edif\u00edcio de Escrit\u00f3rios",
+    "place_array": ["Edif\u00edcio de Escrit\u00f3rios"],
+    "average_credits": 8000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "ambulances": 2,
+      "heavy_rescue_vehicles": 2,
+      "firetrucks": 1,
+      "police_cars": 3
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 4,
+      "fire_support_count": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 745,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "746",
+    "name": "Inc\u00eandio em Central Biomassa",
+    "place": "Central El\u00e9trica",
+    "place_array": ["Central El\u00e9trica"],
+    "average_credits": 17500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 3,
+      "foam": 3,
+      "mobile_air_vehicles": 13,
+      "hazmat_vehicles": 2,
+      "water_tankers": 10,
+      "pump": 3,
+      "heavy_rescue_vehicles": 2,
+      "foam_needed": 3000,
+      "dlk_crane": 1,
+      "firetrucks": 10,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 5,
+      "fire_support_count": 3,
+      "fire_stations": 15,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 746,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "747",
+    "name": "Inc\u00eandio em subesta\u00e7\u00e3o el\u00e9trica",
+    "place": "Central El\u00e9trica",
+    "place_array": ["Central El\u00e9trica"],
+    "average_credits": 27600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "battalion_chief_vehicles": 5,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 2,
+      "hazmat_vehicles": 1,
+      "water_tankers": 4,
+      "water_needed": 45000,
+      "foam_needed": 2700,
+      "dlk_crane": 1,
+      "energy_supply": 4,
+      "firetrucks": 20,
+      "police_cars": 10
+    },
+    "chances": {
+      "patient_transport": 30,
+      "helicopter": 50,
+      "patient_critical_care": 100
+    },
+    "additional": {
+      "possible_patient": 20,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [8],
+      "patient_specialization_captions": ["Cirurgia Card\u00edaca"],
+      "patient_specializations": "Cirurgia Card\u00edaca"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 20,
+      "police_stations": 10,
+      "fire_stations": 40,
+      "fire_special_rescue": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 747,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "748",
+    "name": "Inc\u00eandio em F\u00e1brica de Confe\u00e7\u00e3o T\u00eaxtil",
+    "place": "F\u00e1brica",
+    "place_array": ["F\u00e1brica"],
+    "average_credits": 12500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 4,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "foam": 2,
+      "mobile_air_vehicles": 3,
+      "hazmat_vehicles": 2,
+      "water_tankers": 8,
+      "pump": 1,
+      "ambulances": 10,
+      "heavy_rescue_vehicles": 3,
+      "foam_needed": 3000,
+      "dlk_crane": 1,
+      "firetrucks": 12,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 100, "patient_critical_care": 50 },
+    "additional": {
+      "possible_patient": 50,
+      "possible_patient_min": 10,
+      "filter_id": "firehouse_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 7,
+      "police_stations": 4,
+      "fire_support_count": 3,
+      "fire_stations": 12,
+      "fire_special_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 748,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "urban"]
+  },
+  {
+    "id": "749",
+    "name": "Viatura encontrada submersa",
+    "place": "Lago\nRio",
+    "place_array": ["Lago", "Rio"],
+    "average_credits": 1800,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "diver_units": 2,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 2,
+      "mountain_rescue": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 749,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "750",
+    "name": "Emerg\u00eancia durante atividade subaqu\u00e1tica",
+    "place": "Lago",
+    "place_array": ["Lago"],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "diver_units": 1, "boats": 1, "firetrucks": 1 },
+    "chances": { "patient_transport": 90, "patient_critical_care": 90 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 1,
+      "rescue_stations": 1,
+      "mountain_rescue": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 750,
+    "additive_overlays": "",
+    "mission_categories": ["water_rescue"]
+  },
+  {
+    "id": "751",
+    "name": "Inc\u00eandio em ve\u00edculo com propaga\u00e7\u00e3o ao mato",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 3,
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 2,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 1,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 751,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "forestry", "rural"]
+  },
+  {
+    "id": "752",
+    "name": "Lan\u00e7amento de Foguetes Provoca Inc\u00eandio Florestal",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 11000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 8,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "fire_aviation": 2,
+      "water_tankers": 3,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {},
+    "additional": { "filter_id": "firehouse_missions" },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "brush_extension": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 752,
+    "additive_overlays": "",
+    "mission_categories": ["fire", "forestry", "rural"]
+  },
+  {
+    "id": "753",
+    "name": "Queda de Helicoptero",
+    "place": "Floresta",
+    "place_array": ["Floresta"],
+    "average_credits": 10000,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "fire_aviation": 1,
+      "foam": 2,
+      "fwk": 1,
+      "hazmat_vehicles": 1,
+      "water_tankers": 3,
+      "heavy_rescue_vehicles": 2,
+      "foam_needed": 1000,
+      "dlk_crane": 1,
+      "firetrucks": 5,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "coastal_rescue_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Clinica Geral"],
+      "patient_specializations": "Clinica Geral"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 5,
+      "police_stations": 2,
+      "brush_extension": 6,
+      "fire_aviation_count": 1,
+      "fire_stations": 16,
+      "fire_special_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 753,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
   }
 ]
