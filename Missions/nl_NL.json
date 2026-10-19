@@ -62475,11 +62475,45 @@
     "prerequisites": {
       "main_building": 5,
       "police_stations": 5,
-      "police_helicopter_stations": 1
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1
     },
     "overlay_index": null,
     "base_mission_id": 950,
     "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "950/a",
+    "name": "Achtervolging gestolen scooter",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3010,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "ovdp": 1, "police_helicopters": 1, "police_cars": 4 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 4,
+      "filter_id": "police_station_missions",
+      "possible_crashed_car_min": 1,
+      "possible_crashed_car_max": 1
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "bereitschaftspolizei": 1,
+      "tow_trucks": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 950,
+    "additive_overlays": "a",
     "mission_categories": ["police"]
   },
   {
