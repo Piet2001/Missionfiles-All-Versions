@@ -47570,5 +47570,101 @@
     "base_mission_id": 952,
     "additive_overlays": "",
     "mission_categories": ["riot_police"]
+  },
+  {
+    "id": "953",
+    "name": "Incendie dans une brocante",
+    "place": "March\u00e9",
+    "place_array": ["March\u00e9"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 953,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
+  },
+  {
+    "id": "954",
+    "name": "D\u00e9mant\u00e8lement d\u2019un trafic clandestin",
+    "place": "Plage",
+    "place_array": ["Plage"],
+    "average_credits": 3900,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "k9": 2, "police_helicopters": 1, "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 6,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 4,
+      "police_helicopter_stations": 1,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 954,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "955",
+    "name": "S\u00e9curisation d'un b\u00e2timent en d\u00e9molition",
+    "place": "Centre-ville",
+    "place_array": ["Centre-ville"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/blast_gruen.png",
+      "/images/blast_gelb.png",
+      "/images/blast_rot.png"
+    ],
+    "requirements": { "k9": 1, "riot_police": 2, "police_cars": 1 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 5,
+      "filter_id": "riot_police_missions"
+    },
+    "prerequisites": {
+      "main_building": 11,
+      "police_stations": 2,
+      "bereitschaftspolizei": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 955,
+    "additive_overlays": "",
+    "mission_categories": ["riot_police"]
   }
 ]
