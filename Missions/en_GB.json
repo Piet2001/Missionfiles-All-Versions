@@ -38536,27 +38536,33 @@
   },
   {
     "id": "884",
-    "name": "Pursuit of a stolen car",
+    "name": "Abandoned 999 Call - Distrbance Heard",
     "place": "",
     "place_array": [],
-    "average_credits": 2810,
+    "average_credits": 3500,
     "generated_by": "",
     "icons": [
-      "/images/theft_gruen.png",
-      "/images/theft_gelb.png",
-      "/images/theft_rot.png"
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
     ],
-    "requirements": { "police_helicopters": 1, "police_cars": 4 },
-    "chances": {},
+    "requirements": { "police_cars": 2 },
+    "chances": { "patient_transport": 10 },
     "additional": {
-      "min_possible_prisoners": 1,
+      "possible_patient": 2,
+      "possible_patient_min": 0,
+      "min_possible_prisoners": 0,
       "max_possible_prisoners": 2,
-      "filter_id": "police_station_missions"
+      "patient_uk_code_possible": ["C-3"],
+      "filter_id": "police_station_missions",
+      "patient_specialization_ids": [1],
+      "patient_specialization_captions": ["General Surgeon"],
+      "patient_specializations": "General Surgeon"
     },
     "prerequisites": {
       "main_building": 6,
-      "police_stations": 5,
-      "police_helicopter_stations": 1
+      "rescue_stations": 2,
+      "police_stations": 4
     },
     "overlay_index": null,
     "base_mission_id": 884,
