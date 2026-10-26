@@ -514,14 +514,13 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "battalion_chief_vehicles": 1,
       "heavy_rescue_vehicles": 1,
       "water_needed": 7000,
       "oneof_police_patrol_or_municipal_police": 1,
       "firetrucks": 3,
       "police_cars": 1
     },
-    "chances": { "battalion_chief_vehicles": 20, "patient_transport": 30 },
+    "chances": { "patient_transport": 30 },
     "additional": {
       "possible_patient": 2,
       "patient_it_code_possible": ["KC01G", "KC01R"],
@@ -637,10 +636,18 @@
       "/images/fire_gelb.png",
       "/images/fire_rot.png"
     ],
-    "requirements": { "water_needed": 1000, "firetrucks": 1 },
+    "requirements": {
+      "water_needed": 1000,
+      "oneof_police_patrol_or_municipal_police": 1,
+      "firetrucks": 1
+    },
     "chances": {},
     "additional": { "filter_id": "firehouse_missions" },
-    "prerequisites": { "main_building": 0, "fire_stations": 3 },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
     "overlay_index": null,
     "base_mission_id": 24,
     "additive_overlays": "",
@@ -658,18 +665,13 @@
       "/images/caraccident_gelb.png",
       "/images/caraccident_rot.png"
     ],
-    "requirements": {
-      "heavy_rescue_vehicles": 1,
-      "water_needed": 800,
-      "oneof_police_patrol_or_municipal_police": 1,
-      "firetrucks": 1
-    },
-    "chances": { "firetrucks": 10, "patient_transport": 40 },
+    "requirements": { "oneof_police_patrol_or_municipal_police": 1 },
+    "chances": { "patient_transport": 40 },
     "additional": {
       "possible_patient": 4,
       "expansion_missions_ids": [24, 2, 29],
       "patient_it_code_possible": ["SC01G", "SC01R", "SC01V"],
-      "filter_id": "firehouse_missions",
+      "filter_id": "ambulance_station_missions",
       "possible_patient_specializations": [
         "Medicina interna generale",
         "Traumatologia",
@@ -683,15 +685,14 @@
       "patient_specializations": "Traumatologia"
     },
     "prerequisites": {
-      "main_building": 0,
+      "main_building": 2,
       "rescue_stations": 3,
-      "police_stations": 1,
-      "fire_stations": 2
+      "police_stations": 1
     },
     "overlay_index": null,
     "base_mission_id": 25,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["ambulance"]
   },
   {
     "id": "26",
@@ -12763,7 +12764,7 @@
       "possible_patient": 5,
       "possible_patient_min": 1,
       "patient_it_code_possible": ["SC01R", "SC01G", "SC01V"],
-      "filter_id": "firehouse_missions",
+      "filter_id": "ambulance_station_missions",
       "possible_patient_specializations": [
         "Medicina interna generale",
         "Traumatologia",
@@ -12774,15 +12775,15 @@
       ]
     },
     "prerequisites": {
-      "main_building": 0,
-      "rescue_stations": 4,
+      "main_building": 2,
+      "rescue_stations": 3,
       "police_stations": 2,
-      "fire_stations": 4
+      "fire_stations": 2
     },
     "overlay_index": null,
     "base_mission_id": 310,
     "additive_overlays": "",
-    "mission_categories": ["fire"]
+    "mission_categories": ["ambulance"]
   },
   {
     "id": "311",
