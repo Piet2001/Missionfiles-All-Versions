@@ -30123,7 +30123,7 @@
       "uses_custom_spawn_area": true
     },
     "prerequisites": {
-      "main_building": -1,
+      "main_building": 26,
       "mountain_rescue": 2,
       "fire_stations": 2
     },
@@ -30161,7 +30161,7 @@
       "patient_specializations": "Všeobecný internista"
     },
     "prerequisites": {
-      "main_building": -1,
+      "main_building": 26,
       "mountain_rescue": 2,
       "fire_stations": 2
     },
@@ -30258,7 +30258,7 @@
       "filter_id": "mountain_missions",
       "uses_custom_spawn_area": true
     },
-    "prerequisites": { "main_building": -1, "mountain_rescue": 1 },
+    "prerequisites": { "main_building": 26, "mountain_rescue": 1 },
     "overlay_index": null,
     "base_mission_id": 703,
     "additive_overlays": "",
@@ -30289,7 +30289,7 @@
       "personnel_educations": { "Horolezec horolezec": 3 }
     },
     "prerequisites": {
-      "main_building": -1,
+      "main_building": 26,
       "personnel_educations": { "mountain_height_rescue": 6 },
       "mountain_rescue": 1
     },
@@ -33224,7 +33224,7 @@
       "personnel_educations": { "Horolezec horolezec": 8 }
     },
     "prerequisites": {
-      "main_building": -1,
+      "main_building": 26,
       "rescue_stations": 1,
       "police_stations": 2,
       "personnel_educations": { "mountain_height_rescue": 2 },
@@ -34302,5 +34302,507 @@
     "base_mission_id": 810,
     "additive_overlays": "",
     "mission_categories": ["police"]
+  },
+  {
+    "id": "816",
+    "name": "Havárie vrtné soupravy",
+    "place": "Vrtné pracoviště",
+    "place_array": ["Vrtné pracoviště"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/drillingsite_gruen.png",
+      "/images/drillingsite_gelb.png",
+      "/images/drillingsite_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mining_command": 2,
+      "mining_ambulance": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [818, 820],
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 1,
+      "fire_stations": 4,
+      "mining_rescue": 1,
+      "mining_ambulance": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "816/a",
+    "name": "Havárie vrtné soupravy",
+    "place": "Vrtné pracoviště",
+    "place_array": ["Vrtné pracoviště"],
+    "average_credits": 2100,
+    "generated_by": "",
+    "icons": [
+      "/images/drillingsite_gruen.png",
+      "/images/drillingsite_gelb.png",
+      "/images/drillingsite_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mining_heavy_rescue": 1,
+      "mining_command": 2,
+      "mining_ambulance": 1,
+      "mining_breathing_protection": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [818, 820],
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 1,
+      "fire_stations": 4,
+      "mining_rescue": 1,
+      "mining_ambulance": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 816,
+    "additive_overlays": "a",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "817",
+    "name": "Horníci uvěznění pod závalem",
+    "place": "Důl\nVrtné pracoviště\nLom",
+    "place_array": ["Důl", "Vrtné pracoviště", "Lom"],
+    "average_credits": 5000,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 2,
+      "battalion_chief_vehicles": 3,
+      "mining_command": 3,
+      "mining_ambulance": 2
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 60 },
+    "additional": {
+      "possible_patient": 5,
+      "possible_patient_min": 3,
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 2,
+      "fire_stations": 4,
+      "mining_rescue": 2,
+      "mining_ambulance": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 817,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "818",
+    "name": "Únik metanu",
+    "place": "Důl\nVrtné pracoviště",
+    "place_array": ["Důl", "Vrtné pracoviště"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/gasleak_gruen.png",
+      "/images/gasleak_gelb.png",
+      "/images/gasleak_rot.png"
+    ],
+    "requirements": {
+      "mining_command": 3,
+      "mining_ambulance": 2,
+      "gas_detector": 1,
+      "mining_breathing_protection": 1
+    },
+    "chances": { "patient_transport": 30, "patient_critical_care": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 3,
+      "followup_missions_ids": [819, 821],
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 2,
+      "fire_stations": 4,
+      "mining_rescue": 2,
+      "mining_ambulance": 1,
+      "gas_detector": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 818,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "819",
+    "name": "Nedostatek kyslíku",
+    "place": "Důl\nVrtné pracoviště",
+    "place_array": ["Důl", "Vrtné pracoviště"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/gasleak_gruen.png",
+      "/images/gasleak_gelb.png",
+      "/images/gasleak_rot.png"
+    ],
+    "requirements": {
+      "mining_command": 3,
+      "mining_ambulance": 2,
+      "gas_detector": 1,
+      "mining_breathing_protection": 2
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 10,
+      "possible_patient_min": 5,
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 2,
+      "fire_stations": 3,
+      "mining_rescue": 2,
+      "mining_ambulance": 1,
+      "gas_detector": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 819,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "820",
+    "name": "Požár vrtné soupravy",
+    "place": "Vrtné pracoviště",
+    "place_array": ["Vrtné pracoviště"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/drillingsite_gruen.png",
+      "/images/drillingsite_gelb.png",
+      "/images/drillingsite_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 3,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 2,
+      "mining_heavy_rescue": 2,
+      "mining_command": 3,
+      "mining_ambulance": 2,
+      "mining_breathing_protection": 2,
+      "firetrucks": 10,
+      "police_cars": 4
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 3,
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "police_stations": 3,
+      "fire_stations": 6,
+      "mining_rescue": 2,
+      "mining_ambulance": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 820,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "821",
+    "name": "Výbuch v dole",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 40000,
+      "mining_heavy_rescue": 2,
+      "mining_command": 3,
+      "mining_ambulance": 2,
+      "mining_breathing_protection": 2,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 5,
+      "filter_id": "mining_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "fire_stations": 6,
+      "mining_rescue": 3,
+      "mining_ambulance": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 821,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "821/a",
+    "name": "Výbuch v dole",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 11250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 4,
+      "water_needed": 40000,
+      "ambulance_mass_casualty": 1,
+      "mass_casualty_equipment": 1,
+      "mass_casualty_equipment_2": 1,
+      "ems_mobile_command": 1,
+      "ems_operations_support": 1,
+      "ambulance_mass_casualty_large": 1,
+      "ambulance_mass_casualty_small": 1,
+      "mining_heavy_rescue": 2,
+      "mining_command": 3,
+      "mining_ambulance": 2,
+      "mining_breathing_protection": 2,
+      "firetrucks": 6,
+      "police_cars": 6
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 40,
+      "possible_patient_min": 5,
+      "filter_id": "mining_missions",
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "police_stations": 2,
+      "mass_casualty_count": 1,
+      "fire_stations": 6,
+      "mass_casualty_equipment": 1,
+      "mass_casualty_equipment_2": 1,
+      "mining_rescue": 3,
+      "mining_ambulance": 1,
+      "mining_breathing_protection": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 821,
+    "additive_overlays": "a",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "822",
+    "name": "Průval podzemní vody",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/diving_gruen.png",
+      "/images/diving_gelb.png",
+      "/images/diving_rot.png"
+    ],
+    "requirements": { "mining_rescue_diver": 1, "mining_command": 1 },
+    "chances": {},
+    "additional": {
+      "followup_missions_ids": [823],
+      "filter_id": "mining_missions"
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 1,
+      "mining_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 822,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "823",
+    "name": "Zatopení strojovny v dole",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "pump": 1,
+      "mining_heavy_rescue": 1,
+      "mining_command": 1,
+      "min_pump_speed": 1500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "mining_missions",
+      "pump_water_amount": 70000
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_damage_pump_count": 1,
+      "fire_stations": 6,
+      "mining_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 823,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "823/a",
+    "name": "Zatopení strojovny v dole",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 4000,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "pump": 1,
+      "mining_heavy_rescue": 1,
+      "mining_command": 1,
+      "min_pump_speed": 11500
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "mining_missions",
+      "pump_water_amount": 90000
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "water_damage_pump_count": 3,
+      "fire_stations": 6,
+      "mining_rescue": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 823,
+    "additive_overlays": "a",
+    "mission_categories": ["mining"]
+  },
+  {
+    "id": "824",
+    "name": "Pád osoby do důlní jámy",
+    "place": "Důl",
+    "place_array": ["Důl"],
+    "average_credits": 3500,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": {
+      "mining_heavy_rescue": 2,
+      "mining_command": 1,
+      "mining_ambulance": 1,
+      "personnel_educations": { "mountain_height_rescue": 2 }
+    },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "mining_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Úrazová chirurgie"],
+      "patient_specializations": "Úrazová chirurgie",
+      "personnel_educations": { "Horolezec horolezec": 2 }
+    },
+    "prerequisites": {
+      "main_building": 28,
+      "rescue_stations": 3,
+      "personnel_educations": { "mountain_height_rescue": 4 },
+      "mountain_rescue": 1,
+      "fire_stations": 6,
+      "mining_rescue": 2,
+      "mining_ambulance": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 824,
+    "additive_overlays": "",
+    "mission_categories": ["mining"]
   }
 ]
