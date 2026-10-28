@@ -31077,6 +31077,61 @@
     "mission_categories": ["federal_police"]
   },
   {
+    "id": "570/a",
+    "name": "Hidden branch of drug cartell",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5590,
+    "generated_by": "",
+    "icons": [
+      "/images/fbi_gruen.png",
+      "/images/fbi_gelb.png",
+      "/images/fbi_rot.png"
+    ],
+    "requirements": {
+      "dea_clan_lab": 2,
+      "dea_unit": 5,
+      "civil_patrolcar": 1,
+      "crime_scene_unit": 1,
+      "police_cars": 5
+    },
+    "chances": { "patient_transport": 40 },
+    "additional": {
+      "possible_patient": 6,
+      "followup_missions_ids": [
+        137, 137, 137, 137, 137, 489, 489, 489, 569, 569, 569
+      ],
+      "max_possible_prisoners": 12,
+      "swat_personnel": 12,
+      "filter_id": "federal_police_missions",
+      "patient_us_code_possible": [
+        "27-B-3G",
+        "27-D-4G",
+        "27-D-5G",
+        "27-B-3S",
+        "27-D-4S",
+        "27-D-5S",
+        "27-D-2",
+        "27-D-3"
+      ],
+      "subsequent_mission_only": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["General Internal"],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 18,
+      "police_stations": 3,
+      "federalpolice_stations": 8,
+      "dea_count": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 570,
+    "additive_overlays": "a",
+    "mission_categories": ["federal_police"]
+  },
+  {
     "id": "571",
     "name": "Office used for firearms black market sales",
     "place": "Office Building",
@@ -60087,6 +60142,226 @@
     "base_mission_id": 1173,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "1175",
+    "name": "Burglary at a museum",
+    "place": "Museum",
+    "place_array": ["Museum"],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "k9": 1, "civil_patrolcar": 1, "police_cars": 2 },
+    "chances": { "k9": 20 },
+    "additional": {
+      "max_possible_prisoners": 3,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 6,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1175,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1176",
+    "name": "Burglary at a residential property",
+    "place": "",
+    "place_array": [],
+    "average_credits": 900,
+    "generated_by": "",
+    "icons": [
+      "/images/theft_gruen.png",
+      "/images/theft_gelb.png",
+      "/images/theft_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1176,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1177",
+    "name": "Anti-Money Laundering Operation",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_helicopters": 1,
+      "civil_patrolcar": 1,
+      "police_cars": 8
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 4,
+      "max_possible_prisoners": 8,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 8,
+      "police_helicopter_stations": 1,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1177,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1178",
+    "name": "Organized insurance fraud uncovered",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2600,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 4,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1178,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1179",
+    "name": "Discovery of forged professional certificates",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2200,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 1 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 3,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1179,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1180",
+    "name": "Investigation into organized identity theft",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 3,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1180,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1181",
+    "name": "Witness intimidation before a court hearing",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 3 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 5,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1181,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
+    "id": "1182",
+    "name": "Coordinated arrests in a major corruption investigation",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5600,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "civil_patrolcar": 1, "police_cars": 5 },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 2,
+      "max_possible_prisoners": 5,
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 8,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1182,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
   },
   {
     "id": "1008",
