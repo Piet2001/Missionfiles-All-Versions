@@ -26200,5 +26200,42 @@
     "base_mission_id": 742,
     "additive_overlays": "",
     "mission_categories": ["ambulance"]
+  },
+  {
+    "id": "743",
+    "name": "Incendio en un mercadillo",
+    "place": "Mercado",
+    "place_array": ["Mercado"],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "firetrucks": 2,
+      "police_cars": 2
+    },
+    "chances": { "patient_transport": 20 },
+    "additional": {
+      "possible_patient": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatolog\u00eda"],
+      "patient_specializations": "Traumatolog\u00eda"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "police_stations": 2,
+      "fire_stations": 6
+    },
+    "overlay_index": null,
+    "base_mission_id": 743,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
