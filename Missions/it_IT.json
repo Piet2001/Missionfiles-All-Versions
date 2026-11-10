@@ -35496,5 +35496,131 @@
     "base_mission_id": 895,
     "additive_overlays": "ab",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "896",
+    "name": "Incendio boschivo con supporto aereo",
+    "place": "Bosco",
+    "place_array": ["Bosco"],
+    "average_credits": 7500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 8,
+      "elw3": 1,
+      "fire_aviation": 2,
+      "water_needed": 25000,
+      "municipal_police": 3,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [402]
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "fire_aviation_count": 2,
+      "fire_stations": 16
+    },
+    "overlay_index": null,
+    "base_mission_id": 896,
+    "additive_overlays": "",
+    "mission_categories": ["forestry"]
+  },
+  {
+    "id": "897",
+    "name": "Recupero con verricello di escursionista ferito",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/hiking_gruen.png",
+      "/images/hiking_gelb.png",
+      "/images/hiking_rot.png"
+    ],
+    "requirements": {
+      "heli_tech": 1,
+      "personnel_educations": { "heli_tech": 1, "mountain_rescue": 3 }
+    },
+    "chances": { "patient_transport": 100, "helicopter": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "patient_it_code_possible": ["ZC01G", "ZC01R"],
+      "filter_id": "mountain_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Traumatologia",
+        "Medicina interna generale",
+        "Traumatologia"
+      ],
+      "vehicle_groups": ["mountain_missions", "default"],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia",
+      "personnel_educations": {
+        "Tecnico di Elisoccorso": 1,
+        "Tecnico di Soccorso Alpino": 3
+      }
+    },
+    "prerequisites": {
+      "main_building": 31,
+      "rescue_stations": 1,
+      "personnel_educations": { "heli_tech": 2, "mountain_rescue": 6 },
+      "mountain_rescue": 1,
+      "heli_tech": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 897,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
+  },
+  {
+    "id": "898",
+    "name": "Scantinati allagati dopo nubifragio",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {},
+    "chances": { "patient_transport": 5 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 0,
+      "patient_it_code_possible": ["ZC20R", "ZC20G", "ZC20V"],
+      "filter_id": "firehouse_missions",
+      "possible_patient_specializations": [
+        "Medicina interna generale",
+        "Medicina interna generale",
+        "Medicina interna generale"
+      ],
+      "pump_water_amount": 20000,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Medicina interna generale"],
+      "patient_specializations": "Medicina interna generale"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 1,
+      "technical_aid": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 898,
+    "additive_overlays": "",
+    "mission_categories": ["technical_aid"]
   }
 ]
