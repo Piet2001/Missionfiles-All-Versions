@@ -203694,5 +203694,93 @@
     "base_mission_id": 1036,
     "additive_overlays": "",
     "mission_categories": ["animal_rescue"]
+  },
+  {
+    "id": "1037",
+    "name": "LKW umgestürzt auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2825,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "highway_police": 2,
+      "firetrucks": 3
+    },
+    "chances": { "hazmat_vehicles": 30, "nef": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [1002],
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "rescue_stations": 3,
+      "highway_police": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 1037,
+    "additive_overlays": "",
+    "mission_categories": ["highway_police"]
+  },
+  {
+    "id": "1037/a",
+    "name": "LKW umgestürzt auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3440,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "fwk": 1,
+      "hazmat_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "highway_police": 2,
+      "firetrucks": 3
+    },
+    "chances": { "hazmat_vehicles": 30, "nef": 50, "patient_transport": 50 },
+    "additional": {
+      "possible_patient": 2,
+      "possible_patient_min": 1,
+      "followup_missions_ids": [1002],
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Unfallchirurgie"],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "rescue_stations": 3,
+      "thw": 1,
+      "thw_zugtrupp_count": 1,
+      "highway_police": 1,
+      "fire_stations": 14
+    },
+    "overlay_index": null,
+    "base_mission_id": 1037,
+    "additive_overlays": "a",
+    "mission_categories": ["highway_police"]
   }
 ]
