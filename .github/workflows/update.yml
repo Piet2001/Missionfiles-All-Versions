@@ -15,7 +15,7 @@ concurrency:
   
 jobs:
   en_AU:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     steps:
     - uses: actions/checkout@v3
@@ -50,7 +50,7 @@ jobs:
         fi
 
   pt_BR:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: en_AU
     steps:
@@ -86,7 +86,7 @@ jobs:
         fi
 
   cs_CZ:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: pt_BR
     steps:
@@ -122,7 +122,7 @@ jobs:
         fi
 
   de_DE:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: cs_CZ
     steps:
@@ -158,7 +158,7 @@ jobs:
         fi
 
   da_DK:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: de_DE
     steps:
@@ -194,7 +194,7 @@ jobs:
         fi
 
   es_ES:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: da_DK
     steps:
@@ -230,7 +230,7 @@ jobs:
         fi
 
   fi_FI:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: es_ES
     steps:
@@ -266,7 +266,7 @@ jobs:
         fi
 
   fr_FR:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: fi_FI
     steps:
@@ -302,7 +302,7 @@ jobs:
         fi
 
   it_IT:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: fr_FR
     steps:
@@ -338,7 +338,7 @@ jobs:
         fi
 
   ja_JP:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: it_IT
     steps:
@@ -374,7 +374,7 @@ jobs:
         fi
 
   ko_KR:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: ja_JP
     steps:
@@ -410,7 +410,7 @@ jobs:
         fi
 
   es_MX:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: ko_KR
     steps:
@@ -446,7 +446,7 @@ jobs:
         fi
 
   nl_NL:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: es_MX
     steps:
@@ -482,7 +482,7 @@ jobs:
         fi
 
   nb_NO:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: nl_NL
     steps:
@@ -518,7 +518,7 @@ jobs:
         fi
 
   pl_PL:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: nb_NO
     steps:
@@ -554,7 +554,7 @@ jobs:
         fi
 
   pt_PT:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: pl_PL
     steps:
@@ -590,7 +590,7 @@ jobs:
         fi
 
   ro_RO:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: pt_PT
     steps:
@@ -626,7 +626,7 @@ jobs:
         fi
 
   ru_RU:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: ro_RO
     steps:
@@ -662,7 +662,7 @@ jobs:
         fi
 
   sv_SE:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: ru_RU
     steps:
@@ -698,7 +698,7 @@ jobs:
         fi
 
   tr_TR:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: sv_SE
     steps:
@@ -734,7 +734,7 @@ jobs:
         fi
 
   uk_UA:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: tr_TR
     steps:
@@ -770,7 +770,7 @@ jobs:
         fi
 
   en_GB:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: uk_UA
     steps:
@@ -806,7 +806,7 @@ jobs:
         fi
 
   en_US:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: en_GB
     steps:
@@ -842,7 +842,7 @@ jobs:
         fi
 
   sk_SK:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: en_US
     steps:
@@ -878,7 +878,7 @@ jobs:
         fi
 
   Python:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     continue-on-error: true
     needs: sk_SK
     steps:
