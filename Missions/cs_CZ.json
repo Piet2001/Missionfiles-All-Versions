@@ -34354,6 +34354,31 @@
     "mission_categories": ["police"]
   },
   {
+    "id": "813",
+    "name": "Vyšetřování organizované krádeže identity",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": { "police_investigation": 1, "police_cars": 2 },
+    "chances": {},
+    "additional": { "filter_id": "police_station_missions" },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "police_investigation": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 813,
+    "additive_overlays": "",
+    "mission_categories": ["police"]
+  },
+  {
     "id": "816",
     "name": "Havárie vrtné soupravy",
     "place": "Vrtné pracoviště",
@@ -34854,5 +34879,39 @@
     "base_mission_id": 824,
     "additive_overlays": "",
     "mission_categories": ["mining"]
+  },
+  {
+    "id": "825",
+    "name": "Pád do ledovcové trhliny",
+    "place": "Skála",
+    "place_array": ["Skála"],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/climbing_gruen.png",
+      "/images/climbing_gelb.png",
+      "/images/climbing_rot.png"
+    ],
+    "requirements": { "personnel_educations": { "mountain_height_rescue": 3 } },
+    "chances": { "patient_transport": 30 },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "mountain_missions",
+      "uses_custom_spawn_area": true,
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [0],
+      "patient_specialization_captions": ["Všeobecný internista"],
+      "patient_specializations": "Všeobecný internista",
+      "personnel_educations": { "Horolezec horolezec": 3 }
+    },
+    "prerequisites": {
+      "main_building": 26,
+      "personnel_educations": { "mountain_height_rescue": 5 },
+      "mountain_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 825,
+    "additive_overlays": "",
+    "mission_categories": ["mountain"]
   }
 ]
