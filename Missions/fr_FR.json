@@ -47926,5 +47926,47 @@
     "base_mission_id": 966,
     "additive_overlays": "",
     "mission_categories": ["municipal_police"]
+  },
+  {
+    "id": "967",
+    "name": "Plan Piratmer (Prise d’otages à bord d’un ferry de passagers détourné en Méditerranée)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 9000,
+    "generated_by": "",
+    "icons": [
+      "/images/cruiseship_gruen.png",
+      "/images/cruiseship_gelb.png",
+      "/images/cruiseship_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "coastal_guard_boat": 3,
+      "swat_negotiation": 1,
+      "swat_helicopter": 2,
+      "personnel_educations": { "law_enforcement_marine": 12 }
+    },
+    "chances": {},
+    "additional": {
+      "min_possible_prisoners": 1,
+      "max_possible_prisoners": 4,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["default", "ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "personnel_educations": { "Gendarme Maritime": 12 }
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "water_rescue_2": 2,
+      "police_helicopter_stations": 1,
+      "personnel_educations": { "law_enforcement_marine": 25 },
+      "swat": 2,
+      "swat_airport": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 967,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
