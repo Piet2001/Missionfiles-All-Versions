@@ -26124,5 +26124,40 @@
     "base_mission_id": 770,
     "additive_overlays": "",
     "mission_categories": ["fire"]
+  },
+  {
+    "id": "771",
+    "name": "Jäihin vajonnut moottorikelkkailija merenlahdella",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3600,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1, "coastal_helicopter": 2 },
+    "chances": { "patient_transport": 80, "helicopter": 90 },
+    "additional": {
+      "possible_patient": 3,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions"],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [23],
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologia"],
+      "patient_specializations": "Traumatologia"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 3,
+      "coastal_rescue_count": 2,
+      "coastal_helicopter_count": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 771,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue_ocean"]
   }
 ]
