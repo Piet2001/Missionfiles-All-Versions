@@ -23581,5 +23581,39 @@
     "base_mission_id": 689,
     "additive_overlays": "",
     "mission_categories": ["tow_trucks"]
+  },
+  {
+    "id": "690",
+    "name": "岩場で釣り人が高波にさらわれた",
+    "place": "ビーチ",
+    "place_array": ["ビーチ"],
+    "average_credits": 650,
+    "generated_by": "",
+    "icons": [
+      "/images/waterpark_gruen.png",
+      "/images/waterpark_gelb.png",
+      "/images/waterpark_rot.png"
+    ],
+    "requirements": { "coastal_boat": 1 },
+    "chances": { "patient_transport": 100 },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": ["ocean_missions", "default"],
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [7],
+      "patient_specialization_captions": ["循環器"],
+      "patient_specializations": "循環器"
+    },
+    "prerequisites": {
+      "main_building": 23,
+      "rescue_stations": 1,
+      "coastal_rescue_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 690,
+    "additive_overlays": "",
+    "mission_categories": ["coastal_rescue"]
   }
 ]
