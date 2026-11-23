@@ -47968,5 +47968,55 @@
     "base_mission_id": 967,
     "additive_overlays": "",
     "mission_categories": ["coastal_rescue_ocean"]
+  },
+  {
+    "id": "968",
+    "name": "Secours à un groupe de kayakistes en difficulté",
+    "place": "Rivière",
+    "place_array": ["Rivière"],
+    "average_credits": 10500,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "battalion_chief_vehicles": 1,
+      "thw_gkw": 2,
+      "police_cars": 2,
+      "water_rescue": 3,
+      "personnel_educations": { "gw_taucher": 9, "gw_wasserrettung": 4 }
+    },
+    "chances": {
+      "patient_transport": 90,
+      "helicopter": 15,
+      "patient_critical_care": 25
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 2,
+      "filter_id": "firehouse_missions",
+      "patient_at_end_of_mission": true,
+      "patient_specialization_ids": [4],
+      "patient_specialization_captions": ["Traumatologie"],
+      "patient_specializations": "Traumatologie",
+      "personnel_educations": {
+        "PLG (Plongeur)": 9,
+        "SAV (Sauvetage Aquatique)": 4
+      }
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "wasserrettung": 3,
+      "rescue_stations": 7,
+      "police_stations": 2,
+      "fire_stations": 10
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "",
+    "mission_categories": ["fire"]
   }
 ]
